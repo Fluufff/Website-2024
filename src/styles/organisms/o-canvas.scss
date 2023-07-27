@@ -21,7 +21,8 @@
 	}
 
 	&__fallback {
-		background: url('../../images/3d-background.jpg') center center;
+		// FIXME: do we want to keep this background?
+		// background: url('../../images/3d-background.jpg') center center;
 		background-size: cover;
 		position: absolute;
 		top: 0;
