@@ -1,0 +1,37 @@
+.m-about {
+	display: flex;
+
+	&__logo {
+		width: 40%;
+		align-self: center;
+	}
+
+	h3 {
+		font-family: 'Pineapple';
+		font-size: 2rem;
+		font-weight: bold;
+		color: $grey-darker;
+	}
+
+	&__content {
+		width: 60%;
+		text-align: left;
+
+		p {
+			max-width: 500px;
+			color: $grey-dark;
+		}
+	}
+
+	@media (max-width: 767px) {
+		flex-direction: column;
+		
+		&__logo {
+			width: 50%;
+		}
+		
+		&__content {
+			width: 100%;
+		}
+	}
+}

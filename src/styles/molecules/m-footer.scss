@@ -1,0 +1,28 @@
+.o-footer {
+	text-align: center;
+	padding: $spacer-2x-large 0;
+	overflow: hidden;
+	position: relative;
+
+	&__accent-image {
+		position: absolute;
+		bottom: -300px;
+		left: -100px;
+		width: 400px;
+		height: auto;
+		transform: scaleX(-1);
+	}
+	
+	> h3 {
+		font-size: 2rem;
+		margin: 0;
+	}
+
+	&__content {
+		max-width: $container-width;
+		padding: 0 $spacer-medium;
+		margin: $spacer-2x-large auto 0;
+		position: relative;
+		z-index: 1;
+	}
+}

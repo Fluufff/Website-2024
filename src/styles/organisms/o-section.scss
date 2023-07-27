@@ -1,0 +1,153 @@
+.o-section {
+	padding: $spacer-2x-large 0;
+	overflow: hidden;
+	position: relative;
+	line-height: 1.75;
+
+	&--no-hidden {
+		overflow: unset;
+	}
+
+	ul li, ol li {
+		// padding: $spacer-x-small 0;
+		color: $grey-dark;
+	}	
+
+	&--center {
+		text-align: center;
+	}
+
+	&--dark {
+		background-color: $grey-darkest;
+		color: $white;
+	}
+
+	&--alt {
+		background-color: $grey-lightest;
+	}
+
+	&.o-section--small {
+		padding: $spacer-x-large 0;
+	
+		> h3 {
+			margin: 0 0 $spacer 0;
+		}
+	}
+
+	&.o-section--x-small {
+		padding: $spacer-medium 0;
+	
+		> h3 {
+			margin: 0 0 $spacer 0;
+		}
+	}
+
+	&__accent-image {
+		position: absolute;
+		bottom: -200px;
+		left: -100px;
+		width: 400px;
+		height: auto;
+		transform: scaleX(-1);
+
+		@media (max-width: 767px) {
+			width: 200px;
+			bottom: -100px;
+			left: -50px;
+		}
+
+		&--alt {
+			bottom: unset;
+			left: unset;
+			right: -150px;
+			bottom: -100px;
+			transform: scaleX(1);
+
+			@media (max-width: 767px) {
+				right: -75px;
+				bottom: -50px;
+			}
+		}
+
+		&--top {
+			bottom: unset;
+			left: unset;
+			left: -150px;
+			top: -100px;
+			transform: scaleY(-1);
+
+			@media (max-width: 767px) {
+				right: -75px;
+				bottom: -50px;
+			}
+		}
+	}
+
+	&__image {
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 1000px;
+		width: 100%;
+
+		img {
+			position: absolute;
+			bottom: -200px;
+			left: -100px;
+			width: 400px;
+			height: auto;
+			transform: scaleX(-1);
+
+			@media (max-width: 767px) {
+				width: 200px;
+				bottom: -100px;
+				left: -50px;
+			}
+		}
+
+		&--alt {
+			img {
+				bottom: unset;
+				left: unset;
+				right: -150px;
+				bottom: -100px;
+				transform: scaleX(1);
+
+				@media (max-width: 767px) {
+					right: -75px;
+					bottom: -50px;
+				}
+			}
+		}
+
+		&--top {
+			img {
+				bottom: unset;
+				left: unset;
+				left: -150px;
+				top: -100px;
+				transform: scaleY(-1);
+
+				@media (max-width: 767px) {
+					right: -75px;
+					bottom: -50px;
+				}
+			}
+		}
+	}
+	
+	> h3 {
+		font-family: 'Pineapple';
+		font-size: 2rem;
+		margin: 0 0 $spacer-x-large 0;
+	}
+
+	&__content {
+		max-width: $container-width;
+		margin: 0 auto 0;
+		padding: 0 $spacer-medium;
+		position: relative;
+		z-index: 1;
+	}
+}

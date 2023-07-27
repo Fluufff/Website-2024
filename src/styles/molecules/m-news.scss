@@ -1,0 +1,14 @@
+.m-news {
+	&__item:not(:last-of-type) {
+		border-bottom: 1px solid $grey-light;
+	}
+
+	&__date {
+		margin-top: 0;
+		color: $grey-medium;
+	}
+
+	&__title {
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,20 @@
+// Borders
+$border-radius: 20px;
+$border-radius-small: 15px;
+$border-radius-x-small: 12px;
+
+// Spacing
+$spacer: 1rem;
+
+$spacer-3x-large: $spacer * 10;
+$spacer-2x-large: $spacer * 5;
+$spacer-x-large: $spacer * 3;
+$spacer-large: $spacer * 2;
+$spacer-medium: $spacer * 1.5;
+$spacer-small: $spacer / 2;
+$spacer-x-small: $spacer / 3;
+$spacer-2x-small: $spacer / 5;
+$spacer-3x-small: $spacer / 10;
+
+$container-width: 1280px;
+$menu-height: 85px;

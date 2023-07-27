@@ -1,0 +1,33 @@
+.m-pricing-table {
+	width: 100%;
+	line-height: 100%;
+	border-collapse: collapse;
+
+	td {
+		padding: $spacer;
+		word-break: break-all;
+		border: 1px solid $grey-light;
+
+		&.m-pricing-table__price {
+			font-weight: bold;
+		}
+	}
+
+	tr td:first-child {
+		border-left: none;
+	}
+
+	tr:first-child td {
+		border-top: none;
+	}
+
+	:not(thead) tr:last-child td {
+		border-bottom: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.m-pricing-table td {
+		padding: $spacer-x-small;
+	}
+}

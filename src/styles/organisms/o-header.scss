@@ -1,0 +1,54 @@
+.o-header {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding-top: calc(#{$menu-height} + #{$spacer-x-large});
+	padding-bottom: $spacer-2x-large;
+	color: $white;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba($grey-darkest, 0.4);
+	}
+
+	&__title {
+		font-family: 'Pineapple';
+		font-size: 4rem;
+		margin: 0;
+		position: relative;
+		z-index: 10;
+	}
+
+	&__sub-title {
+		margin: 0;
+		position: relative;
+		z-index: 10;
+	}
+
+	&__overlay {
+		position: relative;
+		min-height: 100vh;
+		z-index: 10;
+		pointer-events: none;
+
+		@media (max-width: 767px) {
+			background-color: rgba($grey-darkest, 0.2);
+		}
+	}
+
+	&--big {
+		min-height: 100vh;
+		padding-top: 0;
+		padding-bottom: 0;
+
+		&::after {
+			display: none;
+		}
+	}
+}

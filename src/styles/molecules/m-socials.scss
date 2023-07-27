@@ -1,0 +1,13 @@
+.m-socials {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	.m-socials__item {
+		text-decoration: none;
+		color: $grey-darker;
+		display: inline-block;
+		padding: $spacer;
+		font-size: 1rem;
+	}
+}

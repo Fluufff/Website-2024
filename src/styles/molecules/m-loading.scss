@@ -1,0 +1,209 @@
+.m-loading {
+	background-color: $grey-darkest;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 1;
+	transition: opacity .5s ease;
+	z-index: 5;
+
+	&--done {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	&__image {
+		width: 300px;
+
+		.cls-1 {
+			fill: none;
+			stroke: #fff;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			stroke-width: 57px;
+		}
+
+		.cls-2 {
+			fill: #fff;
+		}
+	}
+
+	&__letter--f {
+		polyline {
+			opacity: 0;
+			stroke-dasharray: 268;
+			stroke-dashoffset: 268;
+			animation: dash-letter-f-1 5s ease infinite;
+		}
+
+		line {
+			opacity: 0;
+			stroke-dasharray: 84;
+			stroke-dashoffset: 84;
+			animation: dash-letter-f-2 5s ease infinite;
+		}
+
+		&.m-loading__letter--2 polyline, &.m-loading__letter--2 line {
+			animation-delay: 1s;
+		}
+
+		&.m-loading__letter--3 polyline, &.m-loading__letter--3 line {
+			animation-delay: 1.25s;
+		}
+
+		&.m-loading__letter--4 polyline, &.m-loading__letter--4 line {
+			animation-delay: 1.5s;
+		}
+	}
+
+	&__letter--l polyline {
+		opacity: 0;
+		stroke-dasharray: 268;
+		stroke-dashoffset: 268;
+		animation: dash-letter-l 5s ease infinite;
+		animation-delay: 0.25s;
+	}
+
+	&__letter--u {
+		path {
+			opacity: 0;
+			stroke-dasharray: 290;
+			stroke-dashoffset: 290;
+			animation: dash-letter-u 5s ease infinite;
+			animation-delay: 0.5s;
+		}
+
+		&.m-loading__letter--2 path {
+			opacity: 0;
+			animation-delay: 0.75s;
+		}
+
+		&.m-loading__letter--1 .m-loading__dot--1 {
+			opacity: 0;
+			animation: dots 5s ease infinite;
+			animation-delay: 0.5s;
+		}
+
+		&.m-loading__letter--1 .m-loading__dot--2 {
+			opacity: 0;
+			animation: dots 5s ease infinite;
+			animation-delay: 0.55s;
+		}
+
+		&.m-loading__letter--2 .m-loading__dot--1 {
+			opacity: 0;
+			animation: dots 5s ease infinite;
+			animation-delay: 0.75s;
+		}
+
+		&.m-loading__letter--2 .m-loading__dot--2 {
+			opacity: 0;
+			animation: dots 5s ease infinite;
+			animation-delay: 0.80s;
+		}
+	}
+}
+  
+@keyframes dash-letter-f-1 {
+	0% {
+		stroke-dashoffset: 267;
+		opacity: 1;
+	}
+
+	25% {
+		stroke-dashoffset: 0;
+	}
+
+	75% {
+		stroke-dashoffset: 0;
+	}
+
+	100% {
+		stroke-dashoffset: 267;
+		opacity: 1;
+	}
+}
+  
+@keyframes dash-letter-f-2 {
+	0% {
+		stroke-dashoffset: 83;
+		opacity: 1;
+	}
+
+	25% {
+		stroke-dashoffset: 0;
+	}
+
+	75% {
+		stroke-dashoffset: 0;
+	}
+
+	100% {
+		stroke-dashoffset: 83;
+		opacity: 1;
+	}
+}
+  
+@keyframes dash-letter-l {
+	0% {
+		stroke-dashoffset: 267;
+		opacity: 1;
+	}
+
+	25% {
+		stroke-dashoffset: 0;
+	}
+
+	75% {
+		stroke-dashoffset: 0;
+	}
+
+	100% {
+		stroke-dashoffset: 267;
+		opacity: 1;
+	}
+}
+
+@keyframes dash-letter-u {
+	0% {
+		stroke-dashoffset: 288;
+		opacity: 1;
+	}
+
+	25% {
+		stroke-dashoffset: 0;
+	}
+
+	75% {
+		stroke-dashoffset: 0;
+	}
+
+	100% {
+		stroke-dashoffset: 288;
+		opacity: 1;
+	}
+}
+
+@keyframes dots {
+	0% {
+		opacity: 0;
+	}
+
+	25% {
+		opacity: 1;
+	}
+
+	75% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}

@@ -1,0 +1,261 @@
+.m-schedule {
+	position: relative;
+	display: flex;
+	margin-top: $spacer;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 25%;
+		height: 100%;
+		width: 30px;
+		background: linear-gradient(90deg, $grey-lightest 0%, rgba($grey-lightest, 0) 100%);
+		z-index: 5;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0%;
+		height: 100%;
+		width: 30px;
+		background: linear-gradient(270deg, $grey-lightest 0%, rgba($grey-lightest, 0) 100%);
+		z-index: 5;
+	}
+
+	&__locations {
+		margin-top: 30px;
+		width: 25%
+	}
+
+	&__location {
+		hyphens: auto;
+		word-wrap: break-word;
+		background-color: $white;
+		border-radius: $border-radius;
+		padding: 0 $spacer;
+		margin-bottom: $spacer;
+		height: 70px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	&__events {
+		position: relative;
+		overflow-x: scroll;
+		width: 75%;
+		margin-left: auto;
+	}
+
+	&__empty {
+		text-align: center;
+		flex: 1;
+		font-style: italic;
+	}
+
+	&__event {
+		top: 0;
+		background-color: $white;
+		padding: 0 $spacer-x-small;
+		display: flex;
+		justify-content: center;
+		border-radius: $border-radius;
+		margin-bottom: $spacer;
+		flex-direction: column;
+		position: absolute;
+		height: 70px;
+		overflow: auto;
+		border: 2px solid transparent;
+		transition: all .2s ease;
+		cursor: pointer;
+
+		&:hover {
+			border: 2px solid $primary;
+		}
+		
+		p {
+			position: sticky;
+			margin: 0;
+			padding: 0;
+			overflow: hidden !important;
+			text-overflow: ellipsis;
+			display: inline-block;
+			line-height: 1;
+		}
+
+		&__time {
+			font-size: .8rem
+		}
+	}
+
+	&__hour-indicators {
+		position: absolute;
+		left: 0;
+		height: 100%;
+	}
+
+	&__hour-indicator {
+		top: 0;
+		position: absolute;
+		height: 100%;
+		border-left: 1px solid $grey-light;
+		
+		&__time {
+			margin: 0;
+			padding: 0 0 0 $spacer-small;
+			color: $grey;
+			line-break: none;
+			font-size: .8rem;
+			white-space: nowrap;
+		}
+		
+		&__day {
+			margin: 0;
+			padding: 0 0 0 $spacer-small;
+			color: $grey-medium;
+			line-break: none;
+			font-size: 1rem;
+			white-space: nowrap;
+		}
+
+		&--daybreak {
+			box-shadow: -30px 0px 40px -30px #acacac;
+		}
+	}
+
+	&__current-time-indicator {
+		top: 0;
+		position: absolute;
+		height: 100%;
+		border-left: 1px solid $primary;
+
+		&::before {
+			background-color: $primary;
+			display: inline-block;
+			height: 9px;
+			width: 9px;
+			content: "";
+			top: 0;
+			left: -5px;
+			position: absolute;
+			border-radius: 50%;
+		}
+		
+		p {
+			margin: 0;
+			padding: 0 0 0 $spacer-small;
+			line-break: none;
+			white-space: nowrap;
+			overflow: hidden !important;
+			text-overflow: ellipsis;
+		}
+	}
+
+	&__meta {
+		background-color: $grey-lightest;
+		z-index: 200;
+		display: flex;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 68px;
+	}
+
+	&__toggle {
+		margin-right: $spacer;
+		flex: 1;
+		display: flex;
+
+		.a-button {
+			flex: 1;
+			width: 100%;
+			text-align: center;
+		}
+
+		.a-button:first-child {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+
+		.a-button:last-child {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+	}
+
+	&__days {
+		flex: 1;
+		display: flex;
+		gap: $spacer;
+
+		.a-button {
+			flex: 1;
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	&__mobile-days, &__mobile-days__days {
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+	.m-schedule {
+		&__days {
+			display: none;
+		}
+
+		&__toggle {
+			margin-bottom: $spacer;
+		}
+
+		&__mobile-days {
+			display: block;
+			position: relative;
+		}
+
+		&__mobile-days__days {
+			display: none;
+			position: absolute;
+			z-index: 200;
+			right: 0;
+			left: 0;
+			top: 65px;
+			text-align: right;
+			background-color: $grey-darker;
+			padding: $spacer;
+			border-radius: $border-radius;
+
+			&--visible {
+				display: block;
+			}
+
+			&::before {
+				position: absolute;
+				content: "";
+				top: -10px;
+				right: 18px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 10px 10px 10px;
+				border-color: transparent transparent $grey-darker transparent;
+			}
+		
+			.a-button {
+				display: block;
+				text-align: center;
+				margin-bottom: $spacer-small;
+			}
+		}
+	}
+}
