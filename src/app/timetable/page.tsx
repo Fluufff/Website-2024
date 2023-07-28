@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import { format, parseISO } from 'date-fns';
 import { enGB, fr, nlBE } from 'date-fns/locale';
 import { useRef, useState } from 'react';
+import { IEvent, ILocation } from './types';
 
 // TODO
 function t(key: string) {
@@ -17,7 +18,7 @@ function getLanguage() {
 }
 
 // TODO
-function showModal(event: unknown): void {
+function showModal(event: IEvent): void {
   return;
 }
 
@@ -35,8 +36,8 @@ export default function TimetablePage() {
   const oneHourHeightInPx = 100;
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const events: any[] = [];
-  const locations: any[] = [];
+  const events: IEvent[] = [];
+  const locations: ILocation[] = [];
   const days: any[] = [];
   const currentTimeIndicatorPosition = 0;
   const isCurrentTimeInSchedule = false;
