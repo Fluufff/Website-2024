@@ -2,11 +2,11 @@
 'use client';
 
 import classNames from 'classnames';
-import { format, parseISO } from 'date-fns';
+import { addDays, format, parseISO, set } from 'date-fns';
 import { enGB, fr, nlBE } from 'date-fns/locale';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { getLanguage } from '@/helpers/language';
-import { IEvent, ILocation } from './types';
+import { IEvent, ILocation, IUser, getSchedule, getUser } from './data.tmp';
 
 // TODO
 const useTranslation = () => [
@@ -17,10 +17,23 @@ const useTranslation = () => [
 
 // TODO
 const animateScroll = { scrollTo: (pos: unknown) => {} };
+const gsap = { to(x: unknown, y: unknown) {} };
+const headerImage = '';
 
 // TODO
-const LinkFix = (props: any) => props.children;
-const Modal = (props: any) => (props.isOpen ? 'modal!' : 'no modal');
+const LinkFix = ({ className, children }: any) => (
+  <a href="#" className={className}>
+    {children}
+  </a>
+);
+const Modal = (props: any) => (props.isOpen ? props.children : 'no modal');
+
+// TODO
+const pathOr =
+  (defVal: any, path: string[]) =>
+  (x: any): any =>
+    // wonky if we expect undefined, but that'll go away soon anyway
+    path.reduce((y, k) => y?.[k], x) ?? defVal;
 
 export default function TimetablePage() {
   // Lower = W I D E R
@@ -51,105 +64,97 @@ export default function TimetablePage() {
   const scheduleRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    ky.get('/website/api/v1/user')
-      .json<any>()
-      .then((response) => {
-        setUser(response);
-      });
+    getUser().then((response) => {
+      setUser(response);
+    });
   }, []);
 
   useEffect(() => {
-    ky.get('website/api/v1/schedule')
-      .json<
-        IApiResponse<{
-          events: IEvent[];
-          locations: ILocation[];
-        }>
-      >()
-      .then((schedule) => {
-        setEvents(pathOr([], ['_embedded', 'events'])(schedule));
-        setLocations(pathOr([], ['_embedded', 'locations'])(schedule));
+    getSchedule().then((schedule) => {
+      setEvents(pathOr([], ['_embedded', 'events'])(schedule));
+      setLocations(pathOr([], ['_embedded', 'locations'])(schedule));
 
-        if (!pathOr([], ['_embedded', 'events'])(schedule).length) {
-          return;
-        }
+      if (!pathOr([], ['_embedded', 'events'])(schedule).length) {
+        return;
+      }
 
-        const tempEvents = pathOr([], ['_embedded', 'events'])(schedule);
-        const differenceFromFlatHour =
-          (Math.min(
-            ...tempEvents.map((x: IEvent) =>
-              Number(parseISO(x.begin).getTime() / 1000),
-            ),
-          ) %
-            (60 * 60)) /
-          60;
-        const firstEvent =
-          Math.min(
-            ...tempEvents.map((x: IEvent) =>
-              Number(parseISO(x.begin).getTime() / 1000),
-            ),
-          ) -
-          (60 - differenceFromFlatHour) * 60;
-        const lastEvent = Math.max(
+      const tempEvents = pathOr([], ['_embedded', 'events'])(schedule);
+      const differenceFromFlatHour =
+        (Math.min(
           ...tempEvents.map((x: IEvent) =>
-            Number(parseISO(x.end).getTime() / 1000),
+            Number(parseISO(x.begin).getTime() / 1000),
           ),
-        );
+        ) %
+          (60 * 60)) /
+        60;
+      const firstEvent =
+        Math.min(
+          ...tempEvents.map((x: IEvent) =>
+            Number(parseISO(x.begin).getTime() / 1000),
+          ),
+        ) -
+        (60 - differenceFromFlatHour) * 60;
+      const lastEvent = Math.max(
+        ...tempEvents.map((x: IEvent) =>
+          Number(parseISO(x.end).getTime() / 1000),
+        ),
+      );
 
-        setFirstEventTimestamp(firstEvent);
-        setConHours([
-          ...Array(Math.ceil((lastEvent - firstEvent) / (60 * 60))).keys(),
-        ]);
-        setCurrentTimeIndicatorPosition(
-          (new Date().getTime() / 1000 - firstEvent) / scale,
-        );
+      setFirstEventTimestamp(firstEvent);
+      setConHours([
+        // @ts-expect-error -- FIXME
+        ...Array(Math.ceil((lastEvent - firstEvent) / (60 * 60))).keys(),
+      ]);
+      setCurrentTimeIndicatorPosition(
+        (new Date().getTime() / 1000 - firstEvent) / scale,
+      );
 
-        setIsCurrentTimeInSchedule(
-          firstEvent < new Date().getTime() / 1000 &&
-            new Date().getTime() / 1000 < lastEvent,
-        );
+      setIsCurrentTimeInSchedule(
+        firstEvent < new Date().getTime() / 1000 &&
+          new Date().getTime() / 1000 < lastEvent,
+      );
 
-        if (
-          firstEvent < new Date().getTime() / 1000 &&
-          new Date().getTime() / 1000 < lastEvent &&
-          scheduleRef.current
-        ) {
-          scheduleRef.current!.scrollLeft =
-            (new Date().getTime() / 1000 - firstEvent) / scale - 100;
-        }
+      if (
+        firstEvent < new Date().getTime() / 1000 &&
+        new Date().getTime() / 1000 < lastEvent &&
+        scheduleRef.current
+      ) {
+        scheduleRef.current!.scrollLeft =
+          (new Date().getTime() / 1000 - firstEvent) / scale - 100;
+      }
 
-        // setEventsLoading(false);
-        setDays(
-          [
-            ...new Array(
-              getDaysBetweenDates(
-                new Date(firstEvent * 1000),
-                new Date(lastEvent * 1000),
-              ),
+      // setEventsLoading(false);
+      setDays(
+        [
+          ...new Array(
+            getDaysBetweenDates(
+              new Date(firstEvent * 1000),
+              new Date(lastEvent * 1000),
             ),
-          ].map((_, i) => ({
-            name: format(addDays(new Date(firstEvent * 1000), i), 'EEEE', {
-              locale:
-                getLanguage() === 'nl_BE'
-                  ? nlBE
-                  : getLanguage() === 'fr_FR'
-                  ? fr
-                  : enGB,
-            }),
-            key:
-              i !== 0
-                ? addDays(
-                    set(new Date(firstEvent * 1000), {
-                      hours: 7,
-                      minutes: 0,
-                      seconds: 0,
-                    }),
-                    i,
-                  ).getTime() / 1000
-                : firstEvent,
-          })),
-        );
-      });
+          ),
+        ].map((_, i) => ({
+          name: format(addDays(new Date(firstEvent * 1000), i), 'EEEE', {
+            locale:
+              getLanguage() === 'nl_BE'
+                ? nlBE
+                : getLanguage() === 'fr_FR'
+                ? fr
+                : enGB,
+          }),
+          key:
+            i !== 0
+              ? addDays(
+                  set(new Date(firstEvent * 1000), {
+                    hours: 7,
+                    minutes: 0,
+                    seconds: 0,
+                  }),
+                  i,
+                ).getTime() / 1000
+              : firstEvent,
+        })),
+      );
+    });
   }, []);
 
   // useEffect(() => {
