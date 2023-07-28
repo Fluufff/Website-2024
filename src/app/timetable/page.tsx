@@ -4,7 +4,7 @@
 import classNames from 'classnames';
 import { addDays, format, parseISO, set } from 'date-fns';
 import { enGB, fr, nlBE } from 'date-fns/locale';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { getLanguage } from '@/helpers/language';
 import { IEvent, ILocation, IUser, getSchedule, getUser } from './data.tmp';
 
@@ -28,6 +28,29 @@ const LinkFix = ({ className, children }: any) => (
 );
 const Modal = (props: any) => (props.isOpen ? props.children : 'no modal');
 
+const convertMsToDays = (ms: number) => {
+  const msInOneSecond = 1000;
+  const secondsInOneMinute = 60;
+  const minutesInOneHour = 60;
+  const hoursInOneDay = 24;
+
+  const minutesInOneDay = hoursInOneDay * minutesInOneHour;
+  const secondsInOneDay = secondsInOneMinute * minutesInOneDay;
+  const msInOneDay = msInOneSecond * secondsInOneDay;
+
+  return Math.ceil(ms / msInOneDay);
+};
+
+const getDaysBetweenDates = (dateOne: Date, dateTwo: Date) => {
+  let differenceInMs = dateTwo.getTime() - dateOne.getTime();
+
+  if (differenceInMs < 0) {
+    differenceInMs = dateOne.getTime() - dateTwo.getTime();
+  }
+
+  return convertMsToDays(differenceInMs);
+};
+
 export default function TimetablePage() {
   // Lower = W I D E R
   // Higher = tighter
@@ -38,18 +61,11 @@ export default function TimetablePage() {
   const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
   const [events, setEvents] = useState<IEvent[]>([]);
   const [locations, setLocations] = useState<ILocation[]>([]);
-  const [days, setDays] = useState<{ name: string; key: number }[]>([]);
-  const [currentTimeIndicatorPosition, setCurrentTimeIndicatorPosition] =
-    useState(0);
-  const [isCurrentTimeInSchedule, setIsCurrentTimeInSchedule] =
-    useState<boolean>();
   const [displayState, setDisplayState] = useState<'SCHEDULE' | 'TIMELINE'>(
     'SCHEDULE',
   );
   const [mobileDaysVisible, setMobileDaysVisible] = useState<boolean>(false);
   const [activeEvent, setActiveEvent] = useState<IEvent>();
-  const [firstEventTimestamp, setFirstEventTimestamp] = useState(0);
-  const [conHours, setConHours] = useState<number[]>([]);
   const [user, setUser] = useState<IUser>();
   const [scrollLeft, setScrollLeft] = useState<number>(0);
   const [wantedScrollLeft, setWantedScrollLeft] = useState<number>(0);
@@ -73,84 +89,107 @@ export default function TimetablePage() {
       if (!responseEvents.length) {
         return;
       }
+    });
+  }, []);
 
-      const differenceFromFlatHour =
-        (Math.min(
-          ...responseEvents.map((x: IEvent) =>
-            Number(parseISO(x.begin).getTime() / 1000),
-          ),
-        ) %
-          (60 * 60)) /
-        60;
-      const firstEvent =
-        Math.min(
-          ...responseEvents.map((x: IEvent) =>
-            Number(parseISO(x.begin).getTime() / 1000),
-          ),
-        ) -
-        (60 - differenceFromFlatHour) * 60;
-      const lastEvent = Math.max(
-        ...responseEvents.map((x: IEvent) =>
-          Number(parseISO(x.end).getTime() / 1000),
+  const {
+    firstEventTimestamp = 0,
+    lastEventTimestamp = 0,
+    days = [],
+    isCurrentTimeInSchedule = undefined,
+    currentTimeIndicatorPosition = 0,
+    conHours = [],
+  } = useMemo(() => {
+    if (!events.length) return {};
+
+    const differenceFromFlatHour =
+      (Math.min(
+        ...events.map((x: IEvent) =>
+          Number(parseISO(x.begin).getTime() / 1000),
         ),
-      );
+      ) %
+        (60 * 60)) /
+      60;
 
-      setFirstEventTimestamp(firstEvent);
-      setConHours([
-        // @ts-expect-error -- FIXME
-        ...Array(Math.ceil((lastEvent - firstEvent) / (60 * 60))).keys(),
-      ]);
-      setCurrentTimeIndicatorPosition(
-        (new Date().getTime() / 1000 - firstEvent) / scale,
-      );
+    const firstEventTimestamp =
+      Math.min(
+        ...events.map((x: IEvent) =>
+          Number(parseISO(x.begin).getTime() / 1000),
+        ),
+      ) -
+      (60 - differenceFromFlatHour) * 60;
 
-      setIsCurrentTimeInSchedule(
-        firstEvent < new Date().getTime() / 1000 &&
-          new Date().getTime() / 1000 < lastEvent,
-      );
+    const lastEventTimestamp = Math.max(
+      ...events.map((x: IEvent) => Number(parseISO(x.end).getTime() / 1000)),
+    );
 
+    const conHours = [
+      // @ts-expect-error -- FIXME
+      ...Array(
+        Math.ceil((lastEventTimestamp - firstEventTimestamp) / (60 * 60)),
+      ).keys(),
+    ];
+
+    const currentTimeIndicatorPosition =
+      (new Date().getTime() / 1000 - firstEventTimestamp) / scale;
+
+    const isCurrentTimeInSchedule =
+      firstEventTimestamp < new Date().getTime() / 1000 &&
+      new Date().getTime() / 1000 < lastEventTimestamp;
+
+    const days = [
+      ...new Array(
+        getDaysBetweenDates(
+          new Date(firstEventTimestamp * 1000),
+          new Date(lastEventTimestamp * 1000),
+        ),
+      ),
+    ].map((_, i) => ({
+      name: format(addDays(new Date(firstEventTimestamp * 1000), i), 'EEEE', {
+        locale:
+          getLanguage() === 'nl_BE'
+            ? nlBE
+            : getLanguage() === 'fr_FR'
+            ? fr
+            : enGB,
+      }),
+      key:
+        i !== 0
+          ? addDays(
+              set(new Date(firstEventTimestamp * 1000), {
+                hours: 7,
+                minutes: 0,
+                seconds: 0,
+              }),
+              i,
+            ).getTime() / 1000
+          : firstEventTimestamp,
+    }));
+
+    return {
+      firstEventTimestamp,
+      lastEventTimestamp,
+      days,
+      isCurrentTimeInSchedule,
+      currentTimeIndicatorPosition,
+      conHours,
+    };
+  }, [events]);
+
+  useEffect(
+    () => {
       if (
-        firstEvent < new Date().getTime() / 1000 &&
-        new Date().getTime() / 1000 < lastEvent &&
+        firstEventTimestamp < new Date().getTime() / 1000 &&
+        new Date().getTime() / 1000 < lastEventTimestamp &&
         scheduleRef.current
       ) {
         scheduleRef.current!.scrollLeft =
-          (new Date().getTime() / 1000 - firstEvent) / scale - 100;
+          (new Date().getTime() / 1000 - firstEventTimestamp) / scale - 100;
       }
-
-      // setEventsLoading(false);
-      setDays(
-        [
-          ...new Array(
-            getDaysBetweenDates(
-              new Date(firstEvent * 1000),
-              new Date(lastEvent * 1000),
-            ),
-          ),
-        ].map((_, i) => ({
-          name: format(addDays(new Date(firstEvent * 1000), i), 'EEEE', {
-            locale:
-              getLanguage() === 'nl_BE'
-                ? nlBE
-                : getLanguage() === 'fr_FR'
-                ? fr
-                : enGB,
-          }),
-          key:
-            i !== 0
-              ? addDays(
-                  set(new Date(firstEvent * 1000), {
-                    hours: 7,
-                    minutes: 0,
-                    seconds: 0,
-                  }),
-                  i,
-                ).getTime() / 1000
-              : firstEvent,
-        })),
-      );
-    });
-  }, []);
+    },
+    // these only update once
+    [firstEventTimestamp, lastEventTimestamp],
+  );
 
   // useEffect(() => {
   // 	const timer = setTimeout(() => {
@@ -159,28 +198,6 @@ export default function TimetablePage() {
 
   // 	return () => clearTimeout(timer);
   // }, [currentTimeIndicatorPosition]);
-  const convertMsToDays = (ms: number) => {
-    const msInOneSecond = 1000;
-    const secondsInOneMinute = 60;
-    const minutesInOneHour = 60;
-    const hoursInOneDay = 24;
-
-    const minutesInOneDay = hoursInOneDay * minutesInOneHour;
-    const secondsInOneDay = secondsInOneMinute * minutesInOneDay;
-    const msInOneDay = msInOneSecond * secondsInOneDay;
-
-    return Math.ceil(ms / msInOneDay);
-  };
-
-  const getDaysBetweenDates = (dateOne: Date, dateTwo: Date) => {
-    let differenceInMs = dateTwo.getTime() - dateOne.getTime();
-
-    if (differenceInMs < 0) {
-      differenceInMs = dateOne.getTime() - dateTwo.getTime();
-    }
-
-    return convertMsToDays(differenceInMs);
-  };
 
   const updateScroll = (direction: 'left' | 'right'): void => {
     const containerWidth = (document.querySelector(
