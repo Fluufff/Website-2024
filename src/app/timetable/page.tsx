@@ -5,16 +5,12 @@ import classNames from 'classnames';
 import { format, parseISO } from 'date-fns';
 import { enGB, fr, nlBE } from 'date-fns/locale';
 import { useRef, useState } from 'react';
+import { getLanguage } from '@/helpers/language';
 import { IEvent, ILocation } from './types';
 
 // TODO
 function t(key: string) {
   return key;
-}
-
-// TODO
-function getLanguage() {
-  return 'en_GB';
 }
 
 // TODO
