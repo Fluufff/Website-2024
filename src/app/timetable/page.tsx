@@ -28,13 +28,6 @@ const LinkFix = ({ className, children }: any) => (
 );
 const Modal = (props: any) => (props.isOpen ? props.children : 'no modal');
 
-// TODO
-const pathOr =
-  (defVal: any, path: string[]) =>
-  (x: any): any =>
-    // wonky if we expect undefined, but that'll go away soon anyway
-    path.reduce((y, k) => y?.[k], x) ?? defVal;
-
 export default function TimetablePage() {
   // Lower = W I D E R
   // Higher = tighter
@@ -70,18 +63,20 @@ export default function TimetablePage() {
   }, []);
 
   useEffect(() => {
-    getSchedule().then((schedule) => {
-      setEvents(pathOr([], ['_embedded', 'events'])(schedule));
-      setLocations(pathOr([], ['_embedded', 'locations'])(schedule));
+    getSchedule().then((response) => {
+      const responseEvents = response?._embedded?.events ?? [];
+      const responseLocations = response?._embedded?.locations ?? [];
 
-      if (!pathOr([], ['_embedded', 'events'])(schedule).length) {
+      setEvents(responseEvents);
+      setLocations(responseLocations);
+
+      if (!responseEvents.length) {
         return;
       }
 
-      const tempEvents = pathOr([], ['_embedded', 'events'])(schedule);
       const differenceFromFlatHour =
         (Math.min(
-          ...tempEvents.map((x: IEvent) =>
+          ...responseEvents.map((x: IEvent) =>
             Number(parseISO(x.begin).getTime() / 1000),
           ),
         ) %
@@ -89,13 +84,13 @@ export default function TimetablePage() {
         60;
       const firstEvent =
         Math.min(
-          ...tempEvents.map((x: IEvent) =>
+          ...responseEvents.map((x: IEvent) =>
             Number(parseISO(x.begin).getTime() / 1000),
           ),
         ) -
         (60 - differenceFromFlatHour) * 60;
       const lastEvent = Math.max(
-        ...tempEvents.map((x: IEvent) =>
+        ...responseEvents.map((x: IEvent) =>
           Number(parseISO(x.end).getTime() / 1000),
         ),
       );
