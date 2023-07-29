@@ -1,38 +1,19 @@
-// TODO: split server/client part
-'use client';
-
-import { useEffect, useState } from 'react';
-import { IEvent, ILocation, getSchedule } from './data.tmp';
+import { getSchedule } from './data.tmp';
 import Timetable from './Timetable';
 
 // TODO
-const useTranslation = () => [
-  function t(key: string) {
-    return key;
-  },
-];
+function t(key: string) {
+  return key;
+}
 
 // TODO
 const headerImage = '';
 
-export default function TimetablePage() {
-  const [t] = useTranslation();
-  const [events, setEvents] = useState<IEvent[]>([]);
-  const [locations, setLocations] = useState<ILocation[]>([]);
-
-  useEffect(() => {
-    getSchedule().then((response) => {
-      const responseEvents = response?._embedded?.events ?? [];
-      const responseLocations = response?._embedded?.locations ?? [];
-
-      setEvents(responseEvents);
-      setLocations(responseLocations);
-
-      if (!responseEvents.length) {
-        return;
-      }
-    });
-  }, []);
+export default async function TimetablePage() {
+  const { events, locations } = await getSchedule().then((response) => ({
+    events: response?._embedded?.events ?? [],
+    locations: response?._embedded?.locations ?? [],
+  }));
 
   return (
     <>
