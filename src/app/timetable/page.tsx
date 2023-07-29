@@ -123,12 +123,11 @@ export default function TimetablePage() {
       ...events.map((x: IEvent) => Number(parseISO(x.end).getTime() / 1000)),
     );
 
-    const conHours = [
-      // @ts-expect-error -- FIXME
-      ...Array(
+    const conHours = Array.from(
+      Array(
         Math.ceil((lastEventTimestamp - firstEventTimestamp) / (60 * 60)),
       ).keys(),
-    ];
+    );
 
     const currentTimeIndicatorPosition =
       (new Date().getTime() / 1000 - firstEventTimestamp) / scale;
