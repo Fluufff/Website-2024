@@ -5,6 +5,7 @@ import { addDays, format, parseISO, set } from 'date-fns';
 import { enGB, fr, nlBE } from 'date-fns/locale';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Modal from 'react-modal';
+import Scroll from 'react-scroll';
 
 import { getLanguage } from '@/helpers/language';
 
@@ -18,15 +19,7 @@ const useTranslation = () => [
 ];
 
 // TODO
-const animateScroll = { scrollTo: (pos: unknown) => {} };
 const gsap = { to(x: unknown, y: unknown) {} };
-
-// TODO
-const LinkFix = ({ className, children }: any) => (
-  <a href="#" className={className}>
-    {children}
-  </a>
-);
 
 const convertMsToDays = (ms: number) => {
   const msInOneSecond = 1000;
@@ -487,7 +480,7 @@ export default function Timetable({
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              animateScroll.scrollTo(300);
+              Scroll.animateScroll.scrollTo(300);
               setDisplayState('SCHEDULE');
             }}
             className={`a-button ${
@@ -499,7 +492,7 @@ export default function Timetable({
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              animateScroll.scrollTo(300);
+              Scroll.animateScroll.scrollTo(300);
               setDisplayState('TIMELINE');
             }}
             className={`a-button ${
@@ -510,7 +503,7 @@ export default function Timetable({
         </div>
         <div className="m-schedule__days">
           {days.map((day) => (
-            <LinkFix
+            <Scroll.Link
               className="a-button a-button--secondary"
               key={day.name}
               smooth={true}
@@ -521,7 +514,7 @@ export default function Timetable({
               }
               to={`p_${day.key}`}>
               {day.name}
-            </LinkFix>
+            </Scroll.Link>
           ))}
         </div>
         <div className="m-schedule__mobile-days">
@@ -540,7 +533,7 @@ export default function Timetable({
             mobileDaysVisible && 'm-schedule__mobile-days__days--visible'
           }`}>
           {days.map((day) => (
-            <LinkFix
+            <Scroll.Link
               className="a-button a-button--secondary"
               key={day.name}
               smooth={true}
@@ -552,7 +545,7 @@ export default function Timetable({
               }
               to={`p_${day.key}`}>
               {day.name}
-            </LinkFix>
+            </Scroll.Link>
           ))}
         </div>
       </div>
