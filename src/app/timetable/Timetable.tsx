@@ -55,7 +55,7 @@ export default function Timetable({
 
   const [t] = useTranslation();
 
-  const [user, setUser] = useState<IUser>();
+  const [loggedIn, setLoggedIn] = useState<boolean>();
 
   const [displayState, setDisplayState] = useState<'SCHEDULE' | 'TIMELINE'>(
     'SCHEDULE',
@@ -69,7 +69,7 @@ export default function Timetable({
 
   useEffect(() => {
     getUser().then((response) => {
-      setUser(response);
+      setLoggedIn(!!response);
     });
   }, []);
 
@@ -318,7 +318,7 @@ export default function Timetable({
             <div className="m-timetable__blocks-block" key={location.name}>
               {events
                 .filter(
-                  (event) => event.description.schedule === 'on' || !!user,
+                  (event) => event.description.schedule === 'on' || loggedIn,
                 )
                 .filter((event) => event.location.locid === location.locid)
                 .map((event, i) => (
@@ -435,7 +435,9 @@ export default function Timetable({
               </div>
             )}
             {events
-              .filter((event) => event.description.schedule === 'on' || !!user)
+              .filter(
+                (event) => event.description.schedule === 'on' || loggedIn,
+              )
               .map((event, i) => (
                 <div
                   key={i}
