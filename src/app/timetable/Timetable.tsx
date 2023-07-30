@@ -101,6 +101,9 @@ export default function Timetable({
     );
   };
 
+  const locale =
+    getLanguage() === 'nl_BE' ? nlBE : getLanguage() === 'fr_FR' ? fr : enGB;
+
   const {
     firstEventTimestamp = 0,
     lastEventTimestamp = 0,
@@ -154,12 +157,7 @@ export default function Timetable({
       ),
     ].map((_, i) => ({
       name: format(addDays(new Date(firstEventTimestamp * 1000), i), 'EEEE', {
-        locale:
-          getLanguage() === 'nl_BE'
-            ? nlBE
-            : getLanguage() === 'fr_FR'
-            ? fr
-            : enGB,
+        locale,
       }),
       key:
         i !== 0
@@ -182,7 +180,7 @@ export default function Timetable({
       currentTimeIndicatorPosition,
       conHours,
     };
-  }, [events]);
+  }, [events, locale]);
 
   useEffect(
     () => {
@@ -244,27 +242,13 @@ export default function Timetable({
                   format(
                     firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
                     'HH',
-                    {
-                      locale:
-                        getLanguage() === 'nl_BE'
-                          ? nlBE
-                          : getLanguage() === 'fr_FR'
-                          ? fr
-                          : enGB,
-                    },
+                    { locale },
                   ) === '00',
                 'm-timetable__hour-indicator--before-daybreak':
                   format(
                     firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
                     'HH',
-                    {
-                      locale:
-                        getLanguage() === 'nl_BE'
-                          ? nlBE
-                          : getLanguage() === 'fr_FR'
-                          ? fr
-                          : enGB,
-                    },
+                    { locale },
                   ) === '23',
               })}>
               <p className="m-timetable__hour-indicator__time">
@@ -282,14 +266,7 @@ export default function Timetable({
                   format(
                     firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
                     'eeee',
-                    {
-                      locale:
-                        getLanguage() === 'nl_BE'
-                          ? nlBE
-                          : getLanguage() === 'fr_FR'
-                          ? fr
-                          : enGB,
-                    },
+                    { locale },
                   )}
               </p>
               <p className="m-timetable__hour-indicator__day m-timetable__hour-indicator__day--mobile">
@@ -300,14 +277,7 @@ export default function Timetable({
                   format(
                     firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
                     'dd/MM',
-                    {
-                      locale:
-                        getLanguage() === 'nl_BE'
-                          ? nlBE
-                          : getLanguage() === 'fr_FR'
-                          ? fr
-                          : enGB,
-                    },
+                    { locale },
                   )}
               </p>
             </div>
@@ -384,14 +354,7 @@ export default function Timetable({
                       format(
                         firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
                         'HH',
-                        {
-                          locale:
-                            getLanguage() === 'nl_BE'
-                              ? nlBE
-                              : getLanguage() === 'fr_FR'
-                              ? fr
-                              : enGB,
-                        },
+                        { locale },
                       ) === '00',
                   })}
                   style={{
@@ -412,14 +375,7 @@ export default function Timetable({
                       format(
                         firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
                         'eeee',
-                        {
-                          locale:
-                            getLanguage() === 'nl_BE'
-                              ? nlBE
-                              : getLanguage() === 'fr_FR'
-                              ? fr
-                              : enGB,
-                        },
+                        { locale },
                       )}
                   </p>
                 </div>
