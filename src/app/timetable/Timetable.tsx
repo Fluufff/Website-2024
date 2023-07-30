@@ -18,9 +18,6 @@ const useTranslation = () => [
   },
 ];
 
-// TODO
-const gsap = { to(x: unknown, y: unknown) {} };
-
 const convertMsToDays = (ms: number) => {
   const msInOneSecond = 1000;
   const secondsInOneMinute = 60;
@@ -85,17 +82,23 @@ export default function Timetable({
   // }, [currentTimeIndicatorPosition]);
 
   const updateScroll = (direction: 'left' | 'right'): void => {
-    const containerWidth = (document.querySelector(
-      '.m-timetable__locations',
-    ) as any)!.offsetWidth;
+    const containerWidth = document.getElementById(
+      'm-timetable__locations',
+    )!.offsetWidth;
     const newScrollLeft =
       direction === 'left'
         ? scrollLeft - containerWidth
         : scrollLeft + containerWidth;
     setScrollLeft(newScrollLeft);
 
-    gsap.to('.m-timetable__locations', { scrollTo: { x: newScrollLeft } });
-    gsap.to('.m-timetable__blocks', { scrollTo: { x: newScrollLeft } });
+    ['m-timetable__locations', 'm-timetable__blocks'].forEach((containerId) =>
+      Scroll.animateScroll.scrollTo(newScrollLeft, {
+        containerId,
+        horizontal: true,
+        duration: 500,
+        ignoreCancelEvents: true,
+      }),
+    );
   };
 
   const {
@@ -203,7 +206,7 @@ export default function Timetable({
 
   const renderSchedule = () => (
     <div className="m-timetable">
-      <div className="m-timetable__locations">
+      <div id="m-timetable__locations" className="m-timetable__locations">
         <ul>
           {locations.map((location, i) => (
             <li key={location.name}>
@@ -310,7 +313,7 @@ export default function Timetable({
             </div>
           ))}
         </div>
-        <div className="m-timetable__blocks">
+        <div id="m-timetable__blocks" className="m-timetable__blocks">
           {locations.map((location) => (
             <div className="m-timetable__blocks-block" key={location.name}>
               {events
