@@ -4,8 +4,11 @@ import classNames from 'classnames';
 import { addDays, format, parseISO, set } from 'date-fns';
 import { enGB, fr, nlBE } from 'date-fns/locale';
 import { useEffect, useMemo, useRef, useState } from 'react';
+import Modal from 'react-modal';
+
 import { getLanguage } from '@/helpers/language';
-import { IEvent, ILocation, IUser, getUser } from './data.tmp';
+
+import { getUser, IEvent, ILocation, IUser } from './data.tmp';
 
 // TODO
 const useTranslation = () => [
@@ -24,7 +27,6 @@ const LinkFix = ({ className, children }: any) => (
     {children}
   </a>
 );
-const Modal = (props: any) => (props.isOpen ? props.children : 'no modal');
 
 const convertMsToDays = (ms: number) => {
   const msInOneSecond = 1000;
