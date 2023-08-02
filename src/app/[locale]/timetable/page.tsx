@@ -1,15 +1,24 @@
+import { createTranslator } from 'next-intl';
+
+import { getMessages } from '@/helpers/language';
+
 import { getSchedule } from './data.tmp';
 import Timetable from './Timetable';
 
 // TODO
-function t(key: string) {
-  return key;
-}
-
-// TODO
 const headerImage = '';
 
-export default async function TimetablePage() {
+export default async function TimetablePage({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  const t = await createTranslator({
+    locale,
+    messages: await getMessages(locale),
+    namespace: 'Timetable',
+  });
+
   const { events, locations } = await getSchedule().then((response) => ({
     events: response?._embedded?.events ?? [],
     locations: response?._embedded?.locations ?? [],
@@ -23,12 +32,8 @@ export default async function TimetablePage() {
           backgroundImage: `url(${headerImage})`,
         }}>
         <div className="u-container">
-          <h1 className="o-header__title">
-            {t('PAGES.SCHEDULE.HEADER.TITLE')}
-          </h1>
-          <p className="o-header__sub-title">
-            {t('PAGES.SCHEDULE.HEADER.SUB_TITLE')}
-          </p>
+          <h1 className="o-header__title">{t('header.title')}</h1>
+          <p className="o-header__sub-title">{t('header.sub_title')}</p>
         </div>
       </div>
 
@@ -41,14 +46,14 @@ export default async function TimetablePage() {
         {/* <img src={hibiscusImage} className="o-section__accent-image o-section__accent-image--alt" /> */}
         <div className="o-section__content">
           <div className="u-text-center">
-            <h3>{t('PAGES.SCHEDULE.IDEA.TITLE')}</h3>
-            <p>{t('PAGES.SCHEDULE.IDEA.DESCRIPTION')}</p>
+            <h3>{t('idea.title')}</h3>
+            <p>{t('idea.description')}</p>
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSfbhSAz-w9qpCFMfNFvnb9E5IjvEPtzlZHkl-TmVadYRIbMqQ/viewform"
               target="_blank"
               className="a-button a-button--tertiary u-margin-top"
               rel="noreferrer">
-              {t('GENERAL.BUTTONS.SUBMIT_PROPOSAL')}
+              {t('submit_proposal')}
             </a>
           </div>
         </div>

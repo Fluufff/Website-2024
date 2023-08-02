@@ -1,1 +1,16 @@
-{}
+{
+  "Timetable": {
+    "header": {
+      "title": "Planning",
+      "sub_title": "Alle evenementen op 1 plaats!"
+    },
+    "idea": {
+      "title": "Geef je eigen panel!",
+      "description": "Je kunt je eigen panel geven op Flüüfff, misschien over iets dat je leuk vindt, of iets waar je veel over weet. Je kunt een panel of een bijeenkomst (meet) voorstellen via het formulier."
+    },
+    "schedule": {
+      "not_available": "De planning is op dit moment niet beschikbaar"
+    },
+    "submit_proposal": "Voorstel indienen"
+  }
+}
