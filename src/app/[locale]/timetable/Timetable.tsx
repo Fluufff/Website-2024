@@ -7,7 +7,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import Modal from 'react-modal';
 import Scroll from 'react-scroll';
 
-import { getLanguage } from '@/helpers/language';
+import { useLanguage } from '@/helpers/language';
 
 import { getUser, IEvent, ILocation, IUser } from './data.tmp';
 
@@ -101,8 +101,8 @@ export default function Timetable({
     );
   };
 
-  const locale =
-    getLanguage() === 'nl_BE' ? nlBE : getLanguage() === 'fr_FR' ? fr : enGB;
+  const language = useLanguage();
+  const locale = language === 'nl_BE' ? nlBE : language === 'fr_FR' ? fr : enGB;
 
   const {
     firstEventTimestamp = 0,
