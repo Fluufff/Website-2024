@@ -4,7 +4,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { Inter } from 'next/font/google';
 import { notFound } from 'next/navigation';
 
-import { intlConfig } from '@/config';
+import { languages } from '@/config';
 import { getMessages } from '@/helpers/language';
 
 import type { Metadata } from 'next';
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 };
 
 export function generateStaticParams() {
-  return intlConfig.locales.map((locale) => ({ locale }));
+  return Object.keys(languages).map((locale) => ({ locale }));
 }
 
 const inter = Inter({ subsets: ['latin'] });

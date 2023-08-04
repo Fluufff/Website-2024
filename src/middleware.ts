@@ -1,10 +1,13 @@
 import createMiddleware from 'next-intl/middleware';
 
-import { intlConfig } from './config';
+import { defaultLanguage, languages } from './config';
 
 // Sets up full-featured prefix-based routing, picking the best language from
 // URL, cookies, and request headers.
-export default createMiddleware(intlConfig);
+export default createMiddleware({
+  locales: Object.keys(languages),
+  defaultLocale: defaultLanguage,
+});
 
 export const config = {
   // Skips paths not subject to internationalisation. The recommended default
