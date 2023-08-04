@@ -1,14 +1,19 @@
 'use client';
 
 import classNames from 'classnames';
+import { useLocale, useTranslations } from 'next-intl';
+import { usePathname } from 'next-intl/client';
 import Link from 'next-intl/link';
 import { useEffect, useState } from 'react';
+
+import { languages } from '@/config';
 
 export default function Menu() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const location = useLocation();
-  const [t] = useTranslation();
+  const location = usePathname();
+  const currentLanguage = useLocale();
+  const t = useTranslations();
 
   useEffect(() => {
     const onScroll = (e: Event) => {
@@ -33,7 +38,7 @@ export default function Menu() {
       <div className="u-container">
         <div className="m-menu__content">
           <div className="m-menu__logo">
-            <Link to="/">
+            <Link href="/">
               Home
               {/* <img src={scrolled || open ? logoDarkImage : logoImage} alt="" /> */}
             </Link>
@@ -44,20 +49,20 @@ export default function Menu() {
           <div className="m-menu__links">
             <ul>
               <li>
-                <Link className="m-menu__link" to="/">
+                <Link className="m-menu__link" href="/">
                   {t('MENU.ITEMS.HOME')}
                 </Link>
               </li>
 
               {/* <li>
-                <Link className="m-menu__link" to="/news">
+                <Link className="m-menu__link" href="/news">
                   {t('MENU.ITEMS.NEWS')}
                 </Link>
               </li> */}
 
               {/* <li>
                 <div className="m-menu__sub-menu">
-                  <Link className="m-menu__link" to="/about">
+                  <Link className="m-menu__link" href="/about">
                     {t('MENU.ITEMS.ABOUT')}
                   </Link>
                   <div className="m-menu__sub-menu__wrapper">
@@ -66,14 +71,14 @@ export default function Menu() {
                         <li>
                           <Link
                             className="m-menu__sub-link"
-                            to="/about/fluufff">
+                            href="/about/fluufff">
                             {t('MENU.ITEMS.ABOUT_FLÜÜFFF')}
                           </Link>
                         </li>
                         <li>
                           <Link
                             className="m-menu__sub-link"
-                            to="/about/charity">
+                            href="/about/charity">
                             {t('MENU.ITEMS.CHARITY')}
                           </Link>
                         </li>
@@ -85,24 +90,24 @@ export default function Menu() {
 
               {/* <li>
 								<div className="m-menu__sub-menu">
-									<Link className="m-menu__link" to="/venue">
+									<Link className="m-menu__link" href="/venue">
 										{t('MENU.ITEMS.VENUE')}
 									</Link>
 									<div className="m-menu__sub-menu__wrapper">
 										<div className="m-menu__sub-menu__content">
 											<ul>
 												<li>
-													<Link className="m-menu__sub-link" to="/venue/hotel">
+													<Link className="m-menu__sub-link" href="/venue/hotel">
 														{t('MENU.ITEMS.HOTEL')}
 													</Link>
 												</li>
 												<li>
-													<Link className="m-menu__sub-link" to="/venue/rooms">
+													<Link className="m-menu__sub-link" href="/venue/rooms">
 														{t('MENU.ITEMS.ROOMS')}
 													</Link>
 												</li>
 												<li>
-													<Link className="m-menu__sub-link" to="/venue/getting-there">
+													<Link className="m-menu__sub-link" href="/venue/getting-there">
 														{t('MENU.ITEMS.GETTING_THERE')}
 													</Link>
 												</li>
@@ -113,20 +118,20 @@ export default function Menu() {
 							</li> */}
 
               <li>
-                <Link className="m-menu__link" to="/timetable">
+                <Link className="m-menu__link" href="/timetable">
                   {t('MENU.ITEMS.SCHEDULE')}
                 </Link>
               </li>
 
               {/* <li>
-                <Link className="m-menu__link" to="/contact-us">
+                <Link className="m-menu__link" href="/contact-us">
                   {t('MENU.ITEMS.CONTACT')}
                 </Link>
               </li> */}
 
               {/* <li>
 								<Link
-									to="/tickets"
+									href="/tickets"
 									className="m-menu__link m-menu__link-button a-button a-button--small">
 									{t('MENU.ITEMS.TICKETS')}
 								</Link>
@@ -156,24 +161,27 @@ export default function Menu() {
                 <div className="m-menu__sub-menu m-menu__languages">
                   <a href="#" className="m-menu__link">
                     <span className="uil uil-globe"></span>{' '}
-                    {languages[i18next.language]?.name}
+                    {languages[currentLanguage]?.name}
                   </a>
                   <div className="m-menu__sub-menu__wrapper">
                     <div className="m-menu__sub-menu__content">
                       <ul>
-                        {Object.keys(languages).map((languageKey) => (
-                          <li key={languageKey}>
-                            <button
-                              className={classNames({
-                                'm-menu__sub-link': true,
-                                'm-menu__sub-link--selected':
-                                  getLanguage() === languageKey,
-                              })}
-                              onClick={() => setLanguage(languageKey)}>
-                              {languages[languageKey].name}
-                            </button>
-                          </li>
-                        ))}
+                        {Object.entries(languages).map(
+                          ([languageKey, language]) => (
+                            <li key={languageKey}>
+                              <Link
+                                className={classNames({
+                                  'm-menu__sub-link': true,
+                                  'm-menu__sub-link--selected':
+                                    currentLanguage === languageKey,
+                                })}
+                                href={location}
+                                locale={languageKey}>
+                                {language.name}
+                              </Link>
+                            </li>
+                          ),
+                        )}
                       </ul>
                     </div>
                   </div>

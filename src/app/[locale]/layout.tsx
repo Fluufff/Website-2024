@@ -7,6 +7,8 @@ import { notFound } from 'next/navigation';
 import { languages } from '@/config';
 import { getMessages } from '@/helpers/language';
 
+import Menu from './Menu';
+
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -38,6 +40,7 @@ export default async function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <Menu />
           {children}
         </NextIntlClientProvider>
       </body>
