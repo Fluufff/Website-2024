@@ -34,7 +34,8 @@ export default function Menu() {
         <div className="m-menu__content">
           <div className="m-menu__logo">
             <Link to="/">
-              <img src={scrolled || open ? logoDarkImage : logoImage} alt="" />
+              Home
+              {/* <img src={scrolled || open ? logoDarkImage : logoImage} alt="" /> */}
             </Link>
           </div>
           <button className="m-menu__hamburger" onClick={() => setOpen(!open)}>
@@ -47,12 +48,14 @@ export default function Menu() {
                   {t('MENU.ITEMS.HOME')}
                 </Link>
               </li>
-              <li>
+
+              {/* <li>
                 <Link className="m-menu__link" to="/news">
                   {t('MENU.ITEMS.NEWS')}
                 </Link>
-              </li>
-              <li>
+              </li> */}
+
+              {/* <li>
                 <div className="m-menu__sub-menu">
                   <Link className="m-menu__link" to="/about">
                     {t('MENU.ITEMS.ABOUT')}
@@ -78,7 +81,8 @@ export default function Menu() {
                     </div>
                   </div>
                 </div>
-              </li>
+              </li> */}
+
               {/* <li>
 								<div className="m-menu__sub-menu">
 									<Link className="m-menu__link" to="/venue">
@@ -107,16 +111,19 @@ export default function Menu() {
 									</div>
 								</div>
 							</li> */}
+
               <li>
                 <Link className="m-menu__link" to="/timetable">
                   {t('MENU.ITEMS.SCHEDULE')}
                 </Link>
               </li>
-              <li>
+
+              {/* <li>
                 <Link className="m-menu__link" to="/contact-us">
                   {t('MENU.ITEMS.CONTACT')}
                 </Link>
-              </li>
+              </li> */}
+
               {/* <li>
 								<Link
 									to="/tickets"
@@ -124,7 +131,8 @@ export default function Menu() {
 									{t('MENU.ITEMS.TICKETS')}
 								</Link>
 							</li> */}
-              {user ? (
+
+              {/* {user ? (
                 <li>
                   <a className="m-menu__link m-menu__link-user" href="/profile">
                     <div
@@ -142,7 +150,8 @@ export default function Menu() {
                     {t('MENU.ITEMS.LOGIN')}
                   </a>
                 </li>
-              )}
+              )} */}
+
               <li>
                 <div className="m-menu__sub-menu m-menu__languages">
                   <a href="#" className="m-menu__link">
