@@ -1,11 +1,11 @@
 import '@/styles/main.scss';
 
 import { NextIntlClientProvider } from 'next-intl';
-import { Inter } from 'next/font/google';
 import { notFound } from 'next/navigation';
 
 import { languages } from '@/config';
 import { getMessages } from '@/helpers/language';
+import { readexPro } from '@/styles/fonts';
 
 import Menu from './Menu';
 
@@ -19,8 +19,6 @@ export const metadata: Metadata = {
 export function generateStaticParams() {
   return Object.keys(languages).map((locale) => ({ locale }));
 }
-
-const inter = Inter({ subsets: ['latin'] });
 
 export default async function RootLayout({
   children,
@@ -38,7 +36,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={readexPro.variable}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Menu />
           {children}
