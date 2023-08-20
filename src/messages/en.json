@@ -1,0 +1,16 @@
+{
+  "Timetable": {
+    "header": {
+      "title": "Schedule",
+      "sub_title": "All the events in one place!"
+    },
+    "idea": {
+      "title": "Host your own panel!",
+      "description": "You can host your own panel at Flüüfff, be it about something you like, or something you know a lot about. You can suggest a panel or a meet through the panel proposal form!"
+    },
+    "schedule": {
+      "not_available": "The schedule is not available at the moment"
+    },
+    "submit_proposal": "Submit proposal"
+  }
+}

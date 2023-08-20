@@ -1,0 +1,16 @@
+{
+  "Timetable": {
+    "header": {
+      "title": "Programme",
+      "sub_title": "Tous les évènements sur place"
+    },
+    "idea": {
+      "title": "Organiser votre propre évènement!",
+      "description": "Vous pouvez organiser votre présentation ou atelier à la Flüüfff, que ce soit sur un sujet qui vous passionne ou dont vous êtes expert. Vous pouvez suggérer une présentation ou une réunion via le formulaire de suggestion!"
+    },
+    "schedule": {
+      "not_available": "Le programme n'est pas disponible pour le moment"
+    },
+    "submit_proposal": "Proposer un évènement"
+  }
+}

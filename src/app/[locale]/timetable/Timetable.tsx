@@ -3,20 +3,12 @@
 import classNames from 'classnames';
 import { addDays, format, parseISO, set } from 'date-fns';
 import { enGB, fr, nlBE } from 'date-fns/locale';
+import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Modal from 'react-modal';
 import Scroll from 'react-scroll';
 
-import { getLanguage } from '@/helpers/language';
-
 import { getUser, IEvent, ILocation, IUser } from './data.tmp';
-
-// TODO
-const useTranslation = () => [
-  function t(key: string) {
-    return key;
-  },
-];
 
 const convertMsToDays = (ms: number) => {
   const msInOneSecond = 1000;
@@ -53,7 +45,7 @@ export default function Timetable({
   const scale = 20;
   const oneHourHeightInPx = 100;
 
-  const [t] = useTranslation();
+  const t = useTranslations('Timetable');
 
   const [loggedIn, setLoggedIn] = useState<boolean>();
 
@@ -101,8 +93,8 @@ export default function Timetable({
     );
   };
 
-  const locale =
-    getLanguage() === 'nl_BE' ? nlBE : getLanguage() === 'fr_FR' ? fr : enGB;
+  const language = useLocale();
+  const locale = language === 'nl' ? nlBE : language === 'fr' ? fr : enGB;
 
   const {
     firstEventTimestamp = 0,
