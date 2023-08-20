@@ -1,0 +1,162 @@
+{
+    "asset": {
+        "generator": "FBX2glTF v0.9.7",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "extensionsUsed": [
+        "KHR_draco_mesh_compression"
+    ],
+    "extensionsRequired": [
+        "KHR_draco_mesh_compression"
+    ],
+    "buffers": [
+        {
+            "byteLength": 995,
+            "uri": "data:application/octet-stream;base64,RFJBQ08CAgEBAAAAqAFUAlQAACDv+77f+77v+77v+73v+77v977v+77v+77v+77v+77vC/8C8kL/AvJC/wLyQgP/AAAAAAABAAABAAkDAAACAQEJAwABAwEDCQIAAgIBAQEADwP1BJUEC6EHA2EIJQEHSRoBCA0DN5PjL5HbeJz0Wx4dFx6S44ghVSES5+bjVQk212Qq8LWPifYYfQOLdGJn//Wln4h5YWUdOKSmhk1yGQ56mnJ9S3NoxS4gxUFuilVXi8gD7lBQhzyoWAB5BH3NkBOzzw4NaRAgZKDd+VINhi4sWoSItg3Q0GDN7OnLIpAtLQXNacdH4J2CoHLfIgltIf/LwFDGgIIG3s1xxw//ddIKse4IQKHDK9/69KKrr08N/ugPXC4QFffi4OKOQL4YAJI5sMjDenj7wOF0Wp0g/s0IHBlIrmJK+SFd39IceJcXx4EUByMcUVcO5PW2KJQalKdCBQfKI+hzhpuYfXVQEtl/B0IOIte3phBdWLQIoZS4mhCaObiy1b5kBtKlo2A5V8E7BYlU4PkCXLy/MowBEvgMChtoN8fdPvRXSSsEwAnzQlgqcCIWbFACWGtfGnx3uYmB6wUo3paYaODRxxvD3Qj+MiwucB7avm8onVU3CFrC84Rg4GAiLT0NBQhnODlo8IEjgwZ4kbEBfvcYHQB3dXEcDtp1xdyQSmOdgaS8VYUAgXDQfAP/FswMQfCSoc/ALN25QqiAEt/fgCSJfXgQCBioywAGHA0CDNT5AjCQAOQN3oeGgII1WTeOjwCpZuR/QaBgLYyalrPAe1LyRwggWG8lK1IFFN7tNgcCCNbjXFJMgM0dRQUgULA+cNJTX+AmOxUGEBisJW+mXAPxVso2gOBgrboSlc9AK005DRgwUINJGD8DlmTxNcCAgVraAvh/BjAYf9PoAvd/hh0PoZ8Z3OboQWNtqH4ZsP5k1+cCpV24XzwaiJ+C+wU1dTyQzjb2iOek4yPYP9o0ITT/LgsYWCuk+wPwI7ju/Ud/AAAAAAD/PwAAIwONOxLhB7w7wtu5rMR6PA4GAwEBBP8H6Q1JCsUIMQQZAjD////////////////////TMGDFBEETcNIevDVV/e9Pq0M+h2XzYvzSjDJvS963Mz8Nvr+6L0R3EMXluw26NiiFGYnHk8j/weS+itZtruiekrZ2S32a81QrW10Nf7KroH1EUUY/sAnU1R8zoOrg5i/x4AZpmpEweICC6diU1iV0w7kTWCKXTof/AwAA/wEAAP8CV08KBQEBAQEBAUABAAAAAAABAQAAAACAAAAAgAAAAAAAAIA/AAAAAAo="
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 995,
+            "byteOffset": 0
+        }
+    ],
+    "scenes": [
+        {
+            "name": "Root Scene",
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "accessors": [
+        {
+            "componentType": 5123,
+            "type": "SCALAR",
+            "count": 252
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC3",
+            "count": 168,
+            "min": [
+                0.00430335244163871,
+                -0.00829340703785419,
+                -0.000419156480347738
+            ],
+            "max": [
+                0.0102322967723012,
+                0.00701227178797126,
+                0.000626599125098437
+            ]
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC3",
+            "count": 168
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC2",
+            "count": 168
+        }
+    ],
+    "samplers": [
+        {}
+    ],
+    "materials": [
+        {
+            "name": "Rope",
+            "alphaMode": "OPAQUE",
+            "extras": {
+                "fromFBX": {
+                    "shadingModel": "Phong",
+                    "isTruePBR": false
+                }
+            },
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.046961322426796,
+                    0.046961322426796,
+                    0.046961322426796,
+                    1.0
+                ],
+                "metallicFactor": 0.400000005960464,
+                "roughnessFactor": 0.272165536880493
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "rope",
+            "primitives": [
+                {
+                    "material": 0,
+                    "mode": 4,
+                    "attributes": {
+                        "NORMAL": 2,
+                        "POSITION": 1,
+                        "TEXCOORD_0": 3
+                    },
+                    "indices": 0,
+                    "extensions": {
+                        "KHR_draco_mesh_compression": {
+                            "bufferView": 0,
+                            "attributes": {
+                                "NORMAL": 1,
+                                "POSITION": 0,
+                                "TEXCOORD_0": 2
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "RootNode",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "children": [
+                1
+            ]
+        },
+        {
+            "name": "rope",
+            "translation": [
+                -3.86229705810547,
+                4.83615684509277,
+                1.07288098335266
+            ],
+            "rotation": [
+                -0.53183650970459,
+                0.531836569309235,
+                -0.465993463993073,
+                0.46599343419075
+            ],
+            "scale": [
+                212.200500488281,
+                174.932159423828,
+                174.932159423828
+            ],
+            "mesh": 0
+        }
+    ]
+}
