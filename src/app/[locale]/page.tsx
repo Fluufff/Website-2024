@@ -22,9 +22,7 @@ export default function IndexPage() {
               <Image src={logoImage} alt="Flüüfff logo" />
             </div>
             <h1 className="m-hero__title">{t('PAGES.INDEX.HERO.TITLE')}</h1>
-            <p className="m-hero__intro">
-              <p>{t('PAGES.INDEX.HERO.DESCRIPTION')}</p>
-            </p>
+            <p className="m-hero__intro">{t('PAGES.INDEX.HERO.DESCRIPTION')}</p>
             <p className="m-hero__subtitle">
               {t('PAGES.INDEX.HERO.SUB_TITLE')}
             </p>

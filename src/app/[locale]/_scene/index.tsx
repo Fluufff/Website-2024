@@ -7,13 +7,16 @@ import { OrthographicCamera } from '@react-three/drei';
 // import { Loading } from '../../components/loading.component';
 import isMobile from 'is-mobile';
 import { BeachScene } from './BeachScene';
+import NoSSR from 'react-no-ssr';
 
-export const mobileOrServer = typeof window === 'undefined' || isMobile();
+export const mobile = isMobile();
 
 export default function HomepageScene() {
   return (
     <div className="o-canvas">
-      {mobileOrServer ? <StaticImageScene /> : <InteractiveScene />}
+      <NoSSR onSSR={<StaticImageScene />}>
+        {mobile ? <StaticImageScene /> : <InteractiveScene />}
+      </NoSSR>
     </div>
   );
 }
