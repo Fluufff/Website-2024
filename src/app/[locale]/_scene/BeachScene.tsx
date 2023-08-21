@@ -6,7 +6,7 @@ import {
   PresentationControls,
   Sky,
 } from '@react-three/drei';
-import { Bloom, EffectComposer, SSAO } from '@react-three/postprocessing';
+import { EffectComposer, SSAO } from '@react-three/postprocessing';
 import { BlendFunction } from 'postprocessing';
 import { useThree } from '@react-three/fiber';
 
@@ -60,7 +60,6 @@ export const BeachScene = () => {
   return (
     <>
       <EffectComposer>
-        <Bloom />
         <SSAO
           blendFunction={BlendFunction.MULTIPLY}
           distanceThreshold={1}
