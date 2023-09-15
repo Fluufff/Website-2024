@@ -7,7 +7,7 @@ const eventDtoSchema = z.object({
   fields: z.object({
     description: z.string(),
     name: z.string(),
-    room: z.object({
+    location: z.object({
       contentId: z.string(),
       fields: z.object({
         name: z.string(),
@@ -20,43 +20,48 @@ const eventDtoSchema = z.object({
 
 type EventDto = z.infer<typeof eventDtoSchema>;
 
+export interface ScheduleEvent {
+  name: string;
+  description: string;
+  startTime: string;
+  endTime: string;
+  locationId: string;
+}
+
+export interface ScheduleLocation {
+  locationId: string;
+  name: string;
+}
+
 export interface Schedule {
-  events: Array<{
-    name: string;
-    description: string;
-    startTime: string;
-    endTime: string;
-    roomId: string;
-  }>;
-  roomById: Record<
-    string,
-    {
-      name: string;
-    }
-  >;
+  events: Array<ScheduleEvent>;
+  locationById: Record<string, ScheduleLocation>;
 }
 
 function mapSchedule(scheduleDto: EventDto[]): Schedule {
   return scheduleDto.reduce<Schedule>(
     (schedule, eventDto) => {
       const { fields } = eventDto;
-      const { room: roomDto } = fields;
+      const { location: locationDto } = fields;
 
       schedule.events.push({
         name: fields.name,
         description: fields.description,
         startTime: fields['start-time'],
         endTime: fields['end-time'],
-        roomId: fields.room.contentId,
+        locationId: fields.location.contentId,
       });
 
-      schedule.roomById[roomDto.contentId] ??= { name: roomDto.fields.name };
+      schedule.locationById[locationDto.contentId] ??= {
+        locationId: locationDto.contentId,
+        name: locationDto.fields.name,
+      };
 
       return schedule;
     },
     {
       events: [],
-      roomById: {},
+      locationById: {},
     },
   );
 }
