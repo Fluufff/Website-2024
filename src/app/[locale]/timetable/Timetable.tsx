@@ -8,7 +8,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import Modal from 'react-modal';
 import Scroll from 'react-scroll';
 
-import { getUser, IEvent, ILocation, IUser } from './data.tmp';
+import { ScheduleEvent, ScheduleLocation } from '@/services/cms/schedule';
 
 const convertMsToDays = (ms: number) => {
   const msInOneSecond = 1000;
@@ -37,8 +37,8 @@ export default function Timetable({
   events,
   locations,
 }: {
-  events: IEvent[];
-  locations: ILocation[];
+  events: ScheduleEvent[];
+  locations: ScheduleLocation[];
 }) {
   // Lower = W I D E R
   // Higher = tighter
@@ -47,23 +47,15 @@ export default function Timetable({
 
   const t = useTranslations('Timetable');
 
-  const [loggedIn, setLoggedIn] = useState<boolean>();
-
   const [displayState, setDisplayState] = useState<'SCHEDULE' | 'TIMELINE'>(
     'SCHEDULE',
   );
   const [mobileDaysVisible, setMobileDaysVisible] = useState<boolean>(false);
   const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
-  const [activeEvent, setActiveEvent] = useState<IEvent>();
+  const [activeEvent, setActiveEvent] = useState<ScheduleEvent>();
   const [scrollLeft, setScrollLeft] = useState<number>(0);
 
   const scheduleRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    getUser().then((response) => {
-      setLoggedIn(!!response);
-    });
-  }, []);
 
   // useEffect(() => {
   // 	const timer = setTimeout(() => {
@@ -108,23 +100,19 @@ export default function Timetable({
 
     const differenceFromFlatHour =
       (Math.min(
-        ...events.map((x: IEvent) =>
-          Number(parseISO(x.begin).getTime() / 1000),
-        ),
+        ...events.map((x) => Number(parseISO(x.startTime).getTime() / 1000)),
       ) %
         (60 * 60)) /
       60;
 
     const firstEventTimestamp =
       Math.min(
-        ...events.map((x: IEvent) =>
-          Number(parseISO(x.begin).getTime() / 1000),
-        ),
+        ...events.map((x) => Number(parseISO(x.startTime).getTime() / 1000)),
       ) -
       (60 - differenceFromFlatHour) * 60;
 
     const lastEventTimestamp = Math.max(
-      ...events.map((x: IEvent) => Number(parseISO(x.end).getTime() / 1000)),
+      ...events.map((x) => Number(parseISO(x.endTime).getTime() / 1000)),
     );
 
     const conHours = Array.from(
@@ -189,7 +177,7 @@ export default function Timetable({
     [firstEventTimestamp, lastEventTimestamp],
   );
 
-  const showModal = (event: IEvent) => {
+  const showModal = (event: ScheduleEvent) => {
     setModalIsOpen(true);
     setActiveEvent(event);
   };
@@ -279,10 +267,7 @@ export default function Timetable({
           {locations.map((location) => (
             <div className="m-timetable__blocks-block" key={location.name}>
               {events
-                .filter(
-                  (event) => event.description.schedule === 'on' || loggedIn,
-                )
-                .filter((event) => event.location.locid === location.locid)
+                .filter((event) => event.locationId === location.locationId)
                 .map((event, i) => (
                   <div
                     key={i}
@@ -290,22 +275,20 @@ export default function Timetable({
                     className="m-timetable__event"
                     style={{
                       top:
-                        ((parseISO(event.begin).getTime() / 1000 -
+                        ((parseISO(event.startTime).getTime() / 1000 -
                           firstEventTimestamp) /
                           3600) *
                         oneHourHeightInPx,
                       height:
-                        ((parseISO(event.end).getTime() / 1000 -
-                          parseISO(event.begin).getTime() / 1000) /
+                        ((parseISO(event.endTime).getTime() / 1000 -
+                          parseISO(event.startTime).getTime() / 1000) /
                           3600) *
                         oneHourHeightInPx,
                     }}>
-                    <p className="m-schedule__event__name">
-                      {event.description.name}
-                    </p>
+                    <p className="m-schedule__event__name">{event.name}</p>
                     <p className="m-schedule__event__time">
-                      {format(parseISO(event.begin), 'HH:mm')} -{' '}
-                      {format(parseISO(event.end), 'HH:mm')}
+                      {format(parseISO(event.startTime), 'HH:mm')} -{' '}
+                      {format(parseISO(event.endTime), 'HH:mm')}
                     </p>
                   </div>
                 ))}
@@ -326,7 +309,7 @@ export default function Timetable({
         <>
           <div className="m-schedule__locations">
             {locations.map((location) => (
-              <div key={location.locid} className="m-schedule__location">
+              <div key={location.locationId} className="m-schedule__location">
                 <p>{location.name}</p>
               </div>
             ))}
@@ -382,40 +365,34 @@ export default function Timetable({
                 <p>{format(new Date().getTime(), 'HH:mm')}</p>
               </div>
             )}
-            {events
-              .filter(
-                (event) => event.description.schedule === 'on' || loggedIn,
-              )
-              .map((event, i) => (
-                <div
-                  key={i}
-                  className="m-schedule__event"
-                  onClick={() => showModal(event)}
-                  style={{
-                    left:
-                      (parseISO(event.begin).getTime() / 1000 -
-                        firstEventTimestamp) /
-                      scale,
-                    top:
-                      locations.findIndex(
-                        (location) => location.locid === event.location.locid,
-                      ) *
-                        86 +
-                      30,
-                    width:
-                      (parseISO(event.end).getTime() / 1000 -
-                        parseISO(event.begin).getTime() / 1000) /
-                      scale,
-                  }}>
-                  <p className="m-schedule__event__name">
-                    {event.description.name}
-                  </p>
-                  <p className="m-schedule__event__time">
-                    {format(parseISO(event.begin), 'HH:mm')} -{' '}
-                    {format(parseISO(event.end), 'HH:mm')}
-                  </p>
-                </div>
-              ))}
+            {events.map((event, i) => (
+              <div
+                key={i}
+                className="m-schedule__event"
+                onClick={() => showModal(event)}
+                style={{
+                  left:
+                    (parseISO(event.startTime).getTime() / 1000 -
+                      firstEventTimestamp) /
+                    scale,
+                  top:
+                    locations.findIndex(
+                      (location) => location.locationId === event.locationId,
+                    ) *
+                      86 +
+                    30,
+                  width:
+                    (parseISO(event.endTime).getTime() / 1000 -
+                      parseISO(event.startTime).getTime() / 1000) /
+                    scale,
+                }}>
+                <p className="m-schedule__event__name">{event.name}</p>
+                <p className="m-schedule__event__time">
+                  {format(parseISO(event.startTime), 'HH:mm')} -{' '}
+                  {format(parseISO(event.endTime), 'HH:mm')}
+                </p>
+              </div>
+            ))}
           </div>
         </>
       )}
@@ -513,8 +490,8 @@ export default function Timetable({
         <div
           onClick={() => setModalIsOpen(false)}
           className="ReactModal__Close uil uil-times"></div>
-        <h3>{activeEvent?.description?.name}</h3>
-        <p>{activeEvent?.description?.description}</p>
+        <h3>{activeEvent?.name}</h3>
+        <p>{activeEvent?.description}</p>
       </Modal>
     </>
   );

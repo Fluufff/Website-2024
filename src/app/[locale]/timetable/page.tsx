@@ -2,8 +2,8 @@ import { createTranslator } from 'next-intl';
 
 import { getMessages } from '@/helpers/language';
 
-import { getSchedule } from './data.tmp';
 import Timetable from './Timetable';
+import { getSchedule } from '@/services/cms/schedule';
 
 // TODO
 const headerImage = '';
@@ -19,10 +19,7 @@ export default async function TimetablePage({
     namespace: 'Timetable',
   });
 
-  const { events, locations } = await getSchedule().then((response) => ({
-    events: response?._embedded?.events ?? [],
-    locations: response?._embedded?.locations ?? [],
-  }));
+  const { events, locationById } = await getSchedule(locale);
 
   return (
     <>
@@ -39,7 +36,7 @@ export default async function TimetablePage({
 
       <div className="o-section o-section--alt o-section--no-hidden">
         <div className="o-section__content">
-          <Timetable events={events} locations={locations} />
+          <Timetable events={events} locations={Object.values(locationById)} />
         </div>
       </div>
       <div className="o-section o-section--dark">
