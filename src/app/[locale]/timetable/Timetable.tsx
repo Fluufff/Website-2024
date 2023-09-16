@@ -106,10 +106,10 @@ export default function Timetable({
         (60 * 60)) /
       60;
 
-    /** first hour during which an event starts */
+    /** timestamp of first hour during which an event starts */
     const firstEventTimestamp =
       Math.min(...events.map((x) => parseISO(x.startTime).getTime() / 1000)) -
-      (60 - differenceFromFlatHour) * 60;
+      differenceFromFlatHour * 60;
 
     const lastEventTimestamp = Math.max(
       ...events.map((x) => parseISO(x.endTime).getTime() / 1000),
