@@ -1,6 +1,5 @@
 'use client';
 
-import classNames from 'classnames';
 import { addDays, format, parseISO, set } from 'date-fns';
 import { enGB, fr, nlBE } from 'date-fns/locale';
 import { useLocale, useTranslations } from 'next-intl';
@@ -9,6 +8,9 @@ import Modal from 'react-modal';
 import Scroll from 'react-scroll';
 
 import { ScheduleEvent, ScheduleLocation } from '@/services/cms/schedule';
+
+import { ScheduleView } from './_components/ScheduleView';
+import { TimelineView } from './_components/TimelineView';
 
 const convertMsToDays = (ms: number) => {
   const msInOneSecond = 1000;
@@ -55,7 +57,7 @@ export default function Timetable({
   const [activeEvent, setActiveEvent] = useState<ScheduleEvent>();
   const [scrollLeft, setScrollLeft] = useState<number>(0);
 
-  const scheduleRef = useRef<HTMLDivElement>(null);
+  const timelineRef = useRef<HTMLDivElement>(null);
 
   // useEffect(() => {
   // 	const timer = setTimeout(() => {
@@ -167,9 +169,9 @@ export default function Timetable({
       if (
         firstEventTimestamp < new Date().getTime() / 1000 &&
         new Date().getTime() / 1000 < lastEventTimestamp &&
-        scheduleRef.current
+        timelineRef.current
       ) {
-        scheduleRef.current!.scrollLeft =
+        timelineRef.current!.scrollLeft =
           (new Date().getTime() / 1000 - firstEventTimestamp) / scale - 100;
       }
     },
@@ -182,221 +184,32 @@ export default function Timetable({
     setActiveEvent(event);
   };
 
-  const renderSchedule = () => (
-    <div className="m-timetable">
-      <div id="m-timetable__locations" className="m-timetable__locations">
-        <ul>
-          {locations.map((location, i) => (
-            <li key={location.name}>
-              {i !== 0 ? (
-                <span
-                  onClick={() => updateScroll('left')}
-                  className="uil uil-arrow-left"></span>
-              ) : (
-                <div></div>
-              )}
-              <span>{location.name}</span>
-              {i !== locations.length - 1 ? (
-                <span
-                  onClick={() => updateScroll('right')}
-                  className="uil uil-arrow-right"></span>
-              ) : (
-                <div></div>
-              )}
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className="m-timetable__events">
-        <div className="m-timetable__hours">
-          {conHours.map((hour) => (
-            <div
-              id={`p_${firstEventTimestamp + hour * 60 * 60}`}
-              key={hour}
-              style={{
-                height: `${oneHourHeightInPx}px`,
-              }}
-              className={classNames({
-                'm-timetable__hour-indicator': true,
-                'm-timetable__hour-indicator--daybreak':
-                  format(
-                    firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                    'HH',
-                    { locale },
-                  ) === '00',
-                'm-timetable__hour-indicator--before-daybreak':
-                  format(
-                    firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                    'HH',
-                    { locale },
-                  ) === '23',
-              })}>
-              <p className="m-timetable__hour-indicator__time">
-                {firstEventTimestamp !== Infinity &&
-                  format(
-                    firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                    'HH:mm',
-                  )}
-              </p>
-              <p className="m-timetable__hour-indicator__day">
-                {format(
-                  firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                  'HH',
-                ) === '00' &&
-                  format(
-                    firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                    'eeee',
-                    { locale },
-                  )}
-              </p>
-              <p className="m-timetable__hour-indicator__day m-timetable__hour-indicator__day--mobile">
-                {format(
-                  firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                  'HH',
-                ) === '00' &&
-                  format(
-                    firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                    'dd/MM',
-                    { locale },
-                  )}
-              </p>
-            </div>
-          ))}
-        </div>
-        <div id="m-timetable__blocks" className="m-timetable__blocks">
-          {locations.map((location) => (
-            <div className="m-timetable__blocks-block" key={location.name}>
-              {events
-                .filter((event) => event.locationId === location.locationId)
-                .map((event, i) => (
-                  <div
-                    key={i}
-                    onClick={() => showModal(event)}
-                    className="m-timetable__event"
-                    style={{
-                      top:
-                        ((parseISO(event.startTime).getTime() / 1000 -
-                          firstEventTimestamp) /
-                          3600) *
-                        oneHourHeightInPx,
-                      height:
-                        ((parseISO(event.endTime).getTime() / 1000 -
-                          parseISO(event.startTime).getTime() / 1000) /
-                          3600) *
-                        oneHourHeightInPx,
-                    }}>
-                    <p className="m-schedule__event__name">{event.name}</p>
-                    <p className="m-schedule__event__time">
-                      {format(parseISO(event.startTime), 'HH:mm')} -{' '}
-                      {format(parseISO(event.endTime), 'HH:mm')}
-                    </p>
-                  </div>
-                ))}
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
+  const scheduleView = (
+    <ScheduleView
+      events={events}
+      locations={locations}
+      conHours={conHours}
+      firstEventTimestamp={firstEventTimestamp}
+      oneHourHeightInPx={oneHourHeightInPx}
+      locale={locale}
+      updateScroll={updateScroll}
+      showModal={showModal}
+    />
   );
 
-  const renderTimeline = () => (
-    <div className="m-schedule">
-      {!events.length ? (
-        <div className="m-schedule__empty">
-          <p>{t('PAGES.SCHEDULE.SCHEDULE.NOT_AVAILABLE')}</p>
-        </div>
-      ) : (
-        <>
-          <div className="m-schedule__locations">
-            {locations.map((location) => (
-              <div key={location.locationId} className="m-schedule__location">
-                <p>{location.name}</p>
-              </div>
-            ))}
-          </div>
-          <div
-            className="m-schedule__events"
-            id="m-schedule__events"
-            ref={scheduleRef}>
-            <div className="m-schedule__hour-indicators">
-              {conHours.map((hour) => (
-                <div
-                  id={`p_${firstEventTimestamp + hour * 60 * 60}`}
-                  key={hour}
-                  className={classNames({
-                    'm-schedule__hour-indicator': true,
-                    'm-schedule__hour-indicator--daybreak':
-                      format(
-                        firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                        'HH',
-                        { locale },
-                      ) === '00',
-                  })}
-                  style={{
-                    left: (hour * 60 * 60) / scale,
-                  }}>
-                  <p className="m-schedule__hour-indicator__time">
-                    {firstEventTimestamp !== Infinity &&
-                      format(
-                        firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                        'HH:mm',
-                      )}
-                  </p>
-                  <p className="m-schedule__hour-indicator__day">
-                    {format(
-                      firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                      'HH',
-                    ) === '00' &&
-                      format(
-                        firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                        'eeee',
-                        { locale },
-                      )}
-                  </p>
-                </div>
-              ))}
-            </div>
-            {isCurrentTimeInSchedule && (
-              <div
-                className="m-schedule__current-time-indicator"
-                style={{
-                  left: currentTimeIndicatorPosition,
-                }}>
-                <p>{format(new Date().getTime(), 'HH:mm')}</p>
-              </div>
-            )}
-            {events.map((event, i) => (
-              <div
-                key={i}
-                className="m-schedule__event"
-                onClick={() => showModal(event)}
-                style={{
-                  left:
-                    (parseISO(event.startTime).getTime() / 1000 -
-                      firstEventTimestamp) /
-                    scale,
-                  top:
-                    locations.findIndex(
-                      (location) => location.locationId === event.locationId,
-                    ) *
-                      86 +
-                    30,
-                  width:
-                    (parseISO(event.endTime).getTime() / 1000 -
-                      parseISO(event.startTime).getTime() / 1000) /
-                    scale,
-                }}>
-                <p className="m-schedule__event__name">{event.name}</p>
-                <p className="m-schedule__event__time">
-                  {format(parseISO(event.startTime), 'HH:mm')} -{' '}
-                  {format(parseISO(event.endTime), 'HH:mm')}
-                </p>
-              </div>
-            ))}
-          </div>
-        </>
-      )}
-    </div>
+  const timelineView = (
+    <TimelineView
+      ref={timelineRef}
+      events={events}
+      locations={locations}
+      conHours={conHours}
+      firstEventTimestamp={firstEventTimestamp}
+      scale={scale}
+      locale={locale}
+      isCurrentTimeInSchedule={isCurrentTimeInSchedule}
+      currentTimeIndicatorPosition={currentTimeIndicatorPosition}
+      showModal={showModal}
+    />
   );
 
   return (
@@ -479,8 +292,8 @@ export default function Timetable({
           ))}
         </div>
       </div>
-      {displayState === 'SCHEDULE' && renderSchedule()}
-      {displayState === 'TIMELINE' && renderTimeline()}
+      {displayState === 'SCHEDULE' && scheduleView}
+      {displayState === 'TIMELINE' && timelineView}
 
       <Modal
         ariaHideApp={false}
