@@ -100,16 +100,16 @@ export default function Timetable({
   } = useMemo(() => {
     if (!events.length) return {};
 
-    /** minute (0-59) at which the very first event happens */
-    const differenceFromFlatHour =
-      (Math.min(...events.map((x) => parseISO(x.startTime).getTime() / 1000)) %
-        (60 * 60)) /
-      60;
-
-    /** timestamp of first hour during which an event starts */
+    /** origin timestamp for the view, on the hour and with at least 10 minutes
+     * padding relative to first event */
     const firstEventTimestamp =
-      Math.min(...events.map((x) => parseISO(x.startTime).getTime() / 1000)) -
-      differenceFromFlatHour * 60;
+      Math.floor(
+        (Math.min(...events.map((x) => parseISO(x.startTime).getTime())) /
+          (1000 * 60) -
+          10) /
+          60,
+      ) *
+      (60 * 60);
 
     const lastEventTimestamp = Math.max(
       ...events.map((x) => parseISO(x.endTime).getTime() / 1000),
