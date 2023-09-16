@@ -100,23 +100,24 @@ export default function Timetable({
   } = useMemo(() => {
     if (!events.length) return {};
 
+    /** minute (0-59) at which the very first event happens */
     const differenceFromFlatHour =
-      (Math.min(
-        ...events.map((x) => Number(parseISO(x.startTime).getTime() / 1000)),
-      ) %
+      (Math.min(...events.map((x) => parseISO(x.startTime).getTime() / 1000)) %
         (60 * 60)) /
       60;
 
+    /** first hour during which an event starts */
     const firstEventTimestamp =
-      Math.min(
-        ...events.map((x) => Number(parseISO(x.startTime).getTime() / 1000)),
-      ) -
+      Math.min(...events.map((x) => parseISO(x.startTime).getTime() / 1000)) -
       (60 - differenceFromFlatHour) * 60;
 
     const lastEventTimestamp = Math.max(
-      ...events.map((x) => Number(parseISO(x.endTime).getTime() / 1000)),
+      ...events.map((x) => parseISO(x.endTime).getTime() / 1000),
     );
 
+    /**
+     * list enumerating hours of the con relative to first hour, starting with 0
+     */
     const conHours = Array.from(
       Array(
         Math.ceil((lastEventTimestamp - firstEventTimestamp) / (60 * 60)),
