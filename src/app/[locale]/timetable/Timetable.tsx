@@ -2,7 +2,7 @@
 
 import { addDays, format, set } from 'date-fns';
 import { enGB, fr, nlBE } from 'date-fns/locale';
-import { useLocale, useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Modal from 'react-modal';
 import Scroll from 'react-scroll';
@@ -46,8 +46,6 @@ export default function Timetable({
   // Higher = tighter
   const scale = 20;
   const oneHourHeightInPx = 100;
-
-  const t = useTranslations('Timetable');
 
   const [displayState, setDisplayState] = useState<'SCHEDULE' | 'TIMELINE'>(
     'SCHEDULE',
