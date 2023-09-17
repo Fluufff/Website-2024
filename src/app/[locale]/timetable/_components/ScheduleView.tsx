@@ -1,7 +1,7 @@
 'use client';
 
 import classNames from 'classnames';
-import { addHours, differenceInSeconds, format } from 'date-fns';
+import { addHours, differenceInSeconds, format, getHours } from 'date-fns';
 
 import { ScheduleEvent, ScheduleLocation } from '@/services/cms/schedule';
 
@@ -54,6 +54,8 @@ export function ScheduleView({
         <div className="m-timetable__hours">
           {conHours.map((hour) => {
             const time = addHours(firstEventTimestamp, hour);
+            const firstHour = getHours(time) === 0;
+            const lastHour = getHours(time) === 23;
             return (
               <div
                 id={`p_${+time}`}
@@ -63,21 +65,17 @@ export function ScheduleView({
                 }}
                 className={classNames({
                   'm-timetable__hour-indicator': true,
-                  'm-timetable__hour-indicator--daybreak':
-                    format(time, 'HH', { locale }) === '00',
-                  'm-timetable__hour-indicator--before-daybreak':
-                    format(time, 'HH', { locale }) === '23',
+                  'm-timetable__hour-indicator--daybreak': firstHour,
+                  'm-timetable__hour-indicator--before-daybreak': lastHour,
                 })}>
                 <p className="m-timetable__hour-indicator__time">
                   {format(time, 'HH:mm')}
                 </p>
                 <p className="m-timetable__hour-indicator__day">
-                  {format(time, 'HH') === '00' &&
-                    format(time, 'eeee', { locale })}
+                  {firstHour && format(time, 'eeee', { locale })}
                 </p>
                 <p className="m-timetable__hour-indicator__day m-timetable__hour-indicator__day--mobile">
-                  {format(time, 'HH') === '00' &&
-                    format(time, 'dd/MM', { locale })}
+                  {firstHour && format(time, 'dd/MM', { locale })}
                 </p>
               </div>
             );

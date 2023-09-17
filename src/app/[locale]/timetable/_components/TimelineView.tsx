@@ -1,7 +1,7 @@
 'use client';
 
 import classNames from 'classnames';
-import { addHours, differenceInSeconds, format } from 'date-fns';
+import { addHours, differenceInSeconds, format, getHours } from 'date-fns';
 import { useTranslations } from 'next-intl';
 import { forwardRef } from 'react';
 
@@ -58,22 +58,21 @@ export const TimelineView = forwardRef<HTMLDivElement, TimelineViewProps>(
               <div className="m-schedule__hour-indicators">
                 {conHours.map((hour) => {
                   const time = addHours(firstEventTimestamp, hour);
+                  const firstHour = getHours(time) === 0;
                   return (
                     <div
                       id={`p_${+time}`}
                       key={hour}
                       className={classNames({
                         'm-schedule__hour-indicator': true,
-                        'm-schedule__hour-indicator--daybreak':
-                          format(time, 'HH', { locale }) === '00',
+                        'm-schedule__hour-indicator--daybreak': firstHour,
                       })}
                       style={{ left: hour * scale }}>
                       <p className="m-schedule__hour-indicator__time">
                         {format(time, 'HH:mm')}
                       </p>
                       <p className="m-schedule__hour-indicator__day">
-                        {format(time, 'HH') === '00' &&
-                          format(time, 'eeee', { locale })}
+                        {firstHour && format(time, 'eeee', { locale })}
                       </p>
                     </div>
                   );
