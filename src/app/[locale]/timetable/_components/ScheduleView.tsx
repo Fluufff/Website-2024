@@ -1,7 +1,7 @@
 'use client';
 
 import classNames from 'classnames';
-import { format, parseISO } from 'date-fns';
+import { format } from 'date-fns';
 
 import { ScheduleEvent, ScheduleLocation } from '@/services/cms/schedule';
 
@@ -118,20 +118,20 @@ export function ScheduleView({
                     className="m-timetable__event"
                     style={{
                       top:
-                        ((parseISO(event.startTime).getTime() / 1000 -
+                        ((event.startTime.getTime() / 1000 -
                           firstEventTimestamp) /
                           3600) *
                         oneHourHeightInPx,
                       height:
-                        ((parseISO(event.endTime).getTime() / 1000 -
-                          parseISO(event.startTime).getTime() / 1000) /
+                        ((event.endTime.getTime() / 1000 -
+                          event.startTime.getTime() / 1000) /
                           3600) *
                         oneHourHeightInPx,
                     }}>
                     <p className="m-schedule__event__name">{event.name}</p>
                     <p className="m-schedule__event__time">
-                      {format(parseISO(event.startTime), 'HH:mm')} -{' '}
-                      {format(parseISO(event.endTime), 'HH:mm')}
+                      {format(event.startTime, 'HH:mm')} -{' '}
+                      {format(event.endTime, 'HH:mm')}
                     </p>
                   </div>
                 ))}

@@ -13,8 +13,8 @@ const eventDtoSchema = z.object({
         name: z.string(),
       }),
     }),
-    'start-time': z.string(),
-    'end-time': z.string(),
+    'start-time': z.coerce.date(),
+    'end-time': z.coerce.date(),
   }),
 });
 
@@ -23,8 +23,8 @@ type EventDto = z.infer<typeof eventDtoSchema>;
 export interface ScheduleEvent {
   name: string;
   description: string;
-  startTime: string;
-  endTime: string;
+  startTime: Date;
+  endTime: Date;
   locationId: string;
 }
 

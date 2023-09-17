@@ -1,7 +1,7 @@
 'use client';
 
 import classNames from 'classnames';
-import { format, parseISO } from 'date-fns';
+import { format } from 'date-fns';
 import { useTranslations } from 'next-intl';
 import { forwardRef } from 'react';
 
@@ -109,8 +109,7 @@ export const TimelineView = forwardRef<HTMLDivElement, TimelineViewProps>(
                   onClick={() => showModal(event)}
                   style={{
                     left:
-                      (parseISO(event.startTime).getTime() / 1000 -
-                        firstEventTimestamp) /
+                      (event.startTime.getTime() / 1000 - firstEventTimestamp) /
                       scale,
                     top:
                       locations.findIndex(
@@ -119,14 +118,14 @@ export const TimelineView = forwardRef<HTMLDivElement, TimelineViewProps>(
                         86 +
                       30,
                     width:
-                      (parseISO(event.endTime).getTime() / 1000 -
-                        parseISO(event.startTime).getTime() / 1000) /
+                      (event.endTime.getTime() / 1000 -
+                        event.startTime.getTime() / 1000) /
                       scale,
                   }}>
                   <p className="m-schedule__event__name">{event.name}</p>
                   <p className="m-schedule__event__time">
-                    {format(parseISO(event.startTime), 'HH:mm')} -{' '}
-                    {format(parseISO(event.endTime), 'HH:mm')}
+                    {format(event.startTime, 'HH:mm')} -{' '}
+                    {format(event.endTime, 'HH:mm')}
                   </p>
                 </div>
               ))}

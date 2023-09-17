@@ -1,6 +1,6 @@
 'use client';
 
-import { addDays, format, parseISO, set } from 'date-fns';
+import { addDays, format, set } from 'date-fns';
 import { enGB, fr, nlBE } from 'date-fns/locale';
 import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -104,15 +104,14 @@ export default function Timetable({
      * padding relative to first event */
     const firstEventTimestamp =
       Math.floor(
-        (Math.min(...events.map((x) => parseISO(x.startTime).getTime())) /
-          (1000 * 60) -
+        (Math.min(...events.map((x) => x.startTime.getTime())) / (1000 * 60) -
           10) /
           60,
       ) *
       (60 * 60);
 
     const lastEventTimestamp = Math.max(
-      ...events.map((x) => parseISO(x.endTime).getTime() / 1000),
+      ...events.map((x) => x.endTime.getTime() / 1000),
     );
 
     /**
