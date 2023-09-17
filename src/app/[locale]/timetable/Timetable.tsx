@@ -42,10 +42,10 @@ export default function Timetable({
   events: ScheduleEvent[];
   locations: ScheduleLocation[];
 }) {
-  // Lower = W I D E R
-  // Higher = tighter
-  const scale = 20;
-  const oneHourHeightInPx = 100;
+  /** pixels per hour */
+  const timelineScale = 180;
+  /** pixels per hour */
+  const scheduleScale = 100;
 
   const [displayState, setDisplayState] = useState<'SCHEDULE' | 'TIMELINE'>(
     'SCHEDULE',
@@ -122,7 +122,8 @@ export default function Timetable({
     );
 
     const currentTimeIndicatorPosition =
-      (new Date().getTime() / 1000 - firstEventTimestamp) / scale;
+      ((new Date().getTime() / 1000 - firstEventTimestamp) / (60 * 60)) *
+      timelineScale;
 
     const isCurrentTimeInSchedule =
       firstEventTimestamp < new Date().getTime() / 1000 &&
@@ -170,7 +171,10 @@ export default function Timetable({
         timelineRef.current
       ) {
         timelineRef.current!.scrollLeft =
-          (new Date().getTime() / 1000 - firstEventTimestamp) / scale - 100;
+          (new Date().getTime() / 1000 - firstEventTimestamp) /
+            (60 * 60) /
+            timelineScale -
+          100;
       }
     },
     // these only update once
@@ -188,7 +192,7 @@ export default function Timetable({
       locations={locations}
       conHours={conHours}
       firstEventTimestamp={firstEventTimestamp}
-      oneHourHeightInPx={oneHourHeightInPx}
+      scale={scheduleScale}
       locale={locale}
       updateScroll={updateScroll}
       showModal={showModal}
@@ -202,7 +206,7 @@ export default function Timetable({
       locations={locations}
       conHours={conHours}
       firstEventTimestamp={firstEventTimestamp}
-      scale={scale}
+      scale={timelineScale}
       locale={locale}
       isCurrentTimeInSchedule={isCurrentTimeInSchedule}
       currentTimeIndicatorPosition={currentTimeIndicatorPosition}

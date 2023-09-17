@@ -69,9 +69,7 @@ export const TimelineView = forwardRef<HTMLDivElement, TimelineViewProps>(
                           { locale },
                         ) === '00',
                     })}
-                    style={{
-                      left: (hour * 60 * 60) / scale,
-                    }}>
+                    style={{ left: hour * scale }}>
                     <p className="m-schedule__hour-indicator__time">
                       {firstEventTimestamp !== Infinity &&
                         format(
@@ -109,7 +107,9 @@ export const TimelineView = forwardRef<HTMLDivElement, TimelineViewProps>(
                   onClick={() => showModal(event)}
                   style={{
                     left:
-                      (event.startTime.getTime() / 1000 - firstEventTimestamp) /
+                      ((event.startTime.getTime() / 1000 -
+                        firstEventTimestamp) /
+                        (60 * 60)) *
                       scale,
                     top:
                       locations.findIndex(
@@ -118,8 +118,8 @@ export const TimelineView = forwardRef<HTMLDivElement, TimelineViewProps>(
                         86 +
                       30,
                     width:
-                      (event.endTime.getTime() / 1000 -
-                        event.startTime.getTime() / 1000) /
+                      ((event.endTime.getTime() - event.startTime.getTime()) /
+                        (60 * 60 * 1000)) *
                       scale,
                   }}>
                   <p className="m-schedule__event__name">{event.name}</p>

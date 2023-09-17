@@ -10,7 +10,7 @@ interface ScheduleViewProps {
   locations: ScheduleLocation[];
   conHours: number[];
   firstEventTimestamp: number;
-  oneHourHeightInPx: number;
+  scale: number;
   locale: Locale;
   updateScroll: (direction: 'left' | 'right') => void;
   showModal: (event: ScheduleEvent) => void;
@@ -20,7 +20,7 @@ export function ScheduleView({
   locations,
   conHours,
   firstEventTimestamp,
-  oneHourHeightInPx,
+  scale,
   locale,
   updateScroll,
   showModal,
@@ -57,7 +57,7 @@ export function ScheduleView({
               id={`p_${firstEventTimestamp + hour * 60 * 60}`}
               key={hour}
               style={{
-                height: `${oneHourHeightInPx}px`,
+                height: `${scale}px`,
               }}
               className={classNames({
                 'm-timetable__hour-indicator': true,
@@ -121,12 +121,12 @@ export function ScheduleView({
                         ((event.startTime.getTime() / 1000 -
                           firstEventTimestamp) /
                           3600) *
-                        oneHourHeightInPx,
+                        scale,
                       height:
                         ((event.endTime.getTime() / 1000 -
                           event.startTime.getTime() / 1000) /
                           3600) *
-                        oneHourHeightInPx,
+                        scale,
                     }}>
                     <p className="m-schedule__event__name">{event.name}</p>
                     <p className="m-schedule__event__time">
