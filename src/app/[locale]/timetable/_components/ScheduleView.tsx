@@ -1,7 +1,7 @@
 'use client';
 
 import classNames from 'classnames';
-import { format } from 'date-fns';
+import { addHours, differenceInSeconds, format } from 'date-fns';
 
 import { ScheduleEvent, ScheduleLocation } from '@/services/cms/schedule';
 
@@ -9,7 +9,7 @@ interface ScheduleViewProps {
   events: ScheduleEvent[];
   locations: ScheduleLocation[];
   conHours: number[];
-  firstEventTimestamp: number;
+  firstEventTimestamp: Date;
   scale: number;
   locale: Locale;
   updateScroll: (direction: 'left' | 'right') => void;
@@ -52,59 +52,36 @@ export function ScheduleView({
       </div>
       <div className="m-timetable__events">
         <div className="m-timetable__hours">
-          {conHours.map((hour) => (
-            <div
-              id={`p_${firstEventTimestamp + hour * 60 * 60}`}
-              key={hour}
-              style={{
-                height: `${scale}px`,
-              }}
-              className={classNames({
-                'm-timetable__hour-indicator': true,
-                'm-timetable__hour-indicator--daybreak':
-                  format(
-                    firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                    'HH',
-                    { locale },
-                  ) === '00',
-                'm-timetable__hour-indicator--before-daybreak':
-                  format(
-                    firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                    'HH',
-                    { locale },
-                  ) === '23',
-              })}>
-              <p className="m-timetable__hour-indicator__time">
-                {firstEventTimestamp !== Infinity &&
-                  format(
-                    firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                    'HH:mm',
-                  )}
-              </p>
-              <p className="m-timetable__hour-indicator__day">
-                {format(
-                  firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                  'HH',
-                ) === '00' &&
-                  format(
-                    firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                    'eeee',
-                    { locale },
-                  )}
-              </p>
-              <p className="m-timetable__hour-indicator__day m-timetable__hour-indicator__day--mobile">
-                {format(
-                  firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                  'HH',
-                ) === '00' &&
-                  format(
-                    firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                    'dd/MM',
-                    { locale },
-                  )}
-              </p>
-            </div>
-          ))}
+          {conHours.map((hour) => {
+            const time = addHours(firstEventTimestamp, hour);
+            return (
+              <div
+                id={`p_${+time}`}
+                key={hour}
+                style={{
+                  height: `${scale}px`,
+                }}
+                className={classNames({
+                  'm-timetable__hour-indicator': true,
+                  'm-timetable__hour-indicator--daybreak':
+                    format(time, 'HH', { locale }) === '00',
+                  'm-timetable__hour-indicator--before-daybreak':
+                    format(time, 'HH', { locale }) === '23',
+                })}>
+                <p className="m-timetable__hour-indicator__time">
+                  {format(time, 'HH:mm')}
+                </p>
+                <p className="m-timetable__hour-indicator__day">
+                  {format(time, 'HH') === '00' &&
+                    format(time, 'eeee', { locale })}
+                </p>
+                <p className="m-timetable__hour-indicator__day m-timetable__hour-indicator__day--mobile">
+                  {format(time, 'HH') === '00' &&
+                    format(time, 'dd/MM', { locale })}
+                </p>
+              </div>
+            );
+          })}
         </div>
         <div id="m-timetable__blocks" className="m-timetable__blocks">
           {locations.map((location) => (
@@ -118,13 +95,14 @@ export function ScheduleView({
                     className="m-timetable__event"
                     style={{
                       top:
-                        ((event.startTime.getTime() / 1000 -
-                          firstEventTimestamp) /
+                        (differenceInSeconds(
+                          event.startTime,
+                          firstEventTimestamp,
+                        ) /
                           3600) *
                         scale,
                       height:
-                        ((event.endTime.getTime() / 1000 -
-                          event.startTime.getTime() / 1000) /
+                        (differenceInSeconds(event.endTime, event.startTime) /
                           3600) *
                         scale,
                     }}>

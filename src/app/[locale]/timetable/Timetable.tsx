@@ -1,6 +1,16 @@
 'use client';
 
-import { addDays, format, set } from 'date-fns';
+import {
+  addDays,
+  differenceInHours,
+  differenceInSeconds,
+  format,
+  isAfter,
+  isBefore,
+  set,
+  startOfHour,
+  sub,
+} from 'date-fns';
 import { enGB, fr, nlBE } from 'date-fns/locale';
 import { useLocale } from 'next-intl';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -89,8 +99,8 @@ export default function Timetable({
   const locale = language === 'nl' ? nlBE : language === 'fr' ? fr : enGB;
 
   const {
-    firstEventTimestamp = 0,
-    lastEventTimestamp = 0,
+    firstEventTimestamp = new Date(0),
+    lastEventTimestamp = new Date(0),
     days = [],
     isCurrentTimeInSchedule = undefined,
     currentTimeIndicatorPosition = 0,
@@ -100,57 +110,49 @@ export default function Timetable({
 
     /** origin timestamp for the view, on the hour and with at least 10 minutes
      * padding relative to first event */
-    const firstEventTimestamp =
-      Math.floor(
-        (Math.min(...events.map((x) => x.startTime.getTime())) / (1000 * 60) -
-          10) /
-          60,
-      ) *
-      (60 * 60);
+    const firstEventTimestamp = startOfHour(
+      sub(Math.min(...events.map((x) => +x.startTime)), { minutes: 10 }),
+    );
 
-    const lastEventTimestamp = Math.max(
-      ...events.map((x) => x.endTime.getTime() / 1000),
+    const lastEventTimestamp = new Date(
+      Math.max(...events.map((x) => +x.endTime.getTime())),
     );
 
     /**
      * list enumerating hours of the con relative to first hour, starting with 0
      */
     const conHours = Array.from(
-      Array(
-        Math.ceil((lastEventTimestamp - firstEventTimestamp) / (60 * 60)),
-      ).keys(),
+      Array(differenceInHours(lastEventTimestamp, firstEventTimestamp)).keys(),
     );
 
+    const now = new Date();
+
     const currentTimeIndicatorPosition =
-      ((new Date().getTime() / 1000 - firstEventTimestamp) / (60 * 60)) *
+      (differenceInSeconds(now, firstEventTimestamp, {}) / 3600) *
       timelineScale;
 
     const isCurrentTimeInSchedule =
-      firstEventTimestamp < new Date().getTime() / 1000 &&
-      new Date().getTime() / 1000 < lastEventTimestamp;
+      isBefore(now, lastEventTimestamp) && isAfter(now, firstEventTimestamp);
 
     const days = [
       ...new Array(
-        getDaysBetweenDates(
-          new Date(firstEventTimestamp * 1000),
-          new Date(lastEventTimestamp * 1000),
-        ),
+        getDaysBetweenDates(firstEventTimestamp, lastEventTimestamp),
       ),
     ].map((_, i) => ({
-      name: format(addDays(new Date(firstEventTimestamp * 1000), i), 'EEEE', {
+      name: format(addDays(firstEventTimestamp, i), 'EEEE', {
         locale,
       }),
       key:
         i !== 0
           ? addDays(
-              set(new Date(firstEventTimestamp * 1000), {
+              set(firstEventTimestamp, {
                 hours: 7,
                 minutes: 0,
                 seconds: 0,
               }),
               i,
-            ).getTime() / 1000
-          : firstEventTimestamp,
+            ).getTime()
+          : +firstEventTimestamp,
     }));
 
     return {
@@ -165,20 +167,17 @@ export default function Timetable({
 
   useEffect(
     () => {
-      if (
-        firstEventTimestamp < new Date().getTime() / 1000 &&
-        new Date().getTime() / 1000 < lastEventTimestamp &&
-        timelineRef.current
-      ) {
-        timelineRef.current!.scrollLeft =
-          (new Date().getTime() / 1000 - firstEventTimestamp) /
-            (60 * 60) /
-            timelineScale -
-          100;
+      if (isCurrentTimeInSchedule && timelineRef.current) {
+        timelineRef.current!.scrollLeft = currentTimeIndicatorPosition - 100;
       }
     },
     // these only update once
-    [firstEventTimestamp, lastEventTimestamp],
+    [
+      isCurrentTimeInSchedule,
+      firstEventTimestamp,
+      lastEventTimestamp,
+      currentTimeIndicatorPosition,
+    ],
   );
 
   const showModal = (event: ScheduleEvent) => {

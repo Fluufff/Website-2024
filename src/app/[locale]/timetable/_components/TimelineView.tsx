@@ -1,7 +1,7 @@
 'use client';
 
 import classNames from 'classnames';
-import { format } from 'date-fns';
+import { addHours, differenceInSeconds, format } from 'date-fns';
 import { useTranslations } from 'next-intl';
 import { forwardRef } from 'react';
 
@@ -11,7 +11,7 @@ interface TimelineViewProps {
   events: ScheduleEvent[];
   locations: ScheduleLocation[];
   conHours: number[];
-  firstEventTimestamp: number;
+  firstEventTimestamp: Date;
   locale: Locale;
   scale: number;
   isCurrentTimeInSchedule: boolean | undefined;
@@ -56,40 +56,28 @@ export const TimelineView = forwardRef<HTMLDivElement, TimelineViewProps>(
               id="m-schedule__events"
               ref={scheduleRef}>
               <div className="m-schedule__hour-indicators">
-                {conHours.map((hour) => (
-                  <div
-                    id={`p_${firstEventTimestamp + hour * 60 * 60}`}
-                    key={hour}
-                    className={classNames({
-                      'm-schedule__hour-indicator': true,
-                      'm-schedule__hour-indicator--daybreak':
-                        format(
-                          firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                          'HH',
-                          { locale },
-                        ) === '00',
-                    })}
-                    style={{ left: hour * scale }}>
-                    <p className="m-schedule__hour-indicator__time">
-                      {firstEventTimestamp !== Infinity &&
-                        format(
-                          firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                          'HH:mm',
-                        )}
-                    </p>
-                    <p className="m-schedule__hour-indicator__day">
-                      {format(
-                        firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                        'HH',
-                      ) === '00' &&
-                        format(
-                          firstEventTimestamp * 1000 + hour * 60 * 60 * 1000,
-                          'eeee',
-                          { locale },
-                        )}
-                    </p>
-                  </div>
-                ))}
+                {conHours.map((hour) => {
+                  const time = addHours(firstEventTimestamp, hour);
+                  return (
+                    <div
+                      id={`p_${+time}`}
+                      key={hour}
+                      className={classNames({
+                        'm-schedule__hour-indicator': true,
+                        'm-schedule__hour-indicator--daybreak':
+                          format(time, 'HH', { locale }) === '00',
+                      })}
+                      style={{ left: hour * scale }}>
+                      <p className="m-schedule__hour-indicator__time">
+                        {format(time, 'HH:mm')}
+                      </p>
+                      <p className="m-schedule__hour-indicator__day">
+                        {format(time, 'HH') === '00' &&
+                          format(time, 'eeee', { locale })}
+                      </p>
+                    </div>
+                  );
+                })}
               </div>
               {isCurrentTimeInSchedule && (
                 <div
@@ -107,9 +95,11 @@ export const TimelineView = forwardRef<HTMLDivElement, TimelineViewProps>(
                   onClick={() => showModal(event)}
                   style={{
                     left:
-                      ((event.startTime.getTime() / 1000 -
-                        firstEventTimestamp) /
-                        (60 * 60)) *
+                      (differenceInSeconds(
+                        event.startTime,
+                        firstEventTimestamp,
+                      ) /
+                        3600) *
                       scale,
                     top:
                       locations.findIndex(
@@ -118,8 +108,8 @@ export const TimelineView = forwardRef<HTMLDivElement, TimelineViewProps>(
                         86 +
                       30,
                     width:
-                      ((event.endTime.getTime() - event.startTime.getTime()) /
-                        (60 * 60 * 1000)) *
+                      (differenceInSeconds(event.endTime, event.startTime) /
+                        3600) *
                       scale,
                   }}>
                   <p className="m-schedule__event__name">{event.name}</p>
