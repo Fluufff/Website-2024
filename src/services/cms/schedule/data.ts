@@ -1,5 +1,7 @@
 import * as z from 'zod';
 
+import { contentPage } from '../util';
+
 const eventDtoSchema = z.object({
   id: z.string(),
   name: z.string(),
@@ -67,4 +69,6 @@ function mapSchedule(scheduleDto: EventDto[]): Schedule {
 }
 
 export const parseSchedule = (data: unknown) =>
-  z.array(eventDtoSchema).transform(mapSchedule).parse(data);
+  contentPage(eventDtoSchema)
+    .transform((page) => mapSchedule(page._embedded.content))
+    .parse(data);
