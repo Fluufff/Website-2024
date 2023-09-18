@@ -23,7 +23,8 @@
     "react-dom": "18.2.0",
     "react-modal": "^3.16.1",
     "react-scroll": "^1.8.9",
-    "typescript": "5.1.6"
+    "typescript": "5.1.6",
+    "zod": "^3.22.2"
   },
   "devDependencies": {
     "@types/react-modal": "^3.16.0",
