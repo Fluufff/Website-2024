@@ -5,7 +5,7 @@ import * as THREE from 'three';
 import { DRACO_FOLDER, ASSET_FOLDER } from '../constants';
 
 const material = new THREE.MeshPhysicalMaterial({
-  color: '#368F00',
+  color: '#7FC500',
   metalness: 0.2,
   roughness: 0.1,
   ior: 0,
