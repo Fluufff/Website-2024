@@ -1,11 +1,12 @@
-import danceImage from '/public/dance.jpg';
-import logoImage from '/public/full-logo.png';
-import panelsImage from '/public/panels.jpg';
-import showNightImage from '/public/shownight.jpg';
-import Link from './NextIntlLink';
 import Image from 'next/image';
 
+import danceImage from '@/assets/dance.jpg';
+import logoImage from '@/assets/full-logo.png';
+import panelsImage from '@/assets/panels.jpg';
+import showNightImage from '@/assets/shownight.jpg';
+
 import HomepageScene from './_scene';
+import Link from './NextIntlLink';
 import ScrollLink from './ScrollLink';
 
 const t = (key: string) => key;
@@ -46,7 +47,7 @@ export default function IndexPage() {
               <div
                 className="m-activities__item__image"
                 style={{
-                  backgroundImage: `url(${danceImage})`,
+                  backgroundImage: `url(${danceImage.src})`,
                 }}
               />
               <h3>{t('PAGES.INDEX.ACTIVITIES.DANCES.TITLE')}</h3>
@@ -61,7 +62,7 @@ export default function IndexPage() {
               <div
                 className="m-activities__item__image"
                 style={{
-                  backgroundImage: `url(${panelsImage})`,
+                  backgroundImage: `url(${panelsImage.src})`,
                 }}
               />
               <h3>{t('PAGES.INDEX.ACTIVITIES.PANELS.TITLE')}</h3>
@@ -83,7 +84,7 @@ export default function IndexPage() {
               <div
                 className="m-activities__item__image"
                 style={{
-                  backgroundImage: `url(${showNightImage})`,
+                  backgroundImage: `url(${showNightImage.src})`,
                 }}
               />
               <h3>{t('PAGES.INDEX.ACTIVITIES.SHOW_NIGHT.TITLE')}</h3>
