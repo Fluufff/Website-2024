@@ -41,7 +41,7 @@ function InteractiveScene() {
             <BeachScene />
             <directionalLight
               position={[10, 20, -5]}
-              intensity={1}
+              intensity={Math.PI}
               castShadow
               color="#e6770f"
             />
