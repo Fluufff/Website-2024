@@ -1,4 +1,5 @@
 .o-canvas {
+	background-color: $grey-darkest;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -21,8 +22,7 @@
 	}
 
 	&__fallback {
-		// FIXME: do we want to keep this background?
-		// background: url('../../images/3d-background.jpg') center center;
+		background: url('~@/assets/3d-background.png') center center;
 		background-size: cover;
 		position: absolute;
 		top: 0;
