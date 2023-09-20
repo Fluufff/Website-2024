@@ -1,23 +1,23 @@
-import React, { useCallback, useEffect, useRef } from 'react';
-import * as THREE from 'three';
 import {
   ContactShadows,
   Environment,
   PresentationControls,
   Sky,
 } from '@react-three/drei';
+import { useThree } from '@react-three/fiber';
 import { EffectComposer, SSAO } from '@react-three/postprocessing';
 import { BlendFunction } from 'postprocessing';
-import { useThree } from '@react-three/fiber';
+import React, { useCallback, useEffect, useRef } from 'react';
+import * as THREE from 'three';
 
-import { Sand } from './components/Sand';
-import { Water } from './components/Water';
+import { ErodedLightString } from './ErodedLightString';
+import { Barrels } from './components/Barrels';
+import { ErodedTrees } from './components/ErodedTrees';
+import { Furry } from './components/Furry';
 import { Rocks } from './components/Rocks';
 import { Rope } from './components/Rope';
-import { ErodedLightString } from './ErodedLightString';
-import { Furry } from './components/Furry';
-import { ErodedTrees } from './components/ErodedTrees';
-import { Barrels } from './components/Barrels';
+import { Sand } from './components/Sand';
+import { Water } from './components/Water';
 import { ASSET_FOLDER } from './constants';
 
 export const BeachScene = () => {

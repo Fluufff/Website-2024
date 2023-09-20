@@ -1,15 +1,14 @@
 import '@/styles/main.scss';
 
-import { NextIntlClientProvider } from 'next-intl';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { NextIntlClientProvider } from 'next-intl';
+
+import Menu from './Menu';
 
 import { languages } from '@/config';
 import { getMessages } from '@/helpers/language';
 import { readexPro } from '@/styles/fonts';
-
-import Menu from './Menu';
-
-import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Create Next App',

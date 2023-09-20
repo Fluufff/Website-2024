@@ -17,10 +17,10 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import Modal from 'react-modal';
 import Scroll from 'react-scroll';
 
-import { ScheduleEvent, ScheduleLocation } from '@/services/cms/schedule';
-
 import { ScheduleView } from './_components/ScheduleView';
 import { TimelineView } from './_components/TimelineView';
+
+import { ScheduleEvent, ScheduleLocation } from '@/services/cms/schedule';
 
 const convertMsToDays = (ms: number) => {
   const msInOneSecond = 1000;

@@ -1,8 +1,8 @@
 import { createTranslator } from 'next-intl';
 
-import { getMessages } from '@/helpers/language';
-
 import Timetable from './Timetable';
+
+import { getMessages } from '@/helpers/language';
 import { getSchedule } from '@/services/cms/schedule';
 
 // TODO
