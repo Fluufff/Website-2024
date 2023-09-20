@@ -27,7 +27,6 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-modal": "^3.16.1",
-    "react-no-ssr": "^1.1.0",
     "react-scroll": "^1.8.9",
     "three": "^0.155.0",
     "typescript": "5.1.6",
