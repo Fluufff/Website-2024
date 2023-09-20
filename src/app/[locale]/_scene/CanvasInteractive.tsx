@@ -1,17 +1,37 @@
 'use client';
 
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 
-import { OrthographicCamera } from '@react-three/drei';
+import { Loader, OrthographicCamera } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 
 import { BeachScene } from './BeachScene';
 
+const DoneTrigger = ({
+  loadingRef,
+}: {
+  loadingRef: React.RefObject<HTMLDivElement>;
+}) => {
+  useEffect(() => {
+    loadingRef.current?.classList.remove('m-loading--done');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    return () => loadingRef.current?.classList.add('m-loading--done');
+  }, [loadingRef]);
+
+  return null;
+};
+
 export default function CanvasInteractive() {
+  const loadingRef = React.useRef<HTMLDivElement>(null);
+
   return (
     <>
-      {/* <Loading /> */}
-      <Suspense fallback={null}>
+      <div
+        // m-loading--done is removed while loading
+        className="m-loading m-loading--done"
+        ref={loadingRef}
+      />
+      <Suspense fallback={<DoneTrigger loadingRef={loadingRef} />}>
         <Canvas className="o-canvas__element" frameloop="demand" shadows={true}>
           {/* <Stats /> */}
           <OrthographicCamera

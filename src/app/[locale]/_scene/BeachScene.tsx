@@ -27,16 +27,6 @@ export const BeachScene = () => {
     invalidateInner();
   }, [invalidateInner]);
 
-  useEffect(() => {
-    // Dirty hack to fadeout loading screen
-    // TODO: find a better way to sort this.
-    setTimeout(
-      () =>
-        document.querySelector('.m-loading')?.classList.add('m-loading--done'),
-      1000,
-    );
-  }, []);
-
   const endMove = (intervalId: any) => {
     const canvas = document.querySelector('.o-canvas__element')!;
 
