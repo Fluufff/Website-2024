@@ -2,7 +2,7 @@
 
 import React, { Suspense, useEffect } from 'react';
 
-import { Loader, OrthographicCamera } from '@react-three/drei';
+import { OrthographicCamera } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 
 import { BeachScene } from './BeachScene';
