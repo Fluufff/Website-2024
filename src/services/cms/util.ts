@@ -30,6 +30,21 @@ export const contentWithFields = <T extends z.ZodRawShape>(fields: T) =>
     fields: z.object(fields),
   });
 
+class CmsApiError extends Error {
+  constructor(public response: Response) {
+    super(`${response.status} ${response.statusText} (${response.url})`);
+    this.name = this.constructor.name;
+  }
+}
+
 export function fetchCmsSiteData(path: string, requestInit?: RequestInit) {
-  return fetch(`${cmsRoot}/sites/${cmsSite}/${path}`, requestInit);
+  return fetch(`${cmsRoot}/sites/${cmsSite}/${path}`, requestInit).then(
+    (response) => {
+      if (response.ok) {
+        return response;
+      } else {
+        throw new CmsApiError(response);
+      }
+    },
+  );
 }
