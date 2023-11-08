@@ -10,11 +10,19 @@ import Link from '@/helpers/NextIntlLink';
 
 const t = (s: string) => s;
 
-export default async function HotelPage({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+interface Props {
+  params: {
+    locale: string;
+  };
+}
+
+export async function generateMetadata({ params: { locale } }: Props) {
+  return {
+    title: (await getHotelPage(locale)).title,
+  };
+}
+
+export default async function HotelPage({ params: { locale } }: Props) {
   const pageContent = await getHotelPage(locale);
 
   return (
