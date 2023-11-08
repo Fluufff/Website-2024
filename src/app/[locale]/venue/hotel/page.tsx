@@ -1,12 +1,12 @@
 import classNames from 'classnames';
 import React from 'react';
 
-import Link from '../../NextIntlLink';
 import ScrollLink from '../../ScrollLink';
 
 import { getHotelPage } from './fetch';
 
 import CmsRichText from '@/helpers/CmsRichText';
+import Link from '@/helpers/NextIntlLink';
 
 const t = (s: string) => s;
 
