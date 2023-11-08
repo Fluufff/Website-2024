@@ -3,16 +3,19 @@ import {
   convertNodeToReactElement,
 } from '@hedgedoc/html-to-react';
 import { isTag } from 'domhandler';
-import Link from 'next/link';
 import React from 'react';
 import { useMemo } from 'react';
 import sanitize from 'sanitize-html';
 
+import Link from '@/helpers/NextIntlLink';
+
 /** Processes an unsanitized HTML string into a React tree, with node
  * replacement.
  *
- * - `a` tags are processed into `next/link` Link elements to enable SPA
- *   routing. Preserves children, and attributes href/target.
+ * - `a` tags are processed into `next-intl/link` Link elements to enable SPA
+ *   routing. Preserves children, and attributes href/target. Because we use
+ *   `next-intl/link`, links that omit the locale prefix point to the language
+ *   currently in use.
  *
  * Compatible with SSR.
  */
