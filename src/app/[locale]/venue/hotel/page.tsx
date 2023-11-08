@@ -1,11 +1,12 @@
 import classNames from 'classnames';
 import React from 'react';
-import sanitizeHtml from 'sanitize-html';
 
 import Link from '../../NextIntlLink';
 import ScrollLink from '../../ScrollLink';
 
 import { getHotelPage } from './fetch';
+
+import CmsRichText from '@/helpers/CmsRichText';
 
 const t = (s: string) => s;
 
@@ -37,7 +38,7 @@ export default async function HotelPage({
         </div>
         <div className="u-col-sm-7">
           <h3>{pageContent.hotel.title}</h3>
-          <RichText content={pageContent.hotel.body} />
+          <CmsRichText dirtyHtml={pageContent.hotel.body} />
           <div className="m-button-group">
             <Link href="/venue/getting-there" className="a-button">
               {t('GENERAL.BUTTONS.GETTING_THERE')}
@@ -59,12 +60,12 @@ export default async function HotelPage({
         <div className="u-col-sm-6" id="restaurant">
           <img src="restaurantImage" alt="restaurant image" />
           <h4>{pageContent.restaurant.title}</h4>
-          <RichText content={pageContent.restaurant.body} />
+          <CmsRichText dirtyHtml={pageContent.restaurant.body} />
         </div>
         <div className="u-col-sm-6">
           <img src="brusselsImage" alt="image of brussels" />
           <h4>{pageContent.surroundings.title}</h4>
-          <RichText content={pageContent.surroundings.body} />
+          <CmsRichText dirtyHtml={pageContent.surroundings.body} />
         </div>
       </RowSection>
     </>
@@ -81,33 +82,5 @@ function RowSection({
         <div className="u-row">{children}</div>
       </div>
     </div>
-  );
-}
-
-interface RichTextProps {
-  as?: 'div';
-  className?: string;
-  content: string;
-}
-
-function RichText({
-  as: Component = 'div',
-  className,
-  content,
-}: RichTextProps) {
-  const safeContent = sanitizeHtml(content, {
-    allowedAttributes: {
-      a: sanitizeHtml.defaults.allowedAttributes.a.concat(['rel']),
-    },
-    transformTags: {
-      a: sanitizeHtml.simpleTransform('a', { rel: 'noreferrer' }),
-    },
-  });
-
-  return (
-    <Component
-      className={className}
-      dangerouslySetInnerHTML={{ __html: safeContent }}
-    />
   );
 }
