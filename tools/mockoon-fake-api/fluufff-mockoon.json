@@ -129,8 +129,8 @@
       "uuid": "859bf0ca-0879-4062-b542-19bd6a81d6ab"
     }
   ],
-  "proxyMode": false,
-  "proxyHost": "",
+  "proxyMode": true,
+  "proxyHost": "https://ibs.sh",
   "proxyRemovePrefix": false,
   "tlsOptions": {
     "enabled": false,
