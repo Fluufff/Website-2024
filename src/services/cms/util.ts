@@ -22,6 +22,14 @@ export const contentPage = <T extends z.ZodTypeAny>(contentItem: T) =>
     }),
   });
 
+export const contentWithFields = <T extends z.ZodRawShape>(fields: T) =>
+  z.object({
+    id: z.string(),
+    slug: z.string(),
+    name: z.string(),
+    fields: z.object(fields),
+  });
+
 export function fetchCmsSiteData(path: string, requestInit?: RequestInit) {
   return fetch(`${cmsRoot}/sites/${cmsSite}/${path}`, requestInit);
 }

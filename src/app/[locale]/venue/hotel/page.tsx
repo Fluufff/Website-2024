@@ -1,58 +1,17 @@
+import classNames from 'classnames';
 import React from 'react';
 import sanitizeHtml from 'sanitize-html';
 
 import Link from '../../NextIntlLink';
 import ScrollLink from '../../ScrollLink';
-import classNames from 'classnames';
+
+import { getHotelPage } from './fetch';
 
 const t = (s: string) => s;
 
-const pageContent = {
-  hotel: {
-    title: 'Tempore, inventore beatae.',
-    body: `
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Officiis quos at inventore excepturi obcaecati nemo nisi praesentium,
-        cupiditate vel error eius sint ipsum quibusdam necessitatibus? Aut
-        dignissimos corporis sunt reiciendis.
-      </p>
-    `,
-  },
+export default async function HotelPage() {
+  const pageContent = await getHotelPage();
 
-  restaurant: {
-    title: 'Tempore, inventore beatae.',
-    body: `
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
-        aliquid quo asperiores autem molestias, harum amet aspernatur! Quos, eaque
-        sunt cum, quasi porro deserunt quod unde perspiciatis suscipit reprehenderit
-        illo
-        <a href="https://www.hotelbedford.be/en/an-la-carte-restaurant-menu/" target="_blank">here</a>.
-      </p>
-    `,
-  },
-
-  surroundings: {
-    title: 'Ea, assumenda repudiandae.',
-    body: `
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Laborum dolor ipsum voluptatum omnis porro, totam, optio
-        blanditiis molestiae saepe atque ipsam delectus impedit beatae.
-        Quae id doloremque omnis temporibus veritatis.
-      </p>
-      <ul>
-        <li><p>Repellendus beatae esse qui nemo.</p></li>
-        <li><p>Provident repellat quaerat incidunt exercitationem!</p></li>
-        <li><p>Rerum minima reiciendis sunt atque?</p></li>
-        <li><p>Quos reprehenderit repudiandae quasi praesentium.</p></li>
-      </ul>
-    `,
-  },
-};
-
-export default function HotelPage() {
   return (
     <>
       <div
@@ -63,8 +22,8 @@ export default function HotelPage() {
           }
         }>
         <div className="u-container">
-          <h1 className="o-header__title">Lorem, ipsum dolor.</h1>
-          <p className="o-header__sub-title">Dolorum, eos illum.</p>
+          <h1 className="o-header__title">{pageContent.title}</h1>
+          <p className="o-header__sub-title">{pageContent.subtitle}</p>
         </div>
       </div>
 
