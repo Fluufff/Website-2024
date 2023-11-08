@@ -22,10 +22,13 @@ const hotelPageModel = contentWithFields({
   }),
 });
 
-export async function getHotelPage() {
-  const res = await fetchCmsSiteData('content/hotel?lang=en', {
+export async function getHotelPage(lang: string) {
+  const queryString = new URLSearchParams({ lang });
+
+  const res = await fetchCmsSiteData('content/hotel?' + queryString, {
     next: { tags: ['cms', 'cms.hotel'] },
   });
+
   return hotelPageModel
     .transform((data) => data.fields)
     .parse(await res.json());

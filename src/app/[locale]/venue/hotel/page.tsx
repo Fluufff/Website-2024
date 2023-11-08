@@ -9,8 +9,12 @@ import { getHotelPage } from './fetch';
 
 const t = (s: string) => s;
 
-export default async function HotelPage() {
-  const pageContent = await getHotelPage();
+export default async function HotelPage({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  const pageContent = await getHotelPage(locale);
 
   return (
     <>
