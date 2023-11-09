@@ -4,7 +4,7 @@ import React, { FC, useRef } from 'react';
 import { DRACO_FOLDER, ASSET_FOLDER } from '../constants';
 
 export const Rocks: FC<JSX.IntrinsicElements['group']> = (props) => {
-  const group = useRef();
+  const group = useRef<THREE.Group>(null);
   const { nodes } = useGLTF(
     `${ASSET_FOLDER}/rocks_out/rocks.gltf`,
     DRACO_FOLDER,

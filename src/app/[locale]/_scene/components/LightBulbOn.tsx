@@ -4,7 +4,7 @@ import * as THREE from 'three';
 export const LightBulbOn: FC<
   JSX.IntrinsicElements['group'] & { on?: boolean; color?: string }
 > = (props = { color: '#FFFFFF' }) => {
-  const group = useRef();
+  const group = useRef<THREE.Group>(null);
 
   return (
     <group ref={group} {...props}>

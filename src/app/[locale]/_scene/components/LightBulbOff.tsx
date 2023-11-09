@@ -3,7 +3,7 @@ import React, { FC, useRef } from 'react';
 export const LightBulbOff: FC<
   JSX.IntrinsicElements['group'] & { on?: boolean; color?: string }
 > = (props = { color: '#FFFFFF' }) => {
-  const group = useRef();
+  const group = useRef<THREE.Group>(null);
 
   return (
     <group ref={group} {...props}>
