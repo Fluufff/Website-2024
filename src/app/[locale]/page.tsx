@@ -1,6 +1,6 @@
+import { Metadata } from 'next';
 import Image from 'next/image';
 
-import Link from './NextIntlLink';
 import ScrollLink from './ScrollLink';
 import HomepageScene from './_scene';
 
@@ -8,6 +8,7 @@ import danceImage from '@/assets/dance.jpg';
 import logoImage from '@/assets/full-logo.png';
 import panelsImage from '@/assets/panels.jpg';
 import showNightImage from '@/assets/shownight.jpg';
+import Link from '@/helpers/NextIntlLink';
 
 const t = (key: string) => key;
 
