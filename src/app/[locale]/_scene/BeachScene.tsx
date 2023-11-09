@@ -7,7 +7,7 @@ import {
 import { useThree } from '@react-three/fiber';
 import { EffectComposer, SSAO } from '@react-three/postprocessing';
 import { BlendFunction } from 'postprocessing';
-import React, { useCallback, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
 import { ErodedLightString } from './ErodedLightString';
@@ -20,32 +20,47 @@ import { Sand } from './components/Sand';
 import { Water } from './components/Water';
 import { ASSET_FOLDER } from './constants';
 
+/** Sets up event listeners for manual invalidation with PresentationControls.
+ *
+ * Workaround for https://github.com/pmndrs/drei/issues/1529. Unlike other
+ * controls, PresentationControls does not call `invalidate` and is therefore
+ * not compatible with `frameloop="demand"` out of the box.
+ *
+ * @returns a cleanup function that does not interrupt the current interaction
+ */
+function setupDragWorkaround(
+  element: Element,
+  invalidate: () => void,
+): () => void {
+  function onStartDrag() {
+    element.addEventListener('mousemove', invalidate);
+  }
+
+  function onEndDrag() {
+    element.removeEventListener('mousemove', invalidate);
+
+    // give the spring animation time to finish
+    const intervalId = setInterval(invalidate, 30);
+    setTimeout(() => clearInterval(intervalId), 5000);
+  }
+
+  element.addEventListener('mousedown', onStartDrag);
+  element.addEventListener('mouseup', onEndDrag);
+
+  return () => {
+    element.removeEventListener('mousedown', onStartDrag);
+    element.removeEventListener('mouseup', onEndDrag);
+  };
+}
+
 export const BeachScene = () => {
   const ref = useRef<any>();
-  const { invalidate: invalidateInner } = useThree();
-  const invalidate = useCallback(() => {
-    invalidateInner();
-  }, [invalidateInner]);
-
-  const endMove = (intervalId: any) => {
-    const canvas = document.querySelector('.o-canvas__element')!;
-
-    clearInterval(intervalId);
-    canvas.removeEventListener('mousemove', invalidate);
-    canvas.removeEventListener('mouseup', endMove);
-  };
+  const { invalidate } = useThree();
 
   useEffect(() => {
-    const canvas = document.querySelector('.o-canvas__element')!;
-
-    canvas.addEventListener('mousedown', () => {
-      canvas.addEventListener('mousemove', invalidate);
-      canvas.addEventListener('mouseup', () => {
-        const intervalId = setInterval(invalidate, 30);
-        setTimeout(() => endMove(intervalId), 5000);
-      });
-    });
-  }, []);
+    const canvas = document.querySelector('.o-canvas__element');
+    return canvas ? setupDragWorkaround(canvas, () => invalidate()) : undefined;
+  }, [invalidate]);
 
   return (
     <>

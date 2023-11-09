@@ -1,6 +1,5 @@
 'use client';
 
-
 import { OrthographicCamera } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import React, { Suspense, useEffect } from 'react';
