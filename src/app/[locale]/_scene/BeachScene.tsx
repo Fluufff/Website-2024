@@ -34,12 +34,10 @@ function setupDragWorkaround(
 ): () => void {
   function onStartDrag() {
     element.addEventListener('mousemove', invalidate);
-    element.addEventListener('mouseup', onEndDrag);
   }
 
   function onEndDrag() {
     element.removeEventListener('mousemove', invalidate);
-    element.removeEventListener('mouseup', onEndDrag);
 
     // give the spring animation time to finish
     const intervalId = setInterval(invalidate, 30);
@@ -47,8 +45,12 @@ function setupDragWorkaround(
   }
 
   element.addEventListener('mousedown', onStartDrag);
+  element.addEventListener('mouseup', onEndDrag);
 
-  return () => element.removeEventListener('mousedown', onStartDrag);
+  return () => {
+    element.removeEventListener('mousedown', onStartDrag);
+    element.removeEventListener('mouseup', onEndDrag);
+  };
 }
 
 export const BeachScene = () => {
