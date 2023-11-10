@@ -3267,14 +3267,14 @@ negotiator@^0.6.3:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
-next-intl@^2.22.1:
-  version "2.22.1"
-  resolved "https://registry.yarnpkg.com/next-intl/-/next-intl-2.22.1.tgz#ca04cda79fdd68723aadf869512c56e96c12caca"
-  integrity sha512-mg3CXfQRtG0lTS2zyRyTsYIl6ujQi2mAN0Xdmprce9ecUVKNOmHaMMsXOIPgFv1l+O80CavWo7m9rUfj7Zbr8w==
+next-intl@3.0.0-rc.10:
+  version "3.0.0-rc.10"
+  resolved "https://registry.yarnpkg.com/next-intl/-/next-intl-3.0.0-rc.10.tgz#a3e7f1cdd6d318b3e0dfdee67ff2952821553c93"
+  integrity sha512-8Q/CIcjRP3U/L2Xe4YDY1enEKSV8fXjc0sjddblgS6XE3sJa+/aZfRm0FT7lVLnVXI4qgCVm4Pjvyh1GEstpaQ==
   dependencies:
     "@formatjs/intl-localematcher" "^0.2.32"
     negotiator "^0.6.3"
-    use-intl "^2.22.1"
+    use-intl "3.0.0-rc.6"
 
 next@^14.0.2:
   version "14.0.2"
@@ -4649,10 +4649,10 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
-use-intl@^2.22.1:
-  version "2.22.1"
-  resolved "https://registry.yarnpkg.com/use-intl/-/use-intl-2.22.1.tgz#435504a46d1d3521aaa0ab5473576fe4b448e385"
-  integrity sha512-vTMJZrqVjErn421Ry4mxS2GuVUTWkY5zyIwu+3XvrAXH3PsPDAfWBMvVhip3kx914/IRs/4QnZ2ZaOehiZSXng==
+use-intl@3.0.0-rc.6:
+  version "3.0.0-rc.6"
+  resolved "https://registry.yarnpkg.com/use-intl/-/use-intl-3.0.0-rc.6.tgz#3c2adf3e2873807776bed85a0553e42e3f8ba8f1"
+  integrity sha512-vkPHZFFTrt/GnLPVn0HdCUeU+BgtitkuONa9e+XC3IeItd6RxJ28RMbAK43QI726N/CrAjds/fGjI8BF21u6Hw==
   dependencies:
     "@formatjs/ecma402-abstract" "^1.11.4"
     intl-messageformat "^9.3.18"

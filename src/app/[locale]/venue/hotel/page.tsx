@@ -6,7 +6,7 @@ import ScrollLink from '../../ScrollLink';
 import { getHotelPage } from './fetch';
 
 import CmsRichText from '@/helpers/CmsRichText';
-import Link from '@/helpers/NextIntlLink';
+import { Link } from '@/helpers/navigation';
 
 const t = (s: string) => s;
 

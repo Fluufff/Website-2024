@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   // TODO: description, favicon
 };
 
+// this is supposed to happen on its own -- https://github.com/amannn/next-intl/issues/521
+export const dynamic = 'force-dynamic';
+
 export function generateStaticParams() {
   return Object.keys(languages).map((locale) => ({ locale }));
 }
