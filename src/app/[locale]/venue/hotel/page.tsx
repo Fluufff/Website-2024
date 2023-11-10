@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import { unstable_setRequestLocale } from 'next-intl/server';
 import React from 'react';
 
 import ScrollLink from '../../ScrollLink';
@@ -23,6 +24,8 @@ export async function generateMetadata({ params: { locale } }: Props) {
 }
 
 export default async function HotelPage({ params: { locale } }: Props) {
+  unstable_setRequestLocale(locale);
+
   const pageContent = await getHotelPage(locale);
 
   return (

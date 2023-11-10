@@ -3,6 +3,7 @@ import '@/styles/main.scss';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
+import { unstable_setRequestLocale } from 'next-intl/server';
 
 import Menu from './Menu';
 
@@ -17,9 +18,6 @@ export const metadata: Metadata = {
   },
   // TODO: description, favicon
 };
-
-// this is supposed to happen on its own -- https://github.com/amannn/next-intl/issues/521
-export const dynamic = 'force-dynamic';
 
 export function generateStaticParams() {
   return Object.keys(languages).map((locale) => ({ locale }));
@@ -38,6 +36,8 @@ export default async function RootLayout({
   } catch {
     notFound();
   }
+
+  unstable_setRequestLocale(locale);
 
   return (
     <html lang="en">
