@@ -32,7 +32,6 @@
     "zod": "^3.22.2"
   },
   "devDependencies": {
-    "@atomic-reactor/webpack-po-loader": "^5.0.2",
     "@types/node": "20.4.4",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
@@ -44,6 +43,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-unused-imports": "^3.0.0",
+    "po2json": "^0.4.5",
     "prettier": "3.0.0",
     "sass": "^1.64.1"
   }
