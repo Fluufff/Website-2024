@@ -85,7 +85,7 @@ export const BeachScene = () => {
         />
       </EffectComposer>
       <Environment
-        files={`${ASSET_FOLDER}/san_giuseppe_bridge_1k.hdr`}
+        files={`${ASSET_FOLDER}/san_giuseppe_bridge_tiny.hdr`}
         background={false}
       />
       <Sky
