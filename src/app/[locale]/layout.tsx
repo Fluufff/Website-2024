@@ -3,6 +3,7 @@ import '@/styles/main.scss';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
+import { unstable_setRequestLocale } from 'next-intl/server';
 
 import Menu from './Menu';
 
@@ -35,6 +36,8 @@ export default async function RootLayout({
   } catch {
     notFound();
   }
+
+  unstable_setRequestLocale(locale);
 
   return (
     <html lang="en">

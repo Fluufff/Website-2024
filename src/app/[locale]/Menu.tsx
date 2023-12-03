@@ -2,11 +2,10 @@
 
 import classNames from 'classnames';
 import { useLocale, useTranslations } from 'next-intl';
-import { usePathname } from 'next-intl/client';
-import Link from 'next-intl/link';
 import { useEffect, useState } from 'react';
 
 import { languages } from '@/config';
+import { Link, usePathname } from '@/helpers/navigation';
 
 export default function Menu() {
   const [scrolled, setScrolled] = useState(false);

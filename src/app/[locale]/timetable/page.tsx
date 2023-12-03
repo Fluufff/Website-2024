@@ -1,8 +1,7 @@
-import { createTranslator } from 'next-intl';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import Timetable from './Timetable';
 
-import { getMessages } from '@/helpers/language';
 import { getSchedule } from '@/services/cms/schedule';
 
 // TODO
@@ -13,11 +12,9 @@ export default async function TimetablePage({
 }: {
   params: { locale: string };
 }) {
-  const t = await createTranslator({
-    locale,
-    messages: await getMessages(locale),
-    namespace: 'Timetable',
-  });
+  unstable_setRequestLocale(locale);
+
+  const t = await getTranslations('Timetable');
 
   const { events, locationById } = await getSchedule(locale);
 

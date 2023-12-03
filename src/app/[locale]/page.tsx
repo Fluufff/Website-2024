@@ -7,7 +7,7 @@ import danceImage from '@/assets/dance.jpg';
 import logoImage from '@/assets/full-logo.png';
 import panelsImage from '@/assets/panels.jpg';
 import showNightImage from '@/assets/shownight.jpg';
-import Link from '@/helpers/NextIntlLink';
+import { Link } from '@/helpers/navigation';
 
 const t = (key: string) => key;
 

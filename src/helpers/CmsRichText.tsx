@@ -7,7 +7,7 @@ import React from 'react';
 import { useMemo } from 'react';
 import sanitize from 'sanitize-html';
 
-import Link from '@/helpers/NextIntlLink';
+import { Link } from '@/helpers/navigation';
 
 /** Processes an unsanitized HTML string into a React tree, with node
  * replacement.
