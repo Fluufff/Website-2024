@@ -40,7 +40,7 @@ export const TimelineView = forwardRef<HTMLDivElement, TimelineViewProps>(
       <div className="m-schedule">
         {!events.length ? (
           <div className="m-schedule__empty">
-            <p>{t('PAGES.SCHEDULE.SCHEDULE.NOT_AVAILABLE')}</p>
+            <p>{t('schedule.not_available')}</p>
           </div>
         ) : (
           <>

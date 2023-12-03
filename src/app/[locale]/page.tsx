@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import ScrollLink from './ScrollLink';
 import HomepageScene from './_scene';
@@ -9,9 +10,16 @@ import panelsImage from '@/assets/panels.jpg';
 import showNightImage from '@/assets/shownight.jpg';
 import { Link } from '@/helpers/navigation';
 
-const t = (key: string) => key;
+export default async function IndexPage({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  unstable_setRequestLocale(locale);
 
-export default function IndexPage() {
+  const t = await getTranslations('2022_msg.pages.index');
+  const tGeneral = await getTranslations('2022_msg.general');
+
   return (
     <main>
       <div className="o-header o-header--big">
@@ -22,12 +30,10 @@ export default function IndexPage() {
             <div className="m-hero__logo">
               <Image src={logoImage} alt="Flüüfff logo" />
             </div>
-            <h1 className="m-hero__title">{t('PAGES.INDEX.HERO.TITLE')}</h1>
-            <p className="m-hero__intro">{t('PAGES.INDEX.HERO.DESCRIPTION')}</p>
-            <p className="m-hero__subtitle">
-              {t('PAGES.INDEX.HERO.SUB_TITLE')}
-            </p>
-            <h2 className="m-hero__date">{t('PAGES.INDEX.HERO.DATE')}</h2>
+            <h1 className="m-hero__title">{t('hero.title')}</h1>
+            <p className="m-hero__intro">{t('hero.description')}</p>
+            <p className="m-hero__subtitle">{t('hero.sub_title')}</p>
+            <h2 className="m-hero__date">{t('hero.date')}</h2>
             <div className="u-margin-top">
               {/* registration status & CTA goes here */}
             </div>
@@ -50,12 +56,12 @@ export default function IndexPage() {
                   backgroundImage: `url(${danceImage.src})`,
                 }}
               />
-              <h3>{t('PAGES.INDEX.ACTIVITIES.DANCES.TITLE')}</h3>
-              <p>{t('PAGES.INDEX.ACTIVITIES.DANCES.DESCRIPTION')}</p>
+              <h3>{t('activities.dances.title')}</h3>
+              <p>{t('activities.dances.description')}</p>
               <Link
                 href="/timetable"
                 className="a-button a-button--secondary u-margin-top">
-                {t('GENERAL.BUTTONS.DISCOVER')}
+                {tGeneral('buttons.discover')}
               </Link>
             </div>
             <div className="m-activities__item">
@@ -65,19 +71,19 @@ export default function IndexPage() {
                   backgroundImage: `url(${panelsImage.src})`,
                 }}
               />
-              <h3>{t('PAGES.INDEX.ACTIVITIES.PANELS.TITLE')}</h3>
-              <p>{t('PAGES.INDEX.ACTIVITIES.PANELS.DESCRIPTION')}</p>
+              <h3>{t('activities.panels.title')}</h3>
+              <p>{t('activities.panels.description')}</p>
               <Link
                 href="/timetable"
                 className="a-button a-button--secondary u-margin-top">
-                {t('GENERAL.BUTTONS.MORE_INFO')}
+                {tGeneral('buttons.more_info')}
               </Link>
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfbhSAz-w9qpCFMfNFvnb9E5IjvEPtzlZHkl-TmVadYRIbMqQ/viewform"
                 target="_blank"
                 className="a-button a-button--tertiary u-margin-top u-margin-left-xs"
                 rel="noreferrer">
-                {t('GENERAL.BUTTONS.SUBMIT_PROPOSAL')}
+                {tGeneral('buttons.submit_proposal')}
               </a>
             </div>
             <div className="m-activities__item">
@@ -87,12 +93,12 @@ export default function IndexPage() {
                   backgroundImage: `url(${showNightImage.src})`,
                 }}
               />
-              <h3>{t('PAGES.INDEX.ACTIVITIES.SHOW_NIGHT.TITLE')}</h3>
-              <p>{t('PAGES.INDEX.ACTIVITIES.SHOW_NIGHT.DESCRIPTION')}</p>
+              <h3>{t('activities.show_night.title')}</h3>
+              <p>{t('activities.show_night.description')}</p>
               <Link
                 href="/timetable"
                 className="a-button a-button--secondary u-margin-top">
-                {t('GENERAL.BUTTONS.VIEW_MORE')}
+                {tGeneral('buttons.view_more')}
               </Link>
             </div>
           </div>
@@ -102,10 +108,10 @@ export default function IndexPage() {
         <div className="o-section__content">
           <div className="m-about">
             <div className="m-about__content">
-              <h3>{t('PAGES.INDEX.WELCOME.TITLE')}</h3>
-              <p>{t('PAGES.INDEX.WELCOME.DESCRIPTION')}</p>
+              <h3>{t('welcome.title')}</h3>
+              <p>{t('welcome.description')}</p>
               <Link href="/about" className="a-button a-button--secondary">
-                {t('GENERAL.BUTTONS.ABOUT_FLÜÜFFF')}
+                {tGeneral('buttons.about_fluufff')}
               </Link>
             </div>
           </div>
