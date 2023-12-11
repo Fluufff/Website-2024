@@ -13,39 +13,6 @@
     },
     "submit_proposal": "Voorstel indienen"
   },
-  "Hotel": {
-    "header": {
-      "title": "De accomodatie",
-      "sub_title": "Kijk eens naar deze gezellige kamers!"
-    },
-    "hotel": {
-      "title": "Het Bedford Hotel in Brussel",
-      "description": {
-        "p0": "Het hotel voor dit jaar is het geweldige Bedfort Hotel in Brussel!",
-        "p1": "Het ligt op een steenworp van het centrum van Brussel, het Centraal station, een ruime keuze aan eetgelegenheden, en het levendige glorieuze nachtleven. We zijn verheugd je te verwelkomen, en enthousiast om je erbij te hebben! We kunnen niet wachten om getrakteerd te worden op een diner en...",
-        "p2": "Oeps, ik liet me wat meeslepen. Welkom!"
-      }
-    },
-    "restaurant": {
-      "title": "Restaurant Le Magellan",
-      "description": {
-        "p0": "Dineer met klasse in het Magellan Restaurant. Er is plaats voor 240 gasten en het restaurant is verdeeld in een buffet en een \"à la Carte\" restaurant met een ruime keuze van smaken en voedingsbehoeften. Alle ingrediënten komen van locale leveranciers.",
-        "p1": "Het restaurant van het hotel is een mooie locatie, met lekker eten voor een goede prijs!",
-        "p2": "Je kan het menu <a>hier</a> vinden."
-      },
-      "menu_href": "https://www.hotelbedford.be/nl/restaurant-menu/"
-    },
-    "surroundings": {
-      "title": "Budget",
-      "description": "Er zijn veel interessante eetgelegenheden dichtbij als je even wil stappen.",
-      "food": {
-        "kebab": "Er zijn 2 goede locaties voor kebab (één aan iedere kant van de straat) binnen 5 minuten stappen van het hotel (naar links!).",
-        "pasta": "We raden de pastabar dichtbij aan, een goede keuze daar is de pikante pasta met extra kaas!",
-        "vietnamese": "Als de pikante pasta niet exotisch genoeg is voor je, is er een Vietnamees hoekje aan het einde van de straat als je links blijft lopen.",
-        "mcdonalds": "Als je geen smaakpapillen hebt, kan je ook naar McDonald's. Het is slechts 10 minuten wandelen."
-      }
-    }
-  },
   "2022_msg": {
     "footer": {
       "3d_u": "3D “U” gemaakt door",
@@ -350,6 +317,28 @@
         },
         "tickets": {
           "title": "Tickets nodig?"
+        }
+      },
+      "venue": {
+        "header": {
+          "sub_title": "Kijk eens naar deze gezellige kamers!",
+          "title": "De accomodatie"
+        },
+        "hotel": {
+          "description": "Het hotel voor dit jaar is het geweldige Bedfort Hotel in Brussel!\n\nHet ligt op een steenworp van het centrum van Brussel, het Centraal station, een ruime keuze aan eetgelegenheden, en het levendige glorieuze nachtleven. We zijn verheugd je te verwelkomen, en enthousiast om je erbij te hebben! We kunnen niet wachten om getrakteerd te worden op een diner en...\n\nOeps, ik liet me wat meeslepen. Welkom!",
+          "title": "Het Bedford Hotel in Brussel"
+        },
+        "le_magellan": {
+          "description": "Dineer met klasse in het Magellan Restaurant. Er is plaats voor 240 gasten en het restaurant is verdeeld in een buffet en een \"à la Carte\" restaurant met een ruime keuze van smaken en voedingsbehoeften. Alle ingrediënten komen van locale leveranciers.\n\nHet restaurant van het hotel is een mooie locatie, met lekker eten voor een goede prijs!\n\nJe kan het menu vinden",
+          "title": "Restaurant Le Magellan"
+        },
+        "low_budget": {
+          "description": "Er zijn veel interessante eetgelegenheden dichtbij als je even wil stappen.",
+          "kebab": "Er zijn 2 goede locaties voor kebab (één aan iedere kant van de straat) binnen 5 minuten stappen van het hotel (naar links!).",
+          "pasta": "We raden de pastabar dichtbij aan, een goede keuze daar is de pikante pasta met extra kaas!",
+          "title": "Budget",
+          "vietnamese": "Als de pikante pasta niet exotisch genoeg is voor je, is er een Vietnamees hoekje aan het einde van de straat als je links blijft lopen.",
+          "mcdonalds": "Als je geen smaakpapillen hebt, kan je ook naar McDonald's. Het is slechts 10 minuten wandelen."
         }
       },
       "terms": {

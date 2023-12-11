@@ -36,12 +36,97 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "859bf0ca-0879-4062-b542-19bd6a81d6ab",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "sites/:site/content/hotel",
+      "responses": [
+        {
+          "uuid": "615c0855-5e31-464e-8b3b-4a424650001d",
+          "body": "",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "English",
+          "headers": [],
+          "bodyType": "FILE",
+          "filePath": "./data/hotel-en.json",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "lang",
+              "value": "en",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        },
+        {
+          "uuid": "63759944-95b6-40c3-87f6-e5b93f9ee261",
+          "body": "",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "French",
+          "headers": [],
+          "bodyType": "FILE",
+          "filePath": "./data/hotel-fr.json",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "lang",
+              "value": "fr",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        },
+        {
+          "uuid": "fc74fa32-fb59-4aba-9ce7-1af9b2647ce9",
+          "body": "",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "Fallback & Dutch (404)",
+          "headers": [],
+          "bodyType": "FILE",
+          "filePath": "./data/hotel-404.json",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "rootChildren": [
     {
       "type": "route",
       "uuid": "83fcf062-c9df-41d1-993d-695deab9970c"
+    },
+    {
+      "type": "route",
+      "uuid": "859bf0ca-0879-4062-b542-19bd6a81d6ab"
     }
   ],
   "proxyMode": true,

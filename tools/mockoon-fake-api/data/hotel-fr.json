@@ -1,0 +1,36 @@
+{
+  "id": "c952cb07-1614-43b8-85b4-f1556b9f6461",
+  "name": "Hotel",
+  "slug": "hotel",
+  "createdAt": "2023-11-08T17:24:46.847580",
+  "updatedAt": "2023-11-08T17:25:00.418678",
+  "fields": {
+    "subtitle": "Jetez un coup d'œil à ces chambres !",
+    "surroundings": {
+      "body": "<p dir=\"ltr\"><span>Si vous êtes d'humeur à sortir, vous trouverez plein d'endroits où vous restaurer dans les alentours.</span></p><p dir=\"ltr\"><span>&lt;ul&gt;</span><br><span>&lt;li&gt;Il y a deux bons kebabs (un de chaque côté de la route) à 5 minutes de marche en sortant de l'entrée de l'hôtel (partez vers la gauche !).&lt;/li&gt;</span><br><span>&lt;li&gt;Nous vous conseillons le bar à pâtes un peu plus loin, vous ne vous tromperez pas en choissisant les pâtes épicées avec supplément fromage !&lt;/li&gt;</span><br><span>&lt;li&gt;Si les pâtes épicées ne sont pas suffisamment exotiques pour vous, vous trouverez du Vietnamien à la fin de la route si vous continuez à marcher vers la gauche.&lt;/li&gt;</span><br><span>&lt;li&gt;Et si vraiment vous êtes une bête sans goût, vous pouvez aller au MacDonald's. Il se trouve à 10 minutes de marche.&lt;/li&gt;</span><br><span>&lt;/ul&gt;</span></p>",
+      "title": "Petit budget"
+    },
+    "title": "Le Lieu",
+    "restaurant": {
+      "body": "<p dir=\"ltr\"><span>Dînez avec style et finesse au Restaurant Magellan. Le restaurant peut accueillir jusqu'à 240 clients. Vous pourrez profiter du buffet ou commander à la carte, ceci pour satisfaire une large gamme de goûts et de régimes. Tous les ingrédients proviennent de circuits courts.</span></p><p dir=\"ltr\"><span>Le restaurant de l'hôtel est magnifique, avec de délicieux plats gastronomiques à bon prix !</span></p><p dir=\"ltr\"><span>Vous trouverez le menu &lt;a href=\"https://www.hotelbedford.be/fr/menu-du-restaurant-a-la-carte/\" target=\"_blank\" rel=\"noreferrer\"&gt;ici&lt;/a&gt;.</span></p>",
+      "title": "Restaurant Le Magellan"
+    },
+    "hotel": {
+      "body": "<p dir=\"ltr\"><span>Cette année, l'hôtel est l'incroyable Hôtel Bedford à Bruxelles.</span></p><p dir=\"ltr\"><span>À quelques pas du centre de Bruxelles, de la gare, d'une myriade d'endroits où se restaurer et de la vibrante et fabuleuse vie nocturne de la capitale.</span></p><p dir=\"ltr\"><span>Nous sommes impatients de vous accueillir parmi nous ! Impatients de vous avoir parmi nous ! Impatients d'être invités par vous au restaurant...</span></p><p dir=\"ltr\"><span>Oh, je me suis laissé emporter. Bienvenue !</span></p>",
+      "title": "L'hôtel Bedford à Bruxelles"
+    }
+  },
+  "language": "fr",
+  "translations": [
+    {
+      "id": "65194efd-f5fb-4c3b-b2bc-1da87b704ee2",
+      "slug": "hotel",
+      "language": "en"
+    },
+    {
+      "id": "c952cb07-1614-43b8-85b4-f1556b9f6461",
+      "slug": "hotel",
+      "language": "fr"
+    }
+  ]
+}

@@ -13,40 +13,6 @@
     },
     "submit_proposal": "Proposer un évènement"
   },
-  "Hotel": {
-    "header": {
-      "title": "Le Lieu",
-      "sub_title": "Jetez un coup d'œil à ces chambres !"
-    },
-    "hotel": {
-      "title": "L'hôtel Bedford à Bruxelles",
-      "description": {
-        "p0": "Cette année, l'hôtel est l'incroyable Hôtel Bedford à Bruxelles.",
-        "p1": "À quelques pas du centre de Bruxelles, de la gare, d'une myriade d'endroits où se restaurer et de la vibrante et fabuleuse vie nocturne de la capitale.",
-        "p2": "Nous sommes impatients de vous accueillir parmi nous ! Impatients de vous avoir parmi nous ! Impatients d'être invités par vous au restaurant...",
-        "p3": "Oh, je me suis laissé emporter. Bienvenue !"
-      }
-    },
-    "restaurant": {
-      "title": "Restaurant Le Magellan",
-      "description": {
-        "p0": "Dînez avec style et finesse au Restaurant Magellan. Le restaurant peut accueillir jusqu'à 240 clients. Vous pourrez profiter du buffet ou commander à la carte, ceci pour satisfaire une large gamme de goûts et de régimes. Tous les ingrédients proviennent de circuits courts.",
-        "p1": "Le restaurant de l'hôtel est magnifique, avec de délicieux plats gastronomiques à bon prix !",
-        "p2": "Vous trouverez le menu <a>ici</a>."
-      },
-      "menu_href": "https://www.hotelbedford.be/fr/menu-du-restaurant-a-la-carte/"
-    },
-    "surroundings": {
-      "title": "Petit budget",
-      "description": "Si vous êtes d'humeur à sortir, vous trouverez plein d'endroits où vous restaurer dans les alentours.",
-      "food": {
-        "kebab": "Il y a deux bons kebabs (un de chaque côté de la route) à 5 minutes de marche en sortant de l'entrée de l'hôtel (partez vers la gauche !).",
-        "pasta": "Nous vous conseillons le bar à pâtes un peu plus loin, vous ne vous tromperez pas en choissisant les pâtes épicées avec supplément fromage !",
-        "vietnamese": "Si les pâtes épicées ne sont pas suffisamment exotiques pour vous, vous trouverez du Vietnamien à la fin de la route si vous continuez à marcher vers la gauche.",
-        "mcdonalds": "Et si vraiment vous êtes une bête sans goût, vous pouvez aller au MacDonald's. Il se trouve à 10 minutes de marche."
-      }
-    }
-  },
   "2022_msg": {
     "footer": {
       "3d_u": "Modèle 3D Ü créé par",
@@ -351,6 +317,28 @@
         },
         "tickets": {
           "title": "Besoin de tickets ?"
+        }
+      },
+      "venue": {
+        "header": {
+          "sub_title": "Jetez un coup d'œil à ces chambres !",
+          "title": "Le Lieu"
+        },
+        "hotel": {
+          "description": "Cette année, l'hôtel est l'incroyable Hôtel Bedford à Bruxelles.\n\nÀ quelques pas du centre de Bruxelles, de la gare, d'une myriade d'endroits où se restaurer et de la vibrante et fabuleuse vie nocturne de la capitale.\n\nNous sommes impatients de vous accueillir parmi nous ! Impatients de vous avoir parmi nous ! Impatients d'être invités par vous au restaurant...\n\nOh, je me suis laissé emporter. Bienvenue !",
+          "title": "L'hôtel Bedford à Bruxelles"
+        },
+        "le_magellan": {
+          "description": "Dînez avec style et finesse au Restaurant Magellan. Le restaurant peut accueillir jusqu'à 240 clients. Vous pourrez profiter du buffet ou commander à la carte, ceci pour satisfaire une large gamme de goûts et de régimes. Tous les ingrédients proviennent de circuits courts.\n\nLe restaurant de l'hôtel est magnifique, avec de délicieux plats gastronomiques à bon prix !\n\nVous trouverez le menu",
+          "title": "Restaurant Le Magellan"
+        },
+        "low_budget": {
+          "description": "Si vous êtes d'humeur à sortir, vous trouverez plein d'endroits où vous restaurer dans les alentours.",
+          "kebab": "Il y a deux bons kebabs (un de chaque côté de la route) à 5 minutes de marche en sortant de l'entrée de l'hôtel (partez vers la gauche !).",
+          "pasta": "Nous vous conseillons le bar à pâtes un peu plus loin, vous ne vous tromperez pas en choissisant les pâtes épicées avec supplément fromage !",
+          "title": "Petit budget",
+          "vietnamese": "Si les pâtes épicées ne sont pas suffisamment exotiques pour vous, vous trouverez du Vietnamien à la fin de la route si vous continuez à marcher vers la gauche.",
+          "mcdonalds": "Et si vraiment vous êtes une bête sans goût, vous pouvez aller au MacDonald's. Il se trouve à 10 minutes de marche."
         }
       },
       "terms": {
