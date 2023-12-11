@@ -7,8 +7,12 @@ import { unstable_setRequestLocale } from 'next-intl/server';
 
 import Menu from './Menu';
 
-import { languageKeys } from '@/config';
-import { Messages, getMessages, isSupportedLanguage } from '@/helpers/language';
+import { localeKeys } from '@/config';
+import {
+  getMessages,
+  isSupportedLocale,
+  Messages,
+} from '@/helpers/localization';
 import { readexPro } from '@/styles/fonts';
 
 export const metadata: Metadata = {
@@ -20,7 +24,7 @@ export const metadata: Metadata = {
 };
 
 export function generateStaticParams() {
-  return languageKeys.map((locale) => ({ locale }));
+  return localeKeys.map((locale) => ({ locale }));
 }
 
 export default async function RootLayout({
@@ -32,7 +36,7 @@ export default async function RootLayout({
 }) {
   let messages: Messages;
   try {
-    if (!isSupportedLanguage(locale)) notFound();
+    if (!isSupportedLocale(locale)) notFound();
     messages = await getMessages(locale);
   } catch {
     notFound();

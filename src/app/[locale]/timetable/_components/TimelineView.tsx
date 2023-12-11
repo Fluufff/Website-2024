@@ -12,7 +12,7 @@ interface TimelineViewProps {
   locations: ScheduleLocation[];
   conHours: number[];
   firstEventTimestamp: Date;
-  locale: Locale;
+  dateLocale: Locale;
   scale: number;
   isCurrentTimeInSchedule: boolean | undefined;
   currentTimeIndicatorPosition: number;
@@ -26,7 +26,7 @@ export const TimelineView = forwardRef<HTMLDivElement, TimelineViewProps>(
       locations,
       conHours,
       firstEventTimestamp,
-      locale,
+      dateLocale,
       scale,
       isCurrentTimeInSchedule,
       currentTimeIndicatorPosition,
@@ -72,7 +72,8 @@ export const TimelineView = forwardRef<HTMLDivElement, TimelineViewProps>(
                         {format(time, 'HH:mm')}
                       </p>
                       <p className="m-schedule__hour-indicator__day">
-                        {firstHour && format(time, 'eeee', { locale })}
+                        {firstHour &&
+                          format(time, 'eeee', { locale: dateLocale })}
                       </p>
                     </div>
                   );

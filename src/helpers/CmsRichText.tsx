@@ -14,7 +14,7 @@ import { Link } from '@/helpers/navigation';
  *
  * - `a` tags are processed into `next-intl/link` Link elements to enable SPA
  *   routing. Preserves children, and attributes href/target. Because we use
- *   `next-intl/link`, links that omit the locale prefix point to the language
+ *   `next-intl/link`, links that omit the locale prefix point to the locale
  *   currently in use.
  *
  * Compatible with SSR.

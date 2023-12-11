@@ -95,8 +95,8 @@ export default function Timetable({
     );
   };
 
-  const language = useLocale();
-  const locale = language === 'nl' ? nlBE : language === 'fr' ? fr : enGB;
+  const locale = useLocale();
+  const dateLocale = locale === 'nl' ? nlBE : locale === 'fr' ? fr : enGB;
 
   const {
     firstEventTimestamp = new Date(0),
@@ -140,7 +140,7 @@ export default function Timetable({
       ),
     ].map((_, i) => ({
       name: format(addDays(firstEventTimestamp, i), 'EEEE', {
-        locale,
+        locale: dateLocale,
       }),
       key:
         i !== 0
@@ -163,7 +163,7 @@ export default function Timetable({
       currentTimeIndicatorPosition,
       conHours,
     };
-  }, [events, locale]);
+  }, [events, dateLocale]);
 
   useEffect(
     () => {
@@ -192,7 +192,7 @@ export default function Timetable({
       conHours={conHours}
       firstEventTimestamp={firstEventTimestamp}
       scale={scheduleScale}
-      locale={locale}
+      dateLocale={dateLocale}
       updateScroll={updateScroll}
       showModal={showModal}
     />
@@ -206,7 +206,7 @@ export default function Timetable({
       conHours={conHours}
       firstEventTimestamp={firstEventTimestamp}
       scale={timelineScale}
-      locale={locale}
+      dateLocale={dateLocale}
       isCurrentTimeInSchedule={isCurrentTimeInSchedule}
       currentTimeIndicatorPosition={currentTimeIndicatorPosition}
       showModal={showModal}

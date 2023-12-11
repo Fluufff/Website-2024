@@ -4,14 +4,14 @@ import classNames from 'classnames';
 import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 
-import { languages } from '@/config';
+import { locales } from '@/config';
 import { Link, usePathname } from '@/helpers/navigation';
 
 export default function Menu() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const location = usePathname();
-  const currentLanguage = useLocale();
+  const currentLocale = useLocale();
   const t = useTranslations('2022_msg.menu');
 
   useEffect(() => {
@@ -160,27 +160,25 @@ export default function Menu() {
                 <div className="m-menu__sub-menu m-menu__languages">
                   <a href="#" className="m-menu__link">
                     <span className="uil uil-globe"></span>{' '}
-                    {languages[currentLanguage]?.name}
+                    {locales[currentLocale]?.name}
                   </a>
                   <div className="m-menu__sub-menu__wrapper">
                     <div className="m-menu__sub-menu__content">
                       <ul>
-                        {Object.entries(languages).map(
-                          ([languageKey, language]) => (
-                            <li key={languageKey}>
-                              <Link
-                                className={classNames({
-                                  'm-menu__sub-link': true,
-                                  'm-menu__sub-link--selected':
-                                    currentLanguage === languageKey,
-                                })}
-                                href={location}
-                                locale={languageKey}>
-                                {language.name}
-                              </Link>
-                            </li>
-                          ),
-                        )}
+                        {Object.entries(locales).map(([locale, localeInfo]) => (
+                          <li key={locale}>
+                            <Link
+                              className={classNames({
+                                'm-menu__sub-link': true,
+                                'm-menu__sub-link--selected':
+                                  currentLocale === locale,
+                              })}
+                              href={location}
+                              locale={locale}>
+                              {localeInfo.name}
+                            </Link>
+                          </li>
+                        ))}
                       </ul>
                     </div>
                   </div>

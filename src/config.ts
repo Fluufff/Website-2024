@@ -3,7 +3,7 @@
 //
 // Leaving the keys untyped for convenience, to match `useLocale` returning
 // `string`.
-export const languages: Record<string, { name: string }> = {
+export const locales: Record<string, { name: string }> = {
   en: {
     name: 'English',
   },
@@ -15,7 +15,7 @@ export const languages: Record<string, { name: string }> = {
   },
 };
 
-export const languageKeys = ['en', 'nl', 'fr'] as const;
-export type SupportedLanguage = (typeof languageKeys)[number];
+export const localeKeys = ['en', 'nl', 'fr'] as const;
+export type SupportedLocale = (typeof localeKeys)[number];
 
-export const defaultLanguage = 'en' as const;
+export const defaultLocale = 'en' as const;
