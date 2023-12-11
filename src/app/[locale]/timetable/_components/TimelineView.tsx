@@ -1,7 +1,13 @@
 'use client';
 
 import classNames from 'classnames';
-import { addHours, differenceInSeconds, format, getHours } from 'date-fns';
+import {
+  addHours,
+  differenceInSeconds,
+  format,
+  getHours,
+  Locale,
+} from 'date-fns';
 import { useTranslations } from 'next-intl';
 import { forwardRef } from 'react';
 
