@@ -13,6 +13,40 @@
     },
     "submit_proposal": "Submit proposal"
   },
+  "Hotel": {
+    "header": {
+      "title": "The Venue",
+      "sub_title": "Check our these nice rooms!"
+    },
+    "hotel": {
+      "title": "The Bedford Hotel in Brussels",
+      "description": {
+        "p0": "This year's hotel is the awesome Bedford Hotel in Brussels!",
+        "p1": "It's a stone's throw away from the Brussels centre, the station, a ton of food places, and the vibrant, glorious, shiny nightlife.",
+        "p2": "We're excited to welcome you, we're excited to have you! We're excited to be taken out to dinner by you and...",
+        "p3": "Oh, I got carried away. Welcome!"
+      }
+    },
+    "restaurant": {
+      "title": "Restaurant Le Magellan",
+      "description": {
+        "p0": "Dine in style and at its finest in the Magellan Restaurant. There is seating for 240 guests and the restaurant is divided into a buffet and “à la Carte” restaurant to serve a wide range of tastes and dietary needs. All ingredients are from suppliers in the surrounding area.",
+        "p1": "The hotel’s restaurant is a super nice area, with good food for decent prices!",
+        "p2": "You can find the menu <a>here</a>."
+      },
+      "menu_href": "https://www.hotelbedford.be/en/an-la-carte-restaurant-menu/"
+    },
+    "surroundings": {
+      "title": "Low Budget",
+      "description": "There are many nice food places nearby, if you’re out on a walk.",
+      "food": {
+        "kebab": "There's two nice kebap places (one on each side of the road) within 5 minutes of walking out the hotel front door (go left!).",
+        "pasta": "There’s a very recommended pastabar a little ahead. A good option is the spicy pasta with extra cheese!",
+        "vietnamese": "If the spicy pasta isn’t exotic enough for you, there’s a vietnamese corner on the end of the street if you keep walking left.",
+        "mcdonalds": "And if you’re a tasteless animal, you can go to a McDonald's. It’s only a 10 minute walk."
+      }
+    }
+  },
   "2022_msg": {
     "footer": {
       "3d_u_credits": "3D “Ü” created by",
@@ -339,28 +373,7 @@
           "title": "Need tickets?"
         }
       },
-      "venue": {
-        "header": {
-          "sub_title": "Check our these nice rooms!",
-          "title": "The Venue"
-        },
-        "hotel": {
-          "description": "This year's hotel is the awesome Bedford Hotel in Brussels!\n\nIt's a stone's throw away from the Brussels centre, the station, a ton of food places, and the vibrant, glorious, shiny nightlife.\n\nWe're excited to welcome you, we're excited to have you! We're excited to be taken out to dinner by you and...\n\nOh, I got carried away. Welcome!",
-          "title": "The Bedford Hotel in Brussels"
-        },
-        "le_magellan": {
-          "description": "Dine in style and at its finest in the Magellan Restaurant. There is seating for 240 guests and the restaurant is divided into a buffet and “à la Carte” restaurant to serve a wide range of tastes and dietary needs. All ingredients are from suppliers in the surrounding area.\n\nThe hotel’s restaurant is a super nice area, with good food for decent prices! \n\nYou can find the menu",
-          "title": "Restaurant Le Magellan"
-        },
-        "low_budget": {
-          "description": "There are many nice food places nearby, if you’re out on a walk.",
-          "kebab": "There's two nice kebap places (one on each side of the road) within 5 minutes of walking out the hotel front door (go left!).",
-          "mcdonalds": "And if you’re a tasteless animal, you can go to a McDonald's. It’s only a 10 minute walk.",
-          "pasta": "There’s a very recommended pastabar a little ahead. A good option is the spicy pasta with extra cheese!",
-          "title": "Low Budget",
-          "vietnamese": "If the spicy pasta isn’t exotic enough for you, there’s a vietnamese corner on the end of the street if you keep walking left."
-        }
-      }
+      "venue": {}
     }
   }
 }
