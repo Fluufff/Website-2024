@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { unstable_setRequestLocale } from 'next-intl/server';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import React from 'react';
 
 import ScrollLink from '../../ScrollLink';
@@ -8,8 +8,6 @@ import { getHotelPage } from './fetch';
 
 import CmsRichText from '@/helpers/CmsRichText';
 import { Link } from '@/helpers/navigation';
-
-const t = (s: string) => s;
 
 interface Props {
   params: {
@@ -27,6 +25,7 @@ export default async function HotelPage({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
 
   const pageContent = await getHotelPage(locale);
+  const t = await getTranslations('2022_msg');
 
   return (
     <>
@@ -52,16 +51,16 @@ export default async function HotelPage({ params: { locale } }: Props) {
           <CmsRichText dirtyHtml={pageContent.hotel.body} />
           <div className="m-button-group">
             <Link href="/venue/getting-there" className="a-button">
-              {t('GENERAL.BUTTONS.GETTING_THERE')}
+              {t('general.buttons.getting_there')}
             </Link>
             <ScrollLink
               to="restaurant"
               className="a-button a-button--secondary"
               smooth={true}>
-              {t('GENERAL.BUTTONS.THE_RESTAURANT')}
+              {t('general.buttons.the_restaurant')}
             </ScrollLink>
             <Link href="/venue/rooms" className="a-button a-button--secondary">
-              {t('GENERAL.BUTTONS.HOTEL_ROOMS')}
+              {t('general.buttons.hotel_rooms')}
             </Link>
           </div>
         </div>

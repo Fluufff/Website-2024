@@ -1,12 +1,12 @@
 import createMiddleware from 'next-intl/middleware';
 
-import { defaultLanguage, languageKeys } from './config';
+import { defaultLocale, localeKeys } from './config';
 
-// Sets up full-featured prefix-based routing, picking the best language from
-// URL, cookies, and request headers.
+// Sets up full-featured prefix-based routing, picking the best locale from URL,
+// cookies, and request headers.
 export default createMiddleware({
-  locales: languageKeys,
-  defaultLocale: defaultLanguage,
+  locales: localeKeys,
+  defaultLocale: defaultLocale,
   localePrefix: 'as-needed',
 });
 

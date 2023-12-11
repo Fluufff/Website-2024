@@ -7,8 +7,12 @@ import { unstable_setRequestLocale } from 'next-intl/server';
 
 import Menu from './Menu';
 
-import { languages } from '@/config';
-import { getMessages } from '@/helpers/language';
+import { localeKeys } from '@/config';
+import {
+  getMessages,
+  isSupportedLocale,
+  Messages,
+} from '@/helpers/localization';
 import { readexPro } from '@/styles/fonts';
 
 export const metadata: Metadata = {
@@ -20,7 +24,7 @@ export const metadata: Metadata = {
 };
 
 export function generateStaticParams() {
-  return Object.keys(languages).map((locale) => ({ locale }));
+  return localeKeys.map((locale) => ({ locale }));
 }
 
 export default async function RootLayout({
@@ -30,8 +34,9 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  let messages;
+  let messages: Messages;
   try {
+    if (!isSupportedLocale(locale)) notFound();
     messages = await getMessages(locale);
   } catch {
     notFound();

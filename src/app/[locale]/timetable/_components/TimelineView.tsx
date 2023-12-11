@@ -1,7 +1,13 @@
 'use client';
 
 import classNames from 'classnames';
-import { addHours, differenceInSeconds, format, getHours } from 'date-fns';
+import {
+  addHours,
+  differenceInSeconds,
+  format,
+  getHours,
+  Locale,
+} from 'date-fns';
 import { useTranslations } from 'next-intl';
 import { forwardRef } from 'react';
 
@@ -12,7 +18,7 @@ interface TimelineViewProps {
   locations: ScheduleLocation[];
   conHours: number[];
   firstEventTimestamp: Date;
-  locale: Locale;
+  dateLocale: Locale;
   scale: number;
   isCurrentTimeInSchedule: boolean | undefined;
   currentTimeIndicatorPosition: number;
@@ -26,7 +32,7 @@ export const TimelineView = forwardRef<HTMLDivElement, TimelineViewProps>(
       locations,
       conHours,
       firstEventTimestamp,
-      locale,
+      dateLocale,
       scale,
       isCurrentTimeInSchedule,
       currentTimeIndicatorPosition,
@@ -40,7 +46,7 @@ export const TimelineView = forwardRef<HTMLDivElement, TimelineViewProps>(
       <div className="m-schedule">
         {!events.length ? (
           <div className="m-schedule__empty">
-            <p>{t('PAGES.SCHEDULE.SCHEDULE.NOT_AVAILABLE')}</p>
+            <p>{t('schedule.not_available')}</p>
           </div>
         ) : (
           <>
@@ -72,7 +78,8 @@ export const TimelineView = forwardRef<HTMLDivElement, TimelineViewProps>(
                         {format(time, 'HH:mm')}
                       </p>
                       <p className="m-schedule__hour-indicator__day">
-                        {firstHour && format(time, 'eeee', { locale })}
+                        {firstHour &&
+                          format(time, 'eeee', { locale: dateLocale })}
                       </p>
                     </div>
                   );

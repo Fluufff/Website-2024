@@ -4,15 +4,15 @@ import classNames from 'classnames';
 import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 
-import { languages } from '@/config';
+import { locales } from '@/config';
 import { Link, usePathname } from '@/helpers/navigation';
 
 export default function Menu() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const location = usePathname();
-  const currentLanguage = useLocale();
-  const t = useTranslations();
+  const currentLocale = useLocale();
+  const t = useTranslations('2022_msg.menu');
 
   useEffect(() => {
     const onScroll = (e: Event) => {
@@ -49,20 +49,20 @@ export default function Menu() {
             <ul>
               <li>
                 <Link className="m-menu__link" href="/">
-                  {t('MENU.ITEMS.HOME')}
+                  {t('items.home')}
                 </Link>
               </li>
 
               {/* <li>
                 <Link className="m-menu__link" href="/news">
-                  {t('MENU.ITEMS.NEWS')}
+                  {t('items.news')}
                 </Link>
               </li> */}
 
               {/* <li>
                 <div className="m-menu__sub-menu">
                   <Link className="m-menu__link" href="/about">
-                    {t('MENU.ITEMS.ABOUT')}
+                    {t('items.about')}
                   </Link>
                   <div className="m-menu__sub-menu__wrapper">
                     <div className="m-menu__sub-menu__content">
@@ -71,14 +71,14 @@ export default function Menu() {
                           <Link
                             className="m-menu__sub-link"
                             href="/about/fluufff">
-                            {t('MENU.ITEMS.ABOUT_FLÜÜFFF')}
+                            {t('items.about_fluufff')}
                           </Link>
                         </li>
                         <li>
                           <Link
                             className="m-menu__sub-link"
                             href="/about/charity">
-                            {t('MENU.ITEMS.CHARITY')}
+                            {t('items.charity')}
                           </Link>
                         </li>
                       </ul>
@@ -90,24 +90,24 @@ export default function Menu() {
               {/* <li>
 								<div className="m-menu__sub-menu">
 									<Link className="m-menu__link" href="/venue">
-										{t('MENU.ITEMS.VENUE')}
+										{t('items.venue')}
 									</Link>
 									<div className="m-menu__sub-menu__wrapper">
 										<div className="m-menu__sub-menu__content">
 											<ul>
 												<li>
 													<Link className="m-menu__sub-link" href="/venue/hotel">
-														{t('MENU.ITEMS.HOTEL')}
+														{t('items.hotel')}
 													</Link>
 												</li>
 												<li>
 													<Link className="m-menu__sub-link" href="/venue/rooms">
-														{t('MENU.ITEMS.ROOMS')}
+														{t('items.rooms')}
 													</Link>
 												</li>
 												<li>
 													<Link className="m-menu__sub-link" href="/venue/getting-there">
-														{t('MENU.ITEMS.GETTING_THERE')}
+														{t('items.getting_there')}
 													</Link>
 												</li>
 											</ul>
@@ -118,13 +118,13 @@ export default function Menu() {
 
               <li>
                 <Link className="m-menu__link" href="/timetable">
-                  {t('MENU.ITEMS.SCHEDULE')}
+                  {t('items.schedule')}
                 </Link>
               </li>
 
               {/* <li>
                 <Link className="m-menu__link" href="/contact-us">
-                  {t('MENU.ITEMS.CONTACT')}
+                  {t('items.contact')}
                 </Link>
               </li> */}
 
@@ -132,7 +132,7 @@ export default function Menu() {
 								<Link
 									href="/tickets"
 									className="m-menu__link m-menu__link-button a-button a-button--small">
-									{t('MENU.ITEMS.TICKETS')}
+									{t('items.tickets')}
 								</Link>
 							</li> */}
 
@@ -151,7 +151,7 @@ export default function Menu() {
               ) : (
                 <li>
                   <a className="m-menu__link" href="/profile/login">
-                    {t('MENU.ITEMS.LOGIN')}
+                    {t('items.login')}
                   </a>
                 </li>
               )} */}
@@ -160,27 +160,25 @@ export default function Menu() {
                 <div className="m-menu__sub-menu m-menu__languages">
                   <a href="#" className="m-menu__link">
                     <span className="uil uil-globe"></span>{' '}
-                    {languages[currentLanguage]?.name}
+                    {locales[currentLocale]?.name}
                   </a>
                   <div className="m-menu__sub-menu__wrapper">
                     <div className="m-menu__sub-menu__content">
                       <ul>
-                        {Object.entries(languages).map(
-                          ([languageKey, language]) => (
-                            <li key={languageKey}>
-                              <Link
-                                className={classNames({
-                                  'm-menu__sub-link': true,
-                                  'm-menu__sub-link--selected':
-                                    currentLanguage === languageKey,
-                                })}
-                                href={location}
-                                locale={languageKey}>
-                                {language.name}
-                              </Link>
-                            </li>
-                          ),
-                        )}
+                        {Object.entries(locales).map(([locale, localeInfo]) => (
+                          <li key={locale}>
+                            <Link
+                              className={classNames({
+                                'm-menu__sub-link': true,
+                                'm-menu__sub-link--selected':
+                                  currentLocale === locale,
+                              })}
+                              href={location}
+                              locale={locale}>
+                              {localeInfo.name}
+                            </Link>
+                          </li>
+                        ))}
                       </ul>
                     </div>
                   </div>

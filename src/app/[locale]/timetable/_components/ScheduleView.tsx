@@ -1,7 +1,13 @@
 'use client';
 
 import classNames from 'classnames';
-import { addHours, differenceInSeconds, format, getHours } from 'date-fns';
+import {
+  addHours,
+  differenceInSeconds,
+  format,
+  getHours,
+  Locale,
+} from 'date-fns';
 
 import { ScheduleEvent, ScheduleLocation } from '@/services/cms/schedule';
 
@@ -11,7 +17,7 @@ interface ScheduleViewProps {
   conHours: number[];
   firstEventTimestamp: Date;
   scale: number;
-  locale: Locale;
+  dateLocale: Locale;
   updateScroll: (direction: 'left' | 'right') => void;
   showModal: (event: ScheduleEvent) => void;
 }
@@ -21,7 +27,7 @@ export function ScheduleView({
   conHours,
   firstEventTimestamp,
   scale,
-  locale,
+  dateLocale,
   updateScroll,
   showModal,
 }: ScheduleViewProps) {
@@ -72,10 +78,10 @@ export function ScheduleView({
                   {format(time, 'HH:mm')}
                 </p>
                 <p className="m-timetable__hour-indicator__day">
-                  {firstHour && format(time, 'eeee', { locale })}
+                  {firstHour && format(time, 'eeee', { locale: dateLocale })}
                 </p>
                 <p className="m-timetable__hour-indicator__day m-timetable__hour-indicator__day--mobile">
-                  {firstHour && format(time, 'dd/MM', { locale })}
+                  {firstHour && format(time, 'dd/MM', { locale: dateLocale })}
                 </p>
               </div>
             );
