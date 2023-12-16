@@ -24,7 +24,8 @@ type EventDto = z.infer<typeof eventDtoSchema>;
 
 export interface ScheduleEvent {
   name: string;
-  description: string;
+  /** unsanitized HTML */
+  htmlDescription: string;
   startTime: Date;
   endTime: Date;
   locationId: string;
@@ -48,7 +49,7 @@ function mapSchedule(scheduleDto: EventDto[]): Schedule {
 
       schedule.events.push({
         name: fields.name,
-        description: fields.description,
+        htmlDescription: fields.description,
         startTime: fields['start-time'],
         endTime: fields['end-time'],
         locationId: fields.location.contentId,

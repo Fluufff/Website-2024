@@ -20,6 +20,7 @@ import Scroll from 'react-scroll';
 import { ScheduleView } from './_components/ScheduleView';
 import { TimelineView } from './_components/TimelineView';
 
+import CmsRichText from '@/helpers/CmsRichText';
 import { ScheduleEvent, ScheduleLocation } from '@/services/cms/schedule';
 
 const convertMsToDays = (ms: number) => {
@@ -305,7 +306,7 @@ export default function Timetable({
           onClick={() => setModalIsOpen(false)}
           className="ReactModal__Close uil uil-times"></div>
         <h3>{activeEvent?.name}</h3>
-        <p>{activeEvent?.description}</p>
+        <CmsRichText dirtyHtml={activeEvent?.htmlDescription ?? ''} />
       </Modal>
     </>
   );
