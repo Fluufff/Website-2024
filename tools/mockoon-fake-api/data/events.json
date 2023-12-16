@@ -15,979 +15,1343 @@
   },
   "_page": {
     "size": -1,
-    "totalElements": 35,
+    "totalElements": 49,
     "totalPages": 1,
     "number": 1
   },
   "_embedded": {
     "content": [
       {
-        "id": "fake-uuid-a-fluffy-concert",
-        "name": "A Fluffy Concert",
-        "slug": "a-fluffy-concert",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>Do you like live music? Come join us for a jam! Wether you're a musician, dancer, or just would like to watch, join us as we have an unplanned, no rehearsals, no expectations jam session!</span></p>",
-          "name": "A Fluffy Concert",
-          "location": {
-            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
-            "translationId": "fe40774c-5f99-464b-a8c3-f938d4a8be41",
-            "fields": {
-              "name": "Main Stage"
-            }
-          },
-          "start-time": "2022-11-10T19:00:00Z",
-          "end-time": "2022-11-10T20:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-a-fluffy-concert",
-            "slug": "a-fluffy-concert",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-advanced-animatronics-adventures-by-floere-t-pillowcase",
-        "name": "Advanced Animatronics Adventures by Floere T. Pillowcase",
-        "slug": "advanced-animatronics-adventures-by-floere-t-pillowcase",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>You descend into the ancient lava tunnels, your mission clear: to sing the Song of Awoo to the Elder Dogs. Arrived at the inner sanctum, before the altar, you take a deep breath and… Oh no! It sounds like you swallowed a pillow. Worse, the Elder Dogs are displeased and render their verdict: “muble fumble Shiba rumble Floof” Or that’s what it sounds like to you. What to do now? If only there was a way to sing and hear clearly while in suit! If only there was some idiot doing research in that sort of thing!</span></p>",
-          "name": "Advanced Animatronics Adventures by Floere T. Pillowcase",
-          "location": {
-            "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
-            "translationId": "c11f2908-0f65-4f43-bd8c-36ab95f39602",
-            "fields": {
-              "name": "Big panel room"
-            }
-          },
-          "start-time": "2022-11-12T14:00:00Z",
-          "end-time": "2022-11-12T15:30:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-advanced-animatronics-adventures-by-floere-t-pillowcase",
-            "slug": "advanced-animatronics-adventures-by-floere-t-pillowcase",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-blood-on-the-clocktower",
-        "name": "Blood on the Clocktower",
-        "slug": "blood-on-the-clocktower",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>During a hellish thunderstorm, on the stroke of midnight, there echoes a bone-chilling scream.\r\nThe townsfolk rush to investigate and find their storyteller murdered, the body impaled on the hands of the clocktower, blood dripping onto the cobblestones below.\r\n\r\nA Demon must be on the loose! Murdering by night and disguised in human form by day. Some of you have scraps of information. Others have abilities that fight evil or protect the innocent. But the Demon, and its evil minions, are spreading lies to confuse and breed suspicion.\r\n\r\nIn the quiet village of Ravenswood Fluff, ‌a demon walks among you... Will the good townsfolk put the puzzle together in time to execute the demon and save themselves? Or will evil overrun this once peaceful village?</span></p>",
-          "name": "Blood on the Clocktower",
-          "location": {
-            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
-            "translationId": "a0d1b3be-304c-48cd-a7e9-b8fc4367ce86",
-            "fields": {
-              "name": "Small panel room"
-            }
-          },
-          "start-time": "2022-11-13T19:00:00Z",
-          "end-time": "2022-11-13T21:30:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-blood-on-the-clocktower",
-            "slug": "blood-on-the-clocktower",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-charity-auction",
-        "name": "Charity Auction",
-        "slug": "charity-auction",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>You never know what you'll find on a tropical beach. It might even be something of value... We'll auction-off the most iconic items of Flüüfff Tropical Trouble for our charity: Natagora. If you are a fervent collector, or want to support our charity, make sure to snag-up some of our monumental items!\r\n\r\n</span></p>",
-          "name": "Charity Auction",
-          "location": {
-            "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
-            "translationId": "c11f2908-0f65-4f43-bd8c-36ab95f39602",
-            "fields": {
-              "name": "Big panel room"
-            }
-          },
-          "start-time": "2022-11-13T10:00:00Z",
-          "end-time": "2022-11-13T11:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-charity-auction",
-            "slug": "charity-auction",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-christian-furs-meet-by-nimalen",
-        "name": "Christian Furs Meet by Nimalen",
-        "slug": "christian-furs-meet-by-nimalen",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>The idea of this meet is to provide a space to talk and share experiences. The meet is aimed at people that are both a Furry and of Christian faith, but it's open to everyone who wants to respectfully join the conversation. </span></p>",
-          "name": "Christian Furs Meet by Nimalen",
-          "location": {
-            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
-            "translationId": "a0d1b3be-304c-48cd-a7e9-b8fc4367ce86",
-            "fields": {
-              "name": "Small panel room"
-            }
-          },
-          "start-time": "2022-11-11T14:00:00Z",
-          "end-time": "2022-11-11T15:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-christian-furs-meet-by-nimalen",
-            "slug": "christian-furs-meet-by-nimalen",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-coffee-panel---coffee-break-by-laddian",
-        "name": "Coffee Panel - Coffee Break by Laddian",
-        "slug": "coffee-panel---coffee-break-by-laddian",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>Coffee coffee coffee! Nothing is like the dark gold! Whether you drink it black or clouded with milk (we won't judge too harshly) you're welcome to join the coffee tasting. Laddian will provide three types of different home-roasted tastes, explain some history, and present an additional, secret, coffee-related topic!\r\nThere will be an additional speaker here too, who might it be? Mystery abounds :D</span></p>",
-          "name": "Coffee Panel - Coffee Break by Laddian",
-          "location": {
-            "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
-            "translationId": "c11f2908-0f65-4f43-bd8c-36ab95f39602",
-            "fields": {
-              "name": "Big panel room"
-            }
-          },
-          "start-time": "2022-11-11T19:00:00Z",
-          "end-time": "2022-11-11T20:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-coffee-panel---coffee-break-by-laddian",
-            "slug": "coffee-panel---coffee-break-by-laddian",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-dance-competition",
-        "name": "Dance Competition",
-        "slug": "dance-competition",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>Come and see Flüüfff's first-ever dance competition! Fursuiters and non-suiters will groove their heart out on main stage to pumping beats. Who will be the first Flüüfff Dance Champion? Be there and feast your eyes on this phenomenal spectacle!</span></p>",
-          "name": "Dance Competition",
-          "location": {
-            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
-            "translationId": "fe40774c-5f99-464b-a8c3-f938d4a8be41",
-            "fields": {
-              "name": "Main Stage"
-            }
-          },
-          "start-time": "2022-11-12T19:00:00Z",
-          "end-time": "2022-11-12T20:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-dance-competition",
-            "slug": "dance-competition",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-dealers-den",
-        "name": "Dealer's Den",
-        "slug": "dealers-den",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>Dealer's Den</span></p>",
-          "name": "Dealer's Den",
-          "location": {
-            "contentId": "99ea0268-cb07-4dbf-a6dd-a152fba239bc",
-            "translationId": "58b9ab04-4c28-4763-81a7-58a9a9e55bda",
-            "fields": {
-              "name": "Galileo"
-            }
-          },
-          "start-time": "2022-11-12T13:00:00Z",
-          "end-time": "2022-11-12T16:30:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-dealers-den",
-            "slug": "dealers-den",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-defense-and-deterrence-recognition-and-prevention-of-sexual-harrasment-and-abuse",
-        "name": "Defense and Deterrence: Recognition and Prevention of Sexual Harrasment and Abuse",
-        "slug": "defense-and-deterrence-recognition-and-prevention-of-sexual-harrasment-and-abuse",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>If everything was as rosy as we'd like it to be, we wouldn't have to talk about harassment and abuse. In this panel, an external expert will explain what harassment and abuse entail. After that, some of our con-goers will share their own stories around experiencing, coping with, and preventing non-consensual contact. If you want to learn how to help victims, make sure to join this panel.</span></p>",
-          "name": "Defense and Deterrence: Recognition and Prevention of Sexual Harrasment and Abuse",
-          "location": {
-            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
-            "translationId": "fe40774c-5f99-464b-a8c3-f938d4a8be41",
-            "fields": {
-              "name": "Main Stage"
-            }
-          },
-          "start-time": "2022-11-10T14:00:00Z",
-          "end-time": "2022-11-10T15:30:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-defense-and-deterrence-recognition-and-prevention-of-sexual-harrasment-and-abuse",
-            "slug": "defense-and-deterrence-recognition-and-prevention-of-sexual-harrasment-and-abuse",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-feedback-panel-by-choob",
-        "name": "Feedback Panel by Choob",
-        "slug": "feedback-panel-by-choob",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>Want to help us improve Flüüfff for next edition? Here's your chance! Get together with the Feedback department and tell them about your experience: what would you love to keep and what can we improve?</span></p>",
-          "name": "Feedback Panel by Choob",
-          "location": {
-            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
-            "translationId": "a0d1b3be-304c-48cd-a7e9-b8fc4367ce86",
-            "fields": {
-              "name": "Small panel room"
-            }
-          },
-          "start-time": "2022-11-13T11:00:00Z",
-          "end-time": "2022-11-13T12:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-feedback-panel-by-choob",
-            "slug": "feedback-panel-by-choob",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-flfff-staff-recruitment-panel-by-stan",
-        "name": "Flüüfff Staff Recruitment Panel by Stan",
-        "slug": "flfff-staff-recruitment-panel-by-stan",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>Do you like Flüüfff? Do you want it to thrive and improve? You should consider joining our Team! In this panel you will learn how the organization works, and how you can help us achieve even better results. The list of currently available positions will also be shared.</span></p>",
-          "name": "Flüüfff Staff Recruitment Panel by Stan",
-          "location": {
-            "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
-            "translationId": "c11f2908-0f65-4f43-bd8c-36ab95f39602",
-            "fields": {
-              "name": "Big panel room"
-            }
-          },
-          "start-time": "2022-11-13T12:00:00Z",
-          "end-time": "2022-11-13T13:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-flfff-staff-recruitment-panel-by-stan",
-            "slug": "flfff-staff-recruitment-panel-by-stan",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-fursuit-charades",
-        "name": "Fursuit Charades",
-        "slug": "fursuit-charades",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>Fursuiters are known not to speak. So how well do they communicate? We are going to play charades with several teams of suiters who will vie for the title of Flüüfff Tropical Charades Champion. Watch a hilarious game of charades, guess the words, and help us pick the final competing teams for the Show night!</span></p>",
-          "name": "Fursuit Charades",
-          "location": {
-            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
-            "translationId": "fe40774c-5f99-464b-a8c3-f938d4a8be41",
-            "fields": {
-              "name": "Main Stage"
-            }
-          },
-          "start-time": "2022-11-12T13:00:00Z",
-          "end-time": "2022-11-12T14:30:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-fursuit-charades",
-            "slug": "fursuit-charades",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-fursuit-games",
+        "id": "76e0cf93-8ed5-4567-9bcf-50944787b56e",
         "name": "Fursuit Games",
         "slug": "fursuit-games",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
+        "createdAt": "2023-09-11T19:58:29.494740",
+        "updatedAt": "2023-12-16T20:40:52.357450",
         "fields": {
           "description": "<p dir=\"ltr\"><span>Playful paws, huge heads, and massive movements... How can this ever go well with a series of tropical games? Enjoy watching your favourite suiters play games such as: Twister and Kiss the Coconut. Make sure to stay afterwards to give it all a go yourself!</span></p>",
+          "start-time": "2022-11-11T17:00:00Z",
           "name": "Fursuit Games",
           "location": {
             "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
-            "translationId": "fe40774c-5f99-464b-a8c3-f938d4a8be41",
             "fields": {
               "name": "Main Stage"
-            }
+            },
+            "translationId": null
           },
-          "start-time": "2022-11-11T17:00:00Z",
           "end-time": "2022-11-11T18:00:00Z"
         },
         "language": "en",
         "translations": [
           {
-            "id": "fake-uuid-fursuit-games",
+            "id": "76e0cf93-8ed5-4567-9bcf-50944787b56e",
             "slug": "fursuit-games",
             "language": "en"
           }
         ]
       },
       {
-        "id": "fake-uuid-fursuit-making-show-and-tell-by-sibs",
-        "name": "Fursuit making: Show and tell by Sibs",
-        "slug": "fursuit-making-show-and-tell-by-sibs",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>Do you have a fursuit feature or technique (or an adjacent project) that you are proud of? \r\nSwing by here, show it off, and learn from other makers both new and seasoned! \r\n\r\nBring your fursuit (part), or project, and get your time in the spotlight to show-off what you're proud off, then mingle and chat with other makers to learn from each other.</span></p>",
-          "name": "Fursuit making: Show and tell by Sibs",
-          "location": {
-            "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
-            "translationId": "c11f2908-0f65-4f43-bd8c-36ab95f39602",
-            "fields": {
-              "name": "Big panel room"
-            }
-          },
-          "start-time": "2022-11-11T10:00:00Z",
-          "end-time": "2022-11-11T12:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-fursuit-making-show-and-tell-by-sibs",
-            "slug": "fursuit-making-show-and-tell-by-sibs",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-fursuit-repair-basics-by-hell-charm",
-        "name": "Fursuit Repair Basics by Hell Charm",
-        "slug": "fursuit-repair-basics-by-hell-charm",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>Learn how to perform basic repairs on fursuits, so you can fix small wear and tear without stress or breaking a sweat!</span></p>",
-          "name": "Fursuit Repair Basics by Hell Charm",
-          "location": {
-            "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
-            "translationId": "c11f2908-0f65-4f43-bd8c-36ab95f39602",
-            "fields": {
-              "name": "Big panel room"
-            }
-          },
-          "start-time": "2022-11-10T12:00:00Z",
-          "end-time": "2022-11-10T13:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-fursuit-repair-basics-by-hell-charm",
-            "slug": "fursuit-repair-basics-by-hell-charm",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-group-photo",
-        "name": "Group Photo",
-        "slug": "group-photo",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>Who doesn't want to look back at a great con experience with their friends? We definitely do, so we have a group photo planned! We start with the fursuit picture, doors close at 1240, so be sure to get there at 1230. At 1245 we open the doors so all other attendees can join for the full picture!</span></p>",
-          "name": "Group Photo",
-          "location": {
-            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
-            "translationId": "fe40774c-5f99-464b-a8c3-f938d4a8be41",
-            "fields": {
-              "name": "Main Stage"
-            }
-          },
-          "start-time": "2022-11-12T11:30:00Z",
-          "end-time": "2022-11-12T12:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-group-photo",
-            "slug": "group-photo",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-haunted-escape",
-        "name": "Haunted Escape",
-        "slug": "haunted-escape",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>Join Dr. Nigel Cornobble for a new, fantastical adventure to the tropical island of Imboca!\r\nThe indiginous creatures have hidden away the majestic Emerald Dodecahedron - a glorious addition to the British Museum's collection!\r\nThus, it is your job to enter the Aquifer of Certain Doom and steal the artifact from right under their noses.\r\nDon't worry about the rumours. Simple tall tales and superstition, surely!</span></p>",
-          "name": "Haunted Escape",
-          "location": {
-            "contentId": "99ea0268-cb07-4dbf-a6dd-a152fba239bc",
-            "translationId": "58b9ab04-4c28-4763-81a7-58a9a9e55bda",
-            "fields": {
-              "name": "Galileo"
-            }
-          },
-          "start-time": "2022-11-10T20:00:00Z",
-          "end-time": "2022-11-11T00:30:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-haunted-escape",
-            "slug": "haunted-escape",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-how-to-beatbox-101-by-jawbreaker",
-        "name": "How to Beatbox 101 by Jawbreaker",
-        "slug": "how-to-beatbox-101-by-jawbreaker",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>In Jawbreaker's Jaw-breaking Beatbox panel I will teach, or improve, your skills at inhuman noise making! Whether you're a complete rookie or an experienced performer, I will help you become a better drum machine than you were ever before!</span></p>",
-          "name": "How to Beatbox 101 by Jawbreaker",
-          "location": {
-            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
-            "translationId": "a0d1b3be-304c-48cd-a7e9-b8fc4367ce86",
-            "fields": {
-              "name": "Small panel room"
-            }
-          },
-          "start-time": "2022-11-12T15:30:00Z",
-          "end-time": "2022-11-12T17:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-how-to-beatbox-101-by-jawbreaker",
-            "slug": "how-to-beatbox-101-by-jawbreaker",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-how-to-master-the-soundwaves-by-choob",
-        "name": "How to Master the (Sound)waves by Choob",
-        "slug": "how-to-master-the-soundwaves-by-choob",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>Cowabunga, my dudes!\r\nThe waves on these tropical jams sound gnarly today. But... Have you ever wondered how they get made? Come and join us if you want to delve deeper into the wonderful depths of sound design. And learn how to turn your tiny soundwaves into massive auditory tsunamis.\r\n\r\n(No prior music experience needed.)</span></p>",
-          "name": "How to Master the (Sound)waves by Choob",
-          "location": {
-            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
-            "translationId": "a0d1b3be-304c-48cd-a7e9-b8fc4367ce86",
-            "fields": {
-              "name": "Small panel room"
-            }
-          },
-          "start-time": "2022-11-10T13:00:00Z",
-          "end-time": "2022-11-10T14:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-how-to-master-the-soundwaves-by-choob",
-            "slug": "how-to-master-the-soundwaves-by-choob",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-how-to-panel-by-floere-t-pillowcase",
-        "name": "How to Panel by Floere T. Pillowcase",
-        "slug": "how-to-panel-by-floere-t-pillowcase",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>So you want to host your very own panel at Flüüfff but aren't quite sure how to go about it? Or you want to bounce a few ideas around for a future panel? Why sure! Come on over, take a seat, and we'll have a chat. We’ll first present some techniques and tricks. After that, the floor is yours! (Literally. Go on, take it as a souvenir. Bring a crow bar.)</span></p>",
-          "name": "How to Panel by Floere T. Pillowcase",
-          "location": {
-            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
-            "translationId": "a0d1b3be-304c-48cd-a7e9-b8fc4367ce86",
-            "fields": {
-              "name": "Small panel room"
-            }
-          },
-          "start-time": "2022-11-10T10:00:00Z",
-          "end-time": "2022-11-10T12:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-how-to-panel-by-floere-t-pillowcase",
-            "slug": "how-to-panel-by-floere-t-pillowcase",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-karaoke",
-        "name": "Karaoke",
-        "slug": "karaoke",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>It's Fur-e-oke time! That's Karaoke for Furries! We have all the songs. Join our panel, pick a song, wait for your turn and sing with us. Fursuiters are welcome!</span></p>",
-          "name": "Karaoke",
-          "location": {
-            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
-            "translationId": "a0d1b3be-304c-48cd-a7e9-b8fc4367ce86",
-            "fields": {
-              "name": "Small panel room"
-            }
-          },
-          "start-time": "2022-11-10T20:00:00Z",
-          "end-time": "2022-11-10T22:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-karaoke",
-            "slug": "karaoke",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-my-first-furcon-by-jawbreaker",
-        "name": "My First Furcon by Jawbreaker",
-        "slug": "my-first-furcon-by-jawbreaker",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>First time visiting a furcon, or rusty after the forced corona break? Jawbreaker helps you on your way with some pro tips to make the most of your event, including (but not limited to) Flüüfff!</span></p>",
-          "name": "My First Furcon by Jawbreaker",
-          "location": {
-            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
-            "translationId": "fe40774c-5f99-464b-a8c3-f938d4a8be41",
-            "fields": {
-              "name": "Main Stage"
-            }
-          },
-          "start-time": "2022-11-09T19:30:00Z",
-          "end-time": "2022-11-09T21:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-my-first-furcon-by-jawbreaker",
-            "slug": "my-first-furcon-by-jawbreaker",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-opening-ceremony",
-        "name": "Opening Ceremony",
-        "slug": "opening-ceremony",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>The Grand Casino has stranded and now we're stuck on this tropical beach... But that won't stop us from throwing a party! There's enough supplies to turn this into something great! Learn more about the con, the charity, and why we ended-up in this Tropical Trouble in the first place :o</span></p>",
-          "name": "Opening Ceremony",
-          "location": {
-            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
-            "translationId": "fe40774c-5f99-464b-a8c3-f938d4a8be41",
-            "fields": {
-              "name": "Main Stage"
-            }
-          },
-          "start-time": "2022-11-09T19:00:00Z",
-          "end-time": "2022-11-09T19:30:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-opening-ceremony",
-            "slug": "opening-ceremony",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-photoshoot",
-        "name": "Photoshoot",
-        "slug": "photoshoot",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>Want to get pictures taken of you and friends in a tropical setting? Make sure to  book a slot at the con for the photo shoot! Non-suiters are welcome but we'd like to try and give priority to fursuiters.</span></p>",
-          "name": "Photoshoot",
-          "location": {
-            "contentId": "d209cce6-d459-4a7e-8555-762008776c6d",
-            "translationId": "7d953dfa-73d4-4932-bd62-110beff38df5",
-            "fields": {
-              "name": "Mezzanine"
-            }
-          },
-          "start-time": "2022-11-12T15:00:00Z",
-          "end-time": "2022-11-12T18:30:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-photoshoot",
-            "slug": "photoshoot",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-puppy-panel",
-        "name": " Puppy Panel",
-        "slug": "puppy-panel",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>Legend tell of a canine tribe that roams these lands after dark, the moon light glistening on their sleek hides. Mystery surrounds them: who are they, whence did they come from? Which are their secret rituals and what masters do they heel to? And why are they obsessed with squeaky toys? Much will be told in this panel. Join us to learn about pup play and enjoy some squeaky time if already One of the Tribe.</span></p>",
-          "name": " Puppy Panel",
-          "location": {
-            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
-            "translationId": "fe40774c-5f99-464b-a8c3-f938d4a8be41",
-            "fields": {
-              "name": "Main Stage"
-            }
-          },
-          "start-time": "2022-11-10T21:00:00Z",
-          "end-time": "2022-11-10T23:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-puppy-panel",
-            "slug": "puppy-panel",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-roleplaying-and-story-game-track",
-        "name": "Roleplaying and Story Game Track",
-        "slug": "roleplaying-and-story-game-track",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>The place to go to scratch your roleplaying itch!\r\nThis year two games will be available at the same time!\r\nBe sure to register ahead of time on Saturday at the Bar so you won't miss out on the fun.</span></p>",
-          "name": "Roleplaying and Story Game Track",
-          "location": {
-            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
-            "translationId": "a0d1b3be-304c-48cd-a7e9-b8fc4367ce86",
-            "fields": {
-              "name": "Small panel room"
-            }
-          },
-          "start-time": "2022-11-13T13:30:00Z",
-          "end-time": "2022-11-13T16:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-roleplaying-and-story-game-track",
-            "slug": "roleplaying-and-story-game-track",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-show-night-and-closing-ceremony",
-        "name": "Show Night and Closing Ceremony",
-        "slug": "show-night-and-closing-ceremony",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>On the night of the Final Day of Flüüfff we gather to celebrate the Day of Deities! Acts of all sorts shall be performed to please Stan the Creator and their Pantheon of Miscellaneous Deities. What fate shall await us? Join this night of magic and make sure to witness the conclusion to this Tropical Trouble!</span></p>",
-          "name": "Show Night and Closing Ceremony",
-          "location": {
-            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
-            "translationId": "fe40774c-5f99-464b-a8c3-f938d4a8be41",
-            "fields": {
-              "name": "Main Stage"
-            }
-          },
-          "start-time": "2022-11-12T21:00:00Z",
-          "end-time": "2022-11-12T22:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-show-night-and-closing-ceremony",
-            "slug": "show-night-and-closing-ceremony",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-skateboarding-basics-panel",
-        "name": "Skateboarding Basics Panel",
-        "slug": "skateboarding-basics-panel",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>Wanna kickflip, grind, be the next Tony Hawk? Slow down there tiger. We’ll first set a good base.\r\nOur goal is to start you off with some solid basics, and even get you to do some radical tricks. Don’t worry about your skill level, we’ll be going from the bottom to the top! Hope to see you there and rock on! \r\nBringing your own gear is encouraged, but there will be some boards and protective gear provided.</span></p>",
-          "name": "Skateboarding Basics Panel",
-          "location": {
-            "contentId": "596a46d6-420d-4752-9c90-59e2f022f01e",
-            "translationId": "53451cf6-0e22-4fb9-9302-85afec3985fe",
-            "fields": {
-              "name": "The outside"
-            }
-          },
-          "start-time": "2022-11-11T12:30:00Z",
-          "end-time": "2022-11-11T15:30:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-skateboarding-basics-panel",
-            "slug": "skateboarding-basics-panel",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-snack-exchange",
-        "name": "Snack Exchange",
-        "slug": "snack-exchange",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>What would an international con be without its very own snack exchange? Fluffies from all over the world bring their local delicacies for you to taste! Make sure to have a chat with the people bringing snacks and learn about the origins of these delights.</span></p>",
-          "name": "Snack Exchange",
-          "location": {
-            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
-            "translationId": "fe40774c-5f99-464b-a8c3-f938d4a8be41",
-            "fields": {
-              "name": "Main Stage"
-            }
-          },
-          "start-time": "2022-11-11T12:00:00Z",
-          "end-time": "2022-11-11T14:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-snack-exchange",
-            "slug": "snack-exchange",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-strike-a-pose-by-dawn",
-        "name": "Strike a Pose! by Dawn",
-        "slug": "strike-a-pose-by-dawn",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>Do you feel like an awkward potato in front of the camera? Or is the only pose you know is a T-pose? Then this panel has you covered! We'll walk you through how to pose for a fursuit photoshoot, with plenty of examples, tips and tricks. We'll show you how to bring your characters' personality to the front and make every picture come alive!\r\n\r\nTo cap it off, we'll also teach you how to edit photographs and show you the best way to upload high-quality snaps to social media platforms.</span></p>",
-          "name": "Strike a Pose! by Dawn",
-          "location": {
-            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
-            "translationId": "a0d1b3be-304c-48cd-a7e9-b8fc4367ce86",
-            "fields": {
-              "name": "Small panel room"
-            }
-          },
-          "start-time": "2022-11-10T15:30:00Z",
-          "end-time": "2022-11-10T17:00:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-strike-a-pose-by-dawn",
-            "slug": "strike-a-pose-by-dawn",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-tropical-dance",
-        "name": "Tropical Dance",
-        "slug": "tropical-dance",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
-        "fields": {
-          "description": "<p dir=\"ltr\"><span>Hope you're warmed up after all the events because we have a second dance lined up for you! This time, DJ Afwasbaq, DJ Code-Y and the Green Bro's will provide you with the most tropical beats you'll hear anywhere this side of awesome!</span></p>",
-          "name": "Tropical Dance",
-          "location": {
-            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
-            "translationId": "fe40774c-5f99-464b-a8c3-f938d4a8be41",
-            "fields": {
-              "name": "Main Stage"
-            }
-          },
-          "start-time": "2022-11-11T20:00:00Z",
-          "end-time": "2022-11-12T00:30:00Z"
-        },
-        "language": "en",
-        "translations": [
-          {
-            "id": "fake-uuid-tropical-dance",
-            "slug": "tropical-dance",
-            "language": "en"
-          }
-        ]
-      },
-      {
-        "id": "fake-uuid-tropical-initiation-dance",
+        "id": "f922dec3-88e1-4eed-be7d-d7c0650115bb",
         "name": "Tropical Initiation Dance",
         "slug": "tropical-initiation-dance",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
+        "createdAt": "2023-09-11T19:58:33.255228",
+        "updatedAt": "2023-12-16T20:40:49.458651",
         "fields": {
-          "description": "<p dir=\"ltr\"><span>A dance on the first evening? But I barely know anyone! Well, now you still have the energy, and probably have just met new people during the My First Furcon panel, why not set that energy free and show your true colours? Dance to your hearts desire on Mayk and DJ Code-Y!</span></p>",
-          "name": "Tropical Initiation Dance",
+          "start-time": "2022-11-09T21:30:00Z",
+          "end-time": "2022-11-10T00:30:00Z",
           "location": {
             "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
-            "translationId": "fe40774c-5f99-464b-a8c3-f938d4a8be41",
             "fields": {
               "name": "Main Stage"
-            }
+            },
+            "translationId": null
           },
-          "start-time": "2022-11-09T21:30:00Z",
-          "end-time": "2022-11-10T00:30:00Z"
+          "description": "<p dir=\"ltr\"><span>A dance on the first evening? But I barely know anyone! Well, now you still have the energy, and probably have just met new people during the My First Furcon panel, why not set that energy free and show your true colours? Dance to your hearts desire on Mayk and DJ Code-Y!</span></p>",
+          "name": "Tropical Initiation Dance"
         },
         "language": "en",
         "translations": [
           {
-            "id": "fake-uuid-tropical-initiation-dance",
+            "id": "f922dec3-88e1-4eed-be7d-d7c0650115bb",
             "slug": "tropical-initiation-dance",
             "language": "en"
           }
         ]
       },
       {
-        "id": "fake-uuid-tropical-island-cultures-by-nimalen-and-floere",
-        "name": "Tropical Island Cultures by Nimalen and Floere",
-        "slug": "tropical-island-cultures-by-nimalen-and-floere",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
+        "id": "72a1e546-75d9-4aad-bad3-113930b1c4e3",
+        "name": "Tropical Dance",
+        "slug": "tropical-dance",
+        "createdAt": "2023-09-11T19:58:33.064783",
+        "updatedAt": "2023-12-16T20:40:49.015193",
         "fields": {
-          "description": "<p dir=\"ltr\"><span>Not all inhabited island are tropical, nor are all island cultures Polynesian. In this panel, we’ll take a closer look at other cultures that blossom under a tropical sun, surrounded by the ocean.</span></p>",
-          "name": "Tropical Island Cultures by Nimalen and Floere",
           "location": {
-            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
-            "translationId": "a0d1b3be-304c-48cd-a7e9-b8fc4367ce86",
+            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
             "fields": {
-              "name": "Small panel room"
-            }
+              "name": "Main Stage"
+            },
+            "translationId": null
           },
-          "start-time": "2022-11-12T10:00:00Z",
-          "end-time": "2022-11-12T11:00:00Z"
+          "start-time": "2022-11-11T20:00:00Z",
+          "name": "Tropical Dance",
+          "end-time": "2022-11-12T00:30:00Z",
+          "description": "<p dir=\"ltr\"><span>Hope you're warmed up after all the events because we have a second dance lined up for you! This time, DJ Afwasbaq, DJ Code-Y and the Green Bro's will provide you with the most tropical beats you'll hear anywhere this side of awesome!</span></p>"
         },
         "language": "en",
         "translations": [
           {
-            "id": "fake-uuid-tropical-island-cultures-by-nimalen-and-floere",
+            "id": "72a1e546-75d9-4aad-bad3-113930b1c4e3",
+            "slug": "tropical-dance",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "25f10d43-5d13-4938-8b65-a0dd3d1401e3",
+        "name": "Strike a Pose! by Dawn",
+        "slug": "strike-a-pose-by-dawn",
+        "createdAt": "2023-09-11T19:58:32.903638",
+        "updatedAt": "2023-12-16T20:40:48.499303",
+        "fields": {
+          "location": {
+            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
+            "fields": {
+              "name": "Small panel room"
+            },
+            "translationId": null
+          },
+          "name": "Strike a Pose! by Dawn",
+          "end-time": "2022-11-10T17:00:00Z",
+          "description": "<p dir=\"ltr\"><span>Do you feel like an awkward potato in front of the camera? Or is the only pose you know is a T-pose? Then this panel has you covered! We'll walk you through how to pose for a fursuit photoshoot, with plenty of examples, tips and tricks. We'll show you how to bring your characters' personality to the front and make every picture come alive!\r\n\r\nTo cap it off, we'll also teach you how to edit photographs and show you the best way to upload high-quality snaps to social media platforms.</span></p>",
+          "start-time": "2022-11-10T15:30:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "25f10d43-5d13-4938-8b65-a0dd3d1401e3",
+            "slug": "strike-a-pose-by-dawn",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "1c90272d-f3bd-4abf-9934-d0f4ab0b4c73",
+        "name": "Snack Exchange",
+        "slug": "snack-exchange",
+        "createdAt": "2023-09-11T19:58:32.761329",
+        "updatedAt": "2023-12-16T20:40:48.044671",
+        "fields": {
+          "end-time": "2022-11-11T14:00:00Z",
+          "location": {
+            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
+            "fields": {
+              "name": "Main Stage"
+            },
+            "translationId": null
+          },
+          "name": "Snack Exchange",
+          "description": "<p dir=\"ltr\"><span>What would an international con be without its very own snack exchange? Fluffies from all over the world bring their local delicacies for you to taste! Make sure to have a chat with the people bringing snacks and learn about the origins of these delights.</span></p>",
+          "start-time": "2022-11-11T12:00:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "1c90272d-f3bd-4abf-9934-d0f4ab0b4c73",
+            "slug": "snack-exchange",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "90136022-0dba-4815-a4b2-4a0622152908",
+        "name": "Skateboarding Basics Panel",
+        "slug": "skateboarding-basics-panel",
+        "createdAt": "2023-09-11T19:58:32.604678",
+        "updatedAt": "2023-12-16T20:40:47.697335",
+        "fields": {
+          "location": {
+            "contentId": "596a46d6-420d-4752-9c90-59e2f022f01e",
+            "fields": {
+              "name": "The outside"
+            },
+            "translationId": null
+          },
+          "start-time": "2022-11-11T12:30:00Z",
+          "description": "<p dir=\"ltr\"><span>Wanna kickflip, grind, be the next Tony Hawk? Slow down there tiger. We’ll first set a good base.\r\nOur goal is to start you off with some solid basics, and even get you to do some radical tricks. Don’t worry about your skill level, we’ll be going from the bottom to the top! Hope to see you there and rock on! \r\nBringing your own gear is encouraged, but there will be some boards and protective gear provided.</span></p>",
+          "name": "Skateboarding Basics Panel",
+          "end-time": "2022-11-11T15:30:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "90136022-0dba-4815-a4b2-4a0622152908",
+            "slug": "skateboarding-basics-panel",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "7574236a-bb8c-43eb-8618-e61da10c6465",
+        "name": "Show Night and Closing Ceremony",
+        "slug": "show-night-and-closing-ceremony",
+        "createdAt": "2023-09-11T19:58:32.424479",
+        "updatedAt": "2023-12-16T20:40:47.227764",
+        "fields": {
+          "start-time": "2022-11-12T21:00:00Z",
+          "name": "Show Night and Closing Ceremony",
+          "description": "<p dir=\"ltr\"><span>On the night of the Final Day of Flüüfff we gather to celebrate the Day of Deities! Acts of all sorts shall be performed to please Stan the Creator and their Pantheon of Miscellaneous Deities. What fate shall await us? Join this night of magic and make sure to witness the conclusion to this Tropical Trouble!</span></p>",
+          "end-time": "2022-11-12T22:00:00Z",
+          "location": {
+            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
+            "fields": {
+              "name": "Main Stage"
+            },
+            "translationId": null
+          }
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "7574236a-bb8c-43eb-8618-e61da10c6465",
+            "slug": "show-night-and-closing-ceremony",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "8325de71-deb3-4c24-8f05-f5c961d495f8",
+        "name": "Roleplaying and Story Game Track",
+        "slug": "roleplaying-and-story-game-track",
+        "createdAt": "2023-09-11T19:58:32.243665",
+        "updatedAt": "2023-12-16T20:40:46.571929",
+        "fields": {
+          "description": "<p dir=\"ltr\"><span>The place to go to scratch your roleplaying itch!\r\nThis year two games will be available at the same time!\r\nBe sure to register ahead of time on Saturday at the Bar so you won't miss out on the fun.</span></p>",
+          "name": "Roleplaying and Story Game Track",
+          "end-time": "2022-11-13T16:00:00Z",
+          "location": {
+            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
+            "fields": {
+              "name": "Small panel room"
+            },
+            "translationId": null
+          },
+          "start-time": "2022-11-13T13:30:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "8325de71-deb3-4c24-8f05-f5c961d495f8",
+            "slug": "roleplaying-and-story-game-track",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "446c272b-d0a9-433c-841e-84244f3d5092",
+        "name": " Puppy Panel",
+        "slug": "puppy-panel",
+        "createdAt": "2023-09-11T19:58:32.058301",
+        "updatedAt": "2023-12-16T20:40:45.436306",
+        "fields": {
+          "end-time": "2022-11-10T23:00:00Z",
+          "start-time": "2022-11-10T21:00:00Z",
+          "location": {
+            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
+            "fields": {
+              "name": "Main Stage"
+            },
+            "translationId": null
+          },
+          "name": " Puppy Panel",
+          "description": "<p dir=\"ltr\"><span>Legend tell of a canine tribe that roams these lands after dark, the moon light glistening on their sleek hides. Mystery surrounds them: who are they, whence did they come from? Which are their secret rituals and what masters do they heel to? And why are they obsessed with squeaky toys? Much will be told in this panel. Join us to learn about pup play and enjoy some squeaky time if already One of the Tribe.</span></p>"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "446c272b-d0a9-433c-841e-84244f3d5092",
+            "slug": "puppy-panel",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "9db16814-c974-476f-a72d-f70b44d649cd",
+        "name": "Photoshoot",
+        "slug": "photoshoot",
+        "createdAt": "2023-09-11T19:58:31.887491",
+        "updatedAt": "2023-12-16T20:40:44.521965",
+        "fields": {
+          "location": {
+            "contentId": "d209cce6-d459-4a7e-8555-762008776c6d",
+            "fields": {
+              "name": "Mezzanine"
+            },
+            "translationId": null
+          },
+          "name": "Photoshoot",
+          "end-time": "2022-11-10T13:00:00Z",
+          "start-time": "2022-11-10T10:00:00Z",
+          "description": "<p dir=\"ltr\"><span>Want to get pictures taken of you and friends in a tropical setting? Make sure to  book a slot at the con for the photo shoot! Non-suiters are welcome but we'd like to try and give priority to fursuiters.</span></p>"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "9db16814-c974-476f-a72d-f70b44d649cd",
+            "slug": "photoshoot",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "5c438f5b-9182-4770-9f52-0fa71bd1dc41",
+        "name": "My First Furcon by Jawbreaker",
+        "slug": "my-first-furcon-by-jawbreaker",
+        "createdAt": "2023-09-11T19:58:31.547243",
+        "updatedAt": "2023-12-16T20:40:43.899639",
+        "fields": {
+          "description": "<p dir=\"ltr\"><span>First time visiting a furcon, or rusty after the forced corona break? Jawbreaker helps you on your way with some pro tips to make the most of your event, including (but not limited to) Flüüfff!</span></p>",
+          "start-time": "2022-11-09T19:30:00Z",
+          "name": "My First Furcon by Jawbreaker",
+          "end-time": "2022-11-09T21:00:00Z",
+          "location": {
+            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
+            "fields": {
+              "name": "Main Stage"
+            },
+            "translationId": null
+          }
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "5c438f5b-9182-4770-9f52-0fa71bd1dc41",
+            "slug": "my-first-furcon-by-jawbreaker",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "1e4c2f4e-3139-4336-8553-8a384fb51bd3",
+        "name": "Karaoke",
+        "slug": "karaoke",
+        "createdAt": "2023-09-11T19:58:31.006950",
+        "updatedAt": "2023-12-16T20:40:43.199522",
+        "fields": {
+          "description": "<p dir=\"ltr\"><span>It's Fur-e-oke time! That's Karaoke for Furries! We have all the songs. Join our panel, pick a song, wait for your turn and sing with us. Fursuiters are welcome!</span></p>",
+          "start-time": "2022-11-10T20:00:00Z",
+          "location": {
+            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
+            "fields": {
+              "name": "Small panel room"
+            },
+            "translationId": null
+          },
+          "name": "Karaoke",
+          "end-time": "2022-11-10T22:00:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "1e4c2f4e-3139-4336-8553-8a384fb51bd3",
+            "slug": "karaoke",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "b05f9282-b540-46f1-bd8f-3c56c2295ad3",
+        "name": "How to Panel by Floere T. Pillowcase",
+        "slug": "how-to-panel-by-floere-t-pillowcase",
+        "createdAt": "2023-09-11T19:58:30.837311",
+        "updatedAt": "2023-12-16T20:40:42.674911",
+        "fields": {
+          "location": {
+            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
+            "fields": {
+              "name": "Small panel room"
+            },
+            "translationId": null
+          },
+          "start-time": "2022-11-10T10:00:00Z",
+          "description": "<p dir=\"ltr\"><span>So you want to host your very own panel at Flüüfff but aren't quite sure how to go about it? Or you want to bounce a few ideas around for a future panel? Why sure! Come on over, take a seat, and we'll have a chat. We’ll first present some techniques and tricks. After that, the floor is yours! (Literally. Go on, take it as a souvenir. Bring a crow bar.)</span></p>",
+          "end-time": "2022-11-10T12:00:00Z",
+          "name": "How to Panel by Floere T. Pillowcase"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "b05f9282-b540-46f1-bd8f-3c56c2295ad3",
+            "slug": "how-to-panel-by-floere-t-pillowcase",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "e2dfffbf-7b21-4477-b6bb-ff330c31d0d0",
+        "name": "How to Master the (Sound)waves by Choob",
+        "slug": "how-to-master-the-soundwaves-by-choob",
+        "createdAt": "2023-09-11T19:58:30.636351",
+        "updatedAt": "2023-12-16T20:40:42.227417",
+        "fields": {
+          "description": "<p dir=\"ltr\"><span>Cowabunga, my dudes!\r\nThe waves on these tropical jams sound gnarly today. But... Have you ever wondered how they get made? Come and join us if you want to delve deeper into the wonderful depths of sound design. And learn how to turn your tiny soundwaves into massive auditory tsunamis.\r\n\r\n(No prior music experience needed.)</span></p>",
+          "end-time": "2022-11-10T14:00:00Z",
+          "start-time": "2022-11-10T13:00:00Z",
+          "location": {
+            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
+            "fields": {
+              "name": "Small panel room"
+            },
+            "translationId": null
+          },
+          "name": "How to Master the (Sound)waves by Choob"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "e2dfffbf-7b21-4477-b6bb-ff330c31d0d0",
+            "slug": "how-to-master-the-soundwaves-by-choob",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "a7503e4e-8a53-4955-9f5b-4cf24a21789e",
+        "name": "How to Beatbox 101 by Jawbreaker",
+        "slug": "how-to-beatbox-101-by-jawbreaker",
+        "createdAt": "2023-09-11T19:58:30.453246",
+        "updatedAt": "2023-12-16T20:40:41.844863",
+        "fields": {
+          "description": "<p dir=\"ltr\"><span>In Jawbreaker's Jaw-breaking Beatbox panel I will teach, or improve, your skills at inhuman noise making! Whether you're a complete rookie or an experienced performer, I will help you become a better drum machine than you were ever before!</span></p>",
+          "start-time": "2022-11-12T15:30:00Z",
+          "end-time": "2022-11-12T17:00:00Z",
+          "name": "How to Beatbox 101 by Jawbreaker",
+          "location": {
+            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
+            "fields": {
+              "name": "Small panel room"
+            },
+            "translationId": null
+          }
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "a7503e4e-8a53-4955-9f5b-4cf24a21789e",
+            "slug": "how-to-beatbox-101-by-jawbreaker",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "91ac2098-bca5-4b4f-822f-c7188d2b1f5d",
+        "name": "Haunted Escape",
+        "slug": "haunted-escape",
+        "createdAt": "2023-09-11T19:58:30.269933",
+        "updatedAt": "2023-12-16T20:40:41.322123",
+        "fields": {
+          "end-time": "2022-11-10T00:00:00Z",
+          "start-time": "2022-11-09T19:30:00Z",
+          "name": "Haunted Escape",
+          "description": "<p dir=\"ltr\"><span>Join Dr. Nigel Cornobble for a new, fantastical adventure to the tropical island of Imboca!\r\nThe indiginous creatures have hidden away the majestic Emerald Dodecahedron - a glorious addition to the British Museum's collection!\r\nThus, it is your job to enter the Aquifer of Certain Doom and steal the artifact from right under their noses.\r\nDon't worry about the rumours. Simple tall tales and superstition, surely!</span></p>",
+          "location": {
+            "contentId": "99ea0268-cb07-4dbf-a6dd-a152fba239bc",
+            "fields": {
+              "name": "Galileo"
+            },
+            "translationId": null
+          }
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "91ac2098-bca5-4b4f-822f-c7188d2b1f5d",
+            "slug": "haunted-escape",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "063ee44c-a5b6-4fcc-88e4-225c47095b4a",
+        "name": "Group Photo",
+        "slug": "group-photo",
+        "createdAt": "2023-09-11T19:58:30.087429",
+        "updatedAt": "2023-12-16T20:40:40.738362",
+        "fields": {
+          "start-time": "2022-11-12T11:30:00Z",
+          "end-time": "2022-11-12T12:00:00Z",
+          "description": "<p dir=\"ltr\"><span>Who doesn't want to look back at a great con experience with their friends? We definitely do, so we have a group photo planned! We start with the fursuit picture, doors close at 1240, so be sure to get there at 1230. At 1245 we open the doors so all other attendees can join for the full picture!</span></p>",
+          "name": "Group Photo",
+          "location": {
+            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
+            "fields": {
+              "name": "Main Stage"
+            },
+            "translationId": null
+          }
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "063ee44c-a5b6-4fcc-88e4-225c47095b4a",
+            "slug": "group-photo",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "aae51b0b-1c04-4b9d-96a2-7af9573eb0f8",
+        "name": "Fursuit Repair Basics by Hell Charm",
+        "slug": "fursuit-repair-basics-by-hell-charm",
+        "createdAt": "2023-09-11T19:58:29.902174",
+        "updatedAt": "2023-12-16T20:40:40.174003",
+        "fields": {
+          "location": {
+            "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
+            "fields": {
+              "name": "Big panel room"
+            },
+            "translationId": null
+          },
+          "description": "<p dir=\"ltr\"><span>Learn how to perform basic repairs on fursuits, so you can fix small wear and tear without stress or breaking a sweat!</span></p>",
+          "end-time": "2022-11-10T13:00:00Z",
+          "name": "Fursuit Repair Basics by Hell Charm",
+          "start-time": "2022-11-10T12:00:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "aae51b0b-1c04-4b9d-96a2-7af9573eb0f8",
+            "slug": "fursuit-repair-basics-by-hell-charm",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "41a3871e-a800-49ae-ae67-c1d2a2516164",
+        "name": "Fursuit making: Show and tell by Sibs",
+        "slug": "fursuit-making-show-and-tell-by-sibs",
+        "createdAt": "2023-09-11T19:58:29.654728",
+        "updatedAt": "2023-12-16T20:40:39.281802",
+        "fields": {
+          "location": {
+            "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
+            "fields": {
+              "name": "Big panel room"
+            },
+            "translationId": null
+          },
+          "start-time": "2022-11-11T10:00:00Z",
+          "name": "Fursuit making: Show and tell by Sibs",
+          "description": "<p dir=\"ltr\"><span>Do you have a fursuit feature or technique (or an adjacent project) that you are proud of? \r\nSwing by here, show it off, and learn from other makers both new and seasoned! \r\n\r\nBring your fursuit (part), or project, and get your time in the spotlight to show-off what you're proud off, then mingle and chat with other makers to learn from each other.</span></p>",
+          "end-time": "2022-11-11T12:00:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "41a3871e-a800-49ae-ae67-c1d2a2516164",
+            "slug": "fursuit-making-show-and-tell-by-sibs",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "d4b5a69b-b324-43bf-8846-7e3776e99197",
+        "name": "Flüüfff Staff Recruitment Panel by Stan",
+        "slug": "flfff-staff-recruitment-panel-by-stan",
+        "createdAt": "2023-09-11T19:58:29.165271",
+        "updatedAt": "2023-12-16T20:40:38.968881",
+        "fields": {
+          "start-time": "2022-11-13T12:00:00Z",
+          "description": "<p dir=\"ltr\"><span>Do you like Flüüfff? Do you want it to thrive and improve? You should consider joining our Team! In this panel you will learn how the organization works, and how you can help us achieve even better results. The list of currently available positions will also be shared.</span></p>",
+          "name": "Flüüfff Staff Recruitment Panel by Stan",
+          "end-time": "2022-11-13T13:00:00Z",
+          "location": {
+            "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
+            "fields": {
+              "name": "Big panel room"
+            },
+            "translationId": null
+          }
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "d4b5a69b-b324-43bf-8846-7e3776e99197",
+            "slug": "flfff-staff-recruitment-panel-by-stan",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "1b9442cf-95ee-4bfa-ba97-10338d8929d9",
+        "name": "Feedback Panel by Choob",
+        "slug": "feedback-panel-by-choob",
+        "createdAt": "2023-09-11T19:58:28.995125",
+        "updatedAt": "2023-12-16T20:40:38.804865",
+        "fields": {
+          "name": "Feedback Panel by Choob",
+          "end-time": "2022-11-13T12:00:00Z",
+          "start-time": "2022-11-13T11:00:00Z",
+          "location": {
+            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
+            "fields": {
+              "name": "Small panel room"
+            },
+            "translationId": null
+          },
+          "description": "<p dir=\"ltr\"><span>Want to help us improve Flüüfff for next edition? Here's your chance! Get together with the Feedback department and tell them about your experience: what would you love to keep and what can we improve?</span></p>"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "1b9442cf-95ee-4bfa-ba97-10338d8929d9",
+            "slug": "feedback-panel-by-choob",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "ec3f5e48-97b4-4597-8b93-6f39d8d6618d",
+        "name": "Dealer's Den",
+        "slug": "dealers-den",
+        "createdAt": "2023-09-11T19:58:28.648297",
+        "updatedAt": "2023-12-16T20:40:37.973605",
+        "fields": {
+          "location": {
+            "contentId": "99ea0268-cb07-4dbf-a6dd-a152fba239bc",
+            "fields": {
+              "name": "Galileo"
+            },
+            "translationId": null
+          },
+          "description": "<p dir=\"ltr\"><span>Dealer's Den</span></p>",
+          "name": "Dealer's Den",
+          "start-time": "2022-11-11T09:00:00Z",
+          "end-time": "2022-11-11T12:00:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "ec3f5e48-97b4-4597-8b93-6f39d8d6618d",
+            "slug": "dealers-den",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "d17fa57e-32ab-40e2-bab5-3f7ca38cb7eb",
+        "name": "Dance Competition",
+        "slug": "dance-competition",
+        "createdAt": "2023-09-11T19:58:28.456693",
+        "updatedAt": "2023-12-16T20:40:37.656355",
+        "fields": {
+          "name": "Dance Competition",
+          "description": "<p dir=\"ltr\"><span>Come and see Flüüfff's first-ever dance competition! Fursuiters and non-suiters will groove their heart out on main stage to pumping beats. Who will be the first Flüüfff Dance Champion? Be there and feast your eyes on this phenomenal spectacle!</span></p>",
+          "start-time": "2022-11-12T19:00:00Z",
+          "location": {
+            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
+            "fields": {
+              "name": "Main Stage"
+            },
+            "translationId": null
+          },
+          "end-time": "2022-11-12T20:00:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "d17fa57e-32ab-40e2-bab5-3f7ca38cb7eb",
+            "slug": "dance-competition",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "19fbdc90-e9e2-4989-bb0f-38e26c0eb346",
+        "name": "Coffee Panel - Coffee Break by Laddian",
+        "slug": "coffee-panel---coffee-break-by-laddian",
+        "createdAt": "2023-09-11T19:58:28.260072",
+        "updatedAt": "2023-12-16T20:40:37.320830",
+        "fields": {
+          "end-time": "2022-11-11T20:00:00Z",
+          "location": {
+            "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
+            "fields": {
+              "name": "Big panel room"
+            },
+            "translationId": null
+          },
+          "name": "Coffee Panel - Coffee Break by Laddian",
+          "description": "<p dir=\"ltr\"><span>Coffee coffee coffee! Nothing is like the dark gold! Whether you drink it black or clouded with milk (we won't judge too harshly) you're welcome to join the coffee tasting. Laddian will provide three types of different home-roasted tastes, explain some history, and present an additional, secret, coffee-related topic!\r\nThere will be an additional speaker here too, who might it be? Mystery abounds :D</span></p>",
+          "start-time": "2022-11-11T19:00:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "19fbdc90-e9e2-4989-bb0f-38e26c0eb346",
+            "slug": "coffee-panel---coffee-break-by-laddian",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "b989099a-3e48-47e2-bd15-ff8ffb4d0a7b",
+        "name": "Christian Furs Meet by Nimalen",
+        "slug": "christian-furs-meet-by-nimalen",
+        "createdAt": "2023-09-11T19:57:34.417332",
+        "updatedAt": "2023-12-16T20:40:36.741464",
+        "fields": {
+          "description": "<p dir=\"ltr\"><span>The idea of this meet is to provide a space to talk and share experiences. The meet is aimed at people that are both a Furry and of Christian faith, but it's open to everyone who wants to respectfully join the conversation. </span></p>",
+          "start-time": "2022-11-11T14:00:00Z",
+          "end-time": "2022-11-11T15:00:00Z",
+          "location": {
+            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
+            "fields": {
+              "name": "Small panel room"
+            },
+            "translationId": null
+          },
+          "name": "Christian Furs Meet by Nimalen"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "b989099a-3e48-47e2-bd15-ff8ffb4d0a7b",
+            "slug": "christian-furs-meet-by-nimalen",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "61cecb78-0cba-4a52-9d50-9df47a4e7351",
+        "name": "Charity Auction",
+        "slug": "charity-auction",
+        "createdAt": "2023-09-11T19:57:34.195129",
+        "updatedAt": "2023-12-16T20:40:35.932859",
+        "fields": {
+          "name": "Charity Auction",
+          "start-time": "2022-11-13T10:00:00Z",
+          "end-time": "2022-11-13T11:00:00Z",
+          "description": "<p dir=\"ltr\"><span>You never know what you'll find on a tropical beach. It might even be something of value... We'll auction-off the most iconic items of Flüüfff Tropical Trouble for our charity: Natagora. If you are a fervent collector, or want to support our charity, make sure to snag-up some of our monumental items!\r\n\r\n</span></p>",
+          "location": {
+            "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
+            "fields": {
+              "name": "Big panel room"
+            },
+            "translationId": null
+          }
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "61cecb78-0cba-4a52-9d50-9df47a4e7351",
+            "slug": "charity-auction",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "5f4cd0a6-db59-4361-b7d2-44dd9dee7c62",
+        "name": "Blood on the Clocktower",
+        "slug": "blood-on-the-clocktower",
+        "createdAt": "2023-09-11T19:57:34.015058",
+        "updatedAt": "2023-12-16T20:40:35.137278",
+        "fields": {
+          "end-time": "2022-11-13T21:30:00Z",
+          "location": {
+            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
+            "fields": {
+              "name": "Small panel room"
+            },
+            "translationId": null
+          },
+          "name": "Blood on the Clocktower",
+          "start-time": "2022-11-13T19:00:00Z",
+          "description": "<p dir=\"ltr\"><span>During a hellish thunderstorm, on the stroke of midnight, there echoes a bone-chilling scream.\r\nThe townsfolk rush to investigate and find their storyteller murdered, the body impaled on the hands of the clocktower, blood dripping onto the cobblestones below.\r\n\r\nA Demon must be on the loose! Murdering by night and disguised in human form by day. Some of you have scraps of information. Others have abilities that fight evil or protect the innocent. But the Demon, and its evil minions, are spreading lies to confuse and breed suspicion.\r\n\r\nIn the quiet village of Ravenswood Fluff, ‌a demon walks among you... Will the good townsfolk put the puzzle together in time to execute the demon and save themselves? Or will evil overrun this once peaceful village?</span></p>"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "5f4cd0a6-db59-4361-b7d2-44dd9dee7c62",
+            "slug": "blood-on-the-clocktower",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "05ed5b9e-e671-4b60-98d5-56ebb63cdf76",
+        "name": "Advanced Animatronics Adventures by Floere T. Pillowcase",
+        "slug": "advanced-animatronics-adventures-by-floere-t-pillowcase",
+        "createdAt": "2023-09-11T19:57:33.826791",
+        "updatedAt": "2023-12-16T20:40:34.345978",
+        "fields": {
+          "start-time": "2022-11-12T14:00:00Z",
+          "location": {
+            "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
+            "fields": {
+              "name": "Big panel room"
+            },
+            "translationId": null
+          },
+          "end-time": "2022-11-12T15:30:00Z",
+          "description": "<p dir=\"ltr\"><span>You descend into the ancient lava tunnels, your mission clear: to sing the Song of Awoo to the Elder Dogs. Arrived at the inner sanctum, before the altar, you take a deep breath and… Oh no! It sounds like you swallowed a pillow. Worse, the Elder Dogs are displeased and render their verdict: “muble fumble Shiba rumble Floof” Or that’s what it sounds like to you. What to do now? If only there was a way to sing and hear clearly while in suit! If only there was some idiot doing research in that sort of thing!</span></p>",
+          "name": "Advanced Animatronics Adventures by Floere T. Pillowcase"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "05ed5b9e-e671-4b60-98d5-56ebb63cdf76",
+            "slug": "advanced-animatronics-adventures-by-floere-t-pillowcase",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "c4298065-5b1c-4578-bbeb-c82ce2900f91",
+        "name": "A Fluffy Concert",
+        "slug": "a-fluffy-concert",
+        "createdAt": "2023-09-11T19:55:42.030842",
+        "updatedAt": "2023-12-16T20:40:33.914957",
+        "fields": {
+          "description": "<p dir=\"ltr\"><span>Do you like live music? Come join us for a jam! Wether you're a musician, dancer, or just would like to watch, join us as we have an unplanned, no rehearsals, no expectations jam session!</span></p>",
+          "start-time": "2022-11-10T19:00:00Z",
+          "location": {
+            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
+            "fields": {
+              "name": "Main Stage"
+            },
+            "translationId": null
+          },
+          "name": "A Fluffy Concert",
+          "end-time": "2022-11-10T20:00:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "c4298065-5b1c-4578-bbeb-c82ce2900f91",
+            "slug": "a-fluffy-concert",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "9d080de3-a5a8-40a4-abfb-11c9df3f2951",
+        "name": "Photoshoot",
+        "slug": "photoshoot-3",
+        "createdAt": "2023-12-16T20:32:41.627135",
+        "updatedAt": "2023-12-16T20:40:29.306530",
+        "fields": {
+          "end-time": "2022-11-11T16:00:00Z",
+          "start-time": "2022-11-11T14:30:00Z",
+          "location": {
+            "contentId": "d209cce6-d459-4a7e-8555-762008776c6d",
+            "fields": {
+              "name": "Mezzanine"
+            },
+            "translationId": null
+          },
+          "name": "Photoshoot",
+          "description": "<p dir=\"ltr\"><span>Want to get pictures taken of you and friends in a tropical setting? Make sure to  book a slot at the con for the photo shoot! Non-suiters are welcome but we'd like to try and give priority to fursuiters.</span></p>"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "9d080de3-a5a8-40a4-abfb-11c9df3f2951",
+            "slug": "photoshoot-3",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "e469b6c1-1637-4931-9bd0-f50a498fb4d1",
+        "name": "Photoshoot",
+        "slug": "photoshoot-8",
+        "createdAt": "2023-12-16T20:32:41.399020",
+        "updatedAt": "2023-12-16T20:40:30.085193",
+        "fields": {
+          "location": {
+            "contentId": "d209cce6-d459-4a7e-8555-762008776c6d",
+            "fields": {
+              "name": "Mezzanine"
+            },
+            "translationId": null
+          },
+          "description": "<p dir=\"ltr\"><span>Want to get pictures taken of you and friends in a tropical setting? Make sure to  book a slot at the con for the photo shoot! Non-suiters are welcome but we'd like to try and give priority to fursuiters.</span></p>",
+          "name": "Photoshoot",
+          "start-time": "2022-11-12T15:00:00Z",
+          "end-time": "2022-11-12T18:30:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "e469b6c1-1637-4931-9bd0-f50a498fb4d1",
+            "slug": "photoshoot-8",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "a76e77f9-6915-4a4b-b1bf-fef1ce244e1f",
+        "name": "Photoshoot",
+        "slug": "photoshoot-4",
+        "createdAt": "2023-12-16T20:32:41.292744",
+        "updatedAt": "2023-12-16T20:40:30.706031",
+        "fields": {
+          "description": "<p dir=\"ltr\"><span>Want to get pictures taken of you and friends in a tropical setting? Make sure to  book a slot at the con for the photo shoot! Non-suiters are welcome but we'd like to try and give priority to fursuiters.</span></p>",
+          "end-time": "2022-11-11T16:30:00Z",
+          "location": {
+            "contentId": "d209cce6-d459-4a7e-8555-762008776c6d",
+            "fields": {
+              "name": "Mezzanine"
+            },
+            "translationId": null
+          },
+          "start-time": "2022-11-11T14:30:00Z",
+          "name": "Photoshoot"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "a76e77f9-6915-4a4b-b1bf-fef1ce244e1f",
+            "slug": "photoshoot-4",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "77a78a16-e1f0-450d-80d5-ea24d979f13c",
+        "name": "Photoshoot",
+        "slug": "photoshoot-5",
+        "createdAt": "2023-12-16T20:32:40.917869",
+        "updatedAt": "2023-12-16T20:40:31.431560",
+        "fields": {
+          "location": {
+            "contentId": "d209cce6-d459-4a7e-8555-762008776c6d",
+            "fields": {
+              "name": "Mezzanine"
+            },
+            "translationId": null
+          },
+          "name": "Photoshoot",
+          "end-time": "2022-11-11T20:00:00Z",
+          "description": "<p dir=\"ltr\"><span>Want to get pictures taken of you and friends in a tropical setting? Make sure to  book a slot at the con for the photo shoot! Non-suiters are welcome but we'd like to try and give priority to fursuiters.</span></p>",
+          "start-time": "2022-11-11T18:30:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "77a78a16-e1f0-450d-80d5-ea24d979f13c",
+            "slug": "photoshoot-5",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "d6da3001-ed41-46fe-908e-ad9b1f2d1d4a",
+        "name": "Dealer's Den",
+        "slug": "dealers-den-2",
+        "createdAt": "2023-12-16T20:32:40.194794",
+        "updatedAt": "2023-12-16T20:40:31.985826",
+        "fields": {
+          "end-time": "2022-11-11T16:30:00Z",
+          "name": "Dealer's Den",
+          "description": "<p dir=\"ltr\"><span>Dealer's Den</span></p>",
+          "location": {
+            "contentId": "99ea0268-cb07-4dbf-a6dd-a152fba239bc",
+            "fields": {
+              "name": "Galileo"
+            },
+            "translationId": null
+          },
+          "start-time": "2022-11-11T13:00:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "d6da3001-ed41-46fe-908e-ad9b1f2d1d4a",
+            "slug": "dealers-den-2",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "972cdfc2-0148-4a0a-9691-608cb54ac82a",
+        "name": "Haunted Escape",
+        "slug": "haunted-escape-3",
+        "createdAt": "2023-12-16T20:32:38.871244",
+        "updatedAt": "2023-12-16T20:40:32.339887",
+        "fields": {
+          "start-time": "2022-11-10T15:30:00Z",
+          "end-time": "2022-11-10T17:30:00Z",
+          "description": "<p dir=\"ltr\"><span>Join Dr. Nigel Cornobble for a new, fantastical adventure to the tropical island of Imboca!\r\nThe indiginous creatures have hidden away the majestic Emerald Dodecahedron - a glorious addition to the British Museum's collection!\r\nThus, it is your job to enter the Aquifer of Certain Doom and steal the artifact from right under their noses.\r\nDon't worry about the rumours. Simple tall tales and superstition, surely!</span></p>",
+          "name": "Haunted Escape",
+          "location": {
+            "contentId": "99ea0268-cb07-4dbf-a6dd-a152fba239bc",
+            "fields": {
+              "name": "Galileo"
+            },
+            "translationId": null
+          }
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "972cdfc2-0148-4a0a-9691-608cb54ac82a",
+            "slug": "haunted-escape-3",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "4e311bc8-b0eb-434f-a81b-28bc2028bcc2",
+        "name": "Photoshoot",
+        "slug": "photoshoot-6",
+        "createdAt": "2023-12-16T20:32:38.052964",
+        "updatedAt": "2023-12-16T20:40:32.876289",
+        "fields": {
+          "description": "<p dir=\"ltr\"><span>Want to get pictures taken of you and friends in a tropical setting? Make sure to  book a slot at the con for the photo shoot! Non-suiters are welcome but we'd like to try and give priority to fursuiters.</span></p>",
+          "location": {
+            "contentId": "d209cce6-d459-4a7e-8555-762008776c6d",
+            "fields": {
+              "name": "Mezzanine"
+            },
+            "translationId": null
+          },
+          "name": "Photoshoot",
+          "start-time": "2022-11-11T18:30:00Z",
+          "end-time": "2022-11-11T20:00:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "4e311bc8-b0eb-434f-a81b-28bc2028bcc2",
+            "slug": "photoshoot-6",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "ac8cd4ab-e8ab-4c15-a0a3-0cda0d5725d7",
+        "name": "Photoshoot",
+        "slug": "photoshoot-7",
+        "createdAt": "2023-12-16T20:32:37.394230",
+        "updatedAt": "2023-12-16T20:40:23.397068",
+        "fields": {
+          "location": {
+            "contentId": "d209cce6-d459-4a7e-8555-762008776c6d",
+            "fields": {
+              "name": "Mezzanine"
+            },
+            "translationId": null
+          },
+          "name": "Photoshoot",
+          "description": "<p dir=\"ltr\"><span>Want to get pictures taken of you and friends in a tropical setting? Make sure to  book a slot at the con for the photo shoot! Non-suiters are welcome but we'd like to try and give priority to fursuiters.</span></p>",
+          "start-time": "2022-11-12T15:00:00Z",
+          "end-time": "2022-11-12T18:00:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "ac8cd4ab-e8ab-4c15-a0a3-0cda0d5725d7",
+            "slug": "photoshoot-7",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "5375db40-8e4e-492d-9549-8b54c7bc3636",
+        "name": "Haunted Escape",
+        "slug": "haunted-escape-4",
+        "createdAt": "2023-12-16T20:32:35.369492",
+        "updatedAt": "2023-12-16T20:40:24.026901",
+        "fields": {
+          "location": {
+            "contentId": "99ea0268-cb07-4dbf-a6dd-a152fba239bc",
+            "fields": {
+              "name": "Galileo"
+            },
+            "translationId": null
+          },
+          "end-time": "2022-11-11T00:30:00Z",
+          "name": "Haunted Escape",
+          "description": "<p dir=\"ltr\"><span>Join Dr. Nigel Cornobble for a new, fantastical adventure to the tropical island of Imboca! The indiginous creatures have hidden away the majestic Emerald Dodecahedron - a glorious addition to the British Museum's collection! Thus, it is your job to enter the Aquifer of Certain Doom and steal the artifact from right under their noses. Don't worry about the rumours. Simple tall tales and superstition, surely!</span></p>",
+          "start-time": "2022-11-10T20:00:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "5375db40-8e4e-492d-9549-8b54c7bc3636",
+            "slug": "haunted-escape-4",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "b7a3bd5f-5454-46d8-8e44-2b1c041b1ca7",
+        "name": "Haunted Escape",
+        "slug": "haunted-escape-2",
+        "createdAt": "2023-12-16T20:32:37.127030",
+        "updatedAt": "2023-12-16T20:40:24.880174",
+        "fields": {
+          "start-time": "2022-11-10T09:00:00Z",
+          "description": "<p dir=\"ltr\"><span>Join Dr. Nigel Cornobble for a new, fantastical adventure to the tropical island of Imboca!\r\nThe indiginous creatures have hidden away the majestic Emerald Dodecahedron - a glorious addition to the British Museum's collection!\r\nThus, it is your job to enter the Aquifer of Certain Doom and steal the artifact from right under their noses.\r\nDon't worry about the rumours. Simple tall tales and superstition, surely!</span></p>",
+          "location": {
+            "contentId": "99ea0268-cb07-4dbf-a6dd-a152fba239bc",
+            "fields": {
+              "name": "Galileo"
+            },
+            "translationId": null
+          },
+          "end-time": "2022-11-10T12:30:00Z",
+          "name": "Haunted Escape"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "b7a3bd5f-5454-46d8-8e44-2b1c041b1ca7",
+            "slug": "haunted-escape-2",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "83d7d453-4bd4-4ab6-ab1b-b0cea4780b1c",
+        "name": "Dealer's Den",
+        "slug": "dealers-den-3",
+        "createdAt": "2023-12-16T20:32:36.834907",
+        "updatedAt": "2023-12-16T20:40:25.548208",
+        "fields": {
+          "start-time": "2022-11-12T09:00:00Z",
+          "description": "<p dir=\"ltr\"><span>Dealer's Den</span></p>",
+          "name": "Dealer's Den",
+          "end-time": "2022-11-12T12:00:00Z",
+          "location": {
+            "contentId": "99ea0268-cb07-4dbf-a6dd-a152fba239bc",
+            "fields": {
+              "name": "Galileo"
+            },
+            "translationId": null
+          }
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "83d7d453-4bd4-4ab6-ab1b-b0cea4780b1c",
+            "slug": "dealers-den-3",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "a17a83b0-bbf6-4d60-8ecf-6ca05a1d7beb",
+        "name": "Opening Ceremony",
+        "slug": "opening-ceremony",
+        "createdAt": "2023-12-16T20:32:36.436480",
+        "updatedAt": "2023-12-16T20:40:26.218943",
+        "fields": {
+          "end-time": "2022-11-09T19:30:00Z",
+          "start-time": "2022-11-09T19:00:00Z",
+          "description": "<p dir=\"ltr\"><span>The Grand Casino has stranded and now we're stuck on this tropical beach... But that won't stop us from throwing a party! There's enough supplies to turn this into something great! Learn more about the con, the charity, and why we ended-up in this Tropical Trouble in the first place :o</span></p>",
+          "name": "Opening Ceremony",
+          "location": {
+            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
+            "fields": {
+              "name": "Main Stage"
+            },
+            "translationId": null
+          }
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "a17a83b0-bbf6-4d60-8ecf-6ca05a1d7beb",
+            "slug": "opening-ceremony",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "bd4dbb75-f057-4aa6-83c3-e58f9fc8b4f0",
+        "name": "Charity Auction",
+        "slug": "charity-auction-2",
+        "createdAt": "2023-12-16T20:32:36.255164",
+        "updatedAt": "2023-12-16T20:40:26.912406",
+        "fields": {
+          "end-time": "2022-11-13T11:00:00Z",
+          "name": "Charity Auction",
+          "description": "<p dir=\"ltr\"><span>You never know what you'll find on a tropical beach. It might even be something of value... We'll auction-off the most iconic items of Flüüfff Tropical Trouble for our charity: Natagora. If you are a fervent collector, or want to support our charity, make sure to snag-up some of our monumental items!\r\n\r\n</span></p>",
+          "start-time": "2022-11-13T10:00:00Z",
+          "location": {
+            "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
+            "fields": {
+              "name": "Big panel room"
+            },
+            "translationId": null
+          }
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "bd4dbb75-f057-4aa6-83c3-e58f9fc8b4f0",
+            "slug": "charity-auction-2",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "44139fb6-a3e2-48bd-afec-a498506d5818",
+        "name": "Dealer's Den",
+        "slug": "dealers-den-4",
+        "createdAt": "2023-12-16T20:32:35.708290",
+        "updatedAt": "2023-12-16T20:40:27.228964",
+        "fields": {
+          "end-time": "2022-11-12T16:30:00Z",
+          "location": {
+            "contentId": "99ea0268-cb07-4dbf-a6dd-a152fba239bc",
+            "fields": {
+              "name": "Galileo"
+            },
+            "translationId": null
+          },
+          "name": "Dealer's Den",
+          "start-time": "2022-11-12T13:00:00Z",
+          "description": "<p dir=\"ltr\"><span>Dealer's Den</span></p>"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "44139fb6-a3e2-48bd-afec-a498506d5818",
+            "slug": "dealers-den-4",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "c9998d54-d08e-4ddf-8a54-255b01e3d975",
+        "name": "Tropical Island Cultures by Nimalen and Floere",
+        "slug": "tropical-island-cultures-by-nimalen-and-floere",
+        "createdAt": "2023-12-16T20:32:42.720081",
+        "updatedAt": "2023-12-16T20:40:27.729549",
+        "fields": {
+          "location": {
+            "contentId": "70294389-6c27-4bdd-ab15-154013848443",
+            "fields": {
+              "name": "Small panel room"
+            },
+            "translationId": null
+          },
+          "start-time": "2022-11-12T10:00:00Z",
+          "name": "Tropical Island Cultures by Nimalen and Floere",
+          "end-time": "2022-11-12T11:00:00Z",
+          "description": "<p dir=\"ltr\"><span>Not all inhabited island are tropical, nor are all island cultures Polynesian. In this panel, we’ll take a closer look at other cultures that blossom under a tropical sun, surrounded by the ocean.</span></p>"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "c9998d54-d08e-4ddf-8a54-255b01e3d975",
             "slug": "tropical-island-cultures-by-nimalen-and-floere",
             "language": "en"
           }
         ]
       },
       {
-        "id": "fake-uuid-tropical-nice-tea-by-lezari",
-        "name": "Tropical (N)ice Tea by Lezari",
-        "slug": "tropical-nice-tea-by-lezari",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
+        "id": "58f4d01c-5d55-4caa-bc01-4c2ae6909d80",
+        "name": "Photoshoot",
+        "slug": "photoshoot-2",
+        "createdAt": "2023-12-16T20:32:42.239517",
+        "updatedAt": "2023-12-16T20:40:28.147925",
         "fields": {
-          "description": "<p dir=\"ltr\"><span>Although you can('t) spell Tropical without tea, it's way too hot to serve it directly! It would be more soothing to have an iced cup of tea, no? Enjoy the selection we made for you as you listen to the history of ice tea. Because, honestly, who would think of turning a hot beverage into something this cool?</span></p>",
-          "name": "Tropical (N)ice Tea by Lezari",
+          "name": "Photoshoot",
+          "end-time": "2022-11-10T18:00:00Z",
           "location": {
-            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
-            "translationId": "fe40774c-5f99-464b-a8c3-f938d4a8be41",
+            "contentId": "d209cce6-d459-4a7e-8555-762008776c6d",
             "fields": {
-              "name": "Main Stage"
-            }
+              "name": "Mezzanine"
+            },
+            "translationId": null
           },
-          "start-time": "2022-11-12T16:30:00Z",
-          "end-time": "2022-11-12T18:00:00Z"
+          "description": "<p dir=\"ltr\"><span>Want to get pictures taken of you and friends in a tropical setting? Make sure to  book a slot at the con for the photo shoot! Non-suiters are welcome but we'd like to try and give priority to fursuiters.</span></p>",
+          "start-time": "2022-11-10T16:00:00Z"
         },
         "language": "en",
         "translations": [
           {
-            "id": "fake-uuid-tropical-nice-tea-by-lezari",
+            "id": "58f4d01c-5d55-4caa-bc01-4c2ae6909d80",
+            "slug": "photoshoot-2",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "0c79c1a3-c69a-4ca1-a1b1-b8ab8b9f7243",
+        "name": "Defense and Deterrence: Recognition and Prevention of Sexual Harrasment and Abuse",
+        "slug": "defense-and-deterrence-recognition-and-prevention-of-sexual-harrasment-and-abuse",
+        "createdAt": "2023-09-11T19:58:28.825402",
+        "updatedAt": "2023-12-16T20:40:38.562381",
+        "fields": {
+          "start-time": "2022-11-10T14:00:00Z",
+          "location": {
+            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
+            "fields": {
+              "name": "Main Stage"
+            },
+            "translationId": null
+          },
+          "description": "<p dir=\"ltr\"><span>If everything was as rosy as we'd like it to be, we wouldn't have to talk about harassment and abuse. In this panel, an external expert will explain what harassment and abuse entail. After that, some of our con-goers will share their own stories around experiencing, coping with, and preventing non-consensual contact. If you want to learn how to help victims, make sure to join this panel.</span></p>",
+          "name": "Defense and Deterrence: Recognition and Prevention of Sexual Harrasment and Abuse",
+          "end-time": "2022-11-10T15:30:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "0c79c1a3-c69a-4ca1-a1b1-b8ab8b9f7243",
+            "slug": "defense-and-deterrence-recognition-and-prevention-of-sexual-harrasment-and-abuse",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "30b11b41-c52e-4add-aaa8-cf7cb8ce48ed",
+        "name": "Tropical (N)ice Tea by Lezari",
+        "slug": "tropical-nice-tea-by-lezari",
+        "createdAt": "2023-09-11T19:58:33.569477",
+        "updatedAt": "2023-12-16T20:40:50.086844",
+        "fields": {
+          "end-time": "2022-11-12T18:00:00Z",
+          "start-time": "2022-11-12T16:30:00Z",
+          "name": "Tropical (N)ice Tea by Lezari",
+          "description": "<p dir=\"ltr\"><span>Although you can('t) spell Tropical without tea, it's way too hot to serve it directly! It would be more soothing to have an iced cup of tea, no? Enjoy the selection we made for you as you listen to the history of ice tea. Because, honestly, who would think of turning a hot beverage into something this cool?</span></p>",
+          "location": {
+            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
+            "fields": {
+              "name": "Main Stage"
+            },
+            "translationId": null
+          }
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "30b11b41-c52e-4add-aaa8-cf7cb8ce48ed",
             "slug": "tropical-nice-tea-by-lezari",
             "language": "en"
           }
         ]
       },
       {
-        "id": "fake-uuid-vore-meet-n-eat",
+        "id": "7d96d50b-064d-4e52-82b4-97e2a7e983fc",
         "name": "Vore Meet 'n Eat",
         "slug": "vore-meet-n-eat",
-        "createdAt": "2023-09-08T18:27:21.362563",
-        "updatedAt": "2023-09-08T18:27:30.248561",
+        "createdAt": "2023-09-11T19:58:33.727996",
+        "updatedAt": "2023-12-16T20:40:50.929608",
         "fields": {
           "description": "<p dir=\"ltr\"><span>Just a nice, annual get-together with the folks who like to eat or be eaten.</span></p>",
           "name": "Vore Meet 'n Eat",
           "location": {
             "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
-            "translationId": "c11f2908-0f65-4f43-bd8c-36ab95f39602",
             "fields": {
               "name": "Big panel room"
-            }
+            },
+            "translationId": null
           },
           "start-time": "2022-11-11T15:00:00Z",
           "end-time": "2022-11-11T17:00:00Z"
@@ -995,8 +1359,36 @@
         "language": "en",
         "translations": [
           {
-            "id": "fake-uuid-vore-meet-n-eat",
+            "id": "7d96d50b-064d-4e52-82b4-97e2a7e983fc",
             "slug": "vore-meet-n-eat",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "ca12f928-583c-4200-8a83-f807973ef0dc",
+        "name": "Fursuit Charades",
+        "slug": "fursuit-charades",
+        "createdAt": "2023-09-11T19:58:29.321354",
+        "updatedAt": "2023-12-16T20:40:51.696123",
+        "fields": {
+          "start-time": "2022-11-12T13:00:00Z",
+          "end-time": "2022-11-12T14:30:00Z",
+          "location": {
+            "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
+            "fields": {
+              "name": "Main Stage"
+            },
+            "translationId": null
+          },
+          "description": "<p dir=\"ltr\"><span>Fursuiters are known not to speak. So how well do they communicate? We are going to play charades with several teams of suiters who will vie for the title of Flüüfff Tropical Charades Champion. Watch a hilarious game of charades, guess the words, and help us pick the final competing teams for the Show night!</span></p>",
+          "name": "Fursuit Charades"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "ca12f928-583c-4200-8a83-f807973ef0dc",
+            "slug": "fursuit-charades",
             "language": "en"
           }
         ]
