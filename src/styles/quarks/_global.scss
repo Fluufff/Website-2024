@@ -45,6 +45,9 @@ h1, h2, h3, h4, h5, h6 {
 
 img {
 	width: 100%;
+	/* Next.js <Image> component puts height/width attributes on the image. An
+	explicit `height: auto` is needed after `width: 100%` to preserve ratio. */
+	height: auto;
 }
 
 hr {
