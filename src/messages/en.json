@@ -47,6 +47,49 @@
       }
     }
   },
+  "Rooms": {
+    "business_rooms": {
+      "description": "Business Rooms are available as Double or Twin for 1 or 2 people and offer guests additional benefits:",
+      "everything_in_standard": "Everything mentioned in Standard Rooms",
+      "extra_living_space": "Extra living space",
+      "seating_area": "Seating area with leather armchairs or a sofa bed",
+      "title": "Business rooms",
+      "wooden_desk": "Long wooden desk"
+    },
+    "header": {
+      "sub_title": "Check out these cool rooms!",
+      "title": "The Rooms"
+    },
+    "standard_rooms": {
+      "air_conditioning": "Air conditioning",
+      "bathtub_with_shower": "Bathtub with shower",
+      "description": "All Standard rooms are stylish and offer a range of amenities. They are available as Single, Double, or Twin for 1, 2, 3, or 4 people.",
+      "dry_cleaning": "Same day dry cleaning and laundry (weekdays only)",
+      "fitness_centre": "Free access to the fitness centre",
+      "free_luggage_storage": "Free luggage storage",
+      "hairdryer": "Hairdryer",
+      "inroom_safe": "In-room safe",
+      "mini_fridge": "Mini-fridge",
+      "soft_duvets": "Comfortable beds with white soft duvets",
+      "title": "Standard rooms"
+    },
+    "superior_hint": "Superior room types have the same comfort but are larger in size",
+    "variants": "Variants"
+  },
+  "general": {
+    "buttons": {
+      "tickets_and_pricing": "Tickets & Pricing"
+    },
+    "labels": {
+      "double": "Double",
+      "quadruple": "Quadruple",
+      "single": "Single",
+      "superior_double": "Superior double",
+      "superior_twin": "Superior twin",
+      "triple": "Triple",
+      "twin": "Twin"
+    }
+  },
   "2022_msg": {
     "footer": {
       "3d_u_credits": "3D “Ü” created by",
@@ -71,7 +114,6 @@
         "residential_tickets": "Residential Tickets",
         "submit_proposal": "Submit proposal",
         "the_restaurant": "The restaurant",
-        "tickets_and_pricing": "Tickets & Pricing",
         "view_more": "View more"
       },
       "labels": {
@@ -79,7 +121,6 @@
         "5_days": "5 days",
         "at": "At",
         "business_room": "Business room",
-        "double": "Double",
         "early_arrival": "Early arrival",
         "friday_short": "Fri",
         "here": "here",
@@ -89,20 +130,14 @@
         "per_person": "/ person",
         "plus_1_day": "+1 day",
         "price": "Price",
-        "quadruple": "Quadruple",
         "saturday_short": "Sat",
-        "single": "Single",
         "sponsor_pack": "Sponsor pack",
         "standard_room": "Standard room",
         "sunday_short": "Sun",
         "superior_business_room": "Superior Business room",
-        "superior_double": "Superior double",
         "superior_standard_room": "Superior Standard room",
-        "superior_twin": "Superior twin",
         "thursday_short": "Thu",
         "to": "to",
-        "triple": "Triple",
-        "twin": "Twin",
         "t_shirt": "T-shirt",
         "wednesday_short": "Wed"
       }
@@ -282,35 +317,6 @@
           "sub_title": "News",
           "title": "The most recent and hottest Flüüfff news!"
         }
-      },
-      "rooms": {
-        "business_rooms": {
-          "description": "Business Rooms are available as Double or Twin for 1 or 2 people and offer guests additional benefits:",
-          "everything_in_standard": "Everything mentioned in Standard Rooms",
-          "extra_living_space": "Extra living space",
-          "seating_area": "Seating area with leather armchairs or a sofa bed",
-          "title": "Business rooms",
-          "wooden_desk": "Long wooden desk"
-        },
-        "header": {
-          "sub_title": "Check out these cool rooms!",
-          "title": "The Rooms"
-        },
-        "standard_rooms": {
-          "air_conditioning": "Air conditioning",
-          "bathtub_with_shower": "Bathtub with shower",
-          "description": "All Standard rooms are stylish and offer a range of amenities. They are available as Single, Double, or Twin for 1, 2, 3, or 4 people.",
-          "dry_cleaning": "Same day dry cleaning and laundry (weekdays only)",
-          "fitness_centre": "Free access to the fitness centre",
-          "free_luggage_storage": "Free luggage storage",
-          "hairdryer": "Hairdryer",
-          "inroom_safe": "In-room safe",
-          "mini_fridge": "Mini-fridge",
-          "soft_duvets": "Comfortable beds with white soft duvets",
-          "title": "Standard rooms"
-        },
-        "superior_hint": "Superior room types have the same comfort but are larger in size",
-        "variants": "Variants"
       },
       "schedule": {
         "header": {

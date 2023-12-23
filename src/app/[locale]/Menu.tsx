@@ -87,34 +87,40 @@ export default function Menu() {
                 </div>
               </li> */}
 
-              {/* <li>
-								<div className="m-menu__sub-menu">
-									<Link className="m-menu__link" href="/venue">
-										{t('items.venue')}
-									</Link>
-									<div className="m-menu__sub-menu__wrapper">
-										<div className="m-menu__sub-menu__content">
-											<ul>
-												<li>
-													<Link className="m-menu__sub-link" href="/venue/hotel">
-														{t('items.hotel')}
-													</Link>
-												</li>
-												<li>
-													<Link className="m-menu__sub-link" href="/venue/rooms">
-														{t('items.rooms')}
-													</Link>
-												</li>
-												<li>
-													<Link className="m-menu__sub-link" href="/venue/getting-there">
-														{t('items.getting_there')}
-													</Link>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</li> */}
+              <li>
+                <div className="m-menu__sub-menu">
+                  <Link className="m-menu__link" href="/venue/hotel">
+                    {t('items.venue')}
+                  </Link>
+                  <div className="m-menu__sub-menu__wrapper">
+                    <div className="m-menu__sub-menu__content">
+                      <ul>
+                        <li>
+                          <Link
+                            className="m-menu__sub-link"
+                            href="/venue/hotel">
+                            {t('items.hotel')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className="m-menu__sub-link"
+                            href="/venue/rooms">
+                            {t('items.rooms')}
+                          </Link>
+                        </li>
+                        {/* <li>
+                          <Link
+                            className="m-menu__sub-link"
+                            href="/venue/getting-there">
+                            {t('items.getting_there')}
+                          </Link>
+                        </li> */}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
 
               <li>
                 <Link className="m-menu__link" href="/timetable">
