@@ -49,6 +49,7 @@ export default async function HotelPage({ params: { locale } }: Props) {
           <p>{t('hotel.description.p0')}</p>
           <p>{t('hotel.description.p1')}</p>
           <p>{t('hotel.description.p2')}</p>
+          <p>{t('hotel.description.p3')}</p>
           <div className="m-button-group">
             <Link href="/venue/getting-there" className="a-button">
               {tButtons('getting_there')}
