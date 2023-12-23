@@ -47,6 +47,49 @@
       }
     }
   },
+  "Rooms": {
+    "business_rooms": {
+      "description": "Les Chambres D'affaires sont disponibles en double lit ou lits jumeaux pour 1 ou 2 personnes, et offrent en plus :",
+      "everything_in_standard": "Tout ce qui a été mentionné pour la chambre Standard",
+      "extra_living_space": "Plus spacieuse",
+      "seating_area": "Coin salon avec des fauteuils en cuir ou un canapé convertible",
+      "title": "Chambres D'affaires",
+      "wooden_desk": "Grand bureau en bois"
+    },
+    "header": {
+      "sub_title": "Jetez un coup d'oeil à ces chambres !",
+      "title": "Les chambres"
+    },
+    "standard_rooms": {
+      "air_conditioning": "Climatisation",
+      "bathtub_with_shower": "Baignoire avec douche",
+      "description": "Toutes les Chambres Standard sont élégantes et offrent une gamme d’équipements. Elles sont disponibles en simple, double ou lits jumeaux, pour 1, 2, 3 ou 4 personnes.",
+      "dry_cleaning": "Nettoyage à sec et lessive dans la journée (seulement en semaine)",
+      "fitness_centre": "Accès au centre de fitness",
+      "free_luggage_storage": "Consigne à bagages",
+      "hairdryer": "Sèche-cheveux",
+      "inroom_safe": "Coffre-fort",
+      "mini_fridge": "Mini-bar",
+      "soft_duvets": "Lits confortables avec de moelleuses couettes blanches",
+      "title": "Chambres Standard"
+    },
+    "superior_hint": "Les chambres Supérieures disposent du même confort et sont plus grandes.",
+    "variants": "Variantes"
+  },
+  "general": {
+    "buttons": {
+      "tickets_and_pricing": "Tickets et tarifs"
+    },
+    "labels": {
+      "double": "Double",
+      "quadruple": "Quadruple",
+      "single": "Simple",
+      "superior_double": "Supérieure double",
+      "superior_twin": "Supérieure jumelle",
+      "triple": "Triple",
+      "twin": "Jumelle"
+    }
+  },
   "2022_msg": {
     "footer": {
       "3d_u_credits": "Modèle \"Ü\" 3D créé par",
@@ -71,7 +114,6 @@
         "residential_tickets": "Tickets résidentiels",
         "submit_proposal": "Proposer un évènement",
         "the_restaurant": "Le restaurant",
-        "tickets_and_pricing": "Tickets et tarifs",
         "view_more": "Voir plus"
       },
       "labels": {
@@ -79,7 +121,6 @@
         "5_days": "5 jours",
         "at": "À",
         "business_room": "Chambre D'affaires",
-        "double": "Double",
         "early_arrival": "Arrivée avancée",
         "friday_short": "Venir",
         "here": "ici",
@@ -89,20 +130,14 @@
         "per_person": "/ personne",
         "plus_1_day": "+1 jour",
         "price": "Prix",
-        "quadruple": "Quadruple",
         "saturday_short": "Sam",
-        "single": "Simple",
         "sponsor_pack": "Pack Sponsor",
         "standard_room": "Chambre Standard",
         "sunday_short": "Dim",
         "superior_business_room": "Chambre d'affaire supérieure",
-        "superior_double": "Supérieure double",
         "superior_standard_room": "Chambre standard supérieure",
-        "superior_twin": "Supérieure jumelle",
         "thursday_short": "Jeu",
         "to": "à",
-        "triple": "Triple",
-        "twin": "Jumelle",
         "t_shirt": "T-shirt",
         "wednesday_short": "Mercredi"
       }
@@ -281,35 +316,6 @@
           "sub_title": "Nouvelles",
           "title": "Les nouvelles les plus fraîches de la Flüüfff"
         }
-      },
-      "rooms": {
-        "business_rooms": {
-          "description": "Les Chambres D'affaires sont disponibles en double lit ou lits jumeaux pour 1 ou 2 personnes, et offrent en plus :",
-          "everything_in_standard": "Tout ce qui a été mentionné pour la chambre Standard",
-          "extra_living_space": "Plus spacieuse",
-          "seating_area": "Coin salon avec des fauteuils en cuir ou un canapé convertible",
-          "title": "Chambres D'affaires",
-          "wooden_desk": "Grand bureau en bois"
-        },
-        "header": {
-          "sub_title": "Jetez un coup d'oeil à ces chambres !",
-          "title": "Les chambres"
-        },
-        "standard_rooms": {
-          "air_conditioning": "Climatisation",
-          "bathtub_with_shower": "Baignoire avec douche",
-          "description": "Toutes les Chambres Standard sont élégantes et offrent une gamme d’équipements. Elles sont disponibles en simple, double ou lits jumeaux, pour 1, 2, 3 ou 4 personnes.",
-          "dry_cleaning": "Nettoyage à sec et lessive dans la journée (seulement en semaine)",
-          "fitness_centre": "Accès au centre de fitness",
-          "free_luggage_storage": "Consigne à bagages",
-          "hairdryer": "Sèche-cheveux",
-          "inroom_safe": "Coffre-fort",
-          "mini_fridge": "Mini-bar",
-          "soft_duvets": "Lits confortables avec de moelleuses couettes blanches",
-          "title": "Chambres Standard"
-        },
-        "superior_hint": "Les chambres Supérieures disposent du même confort et sont plus grandes.",
-        "variants": "Variantes"
       },
       "schedule": {
         "header": {

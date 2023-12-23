@@ -46,6 +46,49 @@
       }
     }
   },
+  "Rooms": {
+    "business_rooms": {
+      "description": "Business Kamers zijn beschikbaar als Double of Twin voor 1 of 2 personen en bieden gasten bijkomende voordelen:",
+      "everything_in_standard": "Alles van de standaardkamer",
+      "extra_living_space": "Extra leefruimte",
+      "seating_area": "Zitruimte met lederen armstoel of een sofa bed",
+      "title": "Business kamers",
+      "wooden_desk": "Lang houten bureau"
+    },
+    "header": {
+      "sub_title": "Kijk eens naar deze gezellige kamers!",
+      "title": "De kamers"
+    },
+    "standard_rooms": {
+      "air_conditioning": "Air conditioning",
+      "bathtub_with_shower": "Bad met douche",
+      "description": "Alle Standard kamers zijn stijlvol ingericht en hebben een reeks aan voorzieningen. Deze zijn beschikbaar als Single, Double of Twin kamers voor 1, 2, 3 of 4 personen.",
+      "dry_cleaning": "Zelfde dag droogkuis en was (enkel weekdagen)",
+      "fitness_centre": "Gratis toegang naar het fitnesscentrum",
+      "free_luggage_storage": "Gratis bagageruimte",
+      "hairdryer": "Haardroger",
+      "inroom_safe": "Kluis in de kamer",
+      "mini_fridge": "Mini-koelkast",
+      "soft_duvets": "Comfortabele bedden met zachte witte lakens",
+      "title": "Standard kamers"
+    },
+    "superior_hint": "Superieure kamer hebben dezelfde comfort maar zijn groter in ruimte",
+    "variants": "Varianten"
+  },
+  "general": {
+    "buttons": {
+      "tickets_and_pricing": "Tickets & Prijzen"
+    },
+    "labels": {
+      "double": "Dubbel",
+      "quadruple": "Vierdubbel",
+      "single": "Enkel",
+      "superior_double": "Superieure dubbel",
+      "superior_twin": "Superieure twin",
+      "triple": "Driedubbel",
+      "twin": "Twin"
+    }
+  },
   "2022_msg": {
     "footer": {
       "3d_u_credits": "3D “Ü” gemaakt door",
@@ -70,7 +113,6 @@
         "residential_tickets": "Residentiële Tickets",
         "submit_proposal": "Voorstel indienen",
         "the_restaurant": "Het restaurant",
-        "tickets_and_pricing": "Tickets & Prijzen",
         "view_more": "Zie meer"
       },
       "labels": {
@@ -78,7 +120,6 @@
         "5_days": "5 dagen",
         "at": "Op",
         "business_room": "Business kamer",
-        "double": "Dubbel",
         "early_arrival": "Vroege aankomst",
         "friday_short": "Vrij",
         "here": "hier",
@@ -88,20 +129,14 @@
         "per_person": "/ persoon",
         "plus_1_day": "+1 dag",
         "price": "Prijs",
-        "quadruple": "Vierdubbel",
         "saturday_short": "Zat",
-        "single": "Enkel",
         "sponsor_pack": "Sponsor pack",
         "standard_room": "Standaard kamer",
         "sunday_short": "Zon",
         "superior_business_room": "Superieure Business Kamer",
-        "superior_double": "Superieure dubbel",
         "superior_standard_room": "Superieure Standard Kamer",
-        "superior_twin": "Superieure twin",
         "thursday_short": "Don",
         "to": "naar",
-        "triple": "Driedubbel",
-        "twin": "Twin",
         "t_shirt": "T-shirt",
         "wednesday_short": "Woe"
       }
@@ -280,35 +315,6 @@
           "sub_title": "Nieuws",
           "title": "Het meest recente Flüüfff nieuws!"
         }
-      },
-      "rooms": {
-        "business_rooms": {
-          "description": "Business Kamers zijn beschikbaar als Double of Twin voor 1 of 2 personen en bieden gasten bijkomende voordelen:",
-          "everything_in_standard": "Alles van de standaardkamer",
-          "extra_living_space": "Extra leefruimte",
-          "seating_area": "Zitruimte met lederen armstoel of een sofa bed",
-          "title": "Business kamers",
-          "wooden_desk": "Lang houten bureau"
-        },
-        "header": {
-          "sub_title": "Kijk eens naar deze gezellige kamers!",
-          "title": "De kamers"
-        },
-        "standard_rooms": {
-          "air_conditioning": "Air conditioning",
-          "bathtub_with_shower": "Bad met douche",
-          "description": "Alle Standard kamers zijn stijlvol ingericht en hebben een reeks aan voorzieningen. Deze zijn beschikbaar als Single, Double of Twin kamers voor 1, 2, 3 of 4 personen.",
-          "dry_cleaning": "Zelfde dag droogkuis en was (enkel weekdagen)",
-          "fitness_centre": "Gratis toegang naar het fitnesscentrum",
-          "free_luggage_storage": "Gratis bagageruimte",
-          "hairdryer": "Haardroger",
-          "inroom_safe": "Kluis in de kamer",
-          "mini_fridge": "Mini-koelkast",
-          "soft_duvets": "Comfortabele bedden met zachte witte lakens",
-          "title": "Standard kamers"
-        },
-        "superior_hint": "Superieure kamer hebben dezelfde comfort maar zijn groter in ruimte",
-        "variants": "Varianten"
       },
       "schedule": {
         "header": {
