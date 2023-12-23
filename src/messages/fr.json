@@ -49,7 +49,6 @@
   },
   "2022_msg": {
     "footer": {
-      "3d_u": "Modèle 3D Ü créé par",
       "follow_us": "Suivez nous sur",
       "site_credits": "Site web et Modèles 3D créés par",
       "translation_credits": "Traductions Françaises et Néerlandaises par",
@@ -65,7 +64,6 @@
         "discover": "Découvrir",
         "dreamteam": "La dreamteam",
         "getting_there": "S'y rendre",
-        "get_tickets": "Acheter les tickets",
         "goodies_and_extras": "Goodies & Extras",
         "hotel_rooms": "Chambres d'hôtel",
         "more_info": "En savoir plus",
@@ -82,13 +80,10 @@
         "at": "À",
         "business_room": "Chambre D'affaires",
         "early_arrival": "Arrivée avancée",
-        "executive_room": "Chambre Exécutive",
         "friday_short": "Venir",
-        "from": "de",
         "here": "ici",
         "item": "Item",
         "late_departure": "Départ tardif",
-        "one_spot": "Une place",
         "parking_ticket": "Ticket de parking",
         "per_person": "/ personne",
         "plus_1_day": "+1 jour",
@@ -101,7 +96,6 @@
         "to": "à",
         "t_shirt": "T-shirt",
         "wednesday_short": "Mercredi",
-        "whole_room": "Chambre entière",
         "double": "Double",
         "quadruple": "Quadruple",
         "single": "Simple",
@@ -110,7 +104,6 @@
         "triple": "Triple",
         "twin": "Jumelle",
         "superior_double": "Supérieure double",
-        "superior_quadruple": "Supérieure quadruple",
         "superior_twin": "Supérieure jumelle"
       }
     },
@@ -233,7 +226,6 @@
           "have_a_ticket": "ont un ticket pour la convention",
           "join_us": "Rejoignez-nous et passez le meilleur moment de votre vie !",
           "opens_on": "Les inscriptions ouvrent à partir du",
-          "open_account_roomshare": "Ouvrir un compte (pour les partages de chambres ou pour la réouverture des inscriptions)",
           "registration_is_closed": "Les inscriptions sont fermées",
           "registration_is_over": "Les inscriptions sont finies",
           "residential_closes": "Les inscriptions Résidentielles clôturent le 18 Octobre.",
@@ -270,14 +262,6 @@
           "seating_area": "Coin salon avec des fauteuils en cuir ou un canapé convertible",
           "title": "Chambres D'affaires",
           "wooden_desk": "Grand bureau en bois"
-        },
-        "executive_rooms": {
-          "35_square_metres": "Chambre de 35 m²",
-          "description": "Récemment remeublées pour se conformer à des normes élevées, ces chambres sont disponibles en lit double pour 1 ou 2 personnes",
-          "everything_in_business": "Tout ce qui a été mentionné pour la Chambre D'affaires",
-          "free_wifi": "Accès WiFi gratuit dans la chambre",
-          "spacious_seating": "Coin salon spacieux avec des sièges confortables",
-          "title": "Chambres Exécutives"
         },
         "header": {
           "sub_title": "Jetez un coup d'oeil à ces chambres !",

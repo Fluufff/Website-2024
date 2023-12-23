@@ -48,7 +48,6 @@
   },
   "2022_msg": {
     "footer": {
-      "3d_u": "3D “U” gemaakt door",
       "follow_us": "Volg ons",
       "site_credits": "Website & 3D Models gemaakt door",
       "translation_credits": "Nederlandse en Franse vertalingen door",
@@ -64,7 +63,6 @@
         "discover": "Ontdek",
         "dreamteam": "Het dreamteam",
         "getting_there": "Hoe er geraken",
-        "get_tickets": "Krijg tickets",
         "goodies_and_extras": "Goodies & Extras",
         "hotel_rooms": "Hotelkamers",
         "more_info": "Meer info",
@@ -81,13 +79,10 @@
         "at": "Op",
         "business_room": "Business kamer",
         "early_arrival": "Vroege aankomst",
-        "executive_room": "Executive kamer",
         "friday_short": "Vrij",
-        "from": "van",
         "here": "hier",
         "item": "Item",
         "late_departure": "Laat vertrek",
-        "one_spot": "Één plek",
         "parking_ticket": "Parkeerticket",
         "per_person": "/ persoon",
         "plus_1_day": "+1 dag",
@@ -100,7 +95,6 @@
         "to": "naar",
         "t_shirt": "T-shirt",
         "wednesday_short": "Woe",
-        "whole_room": "Volledige kamer",
         "double": "Dubbel",
         "quadruple": "Vierdubbel",
         "single": "Enkel",
@@ -109,7 +103,6 @@
         "triple": "Driedubbel",
         "twin": "Twin",
         "superior_double": "Superieure dubbel",
-        "superior_quadruple": "Superieure vierdubbel",
         "superior_twin": "Superieure twin"
       }
     },
@@ -232,7 +225,6 @@
           "have_a_ticket": "hebben een ticket voor de con!",
           "join_us": "Doe met ons mee en heb de tijd van je leven!",
           "opens_on": "Registraties gaan open vanaf",
-          "open_account_roomshare": "Open een account (voor het delen van een kamer of heropenen van registraties)",
           "registration_is_closed": "Registratie is gesloten",
           "registration_is_over": "Registratie is afgelopen",
           "residential_closes": "Residentiële registratie sluit op 18 Oktober.",
@@ -269,14 +261,6 @@
           "seating_area": "Zitruimte met lederen armstoel of een sofa bed",
           "title": "Business kamers",
           "wooden_desk": "Lang houten bureau"
-        },
-        "executive_rooms": {
-          "35_square_metres": "35 vierkante meter aan ruimte",
-          "description": "Recent verbouwd om de hoge standaarden tegemoet te komen. Deze kamers zijn beschikbaar als Double voor 1 of 2 personen.",
-          "everything_in_business": "Alles van de Business kamer",
-          "free_wifi": "Gratis Wifi in de kamer",
-          "spacious_seating": "Ruime zithoek met comfortabele zetels",
-          "title": "Executive kamers"
         },
         "header": {
           "sub_title": "Kijk eens naar deze gezellige kamers!",
