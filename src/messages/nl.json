@@ -22,8 +22,9 @@
       "title": "Het Bedford Hotel in Brussel",
       "description": {
         "p0": "Het hotel voor dit jaar is het geweldige Bedfort Hotel in Brussel!",
-        "p1": "Het ligt op een steenworp van het centrum van Brussel, het Centraal station, een ruime keuze aan eetgelegenheden, en het levendige glorieuze nachtleven. We zijn verheugd je te verwelkomen, en enthousiast om je erbij te hebben! We kunnen niet wachten om getrakteerd te worden op een diner en...",
-        "p2": "Oeps, ik liet me wat meeslepen. Welkom!"
+        "p1": "Het ligt op een steenworp van het centrum van Brussel, het Centraal station, een ruime keuze aan eetgelegenheden, en het levendige glorieuze nachtleven.",
+        "p2": "We zijn verheugd je te verwelkomen, en enthousiast om je erbij te hebben! We kunnen niet wachten om getrakteerd te worden op een diner en...",
+        "p3": "Oeps, ik liet me wat meeslepen. Welkom!"
       }
     },
     "restaurant": {
@@ -290,6 +291,7 @@
           "join_us": "Doe met ons mee en heb de tijd van je leven!",
           "opens_on": "Registraties gaan open vanaf",
           "register_waiting_list": "schrijf je in op de wachtlijst",
+          "registration_account_creation_only": "Account aanmaken is open",
           "registration_is_closed": "Registratie is gesloten",
           "registration_is_over": "Registratie is afgelopen",
           "residential_closes": "Residentiële registratie sluit op 18 Oktober.",
