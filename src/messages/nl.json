@@ -1,4 +1,12 @@
 {
+  "Footer": {
+    "3d_u_credits": "3D “Ü” gemaakt door",
+    "follow_us": "Volg ons",
+    "picture_credits": "Foto's door",
+    "site_credits": "Website & 3D Models gemaakt door",
+    "terms_and_conditions": "Algemene voorwaarden",
+    "translation_credits": "Nederlandse en Franse vertalingen door"
+  },
   "Timetable": {
     "header": {
       "title": "Planning",
@@ -91,14 +99,6 @@
     }
   },
   "2022_msg": {
-    "footer": {
-      "3d_u_credits": "3D “Ü” gemaakt door",
-      "follow_us": "Volg ons",
-      "picture_credits": "Foto's door",
-      "site_credits": "Website & 3D Models gemaakt door",
-      "terms_and_conditions": "Algemene voorwaarden",
-      "translation_credits": "Nederlandse en Franse vertalingen door"
-    },
     "general": {
       "buttons": {
         "about_fluufff": "Over Flüüfff",

@@ -1,4 +1,12 @@
 {
+  "Footer": {
+    "3d_u_credits": "3D “Ü” created by",
+    "follow_us": "Follow us",
+    "picture_credits": "Pictures by",
+    "site_credits": "Website & 3D Models created by",
+    "terms_and_conditions": "Terms and Conditions",
+    "translation_credits": "Dutch & French translations by"
+  },
   "Timetable": {
     "header": {
       "title": "Schedule",
@@ -91,14 +99,6 @@
     }
   },
   "2022_msg": {
-    "footer": {
-      "3d_u_credits": "3D “Ü” created by",
-      "follow_us": "Follow us",
-      "picture_credits": "Pictures by",
-      "site_credits": "Website & 3D Models created by",
-      "terms_and_conditions": "Terms and Conditions",
-      "translation_credits": "Dutch & French translations by"
-    },
     "general": {
       "buttons": {
         "about_fluufff": "About Flüüfff",

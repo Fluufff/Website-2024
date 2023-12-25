@@ -1,4 +1,12 @@
 {
+  "Footer": {
+    "3d_u_credits": "Modèle \"Ü\" 3D créé par",
+    "follow_us": "Suivez nous sur",
+    "picture_credits": "Photos réalisées par",
+    "site_credits": "Site web et Modèles 3D créés par",
+    "terms_and_conditions": "Termes et conditions",
+    "translation_credits": "Traductions Françaises et Néerlandaises par"
+  },
   "Timetable": {
     "header": {
       "title": "Programme",
@@ -91,14 +99,6 @@
     }
   },
   "2022_msg": {
-    "footer": {
-      "3d_u_credits": "Modèle \"Ü\" 3D créé par",
-      "follow_us": "Suivez nous sur",
-      "picture_credits": "Photos réalisées par",
-      "site_credits": "Site web et Modèles 3D créés par",
-      "terms_and_conditions": "Termes et conditions",
-      "translation_credits": "Traductions Françaises et Néerlandaises par"
-    },
     "general": {
       "buttons": {
         "about_fluufff": "À propos de Flüüfff",
