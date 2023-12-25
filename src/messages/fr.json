@@ -7,6 +7,38 @@
     "terms_and_conditions": "Termes et conditions",
     "translation_credits": "Traductions Françaises et Néerlandaises par"
   },
+  "About": {
+    "header": {
+      "subtitle": "De quoi s'agit-il ?",
+      "title": "À propos de Flüüfff"
+    },
+    "about": {
+      "description": "Flüüfff 2023 est la sixième édition de la convention Flüüfff. Son but est de rassembler en un même endroit les furries et leurs amis pour partager un moment de camaraderie, d'amusement et de créativité (des valeurs dont notre communauté peut être fière). Mais vous n'avez pas besoin d'être un furry pour venir faire la fête avec nous!\n\nLa convention se déroule sur 5 jours. Diverses activités ont lieu : une piste de dance, un coin lounge, des jeux vidéos, des conférences, et bien d'autres choses à faire. Peu de place est laissée à l'ennui.",
+      "title": "Flüüfff"
+    },
+    "dream_team_title": "La Dreamteam",
+    "furry_fandom": {
+      "description": "Le fandom furry est une communauté inspirée des animaux anthropomorphiques (aux traits humains). Les personnes membres de cette communauté sont appelées \"furries\".\n\nVous pouvez la comparer à d'autres communautés comme celles des fans de Star Wars, de mangas et d'héroïc-fantasy. Le fandom furry se distingue par sa créativité mais est aussi connu pour avoir des membres très sociables !\n\nLa majorité des furries créent leur propre personnage (appellé fursona), basé sur un animal. N'importe quelle espèce ou créature fantastique peut être utilisée !\n\nLors de sorties ou en convention, vous pouvez trouver des personnes en fursuit. Les fursuits sont des costumes basés sur le personnage créé par la personne.\n\nQue ce soit dans la communauté ou en convention, les éléments les plus marquants du fandom sont l'art, l'écriture, les jeux de rôles, la socialisation mais aussi le fait de concevoir et de porter une fursuit. Une bonne partie des conventions et groupes furry organisent des évènements et des collectes de dons pour diverses œuvres de charité !",
+      "title": "Qu'est ce que le fandom furry ?"
+    },
+    "help": {
+      "description": "Bien sûr ! Contactez-nous par email via le formulaire de contact et nous jetterons un œil à votre candidature. Sinon, sachez que le meilleur moyen de supporter la Flüüfff est d'y venir !",
+      "title": "Puis-je vous aider durant la Flüüfff 2023"
+    },
+    "npo": {
+      "address": "Flüüfff, ASBL Rue Félicien Rops, 35B, boîte 01 1070, Anderlecht Belgium",
+      "description": "Flüüfff ASBL est une Association Sans But Lucratif Belge ; elle porte le numéro d'entreprise 0662.498.716 (0662.498.716 — vous pouvez en savoir plus sur la Banque Carrefour des Entreprises). \n\nLes administrateurs de l'ASBL sont Thierry Dognié, Jan Taverniers, Benoît Volckaert et Wybren van der Meer.",
+      "revenue": "Tous les revenus de la convention seront utilisés pour les équipements ou les services en vue d'améliorer les prochaines éditions ou seront reversés à une œuvre de charité.",
+      "title": "Flüüfff ASBL"
+    },
+    "previous_editions": {
+      "title": "Où puis-je trouver les sites web des précédentes éditions ?"
+    },
+    "rules": {
+      "description": "Vous pouvez trouver les règles de la convention ici.",
+      "title": "Un règlement est-il appliqué à la convention ?"
+    }
+  },
   "Timetable": {
     "header": {
       "title": "Programme",
@@ -86,10 +118,12 @@
   },
   "general": {
     "buttons": {
+      "charity": "La charité",
       "tickets_and_pricing": "Tickets et tarifs"
     },
     "labels": {
       "double": "Double",
+      "here": "ici",
       "quadruple": "Quadruple",
       "single": "Simple",
       "superior_double": "Supérieure double",
@@ -102,7 +136,6 @@
     "general": {
       "buttons": {
         "about_fluufff": "À propos de Flüüfff",
-        "charity": "La charité",
         "day_tickets": "Tickets à la journée",
         "discover": "Découvrir",
         "dreamteam": "La dreamteam",
@@ -123,7 +156,6 @@
         "business_room": "Chambre D'affaires",
         "early_arrival": "Arrivée avancée",
         "friday_short": "Venir",
-        "here": "ici",
         "item": "Item",
         "late_departure": "Départ tardif",
         "parking_ticket": "Ticket de parking",
@@ -160,38 +192,6 @@
       }
     },
     "pages": {
-      "about": {
-        "about": {
-          "description": "Flüüfff 2023 est la sixième édition de la convention Flüüfff. Son but est de rassembler en un même endroit les furries et leurs amis pour partager un moment de camaraderie, d'amusement et de créativité (des valeurs dont notre communauté peut être fière). Mais vous n'avez pas besoin d'être un furry pour venir faire la fête avec nous!\n\nLa convention se déroule sur 5 jours. Diverses activités ont lieu : une piste de dance, un coin lounge, des jeux vidéos, des conférences, et bien d'autres choses à faire. Peu de place est laissée à l'ennui.",
-          "title": "Flüüfff"
-        },
-        "dream_team_title": "La Dreamteam",
-        "furry_fandom": {
-          "description": "Le fandom furry est une communauté inspirée des animaux anthropomorphiques (aux traits humains). Les personnes membres de cette communauté sont appelées \"furries\".\n\nVous pouvez la comparer à d'autres communautés comme celles des fans de Star Wars, de mangas et d'héroïc-fantasy. Le fandom furry se distingue par sa créativité mais est aussi connu pour avoir des membres très sociables !\n\nLa majorité des furries créent leur propre personnage (appellé fursona), basé sur un animal. N'importe quelle espèce ou créature fantastique peut être utilisée !\n\nLors de sorties ou en convention, vous pouvez trouver des personnes en fursuit. Les fursuits sont des costumes basés sur le personnage créé par la personne.\n\nQue ce soit dans la communauté ou en convention, les éléments les plus marquants du fandom sont l'art, l'écriture, les jeux de rôles, la socialisation mais aussi le fait de concevoir et de porter une fursuit. Une bonne partie des conventions et groupes furry organisent des évènements et des collectes de dons pour diverses œuvres de charité !",
-          "title": "Qu'est ce que le fandom furry ?"
-        },
-        "header": {
-          "sub_title": "De quoi s'agit-il ?",
-          "title": "À propos de Flüüfff"
-        },
-        "help": {
-          "description": "Bien sûr ! Contactez-nous par email via le formulaire de contact et nous jetterons un œil à votre candidature. Sinon, sachez que le meilleur moyen de supporter la Flüüfff est d'y venir !",
-          "title": "Puis-je vous aider durant la Flüüfff 2023"
-        },
-        "npo": {
-          "address": "Flüüfff, ASBL Rue Félicien Rops, 35B, boîte 01 1070, Anderlecht Belgium",
-          "description": "Flüüfff ASBL est une Association Sans But Lucratif Belge ; elle porte le numéro d'entreprise 0662.498.716 (0662.498.716 — vous pouvez en savoir plus sur la Banque Carrefour des Entreprises). \n\nLes administrateurs de l'ASBL sont Thierry Dognié, Jan Taverniers, Benoît Volckaert et Wybren van der Meer.",
-          "revenue": "Tous les revenus de la convention seront utilisés pour les équipements ou les services en vue d'améliorer les prochaines éditions ou seront reversés à une œuvre de charité.",
-          "title": "Flüüfff ASBL"
-        },
-        "previous_editions": {
-          "title": "Où puis-je trouver les sites web des précédentes éditions ?"
-        },
-        "rules": {
-          "description": "Vous pouvez trouver les règles de la convention ici.",
-          "title": "Un règlement est-il appliqué à la convention ?"
-        }
-      },
       "charity": {
         "content": {
           "description": "Natagora is active across the whole of Wallonia and Brussels. The main objective of the association is to halt the loss of biodiversity and to help restore a better balance between nature and humankind. For this, the Association has taken on a number of missions.",

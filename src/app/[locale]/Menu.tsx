@@ -59,9 +59,9 @@ export default function Menu() {
                 </Link>
               </li> */}
 
-              {/* <li>
+              <li>
                 <div className="m-menu__sub-menu">
-                  <Link className="m-menu__link" href="/about">
+                  <Link className="m-menu__link" href="/about/fluufff">
                     {t('items.about')}
                   </Link>
                   <div className="m-menu__sub-menu__wrapper">
@@ -74,18 +74,18 @@ export default function Menu() {
                             {t('items.about_fluufff')}
                           </Link>
                         </li>
-                        <li>
+                        {/* <li>
                           <Link
                             className="m-menu__sub-link"
                             href="/about/charity">
                             {t('items.charity')}
                           </Link>
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
                   </div>
                 </div>
-              </li> */}
+              </li>
 
               <li>
                 <div className="m-menu__sub-menu">
