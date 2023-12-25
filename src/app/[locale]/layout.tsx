@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { unstable_setRequestLocale } from 'next-intl/server';
 
+import Footer from './Footer';
 import Menu from './Menu';
 
 import { localeKeys } from '@/config';
@@ -50,6 +51,7 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Menu />
           {children}
+          <Footer locale={locale} />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -1,4 +1,56 @@
 {
+  "Footer": {
+    "3d_u_credits": "3D “Ü” created by",
+    "follow_us": "Follow us",
+    "picture_credits": "Pictures by",
+    "site_credits": "Website & 3D Models created by",
+    "terms_and_conditions": "Terms and Conditions",
+    "translation_credits": "Dutch & French translations by"
+  },
+  "About": {
+    "header": {
+      "subtitle": "What is this all about?",
+      "title": "About Flüüfff"
+    },
+    "about": {
+      "description": {
+        "p0_fluufff": "Flüüfff 2023 is the 6th edition of the Flüüfff convention. It is all about bringing furries together in one place to share friendship, fun, and creativity (values our community can be proud of). You don‘t have to be a furry to come party with us!",
+        "p1_contents": "The convention lasts 5 days and can be enjoyed in many ways: dancing like a party animal, lounging, playing video-games and board-games, attend panels or participate in one of the proposed activities."
+      },
+      "title": "Flüüfff"
+    },
+    "dream_team_title": "The Dreamteam",
+    "furry_fandom": {
+      "description": {
+        "p0_furries": "The furry fandom is a community inspired by anthropomorphic animals (animals with human traits). People who are part of the fandom are called 'furries'.",
+        "p1_fandom": "You can compare it to other communities with a fanbase like the Star Wars, anime, or fantasy fandom. The furry fandom is mainly about creativity and is also known as a very social community.",
+        "p2_fursona": "Most furries create their own character (also called fursona), based upon a certain animal. There are normal animals, hybrids, mythical creatures and some even create their own species.",
+        "p3_fursuits": "If there’s a meetup or a convention, you could find some people wearing fursuits. These fursuits are mostly costumes based upon someone’s fursona. The fursuiters not only provide a hug, but also want to put a smile on the faces of children and adults alike.",
+        "p4_conventions": "In the community and during conventions, it is all about making art, writing stories, roleplaying, socializing, and also making and wearing fursuits. Most furry conventions and several furry community groups collect money or organize panels for various charities!"
+      },
+      "title": "What is the furry fandom?"
+    },
+    "help": {
+      "description": "Of course! You can contact us by email through our contact form and we’ll look into it, but the best way to support the Flüüfff is simply to attend it!",
+      "title": "Can I help with Flüüfff 2023?"
+    },
+    "npo": {
+      "address": "Flüüfff, ASBL Rue Félicien Rops, 35B, boîte 01 1070, Anderlecht Belgium",
+      "description": {
+        "p0_npo": "Flüüfff ASBL is a registered Belgian Non Profit Organisation with organisation number 0662.498.716 (see more on the Belgian Crossroads Bank for Enterprises Database).",
+        "p1_admins": "The administrators of the NPO are Thierry Dognié, Jan Taverniers, Benoît Volckaert and Wybren van der Meer."
+      },
+      "revenue": "All the revenue made during the event will either be entirely used in equipment and services, to improve the next edition, or given to charity.",
+      "title": "Flüüfff ASBL"
+    },
+    "previous_editions": {
+      "title": "Where can i find the site of the previous editions?"
+    },
+    "rules": {
+      "description": "You can find the convention rules here.",
+      "title": "Are there certain rules at the convention?"
+    }
+  },
   "Timetable": {
     "header": {
       "title": "Schedule",
@@ -78,10 +130,12 @@
   },
   "general": {
     "buttons": {
+      "charity": "The charity",
       "tickets_and_pricing": "Tickets & Pricing"
     },
     "labels": {
       "double": "Double",
+      "here": "here",
       "quadruple": "Quadruple",
       "single": "Single",
       "superior_double": "Superior double",
@@ -91,18 +145,9 @@
     }
   },
   "2022_msg": {
-    "footer": {
-      "3d_u_credits": "3D “Ü” created by",
-      "follow_us": "Follow us",
-      "picture_credits": "Pictures by",
-      "site_credits": "Website & 3D Models created by",
-      "terms_and_conditions": "Terms and Conditions",
-      "translation_credits": "Dutch & French translations by"
-    },
     "general": {
       "buttons": {
         "about_fluufff": "About Flüüfff",
-        "charity": "The charity",
         "day_tickets": "Day tickets",
         "discover": "Discover",
         "dreamteam": "The dreamteam",
@@ -123,7 +168,6 @@
         "business_room": "Business room",
         "early_arrival": "Early arrival",
         "friday_short": "Fri",
-        "here": "here",
         "item": "Item",
         "late_departure": "Late departure",
         "parking_ticket": "Parking ticket",
@@ -160,38 +204,6 @@
       }
     },
     "pages": {
-      "about": {
-        "about": {
-          "description": "Flüüfff 2023 is the 6th edition of the Flüüfff convention. It is all about bringing furries together in one place to share friendship, fun, and creativity (values our community can be proud of). You don‘t have to be a furry to come party with us!\n\nThe convention lasts 5 days and can be enjoyed in many ways: dancing like a party animal, lounging, playing video-games and board-games, attend panels or participate in one of the proposed activities.",
-          "title": "Flüüfff"
-        },
-        "dream_team_title": "The Dreamteam",
-        "furry_fandom": {
-          "description": "The furry fandom is a community inspired by anthropomorphic animals (animals with human traits). People who are part of the fandom are called 'furries'.\n\nYou can compare it to other communities with a fanbase like the Star Wars, anime, or fantasy fandom. The furry fandom is mainly about creativity and is also known as a very social community.\n\nMost furries create their own character (also called fursona), based upon a certain animal. There are normal animals, hybrids, mythical creatures and some even create their own species.\n\nIf there’s a meetup or a convention, you could find some people wearing fursuits. These fursuits are mostly costumes based upon someone’s fursona. The fursuiters not only provide a hug, but also want to put a smile on the faces of children and adults alike.\n\nIn the community and during conventions, it is all about making art, writing stories, roleplaying, socializing, and also making and wearing fursuits. Most furry conventions and several furry community groups collect money or organize panels for various charities!",
-          "title": "What is the furry fandom?"
-        },
-        "header": {
-          "sub_title": "What is this all about?",
-          "title": "About Flüüfff"
-        },
-        "help": {
-          "description": "Of course! You can contact us by email through our contact form and we’ll look into it, but the best way to support the Flüüfff is simply to attend it!",
-          "title": "Can I help with Flüüfff 2023?"
-        },
-        "npo": {
-          "address": "Flüüfff, ASBL Rue Félicien Rops, 35B, boîte 01 1070, Anderlecht Belgium",
-          "description": "Flüüfff ASBL is a registered Belgian Non Profit Organisation with organisation number 0662.498.716 (see more on the Belgian Crossroads Bank for Enterprises Database).\n\nThe administrators of the NPO are Thierry Dognié, Jan Taverniers, Benoît Volckaert and Wybren van der Meer.",
-          "revenue": "All the revenue made during the event will either be entirely used in equipment and services, to improve the next edition, or given to charity.",
-          "title": "Flüüfff ASBL"
-        },
-        "previous_editions": {
-          "title": "Where can i find the site of the previous editions?"
-        },
-        "rules": {
-          "description": "You can find the convention rules here.",
-          "title": "Are there certain rules at the convention?"
-        }
-      },
       "charity": {
         "content": {
           "description": "Natagora is active across the whole of Wallonia and Brussels. The main objective of the association is to halt the loss of biodiversity and to help restore a better balance between nature and humankind. For this, the Association has taken on a number of missions.",
