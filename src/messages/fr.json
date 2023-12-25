@@ -16,7 +16,7 @@
   "Hotel": {
     "header": {
       "title": "Le Lieu",
-      "sub_title": "Jetez un coup d'œil à ces chambres !"
+      "subtitle": "Jetez un coup d'œil à ces chambres !"
     },
     "hotel": {
       "title": "L'hôtel Bedford à Bruxelles",

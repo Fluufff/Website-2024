@@ -15,7 +15,7 @@ interface Props {
 export async function generateMetadata({ params: { locale } }: Props) {
   const t = await getTranslations({ locale, namespace: 'Hotel' });
   return {
-    title: t('title'),
+    title: t('header.title'),
   };
 }
 

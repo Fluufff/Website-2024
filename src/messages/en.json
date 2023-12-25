@@ -16,7 +16,7 @@
   "Hotel": {
     "header": {
       "title": "The Venue",
-      "sub_title": "Check our these nice rooms!"
+      "subtitle": "Check our these nice rooms!"
     },
     "hotel": {
       "title": "The Bedford Hotel in Brussels",
