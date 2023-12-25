@@ -32,13 +32,13 @@ export default async function About({
               <h3>{t('about.title')}</h3>
               <p>{t('about.description.p0_fluufff')}</p>
               <p>{t('about.description.p1_contents')}</p>
-              <p className="u-margin-top-lg">
+              <div className="u-margin-top-lg">
                 <div className="m-button-group">
                   <Link href="/about/charity" className="a-button">
                     {tGeneral('buttons.charity')}
                   </Link>
                 </div>
-              </p>
+              </div>
             </div>
           </div>
         </div>
