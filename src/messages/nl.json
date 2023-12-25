@@ -13,12 +13,21 @@
       "title": "Over Flüüfff"
     },
     "about": {
-      "description": "Flüüfff 2023 is de 6e editie van de Flüüfff conventie. Het gaat allemaal over het samenbrengen van furries op een plek om vriendschap, plezier en creativiteit te delen (Alle waarden waar onze gemeenschap trots op kan zijn). Je hoeft geen furry te zijn om met ons mee te kunnen feesten!\n\nDe conventie duurt 5 dagen en kan beleefd worden op verschillende manieren: Dansen als een feestbeest, hangen in de lounge, videogames spelen, panels bezoeken of doe mee aan één van onze aanraders.",
+      "description": {
+        "p0_fluufff": "Flüüfff 2023 is de 6e editie van de Flüüfff conventie. Het gaat allemaal over het samenbrengen van furries op een plek om vriendschap, plezier en creativiteit te delen (Alle waarden waar onze gemeenschap trots op kan zijn). Je hoeft geen furry te zijn om met ons mee te kunnen feesten!",
+        "p1_contents": "De conventie duurt 5 dagen en kan beleefd worden op verschillende manieren: Dansen als een feestbeest, hangen in de lounge, videogames spelen, panels bezoeken of doe mee aan één van onze aanraders."
+      },
       "title": "Flüüfff"
     },
     "dream_team_title": "Het Dreamteam",
     "furry_fandom": {
-      "description": "De furry fandom is een gemeenschap geïnspireerd door anthropomorfische dieren (dieren met menselijke trekken). Mensen die deel hiervan zijn worden furries genoemd.\n\nJe kan het vergelijken met andere gemeenschappen met een fanbase zoals Star Wars, anime en de fantasie fandom. De furry fandom gaat grotendeels over creativiteit en is ook gekend als een zeer sociale gemeenschap.\n\nDe meeste furries maken hun eigen karakter (ook gekend als fursona), gebaseerd op een bepaald dier. Er zijn niet alleen normale dieren maar ook hybrides, mythische wezens en sommige maken zelfs hun eigen soorten.\n\nAls er een bijeenkomst of een conventie is zal je hoogstwaarschijnlijk mensen zien met fursuits. Deze fursuits zijn vooral kostuums gebaseerd op iemands fursona. Fursuiters zullen niet enkel een knuffel, maar ook een lach aan kinderen en volwassenen geven.\n\nIn deze community en vooral tijdens conventies draait het allemaal rond het maken van kunst, schrijven van verhalen, spelen van (rollen)spellen, socialisen en het maken en dragen van fursuits. De meeste furry conventies en meerdere furry groepen zamelen geld in en / of organiseren panels voor verschillende goede doelen!",
+      "description": {
+        "p0_furries": "De furry fandom is een gemeenschap geïnspireerd door anthropomorfische dieren (dieren met menselijke trekken). Mensen die deel hiervan zijn worden furries genoemd.",
+        "p1_fandom": "Je kan het vergelijken met andere gemeenschappen met een fanbase zoals Star Wars, anime en de fantasie fandom. De furry fandom gaat grotendeels over creativiteit en is ook gekend als een zeer sociale gemeenschap.",
+        "p2_fursona": "De meeste furries maken hun eigen karakter (ook gekend als fursona), gebaseerd op een bepaald dier. Er zijn niet alleen normale dieren maar ook hybrides, mythische wezens en sommige maken zelfs hun eigen soorten.",
+        "p3_fursuits": "Als er een bijeenkomst of een conventie is zal je hoogstwaarschijnlijk mensen zien met fursuits. Deze fursuits zijn vooral kostuums gebaseerd op iemands fursona. Fursuiters zullen niet enkel een knuffel, maar ook een lach aan kinderen en volwassenen geven.",
+        "p4_conventions": "In deze community en vooral tijdens conventies draait het allemaal rond het maken van kunst, schrijven van verhalen, spelen van (rollen)spellen, socialisen en het maken en dragen van fursuits. De meeste furry conventies en meerdere furry groepen zamelen geld in en / of organiseren panels voor verschillende goede doelen!"
+      },
       "title": "Wat is de furry fandom?"
     },
     "help": {
@@ -27,7 +36,10 @@
     },
     "npo": {
       "address": "Flüüfff, ASBL Félicien Ropsstraat, 35B, bus 01 1070, Anderlecht België",
-      "description": "Flüüfff ASBL is een geregistreerde non profit organisatie met organisatie nummer 0662.498.716 (zie meer op de Belgische Kruispuntbank voor Ondernemingen)\n\nDe administratoren van de NPO zijn Thierry Dognié, Jan Taverniers, Benoît Volckaert en Wybren van der Meer.",
+      "description": {
+        "p0_npo": "Flüüfff ASBL is een geregistreerde non profit organisatie met organisatie nummer 0662.498.716 (zie meer op de Belgische Kruispuntbank voor Ondernemingen)",
+        "p1_admins": "De administratoren van de NPO zijn Thierry Dognié, Jan Taverniers, Benoît Volckaert en Wybren van der Meer."
+      },
       "revenue": "Alle winst gemaakt tijdens het evenement zal volledig gebruikt worden in materieel en diensten om de volgende edities te verbeteren of gedoneerd worden aan goede doelen.",
       "title": "Flüüfff ASBL"
     },

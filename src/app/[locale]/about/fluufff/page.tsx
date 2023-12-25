@@ -30,7 +30,8 @@ export default async function About({
           <div className="m-about">
             <div className="m-about__content">
               <h3>{t('about.title')}</h3>
-              <p>{t('about.description')}</p>
+              <p>{t('about.description.p0_fluufff')}</p>
+              <p>{t('about.description.p1_contents')}</p>
               <p className="u-margin-top-lg">
                 <div className="m-button-group">
                   <Link href="/about/charity" className="a-button">
@@ -47,7 +48,11 @@ export default async function About({
           <div className="u-row">
             <div className="u-col-sm-6">
               <h4>{t('furry_fandom.title')}</h4>
-              <p>{t('furry_fandom.description')}</p>
+              <p>{t('furry_fandom.description.p0_furries')}</p>
+              <p>{t('furry_fandom.description.p1_fandom')}</p>
+              <p>{t('furry_fandom.description.p2_fursona')}</p>
+              <p>{t('furry_fandom.description.p3_fursuits')}</p>
+              <p>{t('furry_fandom.description.p4_conventions')}</p>
             </div>
             <div className="u-col-sm-6">
               <h4>{t('help.title')}</h4>
@@ -81,7 +86,8 @@ export default async function About({
           <div className="u-row">
             <div className="u-col-sm-6">
               <h4>{t('npo.title')}</h4>
-              <p>{t('npo.description')}</p>
+              <p>{t('npo.description.p0_npo')}</p>
+              <p>{t('npo.description.p1_admins')}</p>
             </div>
             <div className="u-col-sm-6">
               <p>
