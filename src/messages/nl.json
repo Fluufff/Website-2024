@@ -14,7 +14,7 @@
     },
     "about": {
       "description": {
-        "p0_fluufff": "Flüüfff 2023 is de 6e editie van de Flüüfff conventie. Het gaat allemaal over het samenbrengen van furries op een plek om vriendschap, plezier en creativiteit te delen (Alle waarden waar onze gemeenschap trots op kan zijn). Je hoeft geen furry te zijn om met ons mee te kunnen feesten!",
+        "p0_fluufff": "Flüüfff 2022 is de 5e editie van de Flüüfff conventie. Het gaat allemaal over het samenbrengen van furries op een plek om vriendschap, plezier en creativiteit te delen (Alle waarden waar onze gemeenschap trots op kan zijn). Je hoeft geen furry te zijn om met ons mee te kunnen feesten!",
         "p1_contents": "De conventie duurt 5 dagen en kan beleefd worden op verschillende manieren: Dansen als een feestbeest, hangen in de lounge, videogames spelen, panels bezoeken of doe mee aan één van onze aanraders."
       },
       "title": "Flüüfff"
@@ -32,7 +32,7 @@
     },
     "help": {
       "description": "Natuurlijk! Je kan ons altijd bereiken via mail of via het contact formulier en dan zullen we ons hierin verdiepen, Maar de beste manier om ons te steunen is door aanwezig te zijn!",
-      "title": "Kan ik helpen tijdens Flüüfff 2023?"
+      "title": "Kan ik helpen tijdens Flüüfff 2022?"
     },
     "npo": {
       "address": "Flüüfff, ASBL Félicien Ropsstraat, 35B, bus 01 1070, Anderlecht België",
@@ -289,10 +289,10 @@
           }
         },
         "hero": {
-          "date": "van 8 tot en met 12 November, 2023",
+          "date": "van 9 tot en met 13 November, 2022",
           "description": "Voor de 5e Editie van de Belgische furry conventie zou ons team het geweldig vinden om je uit te nodigen op ons vrolijke eiland vol verrassingen in het Bedford Hotel & Congress Center in Brussel.\nGestrand zijn op een eiland zal dit feestje niet stoppen. Laten we onze slippers en drankjes die aangespoeld zijn meenemen en dansen tot we er bij neervallen.",
           "sub_title": "Hou de datum vrij!",
-          "title": "Toxic Critters"
+          "title": "Tropical Trouble"
         },
         "registration": {
           "account_creation_start_from": "Account aanmaken kan vanaf",
@@ -320,7 +320,7 @@
           "title": "Cijfers van vorig jaar"
         },
         "welcome": {
-          "description": "Dit is een Belgische furry conventie gelegen in Brussel! Een furry conventie is een evenement gewijd aan antropomorfische personages en een bijeenkomst voor alle furries en hun vrienden.\n\nFlüüfff is verspreid over 5 dagen, van 8 November tot en met 12 November 2023. De conventie vindt plaats in het Bedford hotel.",
+          "description": "Dit is een Belgische furry conventie gelegen in Brussel! Een furry conventie is een evenement gewijd aan antropomorfische personages en een bijeenkomst voor alle furries en hun vrienden.\n\nFlüüfff is verspreid over 5 dagen, van 9 November tot en met 13 November 2022. De conventie vindt plaats in het Bedford hotel.",
           "title": "Welkom op Flüüfff"
         }
       },

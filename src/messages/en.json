@@ -14,7 +14,7 @@
     },
     "about": {
       "description": {
-        "p0_fluufff": "Flüüfff 2023 is the 6th edition of the Flüüfff convention. It is all about bringing furries together in one place to share friendship, fun, and creativity (values our community can be proud of). You don‘t have to be a furry to come party with us!",
+        "p0_fluufff": "Flüüfff 2022 is the 5th edition of the Flüüfff convention. It is all about bringing furries together in one place to share friendship, fun, and creativity (values our community can be proud of). You don‘t have to be a furry to come party with us!",
         "p1_contents": "The convention lasts 5 days and can be enjoyed in many ways: dancing like a party animal, lounging, playing video-games and board-games, attend panels or participate in one of the proposed activities."
       },
       "title": "Flüüfff"
@@ -32,7 +32,7 @@
     },
     "help": {
       "description": "Of course! You can contact us by email through our contact form and we’ll look into it, but the best way to support the Flüüfff is simply to attend it!",
-      "title": "Can I help with Flüüfff 2023?"
+      "title": "Can I help with Flüüfff 2022?"
     },
     "npo": {
       "address": "Flüüfff, ASBL Rue Félicien Rops, 35B, boîte 01 1070, Anderlecht Belgium",
@@ -289,10 +289,10 @@
           }
         },
         "hero": {
-          "date": "8th-12th November, 2023",
+          "date": "9th-13th November, 2022",
           "description": "For the 5th edition of Belgium’s furry convention, our team would love to invite you to our island of happiness and surprises at the Bedford Hotel & Congress Center in Brussels.\n\nBeing stranded on an island is not what is going to end the party. Let's grab our flipflops and the bottles that washed ashore and let's dance like there were no tomorrow.",
           "sub_title": "Save the date!",
-          "title": "Toxic Critters"
+          "title": "Tropical Trouble"
         },
         "registration": {
           "account_creation_start_from": "Account creation starts from",
@@ -320,7 +320,7 @@
           "title": "Last year’s numbers"
         },
         "welcome": {
-          "description": "It’s a Belgian furry convention, located in Brussels! A furry convention is an event dedicated to anthropomorphic characters and a gathering place for all furries and their friends.\n\nFlüüfff is spread over 5 days, the 8th of November to the 12th of November 2023. The convention takes place in the Bedford hotel.",
+          "description": "It’s a Belgian furry convention, located in Brussels! A furry convention is an event dedicated to anthropomorphic characters and a gathering place for all furries and their friends.\n\nFlüüfff is spread over 5 days, the 9th of November to the 13th of November 2022. The convention takes place in the Bedford hotel.",
           "title": "Welcome to Flüüfff"
         }
       },
