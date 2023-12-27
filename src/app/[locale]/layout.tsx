@@ -14,7 +14,7 @@ import {
   isSupportedLocale,
   Messages,
 } from '@/helpers/localization';
-import { readexPro } from '@/styles/fonts';
+import { pineapple, readexPro } from '@/styles/fonts';
 
 export const metadata: Metadata = {
   title: {
@@ -47,7 +47,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className={readexPro.variable}>
+      <body className={[readexPro.variable, pineapple.variable].join(' ')}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Menu />
           {children}

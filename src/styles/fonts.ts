@@ -1,6 +1,7 @@
 // NOTE: This package is designed for privacy and only fetches from google on
 // the server side, which is also something we care about here.
 import { Readex_Pro } from 'next/font/google';
+import localFont from 'next/font/local';
 
 // NOTE: Next always loads woff2 fonts. If we need more control, we can always
 // import the fonts in our repo.
@@ -16,4 +17,12 @@ export const readexPro = Readex_Pro({
   ],
   fallback: ['sans-serif'],
   subsets: ['latin'],
+});
+
+// 2022 legacy font (TODO: remove)
+export const pineapple = localFont({
+  variable: '--font-family-pineapple',
+  // woff2 has good enough browser support, we don't need fallback formats
+  src: './font-files/PineappleDemo.woff2',
+  preload: false,
 });

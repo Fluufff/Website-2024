@@ -138,7 +138,7 @@
 	}
 	
 	> h3 {
-		font-family: 'Pineapple';
+		font-family: var(--font-family-pineapple);
 		font-size: 2rem;
 		margin: 0 0 $spacer-x-large 0;
 	}

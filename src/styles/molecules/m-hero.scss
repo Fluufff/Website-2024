@@ -35,7 +35,7 @@
 	}
 
 	&__title {
-		font-family: 'Pineapple';
+		font-family: var(--font-family-pineapple);
 		font-size: 3.3rem;
 		margin: $spacer-small 0;
 
@@ -68,7 +68,7 @@
 	}
 
 	&__date {
-		font-family: 'Pineapple';
+		font-family: var(--font-family-pineapple);
 		font-size: 2rem;
 		margin: $spacer-small 0;
 	}

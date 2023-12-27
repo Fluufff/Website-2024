@@ -7,17 +7,17 @@ a {
 }
 
 h1 {
-	font-family: 'Pineapple';
+	font-family: var(--font-family-pineapple);
 	font-size: 4rem;
 }
 
 h2 {
-	font-family: 'Pineapple';
+	font-family: var(--font-family-pineapple);
 	font-size: 3rem;
 }
 
 h3 {
-	font-family: 'Pineapple';
+	font-family: var(--font-family-pineapple);
 	font-size: 2rem;
 }
 

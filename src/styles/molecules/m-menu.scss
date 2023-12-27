@@ -37,7 +37,7 @@
 	}
 
 	&__link {
-		font-family: 'Pineapple';
+		font-family: var(--font-family-pineapple);
 		transition: all .5s ease;
 		transition-property: color, padding;
 		color: $grey-lighter;
