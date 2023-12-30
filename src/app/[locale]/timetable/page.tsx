@@ -2,16 +2,22 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import Timetable from './Timetable';
 
+import { PropsWithLocale } from '@/helpers/localization';
 import { getSchedule } from '@/services/cms/schedule';
 
 // TODO
 const headerImage = '';
 
-export default async function TimetablePage({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+type Props = PropsWithLocale;
+
+export async function generateMetadata({ params: { locale } }: Props) {
+  const t = await getTranslations({ locale, namespace: 'Timetable' });
+  return {
+    title: t('header.title'),
+  };
+}
+
+export default async function TimetablePage({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
 
   const t = await getTranslations('Timetable');

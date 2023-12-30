@@ -4,13 +4,10 @@ import React from 'react';
 
 import ScrollLink from '../../ScrollLink';
 
+import { PropsWithLocale } from '@/helpers/localization';
 import { Link } from '@/helpers/navigation';
 
-interface Props {
-  params: {
-    locale: string;
-  };
-}
+type Props = PropsWithLocale;
 
 export async function generateMetadata({ params: { locale } }: Props) {
   const t = await getTranslations({ locale, namespace: 'Hotel' });

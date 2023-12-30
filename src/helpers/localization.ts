@@ -2,6 +2,8 @@ import { cache } from 'react';
 
 import { localeKeys, SupportedLocale } from '@/config';
 
+export type PropsWithLocale<P = {}> = P & { params: { locale: string } };
+
 export type Messages = typeof import('@/messages/en.json');
 
 export const getMessages = cache(

@@ -13,8 +13,13 @@ import {
   getMessages,
   isSupportedLocale,
   Messages,
+  PropsWithLocale,
 } from '@/helpers/localization';
 import { pineapple, readexPro } from '@/styles/fonts';
+
+type Props = PropsWithLocale<{
+  children: React.ReactNode;
+}>;
 
 export const metadata: Metadata = {
   title: {
@@ -31,10 +36,7 @@ export function generateStaticParams() {
 export default async function RootLayout({
   children,
   params: { locale },
-}: {
-  children: React.ReactNode;
-  params: { locale: string };
-}) {
+}: Props) {
   let messages: Messages;
   try {
     if (!isSupportedLocale(locale)) notFound();

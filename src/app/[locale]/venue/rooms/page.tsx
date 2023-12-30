@@ -6,10 +6,14 @@ import React from 'react';
 import businessRoomImage from '@/assets/rooms/business-room.jpg';
 import headerImage from '@/assets/rooms/header.jpg';
 import standardRoomImage from '@/assets/rooms/standard-room.jpg';
+import { PropsWithLocale } from '@/helpers/localization';
 
-interface Props {
-  params: {
-    locale: string;
+type Props = PropsWithLocale;
+
+export async function generateMetadata({ params: { locale } }: Props) {
+  const t = await getTranslations({ locale, namespace: 'Rooms' });
+  return {
+    title: t('header.title'),
   };
 }
 

@@ -1,13 +1,19 @@
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import headerImage from '@/assets/headers/about.jpg';
+import { PropsWithLocale } from '@/helpers/localization';
 import { Link } from '@/helpers/navigation';
 
-export default async function About({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+type Props = PropsWithLocale;
+
+export async function generateMetadata({ params: { locale } }: Props) {
+  const t = await getTranslations({ locale, namespace: 'About' });
+  return {
+    title: t('header.title'),
+  };
+}
+
+export default async function About({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
 
   const t = await getTranslations('About');
