@@ -74,13 +74,13 @@ export default function Menu() {
                             {t('items.about_fluufff')}
                           </Link>
                         </li>
-                        {/* <li>
+                        <li>
                           <Link
                             className="m-menu__sub-link"
                             href="/about/charity">
                             {t('items.charity')}
                           </Link>
-                        </li> */}
+                        </li>
                       </ul>
                     </div>
                   </div>
