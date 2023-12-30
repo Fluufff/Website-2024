@@ -1,9 +1,12 @@
 'use client';
 
 import classNames from 'classnames';
+import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 
+import logoDarkImage from '@/assets/full-logo-dark.png';
+import logoImage from '@/assets/full-logo.png';
 import { locales } from '@/config';
 import { Link, usePathname } from '@/helpers/navigation';
 
@@ -38,8 +41,10 @@ export default function Menu() {
         <div className="m-menu__content">
           <div className="m-menu__logo">
             <Link href="/">
-              Home
-              {/* <img src={scrolled || open ? logoDarkImage : logoImage} alt="" /> */}
+              <Image
+                src={scrolled || open ? logoDarkImage : logoImage}
+                alt={t('items.home')}
+              />
             </Link>
           </div>
           <button className="m-menu__hamburger" onClick={() => setOpen(!open)}>
