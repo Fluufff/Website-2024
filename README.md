@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Getting Started (development)
 
 Install dependencies:
 
@@ -18,11 +18,35 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Learn More
+## Running (server)
 
-To learn more about Next.js, take a look at the following resources:
+(WIP; this describes deployment in a test environment)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Check the [`.env`
+file](https://nextjs.org/docs/app/building-your-application/configuring/environment-variables).
+If changes are needed, a `.env.local` file can be created to override individual
+environment variables.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Install dependencies and build the project:
+
+```sh
+yarn
+yarn build
+```
+
+Run: (**TODO**: make a PM2 configuration file)
+
+```sh
+pm2 start yarn -- start -H localhost -p 8001
+```
+
+### Dependencies / prerequisites
+
+- Node.js. This can be installed with [`nvm`](https://github.com/nvm-sh/nvm).
+  Run `nvm use` in this repository to get the right Node.js version.
+- [`yarn` classic](https://classic.yarnpkg.com/)
+- [PM2](https://pm2.keymetrics.io/)
+
+Set up a reverse proxy to redirect to `localhost:8001` (note: the precise host
+matters, it should match what is given in the `start` command's `-H` parameter
+when running the Node.js server.)
