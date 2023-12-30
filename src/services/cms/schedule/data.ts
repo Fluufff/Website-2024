@@ -23,6 +23,7 @@ const eventDtoSchema = z.object({
 type EventDto = z.infer<typeof eventDtoSchema>;
 
 export interface ScheduleEvent {
+  slug: string;
   name: string;
   /** unsanitized HTML */
   htmlDescription: string;
@@ -44,10 +45,11 @@ export interface Schedule {
 function mapSchedule(scheduleDto: EventDto[]): Schedule {
   return scheduleDto.reduce<Schedule>(
     (schedule, eventDto) => {
-      const { fields } = eventDto;
+      const { slug, fields } = eventDto;
       const { location: locationDto } = fields;
 
       schedule.events.push({
+        slug,
         name: fields.name,
         htmlDescription: fields.description,
         startTime: fields['start-time'],
