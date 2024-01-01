@@ -93,6 +93,16 @@
     },
     "submit_proposal": "Submit proposal"
   },
+  "Contact": {
+    "header": {
+      "title": "Contact",
+      "subtitle": "Get in touch!"
+    },
+    "question": {
+      "title": "Got a question?",
+      "description": "Feel free to send us a message through the contact the form below!"
+    }
+  },
   "Tickets": {
     "header": {
       "title": "Tickets",
@@ -270,16 +280,6 @@
       }
     },
     "pages": {
-      "contact": {
-        "header": {
-          "sub_title": "Get in touch!",
-          "title": "Contact"
-        },
-        "question": {
-          "description": "Feel free to send us a message through the contact the form below!",
-          "title": "Got a question?"
-        }
-      },
       "getting_there": {
         "car": {
           "lez": "The hotel is located in the center of Brussels, which means you have to cross the LEZ (Low Emission Zone). This means that older cars, diesel cars, and other very polluting cars can’t enter the city. Registration is mandatory for all vehicles registered abroad (except for vehicles registered in The Netherlands). Not doing so can lead to big fines (350 euros). More info at",

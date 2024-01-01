@@ -93,6 +93,16 @@
     },
     "submit_proposal": "Voorstel indienen"
   },
+  "Contact": {
+    "header": {
+      "title": "Contact",
+      "subtitle": "Kom in contact!"
+    },
+    "question": {
+      "title": "Heb je een vraag?",
+      "description": "Voel je vrij om ons te contacteren via onderstaand formulier!"
+    }
+  },
   "Tickets": {
     "header": {
       "title": "Tickets",
@@ -270,16 +280,6 @@
       }
     },
     "pages": {
-      "contact": {
-        "header": {
-          "sub_title": "Kom in contact!",
-          "title": "Contact"
-        },
-        "question": {
-          "description": "Voel je vrij om ons te contacteren via onderstaand formulier!",
-          "title": "Heb je een vraag?"
-        }
-      },
       "getting_there": {
         "car": {
           "lez": "Het hotel is gelegen in hartje Brussel. Dit betekent dat je de LEZ (lage-emissiezone) zone betreedt. Voor oudere wagens, diesel en andere vervuilende wagens betekent dit dat die het centrum van Brussel niet mogen betreden. Registratie is verplicht voor alle buitenlandse voertuigen (behale die geregistreerd in Nederland). Het niet voldoen hieraan kan leiden tot een boete van 350 euro. Meer info op",

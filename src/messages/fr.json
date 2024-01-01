@@ -93,6 +93,16 @@
     },
     "submit_proposal": "Proposer un évènement"
   },
+  "Contact": {
+    "header": {
+      "title": "Contact",
+      "subtitle": "Restez informés !"
+    },
+    "question": {
+      "title": "Une question ?",
+      "description": "N'hésitez pas à nous envoyer un message via le formulaire ci-dessous !"
+    }
+  },
   "Tickets": {
     "header": {
       "title": "Tickets",
@@ -270,16 +280,6 @@
       }
     },
     "pages": {
-      "contact": {
-        "header": {
-          "sub_title": "Restez informés !",
-          "title": "Contact"
-        },
-        "question": {
-          "description": "N'hésitez pas à nous envoyer un message via le formulaire ci-dessous !",
-          "title": "Une question ?"
-        }
-      },
       "getting_there": {
         "car": {
           "lez": "L'hôtel est localisé dans le centre de Bruxelles, ce qui signifie que vous devez traverser la LEZ (Low Emission Zone). Les voitures âgées, les véhicules diesel et d'autres voitures très polluantes ne peuvent pas entrer en ville. Les véhicules immatriculées à l'étranger doivent être enregistrés (à l'exception des véhicules immatriculés aux Pays-Bas). Si vous ne le faites pas, vous vous exposez à une grosse amende (350 euros).\n\nPour en savoir plus, rendez-vous sur",

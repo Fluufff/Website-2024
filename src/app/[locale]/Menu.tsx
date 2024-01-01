@@ -133,11 +133,11 @@ export default function Menu() {
                 </Link>
               </li>
 
-              {/* <li>
+              <li>
                 <Link className="m-menu__link" href="/contact-us">
                   {t('items.contact')}
                 </Link>
-              </li> */}
+              </li>
 
               <li>
                 <Link
