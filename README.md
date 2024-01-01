@@ -40,6 +40,10 @@ Run: (**TODO**: make a PM2 configuration file)
 pm2 start yarn -- start -H localhost -p 8001
 ```
 
+### Updating
+
+(WIP; still looking for a zero-downtime solution.)
+
 ### Dependencies / prerequisites
 
 - Node.js. This can be installed with [`nvm`](https://github.com/nvm-sh/nvm).
