@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
-import ScrollLink from './ScrollLink';
 import HomepageScene from './_scene';
 
 import danceImage from '@/assets/dance.jpg';
 import logoImage from '@/assets/full-logo.png';
 import panelsImage from '@/assets/panels.jpg';
 import showNightImage from '@/assets/shownight.jpg';
+import ScrollLink from '@/helpers/ScrollLink';
 import { Link } from '@/helpers/navigation';
 
 export default async function IndexPage({

@@ -2,8 +2,7 @@ import classNames from 'classnames';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import React from 'react';
 
-import ScrollLink from '../../ScrollLink';
-
+import ScrollLink from '@/helpers/ScrollLink';
 import { PropsWithLocale } from '@/helpers/localization';
 import { Link } from '@/helpers/navigation';
 
