@@ -139,13 +139,13 @@ export default function Menu() {
                 </Link>
               </li> */}
 
-              {/* <li>
-								<Link
-									href="/tickets"
-									className="m-menu__link m-menu__link-button a-button a-button--small">
-									{t('items.tickets')}
-								</Link>
-							</li> */}
+              <li>
+                <Link
+                  href="/tickets"
+                  className="m-menu__link m-menu__link-button a-button a-button--small">
+                  {t('items.tickets')}
+                </Link>
+              </li>
 
               {/* {user ? (
                 <li>

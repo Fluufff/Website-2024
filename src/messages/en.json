@@ -93,6 +93,44 @@
     },
     "submit_proposal": "Submit proposal"
   },
+  "Tickets": {
+    "header": {
+      "title": "Tickets",
+      "subtitle": "Get your tickets right here!"
+    },
+    "tickets": {
+      "title": "Need tickets?"
+    },
+    "residential": {
+      "title": "Residential ticket",
+      "description": "The best way to enjoy the convention to its full potential is with a residential ticket!\n\nPlease note that all prices listed here are for ONE spot in a shared bedroom and ONE convention spot. Reserving an entire room is possible, but at double price.",
+      "include": "Residential tickets include:",
+      "con_access": "Con area access",
+      "events_access": "Access to all events",
+      "sleeping": "Sleeping at the hotel",
+      "brekky": "Breakfast",
+      "cleaning": "Daily room cleaning",
+      "info": "Check-in on your first day is at 16:00.\nCheck-out on the last day is at 12:00.\n\nInfo about the different room types can be found on the rooms page. This year we have single and two person bedrooms\n\nYou can add an extra day before and after the convention, called “early arrival” and “late departure” respectively."
+    },
+    "day": {
+      "title": "Day ticket",
+      "description": "Do you want to experience our fluffy event but have no need for accommodation? We have just the thing for you! We offer convention tickets for any given day, the full event, or weekend tickets.",
+      "include": "Day tickets include:",
+      "con_access": "Con area access",
+      "events_on_chosen_day": "Access to all events of the chosen day(s)",
+      "info": "Please note that day tickets allow you to stay from the first planned event, until the end of the last one."
+    },
+    "extras": {
+      "title": "Extras",
+      "description": "Do you like our event and want to support Flüüfff to ensure we can keep on improving your experience in the future? Consider becoming a sponsor!",
+      "includes": "The sponsor pack includes:",
+      "t_shirt": "Con t-shirt",
+      "custom_badge_art": "Custom badge art",
+      "custom_lanyard": "Custom lanyard",
+      "bonus_goodies": "Some bonus goodies",
+      "eternal_gratitude": "Our eternal gratitude"
+    }
+  },
   "Hotel": {
     "header": {
       "title": "The Venue",
@@ -158,8 +196,11 @@
   },
   "general": {
     "buttons": {
-      "charity": "The charity",
-      "tickets_and_pricing": "Tickets & Pricing"
+      "tickets_and_pricing": "Tickets & Pricing",
+      "residential_tickets": "Residential Tickets",
+      "day_tickets": "Day tickets",
+      "goodies_and_extras": "Goodies & Extras",
+      "charity": "The charity"
     },
     "labels": {
       "double": "Double",
@@ -169,49 +210,46 @@
       "superior_double": "Superior double",
       "superior_twin": "Superior twin",
       "triple": "Triple",
-      "twin": "Twin"
+      "twin": "Twin",
+      "1_day": "1 day",
+      "5_days": "5 days",
+      "business_room": "Business room",
+      "early_arrival": "Early arrival",
+      "item": "Item",
+      "late_departure": "Late departure",
+      "parking_ticket": "Parking ticket",
+      "per_person": "/ person",
+      "plus_1_day": "+1 day",
+      "price": "Price",
+      "sponsor_pack": "Sponsor pack",
+      "standard_room": "Standard room",
+      "superior_business_room": "Superior Business room",
+      "superior_standard_room": "Superior Standard room",
+      "t_shirt": "T-shirt",
+      "wednesday_short": "Wed",
+      "thursday_short": "Thu",
+      "friday_short": "Fri",
+      "saturday_short": "Sat",
+      "sunday_short": "Sun"
     }
   },
   "2022_msg": {
     "general": {
       "buttons": {
         "about_fluufff": "About Flüüfff",
-        "day_tickets": "Day tickets",
         "discover": "Discover",
         "dreamteam": "The dreamteam",
         "getting_there": "Getting there",
-        "goodies_and_extras": "Goodies & Extras",
         "hotel_rooms": "Hotel rooms",
         "more_info": "More info",
         "register": "Register",
-        "residential_tickets": "Residential Tickets",
         "submit_proposal": "Submit proposal",
         "the_restaurant": "The restaurant",
         "view_more": "View more"
       },
       "labels": {
-        "1_day": "1 day",
-        "5_days": "5 days",
         "at": "At",
-        "business_room": "Business room",
-        "early_arrival": "Early arrival",
-        "friday_short": "Fri",
-        "item": "Item",
-        "late_departure": "Late departure",
-        "parking_ticket": "Parking ticket",
-        "per_person": "/ person",
-        "plus_1_day": "+1 day",
-        "price": "Price",
-        "saturday_short": "Sat",
-        "sponsor_pack": "Sponsor pack",
-        "standard_room": "Standard room",
-        "sunday_short": "Sun",
-        "superior_business_room": "Superior Business room",
-        "superior_standard_room": "Superior Standard room",
-        "thursday_short": "Thu",
-        "to": "to",
-        "t_shirt": "T-shirt",
-        "wednesday_short": "Wed"
+        "to": "to"
       }
     },
     "menu": {
@@ -348,47 +386,6 @@
         "header": {
           "sub_title": "Legal stuff",
           "title": "Terms and Conditions"
-        }
-      },
-      "tickets": {
-        "day": {
-          "con_access": "Con area access",
-          "description": "Do you want to experience our fluffy event but have no need for accommodation? We have just the thing for you! We offer convention tickets for any given day, the full event, or weekend tickets.",
-          "events_on_chosen_day": "Access to all events of the chosen day(s)",
-          "include": "Day tickets include:",
-          "info": "Please note that day tickets allow you to stay from the first planned event, until the end of the last one.",
-          "sale_start": "The sale of day tickets will start at the begining of September.",
-          "title": "Day ticket"
-        },
-        "extras": {
-          "bonus_goodies": "Some bonus goodies",
-          "custom_badge_art": "Custom badge art",
-          "custom_lanyard": "Custom lanyard",
-          "description": "Do you like our event and want to support Flüüfff to ensure we can keep on improving your experience in the future? Consider becoming a sponsor!",
-          "eternal_gratitude": "Our eternal gratitude",
-          "includes": "The sponsor pack includes:",
-          "title": "Extras",
-          "t_shirt": "Con t-shirt"
-        },
-        "header": {
-          "title": "Tickets"
-        },
-        "residential": {
-          "brekky": "Breakfast",
-          "cleaning": "Daily room cleaning",
-          "con_access": "Con area access",
-          "description": "The best way to enjoy the convention to its full potential is with a residential ticket!\n\nPlease note that all prices listed here are for ONE spot in a shared bedroom and ONE convention spot. Reserving an entire room is possible, but at double price.",
-          "events_access": "Access to all events",
-          "include": "Residential tickets include:",
-          "info": "Check-in on your first day is at 16:00.\nCheck-out on the last day is at 12:00.\n\nInfo about the different room types can be found on the rooms page. This year we have single and two person bedrooms\n\nYou can add an extra day before and after the convention, called “early arrival” and “late departure” respectively.",
-          "sleeping": "Sleeping at the hotel",
-          "title": "Residential ticket"
-        },
-        "sub_title": {
-          "title": "Get your tickets right here!"
-        },
-        "tickets": {
-          "title": "Need tickets?"
         }
       },
       "venue": {}

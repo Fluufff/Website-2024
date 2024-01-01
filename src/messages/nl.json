@@ -93,6 +93,44 @@
     },
     "submit_proposal": "Voorstel indienen"
   },
+  "Tickets": {
+    "header": {
+      "title": "Tickets",
+      "subtitle": "Verkrijg hier je tickets!"
+    },
+    "tickets": {
+      "title": "Tickets nodig?"
+    },
+    "residential": {
+      "title": "Residentiële ticket",
+      "description": "De beste manier om volledig te genieten van onze conventie is met een residentiële ticket.\n\nLet op dat alle gegeven prijzen voor 1 plek in een gedeelde kamer en voor 1 conventie ticket zijn. Het reserveren van een volledige kamer is mogelijk voor dubbel de prijs.",
+      "include": "Residentiële tickets bevatten:",
+      "con_access": "Toegang to de conventieruimte",
+      "events_access": "Toegang tot alle activiteiten",
+      "sleeping": "Slapen in het hotel",
+      "brekky": "Ontbijt",
+      "cleaning": "Dagelijkse schoonmaak in de kamers",
+      "info": "Aanmelden op de eerste dag is vanaf 16:00.\nAfmelden op de laatste dag is om 12:00.\n\nAlle informatie over de kamers kan je terugvinden op de kamerpagina. Dit jaar bieden we één, twee, drie en vierpersoonskamers aan\n\nJe kan een extra dag toevoegen voor en na de conventie, dit is \"vroege aankomst\" en \"laat vertrek\" respectievelijk."
+    },
+    "day": {
+      "title": "Dagticket",
+      "description": "Wil je ook onze vachtige evenement bijwonen, maar heb je geen plek om te overnachten? Dan hebben we iets speciaal voor jou! We bieden conventietickets aan voor elke dag, voor het volledige event of voor de weekends.",
+      "include": "Dagtickets bevatten:",
+      "con_access": "Toegang tot de conventieruimte",
+      "events_on_chosen_day": "Toegang tot alle activiteiten voor de gekozen dag(en)",
+      "info": "Let op dat dagtickets geldig zijn vanaf het begin van het eerste evenement tot het einde van het laatste event van die dag."
+    },
+    "extras": {
+      "title": "Extras",
+      "description": "Vind je ons evenement tof en wil je Flüüfff steunen zodat we volgende ervaringen beter kunnen maken? Overweeg dan om een sponser te worden!",
+      "includes": "Het sponserpacket bevat:",
+      "t_shirt": "Conventie t-shirt",
+      "custom_badge_art": "Unieke badge",
+      "custom_lanyard": "Unieke lanyard",
+      "bonus_goodies": "Een paar extra goodies",
+      "eternal_gratitude": "Onze eeuwige dankbaarheid"
+    }
+  },
   "Hotel": {
     "header": {
       "title": "De accomodatie",
@@ -158,8 +196,11 @@
   },
   "general": {
     "buttons": {
-      "charity": "Het goede doel",
-      "tickets_and_pricing": "Tickets & Prijzen"
+      "tickets_and_pricing": "Tickets & Prijzen",
+      "residential_tickets": "Residentiële Tickets",
+      "day_tickets": "Dagtickets",
+      "goodies_and_extras": "Goodies & Extras",
+      "charity": "Het goede doel"
     },
     "labels": {
       "double": "Dubbel",
@@ -169,49 +210,46 @@
       "superior_double": "Superieure dubbel",
       "superior_twin": "Superieure twin",
       "triple": "Driedubbel",
-      "twin": "Twin"
+      "twin": "Twin",
+      "1_day": "1 dag",
+      "5_days": "5 dagen",
+      "business_room": "Business kamer",
+      "early_arrival": "Vroege aankomst",
+      "item": "Item",
+      "late_departure": "Laat vertrek",
+      "parking_ticket": "Parkeerticket",
+      "per_person": "/ persoon",
+      "plus_1_day": "+1 dag",
+      "price": "Prijs",
+      "sponsor_pack": "Sponsor pack",
+      "standard_room": "Standaard kamer",
+      "superior_business_room": "Superieure Business Kamer",
+      "superior_standard_room": "Superieure Standard Kamer",
+      "t_shirt": "T-shirt",
+      "wednesday_short": "Woe",
+      "thursday_short": "Don",
+      "friday_short": "Vrij",
+      "saturday_short": "Zat",
+      "sunday_short": "Zon"
     }
   },
   "2022_msg": {
     "general": {
       "buttons": {
         "about_fluufff": "Over Flüüfff",
-        "day_tickets": "Dagtickets",
         "discover": "Ontdek",
         "dreamteam": "Het dreamteam",
         "getting_there": "Hoe er geraken",
-        "goodies_and_extras": "Goodies & Extras",
         "hotel_rooms": "Hotelkamers",
         "more_info": "Meer info",
         "register": "Registreer",
-        "residential_tickets": "Residentiële Tickets",
         "submit_proposal": "Voorstel indienen",
         "the_restaurant": "Het restaurant",
         "view_more": "Zie meer"
       },
       "labels": {
-        "1_day": "1 dag",
-        "5_days": "5 dagen",
         "at": "Op",
-        "business_room": "Business kamer",
-        "early_arrival": "Vroege aankomst",
-        "friday_short": "Vrij",
-        "item": "Item",
-        "late_departure": "Laat vertrek",
-        "parking_ticket": "Parkeerticket",
-        "per_person": "/ persoon",
-        "plus_1_day": "+1 dag",
-        "price": "Prijs",
-        "saturday_short": "Zat",
-        "sponsor_pack": "Sponsor pack",
-        "standard_room": "Standaard kamer",
-        "sunday_short": "Zon",
-        "superior_business_room": "Superieure Business Kamer",
-        "superior_standard_room": "Superieure Standard Kamer",
-        "thursday_short": "Don",
-        "to": "naar",
-        "t_shirt": "T-shirt",
-        "wednesday_short": "Woe"
+        "to": "naar"
       }
     },
     "menu": {
@@ -348,47 +386,6 @@
         "header": {
           "sub_title": "Legale Tekst",
           "title": "Algemene Voorwaarden"
-        }
-      },
-      "tickets": {
-        "day": {
-          "con_access": "Toegang tot de conventieruimte",
-          "description": "Wil je ook onze vachtige evenement bijwonen, maar heb je geen plek om te overnachten? Dan hebben we iets speciaal voor jou! We bieden conventietickets aan voor elke dag, voor het volledige event of voor de weekends.",
-          "events_on_chosen_day": "Toegang tot alle activiteiten voor de gekozen dag(en)",
-          "include": "Dagtickets bevatten:",
-          "info": "Let op dat dagtickets geldig zijn vanaf het begin van het eerste evenement tot het einde van het laatste event van die dag.",
-          "sale_start": "De verkoop van dagtickets begint vanaf september",
-          "title": "Dagticket"
-        },
-        "extras": {
-          "bonus_goodies": "Een paar extra goodies",
-          "custom_badge_art": "Unieke badge",
-          "custom_lanyard": "Unieke lanyard",
-          "description": "Vind je ons evenement tof en wil je Flüüfff steunen zodat we volgende ervaringen beter kunnen maken? Overweeg dan om een sponser te worden!",
-          "eternal_gratitude": "Onze eeuwige dankbaarheid",
-          "includes": "Het sponserpacket bevat:",
-          "title": "Extras",
-          "t_shirt": "Conventie t-shirt"
-        },
-        "header": {
-          "title": "Tickets"
-        },
-        "residential": {
-          "brekky": "Ontbijt",
-          "cleaning": "Dagelijkse schoonmaak in de kamers",
-          "con_access": "Toegang to de conventieruimte",
-          "description": "De beste manier om volledig te genieten van onze conventie is met een residentiële ticket.\n\nLet op dat alle gegeven prijzen voor 1 plek in een gedeelde kamer en voor 1 conventie ticket zijn. Het reserveren van een volledige kamer is mogelijk voor dubbel de prijs.",
-          "events_access": "Toegang tot alle activiteiten",
-          "include": "Residentiële tickets bevatten:",
-          "info": "Aanmelden op de eerste dag is vanaf 16:00.\nAfmelden op de laatste dag is om 12:00.\n\nAlle informatie over de kamers kan je terugvinden op de kamerpagina. Dit jaar bieden we één, twee, drie en vierpersoonskamers aan\n\nJe kan een extra dag toevoegen voor en na de conventie, dit is \"vroege aankomst\" en \"laat vertrek\" respectievelijk.",
-          "sleeping": "Slapen in het hotel",
-          "title": "Residentiële ticket"
-        },
-        "sub_title": {
-          "title": "Verkrijg hier je tickets!"
-        },
-        "tickets": {
-          "title": "Tickets nodig?"
         }
       },
       "venue": {}

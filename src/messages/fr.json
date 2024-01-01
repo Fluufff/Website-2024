@@ -93,6 +93,44 @@
     },
     "submit_proposal": "Proposer un évènement"
   },
+  "Tickets": {
+    "header": {
+      "title": "Tickets",
+      "subtitle": "Récupérez vos tickets ici !"
+    },
+    "tickets": {
+      "title": "Besoin de tickets ?"
+    },
+    "residential": {
+      "title": "Ticket résidentiel",
+      "description": "La meilleure façon de profiter à fond de la convention est de prendre un ticket résidentiel.\n\nAttention : les prix indiqués ici sont pour une place dans une chambre partagée et un accès individuel à la convention.\nRéserver une chambre entière est possible, mais à double tarif.",
+      "include": "Les tickets résidentiels comprennent :",
+      "con_access": "Accès à l'espace de convention",
+      "events_access": "Accès à tous les évènements",
+      "sleeping": "Dormir à l'hôtel",
+      "brekky": "Petit-déjeuner",
+      "cleaning": "Nettoyage des chambres journalier",
+      "info": "Le check-in, le premier jour, se fait à 16h.\nLe check-out, le dernier jour, se fait à 12h.\n\nPlus d'informations sur les différents types de chambres peuvent être trouvées sur la page \"Chambres d'hôtel\". Cette année nous proposons des chambres solo ou pour deux personnes.\n\nVous pouvez rajouter un jour en plus avant ou après la convention, ce sont les jours en \"arrivée anticipée\" et en \"départ tardif\"."
+    },
+    "day": {
+      "title": "Tickets à la journée",
+      "description": "Vous voulez profiter de notre chaleureux évènement, mais vous n'avez pas besoin de loger sur place ? Alors nous avons juste ce qu'il vous faut ! Nous proposons des tickets convention à la journée pour chaque jour, toute la convention, ou le week-end.",
+      "include": "Les Tickets à la journée comprennent",
+      "con_access": "Accès à l'espace de convention",
+      "events_on_chosen_day": "Accès à tous les évènements de la journée",
+      "info": "Notez que les tickets à la journée vous permettent de rester du premier évènement de la journée jusqu'à la fin du dernier."
+    },
+    "extras": {
+      "title": "Extras",
+      "description": "Vous aimez notre évènement et vous voulez supporter la Flüüfff ainsi que nous aider à l'améliorer ? Pourquoi ne pas devenir sponsor ?",
+      "includes": "Le pack sponsor comprend :",
+      "t_shirt": "T-shirt de la convention",
+      "custom_badge_art": "Badge customisé",
+      "custom_lanyard": "Tour de cou customisé",
+      "bonus_goodies": "Quelques goodies en plus",
+      "eternal_gratitude": "Notre gratitude la plus sincère"
+    }
+  },
   "Hotel": {
     "header": {
       "title": "Le Lieu",
@@ -158,8 +196,11 @@
   },
   "general": {
     "buttons": {
-      "charity": "La charité",
-      "tickets_and_pricing": "Tickets et tarifs"
+      "tickets_and_pricing": "Tickets et tarifs",
+      "residential_tickets": "Tickets résidentiels",
+      "day_tickets": "Tickets à la journée",
+      "goodies_and_extras": "Goodies & Extras",
+      "charity": "La charité"
     },
     "labels": {
       "double": "Double",
@@ -169,49 +210,46 @@
       "superior_double": "Supérieure double",
       "superior_twin": "Supérieure jumelle",
       "triple": "Triple",
-      "twin": "Jumelle"
+      "twin": "Jumelle",
+      "1_day": "1 jour",
+      "5_days": "5 jours",
+      "business_room": "Chambre D'affaires",
+      "early_arrival": "Arrivée avancée",
+      "item": "Item",
+      "late_departure": "Départ tardif",
+      "parking_ticket": "Ticket de parking",
+      "per_person": "/ personne",
+      "plus_1_day": "+1 jour",
+      "price": "Prix",
+      "sponsor_pack": "Pack Sponsor",
+      "standard_room": "Chambre Standard",
+      "superior_business_room": "Chambre d'affaire supérieure",
+      "superior_standard_room": "Chambre standard supérieure",
+      "t_shirt": "T-shirt",
+      "wednesday_short": "Mercredi",
+      "thursday_short": "Jeu",
+      "friday_short": "Venir",
+      "saturday_short": "Sam",
+      "sunday_short": "Dim"
     }
   },
   "2022_msg": {
     "general": {
       "buttons": {
         "about_fluufff": "À propos de Flüüfff",
-        "day_tickets": "Tickets à la journée",
         "discover": "Découvrir",
         "dreamteam": "La dreamteam",
         "getting_there": "S'y rendre",
-        "goodies_and_extras": "Goodies & Extras",
         "hotel_rooms": "Chambres d'hôtel",
         "more_info": "En savoir plus",
         "register": "S'inscrire",
-        "residential_tickets": "Tickets résidentiels",
         "submit_proposal": "Proposer un évènement",
         "the_restaurant": "Le restaurant",
         "view_more": "Voir plus"
       },
       "labels": {
-        "1_day": "1 jour",
-        "5_days": "5 jours",
         "at": "À",
-        "business_room": "Chambre D'affaires",
-        "early_arrival": "Arrivée avancée",
-        "friday_short": "Venir",
-        "item": "Item",
-        "late_departure": "Départ tardif",
-        "parking_ticket": "Ticket de parking",
-        "per_person": "/ personne",
-        "plus_1_day": "+1 jour",
-        "price": "Prix",
-        "saturday_short": "Sam",
-        "sponsor_pack": "Pack Sponsor",
-        "standard_room": "Chambre Standard",
-        "sunday_short": "Dim",
-        "superior_business_room": "Chambre d'affaire supérieure",
-        "superior_standard_room": "Chambre standard supérieure",
-        "thursday_short": "Jeu",
-        "to": "à",
-        "t_shirt": "T-shirt",
-        "wednesday_short": "Mercredi"
+        "to": "à"
       }
     },
     "menu": {
@@ -348,47 +386,6 @@
         "header": {
           "sub_title": "Textes légaux",
           "title": "Termes et conditions"
-        }
-      },
-      "tickets": {
-        "day": {
-          "con_access": "Accès à l'espace de convention",
-          "description": "Vous voulez profiter de notre chaleureux évènement, mais vous n'avez pas besoin de loger sur place ? Alors nous avons juste ce qu'il vous faut ! Nous proposons des tickets convention à la journée pour chaque jour, toute la convention, ou le week-end.",
-          "events_on_chosen_day": "Accès à tous les évènements de la journée",
-          "include": "Les Tickets à la journée comprennent",
-          "info": "Notez que les tickets à la journée vous permettent de rester du premier évènement de la journée jusqu'à la fin du dernier.",
-          "sale_start": "La vente des tickets à la journée ouvre en septembre",
-          "title": "Tickets à la journée"
-        },
-        "extras": {
-          "bonus_goodies": "Quelques goodies en plus",
-          "custom_badge_art": "Badge customisé",
-          "custom_lanyard": "Tour de cou customisé",
-          "description": "Vous aimez notre évènement et vous voulez supporter la Flüüfff ainsi que nous aider à l'améliorer ? Pourquoi ne pas devenir sponsor ?",
-          "eternal_gratitude": "Notre gratitude la plus sincère",
-          "includes": "Le pack sponsor comprend :",
-          "title": "Extras",
-          "t_shirt": "T-shirt de la convention"
-        },
-        "header": {
-          "title": "Tickets"
-        },
-        "residential": {
-          "brekky": "Petit-déjeuner",
-          "cleaning": "Nettoyage des chambres journalier",
-          "con_access": "Accès à l'espace de convention",
-          "description": "La meilleure façon de profiter à fond de la convention est de prendre un ticket résidentiel.\n\nAttention : les prix indiqués ici sont pour une place dans une chambre partagée et un accès individuel à la convention.\nRéserver une chambre entière est possible, mais à double tarif.",
-          "events_access": "Accès à tous les évènements",
-          "include": "Les tickets résidentiels comprennent :",
-          "info": "Le check-in, le premier jour, se fait à 16h.\nLe check-out, le dernier jour, se fait à 12h.\n\nPlus d'informations sur les différents types de chambres peuvent être trouvées sur la page \"Chambres d'hôtel\". Cette année nous proposons des chambres solo ou pour deux personnes.\n\nVous pouvez rajouter un jour en plus avant ou après la convention, ce sont les jours en \"arrivée anticipée\" et en \"départ tardif\".",
-          "sleeping": "Dormir à l'hôtel",
-          "title": "Ticket résidentiel"
-        },
-        "sub_title": {
-          "title": "Récupérez vos tickets ici !"
-        },
-        "tickets": {
-          "title": "Besoin de tickets ?"
         }
       },
       "venue": {}
