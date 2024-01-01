@@ -1,20 +1,14 @@
 import '@/styles/main.scss';
 
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
-import { unstable_setRequestLocale } from 'next-intl/server';
+import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
 
 import Footer from './Footer';
 import Menu from './Menu';
 
 import { localeKeys } from '@/config';
-import {
-  getMessages,
-  isSupportedLocale,
-  Messages,
-  PropsWithLocale,
-} from '@/helpers/localization';
+import { PropsWithLocale } from '@/helpers/localization';
 import { pineapple, readexPro } from '@/styles/fonts';
 
 type Props = PropsWithLocale<{
@@ -37,15 +31,9 @@ export default async function RootLayout({
   children,
   params: { locale },
 }: Props) {
-  let messages: Messages;
-  try {
-    if (!isSupportedLocale(locale)) notFound();
-    messages = await getMessages(locale);
-  } catch {
-    notFound();
-  }
-
   unstable_setRequestLocale(locale);
+
+  const messages = await getMessages();
 
   return (
     <html lang="en">
