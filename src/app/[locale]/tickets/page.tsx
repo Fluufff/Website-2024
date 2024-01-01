@@ -89,14 +89,14 @@ export default async function Tickets({ params: { locale } }: Props) {
               <p>{t('residential.description')}</p>
               <p>
                 <b>{t('residential.include')}</b>
-                <ul>
-                  <li>{t('residential.con_access')}</li>
-                  <li>{t('residential.events_access')}</li>
-                  <li>{t('residential.sleeping')}</li>
-                  <li>{t('residential.brekky')}</li>
-                  <li>{t('residential.cleaning')}</li>
-                </ul>
               </p>
+              <ul>
+                <li>{t('residential.con_access')}</li>
+                <li>{t('residential.events_access')}</li>
+                <li>{t('residential.sleeping')}</li>
+                <li>{t('residential.brekky')}</li>
+                <li>{t('residential.cleaning')}</li>
+              </ul>
               <p>{t('residential.info')}</p>
             </div>
             <div className="u-col-sm-7">
@@ -333,11 +333,11 @@ export default async function Tickets({ params: { locale } }: Props) {
               <p>{t('day.description')}</p>
               <p>
                 <b>{t('day.include')}</b>
-                <ul>
-                  <li>{t('day.con_access')}</li>
-                  <li>{t('day.events_on_chosen_day')}</li>
-                </ul>
               </p>
+              <ul>
+                <li>{t('day.con_access')}</li>
+                <li>{t('day.events_on_chosen_day')}</li>
+              </ul>
               <p>{t('day.info')}</p>
             </div>
             <div className="u-col-sm-7">
@@ -372,14 +372,14 @@ export default async function Tickets({ params: { locale } }: Props) {
               <p>{t('extras.description')}</p>
               <p>
                 <b>{t('extras.includes')}</b>
-                <ul>
-                  <li>{t('extras.t_shirt')}</li>
-                  <li>{t('extras.custom_badge_art')}</li>
-                  <li>{t('extras.custom_lanyard')}</li>
-                  <li>{t('extras.bonus_goodies')}</li>
-                  <li>{t('extras.eternal_gratitude')}</li>
-                </ul>
               </p>
+              <ul>
+                <li>{t('extras.t_shirt')}</li>
+                <li>{t('extras.custom_badge_art')}</li>
+                <li>{t('extras.custom_lanyard')}</li>
+                <li>{t('extras.bonus_goodies')}</li>
+                <li>{t('extras.eternal_gratitude')}</li>
+              </ul>
             </div>
             <div className="u-col-sm-7">
               <table className="m-pricing-table u-margin-top">
