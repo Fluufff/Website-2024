@@ -1,5 +1,9 @@
 .m-closed-frame {
-  margin: 8em auto;
+  margin: 5em auto;
   font-style: italic;
   text-align: center;
+
+  &--tall {
+    margin: 8em auto;
+  }
 }

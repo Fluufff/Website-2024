@@ -34,7 +34,7 @@ export default async function Tickets({ params: { locale } }: Props) {
           <p className="o-header__sub-title">{t('header.subtitle')}</p>
         </div>
       </div>
-      <div className="o-section">
+      <div className="o-section o-section--alt">
         <Image src={palmTreeImage} alt="" className="o-section__accent-image" />
         <div className="o-section__content">
           <h3 className="u-text-center u-margin-bottom">
@@ -59,9 +59,12 @@ export default async function Tickets({ params: { locale } }: Props) {
           </div>
         </div>
       </div>
-      {/* <div className="o-section">
+      <div className="o-section">
         <div className="o-section__content">
-          <iframe
+          <div className="m-closed-frame">
+            The registration form for this edition has been closed.
+          </div>
+          {/* <iframe
             className="tickets-iframe"
             frameBorder="0"
             scrolling="yes"
@@ -78,9 +81,9 @@ export default async function Tickets({ params: { locale } }: Props) {
               );
             }}
             src="/register?iframe"
-          />
+          /> */}
         </div>
-      </div> */}
+      </div>
       <div className="o-section o-section--alt">
         <div className="o-section__content">
           <div className="u-row">
