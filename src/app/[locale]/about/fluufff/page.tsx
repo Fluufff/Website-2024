@@ -1,6 +1,9 @@
+import Image from 'next/image';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
+import logoBigImage from '@/assets/3d-logo.png';
 import headerImage from '@/assets/headers/about.jpg';
+import palmTreeImage from '@/assets/palm-tree.png';
 import { PropsWithLocale } from '@/helpers/localization';
 import { Link } from '@/helpers/navigation';
 
@@ -32,8 +35,10 @@ export default async function About({ params: { locale } }: Props) {
         </div>
       </div>
       <div className="o-section o-section--alt">
+        <Image src={palmTreeImage} alt="" className="o-section__accent-image" />
         <div className="o-section__content">
           <div className="m-about">
+            <Image src={logoBigImage} alt="" className="m-about__logo" />
             <div className="m-about__content">
               <h3>{t('about.title')}</h3>
               <p>{t('about.description.p0_fluufff')}</p>
