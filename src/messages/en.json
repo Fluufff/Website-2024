@@ -7,6 +7,12 @@
     "terms_and_conditions": "Terms and Conditions",
     "translation_credits": "Dutch & French translations by"
   },
+  "News": {
+    "header": {
+      "title": "The most recent and hottest Flüüfff news!",
+      "subtitle": "News"
+    }
+  },
   "About": {
     "header": {
       "subtitle": "What is this all about?",
@@ -360,12 +366,6 @@
         "welcome": {
           "description": "It’s a Belgian furry convention, located in Brussels! A furry convention is an event dedicated to anthropomorphic characters and a gathering place for all furries and their friends.\n\nFlüüfff is spread over 5 days, the 9th of November to the 13th of November 2022. The convention takes place in the Bedford hotel.",
           "title": "Welcome to Flüüfff"
-        }
-      },
-      "news": {
-        "header": {
-          "sub_title": "News",
-          "title": "The most recent and hottest Flüüfff news!"
         }
       },
       "schedule": {

@@ -7,6 +7,12 @@
     "terms_and_conditions": "Algemene voorwaarden",
     "translation_credits": "Nederlandse en Franse vertalingen door"
   },
+  "News": {
+    "header": {
+      "title": "Het meest recente Flüüfff nieuws!",
+      "subtitle": "Nieuws"
+    }
+  },
   "About": {
     "header": {
       "subtitle": "Waar gaat dit allemaal over?",
@@ -360,12 +366,6 @@
         "welcome": {
           "description": "Dit is een Belgische furry conventie gelegen in Brussel! Een furry conventie is een evenement gewijd aan antropomorfische personages en een bijeenkomst voor alle furries en hun vrienden.\n\nFlüüfff is verspreid over 5 dagen, van 9 November tot en met 13 November 2022. De conventie vindt plaats in het Bedford hotel.",
           "title": "Welkom op Flüüfff"
-        }
-      },
-      "news": {
-        "header": {
-          "sub_title": "Nieuws",
-          "title": "Het meest recente Flüüfff nieuws!"
         }
       },
       "schedule": {
