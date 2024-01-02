@@ -1,0 +1,86 @@
+{
+  "_links": {
+    "first": {
+      "href": "/api/v1/sites/06d88e9b-3cbe-42b1-9f19-505be524e818/content?page=1&pagesize=-1"
+    },
+    "last": {
+      "href": "/api/v1/sites/06d88e9b-3cbe-42b1-9f19-505be524e818/content?page=1&pagesize=-1"
+    },
+    "prev": {
+      "href": "/api/v1/sites/06d88e9b-3cbe-42b1-9f19-505be524e818/content?page=1&pagesize=-1"
+    },
+    "next": {
+      "href": "/api/v1/sites/06d88e9b-3cbe-42b1-9f19-505be524e818/content?page=1&pagesize=-1"
+    }
+  },
+  "_page": {
+    "size": -1,
+    "totalElements": 3,
+    "totalPages": 1,
+    "number": 1
+  },
+  "_embedded": {
+    "content": [
+      {
+        "id": "8c2ec307-1353-43a1-b434-e2076880badb",
+        "name": "Waiting List Application",
+        "slug": "waiting-list-application",
+        "createdAt": "2024-01-02T10:18:43.648026",
+        "updatedAt": "2024-01-02T10:19:10.396269",
+        "fields": {
+          "creation-date": "2022-06-04T20:00:00Z",
+          "text": "<p>Failed to secure a room for Fl&uuml;&uuml;fff 2022? 😱<br /><br />Despair not! You can now apply for a spot using our <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSc8-sX5bpHzuQEt8tHLl6_bHZnUtbHpI9bIAd4LuEs4HAkzzQ/viewform\" target=\"_blank\" rel=\"noopener\">Waiting List</a>! 😌<br /><br />Once a room of your selection becomes available, we'll contact you. To improve your chances of getting a spot, please make sure to mention all types you'd be okay with.</p>",
+          "title": "Waiting List Application"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "8c2ec307-1353-43a1-b434-e2076880badb",
+            "slug": "waiting-list-application",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "00bf6118-2b27-4af7-847b-f6adaba66b15",
+        "name": "Website Launch!",
+        "slug": "website-launch",
+        "createdAt": "2024-01-02T10:18:43.542174",
+        "updatedAt": "2024-01-02T10:19:10.573410",
+        "fields": {
+          "creation-date": "2022-05-13T20:00:00Z",
+          "text": "<p>Digging up half of the beach paid off in the end! We finally found the website!<br /><br />Clearly it wasn&rsquo;t an easy task. There were no shovels on the party boat, so we had to improvise and use our flip flops (they can be amazing tools) to move the sand.<br /><br />Now that we have the website online we can stay reassured that all the other castaways will be drawn to our bonfire, like moths to a light.<br /><br />~ Sir Float-A-Lot<br /><br />Visit our new website at fluufff.org.<br /><br />&mdash;<br /><br />Dear attendees,<br /><br />The new pricing is available, we invite you to have a look at our price sheet on the Tickets page (https://fluufff.org/tickets). There are new room types available since last time. Keep in mind that the residential tickets are all inclusive (convention ticket, breakfast and a spot in a bedroom)&nbsp; and are priced per person.<br /><br />Should something not be clear or should you have questions, you can contact our fabulous Registration team by email at registration@fluufff.org or through the contact form (https://fluufff.org/contact)<br /><br />Day tickets will become available later in the year.<br /><br /><br />Is it your first time at a Furry Convention and/or Fl&uuml;&uuml;fff? Then stay tuned for tips and tricks!</p>",
+          "title": "Website Launch!"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "00bf6118-2b27-4af7-847b-f6adaba66b15",
+            "slug": "website-launch",
+            "language": "en"
+          }
+        ]
+      },
+      {
+        "id": "e107ee59-ff17-4663-9084-71ed18489a3c",
+        "name": "Registration Opening",
+        "slug": "registration-opening",
+        "createdAt": "2024-01-02T10:18:43.384588",
+        "updatedAt": "2024-01-02T10:19:10.747043",
+        "fields": {
+          "title": "Registration Opening",
+          "text": "<p>Dear travelers,</p>\r\n<p>In less than 5 days we open registration, and we hope you are as excited as we are for officially starting the countdown towards our next edition!</p>\r\n<p>In preparation for this, there are some things to keep in mind for our registration process. Please make sure to take a moment to read this before registering:</p>\r\n<p>1)&nbsp; You can buy one or more residential tickets for you and your friends, this includes:</p>\r\n<ul>\r\n<li>🛌 A spot at the hotel from the 9th to 13th of November.</li>\r\n<li>🥞 Breakfast.</li>\r\n<li>🎟 The convention ticket</li>\r\n</ul>\r\n<p>There is an exception to this, this year we offer Triple and Quadruple bedrooms. As they are in limited numbers, you can only take the full bedroom (which are all inclusive too: breakfast and convention ticket for the people in the bedroom).</p>\r\n<p>2) Reserving individual residential tickets, and not rooms, means you do not select a room yourself.</p>\r\n<p>Instead, you can create a group through your profile.</p>\r\n<p>To share a room with someone, you have to be in the same group and the group has to be complete (for example for a Triple bedroom, a group is full when there are three roommates in the group).</p>\r\n<p>3) Payment methods, installments and deadlines.</p>\r\n<p>We accept card payments (Credit, Debit, and Bancontact) and bank transfer.</p>\r\n<p>Card payment is due 10 days after finishing the booking process.</p>\r\n<p>Using bank transfers, we allow up to 3 installments that must be completed within 2 months after finishing the booking process.</p>\r\n<p>However, a down payment of at least &euro;120,00 is required within 10 days! In both cases, should you miss this 10 day deadline, your spot can not be guaranteed, and can be canceled to be made available to the next person on the waiting list!</p>\r\n<p>4) Account creation is already available, so feel free to give yourself a head-start and prepare your account and save some time! 👏👏👏</p>",
+          "creation-date": "2022-05-17T12:00:00Z"
+        },
+        "language": "en",
+        "translations": [
+          {
+            "id": "e107ee59-ff17-4663-9084-71ed18489a3c",
+            "slug": "registration-opening",
+            "language": "en"
+          }
+        ]
+      }
+    ]
+  }
+}

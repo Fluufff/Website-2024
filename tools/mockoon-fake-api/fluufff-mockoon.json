@@ -16,6 +16,32 @@
       "endpoint": "sites/:site/content",
       "responses": [
         {
+          "uuid": "ee7ed8e4-1646-49bf-a287-c164fd2be11c",
+          "body": "",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "news-item contentType",
+          "headers": [],
+          "bodyType": "FILE",
+          "filePath": "./data/news-items.json",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "contentTypes",
+              "value": "ecf83b06-52c4-406e-b305-7a9f040ea49d",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        },
+        {
           "uuid": "c1493df1-afa7-4d99-8fb6-1ef5f940bd39",
           "body": "",
           "latency": 0,
