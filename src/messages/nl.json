@@ -210,6 +210,37 @@
     "superior_hint": "Superieure kamer hebben dezelfde comfort maar zijn groter in ruimte",
     "variants": "Varianten"
   },
+  "GettingThere": {
+    "header": {
+      "title": "Hier geraken",
+      "subtitle": "Hoe geraak ik naar het hotel?"
+    },
+    "where": {
+      "title": "Waar is het hotel?"
+    },
+    "plane": {
+      "title": "Met het vliegtuig",
+      "take_to_airport": "Neem het vliegtuig naar",
+      "walk_to_station": "Wandel naar het",
+      "take_train": "Neem de trein van",
+      "train_every_15_minutes": "Er is elke 15 minuten een trein"
+    },
+    "walk": {
+      "walk_to_hotel": "Wandel naar het"
+    },
+    "train": {
+      "title": "Met de trein",
+      "take_train": "Neem de trein naar",
+      "actual_timetables": "Alle reisinformatie en actuele dienstregeling voor de trein (afhankelijk van je locatie) kan gevonden worden op de",
+      "belgian_train_website": "NMBS website"
+    },
+    "car": {
+      "title": "Met de auto",
+      "lez": "Het hotel is gelegen in hartje Brussel. Dit betekent dat je de LEZ (lage-emissiezone) zone betreedt. Voor oudere wagens, diesel en andere vervuilende wagens betekent dit dat die het centrum van Brussel niet mogen betreden. Registratie is verplicht voor alle buitenlandse voertuigen (behale die geregistreerd in Nederland). Het niet voldoen hieraan kan leiden tot een boete van 350 euro. Meer info op",
+      "parking": "De hotelparking is Parking Panorama en wordt beheerd door de stad. Normaal tarief is €16, Flüüfff deelnemers mogen parkeren aan €13 per dag. Vraag aan de hotelreceptie voor de vermindering! Let op, de parkeerplaatsen zijn smal en de parking is niet groot!",
+      "notice": "Goede reis! Wees zeker om zich aan de verkeerregels van België te houden. Het kan vrij complex zijn. Success!\n\nSnelheid in de bebouwde kom is 50km/h.\nSnelheid buiten de bebouwde kom in Vlaanderen is 70km/h.\nSnelheid buiten de bebouwde kom in Wallonië is 90km/h.\nTenzij anders aangegeven."
+    }
+  },
   "general": {
     "buttons": {
       "tickets_and_pricing": "Tickets & Prijzen",
@@ -230,6 +261,7 @@
       "1_day": "1 dag",
       "5_days": "5 dagen",
       "business_room": "Business kamer",
+      "to": "naar",
       "early_arrival": "Vroege aankomst",
       "item": "Item",
       "late_departure": "Laat vertrek",
@@ -264,8 +296,7 @@
         "view_more": "Zie meer"
       },
       "labels": {
-        "at": "Op",
-        "to": "naar"
+        "at": "Op"
       }
     },
     "menu": {
@@ -286,37 +317,6 @@
       }
     },
     "pages": {
-      "getting_there": {
-        "car": {
-          "lez": "Het hotel is gelegen in hartje Brussel. Dit betekent dat je de LEZ (lage-emissiezone) zone betreedt. Voor oudere wagens, diesel en andere vervuilende wagens betekent dit dat die het centrum van Brussel niet mogen betreden. Registratie is verplicht voor alle buitenlandse voertuigen (behale die geregistreerd in Nederland). Het niet voldoen hieraan kan leiden tot een boete van 350 euro. Meer info op",
-          "notice": "Goede reis! Wees zeker om zich aan de verkeerregels van België te houden. Het kan vrij complex zijn. Success!\n\nSnelheid in de bebouwde kom is 50km/h.\nSnelheid buiten de bebouwde kom in Vlaanderen is 70km/h.\nSnelheid buiten de bebouwde kom in Wallonië is 90km/h.\nTenzij anders aangegeven.",
-          "parking": "De hotelparking is Parking Panorama en wordt beheerd door de stad. Normaal tarief is €16, Flüüfff deelnemers mogen parkeren aan €13 per dag. Vraag aan de hotelreceptie voor de vermindering! Let op, de parkeerplaatsen zijn smal en de parking is niet groot!",
-          "title": "Met de auto"
-        },
-        "header": {
-          "sub_title": "Hoe geraak ik naar het hotel?",
-          "title": "Hier geraken"
-        },
-        "plane": {
-          "take_to_airport": "Neem het vliegtuig naar",
-          "take_train": "Neem de trein van",
-          "title": "Met het vliegtuig",
-          "train_every_15_minutes": "Er is elke 15 minuten een trein",
-          "walk_to_station": "Wandel naar het"
-        },
-        "train": {
-          "actual_timetables": "Alle reisinformatie en actuele dienstregeling voor de trein (afhankelijk van je locatie) kan gevonden worden op de",
-          "belgian_train_website": "NMBS website",
-          "take_train": "Neem de trein naar",
-          "title": "Met de trein"
-        },
-        "walk": {
-          "walk_to_hotel": "Wandel naar het"
-        },
-        "where": {
-          "title": "Waar is het hotel?"
-        }
-      },
       "index": {
         "activities": {
           "dances": {

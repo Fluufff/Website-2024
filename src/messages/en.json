@@ -210,6 +210,37 @@
     "superior_hint": "Superior room types have the same comfort but are larger in size",
     "variants": "Variants"
   },
+  "GettingThere": {
+    "header": {
+      "title": "Getting There",
+      "subtitle": "How do I get to the hotel?"
+    },
+    "where": {
+      "title": "Where is the hotel?"
+    },
+    "plane": {
+      "title": "By plane",
+      "take_to_airport": "Take a plane to",
+      "walk_to_station": "Walk to the",
+      "take_train": "Take the train from",
+      "train_every_15_minutes": "There's a train every 15 minutes."
+    },
+    "walk": {
+      "walk_to_hotel": "Walk to the"
+    },
+    "train": {
+      "title": "By train",
+      "take_train": "Take the train to",
+      "actual_timetables": "All travel instructions and actual timetables for the train system (depending on your location) can be found on the",
+      "belgian_train_website": "Belgian Train website"
+    },
+    "car": {
+      "title": "By car",
+      "lez": "The hotel is located in the center of Brussels, which means you have to cross the LEZ (Low Emission Zone). This means that older cars, diesel cars, and other very polluting cars can’t enter the city. Registration is mandatory for all vehicles registered abroad (except for vehicles registered in The Netherlands). Not doing so can lead to big fines (350 euros). More info at",
+      "parking": "The parking at the hotel is called Parking Panorama and is owned by the city. Normal price is €16, but Flüüfff attendees can go for €13 per day. Ask for the reduction at the hotel reception! Parking spots are very tiny and the parking isn’t that big!",
+      "notice": "Safe travels! Be sure to check out the driving rules of Belgium, they can be quite complicated! Good luck!\n\nUrban speed limit for Belgium is 50kph.\nRural speed limit for Flanders is 70kph.\nRural speed limit for Wallonia is 90kph."
+    }
+  },
   "general": {
     "buttons": {
       "tickets_and_pricing": "Tickets & Pricing",
@@ -230,6 +261,7 @@
       "1_day": "1 day",
       "5_days": "5 days",
       "business_room": "Business room",
+      "to": "to",
       "early_arrival": "Early arrival",
       "item": "Item",
       "late_departure": "Late departure",
@@ -264,8 +296,7 @@
         "view_more": "View more"
       },
       "labels": {
-        "at": "At",
-        "to": "to"
+        "at": "At"
       }
     },
     "menu": {
@@ -286,37 +317,6 @@
       }
     },
     "pages": {
-      "getting_there": {
-        "car": {
-          "lez": "The hotel is located in the center of Brussels, which means you have to cross the LEZ (Low Emission Zone). This means that older cars, diesel cars, and other very polluting cars can’t enter the city. Registration is mandatory for all vehicles registered abroad (except for vehicles registered in The Netherlands). Not doing so can lead to big fines (350 euros). More info at",
-          "notice": "Safe travels! Be sure to check out the driving rules of Belgium, they can be quite complicated! Good luck!\n\nUrban speed limit for Belgium is 50kph.\nRural speed limit for Flanders is 70kph.\nRural speed limit for Wallonia is 90kph.",
-          "parking": "The parking at the hotel is called Parking Panorama and is owned by the city. Normal price is €16, but Flüüfff attendees can go for €13 per day. Ask for the reduction at the hotel reception! Parking spots are very tiny and the parking isn’t that big!",
-          "title": "By car"
-        },
-        "header": {
-          "sub_title": "How do I get to the hotel?",
-          "title": "Getting There"
-        },
-        "plane": {
-          "take_to_airport": "Take a plane to",
-          "take_train": "Take the train from",
-          "title": "By plane",
-          "train_every_15_minutes": "There's a train every 15 minutes.",
-          "walk_to_station": "Walk to the"
-        },
-        "train": {
-          "actual_timetables": "All travel instructions and actual timetables for the train system (depending on your location) can be found on the",
-          "belgian_train_website": "Belgian Train website",
-          "take_train": "Take the train to",
-          "title": "By train"
-        },
-        "walk": {
-          "walk_to_hotel": "Walk to the"
-        },
-        "where": {
-          "title": "Where is the hotel?"
-        }
-      },
       "index": {
         "activities": {
           "dances": {

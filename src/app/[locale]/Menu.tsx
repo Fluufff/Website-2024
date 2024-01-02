@@ -114,13 +114,13 @@ export default function Menu() {
                             {t('items.rooms')}
                           </Link>
                         </li>
-                        {/* <li>
+                        <li>
                           <Link
                             className="m-menu__sub-link"
                             href="/venue/getting-there">
                             {t('items.getting_there')}
                           </Link>
-                        </li> */}
+                        </li>
                       </ul>
                     </div>
                   </div>

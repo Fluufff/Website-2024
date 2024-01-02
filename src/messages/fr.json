@@ -210,6 +210,37 @@
     "superior_hint": "Les chambres Supérieures disposent du même confort et sont plus grandes.",
     "variants": "Variantes"
   },
+  "GettingThere": {
+    "header": {
+      "title": "S'y rendre",
+      "subtitle": "Comment se rendre à l'hôtel ?"
+    },
+    "where": {
+      "title": "Où se trouve l'hôtel ?"
+    },
+    "plane": {
+      "title": "En Avion",
+      "take_to_airport": "Prendre l'avion pour",
+      "walk_to_station": "Marcher vers",
+      "take_train": "Prendre le train de",
+      "train_every_15_minutes": "Vous aurez un train toutes les 15 minutes"
+    },
+    "walk": {
+      "walk_to_hotel": "Marcher vers"
+    },
+    "train": {
+      "title": "En Train",
+      "take_train": "Prenez le train à partir de",
+      "actual_timetables": "Toutes les instructions de voyage et les horaires pour les voyages en train peuvent être trouvés sur le",
+      "belgian_train_website": "Site de la SNCB"
+    },
+    "car": {
+      "title": "En voiture",
+      "lez": "L'hôtel est localisé dans le centre de Bruxelles, ce qui signifie que vous devez traverser la LEZ (Low Emission Zone). Les voitures âgées, les véhicules diesel et d'autres voitures très polluantes ne peuvent pas entrer en ville. Les véhicules immatriculées à l'étranger doivent être enregistrés (à l'exception des véhicules immatriculés aux Pays-Bas). Si vous ne le faites pas, vous vous exposez à une grosse amende (350 euros).\n\nPour en savoir plus, rendez-vous sur",
+      "parking": "Le parking de l'hôtel est géré par la ville. Normalement le prix est de 16€, mais les participants de la Flüüfff ont droit à un tarif de 13€ par jour.\nDemandez votre réduction à la réception de l'hôtel !\nLes emplacements de parking sont relativement petits et limités en nombre !",
+      "notice": "Bon voyage ! N'oubliez pas de vous mettre au courant du code de la route Belge, il présente quelques petites subtilités ! Bon courage !\n\nLa limite de vitesse en agglomération en Belgique est de 50 km/h.\nHors agglomération, la vitesse maximum en Flandre est de 70 km/h.\nHors agglomération, la vitesse maximum en Wallonie est de 90 km/h."
+    }
+  },
   "general": {
     "buttons": {
       "tickets_and_pricing": "Tickets et tarifs",
@@ -230,6 +261,7 @@
       "1_day": "1 jour",
       "5_days": "5 jours",
       "business_room": "Chambre D'affaires",
+      "to": "à",
       "early_arrival": "Arrivée avancée",
       "item": "Item",
       "late_departure": "Départ tardif",
@@ -264,8 +296,7 @@
         "view_more": "Voir plus"
       },
       "labels": {
-        "at": "À",
-        "to": "à"
+        "at": "À"
       }
     },
     "menu": {
@@ -286,37 +317,6 @@
       }
     },
     "pages": {
-      "getting_there": {
-        "car": {
-          "lez": "L'hôtel est localisé dans le centre de Bruxelles, ce qui signifie que vous devez traverser la LEZ (Low Emission Zone). Les voitures âgées, les véhicules diesel et d'autres voitures très polluantes ne peuvent pas entrer en ville. Les véhicules immatriculées à l'étranger doivent être enregistrés (à l'exception des véhicules immatriculés aux Pays-Bas). Si vous ne le faites pas, vous vous exposez à une grosse amende (350 euros).\n\nPour en savoir plus, rendez-vous sur",
-          "notice": "Bon voyage ! N'oubliez pas de vous mettre au courant du code de la route Belge, il présente quelques petites subtilités ! Bon courage !\n\nLa limite de vitesse en agglomération en Belgique est de 50 km/h.\nHors agglomération, la vitesse maximum en Flandre est de 70 km/h.\nHors agglomération, la vitesse maximum en Wallonie est de 90 km/h.",
-          "parking": "Le parking de l'hôtel est géré par la ville. Normalement le prix est de 16€, mais les participants de la Flüüfff ont droit à un tarif de 13€ par jour.\nDemandez votre réduction à la réception de l'hôtel !\nLes emplacements de parking sont relativement petits et limités en nombre !",
-          "title": "En voiture"
-        },
-        "header": {
-          "sub_title": "Comment se rendre à l'hôtel ?",
-          "title": "S'y rendre"
-        },
-        "plane": {
-          "take_to_airport": "Prendre l'avion pour",
-          "take_train": "Prendre le train de",
-          "title": "En Avion",
-          "train_every_15_minutes": "Vous aurez un train toutes les 15 minutes",
-          "walk_to_station": "Marcher vers"
-        },
-        "train": {
-          "actual_timetables": "Toutes les instructions de voyage et les horaires pour les voyages en train peuvent être trouvés sur le",
-          "belgian_train_website": "Site de la SNCB",
-          "take_train": "Prenez le train à partir de",
-          "title": "En Train"
-        },
-        "walk": {
-          "walk_to_hotel": "Marcher vers"
-        },
-        "where": {
-          "title": "Où se trouve l'hôtel ?"
-        }
-      },
       "index": {
         "activities": {
           "dances": {
