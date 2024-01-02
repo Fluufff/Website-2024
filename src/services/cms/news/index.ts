@@ -1,3 +1,5 @@
+import * as R from 'remeda';
+
 import { fetchCmsSiteData } from '../util';
 
 import { NewsItem, parseNewsItems } from './data';
@@ -24,7 +26,9 @@ async function getNewsForLanguage(language: string): Promise<NewsItem[]> {
  * The items are returned sorted by creation date, most recent first.
  */
 export async function getNews(language: string): Promise<NewsItem[]> {
-  const itemLists = await Promise.all([language, 'en'].map(getNewsForLanguage));
+  const itemLists = await Promise.all(
+    R.uniq([language, 'en']).map(getNewsForLanguage),
+  );
   const itemBySlug = itemLists.reduceRight(
     (acc: Record<string, NewsItem>, items) =>
       Object.assign(

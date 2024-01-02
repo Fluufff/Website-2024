@@ -1,3 +1,5 @@
+import * as R from 'remeda';
+
 import { fetchCmsSiteData } from '../util';
 
 import {
@@ -37,7 +39,9 @@ async function getScheduleForLanguage(language: string): Promise<Schedule> {
 async function getScheduleWithFallbackLanguages(
   languages: string[],
 ): Promise<Schedule> {
-  const schedules = await Promise.all(languages.map(getScheduleForLanguage));
+  const schedules = await Promise.all(
+    R.uniq(languages).map(getScheduleForLanguage),
+  );
 
   const locationById: Record<string, ScheduleLocation> = schedules.reduceRight(
     (acc, schedule) => Object.assign(acc, schedule.locationById),
@@ -61,6 +65,5 @@ async function getScheduleWithFallbackLanguages(
 
 /** Fetches and parses the schedule data, using English as fallback. */
 export function getSchedule(language: string): Promise<Schedule> {
-  // no need to deduplicate
   return getScheduleWithFallbackLanguages([language, 'en']);
 }
