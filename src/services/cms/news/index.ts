@@ -29,16 +29,11 @@ export async function getNews(language: string): Promise<NewsItem[]> {
   const itemLists = await Promise.all(
     R.uniq([language, 'en']).map(getNewsForLanguage),
   );
-  const itemBySlug = itemLists.reduceRight(
-    (acc: Record<string, NewsItem>, items) =>
-      Object.assign(
-        acc,
-        Object.fromEntries(items.map((item) => [item.slug, item])),
-      ),
-    {},
-  );
 
-  return Object.values(itemBySlug).sort(
-    (x, y) => y.creationDate.valueOf() - x.creationDate.valueOf(),
+  return R.pipe(
+    itemLists,
+    R.flatten(),
+    R.uniqBy((item) => item.slug),
+    R.sortBy([(item) => item.creationDate, 'desc']),
   );
 }

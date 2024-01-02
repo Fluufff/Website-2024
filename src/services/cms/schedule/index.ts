@@ -2,12 +2,7 @@ import * as R from 'remeda';
 
 import { fetchCmsSiteData } from '../util';
 
-import {
-  parseSchedule,
-  Schedule,
-  ScheduleEvent,
-  ScheduleLocation,
-} from './data';
+import { parseSchedule, Schedule } from './data';
 
 // TODO: move and assert
 const contentTypes = process.env.CMS_CONTENT_TYPE_EVENT!;
@@ -43,23 +38,21 @@ async function getScheduleWithFallbackLanguages(
     R.uniq(languages).map(getScheduleForLanguage),
   );
 
-  const locationById: Record<string, ScheduleLocation> = schedules.reduceRight(
-    (acc, schedule) => Object.assign(acc, schedule.locationById),
-    {},
+  const events = R.pipe(
+    schedules,
+    R.flatMap((schedule) => schedule.events),
+    R.uniqBy((event) => event.slug),
   );
 
-  const eventBySlug: Record<string, ScheduleEvent> = schedules.reduceRight(
-    (acc, schedule) =>
-      Object.assign(
-        acc,
-        Object.fromEntries(schedule.events.map((event) => [event.slug, event])),
-      ),
-    {},
+  const locationById = R.pipe(
+    schedules,
+    R.flatMap((schedule) => R.values(schedule.locationById)),
+    R.indexBy((location) => location.locationId),
   );
 
   return {
     locationById,
-    events: Object.values(eventBySlug),
+    events,
   };
 }
 
