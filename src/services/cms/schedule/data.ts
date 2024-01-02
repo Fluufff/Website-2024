@@ -1,23 +1,18 @@
 import * as z from 'zod';
 
-import { contentPage } from '../util';
+import { contentPage, contentWithFields } from '../util';
 
-const eventDtoSchema = z.object({
-  id: z.string(),
+const eventDtoSchema = contentWithFields({
+  description: z.string(),
   name: z.string(),
-  slug: z.string(),
-  fields: z.object({
-    description: z.string(),
-    name: z.string(),
-    location: z.object({
-      contentId: z.string(),
-      fields: z.object({
-        name: z.string(),
-      }),
+  location: z.object({
+    contentId: z.string(),
+    fields: z.object({
+      name: z.string(),
     }),
-    'start-time': z.coerce.date(),
-    'end-time': z.coerce.date(),
   }),
+  'start-time': z.coerce.date(),
+  'end-time': z.coerce.date(),
 });
 
 type EventDto = z.infer<typeof eventDtoSchema>;
