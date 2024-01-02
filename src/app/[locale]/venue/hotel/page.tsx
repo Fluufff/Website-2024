@@ -1,8 +1,12 @@
 import classNames from 'classnames';
+import Image from 'next/image';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import React from 'react';
 
+import brusselsImage from '@/assets/brussels.jpg';
 import headerImage from '@/assets/headers/hotel.jpg';
+import hotelImage from '@/assets/hotel-exterior.jpg';
+import restaurantImage from '@/assets/hotel-restaurant.jpg';
 import ScrollLink from '@/helpers/ScrollLink';
 import { PropsWithLocale } from '@/helpers/localization';
 import { Link } from '@/helpers/navigation';
@@ -35,7 +39,7 @@ export default async function HotelPage({ params: { locale } }: Props) {
 
       <RowSection>
         <div className="u-col-sm-5">
-          <img src="hotelImage" alt="hotel image" />
+          <Image src={hotelImage} alt="hotel" />
         </div>
         <div className="u-col-sm-7">
           <h3>{t('hotel.title')}</h3>
@@ -62,7 +66,7 @@ export default async function HotelPage({ params: { locale } }: Props) {
 
       <RowSection alt>
         <div className="u-col-sm-6" id="restaurant">
-          <img src="restaurantImage" alt="restaurant image" />
+          <Image src={restaurantImage} alt="restaurant" />
           <h4>{t('restaurant.title')}</h4>
           <p>{t('restaurant.description.p0')}</p>
           <p>{t('restaurant.description.p1')}</p>
@@ -80,7 +84,7 @@ export default async function HotelPage({ params: { locale } }: Props) {
           </p>
         </div>
         <div className="u-col-sm-6">
-          <img src="brusselsImage" alt="image of brussels" />
+          <Image src={brusselsImage} alt="brussels" />
           <h4>{t('surroundings.title')}</h4>
           <p>{t('surroundings.description')}</p>
           <ul>
