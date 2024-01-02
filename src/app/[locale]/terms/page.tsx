@@ -29,7 +29,7 @@ export default async function Terms({ params: { locale } }: Props) {
         </div>
       </div>
       <div className="o-section o-section--alt">
-        <div className="o-section__content">
+        <div className="o-section__content u-pre-wrap-p">
           <TermsContents />
         </div>
       </div>

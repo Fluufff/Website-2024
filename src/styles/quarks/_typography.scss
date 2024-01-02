@@ -34,3 +34,9 @@
 .u-text-underline {
 	text-decoration: underline;
 }
+
+/* Applies white-space pre-wrap on paragraphs, self or children. */
+p.u-pre-wrap-p,
+.u-pre-wrap-p p {
+  white-space: pre-wrap;
+}
