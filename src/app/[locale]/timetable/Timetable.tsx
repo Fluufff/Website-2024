@@ -11,7 +11,6 @@ import {
   startOfHour,
   sub,
 } from 'date-fns';
-import { enGB, fr, nlBE } from 'date-fns/locale';
 import { useLocale } from 'next-intl';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Modal from 'react-modal';
@@ -21,6 +20,7 @@ import { ScheduleView } from './_components/ScheduleView';
 import { TimelineView } from './_components/TimelineView';
 
 import CmsRichText from '@/helpers/CmsRichText';
+import { getDateLocale } from '@/helpers/localization';
 import { ScheduleEvent, ScheduleLocation } from '@/services/cms/schedule';
 
 const convertMsToDays = (ms: number) => {
@@ -96,8 +96,7 @@ export default function Timetable({
     );
   };
 
-  const locale = useLocale();
-  const dateLocale = locale === 'nl' ? nlBE : locale === 'fr' ? fr : enGB;
+  const dateLocale = getDateLocale(useLocale());
 
   const {
     firstEventTimestamp = new Date(0),
