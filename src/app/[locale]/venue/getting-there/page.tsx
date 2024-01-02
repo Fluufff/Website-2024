@@ -36,6 +36,19 @@ export default async function GettingThere({ params: { locale } }: Props) {
           <p>Rue du Midi 135, 1000 Bruxelles.</p>
         </div>
       </div>
+      <div className="o-map">
+        <iframe
+          height="100%"
+          width="100%"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.344781637191773%2C50.84311881428597%2C4.349918067455293%2C50.845278193511966&amp;layer=mapnik&amp;marker=50.84419766957645%2C4.347348511219025"
+        />
+        <br />
+        <small>
+          <a href="https://www.openstreetmap.org/#map=19/50.84422/4.34709">
+            View Larger Map
+          </a>
+        </small>
+      </div>
       {/* <div ref={mapContainer} className="o-map" /> */}
       <div className="o-section o-section--alt">
         <div className="o-section__content">
