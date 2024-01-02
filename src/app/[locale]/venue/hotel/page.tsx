@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import React from 'react';
 
+import headerImage from '@/assets/headers/hotel.jpg';
 import ScrollLink from '@/helpers/ScrollLink';
 import { PropsWithLocale } from '@/helpers/localization';
 import { Link } from '@/helpers/navigation';
@@ -25,11 +26,7 @@ export default async function HotelPage({ params: { locale } }: Props) {
     <>
       <div
         className="o-header"
-        style={
-          {
-            // backgroundImage: `url(${headerImage})`,
-          }
-        }>
+        style={{ backgroundImage: `url(${headerImage.src})` }}>
         <div className="u-container">
           <h1 className="o-header__title">{t('header.title')}</h1>
           <p className="o-header__sub-title">{t('header.subtitle')}</p>
