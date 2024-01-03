@@ -10,13 +10,14 @@ import { BlendFunction } from 'postprocessing';
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
-import { ErodedLightString } from './ErodedLightString';
-import { Barrels } from './components/Barrels';
-import { ErodedTrees } from './components/ErodedTrees';
+import { LightString as LightString } from './LightString';
+import { Bottles } from './components/Bottles';
+import { Crates } from './components/Crates';
 import { Furry } from './components/Furry';
 import { Rocks } from './components/Rocks';
 import { Rope } from './components/Rope';
 import { Sand } from './components/Sand';
+import { Trees } from './components/Trees';
 import { Water } from './components/Water';
 
 /** Sets up event listeners for manual invalidation with PresentationControls.
@@ -84,13 +85,13 @@ export const BeachScene = () => {
         />
       </EffectComposer>
       <Environment
-        files={require('@/assets/3d/san_giuseppe_bridge_tiny.hdr?raw')}
+        files={require('@/assets/3d/venice_sunset_tiny.hdr?raw')}
         background={false}
       />
       <Sky
         distance={100}
-        turbidity={0}
-        rayleigh={20}
+        turbidity={8}
+        rayleigh={6}
         mieCoefficient={0.005}
         mieDirectionalG={0.8}
         inclination={0.492}
@@ -129,12 +130,13 @@ export const BeachScene = () => {
           ref={ref}>
           <Sand />
           <Water />
-          <ErodedTrees />
+          <Trees />
           <Rocks />
           <Rope />
-          <Barrels />
+          <Bottles />
+          <Crates />
           <Furry />
-          <ErodedLightString />
+          <LightString />
         </group>
       </PresentationControls>
     </>

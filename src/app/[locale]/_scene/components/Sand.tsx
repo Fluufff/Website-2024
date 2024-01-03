@@ -5,7 +5,7 @@ import { DRACO_FOLDER } from '../constants';
 
 export const Sand: FC<JSX.IntrinsicElements['group']> = (props) => {
   const group = useRef<THREE.Group>(null);
-  // TODO: we previously used nodes from 2022 for some reason?
+
   const { nodes, materials } = useGLTF(
     require(`@/assets/3d/sand_out/sand.gltf?raw`),
     DRACO_FOLDER,
