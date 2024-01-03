@@ -12,8 +12,8 @@ const material = new THREE.MeshPhysicalMaterial({
   // alphaMap: texture,
   // envMap: hdrEquirect,
   // envMapIntensity: params.envMapIntensity,
-  opacity: 0.75, // use material.transmission for glass materials
-  specularIntensity: 0,
+  opacity: 0.85, // use material.transmission for glass materials
+  specularIntensity: 1,
   // specularTint: params.specularTint,
   side: THREE.FrontSide,
   transparent: true,
