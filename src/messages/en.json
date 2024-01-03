@@ -1,4 +1,21 @@
 {
+  "Menu": {
+    "items": {
+      "about": "About",
+      "about_fluufff": "About Flüüfff",
+      "charity": "Charity",
+      "contact": "Contact",
+      "getting_there": "Getting there",
+      "home": "Home",
+      "hotel": "Hotel",
+      "login": "Login",
+      "news": "News",
+      "rooms": "Rooms",
+      "schedule": "Schedule",
+      "tickets": "Tickets",
+      "venue": "Venue"
+    }
+  },
   "Footer": {
     "3d_u_credits": "3D “Ü” created by",
     "follow_us": "Follow us",
@@ -6,6 +23,37 @@
     "site_credits": "Website & 3D Models created by",
     "terms_and_conditions": "Terms and Conditions",
     "translation_credits": "Dutch & French translations by"
+  },
+  "Index": {
+    "hero": {
+      "title": "Tropical Trouble",
+      "sub_title": "Save the date!",
+      "description": "For the 5th edition of Belgium’s furry convention, our team would love to invite you to our island of happiness and surprises at the Bedford Hotel & Congress Center in Brussels.\n\nBeing stranded on an island is not what is going to end the party. Let's grab our flipflops and the bottles that washed ashore and let's dance like there were no tomorrow.",
+      "date": "9th-13th November, 2022"
+    },
+    "activities": {
+      "dances": {
+        "title": "Dances",
+        "description": "Party hard at the dance where the DJs will be playing a nice selection of music. Whether you like House, Hardcore, Drum and bass, Dubstep, Techno or something else, our DJs have a beat to everybody&apos;s liking!",
+        "discover": "Discover"
+      },
+      "panels": {
+        "title": "Panels",
+        "description": "Flüüfff hosts a number of panels every year, like the tea panel! Join this informative and practical panel to learn more about this amazing drink we all love. In addition to the tea panel, we are looking for you! You can host your own panel at Flüüfff, be it about something you like, or something you know a lot about. You can suggest a panel or a meet through the panel proposal form!",
+        "more_info": "More info",
+        "submit_proposal": "Submit proposal"
+      },
+      "show_night": {
+        "title": "Show night",
+        "description": "What would a party on a dream island be without a show night? Flüüfff hosts this special night filled with entertaining acts and performances made by, and for attendees. Are you ready to show your talent in singing, dancing or just making jokes on the big Flüüfff stage?",
+        "view_more": "View more"
+      }
+    },
+    "welcome": {
+      "title": "Welcome to Flüüfff",
+      "description": "It’s a Belgian furry convention, located in Brussels! A furry convention is an event dedicated to anthropomorphic characters and a gathering place for all furries and their friends.\n\nFlüüfff is spread over 5 days, the 9th of November to the 13th of November 2022. The convention takes place in the Bedford hotel.",
+      "about_fluufff": "About Flüüfff"
+    }
   },
   "News": {
     "header": {
@@ -159,6 +207,11 @@
         "p1": "It's a stone's throw away from the Brussels centre, the station, a ton of food places, and the vibrant, glorious, shiny nightlife.",
         "p2": "We're excited to welcome you, we're excited to have you! We're excited to be taken out to dinner by you and...",
         "p3": "Oh, I got carried away. Welcome!"
+      },
+      "buttons": {
+        "getting_there": "Getting there",
+        "hotel_rooms": "Hotel rooms",
+        "the_restaurant": "The restaurant"
       }
     },
     "restaurant": {
@@ -285,108 +338,6 @@
       "friday_short": "Fri",
       "saturday_short": "Sat",
       "sunday_short": "Sun"
-    }
-  },
-  "2022_msg": {
-    "general": {
-      "buttons": {
-        "about_fluufff": "About Flüüfff",
-        "discover": "Discover",
-        "dreamteam": "The dreamteam",
-        "getting_there": "Getting there",
-        "hotel_rooms": "Hotel rooms",
-        "more_info": "More info",
-        "register": "Register",
-        "submit_proposal": "Submit proposal",
-        "the_restaurant": "The restaurant",
-        "view_more": "View more"
-      },
-      "labels": {
-        "at": "At"
-      }
-    },
-    "menu": {
-      "items": {
-        "about": "About",
-        "about_fluufff": "About Flüüfff",
-        "charity": "Charity",
-        "contact": "Contact",
-        "getting_there": "Getting there",
-        "home": "Home",
-        "hotel": "Hotel",
-        "login": "Login",
-        "news": "News",
-        "rooms": "Rooms",
-        "schedule": "Schedule",
-        "tickets": "Tickets",
-        "venue": "Venue"
-      }
-    },
-    "pages": {
-      "index": {
-        "activities": {
-          "dances": {
-            "description": "Party hard at the dance where the DJs will be playing a nice selection of music. Whether you like House, Hardcore, Drum and bass, Dubstep, Techno or something else, our DJs have a beat to everybody&apos;s liking!",
-            "title": "Dances"
-          },
-          "panels": {
-            "description": "Flüüfff hosts a number of panels every year, like the tea panel! Join this informative and practical panel to learn more about this amazing drink we all love. In addition to the tea panel, we are looking for you! You can host your own panel at Flüüfff, be it about something you like, or something you know a lot about. You can suggest a panel or a meet through the panel proposal form!",
-            "title": "Panels"
-          },
-          "show_night": {
-            "description": "What would a party on a dream island be without a show night? Flüüfff hosts this special night filled with entertaining acts and performances made by, and for attendees. Are you ready to show your talent in singing, dancing or just making jokes on the big Flüüfff stage?",
-            "title": "Show night"
-          }
-        },
-        "hero": {
-          "date": "9th-13th November, 2022",
-          "description": "For the 5th edition of Belgium’s furry convention, our team would love to invite you to our island of happiness and surprises at the Bedford Hotel & Congress Center in Brussels.\n\nBeing stranded on an island is not what is going to end the party. Let's grab our flipflops and the bottles that washed ashore and let's dance like there were no tomorrow.",
-          "sub_title": "Save the date!",
-          "title": "Tropical Trouble"
-        },
-        "registration": {
-          "account_creation_start_from": "Account creation starts from",
-          "already_registered": "You are already registered",
-          "and_or": "and/or",
-          "create_account": "Create an account",
-          "have_a_ticket": "Have a ticket for the con!",
-          "join_us": "Join us right now and have the time of your life!",
-          "opens_on": "Registration opens on",
-          "register_waiting_list": "register on the waiting list",
-          "registration_account_creation_only": "Account creation is open",
-          "registration_is_closed": "Registration is closed",
-          "registration_is_over": "Registration is over",
-          "residential_closes": "Residential registration closes on October 18th.",
-          "starts_from": "Registration starts from"
-        },
-        "stats": {
-          "a_few": "A few",
-          "confirmed_attendees": "Confirmed attendees",
-          "days_of_convention": "Days of convention",
-          "fursuiters": "Fursuiters",
-          "none": "No",
-          "residential_spots_left": "Residential spots left",
-          "staff_members": "Staff members",
-          "title": "Last year’s numbers"
-        },
-        "welcome": {
-          "description": "It’s a Belgian furry convention, located in Brussels! A furry convention is an event dedicated to anthropomorphic characters and a gathering place for all furries and their friends.\n\nFlüüfff is spread over 5 days, the 9th of November to the 13th of November 2022. The convention takes place in the Bedford hotel.",
-          "title": "Welcome to Flüüfff"
-        }
-      },
-      "schedule": {
-        "header": {
-          "sub_title": "All the events in one place!",
-          "title": "Schedule"
-        },
-        "idea": {
-          "description": "You can host your own panel at Flüüfff, be it about something you like, or something you know a lot about. You can suggest a panel or a meet through the panel proposal form!",
-          "title": "Host your own panel!"
-        },
-        "schedule": {
-          "not_available": "The schedule is not available at the moment"
-        }
-      }
     }
   }
 }

@@ -15,7 +15,7 @@ export default function Menu() {
   const [open, setOpen] = useState(false);
   const location = usePathname();
   const currentLocale = useLocale();
-  const t = useTranslations('2022_msg.menu');
+  const t = useTranslations('Menu');
 
   useEffect(() => {
     const onScroll = (e: Event) => {

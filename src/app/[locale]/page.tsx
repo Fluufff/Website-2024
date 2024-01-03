@@ -17,8 +17,7 @@ export default async function IndexPage({
 }) {
   unstable_setRequestLocale(locale);
 
-  const t = await getTranslations('2022_msg.pages.index');
-  const tGeneral = await getTranslations('2022_msg.general');
+  const t = await getTranslations('Index');
 
   return (
     <main>
@@ -61,7 +60,7 @@ export default async function IndexPage({
               <Link
                 href="/timetable"
                 className="a-button a-button--secondary u-margin-top">
-                {tGeneral('buttons.discover')}
+                {t('activities.dances.discover')}
               </Link>
             </div>
             <div className="m-activities__item">
@@ -76,14 +75,14 @@ export default async function IndexPage({
               <Link
                 href="/timetable"
                 className="a-button a-button--secondary u-margin-top">
-                {tGeneral('buttons.more_info')}
+                {t('activities.panels.more_info')}
               </Link>
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfbhSAz-w9qpCFMfNFvnb9E5IjvEPtzlZHkl-TmVadYRIbMqQ/viewform"
                 target="_blank"
                 className="a-button a-button--tertiary u-margin-top u-margin-left-xs"
                 rel="noreferrer">
-                {tGeneral('buttons.submit_proposal')}
+                {t('activities.panels.submit_proposal')}
               </a>
             </div>
             <div className="m-activities__item">
@@ -98,7 +97,7 @@ export default async function IndexPage({
               <Link
                 href="/timetable"
                 className="a-button a-button--secondary u-margin-top">
-                {tGeneral('buttons.view_more')}
+                {t('activities.show_night.view_more')}
               </Link>
             </div>
           </div>
@@ -111,7 +110,7 @@ export default async function IndexPage({
               <h3>{t('welcome.title')}</h3>
               <p>{t('welcome.description')}</p>
               <Link href="/about" className="a-button a-button--secondary">
-                {tGeneral('buttons.about_fluufff')}
+                {t('welcome.about_fluufff')}
               </Link>
             </div>
           </div>

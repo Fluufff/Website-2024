@@ -24,7 +24,7 @@ export default async function HotelPage({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
 
   const t = await getTranslations('Hotel');
-  const tButtons = await getTranslations('2022_msg.general.buttons');
+  const tButtons = await getTranslations('general.buttons');
 
   return (
     <>
@@ -49,16 +49,16 @@ export default async function HotelPage({ params: { locale } }: Props) {
           <p>{t('hotel.description.p3')}</p>
           <div className="m-button-group">
             <Link href="/venue/getting-there" className="a-button">
-              {tButtons('getting_there')}
+              {t('hotel.buttons.getting_there')}
             </Link>
             <ScrollLink
               to="restaurant"
               className="a-button a-button--secondary"
               smooth={true}>
-              {tButtons('the_restaurant')}
+              {t('hotel.buttons.the_restaurant')}
             </ScrollLink>
             <Link href="/venue/rooms" className="a-button a-button--secondary">
-              {tButtons('hotel_rooms')}
+              {t('hotel.buttons.hotel_rooms')}
             </Link>
           </div>
         </div>

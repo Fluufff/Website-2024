@@ -1,4 +1,21 @@
 {
+  "Menu": {
+    "items": {
+      "about": "À propos",
+      "about_fluufff": "À propos de Flüüfff",
+      "charity": "Charité",
+      "contact": "Contacter",
+      "getting_there": "S'y rendre",
+      "home": "Accueil",
+      "hotel": "Hôtel",
+      "login": "Connexion",
+      "news": "Nouvelles",
+      "rooms": "Chambres d'hôtel",
+      "schedule": "Programme",
+      "tickets": "Tickets",
+      "venue": "S'y rendre"
+    }
+  },
   "Footer": {
     "3d_u_credits": "Modèle \"Ü\" 3D créé par",
     "follow_us": "Suivez nous sur",
@@ -6,6 +23,37 @@
     "site_credits": "Site web et Modèles 3D créés par",
     "terms_and_conditions": "Termes et conditions",
     "translation_credits": "Traductions Françaises et Néerlandaises par"
+  },
+  "Index": {
+    "hero": {
+      "title": "Tropical Trouble",
+      "sub_title": "Faites une croix dans votre calendrier !",
+      "description": "Pour la 5e édition de la convention furry Belge, notre équipe est heureuse de vous accueillir sur notre île de fête et de gaité, le Bedford Hotel & Congress Center à Bruxelles.\n\nCe n'est pas parce que nous nous sommes échoués sur une plage que la fête va s'arrêter. Ramassez vos tongs, les bouteilles envoyées par les vagues et allons danser jusqu'à plus soif.",
+      "date": "9-13 Novembre 2022"
+    },
+    "activities": {
+      "dances": {
+        "title": "Dances",
+        "description": "Faites ressortir la bête de scène que vous êtes sur la piste de dance. Nos DJs joueront leur meilleure sélection de musique. Que vous soyez plutôt House, Hardcore, Drum and Bass, Dubstep, Techno ou autre chose, vous trouverez le morceau qui vous collera à la peau !",
+        "discover": "Découvrir"
+      },
+      "panels": {
+        "title": "Conférences",
+        "description": "Flüüfff accueille diverses présentations chaque année, comme par exemple le Tea Panel ! Participez à cette présentation, doublée d'un atelier pratique, pour en savoir plus sur cette fascinante boisson que nous aimons tous. Nous vous attendons pour la prochaine présentation !\n\nVous pouvez aussi organiser votre propre présentation ou atelier à la Flüüfff, que ce soit à propos de quelque chose que vous aimez, ou quelque chose que vous connaissez bien. Vous pouvez suggérer votre présentation, atelier ou rencontre via le formulaire de suggestion de Présentation !",
+        "more_info": "En savoir plus",
+        "submit_proposal": "Proposer un évènement"
+      },
+      "show_night": {
+        "title": "Soirée Spectacle",
+        "description": "Pourrait-on imaginer une fête sur une île paradisiaque sans Soirée Spectacle ? Flüüfff organise cette soirée remplie de divertissements et de prestations, faits pour et par les visiteurs de la convention. Êtes-vous prêts à montrer vos talents de chanteur, danseur ou d'humoriste sur la grande scène de la Flüüfff ?",
+        "view_more": "Voir plus"
+      }
+    },
+    "welcome": {
+      "title": "Bienvenue à Flüüfff",
+      "description": "C'est une convention furry, située à Bruxelles ! Une convention furry est un évènement dédié à l'anthropomorphisme et un endroit où les furries et leurs amis peuvent se rassembler.\n\nLa convention se déroule sur 5 jours, du 9 au 13 Novembre 2022. La Flüüff prend place à l'hôtel Bedford.",
+      "about_fluufff": "À propos de Flüüfff"
+    }
   },
   "News": {
     "header": {
@@ -159,6 +207,11 @@
         "p1": "À quelques pas du centre de Bruxelles, de la gare, d'une myriade d'endroits où se restaurer et de la vibrante et fabuleuse vie nocturne de la capitale.",
         "p2": "Nous sommes impatients de vous accueillir parmi nous ! Impatients de vous avoir parmi nous ! Impatients d'être invités par vous au restaurant...",
         "p3": "Oh, je me suis laissé emporter. Bienvenue !"
+      },
+      "buttons": {
+        "getting_there": "S'y rendre",
+        "hotel_rooms": "Chambres d'hôtel",
+        "the_restaurant": "Le restaurant"
       }
     },
     "restaurant": {
@@ -285,108 +338,6 @@
       "friday_short": "Venir",
       "saturday_short": "Sam",
       "sunday_short": "Dim"
-    }
-  },
-  "2022_msg": {
-    "general": {
-      "buttons": {
-        "about_fluufff": "À propos de Flüüfff",
-        "discover": "Découvrir",
-        "dreamteam": "La dreamteam",
-        "getting_there": "S'y rendre",
-        "hotel_rooms": "Chambres d'hôtel",
-        "more_info": "En savoir plus",
-        "register": "S'inscrire",
-        "submit_proposal": "Proposer un évènement",
-        "the_restaurant": "Le restaurant",
-        "view_more": "Voir plus"
-      },
-      "labels": {
-        "at": "À"
-      }
-    },
-    "menu": {
-      "items": {
-        "about": "À propos",
-        "about_fluufff": "À propos de Flüüfff",
-        "charity": "Charité",
-        "contact": "Contacter",
-        "getting_there": "S'y rendre",
-        "home": "Accueil",
-        "hotel": "Hôtel",
-        "login": "Connexion",
-        "news": "Nouvelles",
-        "rooms": "Chambres d'hôtel",
-        "schedule": "Programme",
-        "tickets": "Tickets",
-        "venue": "S'y rendre"
-      }
-    },
-    "pages": {
-      "index": {
-        "activities": {
-          "dances": {
-            "description": "Faites ressortir la bête de scène que vous êtes sur la piste de dance. Nos DJs joueront leur meilleure sélection de musique. Que vous soyez plutôt House, Hardcore, Drum and Bass, Dubstep, Techno ou autre chose, vous trouverez le morceau qui vous collera à la peau !",
-            "title": "Dances"
-          },
-          "panels": {
-            "description": "Flüüfff accueille diverses présentations chaque année, comme par exemple le Tea Panel ! Participez à cette présentation, doublée d'un atelier pratique, pour en savoir plus sur cette fascinante boisson que nous aimons tous. Nous vous attendons pour la prochaine présentation !\n\nVous pouvez aussi organiser votre propre présentation ou atelier à la Flüüfff, que ce soit à propos de quelque chose que vous aimez, ou quelque chose que vous connaissez bien. Vous pouvez suggérer votre présentation, atelier ou rencontre via le formulaire de suggestion de Présentation !",
-            "title": "Conférences"
-          },
-          "show_night": {
-            "description": "Pourrait-on imaginer une fête sur une île paradisiaque sans Soirée Spectacle ? Flüüfff organise cette soirée remplie de divertissements et de prestations, faits pour et par les visiteurs de la convention. Êtes-vous prêts à montrer vos talents de chanteur, danseur ou d'humoriste sur la grande scène de la Flüüfff ?",
-            "title": "Soirée Spectacle"
-          }
-        },
-        "hero": {
-          "date": "9-13 Novembre 2022",
-          "description": "Pour la 5e édition de la convention furry Belge, notre équipe est heureuse de vous accueillir sur notre île de fête et de gaité, le Bedford Hotel & Congress Center à Bruxelles.\n\nCe n'est pas parce que nous nous sommes échoués sur une plage que la fête va s'arrêter. Ramassez vos tongs, les bouteilles envoyées par les vagues et allons danser jusqu'à plus soif.",
-          "sub_title": "Faites une croix dans votre calendrier !",
-          "title": "Tropical Trouble"
-        },
-        "registration": {
-          "account_creation_start_from": "Création des comptes à partir de",
-          "already_registered": "Vous êtes déjà enregistré",
-          "and_or": "et/ou",
-          "create_account": "Créer un compte",
-          "have_a_ticket": "ont un ticket pour la convention",
-          "join_us": "Rejoignez-nous et passez le meilleur moment de votre vie !",
-          "opens_on": "Les inscriptions ouvrent à partir du",
-          "register_waiting_list": "inscrivez vous sur la liste d'attente",
-          "registration_account_creation_only": "La création des comptes est ouverte",
-          "registration_is_closed": "Les inscriptions sont fermées",
-          "registration_is_over": "Les inscriptions sont finies",
-          "residential_closes": "Les inscriptions Résidentielles clôturent le 18 Octobre.",
-          "starts_from": "Les inscriptions ouvrent à partir du"
-        },
-        "stats": {
-          "a_few": "Quelques-uns",
-          "confirmed_attendees": "Participants confirmés",
-          "days_of_convention": "Jours de la convention",
-          "fursuiters": "Fursuiteurs",
-          "none": "Aucune",
-          "residential_spots_left": "Places résidentielles restantes",
-          "staff_members": "Membres du staff",
-          "title": "Statistiques de l'édition précédente"
-        },
-        "welcome": {
-          "description": "C'est une convention furry, située à Bruxelles ! Une convention furry est un évènement dédié à l'anthropomorphisme et un endroit où les furries et leurs amis peuvent se rassembler.\n\nLa convention se déroule sur 5 jours, du 9 au 13 Novembre 2022. La Flüüff prend place à l'hôtel Bedford.",
-          "title": "Bienvenue à Flüüfff"
-        }
-      },
-      "schedule": {
-        "header": {
-          "sub_title": "Tous les évènements sur place",
-          "title": "Programme"
-        },
-        "idea": {
-          "description": "Vous pouvez organiser votre présentation ou atelier à la Flüüfff, que ce soit sur un sujet qui vous passionne ou dont vous êtes expert. Vous pouvez suggérer une présentation ou une réunion via le formulaire de suggestion!",
-          "title": "Organiser votre propre évènement!"
-        },
-        "schedule": {
-          "not_available": "Le programme n'est pas disponible pour le moment"
-        }
-      }
     }
   }
 }

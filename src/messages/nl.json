@@ -1,4 +1,21 @@
 {
+  "Menu": {
+    "items": {
+      "about": "Over",
+      "about_fluufff": "Over Flüüfff",
+      "charity": "Goed doel",
+      "contact": "Contact",
+      "getting_there": "Hier geraken",
+      "home": "Home",
+      "hotel": "Hotel",
+      "login": "Login",
+      "news": "Nieuws",
+      "rooms": "Kamers",
+      "schedule": "Planning",
+      "tickets": "Tickets",
+      "venue": "Accomodatie"
+    }
+  },
   "Footer": {
     "3d_u_credits": "3D “Ü” gemaakt door",
     "follow_us": "Volg ons",
@@ -6,6 +23,37 @@
     "site_credits": "Website & 3D Models gemaakt door",
     "terms_and_conditions": "Algemene voorwaarden",
     "translation_credits": "Nederlandse en Franse vertalingen door"
+  },
+  "Index": {
+    "hero": {
+      "title": "Tropical Trouble",
+      "sub_title": "Hou de datum vrij!",
+      "description": "Voor de 5e Editie van de Belgische furry conventie zou ons team het geweldig vinden om je uit te nodigen op ons vrolijke eiland vol verrassingen in het Bedford Hotel & Congress Center in Brussel.\nGestrand zijn op een eiland zal dit feestje niet stoppen. Laten we onze slippers en drankjes die aangespoeld zijn meenemen en dansen tot we er bij neervallen.",
+      "date": "van 9 tot en met 13 November, 2022"
+    },
+    "activities": {
+      "dances": {
+        "title": "Dansfeest",
+        "description": "Feest hard op het dansfeest waar de DJ's een prachtige selectie van muziek zullen spelen. Of het nu House, Hardcore, Drum and Bass, Dubstep, Techno of iets anders is, onze DJ's hebben een beat voor iedereen!",
+        "discover": "Ontdek"
+      },
+      "panels": {
+        "title": "Panels",
+        "description": "Flüüfff organiseert elk jaar een rijke variëteit aan panels. Zo is er bijvoorbeeld ons befaamd thee panel! Doe mee aan deze informatieve en praktische panels om meer te leren over die geweldige drank waar we allemaal van houden. Daarnaast zijn we tevens op zoek naar wat jij kan bijbrengen! Je kan je eigen panel organiseren over iets wat je leuk vindt, iets waar je veel over weet, ... Je kan je voorstel voor een eigen panel indien via ons formulier!",
+        "more_info": "Meer info",
+        "submit_proposal": "Voorstel indienen"
+      },
+      "show_night": {
+        "title": "Showavond",
+        "description": "Wat is een feestje op een droomeiland nu zonder een showavond? Flüüfff organiseert deze speciale avond gevuld met gezellige acts en optredens, door en voor aanwezigen. Ben je klaar om je talent als zanger, danser of moppentapper te laten zien op het grote podium van Flüüfff?",
+        "view_more": "Zie meer"
+      }
+    },
+    "welcome": {
+      "title": "Welkom op Flüüfff",
+      "description": "Dit is een Belgische furry conventie gelegen in Brussel! Een furry conventie is een evenement gewijd aan antropomorfische personages en een bijeenkomst voor alle furries en hun vrienden.\n\nFlüüfff is verspreid over 5 dagen, van 9 November tot en met 13 November 2022. De conventie vindt plaats in het Bedford hotel.",
+      "about_fluufff": "Over Flüüfff"
+    }
   },
   "News": {
     "header": {
@@ -159,6 +207,11 @@
         "p1": "Het ligt op een steenworp van het centrum van Brussel, het Centraal station, een ruime keuze aan eetgelegenheden, en het levendige glorieuze nachtleven.",
         "p2": "We zijn verheugd je te verwelkomen, en enthousiast om je erbij te hebben! We kunnen niet wachten om getrakteerd te worden op een diner en...",
         "p3": "Oeps, ik liet me wat meeslepen. Welkom!"
+      },
+      "buttons": {
+        "getting_there": "Hoe er geraken",
+        "hotel_rooms": "Hotelkamers",
+        "the_restaurant": "Het restaurant"
       }
     },
     "restaurant": {
@@ -285,108 +338,6 @@
       "friday_short": "Vrij",
       "saturday_short": "Zat",
       "sunday_short": "Zon"
-    }
-  },
-  "2022_msg": {
-    "general": {
-      "buttons": {
-        "about_fluufff": "Over Flüüfff",
-        "discover": "Ontdek",
-        "dreamteam": "Het dreamteam",
-        "getting_there": "Hoe er geraken",
-        "hotel_rooms": "Hotelkamers",
-        "more_info": "Meer info",
-        "register": "Registreer",
-        "submit_proposal": "Voorstel indienen",
-        "the_restaurant": "Het restaurant",
-        "view_more": "Zie meer"
-      },
-      "labels": {
-        "at": "Op"
-      }
-    },
-    "menu": {
-      "items": {
-        "about": "Over",
-        "about_fluufff": "Over Flüüfff",
-        "charity": "Goed doel",
-        "contact": "Contact",
-        "getting_there": "Hier geraken",
-        "home": "Home",
-        "hotel": "Hotel",
-        "login": "Login",
-        "news": "Nieuws",
-        "rooms": "Kamers",
-        "schedule": "Planning",
-        "tickets": "Tickets",
-        "venue": "Accomodatie"
-      }
-    },
-    "pages": {
-      "index": {
-        "activities": {
-          "dances": {
-            "description": "Feest hard op het dansfeest waar de DJ's een prachtige selectie van muziek zullen spelen. Of het nu House, Hardcore, Drum and Bass, Dubstep, Techno of iets anders is, onze DJ's hebben een beat voor iedereen!",
-            "title": "Dansfeest"
-          },
-          "panels": {
-            "description": "Flüüfff organiseert elk jaar een rijke variëteit aan panels. Zo is er bijvoorbeeld ons befaamd thee panel! Doe mee aan deze informatieve en praktische panels om meer te leren over die geweldige drank waar we allemaal van houden. Daarnaast zijn we tevens op zoek naar wat jij kan bijbrengen! Je kan je eigen panel organiseren over iets wat je leuk vindt, iets waar je veel over weet, ... Je kan je voorstel voor een eigen panel indien via ons formulier!",
-            "title": "Panels"
-          },
-          "show_night": {
-            "description": "Wat is een feestje op een droomeiland nu zonder een showavond? Flüüfff organiseert deze speciale avond gevuld met gezellige acts en optredens, door en voor aanwezigen. Ben je klaar om je talent als zanger, danser of moppentapper te laten zien op het grote podium van Flüüfff?",
-            "title": "Showavond"
-          }
-        },
-        "hero": {
-          "date": "van 9 tot en met 13 November, 2022",
-          "description": "Voor de 5e Editie van de Belgische furry conventie zou ons team het geweldig vinden om je uit te nodigen op ons vrolijke eiland vol verrassingen in het Bedford Hotel & Congress Center in Brussel.\nGestrand zijn op een eiland zal dit feestje niet stoppen. Laten we onze slippers en drankjes die aangespoeld zijn meenemen en dansen tot we er bij neervallen.",
-          "sub_title": "Hou de datum vrij!",
-          "title": "Tropical Trouble"
-        },
-        "registration": {
-          "account_creation_start_from": "Account aanmaken kan vanaf",
-          "already_registered": "Je bent al geregistreerd",
-          "and_or": "en/of",
-          "create_account": "Maak een account aan",
-          "have_a_ticket": "hebben een ticket voor de con!",
-          "join_us": "Doe met ons mee en heb de tijd van je leven!",
-          "opens_on": "Registraties gaan open vanaf",
-          "register_waiting_list": "schrijf je in op de wachtlijst",
-          "registration_account_creation_only": "Account aanmaken is open",
-          "registration_is_closed": "Registratie is gesloten",
-          "registration_is_over": "Registratie is afgelopen",
-          "residential_closes": "Residentiële registratie sluit op 18 Oktober.",
-          "starts_from": "Registratie opent vanaf"
-        },
-        "stats": {
-          "a_few": "Een paar",
-          "confirmed_attendees": "Bevestigde deelnemers",
-          "days_of_convention": "Conventiedagen",
-          "fursuiters": "Fursuiters",
-          "none": "Geen",
-          "residential_spots_left": "Residentiële plekken over",
-          "staff_members": "Personeelsleden",
-          "title": "Cijfers van vorig jaar"
-        },
-        "welcome": {
-          "description": "Dit is een Belgische furry conventie gelegen in Brussel! Een furry conventie is een evenement gewijd aan antropomorfische personages en een bijeenkomst voor alle furries en hun vrienden.\n\nFlüüfff is verspreid over 5 dagen, van 9 November tot en met 13 November 2022. De conventie vindt plaats in het Bedford hotel.",
-          "title": "Welkom op Flüüfff"
-        }
-      },
-      "schedule": {
-        "header": {
-          "sub_title": "Alle evenementen op 1 plaats!",
-          "title": "Planning"
-        },
-        "idea": {
-          "description": "Je kunt je eigen panel geven op Flüüfff, misschien over iets dat je leuk vindt, of iets waar je veel over weet. Je kunt een panel of een bijeenkomst (meet) voorstellen via het formulier.",
-          "title": "Geef je eigen panel!"
-        },
-        "schedule": {
-          "not_available": "De planning is op dit moment niet beschikbaar"
-        }
-      }
     }
   }
 }
