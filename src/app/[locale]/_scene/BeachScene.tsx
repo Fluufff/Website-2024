@@ -91,7 +91,7 @@ export const BeachScene = () => {
       />
       <Sky
         distance={100}
-        turbidity={8}
+        turbidity={12}
         rayleigh={6}
         mieCoefficient={0.005}
         mieDirectionalG={0.8}
