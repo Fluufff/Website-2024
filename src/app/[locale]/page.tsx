@@ -30,7 +30,8 @@ export default async function IndexPage({
               <Image src={logoImage} alt="Flüüfff logo" />
             </div>
             <h1 className="m-hero__title">{t('hero.title')}</h1>
-            <p className="m-hero__intro">{t('hero.description')}</p>
+            <p className="m-hero__intro">{t('hero.description.p0')}</p>
+            <p className="m-hero__intro">{t('hero.description.p1')}</p>
             <p className="m-hero__subtitle">{t('hero.subtitle')}</p>
             <h2 className="m-hero__date">{t('hero.date')}</h2>
             <div className="u-margin-top">

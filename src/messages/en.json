@@ -28,7 +28,10 @@
     "hero": {
       "title": "Tropical Trouble",
       "subtitle": "Save the date!",
-      "description": "For the 5th edition of Belgium’s furry convention, our team would love to invite you to our island of happiness and surprises at the Bedford Hotel & Congress Center in Brussels.\n\nBeing stranded on an island is not what is going to end the party. Let's grab our flipflops and the bottles that washed ashore and let's dance like there were no tomorrow.",
+      "description": {
+        "p0": "For the 5th edition of Belgium’s furry convention, our team would love to invite you to our island of happiness and surprises at the Bedford Hotel & Congress Center in Brussels.",
+        "p1": "Being stranded on an island is not what is going to end the party. Let's grab our flipflops and the bottles that washed ashore and let's dance like there were no tomorrow."
+      },
       "date": "9th-13th November, 2022"
     },
     "activities": {
