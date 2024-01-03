@@ -101,7 +101,9 @@ export default async function Tickets({ params: { locale } }: Props) {
                 <li>{t('residential.brekky')}</li>
                 <li>{t('residential.cleaning')}</li>
               </ul>
-              <p>{t('residential.info.check_in_out')}</p>
+              <p className="u-pre-wrap-p">
+                {t('residential.info.check_in_out')}
+              </p>
               <p>{t('residential.info.room_types')}</p>
               <p>{t('residential.info.extra_days')}</p>
             </div>
