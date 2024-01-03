@@ -1,12 +1,12 @@
 .m-credits {
-	text-align: center;
-	font-size: .8rem;
+  text-align: center;
+  font-size: 0.8rem;
 
-	a {
-		color: $white;
-	}
+  a {
+    color: $white;
+  }
 
-	&--muted {
-		opacity: .8;
-	}
+  &--muted {
+    opacity: 0.8;
+  }
 }

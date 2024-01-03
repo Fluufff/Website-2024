@@ -1,19 +1,19 @@
 .m-statistics {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 
-	&__item {
-		flex: 1;
+  &__item {
+    flex: 1;
 
-		h4 {
-			font-size: 1.5rem;
-			font-weight: bold;
-			margin: 0;
-		}
-	}
+    h4 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
 
-	@media (max-width: 767px) {
-		flex-direction: column;
-	}
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 }

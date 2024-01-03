@@ -1,40 +1,40 @@
 .m-attendee {
-	text-align: left;
-	margin-bottom: $spacer-large;
-	width: 100%;
-	flex: 1;
-	
-	&__avatar {
-		padding-bottom: 100%;
-		width: 100%;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
-		position: relative;
-	}
+  text-align: left;
+  margin-bottom: $spacer-large;
+  width: 100%;
+  flex: 1;
 
-	&__regnumber {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		background-color: $secondary;
-		color: $grey-dark;
-		padding: $spacer $spacer;
-		font-weight: bold;
-	}
+  &__avatar {
+    padding-bottom: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+  }
 
-	&__nick {
-		margin: $spacer-small 0;
-		font-size: 1.5rem;
-	}
+  &__regnumber {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $secondary;
+    color: $grey-dark;
+    padding: $spacer $spacer;
+    font-weight: bold;
+  }
 
-	&__roles {
-		margin: $spacer-small 0;
+  &__nick {
+    margin: $spacer-small 0;
+    font-size: 1.5rem;
+  }
 
-		ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-		}
-	}
+  &__roles {
+    margin: $spacer-small 0;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
 }
