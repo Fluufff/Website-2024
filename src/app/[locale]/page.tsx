@@ -31,7 +31,7 @@ export default async function IndexPage({
             </div>
             <h1 className="m-hero__title">{t('hero.title')}</h1>
             <p className="m-hero__intro">{t('hero.description')}</p>
-            <p className="m-hero__subtitle">{t('hero.sub_title')}</p>
+            <p className="m-hero__subtitle">{t('hero.subtitle')}</p>
             <h2 className="m-hero__date">{t('hero.date')}</h2>
             <div className="u-margin-top">
               {/* registration status & CTA goes here */}

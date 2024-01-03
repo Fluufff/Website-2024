@@ -27,7 +27,7 @@
   "Index": {
     "hero": {
       "title": "Tropical Trouble",
-      "sub_title": "Hou de datum vrij!",
+      "subtitle": "Hou de datum vrij!",
       "description": "Voor de 5e Editie van de Belgische furry conventie zou ons team het geweldig vinden om je uit te nodigen op ons vrolijke eiland vol verrassingen in het Bedford Hotel & Congress Center in Brussel.\nGestrand zijn op een eiland zal dit feestje niet stoppen. Laten we onze slippers en drankjes die aangespoeld zijn meenemen en dansen tot we er bij neervallen.",
       "date": "van 9 tot en met 13 November, 2022"
     },
@@ -108,11 +108,11 @@
   "Charity": {
     "header": {
       "title": "Charity",
-      "sub_title": "Some info about our charity"
+      "subtitle": "Some info about our charity"
     },
     "content": {
       "title": "Natagora",
-      "sub_title": "This year we are excited to announce our partnership with Natagora.",
+      "subtitle": "This year we are excited to announce our partnership with Natagora.",
       "description": "Natagora is active across the whole of Wallonia and Brussels. The main objective of the association is to halt the loss of biodiversity and to help restore a better balance between nature and humankind. For this, the Association has taken on a number of missions."
     },
     "study": {
@@ -136,7 +136,7 @@
   "Timetable": {
     "header": {
       "title": "Planning",
-      "sub_title": "Alle evenementen op 1 plaats!"
+      "subtitle": "Alle evenementen op 1 plaats!"
     },
     "idea": {
       "title": "Geef je eigen panel!",
@@ -244,10 +244,11 @@
       "wooden_desk": "Lang houten bureau"
     },
     "header": {
-      "sub_title": "Kijk eens naar deze gezellige kamers!",
-      "title": "De kamers"
+      "title": "De kamers",
+      "subtitle": "Kijk eens naar deze gezellige kamers!"
     },
     "standard_rooms": {
+      "title": "Standard kamers",
       "air_conditioning": "Air conditioning",
       "bathtub_with_shower": "Bad met douche",
       "description": "Alle Standard kamers zijn stijlvol ingericht en hebben een reeks aan voorzieningen. Deze zijn beschikbaar als Single, Double of Twin kamers voor 1, 2, 3 of 4 personen.",
@@ -257,8 +258,7 @@
       "hairdryer": "Haardroger",
       "inroom_safe": "Kluis in de kamer",
       "mini_fridge": "Mini-koelkast",
-      "soft_duvets": "Comfortabele bedden met zachte witte lakens",
-      "title": "Standard kamers"
+      "soft_duvets": "Comfortabele bedden met zachte witte lakens"
     },
     "superior_hint": "Superieure kamer hebben dezelfde comfort maar zijn groter in ruimte",
     "variants": "Varianten"

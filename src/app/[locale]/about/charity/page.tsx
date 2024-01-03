@@ -27,7 +27,7 @@ export default async function Charity({ params: { locale } }: Props) {
         }}>
         <div className="u-container">
           <h1 className="o-header__title">{t('header.title')}</h1>
-          <p className="o-header__sub-title">{t('header.sub_title')}</p>
+          <p className="o-header__sub-title">{t('header.subtitle')}</p>
         </div>
       </div>
       <div className="o-section o-section--dark">
@@ -35,7 +35,7 @@ export default async function Charity({ params: { locale } }: Props) {
           <div className="u-row">
             <div className="u-col-sm-6">
               <h4>{t('content.title')}</h4>
-              <p>{t('content.sub_title')}</p>
+              <p>{t('content.subtitle')}</p>
               <p>{t('content.description')}</p>
 
               <p>

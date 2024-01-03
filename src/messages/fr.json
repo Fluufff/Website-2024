@@ -27,7 +27,7 @@
   "Index": {
     "hero": {
       "title": "Tropical Trouble",
-      "sub_title": "Faites une croix dans votre calendrier !",
+      "subtitle": "Faites une croix dans votre calendrier !",
       "description": "Pour la 5e édition de la convention furry Belge, notre équipe est heureuse de vous accueillir sur notre île de fête et de gaité, le Bedford Hotel & Congress Center à Bruxelles.\n\nCe n'est pas parce que nous nous sommes échoués sur une plage que la fête va s'arrêter. Ramassez vos tongs, les bouteilles envoyées par les vagues et allons danser jusqu'à plus soif.",
       "date": "9-13 Novembre 2022"
     },
@@ -108,11 +108,11 @@
   "Charity": {
     "header": {
       "title": "Charity",
-      "sub_title": "Some info about our charity"
+      "subtitle": "Some info about our charity"
     },
     "content": {
       "title": "Natagora",
-      "sub_title": "This year we are excited to announce our partnership with Natagora.",
+      "subtitle": "This year we are excited to announce our partnership with Natagora.",
       "description": "Natagora is active across the whole of Wallonia and Brussels. The main objective of the association is to halt the loss of biodiversity and to help restore a better balance between nature and humankind. For this, the Association has taken on a number of missions."
     },
     "study": {
@@ -136,7 +136,7 @@
   "Timetable": {
     "header": {
       "title": "Programme",
-      "sub_title": "Tous les évènements sur place"
+      "subtitle": "Tous les évènements sur place"
     },
     "idea": {
       "title": "Organiser votre propre évènement!",
@@ -244,10 +244,11 @@
       "wooden_desk": "Grand bureau en bois"
     },
     "header": {
-      "sub_title": "Jetez un coup d'oeil à ces chambres !",
-      "title": "Les chambres"
+      "title": "Les chambres",
+      "subtitle": "Jetez un coup d'oeil à ces chambres !"
     },
     "standard_rooms": {
+      "title": "Chambres Standard",
       "air_conditioning": "Climatisation",
       "bathtub_with_shower": "Baignoire avec douche",
       "description": "Toutes les Chambres Standard sont élégantes et offrent une gamme d’équipements. Elles sont disponibles en simple, double ou lits jumeaux, pour 1, 2, 3 ou 4 personnes.",
@@ -257,8 +258,7 @@
       "hairdryer": "Sèche-cheveux",
       "inroom_safe": "Coffre-fort",
       "mini_fridge": "Mini-bar",
-      "soft_duvets": "Lits confortables avec de moelleuses couettes blanches",
-      "title": "Chambres Standard"
+      "soft_duvets": "Lits confortables avec de moelleuses couettes blanches"
     },
     "superior_hint": "Les chambres Supérieures disposent du même confort et sont plus grandes.",
     "variants": "Variantes"

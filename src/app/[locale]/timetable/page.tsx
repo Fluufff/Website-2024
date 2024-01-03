@@ -31,7 +31,7 @@ export default async function TimetablePage({ params: { locale } }: Props) {
         }}>
         <div className="u-container">
           <h1 className="o-header__title">{t('header.title')}</h1>
-          <p className="o-header__sub-title">{t('header.sub_title')}</p>
+          <p className="o-header__sub-title">{t('header.subtitle')}</p>
         </div>
       </div>
 

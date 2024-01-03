@@ -27,7 +27,7 @@
   "Index": {
     "hero": {
       "title": "Tropical Trouble",
-      "sub_title": "Save the date!",
+      "subtitle": "Save the date!",
       "description": "For the 5th edition of Belgium’s furry convention, our team would love to invite you to our island of happiness and surprises at the Bedford Hotel & Congress Center in Brussels.\n\nBeing stranded on an island is not what is going to end the party. Let's grab our flipflops and the bottles that washed ashore and let's dance like there were no tomorrow.",
       "date": "9th-13th November, 2022"
     },
@@ -108,11 +108,11 @@
   "Charity": {
     "header": {
       "title": "Charity",
-      "sub_title": "Some info about our charity"
+      "subtitle": "Some info about our charity"
     },
     "content": {
       "title": "Natagora",
-      "sub_title": "This year we are excited to announce our partnership with Natagora.",
+      "subtitle": "This year we are excited to announce our partnership with Natagora.",
       "description": "Natagora is active across the whole of Wallonia and Brussels. The main objective of the association is to halt the loss of biodiversity and to help restore a better balance between nature and humankind. For this, the Association has taken on a number of missions."
     },
     "study": {
@@ -136,7 +136,7 @@
   "Timetable": {
     "header": {
       "title": "Schedule",
-      "sub_title": "All the events in one place!"
+      "subtitle": "All the events in one place!"
     },
     "idea": {
       "title": "Host your own panel!",
@@ -244,10 +244,11 @@
       "wooden_desk": "Long wooden desk"
     },
     "header": {
-      "sub_title": "Check out these cool rooms!",
-      "title": "The Rooms"
+      "title": "The Rooms",
+      "subtitle": "Check out these cool rooms!"
     },
     "standard_rooms": {
+      "title": "Standard rooms",
       "air_conditioning": "Air conditioning",
       "bathtub_with_shower": "Bathtub with shower",
       "description": "All Standard rooms are stylish and offer a range of amenities. They are available as Single, Double, or Twin for 1, 2, 3, or 4 people.",
@@ -257,8 +258,7 @@
       "hairdryer": "Hairdryer",
       "inroom_safe": "In-room safe",
       "mini_fridge": "Mini-fridge",
-      "soft_duvets": "Comfortable beds with white soft duvets",
-      "title": "Standard rooms"
+      "soft_duvets": "Comfortable beds with white soft duvets"
     },
     "superior_hint": "Superior room types have the same comfort but are larger in size",
     "variants": "Variants"
