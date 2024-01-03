@@ -42,7 +42,10 @@
       },
       "panels": {
         "title": "Panels",
-        "description": "Flüüfff hosts a number of panels every year, like the tea panel! Join this informative and practical panel to learn more about this amazing drink we all love. In addition to the tea panel, we are looking for you! You can host your own panel at Flüüfff, be it about something you like, or something you know a lot about. You can suggest a panel or a meet through the panel proposal form!",
+        "description": {
+          "p0": "Flüüfff hosts a number of panels every year, like the tea panel! Join this informative and practical panel to learn more about this amazing drink we all love.",
+          "p1": "In addition to the tea panel, we are looking for you! You can host your own panel at Flüüfff, be it about something you like, or something you know a lot about. You can suggest a panel or a meet through the panel proposal form!"
+        },
         "more_info": "More info",
         "submit_proposal": "Submit proposal"
       },
@@ -54,7 +57,10 @@
     },
     "welcome": {
       "title": "Welcome to Flüüfff",
-      "description": "It’s a Belgian furry convention, located in Brussels! A furry convention is an event dedicated to anthropomorphic characters and a gathering place for all furries and their friends.\n\nFlüüfff is spread over 5 days, the 9th of November to the 13th of November 2022. The convention takes place in the Bedford hotel.",
+      "description": {
+        "p0": "It’s a Belgian furry convention, located in Brussels! A furry convention is an event dedicated to anthropomorphic characters and a gathering place for all furries and their friends.",
+        "p1": "Flüüfff is spread over 5 days, the 9th of November to the 13th of November 2022. The convention takes place in the Bedford hotel."
+      },
       "about_fluufff": "About Flüüfff"
     }
   },
@@ -170,14 +176,21 @@
     },
     "residential": {
       "title": "Residential ticket",
-      "description": "The best way to enjoy the convention to its full potential is with a residential ticket!\n\nPlease note that all prices listed here are for ONE spot in a shared bedroom and ONE convention spot. Reserving an entire room is possible, but at double price.",
+      "description": {
+        "p0": "The best way to enjoy the convention to its full potential is with a residential ticket!",
+        "p1": "Please note that all prices listed here are for ONE spot in a shared bedroom and ONE convention spot. Reserving an entire room is possible, but at double price."
+      },
       "include": "Residential tickets include:",
       "con_access": "Con area access",
       "events_access": "Access to all events",
       "sleeping": "Sleeping at the hotel",
       "brekky": "Breakfast",
       "cleaning": "Daily room cleaning",
-      "info": "Check-in on your first day is at 16:00.\nCheck-out on the last day is at 12:00.\n\nInfo about the different room types can be found on the rooms page. This year we have single and two person bedrooms\n\nYou can add an extra day before and after the convention, called “early arrival” and “late departure” respectively."
+      "info": {
+        "check_in_out": "Check-in on your first day is at 16:00.\nCheck-out on the last day is at 12:00.",
+        "room_types": "Info about the different room types can be found on the rooms page. This year we have single and two person bedrooms",
+        "extra_days": "You can add an extra day before and after the convention, called “early arrival” and “late departure” respectively."
+      }
     },
     "day": {
       "title": "Day ticket",
@@ -294,7 +307,10 @@
       "title": "By car",
       "lez": "The hotel is located in the center of Brussels, which means you have to cross the LEZ (Low Emission Zone). This means that older cars, diesel cars, and other very polluting cars can’t enter the city. Registration is mandatory for all vehicles registered abroad (except for vehicles registered in The Netherlands). Not doing so can lead to big fines (350 euros). More info at",
       "parking": "The parking at the hotel is called Parking Panorama and is owned by the city. Normal price is €16, but Flüüfff attendees can go for €13 per day. Ask for the reduction at the hotel reception! Parking spots are very tiny and the parking isn’t that big!",
-      "notice": "Safe travels! Be sure to check out the driving rules of Belgium, they can be quite complicated! Good luck!\n\nUrban speed limit for Belgium is 50kph.\nRural speed limit for Flanders is 70kph.\nRural speed limit for Wallonia is 90kph."
+      "notice": {
+        "rules": "Safe travels! Be sure to check out the driving rules of Belgium, they can be quite complicated! Good luck!",
+        "speed_limits": "Urban speed limit for Belgium is 50kph.\nRural speed limit for Flanders is 70kph.\nRural speed limit for Wallonia is 90kph."
+      }
     }
   },
   "Terms": {

@@ -89,7 +89,8 @@ export default async function Tickets({ params: { locale } }: Props) {
           <div className="u-row">
             <div className="u-col-sm-5">
               <h4 id="residential-tickets">{t('residential.title')}</h4>
-              <p>{t('residential.description')}</p>
+              <p>{t('residential.description.p0')}</p>
+              <p>{t('residential.description.p1')}</p>
               <p>
                 <b>{t('residential.include')}</b>
               </p>
@@ -100,7 +101,9 @@ export default async function Tickets({ params: { locale } }: Props) {
                 <li>{t('residential.brekky')}</li>
                 <li>{t('residential.cleaning')}</li>
               </ul>
-              <p>{t('residential.info')}</p>
+              <p>{t('residential.info.check_in_out')}</p>
+              <p>{t('residential.info.room_types')}</p>
+              <p>{t('residential.info.extra_days')}</p>
             </div>
             <div className="u-col-sm-7">
               <table className="m-pricing-table u-margin-bottom-lg">

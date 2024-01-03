@@ -166,7 +166,10 @@ export default async function GettingThere({ params: { locale } }: Props) {
               <li>
                 {t('car.parking')}
                 <p>
-                  <i className="u-text-light">{t('car.notice')}</i>
+                  <i className="u-text-light">{t('car.notice.rules')}</i>
+                </p>
+                <p>
+                  <i className="u-text-light">{t('car.notice.speed_limits')}</i>
                 </p>
               </li>
             </ol>

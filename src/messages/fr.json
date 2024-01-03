@@ -42,7 +42,10 @@
       },
       "panels": {
         "title": "Conférences",
-        "description": "Flüüfff accueille diverses présentations chaque année, comme par exemple le Tea Panel ! Participez à cette présentation, doublée d'un atelier pratique, pour en savoir plus sur cette fascinante boisson que nous aimons tous. Nous vous attendons pour la prochaine présentation !\n\nVous pouvez aussi organiser votre propre présentation ou atelier à la Flüüfff, que ce soit à propos de quelque chose que vous aimez, ou quelque chose que vous connaissez bien. Vous pouvez suggérer votre présentation, atelier ou rencontre via le formulaire de suggestion de Présentation !",
+        "description": {
+          "p0": "Flüüfff accueille diverses présentations chaque année, comme par exemple le Tea Panel ! Participez à cette présentation, doublée d'un atelier pratique, pour en savoir plus sur cette fascinante boisson que nous aimons tous. Nous vous attendons pour la prochaine présentation !",
+          "p1": "Vous pouvez aussi organiser votre propre présentation ou atelier à la Flüüfff, que ce soit à propos de quelque chose que vous aimez, ou quelque chose que vous connaissez bien. Vous pouvez suggérer votre présentation, atelier ou rencontre via le formulaire de suggestion de Présentation !"
+        },
         "more_info": "En savoir plus",
         "submit_proposal": "Proposer un évènement"
       },
@@ -54,7 +57,10 @@
     },
     "welcome": {
       "title": "Bienvenue à Flüüfff",
-      "description": "C'est une convention furry, située à Bruxelles ! Une convention furry est un évènement dédié à l'anthropomorphisme et un endroit où les furries et leurs amis peuvent se rassembler.\n\nLa convention se déroule sur 5 jours, du 9 au 13 Novembre 2022. La Flüüff prend place à l'hôtel Bedford.",
+      "description": {
+        "p0": "C'est une convention furry, située à Bruxelles ! Une convention furry est un évènement dédié à l'anthropomorphisme et un endroit où les furries et leurs amis peuvent se rassembler.",
+        "p1": "La convention se déroule sur 5 jours, du 9 au 13 Novembre 2022. La Flüüff prend place à l'hôtel Bedford."
+      },
       "about_fluufff": "À propos de Flüüfff"
     }
   },
@@ -170,14 +176,21 @@
     },
     "residential": {
       "title": "Ticket résidentiel",
-      "description": "La meilleure façon de profiter à fond de la convention est de prendre un ticket résidentiel.\n\nAttention : les prix indiqués ici sont pour une place dans une chambre partagée et un accès individuel à la convention.\nRéserver une chambre entière est possible, mais à double tarif.",
+      "description": {
+        "p0": "La meilleure façon de profiter à fond de la convention est de prendre un ticket résidentiel.",
+        "p1": "Attention : les prix indiqués ici sont pour une place dans une chambre partagée et un accès individuel à la convention. Réserver une chambre entière est possible, mais à double tarif."
+      },
       "include": "Les tickets résidentiels comprennent :",
       "con_access": "Accès à l'espace de convention",
       "events_access": "Accès à tous les évènements",
       "sleeping": "Dormir à l'hôtel",
       "brekky": "Petit-déjeuner",
       "cleaning": "Nettoyage des chambres journalier",
-      "info": "Le check-in, le premier jour, se fait à 16h.\nLe check-out, le dernier jour, se fait à 12h.\n\nPlus d'informations sur les différents types de chambres peuvent être trouvées sur la page \"Chambres d'hôtel\". Cette année nous proposons des chambres solo ou pour deux personnes.\n\nVous pouvez rajouter un jour en plus avant ou après la convention, ce sont les jours en \"arrivée anticipée\" et en \"départ tardif\"."
+      "info": {
+        "check_in_out": "Le check-in, le premier jour, se fait à 16h.\nLe check-out, le dernier jour, se fait à 12h.",
+        "room_types": "Plus d'informations sur les différents types de chambres peuvent être trouvées sur la page \"Chambres d'hôtel\". Cette année nous proposons des chambres solo ou pour deux personnes.",
+        "extra_days": "Vous pouvez rajouter un jour en plus avant ou après la convention, ce sont les jours en \"arrivée anticipée\" et en \"départ tardif\"."
+      }
     },
     "day": {
       "title": "Tickets à la journée",
@@ -292,9 +305,12 @@
     },
     "car": {
       "title": "En voiture",
-      "lez": "L'hôtel est localisé dans le centre de Bruxelles, ce qui signifie que vous devez traverser la LEZ (Low Emission Zone). Les voitures âgées, les véhicules diesel et d'autres voitures très polluantes ne peuvent pas entrer en ville. Les véhicules immatriculées à l'étranger doivent être enregistrés (à l'exception des véhicules immatriculés aux Pays-Bas). Si vous ne le faites pas, vous vous exposez à une grosse amende (350 euros).\n\nPour en savoir plus, rendez-vous sur",
-      "parking": "Le parking de l'hôtel est géré par la ville. Normalement le prix est de 16€, mais les participants de la Flüüfff ont droit à un tarif de 13€ par jour.\nDemandez votre réduction à la réception de l'hôtel !\nLes emplacements de parking sont relativement petits et limités en nombre !",
-      "notice": "Bon voyage ! N'oubliez pas de vous mettre au courant du code de la route Belge, il présente quelques petites subtilités ! Bon courage !\n\nLa limite de vitesse en agglomération en Belgique est de 50 km/h.\nHors agglomération, la vitesse maximum en Flandre est de 70 km/h.\nHors agglomération, la vitesse maximum en Wallonie est de 90 km/h."
+      "lez": "L'hôtel est localisé dans le centre de Bruxelles, ce qui signifie que vous devez traverser la LEZ (Low Emission Zone). Les voitures âgées, les véhicules diesel et d'autres voitures très polluantes ne peuvent pas entrer en ville. Les véhicules immatriculées à l'étranger doivent être enregistrés (à l'exception des véhicules immatriculés aux Pays-Bas). Si vous ne le faites pas, vous vous exposez à une grosse amende (350 euros). Pour en savoir plus, rendez-vous sur",
+      "parking": "Le parking de l'hôtel est géré par la ville. Normalement le prix est de 16€, mais les participants de la Flüüfff ont droit à un tarif de 13€ par jour. Demandez votre réduction à la réception de l'hôtel ! Les emplacements de parking sont relativement petits et limités en nombre !",
+      "notice": {
+        "rules": "Bon voyage ! N'oubliez pas de vous mettre au courant du code de la route Belge, il présente quelques petites subtilités ! Bon courage !",
+        "speed_limits": "La limite de vitesse en agglomération en Belgique est de 50 km/h.\nHors agglomération, la vitesse maximum en Flandre est de 70 km/h.\nHors agglomération, la vitesse maximum en Wallonie est de 90 km/h."
+      }
     }
   },
   "Terms": {

@@ -72,7 +72,8 @@ export default async function IndexPage({
                 }}
               />
               <h3>{t('activities.panels.title')}</h3>
-              <p>{t('activities.panels.description')}</p>
+              <p>{t('activities.panels.description.p0')}</p>
+              <p>{t('activities.panels.description.p1')}</p>
               <Link
                 href="/timetable"
                 className="a-button a-button--secondary u-margin-top">
@@ -109,7 +110,8 @@ export default async function IndexPage({
           <div className="m-about">
             <div className="m-about__content">
               <h3>{t('welcome.title')}</h3>
-              <p>{t('welcome.description')}</p>
+              <p>{t('welcome.description.p0')}</p>
+              <p>{t('welcome.description.p1')}</p>
               <Link href="/about" className="a-button a-button--secondary">
                 {t('welcome.about_fluufff')}
               </Link>

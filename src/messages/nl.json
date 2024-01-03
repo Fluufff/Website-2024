@@ -42,7 +42,10 @@
       },
       "panels": {
         "title": "Panels",
-        "description": "Flüüfff organiseert elk jaar een rijke variëteit aan panels. Zo is er bijvoorbeeld ons befaamd thee panel! Doe mee aan deze informatieve en praktische panels om meer te leren over die geweldige drank waar we allemaal van houden. Daarnaast zijn we tevens op zoek naar wat jij kan bijbrengen! Je kan je eigen panel organiseren over iets wat je leuk vindt, iets waar je veel over weet, ... Je kan je voorstel voor een eigen panel indien via ons formulier!",
+        "description": {
+          "p0": "Flüüfff organiseert elk jaar een rijke variëteit aan panels. Zo is er bijvoorbeeld ons befaamd thee panel! Doe mee aan deze informatieve en praktische panels om meer te leren over die geweldige drank waar we allemaal van houden. Daarnaast zijn we tevens op zoek naar wat jij kan bijbrengen!",
+          "p1": "Je kan je eigen panel organiseren over iets wat je leuk vindt, iets waar je veel over weet, ... Je kan je voorstel voor een eigen panel indien via ons formulier!"
+        },
         "more_info": "Meer info",
         "submit_proposal": "Voorstel indienen"
       },
@@ -54,7 +57,10 @@
     },
     "welcome": {
       "title": "Welkom op Flüüfff",
-      "description": "Dit is een Belgische furry conventie gelegen in Brussel! Een furry conventie is een evenement gewijd aan antropomorfische personages en een bijeenkomst voor alle furries en hun vrienden.\n\nFlüüfff is verspreid over 5 dagen, van 9 November tot en met 13 November 2022. De conventie vindt plaats in het Bedford hotel.",
+      "description": {
+        "p0": "Dit is een Belgische furry conventie gelegen in Brussel! Een furry conventie is een evenement gewijd aan antropomorfische personages en een bijeenkomst voor alle furries en hun vrienden.",
+        "p1": "Flüüfff is verspreid over 5 dagen, van 9 November tot en met 13 November 2022. De conventie vindt plaats in het Bedford hotel."
+      },
       "about_fluufff": "Over Flüüfff"
     }
   },
@@ -170,14 +176,21 @@
     },
     "residential": {
       "title": "Residentiële ticket",
-      "description": "De beste manier om volledig te genieten van onze conventie is met een residentiële ticket.\n\nLet op dat alle gegeven prijzen voor 1 plek in een gedeelde kamer en voor 1 conventie ticket zijn. Het reserveren van een volledige kamer is mogelijk voor dubbel de prijs.",
+      "description": {
+        "p0": "De beste manier om volledig te genieten van onze conventie is met een residentiële ticket.",
+        "p1": "Let op dat alle gegeven prijzen voor 1 plek in een gedeelde kamer en voor 1 conventie ticket zijn. Het reserveren van een volledige kamer is mogelijk voor dubbel de prijs."
+      },
       "include": "Residentiële tickets bevatten:",
       "con_access": "Toegang to de conventieruimte",
       "events_access": "Toegang tot alle activiteiten",
       "sleeping": "Slapen in het hotel",
       "brekky": "Ontbijt",
       "cleaning": "Dagelijkse schoonmaak in de kamers",
-      "info": "Aanmelden op de eerste dag is vanaf 16:00.\nAfmelden op de laatste dag is om 12:00.\n\nAlle informatie over de kamers kan je terugvinden op de kamerpagina. Dit jaar bieden we één, twee, drie en vierpersoonskamers aan\n\nJe kan een extra dag toevoegen voor en na de conventie, dit is \"vroege aankomst\" en \"laat vertrek\" respectievelijk."
+      "info": {
+        "check_in_out": "Aanmelden op de eerste dag is vanaf 16:00.\nAfmelden op de laatste dag is om 12:00.",
+        "room_types": "Alle informatie over de kamers kan je terugvinden op de kamerpagina. Dit jaar bieden we één, twee, drie en vierpersoonskamers aan",
+        "extra_days": "Je kan een extra dag toevoegen voor en na de conventie, dit is \"vroege aankomst\" en \"laat vertrek\" respectievelijk."
+      }
     },
     "day": {
       "title": "Dagticket",
@@ -294,7 +307,10 @@
       "title": "Met de auto",
       "lez": "Het hotel is gelegen in hartje Brussel. Dit betekent dat je de LEZ (lage-emissiezone) zone betreedt. Voor oudere wagens, diesel en andere vervuilende wagens betekent dit dat die het centrum van Brussel niet mogen betreden. Registratie is verplicht voor alle buitenlandse voertuigen (behale die geregistreerd in Nederland). Het niet voldoen hieraan kan leiden tot een boete van 350 euro. Meer info op",
       "parking": "De hotelparking is Parking Panorama en wordt beheerd door de stad. Normaal tarief is €16, Flüüfff deelnemers mogen parkeren aan €13 per dag. Vraag aan de hotelreceptie voor de vermindering! Let op, de parkeerplaatsen zijn smal en de parking is niet groot!",
-      "notice": "Goede reis! Wees zeker om zich aan de verkeerregels van België te houden. Het kan vrij complex zijn. Success!\n\nSnelheid in de bebouwde kom is 50km/h.\nSnelheid buiten de bebouwde kom in Vlaanderen is 70km/h.\nSnelheid buiten de bebouwde kom in Wallonië is 90km/h.\nTenzij anders aangegeven."
+      "notice": {
+        "rules": "Goede reis! Wees zeker om zich aan de verkeerregels van België te houden. Het kan vrij complex zijn. Success!",
+        "speed_limits": "Snelheid in de bebouwde kom is 50km/h.\nSnelheid buiten de bebouwde kom in Vlaanderen is 70km/h.\nSnelheid buiten de bebouwde kom in Wallonië is 90km/h.\nTenzij anders aangegeven."
+      }
     }
   },
   "Terms": {
