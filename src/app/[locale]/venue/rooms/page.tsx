@@ -45,8 +45,7 @@ export default async function RoomsPage({ params: { locale } }: Props) {
         <div className="o-section__content">
           <div className="u-row">
             <div className="u-col-sm-6">
-              {/* <Image src={standardRoomImage} alt="standard room image" /> */}
-              <img src={standardRoomImage.src} alt="standard room image" />
+              <Image src={standardRoomImage} alt="standard room image" />
               <h4>{t('standard_rooms.title')}</h4>
               <p>{t('standard_rooms.description')}</p>
               <ul>
