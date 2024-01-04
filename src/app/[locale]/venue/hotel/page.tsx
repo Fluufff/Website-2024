@@ -24,7 +24,6 @@ export default async function HotelPage({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
 
   const t = await getTranslations('Hotel');
-  const tButtons = await getTranslations('general.buttons');
 
   return (
     <>
