@@ -5,6 +5,7 @@ import React from 'react';
 
 import brusselsImage from '@/assets/brussels.jpg';
 import headerImage from '@/assets/headers/hotel.jpg';
+import accentImage from '@/assets/hibiscus.png';
 import hotelImage from '@/assets/hotel-exterior.jpg';
 import restaurantImage from '@/assets/hotel-restaurant.jpg';
 import ScrollLink from '@/helpers/ScrollLink';
@@ -36,7 +37,7 @@ export default async function HotelPage({ params: { locale } }: Props) {
         </div>
       </div>
 
-      <RowSection>
+      <RowSection withAccent>
         <div className="u-col-sm-5">
           <Image src={hotelImage} alt="hotel" />
         </div>
@@ -100,10 +101,14 @@ export default async function HotelPage({ params: { locale } }: Props) {
 
 function RowSection({
   alt,
+  withAccent,
   children,
-}: React.PropsWithChildren<{ alt?: boolean }>) {
+}: React.PropsWithChildren<{ alt?: boolean; withAccent?: boolean }>) {
   return (
     <div className={classNames('o-section', { 'o-section--alt': alt })}>
+      {withAccent && (
+        <Image src={accentImage} alt="" className="o-section__accent-image" />
+      )}
       <div className="o-section__content">
         <div className="u-row">{children}</div>
       </div>

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import React from 'react';
 
+import accentImage from '@/assets/hibiscus-2.png';
 import businessRoomImage from '@/assets/rooms/business-room.jpg';
 import headerImage from '@/assets/rooms/header.jpg';
 import standardRoomImage from '@/assets/rooms/standard-room.jpg';
@@ -36,7 +37,11 @@ export default async function RoomsPage({ params: { locale } }: Props) {
         </div>
       </div>
       <div className="o-section o-section--alt">
-        {/* <img src={accentImage} className="o-section__accent-image o-section__accent-image--top" /> */}
+        <Image
+          src={accentImage}
+          alt=""
+          className="o-section__accent-image o-section__accent-image--top"
+        />
         <div className="o-section__content">
           <div className="u-row">
             <div className="u-col-sm-6">
