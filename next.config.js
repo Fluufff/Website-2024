@@ -3,7 +3,12 @@ const withNextIntl = require('next-intl/plugin')();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: process.env.STANDALONE_OUTPUT ? 'standalone' : undefined,
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    loader: 'custom',
+    loaderFile: './image-loader-noop.js',
+  },
 };
 
 module.exports = withMDX(withNextIntl(nextConfig));

@@ -18,9 +18,10 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Running (server)
+## Building
 
-(WIP; this describes deployment in a test environment)
+**This Git branch makes a few changes to build the site as a self-contained
+static export.**
 
 Check the [`.env`
 file](https://nextjs.org/docs/app/building-your-application/configuring/environment-variables).
@@ -34,15 +35,14 @@ yarn
 yarn build
 ```
 
-Run: (**TODO**: make a PM2 configuration file)
+Then, deploy the output of the `out` directory [as a static
+site](https://nextjs.org/docs/app/building-your-application/deploying/static-exports#deploying). Recommendations:
 
-```sh
-pm2 start yarn -- start -H localhost -p 8001
-```
-
-### Updating
-
-(WIP; still looking for a zero-downtime solution.)
+- Set up a redirect from `/` to `/en/`, as there is no index page at the root.
+- Ensure the server serves `/foo/index.html` for the `/foo/` path.
+- Ensure the server redirects unslashed URLs to slashed ones (e.g., `/en` ->
+  `/en/`). The URLs should be consistent in the export, so this is not
+  absolutely needed for the site to function.
 
 ### Dependencies / prerequisites
 
@@ -54,49 +54,3 @@ pm2 start yarn -- start -H localhost -p 8001
 Set up a reverse proxy to redirect to `localhost:8001` (note: the precise host
 matters, it should match what is given in the `start` command's `-H` parameter
 when running the Node.js server.)
-
-## Running in standalone mode: build then push to server (experimental)
-
-Benefit: we can build the site on a development machine, which spares the server
-some heavy lifting.
-
-The dependencies and prerequisites are the same as above.
-
-### Locally: prepare build
-
-**Warning**: Try to keep your git clone clean! In particular, beware of changes in
-`.env.local`, and run `yarn` to keep your dependencies up to date.
-
-This builds the standalone site and [puts together the
-pieces](https://nextjs.org/docs/app/api-reference/next-config-js/output) in a
-single `rsync`` command.
-
-```sh
-yarn build-standalone
-rsync -aviR .next/standalone/./ .next/static public .nvmrc user@example.org:fluufff-server
-```
-
-Then, rsync `.next/standalone/` to the server.
-
-### On the server: run
-
-**Prerequisite**: install sharp
-
-- Ensure the right Node.js version is used: go into the directory we targeted
-  with rsync, and run `nvm use`.
-- In an empty directory outside of the rsync target (which we call
-  `$SHARP_DIR`), run
-  ```sh
-  yarn add sharp@0.27.2 --ignore-engines
-  ```
-  The `--ignore-engines` parameter is needed with Yarn v1 to [install
-  sharp](https://sharp.pixelplumbing.com/install) properly.
-
-  The specific version number is [for CPU compatibility
-  reasons](https://github.com/vercel/next.js/issues/23518#issuecomment-901404801)
-
-In the rsync target directory start with `pm2` (note that the invocation is
-different from the `pm2 start yarn` method above):
-```sh
-HOSTNAME=localhost PORT=8001 NEXT_SHARP_PATH=$SHARP_DIR/node_modules/sharp pm2 start server.sh
-```
