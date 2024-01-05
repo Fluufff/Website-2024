@@ -30,6 +30,10 @@ const CanvasDispatch = dynamic(
 export default function HomepageScene() {
   return (
     <div className="o-canvas">
+      {/* In the absence of JS, CanvasDispatch does not produce a DOM node. Therefore there is no risk of double rendering. */}
+      <noscript>
+        <CanvasPrerendered />
+      </noscript>
       <CanvasDispatch />
     </div>
   );
