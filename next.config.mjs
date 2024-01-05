@@ -43,7 +43,12 @@ const rawAssetWebpackRule = {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: env.STANDALONE_OUTPUT ? 'standalone' : undefined,
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    loader: 'custom',
+    loaderFile: './image-loader-noop.js',
+  },
   assetPrefix: isProd ? env.NEXT_PUBLIC_ASSET_PREFIX || undefined : undefined,
 
   webpack: (config) => {

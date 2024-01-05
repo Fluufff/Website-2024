@@ -26,18 +26,23 @@ Some APIs may not be working. You can
 registration endpoints. Do not forget to set up `.env.development.local` to
 point to those mock endpoints.
 
-### Building for production or staging
+### Building
 
-We use Docker and GitHub Actions to build for production and staging. The build
-is a standalone Next.js build.
+Install dependencies and build the project:
 
-Refer to the [`Dockerfile`](Dockerfile) and
-[GitHub action workflows](.github/workflows/) for more details.
+```sh
+yarn
+yarn build
+```
 
-If you need to test a production build locally, you will first need to create
-the file `.env.local` to tweak the environment. You will need to set
-`NEXT_PUBLIC_ASSET_PREFIX=""` to avoid pointing to the production CDN to resolve
-local assets, which would not work.
+Then, deploy the output of the `out` directory [as a static
+site](https://nextjs.org/docs/app/building-your-application/deploying/static-exports#deploying). Recommendations:
+
+- Set up a redirect from `/` to `/en/`, as there is no index page at the root.
+- Ensure the server serves `/foo/index.html` for any `/foo/` path.
+- Ensure the server redirects unslashed URLs to slashed ones (e.g., `/en` ->
+  `/en/`). The URLs should be consistent in the export, so this is not
+  absolutely needed for the site to function.
 
 ## Messages import/export
 

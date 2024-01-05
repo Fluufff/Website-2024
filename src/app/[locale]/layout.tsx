@@ -8,6 +8,7 @@ import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
 import Footer from './Footer';
 import Menu from './Menu';
 
+import opengraphImage from '@/assets/opengraph-image.png';
 import { localeKeys } from '@/config';
 import { env } from '@/env';
 import { PropsWithLocale } from '@/helpers/localization';
@@ -29,6 +30,9 @@ export const metadata: Metadata = {
   description:
     'Belgian Furry Convention - Edition 6 - Toxic Critters - November 6-10 - Bedford Hotel, Brussels',
   // TODO: icon (high res favicons)
+  openGraph: {
+    images: [opengraphImage.src],
+  },
 };
 
 export function generateStaticParams() {
