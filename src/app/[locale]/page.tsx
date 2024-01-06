@@ -112,7 +112,9 @@ export default async function IndexPage({
               <h3>{t('welcome.title')}</h3>
               <p>{t('welcome.description.p0')}</p>
               <p>{t('welcome.description.p1')}</p>
-              <Link href="/about" className="a-button a-button--secondary">
+              <Link
+                href="/about/fluufff"
+                className="a-button a-button--secondary">
                 {t('welcome.about_fluufff')}
               </Link>
             </div>

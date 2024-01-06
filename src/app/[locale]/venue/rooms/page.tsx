@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import React from 'react';
 
@@ -8,6 +7,7 @@ import businessRoomImage from '@/assets/rooms/business-room.jpg';
 import headerImage from '@/assets/rooms/header.jpg';
 import standardRoomImage from '@/assets/rooms/standard-room.jpg';
 import { PropsWithLocale } from '@/helpers/localization';
+import { Link } from '@/helpers/navigation';
 
 type Props = PropsWithLocale;
 
