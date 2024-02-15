@@ -18,7 +18,6 @@ import { Rocks } from './components/Rocks';
 import { Rope } from './components/Rope';
 import { Sand } from './components/Sand';
 import { Water } from './components/Water';
-import { ASSET_FOLDER } from './constants';
 
 /** Sets up event listeners for manual invalidation with PresentationControls.
  *
@@ -85,7 +84,7 @@ export const BeachScene = () => {
         />
       </EffectComposer>
       <Environment
-        files={`${ASSET_FOLDER}/san_giuseppe_bridge_tiny.hdr`}
+        files={require('@/assets/3d/san_giuseppe_bridge_tiny.hdr?raw')}
         background={false}
       />
       <Sky

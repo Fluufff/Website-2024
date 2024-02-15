@@ -2,7 +2,7 @@ import { useGLTF } from '@react-three/drei';
 import React, { FC, useRef } from 'react';
 import * as THREE from 'three';
 
-import { DRACO_FOLDER, ASSET_FOLDER } from '../constants';
+import { DRACO_FOLDER } from '../constants';
 
 const material = new THREE.MeshPhysicalMaterial({
   color: '#7FC500',
@@ -22,7 +22,7 @@ const material = new THREE.MeshPhysicalMaterial({
 export const Water: FC<JSX.IntrinsicElements['group']> = (props) => {
   const group = useRef<THREE.Group>(null);
   const { nodes } = useGLTF(
-    `${ASSET_FOLDER}/water_out/water.gltf`,
+    require('@/assets/3d/water_out/water.gltf?raw'),
     DRACO_FOLDER,
   ) as any;
 

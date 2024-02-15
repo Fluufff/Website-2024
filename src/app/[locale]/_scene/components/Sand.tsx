@@ -1,13 +1,13 @@
 import { useGLTF } from '@react-three/drei';
 import React, { FC, useRef } from 'react';
 
-import { DRACO_FOLDER, ASSET_FOLDER } from '../constants';
+import { DRACO_FOLDER } from '../constants';
 
 export const Sand: FC<JSX.IntrinsicElements['group']> = (props) => {
   const group = useRef<THREE.Group>(null);
   // TODO: we previously used nodes from 2022 for some reason?
   const { nodes, materials } = useGLTF(
-    `${ASSET_FOLDER}/sand_out/sand.gltf`,
+    require(`@/assets/3d/sand_out/sand.gltf?raw`),
     DRACO_FOLDER,
   ) as any;
 

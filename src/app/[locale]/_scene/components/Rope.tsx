@@ -1,12 +1,12 @@
 import { useGLTF } from '@react-three/drei';
 import React, { FC, useRef } from 'react';
 
-import { DRACO_FOLDER, ASSET_FOLDER } from '../constants';
+import { DRACO_FOLDER } from '../constants';
 
 export const Rope: FC<JSX.IntrinsicElements['group']> = (props) => {
   const group = useRef<THREE.Group>(null);
   const { nodes, materials } = useGLTF(
-    `${ASSET_FOLDER}/rope_out/rope.gltf`,
+    require('@/assets/3d/rope_out/rope.gltf?raw'),
     DRACO_FOLDER,
   ) as any;
 
