@@ -7,7 +7,7 @@ import { defaultLocale, localeKeys } from './config';
 export default createMiddleware({
   locales: localeKeys,
   defaultLocale: defaultLocale,
-  localePrefix: 'as-needed',
+  localePrefix: 'always',
 });
 
 export const config = {
