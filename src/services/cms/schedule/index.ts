@@ -4,8 +4,9 @@ import { fetchCmsSiteData } from '../util';
 
 import { parseSchedule, Schedule } from './data';
 
-// TODO: move and assert
-const contentTypes = process.env.CMS_CONTENT_TYPE_EVENT!;
+import { env } from '@/env';
+
+const contentTypes = env.CMS_CONTENT_TYPE_EVENT!;
 
 export type { Schedule, ScheduleEvent, ScheduleLocation } from './data';
 

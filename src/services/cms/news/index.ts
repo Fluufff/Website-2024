@@ -4,8 +4,9 @@ import { fetchCmsSiteData } from '../util';
 
 import { NewsItem, parseNewsItems } from './data';
 
-// TODO: move and assert
-const contentType = process.env.CMS_CONTENT_TYPE_NEWS_ITEM!;
+import { env } from '@/env';
+
+const contentType = env.CMS_CONTENT_TYPE_NEWS_ITEM;
 
 /** Fetches and parses the news data for one given language. */
 async function getNewsForLanguage(language: string): Promise<NewsItem[]> {

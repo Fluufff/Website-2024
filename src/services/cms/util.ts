@@ -1,7 +1,9 @@
 import * as z from 'zod';
 
-const cmsRoot = process.env.CMS_API_ROOT;
-const cmsSite = process.env.CMS_SITE_ID;
+import { env } from '@/env';
+
+const cmsRoot = env.CMS_API_ROOT;
+const cmsSite = env.CMS_SITE_ID;
 
 export const contentPage = <T extends z.ZodTypeAny>(contentItem: T) =>
   z.object({
