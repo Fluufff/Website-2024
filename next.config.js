@@ -7,6 +7,8 @@ const jiti = require('jiti')(__filename);
 // important: we load this so that validation errors are raised at build time
 const { env } = jiti('./src/env.ts');
 
+const isProd = process.env.NODE_ENV === 'production';
+
 /** Webpack rule alllowing to bundle a file as-is by importing it with suffix
  * `?raw`.
  *
@@ -25,6 +27,7 @@ const rawAssetWebpackRule = {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: env.STANDALONE_OUTPUT ? 'standalone' : undefined,
+  assetPrefix: isProd ? env.ASSET_PREFIX || undefined : undefined,
 
   webpack: (config) => {
     config.module.rules.push(rawAssetWebpackRule);
