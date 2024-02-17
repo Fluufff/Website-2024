@@ -67,36 +67,45 @@ The dependencies and prerequisites are the same as above.
 **Warning**: Try to keep your git clone clean! In particular, beware of changes in
 `.env.local`, and run `yarn` to keep your dependencies up to date.
 
-This builds the standalone site and [puts together the
-pieces](https://nextjs.org/docs/app/api-reference/next-config-js/output) in a
-single `rsync`` command.
+This step builds the standalone site then uploads the different pieces of the
+build [in their right
+place](https://nextjs.org/docs/app/api-reference/next-config-js/output) in a
+single `rsync` command.
+
+Adjust `user`, `example.org` and `fluufff-server` to match the remote user name,
+SSH host, and build directory:
 
 ```sh
-yarn build-standalone
+yarn build-standalone && \
 rsync -aviR .next/standalone/./ .next/static public .nvmrc user@example.org:fluufff-server
 ```
-
-Then, rsync `.next/standalone/` to the server.
 
 ### On the server: run
 
 **Prerequisite**: install sharp
 
-- Ensure the right Node.js version is used: go into the directory we targeted
-  with rsync, and run `nvm use`.
-- In an empty directory outside of the rsync target (which we call
-  `$SHARP_DIR`), run
+- Ensure the right Node.js version is used: go into the build upload directory,
+  and run `nvm use`.
+- Create a new directory **outside** of the build upload directory, which we
+  will refer to as `$SHARP_DIR`. Run the following:
+
   ```sh
+  cd $SHARP_DIR
   yarn add sharp@0.27.2 --ignore-engines
   ```
+
   The `--ignore-engines` parameter is needed with Yarn v1 to [install
   sharp](https://sharp.pixelplumbing.com/install) properly.
 
   The specific version number is [for CPU compatibility
   reasons](https://github.com/vercel/next.js/issues/23518#issuecomment-901404801)
 
-In the rsync target directory start with `pm2` (note that the invocation is
-different from the `pm2 start yarn` method above):
+We can now start the server.
+
+In the build upload directory, spin up PM2 with the following command::
+
 ```sh
 HOSTNAME=localhost PORT=8001 NEXT_SHARP_PATH=$SHARP_DIR/node_modules/sharp pm2 start server.sh
 ```
+
+(Note that the invocation is different from the `pm2 start yarn` method above.)
