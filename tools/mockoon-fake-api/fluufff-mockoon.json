@@ -71,7 +71,7 @@
     }
   ],
   "proxyMode": true,
-  "proxyHost": "https://ibs.sh",
+  "proxyHost": "https://dcm.felikx.be",
   "proxyRemovePrefix": false,
   "tlsOptions": {
     "enabled": false,
