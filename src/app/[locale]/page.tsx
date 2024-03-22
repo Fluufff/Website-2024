@@ -50,12 +50,9 @@ export default async function IndexPage({
         <div className="o-section__content">
           <div className="m-activities">
             <div className="m-activities__item">
-              <div
-                className="m-activities__item__image"
-                style={{
-                  backgroundImage: `url(${danceImage.src})`,
-                }}
-              />
+              <div className="m-activities__item__image">
+                <Image fill alt="" src={danceImage} />
+              </div>
               <h3>{t('activities.dances.title')}</h3>
               <p>{t('activities.dances.description')}</p>
               <Link
@@ -65,12 +62,9 @@ export default async function IndexPage({
               </Link>
             </div>
             <div className="m-activities__item">
-              <div
-                className="m-activities__item__image"
-                style={{
-                  backgroundImage: `url(${panelsImage.src})`,
-                }}
-              />
+              <div className="m-activities__item__image">
+                <Image fill alt="" src={panelsImage} />
+              </div>
               <h3>{t('activities.panels.title')}</h3>
               <p>{t('activities.panels.description.p0')}</p>
               <p>{t('activities.panels.description.p1')}</p>
@@ -88,12 +82,9 @@ export default async function IndexPage({
               </a>
             </div>
             <div className="m-activities__item">
-              <div
-                className="m-activities__item__image"
-                style={{
-                  backgroundImage: `url(${showNightImage.src})`,
-                }}
-              />
+              <div className="m-activities__item__image">
+                <Image fill alt="" src={showNightImage} />
+              </div>
               <h3>{t('activities.show_night.title')}</h3>
               <p>{t('activities.show_night.description')}</p>
               <Link

@@ -1,4 +1,4 @@
-import { StaticImageData } from 'next/image';
+import { StaticImageData, getImageProps } from 'next/image';
 
 export function Header(props: {
   image: StaticImageData | undefined;
@@ -7,12 +7,16 @@ export function Header(props: {
 }) {
   const { image, title, subtitle } = props;
 
+  const { props: imageProps } = image
+    ? getImageProps({ src: image, alt: '' })
+    : { props: undefined };
+
   return (
     <div
       className="o-header"
       style={
-        image && {
-          backgroundImage: `url(${image.src})`,
+        imageProps && {
+          backgroundImage: `url(${imageProps.src})`,
         }
       }>
       <div className="u-container">

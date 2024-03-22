@@ -7,11 +7,13 @@
     width: 27%;
 
     &__image {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
       padding-bottom: 100%;
       width: 100%;
+      position: relative;
+
+      img {
+        object-fit: cover;
+      }
     }
 
     h3 {
