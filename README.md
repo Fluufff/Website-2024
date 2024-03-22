@@ -109,3 +109,18 @@ HOSTNAME=localhost PORT=8001 NEXT_SHARP_PATH=$SHARP_DIR/node_modules/sharp pm2 s
 ```
 
 (Note that the invocation is different from the `pm2 start yarn` method above.)
+
+## Messages import/export
+
+Once your dependencies are installed using `nvm` and `yarn`, run this to create
+a CSV file in the directory cotaining the JSON message files:
+
+```sh
+node tools/messages-csv.js export
+```
+
+That same CSV can be imported to JSON as follows:
+
+```sh
+node tools/messages-csv.js import
+```
