@@ -4,6 +4,7 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import logoBigImage from '@/assets/3d-logo.png';
 import headerImage from '@/assets/headers/about.jpg';
 import palmTreeImage from '@/assets/palm-tree.png';
+import { Header } from '@/components/Header';
 import { PropsWithLocale } from '@/helpers/localization';
 import { Link } from '@/helpers/navigation';
 
@@ -24,16 +25,11 @@ export default async function About({ params: { locale } }: Props) {
 
   return (
     <>
-      <div
-        className="o-header"
-        style={{
-          backgroundImage: `url(${headerImage.src})`,
-        }}>
-        <div className="u-container">
-          <h1 className="o-header__title">{t('header.title')}</h1>
-          <p className="o-header__sub-title">{t('header.subtitle')}</p>
-        </div>
-      </div>
+      <Header
+        image={headerImage}
+        title={t('header.title')}
+        subtitle={t('header.subtitle')}
+      />
       <div className="o-section o-section--alt">
         <Image src={palmTreeImage} alt="" className="o-section__accent-image" />
         <div className="o-section__content">

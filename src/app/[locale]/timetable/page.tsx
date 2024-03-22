@@ -3,6 +3,7 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import Timetable from './Timetable';
 
 import headerImage from '@/assets/headers/schedule.jpg';
+import { Header } from '@/components/Header';
 import { PropsWithLocale } from '@/helpers/localization';
 import { getSchedule } from '@/services/cms/schedule';
 
@@ -24,17 +25,11 @@ export default async function TimetablePage({ params: { locale } }: Props) {
 
   return (
     <>
-      <div
-        className="o-header"
-        style={{
-          backgroundImage: `url(${headerImage.src})`,
-        }}>
-        <div className="u-container">
-          <h1 className="o-header__title">{t('header.title')}</h1>
-          <p className="o-header__sub-title">{t('header.subtitle')}</p>
-        </div>
-      </div>
-
+      <Header
+        image={headerImage}
+        title={t('header.title')}
+        subtitle={t('header.subtitle')}
+      />
       <div className="o-section o-section--alt o-section--no-hidden">
         <div className="o-section__content">
           <Timetable events={events} locations={Object.values(locationById)} />

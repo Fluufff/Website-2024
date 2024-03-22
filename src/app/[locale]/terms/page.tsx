@@ -1,5 +1,6 @@
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
+import { Header } from '@/components/Header';
 import { PropsWithLocale } from '@/helpers/localization';
 
 type Props = PropsWithLocale;
@@ -22,12 +23,11 @@ export default async function Terms({ params: { locale } }: Props) {
 
   return (
     <>
-      <div className="o-header">
-        <div className="u-container">
-          <h1 className="o-header__title">{t('header.title')}</h1>
-          <p className="o-header__sub-title">{t('header.subtitle')}</p>
-        </div>
-      </div>
+      <Header
+        image={undefined}
+        title={t('header.title')}
+        subtitle={t('header.subtitle')}
+      />
       <div className="o-section o-section--alt">
         <div className="o-section__content u-pre-wrap-p">
           <TermsContents />

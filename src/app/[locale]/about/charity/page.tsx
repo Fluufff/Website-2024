@@ -1,6 +1,7 @@
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import headerImage from '@/assets/headers/charity.jpg';
+import { Header } from '@/components/Header';
 import { PropsWithLocale } from '@/helpers/localization';
 
 type Props = PropsWithLocale;
@@ -18,18 +19,12 @@ export default async function Charity({ params: { locale } }: Props) {
   const t = await getTranslations('Charity');
   const tGeneral = await getTranslations('general');
 
+  const title = t('header.title');
+  const subtitle = t('header.subtitle');
+
   return (
     <>
-      <div
-        className="o-header"
-        style={{
-          backgroundImage: `url(${headerImage.src})`,
-        }}>
-        <div className="u-container">
-          <h1 className="o-header__title">{t('header.title')}</h1>
-          <p className="o-header__sub-title">{t('header.subtitle')}</p>
-        </div>
-      </div>
+      <Header image={headerImage} title={title} subtitle={subtitle} />
       <div className="o-section o-section--dark">
         <div className="o-section__content">
           <div className="u-row">
