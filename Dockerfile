@@ -9,6 +9,11 @@ WORKDIR /app
 COPY package.json yarn.lock ./
 RUN --mount=type=cache,target=/root/.yarn YARN_CACHE_FOLDER=/root/.yarn yarn --frozen-lockfile
 
+# Runtime dependency for prod, which we install separately because we do not
+# want to impose it on development environments. `--ignore-engines` required to
+# get prebuilt binary in yarn v1.
+RUN --mount=type=cache,target=/root/.yarn YARN_CACHE_FOLDER=/root/.yarn yarn add 'sharp@^0.33' --ignore-engines
+
 # Rebuild the source code only when needed
 FROM base AS builder
 WORKDIR /app
