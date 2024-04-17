@@ -5,7 +5,6 @@ import React from 'react';
 
 import brusselsImage from '@/assets/brussels.jpg';
 import headerImage from '@/assets/headers/hotel.jpg';
-import accentImage from '@/assets/hibiscus.png';
 import hotelImage from '@/assets/hotel-exterior.jpg';
 import restaurantImage from '@/assets/hotel-restaurant.jpg';
 import { Header } from '@/components/Header';
@@ -103,9 +102,9 @@ function RowSection({
 }: React.PropsWithChildren<{ alt?: boolean; withAccent?: boolean }>) {
   return (
     <div className={classNames('o-section', { 'o-section--alt': alt })}>
-      {withAccent && (
+      {/* {withAccent && (
         <Image src={accentImage} alt="" className="o-section__accent-image" />
-      )}
+      )} */}
       <div className="o-section__content">
         <div className="u-row">{children}</div>
       </div>
