@@ -9,6 +9,7 @@ import logoDarkImage from '@/assets/full-logo-dark.png';
 import logoImage from '@/assets/full-logo.png';
 import { locales } from '@/config';
 import { Link, usePathname } from '@/helpers/navigation';
+import { exclude } from '@/helpers/exclude';
 
 export default function Menu() {
   const [scrolled, setScrolled] = useState(false);
@@ -57,41 +58,44 @@ export default function Menu() {
                   {t('items.home')}
                 </Link>
               </li>
-
-              <li>
-                <Link className="m-menu__link" href="/news">
-                  {t('items.news')}
-                </Link>
-              </li>
-
-              <li>
-                <div className="m-menu__sub-menu">
-                  <Link className="m-menu__link" href="/about/fluufff">
-                    {t('items.about')}
+              {exclude(
+                'news',
+                <li>
+                  <Link className="m-menu__link" href="/news">
+                    {t('items.news')}
                   </Link>
-                  <div className="m-menu__sub-menu__wrapper">
-                    <div className="m-menu__sub-menu__content">
-                      <ul>
-                        <li>
-                          <Link
-                            className="m-menu__sub-link"
-                            href="/about/fluufff">
-                            {t('items.about_fluufff')}
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="m-menu__sub-link"
-                            href="/about/charity">
-                            {t('items.charity')}
-                          </Link>
-                        </li>
-                      </ul>
+                </li>,
+              )}
+              {exclude(
+                'about',
+                <li>
+                  <div className="m-menu__sub-menu">
+                    <Link className="m-menu__link" href="/about/fluufff">
+                      {t('items.about')}
+                    </Link>
+                    <div className="m-menu__sub-menu__wrapper">
+                      <div className="m-menu__sub-menu__content">
+                        <ul>
+                          <li>
+                            <Link
+                              className="m-menu__sub-link"
+                              href="/about/fluufff">
+                              {t('items.about_fluufff')}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              className="m-menu__sub-link"
+                              href="/about/charity">
+                              {t('items.charity')}
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-
+                </li>,
+              )}
               <li>
                 <div className="m-menu__sub-menu">
                   <Link className="m-menu__link" href="/venue/hotel">
@@ -126,27 +130,32 @@ export default function Menu() {
                   </div>
                 </div>
               </li>
-
-              <li>
-                <Link className="m-menu__link" href="/timetable">
-                  {t('items.schedule')}
-                </Link>
-              </li>
-
-              <li>
-                <Link className="m-menu__link" href="/contact-us">
-                  {t('items.contact')}
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  href="/tickets"
-                  className="m-menu__link m-menu__link-button a-button a-button--small">
-                  {t('items.tickets')}
-                </Link>
-              </li>
-
+              {exclude(
+                'schedule',
+                <li>
+                  <Link className="m-menu__link" href="/timetable">
+                    {t('items.schedule')}
+                  </Link>
+                </li>,
+              )}
+              {exclude(
+                'contact-us',
+                <li>
+                  <Link className="m-menu__link" href="/contact-us">
+                    {t('items.contact')}
+                  </Link>
+                </li>,
+              )}
+              {exclude(
+                'tickets',
+                <li>
+                  <Link
+                    href="/tickets"
+                    className="m-menu__link m-menu__link-button a-button a-button--small">
+                    {t('items.tickets')}
+                  </Link>
+                </li>,
+              )}
               {/* {user ? (
                 <li>
                   <a className="m-menu__link m-menu__link-user" href="/profile">
@@ -166,7 +175,6 @@ export default function Menu() {
                   </a>
                 </li>
               )} */}
-
               <li>
                 <div className="m-menu__sub-menu m-menu__languages">
                   <a href="#" className="m-menu__link">

@@ -8,6 +8,7 @@ import standardRoomImage from '@/assets/rooms/standard-room.jpg';
 import { Header } from '@/components/Header';
 import { PropsWithLocale } from '@/helpers/localization';
 import { Link } from '@/helpers/navigation';
+import { exclude } from '@/helpers/exclude';
 
 type Props = PropsWithLocale;
 
@@ -63,9 +64,12 @@ export default async function RoomsPage({ params: { locale } }: Props) {
                 <li>{tGeneral('labels.quadruple')}</li>
                 <li>{tGeneral('labels.superior_twin')}</li>
               </ul>
-              <Link href="/tickets#standard-pricing" className="a-button">
-                {tGeneral('buttons.tickets_and_pricing')}
-              </Link>
+              {exclude(
+                'tickets',
+                <Link href="/tickets#standard-pricing" className="a-button">
+                  {tGeneral('buttons.tickets_and_pricing')}
+                </Link>,
+              )}
             </div>
             <div className="u-col-sm-6">
               <Image src={businessRoomImage} alt="business room image" />
@@ -84,9 +88,12 @@ export default async function RoomsPage({ params: { locale } }: Props) {
                 <li>{tGeneral('labels.superior_double')}</li>
                 <li>{tGeneral('labels.superior_twin')}</li>
               </ul>
-              <Link href="/tickets#business-pricing" className="a-button">
-                {tGeneral('buttons.tickets_and_pricing')}
-              </Link>
+              {exclude(
+                'tickets',
+                <Link href="/tickets#business-pricing" className="a-button">
+                  {tGeneral('buttons.tickets_and_pricing')}
+                </Link>,
+              )}
             </div>
           </div>
         </div>
