@@ -6,6 +6,7 @@ import headerImage from '@/assets/headers/schedule.jpg';
 import { Header } from '@/components/Header';
 import { PropsWithLocale } from '@/helpers/localization';
 import { getSchedule } from '@/services/cms/schedule';
+import { exclude } from '@/helpers/exclude';
 
 type Props = PropsWithLocale;
 
@@ -35,22 +36,25 @@ export default async function TimetablePage({ params: { locale } }: Props) {
           <Timetable events={events} locations={Object.values(locationById)} />
         </div>
       </div>
-      <div className="o-section o-section--dark">
-        {/* <img src={hibiscusImage} className="o-section__accent-image o-section__accent-image--alt" /> */}
-        <div className="o-section__content">
-          <div className="u-text-center">
-            <h3>{t('idea.title')}</h3>
-            <p>{t('idea.description')}</p>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfbhSAz-w9qpCFMfNFvnb9E5IjvEPtzlZHkl-TmVadYRIbMqQ/viewform"
-              target="_blank"
-              className="a-button a-button--tertiary u-margin-top"
-              rel="noreferrer">
-              {t('submit_proposal')}
-            </a>
+      {exclude(
+        'panel-form',
+        <div className="o-section o-section--dark">
+          {/* <img src={hibiscusImage} className="o-section__accent-image o-section__accent-image--alt" /> */}
+          <div className="o-section__content">
+            <div className="u-text-center">
+              <h3>{t('idea.title')}</h3>
+              <p>{t('idea.description')}</p>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfbhSAz-w9qpCFMfNFvnb9E5IjvEPtzlZHkl-TmVadYRIbMqQ/viewform"
+                target="_blank"
+                className="a-button a-button--tertiary u-margin-top"
+                rel="noreferrer">
+                {t('submit_proposal')}
+              </a>
+            </div>
           </div>
-        </div>
-      </div>
+        </div>,
+      )}
     </>
   );
 }
