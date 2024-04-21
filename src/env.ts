@@ -18,7 +18,8 @@ export const env = createEnv({
     /** beware: anything not empty is considered true */
     STANDALONE_OUTPUT: z.string().optional().pipe(z.coerce.boolean()),
 
-    CMS_API_ROOT: z.string().url(),
+    /** when left empty, simulates an empty CMS */
+    CMS_API_ROOT: stringOrEmpty.pipe(z.string().url().optional()),
     CMS_SITE_ID: z.string().nonempty(),
 
     CMS_CONTENT_TYPE_NEWS_ITEM: z.string().nonempty(),

@@ -50,3 +50,14 @@ export function fetchCmsSiteData(path: string, requestInit?: RequestInit) {
     },
   );
 }
+
+/** Wraps a function that depends on the CMS to return a fallback value if the
+ * CMS is not configured. */
+export function optionalCms<F extends (...args: any[]) => Promise<any>>(
+  fallback: Awaited<ReturnType<F>>,
+  fun: F,
+): F {
+  if (!cmsRoot) {
+    return (() => Promise.resolve(fallback)) as F;
+  } else return fun;
+}

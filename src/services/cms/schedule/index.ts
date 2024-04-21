@@ -1,6 +1,6 @@
 import * as R from 'remeda';
 
-import { fetchCmsSiteData } from '../util';
+import { fetchCmsSiteData, optionalCms } from '../util';
 
 import { parseSchedule, Schedule } from './data';
 
@@ -58,6 +58,9 @@ async function getScheduleWithFallbackLanguages(
 }
 
 /** Fetches and parses the schedule data, using English as fallback. */
-export function getSchedule(language: string): Promise<Schedule> {
-  return getScheduleWithFallbackLanguages([language, 'en']);
-}
+export const getSchedule = optionalCms(
+  { events: [], locationById: {} },
+  function getSchedule(language: string): Promise<Schedule> {
+    return getScheduleWithFallbackLanguages([language, 'en']);
+  },
+);

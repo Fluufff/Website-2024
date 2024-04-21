@@ -1,6 +1,6 @@
 import * as R from 'remeda';
 
-import { fetchCmsSiteData } from '../util';
+import { fetchCmsSiteData, optionalCms } from '../util';
 
 import { NewsItem, parseNewsItems } from './data';
 
@@ -26,15 +26,18 @@ async function getNewsForLanguage(language: string): Promise<NewsItem[]> {
  *
  * The items are returned sorted by creation date, most recent first.
  */
-export async function getNews(language: string): Promise<NewsItem[]> {
-  const itemLists = await Promise.all(
-    R.uniq([language, 'en']).map(getNewsForLanguage),
-  );
+export const getNews = optionalCms(
+  [],
+  async function getNews(language: string): Promise<NewsItem[]> {
+    const itemLists = await Promise.all(
+      R.uniq([language, 'en']).map(getNewsForLanguage),
+    );
 
-  return R.pipe(
-    itemLists,
-    R.flatten(),
-    R.uniqBy((item) => item.slug),
-    R.sortBy([(item) => item.creationDate, 'desc']),
-  );
-}
+    return R.pipe(
+      itemLists,
+      R.flatten(),
+      R.uniqBy((item) => item.slug),
+      R.sortBy([(item) => item.creationDate, 'desc']),
+    );
+  },
+);
