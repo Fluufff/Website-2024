@@ -1,0 +1,79 @@
+{
+  "uuid": "f686f430-f797-402c-aabd-df0e174e6625",
+  "lastMigration": 28,
+  "name": "Fluufff Registration",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "f86e03fe-f472-4834-a6db-00bf6a6d0a10",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "rest/state",
+      "responses": [
+        {
+          "uuid": "2d9b4ab7-3a9c-4fa1-aba1-466d29c6a155",
+          "body": "{\n  \"_links\": {\n    \"self\": {\n      \"href\": \"/rest/register/\"\n    }\n  },\n  \"_embedded\": {\n    \"state\": \"REGISTRATION_IS_CLOSE\",\n    \"preopening\": \"2019-03-21T17:30:00+00:00\",\n    \"opening\": \"2019-03-30T11:00:00+00:00\",\n    \"closing\": \"2020-11-05T22:59:00+00:00\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "f86e03fe-f472-4834-a6db-00bf6a6d0a10"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
