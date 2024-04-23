@@ -8,8 +8,8 @@ import logoImage from '@/assets/full-logo.png';
 import panelsImage from '@/assets/panels.jpg';
 import showNightImage from '@/assets/shownight.jpg';
 import ScrollLink from '@/helpers/ScrollLink';
-import { Link } from '@/helpers/navigation';
 import { exclude } from '@/helpers/exclude';
+import { Link } from '@/helpers/navigation';
 
 export default async function IndexPage({
   params: { locale },

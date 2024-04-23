@@ -7,9 +7,9 @@ import businessRoomImage from '@/assets/rooms/business-room.jpg';
 import headerImage from '@/assets/rooms/header.jpg';
 import standardRoomImage from '@/assets/rooms/standard-room.jpg';
 import { Header } from '@/components/Header';
+import { exclude } from '@/helpers/exclude';
 import { PropsWithLocale } from '@/helpers/localization';
 import { Link } from '@/helpers/navigation';
-import { exclude } from '@/helpers/exclude';
 
 type Props = PropsWithLocale;
 

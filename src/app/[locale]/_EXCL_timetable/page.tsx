@@ -4,9 +4,9 @@ import Timetable from './Timetable';
 
 import headerImage from '@/assets/headers/schedule.jpg';
 import { Header } from '@/components/Header';
+import { exclude } from '@/helpers/exclude';
 import { PropsWithLocale } from '@/helpers/localization';
 import { getSchedule } from '@/services/cms/schedule';
-import { exclude } from '@/helpers/exclude';
 
 type Props = PropsWithLocale;
 

@@ -8,8 +8,8 @@ import { useEffect, useState } from 'react';
 import logoDarkImage from '@/assets/full-logo-dark.png';
 import logoImage from '@/assets/full-logo.png';
 import { locales } from '@/config';
-import { Link, usePathname } from '@/helpers/navigation';
 import { exclude } from '@/helpers/exclude';
+import { Link, usePathname } from '@/helpers/navigation';
 
 export default function Menu() {
   const [scrolled, setScrolled] = useState(false);
