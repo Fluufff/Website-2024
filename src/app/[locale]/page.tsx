@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { Suspense } from 'react';
 
+import { RegistrationStatus } from './RegistrationStatus';
 import HomepageScene from './_scene';
 
 import danceImage from '@/assets/dance.jpg';
@@ -36,7 +38,9 @@ export default async function IndexPage({
             <p className="m-hero__subtitle">{t('hero.subtitle')}</p>
             <h2 className="m-hero__date">{t('hero.date')}</h2>
             <div className="u-margin-top">
-              {/* registration status & CTA goes here */}
+              <Suspense fallback={<p>...</p>}>
+                <RegistrationStatus locale={locale} />
+              </Suspense>
             </div>
           </div>
           <ScrollLink to="main" smooth={true} style={{ pointerEvents: 'all' }}>

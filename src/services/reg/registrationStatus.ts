@@ -39,7 +39,7 @@ const schema = z.object({
   }),
 });
 
-interface RegistrationStatus {
+export interface RegistrationStatus {
   state: RegistrationState;
   preopening: Date;
   opening: Date;
