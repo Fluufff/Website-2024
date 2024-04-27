@@ -22,7 +22,7 @@ function RegistrationStatusBody({
   switch (status.state) {
     case RegistrationState.PREREGISTRATION_IS_OPEN:
     case RegistrationState.REGISTRATION_ACCOUNT_CREATION_ONLY:
-    case RegistrationState.OPEN_FOR_STAFF:
+    case RegistrationState.REGISTRATION_IS_OPEN_STAFF:
       // from public's POV, registration is not open yet
       return (
         <>
@@ -36,7 +36,7 @@ function RegistrationStatusBody({
         </>
       );
 
-    case RegistrationState.OPEN:
+    case RegistrationState.REGISTRATION_IS_OPEN:
       // go go go!
       return (
         <>
@@ -50,8 +50,8 @@ function RegistrationStatusBody({
         </>
       );
 
-    case RegistrationState.OVER:
-    case RegistrationState.CLOSED:
+    case RegistrationState.REGISTRATION_IS_OVER:
+    case RegistrationState.REGISTRATION_IS_CLOSE:
       return (
         <>
           TODO fix copy: {}
@@ -64,8 +64,8 @@ function RegistrationStatusBody({
         </>
       );
 
-    case RegistrationState.DONE:
-    case RegistrationState.OPEN_FOR_ACCOUNTS:
+    case RegistrationState.REGISTRATION_IS_DONE:
+    case RegistrationState.REGISTRATION_ACCOUNT_OPEN:
       return status + '???';
   }
 }

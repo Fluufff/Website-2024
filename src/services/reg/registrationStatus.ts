@@ -11,12 +11,12 @@ import { env } from '@/env';
  */
 export enum RegistrationState {
   /** "the registration is open and selling tickets" */
-  OPEN = 'REGISTRATION_IS_OPEN',
+  REGISTRATION_IS_OPEN = 'REGISTRATION_IS_OPEN',
 
   /** "only registered accounts can buy tickets" */
-  OPEN_FOR_ACCOUNTS = 'REGISTRATION_ACCOUNT_OPEN',
+  REGISTRATION_ACCOUNT_OPEN = 'REGISTRATION_ACCOUNT_OPEN',
   /** "only staff with the secret link can register" */
-  OPEN_FOR_STAFF = 'REGISTRATION_IS_OPEN_STAFF',
+  REGISTRATION_IS_OPEN_STAFF = 'REGISTRATION_IS_OPEN_STAFF',
 
   /** "only accounts creation is possible" */
   PREREGISTRATION_IS_OPEN = 'PREREGISTRATION_IS_OPEN',
@@ -24,13 +24,13 @@ export enum RegistrationState {
   REGISTRATION_ACCOUNT_CREATION_ONLY = 'REGISTRATION_ACCOUNT_CREATION_ONLY',
 
   /** "registration period is over" */
-  OVER = 'REGISTRATION_IS_OVER',
+  REGISTRATION_IS_OVER = 'REGISTRATION_IS_OVER',
   /** "registration is closed (past closing time)" or
    *  "registration has been closed manually by the registration team (tickets are sold out for example)" */
-  CLOSED = 'REGISTRATION_IS_CLOSE',
+  REGISTRATION_IS_CLOSE = 'REGISTRATION_IS_CLOSE',
 
   /** "the attendee registered (if they want more, they will have to contact the registration team)" */
-  DONE = 'REGISTRATION_IS_DONE',
+  REGISTRATION_IS_DONE = 'REGISTRATION_IS_DONE',
 }
 
 const schema = z.object({
