@@ -10,6 +10,9 @@ import { env } from '@/env';
  * @see https://github.com/Fluufff/Platyplus-endpoints-documentation/issues/1
  */
 export enum RegistrationState {
+  /** (undocumented) */
+  REGISTRATION_NOT_STARTED = 'REGISTRATION_NOT_STARTED',
+
   /** "the registration is open and selling tickets" */
   REGISTRATION_IS_OPEN = 'REGISTRATION_IS_OPEN',
 

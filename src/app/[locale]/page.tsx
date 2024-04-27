@@ -39,7 +39,7 @@ export default async function IndexPage({
             <h2 className="m-hero__date">{t('hero.date')}</h2>
             <div className="u-margin-top">
               <Suspense fallback={<p>...</p>}>
-                <RegistrationStatus locale={locale} />
+                <RegistrationStatus />
               </Suspense>
             </div>
           </div>
