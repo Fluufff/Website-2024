@@ -5,7 +5,10 @@ import { ApiError } from '../ApiError';
 
 import { env } from '@/env';
 
-/** @see https://github.com/Fluufff/Platyplus-endpoints-documentation?tab=readme-ov-file#registration-stats */
+/**
+ * @see https://github.com/Fluufff/Platyplus-endpoints-documentation?tab=readme-ov-file#registration-stats
+ * @see https://github.com/Fluufff/Platyplus-endpoints-documentation/issues/1
+ */
 export enum RegistrationState {
   /** "the registration is open and selling tickets" */
   OPEN = 'REGISTRATION_IS_OPEN',
