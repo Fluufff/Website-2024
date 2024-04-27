@@ -1,16 +1,11 @@
 'use client';
 
-import useSWR from 'swr';
-
 import { RegistrationStatusBody } from './RegistrationStatusBody';
 
-import { getRegistrationStatus } from '@/services/reg/registrationStatus';
+import { useRegistrationStatus } from '@/services/reg/registrationStatus';
 
 export function RegistrationStatus() {
-  const { data, error, isLoading } = useSWR(
-    'RegistrationStatus',
-    getRegistrationStatus,
-  );
+  const { data, error, isLoading } = useRegistrationStatus();
 
   if (data) return <RegistrationStatusBody status={data} />;
   else if (error) return 'Error loading registration status...';

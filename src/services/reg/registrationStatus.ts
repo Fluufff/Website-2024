@@ -1,4 +1,5 @@
 import { cache } from 'react';
+import useSWR from 'swr';
 import * as z from 'zod';
 
 import { ApiError } from '../ApiError';
@@ -70,3 +71,8 @@ export const getRegistrationStatus = cache(
     return schema.transform(map).parse(await response.json());
   },
 );
+
+// client-side fetcher
+export function useRegistrationStatus() {
+  return useSWR('registration/state', () => getRegistrationStatus());
+}
