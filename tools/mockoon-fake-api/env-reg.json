@@ -21,7 +21,12 @@
           "latency": 0,
           "statusCode": 200,
           "label": "",
-          "headers": [],
+          "headers": [
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
           "bodyType": "INLINE",
           "filePath": "",
           "databucketID": "",

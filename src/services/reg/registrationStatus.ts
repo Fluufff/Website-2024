@@ -58,7 +58,7 @@ function map(raw: z.infer<typeof schema>): RegistrationStatus {
 
 export const getRegistrationStatus = cache(
   async function getRegistrationStatus(): Promise<RegistrationStatus> {
-    const response = await fetch(env.REG_API_ROOT + '/state', {
+    const response = await fetch(env.NEXT_PUBLIC_REG_API_ROOT + '/state', {
       // Next.js 14 only offers stale-while-revalidate caching so we disable
       // that. Otherwise we would serve stale data to the first user after the
       // response changes. Not OK at our small scale.

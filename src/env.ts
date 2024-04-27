@@ -18,9 +18,6 @@ export const env = createEnv({
     /** beware: anything not empty is considered true */
     STANDALONE_OUTPUT: z.string().optional().pipe(z.coerce.boolean()),
 
-    REG_ROOT: z.string().url(),
-    REG_API_ROOT: z.string().url(),
-
     /** when left empty, simulates an empty CMS */
     CMS_API_ROOT: stringOrEmpty.pipe(z.string().url().optional()),
     CMS_SITE_ID: z.string().nonempty(),
@@ -29,6 +26,14 @@ export const env = createEnv({
     CMS_CONTENT_TYPE_EVENT: z.string().nonempty(),
   },
 
+  client: {
+    NEXT_PUBLIC_REG_ROOT: z.string().url(),
+    NEXT_PUBLIC_REG_API_ROOT: z.string().url(),
+  },
+
   // value
-  experimental__runtimeEnv: {},
+  experimental__runtimeEnv: {
+    NEXT_PUBLIC_REG_API_ROOT: process.env.NEXT_PUBLIC_REG_API_ROOT,
+    NEXT_PUBLIC_REG_ROOT: process.env.NEXT_PUBLIC_REG_ROOT,
+  },
 });
