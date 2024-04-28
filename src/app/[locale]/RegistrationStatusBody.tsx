@@ -1,7 +1,6 @@
 'use client';
 
 import { DateTimeFormatOptions, useTranslations } from 'next-intl';
-import * as R from 'remeda';
 
 import { Link } from '@/helpers/navigation';
 import {
@@ -31,6 +30,16 @@ const formats = {
   } satisfies Record<string, DateTimeFormatOptions>,
 };
 
+function interpolations(status: RegistrationStatus) {
+  return {
+    opening: status.opening,
+    closing: status.closing,
+    pricing: (children: React.ReactNode) => (
+      <TicketsLink>{children}</TicketsLink>
+    ),
+  };
+}
+
 function TicketsLink({ children }: React.PropsWithChildren) {
   return (
     <div className="u-margin-bottom-sm">
@@ -41,54 +50,60 @@ function TicketsLink({ children }: React.PropsWithChildren) {
   );
 }
 
-const byKey = R.fromKeys(
-  // available translation keys
-  [
-    'REGISTRATION_NOT_STARTED',
-    'REGISTRATION_IS_OVER',
-    'REGISTRATION_IS_DONE',
-    'REGISTRATION_IS_CLOSE',
-    'PREREGISTRATION_IS_OPEN',
-    'REGISTRATION_IS_OPEN',
-    'REGISTRATION_ACCOUNT_OPEN',
-    'REGISTRATION_ACCOUNT_CREATION_ONLY',
-  ] as const,
-  (key) => {
-    const RegistrationStatusBody = function ({
-      status,
-    }: RegistrationStatusBodyProps) {
-      const t = useTranslations('general.registration');
-
-      return (
-        <>
-          {t.rich(
-            key,
-            {
-              opening: status.opening,
-              closing: status.closing,
-              pricing: (children) => <TicketsLink>{children}</TicketsLink>,
-            },
-            formats,
-          )}
-        </>
-      );
-    };
-    RegistrationStatusBody.displayName = 'RegistrationStatusBody_' + key;
-
-    return RegistrationStatusBody;
-  },
-);
-
-function selectComponent(state: RegistrationState) {
-  switch (state) {
-    case RegistrationState.REGISTRATION_IS_OPEN_STAFF:
-      return byKey[RegistrationState.REGISTRATION_IS_OPEN];
-    default:
-      return byKey[state];
-  }
+function mkSimple(
+  useTranslationFunction: () => (
+    k: 'body',
+    i: ReturnType<typeof interpolations>,
+    f: typeof formats,
+  ) => React.ReactNode,
+): React.FC<RegistrationStatusBodyProps> {
+  return ({ status }) =>
+    useTranslationFunction()('body', interpolations(status), formats);
 }
 
+const NotStarted = mkSimple(
+  () => useTranslations('general.registration.REGISTRATION_NOT_STARTED').rich,
+);
+const Open = mkSimple(
+  () => useTranslations('general.registration.REGISTRATION_IS_OPEN').rich,
+);
+const AccountCreationOnly = mkSimple(
+  () =>
+    useTranslations('general.registration.REGISTRATION_ACCOUNT_CREATION_ONLY')
+      .rich,
+);
+const AccountOpen = mkSimple(
+  () => useTranslations('general.registration.REGISTRATION_ACCOUNT_OPEN').rich,
+);
+const Over = mkSimple(
+  () => useTranslations('general.registration.REGISTRATION_IS_OVER').rich,
+);
+const Done = mkSimple(
+  () => useTranslations('general.registration.REGISTRATION_IS_DONE').rich,
+);
+const Close = mkSimple(
+  () => useTranslations('general.registration.REGISTRATION_IS_CLOSE').rich,
+);
+const Prereg = mkSimple(
+  () => useTranslations('general.registration.PREREGISTRATION_IS_OPEN').rich,
+);
+
+const byKey: Record<
+  RegistrationState,
+  React.ComponentType<RegistrationStatusBodyProps>
+> = {
+  [RegistrationState.REGISTRATION_NOT_STARTED]: NotStarted,
+  [RegistrationState.REGISTRATION_IS_OPEN]: Open,
+  [RegistrationState.REGISTRATION_ACCOUNT_OPEN]: AccountOpen,
+  [RegistrationState.REGISTRATION_IS_OPEN_STAFF]: Open, // same display as regular open
+  [RegistrationState.PREREGISTRATION_IS_OPEN]: Prereg,
+  [RegistrationState.REGISTRATION_ACCOUNT_CREATION_ONLY]: AccountCreationOnly,
+  [RegistrationState.REGISTRATION_IS_OVER]: Over,
+  [RegistrationState.REGISTRATION_IS_CLOSE]: Close,
+  [RegistrationState.REGISTRATION_IS_DONE]: Done,
+};
+
 export function RegistrationStatusBody(props: RegistrationStatusBodyProps) {
-  const Comp = selectComponent(props.status.state);
+  const Comp = byKey[props.status.state];
   return <Comp {...props} />;
 }
