@@ -37,7 +37,7 @@ function interpolations(status: RegistrationStatus) {
   };
 }
 
-function TicketsLink({ children }: React.PropsWithChildren) {
+function TicketsCta({ children }: React.PropsWithChildren) {
   return (
     <div className="u-margin-bottom-sm">
       <Link className="a-button a-button--big" href="/tickets">
@@ -61,6 +61,7 @@ function mkSimple(
 }
 
 function mkWithCta(
+  Cta: React.ComponentType<React.PropsWithChildren>,
   useTranslationFunction: () => (
     k: 'body' | 'button',
     i: ReturnType<typeof interpolations>,
@@ -74,9 +75,7 @@ function mkWithCta(
     return (
       <>
         <div>
-          <TicketsLink>
-            {t('button', interpolations(status), formats)}
-          </TicketsLink>
+          <Cta>{t('button', interpolations(status), formats)}</Cta>
         </div>
         <p>{t('body', interpolations(status), formats)}</p>
       </>
@@ -87,13 +86,13 @@ function mkWithCta(
 const NotStarted = mkSimple(() =>
   useTranslations('general.registration.REGISTRATION_NOT_STARTED'),
 );
-const Open = mkWithCta(() =>
+const Open = mkWithCta(TicketsCta, () =>
   useTranslations('general.registration.REGISTRATION_IS_OPEN'),
 );
 const AccountCreationOnly = mkSimple(() =>
   useTranslations('general.registration.REGISTRATION_ACCOUNT_CREATION_ONLY'),
 );
-const AccountOpen = mkWithCta(() =>
+const AccountOpen = mkWithCta(TicketsCta, () =>
   useTranslations('general.registration.REGISTRATION_ACCOUNT_OPEN'),
 );
 const Over = mkSimple(() =>
