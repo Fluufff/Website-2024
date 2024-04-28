@@ -7,8 +7,7 @@ type ExcludeReason =
   | 'tickets'
   | 'news'
   | 'schedule'
-  | 'panel-form'
-  | 'contact-us';
+  | 'panel-form';
 
 /** Utility to temporarily exclude content from the site without commenting it
  * out. */
