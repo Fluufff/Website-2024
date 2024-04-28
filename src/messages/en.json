@@ -352,6 +352,7 @@
         "body": "Tickets sales from {opening, date, registrationShort} til {closing, date, registration}."
       },
       "REGISTRATION_ACCOUNT_CREATION_ONLY": {
+        "button": "Create an account",
         "body": "Tickets sales is closed. Create an account for ticket exchange."
       }
     },

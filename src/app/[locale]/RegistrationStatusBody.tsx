@@ -2,6 +2,7 @@
 
 import { DateTimeFormatOptions, useTranslations } from 'next-intl';
 
+import { env } from '@/env';
 import { Link } from '@/helpers/navigation';
 import {
   RegistrationState,
@@ -35,6 +36,18 @@ function interpolations(status: RegistrationStatus) {
     opening: status.opening,
     closing: status.closing,
   };
+}
+
+function CreateAccountCta({ children }: React.PropsWithChildren) {
+  return (
+    <div className="u-margin-bottom-sm">
+      <Link
+        className="a-button a-button--big"
+        href={env.NEXT_PUBLIC_REG_ROOT + '/register'}>
+        {children}
+      </Link>
+    </div>
+  );
 }
 
 function TicketsCta({ children }: React.PropsWithChildren) {
@@ -89,7 +102,7 @@ const NotStarted = mkSimple(() =>
 const Open = mkWithCta(TicketsCta, () =>
   useTranslations('general.registration.REGISTRATION_IS_OPEN'),
 );
-const AccountCreationOnly = mkSimple(() =>
+const AccountCreationOnly = mkWithCta(CreateAccountCta, () =>
   useTranslations('general.registration.REGISTRATION_ACCOUNT_CREATION_ONLY'),
 );
 const AccountOpen = mkWithCta(TicketsCta, () =>
