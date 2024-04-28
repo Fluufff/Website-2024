@@ -34,9 +34,6 @@ function interpolations(status: RegistrationStatus) {
   return {
     opening: status.opening,
     closing: status.closing,
-    pricing: (children: React.ReactNode) => (
-      <TicketsLink>{children}</TicketsLink>
-    ),
   };
 }
 
@@ -57,35 +54,59 @@ function mkSimple(
     f: typeof formats,
   ) => React.ReactNode,
 ): React.FC<RegistrationStatusBodyProps> {
-  return ({ status }) =>
-    useTranslationFunction()('body', interpolations(status), formats);
+  // eslint-disable-next-line react/display-name
+  return ({ status }) => (
+    <p>{useTranslationFunction()('body', interpolations(status), formats)}</p>
+  );
 }
 
-const NotStarted = mkSimple(
-  () => useTranslations('general.registration.REGISTRATION_NOT_STARTED').rich,
+function mkWithCta(
+  useTranslationFunction: () => (
+    k: 'body' | 'button',
+    i: ReturnType<typeof interpolations>,
+    f: typeof formats,
+  ) => React.ReactNode,
+): React.FC<RegistrationStatusBodyProps> {
+  // eslint-disable-next-line react/display-name
+  return ({ status }) => {
+    const t = useTranslationFunction();
+
+    return (
+      <>
+        <div>
+          <TicketsLink>
+            {t('button', interpolations(status), formats)}
+          </TicketsLink>
+        </div>
+        <p>{t('body', interpolations(status), formats)}</p>
+      </>
+    );
+  };
+}
+
+const NotStarted = mkSimple(() =>
+  useTranslations('general.registration.REGISTRATION_NOT_STARTED'),
 );
-const Open = mkSimple(
-  () => useTranslations('general.registration.REGISTRATION_IS_OPEN').rich,
+const Open = mkWithCta(() =>
+  useTranslations('general.registration.REGISTRATION_IS_OPEN'),
 );
-const AccountCreationOnly = mkSimple(
-  () =>
-    useTranslations('general.registration.REGISTRATION_ACCOUNT_CREATION_ONLY')
-      .rich,
+const AccountCreationOnly = mkSimple(() =>
+  useTranslations('general.registration.REGISTRATION_ACCOUNT_CREATION_ONLY'),
 );
-const AccountOpen = mkSimple(
-  () => useTranslations('general.registration.REGISTRATION_ACCOUNT_OPEN').rich,
+const AccountOpen = mkWithCta(() =>
+  useTranslations('general.registration.REGISTRATION_ACCOUNT_OPEN'),
 );
-const Over = mkSimple(
-  () => useTranslations('general.registration.REGISTRATION_IS_OVER').rich,
+const Over = mkSimple(() =>
+  useTranslations('general.registration.REGISTRATION_IS_OVER'),
 );
-const Done = mkSimple(
-  () => useTranslations('general.registration.REGISTRATION_IS_DONE').rich,
+const Done = mkSimple(() =>
+  useTranslations('general.registration.REGISTRATION_IS_DONE'),
 );
-const Close = mkSimple(
-  () => useTranslations('general.registration.REGISTRATION_IS_CLOSE').rich,
+const Close = mkSimple(() =>
+  useTranslations('general.registration.REGISTRATION_IS_CLOSE'),
 );
-const Prereg = mkSimple(
-  () => useTranslations('general.registration.PREREGISTRATION_IS_OPEN').rich,
+const Prereg = mkSimple(() =>
+  useTranslations('general.registration.PREREGISTRATION_IS_OPEN'),
 );
 
 const byKey: Record<

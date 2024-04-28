@@ -344,10 +344,12 @@
         "body": "Create an account before registration opens. Tickets sales from {opening, date, registrationShort} til {closing, date, registration}."
       },
       "REGISTRATION_IS_OPEN": {
-        "body": "<pricing>Buy your ticket</pricing> Tickets sales from {opening, date, registrationShort} til {closing, date, registration}."
+        "button": "Buy your ticket",
+        "body": "Tickets sales from {opening, date, registrationShort} til {closing, date, registration}."
       },
       "REGISTRATION_ACCOUNT_OPEN": {
-        "body": "<pricing>Buy your ticket (existing accounts only)</pricing> Tickets sales from {opening, date, registrationShort} til {closing, date, registration}."
+        "button": "Buy your ticket (existing accounts only)",
+        "body": "Tickets sales from {opening, date, registrationShort} til {closing, date, registration}."
       },
       "REGISTRATION_ACCOUNT_CREATION_ONLY": {
         "body": "Tickets sales is closed. Create an account for ticket exchange."
