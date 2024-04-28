@@ -33,7 +33,7 @@ export default async function Contact({ params: { locale } }: Props) {
           <h3>{t('question.title')}</h3>
           <p>{t('question.description')}</p>
 
-          <div className="m-closed-frame m-closed-frame--tall">
+          <div className="m-registration-frame m-registration-frame--tall">
             The contact form for this edition has been closed.
           </div>
           {/* <iframe
