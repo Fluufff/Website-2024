@@ -19,7 +19,7 @@ const isClosed: Partial<Record<RegistrationState, true>> = {
 export function TicketsFrame() {
   const { data, isLoading, error } = useRegistrationStatus();
 
-  const iframeHeightProps = useIframeAutoHeightProps();
+  const iframeHeightProps = useIframeAutoHeightProps(500);
 
   if (isLoading || error || !data)
     return (
