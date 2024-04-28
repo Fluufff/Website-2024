@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
+import { TicketsFrame } from './TicketsFrame';
+
 import headerImage from '@/assets/headers/tickets.png';
 import palmTreeImage from '@/assets/palm-tree.png';
 import { Header } from '@/components/Header';
@@ -57,29 +59,7 @@ export default async function Tickets({ params: { locale } }: Props) {
       </div>
       <div className="o-section">
         <div className="o-section__content">
-          <div className="m-registration-frame">
-            <div className="m-registration-frame__placeholder">
-              The registration form for this edition has been closed.
-            </div>
-            {/* <iframe
-            className="tickets-iframe"
-            frameBorder="0"
-            scrolling="yes"
-            title="Registration"
-            width="100%"
-            height={iFrameHeight + 'px'}
-            onLoad={() => {
-              // eslint-disable-next-line react/no-find-dom-node
-              const object: HTMLIFrameElement = document.querySelector(
-                '.tickets-iframe',
-              )! as HTMLIFrameElement;
-              setIFrameHeight(
-                object?.contentWindow?.document.body.scrollHeight || 0,
-              );
-            }}
-            src="/register?iframe"
-          /> */}
-          </div>
+          <TicketsFrame />
         </div>
       </div>
       <div className="o-section o-section--alt">
