@@ -58,9 +58,10 @@ export default async function Tickets({ params: { locale } }: Props) {
       <div className="o-section">
         <div className="o-section__content">
           <div className="m-registration-frame">
-            The registration form for this edition has been closed.
-          </div>
-          {/* <iframe
+            <div className="m-registration-frame__placeholder">
+              The registration form for this edition has been closed.
+            </div>
+            {/* <iframe
             className="tickets-iframe"
             frameBorder="0"
             scrolling="yes"
@@ -78,6 +79,7 @@ export default async function Tickets({ params: { locale } }: Props) {
             }}
             src="/register?iframe"
           /> */}
+          </div>
         </div>
       </div>
       <div className="o-section o-section--alt">
