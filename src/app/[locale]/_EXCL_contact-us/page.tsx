@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
+import { ContactFrame } from './ContactFrame';
+
 import headerImage from '@/assets/headers/contact.jpg';
 import accentImage from '@/assets/hibiscus.png';
 import { Header } from '@/components/Header';
@@ -33,29 +35,7 @@ export default async function Contact({ params: { locale } }: Props) {
           <h3>{t('question.title')}</h3>
           <p>{t('question.description')}</p>
 
-          <div className="m-registration-frame">
-            <div className="m-registration-frame__placeholder m-registration-frame__placeholder--tall">
-              The contact form for this edition has been closed.
-            </div>
-            {/* <iframe
-            className="tickets-iframe"
-            frameBorder="0"
-            scrolling="yes"
-            title="Registration"
-            width="100%"
-            height={iFrameHeight + 'px'}
-            onLoad={() => {
-              // eslint-disable-next-line react/no-find-dom-node
-              const object: HTMLIFrameElement = document.querySelector(
-                '.tickets-iframe',
-              )! as HTMLIFrameElement;
-              setIFrameHeight(
-                object?.contentWindow?.document.body.scrollHeight || 0,
-              );
-            }}
-            src="/contact?iframe"
-          /> */}
-          </div>
+          <ContactFrame />
         </div>
       </div>
     </>
