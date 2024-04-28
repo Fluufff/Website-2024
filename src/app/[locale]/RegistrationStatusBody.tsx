@@ -16,7 +16,6 @@ interface RegistrationStatusBodyProps {
 const formats = {
   dateTime: {
     registration: {
-      weekday: 'long',
       day: 'numeric',
       month: 'long',
       hour: 'numeric',
@@ -24,7 +23,6 @@ const formats = {
       timeZoneName: 'short',
     },
     registrationShort: {
-      weekday: 'long',
       day: 'numeric',
       month: 'long',
     },
