@@ -1,7 +1,6 @@
 'use client';
 
-import { useState } from 'react';
-
+import { useIframeAutoHeightProps } from '../../../helpers/useIframeAutoHeightProps';
 import { RegistrationStatusBody } from '../RegistrationStatusBody';
 
 import { env } from '@/env';
@@ -20,7 +19,7 @@ const isClosed: Partial<Record<RegistrationState, true>> = {
 export function TicketsFrame() {
   const { data, isLoading, error } = useRegistrationStatus();
 
-  const [iframeHeight, setIframeHeight] = useState<number>();
+  const iframeHeightProps = useIframeAutoHeightProps();
 
   if (isLoading || error || !data)
     return (
@@ -44,13 +43,8 @@ export function TicketsFrame() {
         <iframe
           title="Registration"
           width="100%"
-          height={iframeHeight ? `${iframeHeight}px` : undefined}
-          onLoad={(e) => {
-            setIframeHeight(
-              e.currentTarget.contentWindow?.document.body.scrollHeight ?? 0,
-            );
-          }}
           src={env.NEXT_PUBLIC_REG_ROOT + '/register?iframe'}
+          {...iframeHeightProps}
         />
       </div>
     );
