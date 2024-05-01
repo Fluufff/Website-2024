@@ -47,7 +47,7 @@ export default async function TimetablePage({ params: { locale } }: Props) {
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfbhSAz-w9qpCFMfNFvnb9E5IjvEPtzlZHkl-TmVadYRIbMqQ/viewform"
                 target="_blank"
-                className="a-button a-button--tertiary u-margin-top"
+                className="a-button a-button--tertiary a-button--big u-margin-top"
                 rel="noreferrer">
                 {t('submit_proposal')}
               </a>

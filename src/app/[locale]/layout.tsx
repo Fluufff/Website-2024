@@ -9,7 +9,7 @@ import Menu from './Menu';
 
 import { localeKeys } from '@/config';
 import { PropsWithLocale } from '@/helpers/localization';
-import { pineapple, readexPro } from '@/styles/fonts';
+import { creepster, readexPro } from '@/styles/fonts';
 
 type Props = PropsWithLocale<{
   children: React.ReactNode;
@@ -39,7 +39,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className={[readexPro.variable, pineapple.variable].join(' ')}>
+      <body className={[readexPro.variable, creepster.variable].join(' ')}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Menu />
           {children}

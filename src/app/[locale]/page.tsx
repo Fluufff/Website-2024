@@ -80,7 +80,7 @@ export default async function IndexPage({
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfbhSAz-w9qpCFMfNFvnb9E5IjvEPtzlZHkl-TmVadYRIbMqQ/viewform"
                   target="_blank"
-                  className="a-button a-button--tertiary u-margin-top u-margin-left-xs"
+                  className="a-button a-button--primary u-margin-top u-margin-left-xs"
                   rel="noreferrer">
                   {t('activities.panels.submit_proposal')}
                 </a>,

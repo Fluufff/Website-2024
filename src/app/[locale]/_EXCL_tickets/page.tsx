@@ -1,10 +1,9 @@
-import Image from 'next/image';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import { TicketsFrame } from './TicketsFrame';
 
 import headerImage from '@/assets/headers/tickets.png';
-import palmTreeImage from '@/assets/palm-tree.png';
+// import palmTreeImage from '@/assets/palm-tree.png';
 import { Header } from '@/components/Header';
 import ScrollLink from '@/helpers/ScrollLink';
 import { PropsWithLocale } from '@/helpers/localization';
@@ -33,7 +32,7 @@ export default async function Tickets({ params: { locale } }: Props) {
         subtitle={t('header.subtitle')}
       />
       <div className="o-section o-section--alt">
-        <Image src={palmTreeImage} alt="" className="o-section__accent-image" />
+        {/* <Image src={palmTreeImage} alt="" className="o-section__accent-image" /> */}
         <div className="o-section__content">
           <h3 className="u-text-center u-margin-bottom">
             {t('tickets.title')}

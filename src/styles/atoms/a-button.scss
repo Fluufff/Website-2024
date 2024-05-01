@@ -19,8 +19,8 @@
   }
 
   &--big {
-    padding: $spacer $spacer-medium;
-    font-size: 1rem;
+    padding: $spacer-x-small $spacer-medium;
+    font-size: 1.5rem;
   }
 
   &--transparent {
@@ -31,5 +31,18 @@
   &--secondary {
     background-color: $secondary;
     border: 3px solid $secondary;
+  }
+
+  &--tertiary {
+    font-family: var(--font-family-creepster);
+    background-color: $tertiary;
+    border: 3px solid $tertiary;
+    color: $grey-darker;
+
+    &:hover {
+      background-color: darken($tertiary, 15);
+      border-color: darken($tertiary, 15);
+      color: $grey-darkest;
+    }
   }
 }
