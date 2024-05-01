@@ -196,6 +196,7 @@
     "day": {
       "title": "Day ticket",
       "description": "Do you want to experience our fluffy event but have no need for accommodation? We have just the thing for you! We offer convention tickets for any given day, the full event, or weekend tickets.",
+      "sales_open_later": "<b>Note:</b> Day tickets sales will open in the summer.",
       "include": "Day tickets include:",
       "con_access": "Con area access",
       "events_on_chosen_day": "Access to all events of the chosen day(s)",

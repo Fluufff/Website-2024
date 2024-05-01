@@ -233,6 +233,13 @@ export default async function Tickets({ params: { locale } }: Props) {
                   </tr>
                 </tbody>
               </table>
+              <div>
+                <p>
+                  {t.rich('day.sales_open_later', {
+                    b: (x) => <strong>{x}</strong>,
+                  })}
+                </p>
+              </div>
             </div>
           </div>
           <hr />
