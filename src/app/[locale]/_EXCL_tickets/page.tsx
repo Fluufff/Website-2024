@@ -68,6 +68,7 @@ export default async function Tickets({ params: { locale } }: Props) {
               <h4 id="residential-tickets">{t('residential.title')}</h4>
               <p>{t('residential.description.p0')}</p>
               <p>{t('residential.description.p1')}</p>
+              <p>{t('residential.description.p2')}</p>
               <p>
                 <b>{t('residential.include')}</b>
               </p>

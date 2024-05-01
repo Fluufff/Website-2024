@@ -26,10 +26,10 @@
   },
   "Index": {
     "hero": {
-      "title": "Tropical Trouble",
+      "title": "Toxic Critters",
       "subtitle": "Faites une croix dans votre calendrier !",
       "description": {
-        "p0": "Pour la 5e édition de la convention furry Belge, notre équipe est heureuse de vous accueillir sur notre île de fête et de gaité, le Bedford Hotel & Congress Center à Bruxelles.",
+        "p0": "Pour la 6e édition de la convention furry Belge, notre équipe est heureuse de vous accueillir sur notre île de fête et de gaité, le Bedford Hotel & Congress Center à Bruxelles.",
         "p1": "Ce n'est pas parce que nous nous sommes échoués sur une plage que la fête va s'arrêter. Ramassez vos tongs, les bouteilles envoyées par les vagues et allons danser jusqu'à plus soif."
       },
       "date": "6-10 Novembre 2024"
@@ -59,7 +59,7 @@
       "title": "Bienvenue à Flüüfff",
       "description": {
         "p0": "C'est une convention furry, située à Bruxelles ! Une convention furry est un évènement dédié à l'anthropomorphisme et un endroit où les furries et leurs amis peuvent se rassembler.",
-        "p1": "La convention se déroule sur 5 jours, du 6 au 10 Novembre 2024. La Flüüff prend place à l'hôtel Bedford."
+        "p1": "La convention se déroule sur 5 jours, du 9 au 13 Novembre 2024. La Flüüff prend place à l'hôtel Bedford."
       },
       "about_fluufff": "À propos de Flüüfff"
     }
@@ -77,7 +77,7 @@
     },
     "about": {
       "description": {
-        "p0_fluufff": "Flüüfff 2022 est la cinquième édition de la convention Flüüfff. Son but est de rassembler en un même endroit les furries et leurs amis pour partager un moment de camaraderie, d'amusement et de créativité (des valeurs dont notre communauté peut être fière). Mais vous n'avez pas besoin d'être un furry pour venir faire la fête avec nous!",
+        "p0_fluufff": "Flüüfff 2024 est la cinquième édition de la convention Flüüfff. Son but est de rassembler en un même endroit les furries et leurs amis pour partager un moment de camaraderie, d'amusement et de créativité (des valeurs dont notre communauté peut être fière). Mais vous n'avez pas besoin d'être un furry pour venir faire la fête avec nous!",
         "p1_contents": "La convention se déroule sur 5 jours. Diverses activités ont lieu : une piste de dance, un coin lounge, des jeux vidéos, des conférences, et bien d'autres choses à faire. Peu de place est laissée à l'ennui."
       },
       "title": "Flüüfff"
@@ -95,7 +95,7 @@
     },
     "help": {
       "description": "Bien sûr ! Contactez-nous par email via le formulaire de contact et nous jetterons un œil à votre candidature. Sinon, sachez que le meilleur moyen de supporter la Flüüfff est d'y venir !",
-      "title": "Puis-je vous aider durant la Flüüfff 2022"
+      "title": "Puis-je vous aider durant la Flüüfff 2024"
     },
     "npo": {
       "address": "Flüüfff, ASBL Rue Félicien Rops, 35B, boîte 01 1070, Anderlecht Belgium",
@@ -178,7 +178,8 @@
       "title": "Ticket résidentiel",
       "description": {
         "p0": "La meilleure façon de profiter à fond de la convention est de prendre un ticket résidentiel.",
-        "p1": "Attention : les prix indiqués ici sont pour une place dans une chambre partagée et un accès individuel à la convention. Réserver une chambre entière est possible, mais à double tarif."
+        "p1": "Attention : les prix indiqués ici sont pour une place dans une chambre partagée et un accès individuel à la convention. Réserver une chambre entière est possible, mais à double tarif.",
+        "p2": ""
       },
       "include": "Les tickets résidentiels comprennent :",
       "con_access": "Accès à l'espace de convention",

@@ -26,10 +26,10 @@
   },
   "Index": {
     "hero": {
-      "title": "Tropical Trouble",
+      "title": "Toxic Critters",
       "subtitle": "Hou de datum vrij!",
       "description": {
-        "p0": "Voor de 5e Editie van de Belgische furry conventie zou ons team het geweldig vinden om je uit te nodigen op ons vrolijke eiland vol verrassingen in het Bedford Hotel & Congress Center in Brussel.",
+        "p0": "Voor de 6e Editie van de Belgische furry conventie zou ons team het geweldig vinden om je uit te nodigen op ons vrolijke eiland vol verrassingen in het Bedford Hotel & Congress Center in Brussel.",
         "p1": "Gestrand zijn op een eiland zal dit feestje niet stoppen. Laten we onze slippers en drankjes die aangespoeld zijn meenemen en dansen tot we er bij neervallen."
       },
       "date": "van 6 tot en met 10 November, 2024"
@@ -59,7 +59,7 @@
       "title": "Welkom op Flüüfff",
       "description": {
         "p0": "Dit is een Belgische furry conventie gelegen in Brussel! Een furry conventie is een evenement gewijd aan antropomorfische personages en een bijeenkomst voor alle furries en hun vrienden.",
-        "p1": "Flüüfff is verspreid over 5 dagen, van 6 November tot en met 10 November 2024. De conventie vindt plaats in het Bedford hotel."
+        "p1": "Flüüfff is verspreid over 5 dagen, van 9 November tot en met 13 November 2024. De conventie vindt plaats in het Bedford hotel."
       },
       "about_fluufff": "Over Flüüfff"
     }
@@ -77,7 +77,7 @@
     },
     "about": {
       "description": {
-        "p0_fluufff": "Flüüfff 2022 is de 5e editie van de Flüüfff conventie. Het gaat allemaal over het samenbrengen van furries op een plek om vriendschap, plezier en creativiteit te delen (Alle waarden waar onze gemeenschap trots op kan zijn). Je hoeft geen furry te zijn om met ons mee te kunnen feesten!",
+        "p0_fluufff": "Flüüfff 2024 is de 6e editie van de Flüüfff conventie. Het gaat allemaal over het samenbrengen van furries op een plek om vriendschap, plezier en creativiteit te delen (Alle waarden waar onze gemeenschap trots op kan zijn). Je hoeft geen furry te zijn om met ons mee te kunnen feesten!",
         "p1_contents": "De conventie duurt 5 dagen en kan beleefd worden op verschillende manieren: Dansen als een feestbeest, hangen in de lounge, videogames spelen, panels bezoeken of doe mee aan één van onze aanraders."
       },
       "title": "Flüüfff"
@@ -95,7 +95,7 @@
     },
     "help": {
       "description": "Natuurlijk! Je kan ons altijd bereiken via mail of via het contact formulier en dan zullen we ons hierin verdiepen, Maar de beste manier om ons te steunen is door aanwezig te zijn!",
-      "title": "Kan ik helpen tijdens Flüüfff 2022?"
+      "title": "Kan ik helpen tijdens Flüüfff 2024?"
     },
     "npo": {
       "address": "Flüüfff, ASBL Félicien Ropsstraat, 35B, bus 01 1070, Anderlecht België",
@@ -178,7 +178,8 @@
       "title": "Residentiële ticket",
       "description": {
         "p0": "De beste manier om volledig te genieten van onze conventie is met een residentiële ticket.",
-        "p1": "Let op dat alle gegeven prijzen voor 1 plek in een gedeelde kamer en voor 1 conventie ticket zijn. Het reserveren van een volledige kamer is mogelijk voor dubbel de prijs."
+        "p1": "Let op dat alle gegeven prijzen voor 1 plek in een gedeelde kamer en voor 1 conventie ticket zijn. Het reserveren van een volledige kamer is mogelijk voor dubbel de prijs.",
+        "p2": ""
       },
       "include": "Residentiële tickets bevatten:",
       "con_access": "Toegang to de conventieruimte",

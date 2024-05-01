@@ -26,10 +26,10 @@
   },
   "Index": {
     "hero": {
-      "title": "Tropical Trouble",
+      "title": "Toxic Critters",
       "subtitle": "Save the date!",
       "description": {
-        "p0": "For the 5th edition of Belgium’s furry convention, our team would love to invite you to our island of happiness and surprises at the Bedford Hotel & Congress Center in Brussels.",
+        "p0": "For the 6th edition of Belgium’s furry convention, our team would love to invite you to our island of happiness and surprises at the Bedford Hotel & Congress Center in Brussels.",
         "p1": "Being stranded on an island is not what is going to end the party. Let's grab our flipflops and the bottles that washed ashore and let's dance like there were no tomorrow."
       },
       "date": "6th-10th November, 2024"
@@ -43,15 +43,15 @@
       "panels": {
         "title": "Panels",
         "description": {
-          "p0": "Flüüfff hosts a number of panels every year, like the tea panel! Join this informative and practical panel to learn more about this amazing drink we all love.",
-          "p1": "In addition to the tea panel, we are looking for you! You can host your own panel at Flüüfff, be it about something you like, or something you know a lot about. You can suggest a panel or a meet through the panel proposal form!"
+          "p0": "Each year Flüüfff organises a variety of panels ranging from more serious informative ones such as the Furry Femme panel to more fun ones such as the Coffee panel!",
+          "p1": "Of course a con is nothing without its attendees and they have shown interest in hosting their own panels too. Do you have some creative panels/activities in mind or do you want to share your enthusiasm about something you love or know a lot about? Make sure to submit your idea through the panel proposal form (as many did before you)!"
         },
         "more_info": "More info",
         "submit_proposal": "Submit proposal"
       },
       "show_night": {
         "title": "Show night",
-        "description": "What would a party on a dream island be without a show night? Flüüfff hosts this special night filled with entertaining acts and performances made by, and for attendees. Are you ready to show your talent in singing, dancing or just making jokes on the big Flüüfff stage?",
+        "description": "With all this toxicity going on, we should lighten the mood... with a Show Night! Want to show off your skills, bring some magic to the stage and/or put up a (comedy) show? If you want to host an act or performance, alone or with some friends, make sure to let us know by filling out our Show Night form!",
         "view_more": "View more"
       }
     },
@@ -77,7 +77,7 @@
     },
     "about": {
       "description": {
-        "p0_fluufff": "Flüüfff 2022 is the 5th edition of the Flüüfff convention. It is all about bringing furries together in one place to share friendship, fun, and creativity (values our community can be proud of). You don‘t have to be a furry to come party with us!",
+        "p0_fluufff": "Flüüfff 2024 is the 6th edition of the Flüüfff convention. It is all about bringing furries together in one place to share friendship, fun, and creativity (values our community can be proud of). You don‘t have to be a furry to come party with us!",
         "p1_contents": "The convention lasts 5 days and can be enjoyed in many ways: dancing like a party animal, lounging, playing video-games and board-games, attend panels or participate in one of the proposed activities."
       },
       "title": "Flüüfff"
@@ -95,7 +95,7 @@
     },
     "help": {
       "description": "Of course! You can contact us by email through our contact form and we’ll look into it, but the best way to support the Flüüfff is simply to attend it!",
-      "title": "Can I help with Flüüfff 2022?"
+      "title": "Can I help with Flüüfff 2024?"
     },
     "npo": {
       "address": "Flüüfff, ASBL Rue Félicien Rops, 35B, boîte 01 1070, Anderlecht Belgium",
@@ -178,7 +178,8 @@
       "title": "Residential ticket",
       "description": {
         "p0": "The best way to enjoy the convention to its full potential is with a residential ticket!",
-        "p1": "Please note that all prices listed here are for ONE spot in a shared bedroom and ONE convention spot. Reserving an entire room is possible, but at double price."
+        "p1": "Please note that all prices listed here are for ONE spot in a shared bedroom and ONE convention spot. Reserving an entire room is possible, but at double price.",
+        "p2": "Due to limited availability, the Triple (3 person) and Quadruple (4 person) bedrooms are only available to be reserved as the FULL bedroom, including all convention fees."
       },
       "include": "Residential tickets include:",
       "con_access": "Con area access",
@@ -204,7 +205,7 @@
       "title": "Extras",
       "description": "Do you like our event and want to support Flüüfff to ensure we can keep on improving your experience in the future? Consider becoming a sponsor!",
       "includes": "The sponsor pack includes:",
-      "t_shirt": "Con t-shirt",
+      "t_shirt": "Convention t-shirt",
       "custom_badge_art": "Custom badge art",
       "custom_lanyard": "Custom lanyard",
       "bonus_goodies": "Some bonus goodies",
