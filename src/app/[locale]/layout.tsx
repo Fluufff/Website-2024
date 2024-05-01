@@ -1,6 +1,7 @@
 import '@/styles/main.scss';
 
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
 
@@ -8,6 +9,7 @@ import Footer from './Footer';
 import Menu from './Menu';
 
 import { localeKeys } from '@/config';
+import { env } from '@/env';
 import { PropsWithLocale } from '@/helpers/localization';
 import { creepster, readexPro } from '@/styles/fonts';
 
@@ -29,6 +31,12 @@ export function generateStaticParams() {
   return localeKeys.map((locale) => ({ locale }));
 }
 
+const trackingDomain = {
+  development: 'localhost',
+  staging: 'test.fluufff.org',
+  production: 'fluufff.org',
+}[env.APP_ENV];
+
 export default async function RootLayout({
   children,
   params: { locale },
@@ -45,6 +53,13 @@ export default async function RootLayout({
           {children}
           <Footer locale={locale} />
         </NextIntlClientProvider>
+
+        {trackingDomain && (
+          <Script
+            data-domain={trackingDomain}
+            src="https://tracker.fluufff.org/js/script.js"
+          />
+        )}
       </body>
     </html>
   );
