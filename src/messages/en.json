@@ -252,14 +252,6 @@
     }
   },
   "Rooms": {
-    "business_rooms": {
-      "description": "Business Rooms are available as Double or Twin for 1 or 2 people and offer guests additional benefits:",
-      "everything_in_standard": "Everything mentioned in Standard Rooms",
-      "extra_living_space": "Extra living space",
-      "seating_area": "Seating area with leather armchairs or a sofa bed",
-      "title": "Business rooms",
-      "wooden_desk": "Long wooden desk"
-    },
     "header": {
       "title": "The Rooms",
       "subtitle": "Check out these cool rooms!"
@@ -274,10 +266,8 @@
       "free_luggage_storage": "Free luggage storage",
       "hairdryer": "Hairdryer",
       "inroom_safe": "In-room safe",
-      "mini_fridge": "Mini-fridge",
       "soft_duvets": "Comfortable beds with white soft duvets"
     },
-    "superior_hint": "Superior room types have the same comfort but are larger in size",
     "variants": "Variants"
   },
   "GettingThere": {
@@ -362,25 +352,23 @@
       "here": "here",
       "quadruple": "Quadruple",
       "single": "Single",
-      "superior_double": "Superior double",
-      "superior_twin": "Superior twin",
       "triple": "Triple",
       "twin": "Twin",
       "1_day": "1 day",
       "5_days": "5 days",
-      "business_room": "Business room",
+      "weekend": "Weekend",
+      "full_con": "Full Con",
       "to": "to",
       "early_arrival": "Early arrival",
       "item": "Item",
       "late_departure": "Late departure",
       "parking_ticket": "Parking ticket",
       "per_person": "/ person",
+      "per_room": "/ room",
       "plus_1_day": "+1 day",
       "price": "Price",
       "sponsor_pack": "Sponsor pack",
       "standard_room": "Standard room",
-      "superior_business_room": "Superior Business room",
-      "superior_standard_room": "Superior Standard room",
       "t_shirt": "T-shirt",
       "wednesday_short": "Wed",
       "thursday_short": "Thu",

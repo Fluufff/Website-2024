@@ -118,9 +118,9 @@ export default async function Tickets({ params: { locale } }: Props) {
                         {tLabels('per_person')}
                       </small>
                     </td>
-                    <td className="m-pricing-table__price">€ 74.50</td>
-                    <td className="m-pricing-table__price">€ 410.00</td>
-                    <td className="m-pricing-table__price">€ 74.50</td>
+                    <td className="m-pricing-table__price">€ 99.25</td>
+                    <td className="m-pricing-table__price">€ 537.00</td>
+                    <td className="m-pricing-table__price">€ 99.25</td>
                   </tr>
                   <tr>
                     <td>
@@ -130,11 +130,11 @@ export default async function Tickets({ params: { locale } }: Props) {
                         {tLabels('per_person')}
                       </small>
                     </td>
-                    <td className="m-pricing-table__price">€ 41.00</td>
-                    <td className="m-pricing-table__price">€ 276.00</td>
-                    <td className="m-pricing-table__price">€ 41.00</td>
+                    <td className="m-pricing-table__price">€ 54.63</td>
+                    <td className="m-pricing-table__price">€ 358.50</td>
+                    <td className="m-pricing-table__price">€ 54.63</td>
                   </tr>
-                  <tr>
+                  <tr className="m-pricing-table__row m-pricing-table__row--before-divide">
                     <td>
                       {tLabels('twin')}
                       <br />
@@ -142,171 +142,36 @@ export default async function Tickets({ params: { locale } }: Props) {
                         {tLabels('per_person')}
                       </small>
                     </td>
-                    <td className="m-pricing-table__price">€ 41.00</td>
-                    <td className="m-pricing-table__price">€ 276.00</td>
-                    <td className="m-pricing-table__price">€ 41.00</td>
+                    <td className="m-pricing-table__price">€ 54.63</td>
+                    <td className="m-pricing-table__price">€ 358.50</td>
+                    <td className="m-pricing-table__price">€ 54.63</td>
                   </tr>
-                  <tr>
+
+                  {/* above: per person; below: per room */}
+
+                  <tr className="m-pricing-table__row m-pricing-table__row--after-divide">
                     <td>
                       {tLabels('triple')}
                       <br />
                       <small className="u-text-light">
-                        {tLabels('per_person')}
+                        {tLabels('per_room')}
                       </small>
                     </td>
-                    <td className="m-pricing-table__price">€ 35.50</td>
-                    <td className="m-pricing-table__price">€ 255.00</td>
-                    <td className="m-pricing-table__price">€ 35.50</td>
+                    <td className="m-pricing-table__price">€ 129.25</td>
+                    <td className="m-pricing-table__price">€ 937.00</td>
+                    <td className="m-pricing-table__price">€ 129.25</td>
                   </tr>
                   <tr>
                     <td>
                       {tLabels('quadruple')}
                       <br />
                       <small className="u-text-light">
-                        {tLabels('per_person')}
+                        {tLabels('per_room')}
                       </small>
                     </td>
-                    <td className="m-pricing-table__price">€ 33.00</td>
-                    <td className="m-pricing-table__price">€ 245.00</td>
-                    <td className="m-pricing-table__price">€ 33.00</td>
-                  </tr>
-                </tbody>
-              </table>
-              <table className="m-pricing-table u-margin-bottom-lg">
-                <thead>
-                  <tr>
-                    <td style={{ width: '40%' }}>
-                      <b>{tLabels('superior_standard_room')}</b>
-                    </td>
-                    <td>
-                      {tLabels('plus_1_day')}
-                      <br />
-                      <small className="u-text-light">
-                        ({tLabels('early_arrival')})
-                      </small>
-                    </td>
-                    <td>{tLabels('5_days')}</td>
-                    <td>
-                      {tLabels('plus_1_day')}
-                      <br />
-                      <small className="u-text-light">
-                        ({tLabels('late_departure')})
-                      </small>
-                    </td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      {tLabels('twin')}
-                      <br />
-                      <small className="u-text-light">
-                        {tLabels('per_person')}
-                      </small>
-                    </td>
-                    <td className="m-pricing-table__price">€ 48.50</td>
-                    <td className="m-pricing-table__price">€ 306.00</td>
-                    <td className="m-pricing-table__price">€ 48.50</td>
-                  </tr>
-                </tbody>
-              </table>
-              <table className="m-pricing-table u-margin-bottom-lg">
-                <thead>
-                  <tr>
-                    <td style={{ width: '40%' }}>
-                      <b>{tLabels('business_room')}</b>
-                    </td>
-                    <td>
-                      {tLabels('plus_1_day')}
-                      <br />
-                      <small className="u-text-light">
-                        ({tLabels('early_arrival')})
-                      </small>
-                    </td>
-                    <td>{tLabels('5_days')}</td>
-                    <td>
-                      {tLabels('plus_1_day')}
-                      <br />
-                      <small className="u-text-light">
-                        ({tLabels('late_departure')})
-                      </small>
-                    </td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      {tLabels('double')}
-                      <br />
-                      <small className="u-text-light">
-                        {tLabels('per_person')}
-                      </small>
-                    </td>
-                    <td className="m-pricing-table__price">€ 53.50</td>
-                    <td className="m-pricing-table__price">€ 326.00</td>
-                    <td className="m-pricing-table__price">€ 53.50</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      {tLabels('twin')}
-                      <br />
-                      <small className="u-text-light">
-                        {tLabels('per_person')}
-                      </small>
-                    </td>
-                    <td className="m-pricing-table__price">€ 53.50</td>
-                    <td className="m-pricing-table__price">€ 326.00</td>
-                    <td className="m-pricing-table__price">€ 53.50</td>
-                  </tr>
-                </tbody>
-              </table>
-              <table className="m-pricing-table u-margin-bottom">
-                <thead>
-                  <tr>
-                    <td style={{ width: '40%' }}>
-                      <b>{tLabels('superior_business_room')}</b>
-                    </td>
-                    <td>
-                      {tLabels('plus_1_day')}
-                      <br />
-                      <small className="u-text-light">
-                        ({tLabels('early_arrival')})
-                      </small>
-                    </td>
-                    <td>{tLabels('5_days')}</td>
-                    <td>
-                      {tLabels('plus_1_day')}
-                      <br />
-                      <small className="u-text-light">
-                        ({tLabels('late_departure')})
-                      </small>
-                    </td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      {tLabels('double')}
-                      <br />
-                      <small className="u-text-light">
-                        {tLabels('per_person')}
-                      </small>
-                    </td>
-                    <td className="m-pricing-table__price">€ 61.00</td>
-                    <td className="m-pricing-table__price">€ 356.00</td>
-                    <td className="m-pricing-table__price">€ 61.00</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      {tLabels('twin')}
-                      <br />
-                      <small className="u-text-light">
-                        {tLabels('per_person')}
-                      </small>
-                    </td>
-                    <td className="m-pricing-table__price">€ 61.00</td>
-                    <td className="m-pricing-table__price">€ 356.00</td>
-                    <td className="m-pricing-table__price">€ 61.00</td>
+                    <td className="m-pricing-table__price">€ 159.25</td>
+                    <td className="m-pricing-table__price">€ 1,197.00</td>
+                    <td className="m-pricing-table__price">€ 159.25</td>
                   </tr>
                 </tbody>
               </table>
@@ -341,11 +206,30 @@ export default async function Tickets({ params: { locale } }: Props) {
                 <tbody>
                   <tr>
                     <td>{tLabels('1_day')}</td>
-                    <td className="m-pricing-table__price">€ 25</td>
-                    <td className="m-pricing-table__price">€ 28</td>
-                    <td className="m-pricing-table__price">€ 28</td>
-                    <td className="m-pricing-table__price">€ 28</td>
-                    <td className="m-pricing-table__price">-</td>
+                    <td className="m-pricing-table__price">€ 30</td>
+                    <td className="m-pricing-table__price">€ 40</td>
+                    <td className="m-pricing-table__price">€ 40</td>
+                    <td className="m-pricing-table__price">€ 40</td>
+                    <td className="m-pricing-table__price m-pricing-table__price--na">
+                      -
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>{tLabels('weekend')}</td>
+                    <td
+                      className="m-pricing-table__price m-pricing-table__price--na"
+                      colSpan={3}>
+                      -
+                    </td>
+                    <td className="m-pricing-table__price" colSpan={2}>
+                      € 60
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>{tLabels('full_con')}</td>
+                    <td className="m-pricing-table__price" colSpan={5}>
+                      € 150
+                    </td>
                   </tr>
                 </tbody>
               </table>

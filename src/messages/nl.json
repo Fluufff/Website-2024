@@ -252,14 +252,6 @@
     }
   },
   "Rooms": {
-    "business_rooms": {
-      "description": "Business Kamers zijn beschikbaar als Double of Twin voor 1 of 2 personen en bieden gasten bijkomende voordelen:",
-      "everything_in_standard": "Alles van de standaardkamer",
-      "extra_living_space": "Extra leefruimte",
-      "seating_area": "Zitruimte met lederen armstoel of een sofa bed",
-      "title": "Business kamers",
-      "wooden_desk": "Lang houten bureau"
-    },
     "header": {
       "title": "De kamers",
       "subtitle": "Kijk eens naar deze gezellige kamers!"
@@ -274,10 +266,8 @@
       "free_luggage_storage": "Gratis bagageruimte",
       "hairdryer": "Haardroger",
       "inroom_safe": "Kluis in de kamer",
-      "mini_fridge": "Mini-koelkast",
       "soft_duvets": "Comfortabele bedden met zachte witte lakens"
     },
-    "superior_hint": "Superieure kamer hebben dezelfde comfort maar zijn groter in ruimte",
     "variants": "Varianten"
   },
   "GettingThere": {
@@ -334,25 +324,23 @@
       "here": "hier",
       "quadruple": "Vierdubbel",
       "single": "Enkel",
-      "superior_double": "Superieure dubbel",
-      "superior_twin": "Superieure twin",
       "triple": "Driedubbel",
       "twin": "Twin",
       "1_day": "1 dag",
       "5_days": "5 dagen",
-      "business_room": "Business kamer",
+      "weekend": "Weekend",
+      "full_con": "Volledige event",
       "to": "naar",
       "early_arrival": "Vroege aankomst",
       "item": "Item",
       "late_departure": "Laat vertrek",
       "parking_ticket": "Parkeerticket",
       "per_person": "/ persoon",
+      "per_room": "/ kamer",
       "plus_1_day": "+1 dag",
       "price": "Prijs",
       "sponsor_pack": "Sponsor pack",
       "standard_room": "Standaard kamer",
-      "superior_business_room": "Superieure Business Kamer",
-      "superior_standard_room": "Superieure Standard Kamer",
       "t_shirt": "T-shirt",
       "wednesday_short": "Woe",
       "thursday_short": "Don",
