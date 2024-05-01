@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // @ts-check
 
 /** @file Exports and imports messages and translations to and from CSV. */
