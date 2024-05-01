@@ -9,8 +9,13 @@ export function useIframeAutoHeightProps(
 
   const onIframeLoad: ReactEventHandler<HTMLIFrameElement> = useCallback(
     (e) => {
-      const height = e.currentTarget.contentWindow?.document.body.scrollHeight;
-      if (height) setIframeHeight(height);
+      try {
+        const height =
+          e.currentTarget.contentWindow?.document.body.scrollHeight;
+        if (height) setIframeHeight(height);
+      } catch (err) {
+        console.error('Could not obtain height for iframe:', err);
+      }
     },
     [setIframeHeight],
   );
