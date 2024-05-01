@@ -206,11 +206,30 @@ export default async function Tickets({ params: { locale } }: Props) {
                 <tbody>
                   <tr>
                     <td>{tLabels('1_day')}</td>
-                    <td className="m-pricing-table__price">€ 25</td>
-                    <td className="m-pricing-table__price">€ 28</td>
-                    <td className="m-pricing-table__price">€ 28</td>
-                    <td className="m-pricing-table__price">€ 28</td>
-                    <td className="m-pricing-table__price">-</td>
+                    <td className="m-pricing-table__price">€ 30</td>
+                    <td className="m-pricing-table__price">€ 40</td>
+                    <td className="m-pricing-table__price">€ 40</td>
+                    <td className="m-pricing-table__price">€ 40</td>
+                    <td className="m-pricing-table__price m-pricing-table__price--na">
+                      -
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>{tLabels('weekend')}</td>
+                    <td
+                      className="m-pricing-table__price m-pricing-table__price--na"
+                      colSpan={3}>
+                      -
+                    </td>
+                    <td className="m-pricing-table__price" colSpan={2}>
+                      € 60
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>{tLabels('full_con')}</td>
+                    <td className="m-pricing-table__price" colSpan={5}>
+                      € 150
+                    </td>
                   </tr>
                 </tbody>
               </table>
