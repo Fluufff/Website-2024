@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import React from 'react';
 
-import businessRoomImage from '@/assets/rooms/business-room.jpg';
 import headerImage from '@/assets/rooms/header.jpg';
 import standardRoomImage from '@/assets/rooms/standard-room.jpg';
 import { Header } from '@/components/Header';
@@ -62,7 +61,6 @@ export default async function RoomsPage({ params: { locale } }: Props) {
                 <li>{tGeneral('labels.twin')}</li>
                 <li>{tGeneral('labels.triple')}</li>
                 <li>{tGeneral('labels.quadruple')}</li>
-                <li>{tGeneral('labels.superior_twin')}</li>
               </ul>
               {exclude(
                 'tickets',
@@ -71,36 +69,7 @@ export default async function RoomsPage({ params: { locale } }: Props) {
                 </Link>,
               )}
             </div>
-            <div className="u-col-sm-6">
-              <Image src={businessRoomImage} alt="business room image" />
-              <h4>{t('business_rooms.title')}</h4>
-              <p>{t('business_rooms.description')}</p>
-              <ul>
-                <li>{t('business_rooms.seating_area')}</li>
-                <li>{t('business_rooms.extra_living_space')}</li>
-                <li>{t('business_rooms.wooden_desk')}</li>
-                <li>{t('business_rooms.everything_in_standard')}</li>
-              </ul>
-              <h5>{t('variants')}:</h5>
-              <ul>
-                <li>{tGeneral('labels.double')}</li>
-                <li>{tGeneral('labels.twin')}</li>
-                <li>{tGeneral('labels.superior_double')}</li>
-                <li>{tGeneral('labels.superior_twin')}</li>
-              </ul>
-              {exclude(
-                'tickets',
-                <Link href="/tickets#business-pricing" className="a-button">
-                  {tGeneral('buttons.tickets_and_pricing')}
-                </Link>,
-              )}
-            </div>
           </div>
-        </div>
-        <div className="u-margin-top-xl">
-          <p className="u-text-center u-text-light">
-            <i>{t('superior_hint')}</i>
-          </p>
         </div>
       </div>
     </>

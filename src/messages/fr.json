@@ -252,14 +252,6 @@
     }
   },
   "Rooms": {
-    "business_rooms": {
-      "description": "Les Chambres D'affaires sont disponibles en double lit ou lits jumeaux pour 1 ou 2 personnes, et offrent en plus :",
-      "everything_in_standard": "Tout ce qui a été mentionné pour la chambre Standard",
-      "extra_living_space": "Plus spacieuse",
-      "seating_area": "Coin salon avec des fauteuils en cuir ou un canapé convertible",
-      "title": "Chambres D'affaires",
-      "wooden_desk": "Grand bureau en bois"
-    },
     "header": {
       "title": "Les chambres",
       "subtitle": "Jetez un coup d'oeil à ces chambres !"
@@ -277,7 +269,6 @@
       "mini_fridge": "Mini-bar",
       "soft_duvets": "Lits confortables avec de moelleuses couettes blanches"
     },
-    "superior_hint": "Les chambres Supérieures disposent du même confort et sont plus grandes.",
     "variants": "Variantes"
   },
   "GettingThere": {
@@ -334,13 +325,10 @@
       "here": "ici",
       "quadruple": "Quadruple",
       "single": "Simple",
-      "superior_double": "Supérieure double",
-      "superior_twin": "Supérieure jumelle",
       "triple": "Triple",
       "twin": "Jumelle",
       "1_day": "1 jour",
       "5_days": "5 jours",
-      "business_room": "Chambre D'affaires",
       "to": "à",
       "early_arrival": "Arrivée avancée",
       "item": "Item",
@@ -352,8 +340,6 @@
       "price": "Prix",
       "sponsor_pack": "Pack Sponsor",
       "standard_room": "Chambre Standard",
-      "superior_business_room": "Chambre d'affaire supérieure",
-      "superior_standard_room": "Chambre standard supérieure",
       "t_shirt": "T-shirt",
       "wednesday_short": "Mercredi",
       "thursday_short": "Jeu",
