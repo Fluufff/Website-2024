@@ -179,7 +179,7 @@
       "description": {
         "p0": "De beste manier om volledig te genieten van onze conventie is met een residentiële ticket.",
         "p1": "Let op dat alle gegeven prijzen voor 1 plek in een gedeelde kamer en voor 1 conventie ticket zijn. Het reserveren van een volledige kamer is mogelijk voor dubbel de prijs.",
-        "p2": ""
+        "p2": null
       },
       "include": "Residentiële tickets bevatten:",
       "con_access": "Toegang to de conventieruimte",
@@ -196,6 +196,7 @@
     "day": {
       "title": "Dagticket",
       "description": "Wil je ook onze vachtige evenement bijwonen, maar heb je geen plek om te overnachten? Dan hebben we iets speciaal voor jou! We bieden conventietickets aan voor elke dag, voor het volledige event of voor de weekends.",
+      "sales_open_later": null,
       "include": "Dagtickets bevatten:",
       "con_access": "Toegang tot de conventieruimte",
       "events_on_chosen_day": "Toegang tot alle activiteiten voor de gekozen dag(en)",
@@ -318,7 +319,35 @@
       "goodies_and_extras": "Goodies & Extras",
       "charity": "Het goede doel"
     },
-    "registration": {},
+    "registration": {
+      "REGISTRATION_NOT_STARTED": {
+        "body": null
+      },
+      "REGISTRATION_IS_OVER": {
+        "body": null
+      },
+      "REGISTRATION_IS_DONE": {
+        "body": null
+      },
+      "REGISTRATION_IS_CLOSE": {
+        "body": null
+      },
+      "PREREGISTRATION_IS_OPEN": {
+        "body": null
+      },
+      "REGISTRATION_IS_OPEN": {
+        "button": null,
+        "body": null
+      },
+      "REGISTRATION_ACCOUNT_OPEN": {
+        "button": null,
+        "body": null
+      },
+      "REGISTRATION_ACCOUNT_CREATION_ONLY": {
+        "button": null,
+        "body": null
+      }
+    },
     "labels": {
       "double": "Dubbel",
       "here": "hier",

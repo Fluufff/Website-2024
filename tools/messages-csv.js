@@ -107,7 +107,7 @@ function fromCsvRows(rows) {
   rows.forEach(({ key, ...translations }) => {
     const path = key.split('.');
     Object.entries(translations).forEach(([lang, message]) => {
-      setPath(byLang[lang], path, message);
+      setPath(byLang[lang], path, message || null);
     });
   });
 

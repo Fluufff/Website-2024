@@ -179,7 +179,7 @@
       "description": {
         "p0": "La meilleure façon de profiter à fond de la convention est de prendre un ticket résidentiel.",
         "p1": "Attention : les prix indiqués ici sont pour une place dans une chambre partagée et un accès individuel à la convention. Réserver une chambre entière est possible, mais à double tarif.",
-        "p2": ""
+        "p2": null
       },
       "include": "Les tickets résidentiels comprennent :",
       "con_access": "Accès à l'espace de convention",
@@ -196,6 +196,7 @@
     "day": {
       "title": "Tickets à la journée",
       "description": "Vous voulez profiter de notre chaleureux évènement, mais vous n'avez pas besoin de loger sur place ? Alors nous avons juste ce qu'il vous faut ! Nous proposons des tickets convention à la journée pour chaque jour, toute la convention, ou le week-end.",
+      "sales_open_later": null,
       "include": "Les Tickets à la journée comprennent",
       "con_access": "Accès à l'espace de convention",
       "events_on_chosen_day": "Accès à tous les évènements de la journée",
@@ -318,7 +319,35 @@
       "goodies_and_extras": "Goodies & Extras",
       "charity": "La charité"
     },
-    "registration": {},
+    "registration": {
+      "REGISTRATION_NOT_STARTED": {
+        "body": null
+      },
+      "REGISTRATION_IS_OVER": {
+        "body": null
+      },
+      "REGISTRATION_IS_DONE": {
+        "body": null
+      },
+      "REGISTRATION_IS_CLOSE": {
+        "body": null
+      },
+      "PREREGISTRATION_IS_OPEN": {
+        "body": null
+      },
+      "REGISTRATION_IS_OPEN": {
+        "button": null,
+        "body": null
+      },
+      "REGISTRATION_ACCOUNT_OPEN": {
+        "button": null,
+        "body": null
+      },
+      "REGISTRATION_ACCOUNT_CREATION_ONLY": {
+        "button": null,
+        "body": null
+      }
+    },
     "labels": {
       "double": "Double",
       "here": "ici",
