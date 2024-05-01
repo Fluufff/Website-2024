@@ -13,7 +13,7 @@
       "type": "http",
       "documentation": "",
       "method": "get",
-      "endpoint": "rest/state",
+      "endpoint": "rest/register",
       "responses": [
         {
           "uuid": "2d9b4ab7-3a9c-4fa1-aba1-466d29c6a155",
