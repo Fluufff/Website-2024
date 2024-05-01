@@ -13,6 +13,8 @@ const stringOrEmpty = z.string().transform((s) => s || undefined);
 export const env = createEnv({
   // schema
   server: {
+    APP_ENV: z.enum(['development', 'staging', 'production']),
+
     ASSET_PREFIX: stringOrEmpty.pipe(z.string().url().optional()),
 
     /** beware: anything not empty is considered true */
