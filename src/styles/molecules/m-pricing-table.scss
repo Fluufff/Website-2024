@@ -3,7 +3,27 @@
   line-height: 100%;
   border-collapse: collapse;
 
+  tr.m-pricing-table__row {
+    &--before-divide td {
+      @media (max-width: 767px) {
+        padding-bottom: $spacer;
+      }
+      padding-bottom: $spacer-medium;
+      border-bottom-width: 3px;
+      border-bottom-color: $grey;
+    }
+    &--after-divide td {
+      @media (max-width: 767px) {
+        padding-top: $spacer;
+      }
+      padding-top: $spacer-medium;
+    }
+  }
+
   td {
+    @media (max-width: 767px) {
+      padding: $spacer-x-small;
+    }
     padding: $spacer;
     word-break: break-all;
     border: 1px solid $grey-light;
@@ -23,11 +43,5 @@
 
   :not(thead) tr:last-child td {
     border-bottom: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .m-pricing-table td {
-    padding: $spacer-x-small;
   }
 }

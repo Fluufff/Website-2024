@@ -118,9 +118,9 @@ export default async function Tickets({ params: { locale } }: Props) {
                         {tLabels('per_person')}
                       </small>
                     </td>
-                    <td className="m-pricing-table__price">€ 74.50</td>
-                    <td className="m-pricing-table__price">€ 410.00</td>
-                    <td className="m-pricing-table__price">€ 74.50</td>
+                    <td className="m-pricing-table__price">€ 99.25</td>
+                    <td className="m-pricing-table__price">€ 537.00</td>
+                    <td className="m-pricing-table__price">€ 99.25</td>
                   </tr>
                   <tr>
                     <td>
@@ -130,11 +130,11 @@ export default async function Tickets({ params: { locale } }: Props) {
                         {tLabels('per_person')}
                       </small>
                     </td>
-                    <td className="m-pricing-table__price">€ 41.00</td>
-                    <td className="m-pricing-table__price">€ 276.00</td>
-                    <td className="m-pricing-table__price">€ 41.00</td>
+                    <td className="m-pricing-table__price">€ 54.63</td>
+                    <td className="m-pricing-table__price">€ 358.50</td>
+                    <td className="m-pricing-table__price">€ 54.63</td>
                   </tr>
-                  <tr>
+                  <tr className="m-pricing-table__row m-pricing-table__row--before-divide">
                     <td>
                       {tLabels('twin')}
                       <br />
@@ -142,33 +142,36 @@ export default async function Tickets({ params: { locale } }: Props) {
                         {tLabels('per_person')}
                       </small>
                     </td>
-                    <td className="m-pricing-table__price">€ 41.00</td>
-                    <td className="m-pricing-table__price">€ 276.00</td>
-                    <td className="m-pricing-table__price">€ 41.00</td>
+                    <td className="m-pricing-table__price">€ 54.63</td>
+                    <td className="m-pricing-table__price">€ 358.50</td>
+                    <td className="m-pricing-table__price">€ 54.63</td>
                   </tr>
-                  <tr>
+
+                  {/* above: per person; below: per room */}
+
+                  <tr className="m-pricing-table__row m-pricing-table__row--after-divide">
                     <td>
                       {tLabels('triple')}
                       <br />
                       <small className="u-text-light">
-                        {tLabels('per_person')}
+                        {tLabels('per_room')}
                       </small>
                     </td>
-                    <td className="m-pricing-table__price">€ 35.50</td>
-                    <td className="m-pricing-table__price">€ 255.00</td>
-                    <td className="m-pricing-table__price">€ 35.50</td>
+                    <td className="m-pricing-table__price">€ 129.25</td>
+                    <td className="m-pricing-table__price">€ 937.00</td>
+                    <td className="m-pricing-table__price">€ 129.25</td>
                   </tr>
                   <tr>
                     <td>
                       {tLabels('quadruple')}
                       <br />
                       <small className="u-text-light">
-                        {tLabels('per_person')}
+                        {tLabels('per_room')}
                       </small>
                     </td>
-                    <td className="m-pricing-table__price">€ 33.00</td>
-                    <td className="m-pricing-table__price">€ 245.00</td>
-                    <td className="m-pricing-table__price">€ 33.00</td>
+                    <td className="m-pricing-table__price">€ 159.25</td>
+                    <td className="m-pricing-table__price">€ 1,197.00</td>
+                    <td className="m-pricing-table__price">€ 159.25</td>
                   </tr>
                 </tbody>
               </table>
