@@ -1,6 +1,7 @@
 'use client';
 
-import { useIframeAutoHeightProps } from '../../../helpers/useIframeAutoHeightProps';
+import IframeResizer from 'iframe-resizer-react';
+
 import { RegistrationStatusBody } from '../RegistrationStatusBody';
 
 import { env } from '@/env';
@@ -18,8 +19,6 @@ const isClosed: Partial<Record<RegistrationState, true>> = {
 
 export function TicketsFrame() {
   const { data, isLoading, error } = useRegistrationStatus();
-
-  const iframeHeightProps = useIframeAutoHeightProps(500);
 
   if (isLoading || error || !data)
     return (
@@ -40,11 +39,12 @@ export function TicketsFrame() {
   else
     return (
       <div className="m-registration-frame">
-        <iframe
+        <IframeResizer
+          // initial height
+          height={500}
           title="Registration"
           width="100%"
           src={env.NEXT_PUBLIC_REG_ROOT + '/register?iframe'}
-          {...iframeHeightProps}
         />
       </div>
     );
