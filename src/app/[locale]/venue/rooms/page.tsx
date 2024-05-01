@@ -49,7 +49,6 @@ export default async function RoomsPage({ params: { locale } }: Props) {
                 <li>{t('standard_rooms.bathtub_with_shower')}</li>
                 <li>{t('standard_rooms.hairdryer')}</li>
                 <li>{t('standard_rooms.inroom_safe')}</li>
-                <li>{t('standard_rooms.mini_fridge')}</li>
                 <li>{t('standard_rooms.dry_cleaning')}</li>
                 <li>{t('standard_rooms.fitness_centre')}</li>
                 <li>{t('standard_rooms.free_luggage_storage')}</li>
