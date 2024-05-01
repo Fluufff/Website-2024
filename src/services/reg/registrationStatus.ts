@@ -64,6 +64,9 @@ export const getRegistrationStatus = cache(
       // that. Otherwise we would serve stale data to the first user after the
       // response changes. Not OK at our small scale.
       cache: 'no-store',
+
+      // Logged-in users get a more detailed status.
+      credentials: 'include',
     });
 
     if (!response.ok) throw new ApiError(response);
