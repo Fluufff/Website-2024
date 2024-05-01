@@ -1,5 +1,7 @@
 import * as z from 'zod';
 
+import { ApiError } from '../ApiError';
+
 import { env } from '@/env';
 
 const cmsRoot = env.CMS_API_ROOT;
@@ -32,20 +34,13 @@ export const contentWithFields = <T extends z.ZodRawShape>(fields: T) =>
     fields: z.object(fields),
   });
 
-class CmsApiError extends Error {
-  constructor(public response: Response) {
-    super(`${response.status} ${response.statusText} (${response.url})`);
-    this.name = this.constructor.name;
-  }
-}
-
 export function fetchCmsSiteData(path: string, requestInit?: RequestInit) {
   return fetch(`${cmsRoot}/sites/${cmsSite}/${path}`, requestInit).then(
     (response) => {
       if (response.ok) {
         return response;
       } else {
-        throw new CmsApiError(response);
+        throw new ApiError(response);
       }
     },
   );

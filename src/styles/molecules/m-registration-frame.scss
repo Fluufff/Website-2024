@@ -1,0 +1,15 @@
+.m-registration-frame {
+  iframe {
+    border: none;
+  }
+
+  &__placeholder {
+    text-align: center;
+    margin: 5em auto;
+    font-style: italic;
+
+    &--tall {
+      margin: 8em auto;
+    }
+  }
+}

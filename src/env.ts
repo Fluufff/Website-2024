@@ -26,6 +26,14 @@ export const env = createEnv({
     CMS_CONTENT_TYPE_EVENT: z.string().nonempty(),
   },
 
+  client: {
+    NEXT_PUBLIC_REG_ROOT: z.string().url(),
+    NEXT_PUBLIC_REG_API_ROOT: z.string().url(),
+  },
+
   // value
-  experimental__runtimeEnv: {},
+  experimental__runtimeEnv: {
+    NEXT_PUBLIC_REG_API_ROOT: process.env.NEXT_PUBLIC_REG_API_ROOT,
+    NEXT_PUBLIC_REG_ROOT: process.env.NEXT_PUBLIC_REG_ROOT,
+  },
 });

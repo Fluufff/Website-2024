@@ -327,6 +327,35 @@
       "goodies_and_extras": "Goodies & Extras",
       "charity": "The charity"
     },
+    "registration": {
+      "REGISTRATION_NOT_STARTED": {
+        "body": "Registration opens {opening, date, registration}."
+      },
+      "REGISTRATION_IS_OVER": {
+        "body": "Registration period is over."
+      },
+      "REGISTRATION_IS_DONE": {
+        "body": "You are registered, click here to access to your profile."
+      },
+      "REGISTRATION_IS_CLOSE": {
+        "body": "Registration has been closed by the registration team."
+      },
+      "PREREGISTRATION_IS_OPEN": {
+        "body": "Create an account before registration opens. Tickets sales from {opening, date, registrationShort} til {closing, date, registration}."
+      },
+      "REGISTRATION_IS_OPEN": {
+        "button": "Buy your ticket",
+        "body": "Tickets sales from {opening, date, registrationShort} til {closing, date, registration}."
+      },
+      "REGISTRATION_ACCOUNT_OPEN": {
+        "button": "Buy your ticket (existing accounts only)",
+        "body": "Tickets sales from {opening, date, registrationShort} til {closing, date, registration}."
+      },
+      "REGISTRATION_ACCOUNT_CREATION_ONLY": {
+        "button": "Create an account",
+        "body": "Tickets sales is closed. Create an account for ticket exchange."
+      }
+    },
     "labels": {
       "double": "Double",
       "here": "here",
