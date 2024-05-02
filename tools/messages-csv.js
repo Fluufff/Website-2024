@@ -36,11 +36,11 @@ const jsonPaths =
 
 /** Recursively walk the strings in a tree of messages.
  * @param {any} tree
- * @param {(path: string[], message: string) => void} visitor
+ * @param {(path: string[], message: string | null) => void} visitor
  * @returns {void}
  */
 function walkTranslationTree(tree, visitor) {
-  if (typeof tree === 'string') {
+  if (typeof tree === 'string' || tree === null) {
     visitor([], tree);
   } else {
     for (const [k, subtree] of Object.entries(tree)) {
