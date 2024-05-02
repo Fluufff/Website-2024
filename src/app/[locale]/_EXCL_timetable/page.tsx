@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import Timetable from './Timetable';
@@ -40,8 +41,9 @@ export default async function TimetablePage({ params: { locale } }: Props) {
       {exclude(
         'panel-form',
         <div className="o-section o-section--dark">
-          <img
+          <Image
             src={lineImage}
+            alt=""
             className="o-section__accent-image o-section__accent-image--alt"
           />
           <div className="o-section__content">
