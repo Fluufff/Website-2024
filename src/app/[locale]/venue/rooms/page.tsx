@@ -6,7 +6,6 @@ import lineImage from '@/assets/lines-2.png';
 import headerImage from '@/assets/rooms/header.jpg';
 import standardRoomImage from '@/assets/rooms/standard-room.jpg';
 import { Header } from '@/components/Header';
-import { exclude } from '@/helpers/exclude';
 import { PropsWithLocale } from '@/helpers/localization';
 import { Link } from '@/helpers/navigation';
 
@@ -62,12 +61,11 @@ export default async function RoomsPage({ params: { locale } }: Props) {
                 <li>{tGeneral('labels.triple')}</li>
                 <li>{tGeneral('labels.quadruple')}</li>
               </ul>
-              {exclude(
-                'tickets',
+              {
                 <Link href="/tickets#standard-pricing" className="a-button">
                   {tGeneral('buttons.tickets_and_pricing')}
-                </Link>,
-              )}
+                </Link>
+              }
             </div>
           </div>
         </div>
