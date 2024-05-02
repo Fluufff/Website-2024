@@ -32,7 +32,7 @@ export function generateStaticParams() {
 }
 
 const trackingDomain = {
-  development: 'localhost',
+  development: null,
   staging: 'test.fluufff.org',
   production: 'fluufff.org',
 }[env.APP_ENV];
