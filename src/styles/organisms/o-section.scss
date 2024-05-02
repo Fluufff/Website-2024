@@ -45,41 +45,40 @@
 
   &__accent-image {
     position: absolute;
-    bottom: -200px;
-    left: -100px;
-    width: 400px;
-    height: auto;
-    transform: scaleX(-1);
+    bottom: -300px;
+    left: -300px;
+    width: auto;
+    height: 50px;
+    transform: rotate(45deg);
 
     @media (max-width: 767px) {
-      width: 200px;
-      bottom: -100px;
-      left: -50px;
+      bottom: -350px;
+      left: -350px;
     }
 
     &--alt {
       bottom: unset;
       left: unset;
-      right: -150px;
-      bottom: -100px;
-      transform: scaleX(1);
+      top: -300px;
+      right: -350px;
+      transform: rotate(45deg);
 
       @media (max-width: 767px) {
-        right: -75px;
-        bottom: -50px;
+        top: -350px;
+        right: -350px;
       }
     }
 
     &--top {
       bottom: unset;
       left: unset;
-      left: -150px;
-      top: -100px;
-      transform: scaleY(-1);
+      top: -80px;
+      right: -200px;
+      transform: rotate(20deg);
 
       @media (max-width: 767px) {
-        right: -75px;
-        bottom: -50px;
+        top: -120px;
+        right: -250px;
       }
     }
   }

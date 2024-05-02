@@ -1,9 +1,10 @@
+import Image from 'next/image';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import { ContactFrame } from './ContactFrame';
 
 import headerImage from '@/assets/headers/contact.jpg';
-// import accentImage from '@/assets/hibiscus.png';
+import lineImage from '@/assets/lines-2.png';
 import { Header } from '@/components/Header';
 import { PropsWithLocale } from '@/helpers/localization';
 
@@ -29,7 +30,7 @@ export default async function Contact({ params: { locale } }: Props) {
         subtitle={t('header.subtitle')}
       />
       <div className="o-section o-section--alt">
-        {/* <Image src={accentImage} alt="" className="o-section__accent-image" /> */}
+        <Image src={lineImage} alt="" className="o-section__accent-image" />
         <div className="o-section__content">
           <h3>{t('question.title')}</h3>
           <p>{t('question.description')}</p>

@@ -7,6 +7,7 @@ import brusselsImage from '@/assets/brussels.jpg';
 import headerImage from '@/assets/headers/hotel.jpg';
 import hotelImage from '@/assets/hotel-exterior.jpg';
 import restaurantImage from '@/assets/hotel-restaurant.jpg';
+import lineImage from '@/assets/lines-3.png';
 import { Header } from '@/components/Header';
 import ScrollLink from '@/helpers/ScrollLink';
 import { PropsWithLocale } from '@/helpers/localization';
@@ -102,9 +103,9 @@ function RowSection({
 }: React.PropsWithChildren<{ alt?: boolean; withAccent?: boolean }>) {
   return (
     <div className={classNames('o-section', { 'o-section--alt': alt })}>
-      {/* {withAccent && (
-        <Image src={accentImage} alt="" className="o-section__accent-image" />
-      )} */}
+      {withAccent && (
+        <Image src={lineImage} alt="" className="o-section__accent-image" />
+      )}
       <div className="o-section__content">
         <div className="u-row">{children}</div>
       </div>
