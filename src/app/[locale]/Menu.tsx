@@ -68,9 +68,9 @@ export default function Menu() {
                   </Link>
                 </li>,
               )}
-              {exclude(
-                'about',
-                <li>
+              <li>
+                {exclude(
+                  'charity',
                   <div className="m-menu__sub-menu">
                     <Link className="m-menu__link" href="/about/fluufff">
                       {t('items.about')}
@@ -95,9 +95,13 @@ export default function Menu() {
                         </ul>
                       </div>
                     </div>
-                  </div>
-                </li>,
-              )}
+                  </div>,
+                  <Link className="m-menu__link" href="/about/fluufff">
+                    {t('items.about')}
+                  </Link>,
+                )}
+              </li>
+
               <li>
                 <div className="m-menu__sub-menu">
                   <Link className="m-menu__link" href="/venue/hotel">

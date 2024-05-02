@@ -5,6 +5,7 @@ import logoBigImage from '@/assets/3d-logo.png';
 import headerImage from '@/assets/headers/about.jpg';
 import lineImage from '@/assets/lines-1.png';
 import { Header } from '@/components/Header';
+import { exclude } from '@/helpers/exclude';
 import { PropsWithLocale } from '@/helpers/localization';
 import { Link } from '@/helpers/navigation';
 
@@ -39,13 +40,16 @@ export default async function About({ params: { locale } }: Props) {
               <h3>{t('about.title')}</h3>
               <p>{t('about.description.p0_fluufff')}</p>
               <p>{t('about.description.p1_contents')}</p>
-              <div className="u-margin-top-lg">
-                <div className="m-button-group">
-                  <Link href="/about/charity" className="a-button">
-                    {tGeneral('buttons.charity')}
-                  </Link>
-                </div>
-              </div>
+              {exclude(
+                'charity',
+                <div className="u-margin-top-lg">
+                  <div className="m-button-group">
+                    <Link href="/about/charity" className="a-button">
+                      {tGeneral('buttons.charity')}
+                    </Link>
+                  </div>
+                </div>,
+              )}
             </div>
           </div>
         </div>
