@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 
+import { UserLogin } from './UserLogin';
+
 import logoDarkImage from '@/assets/full-logo-dark.png';
 import logoImage from '@/assets/full-logo.png';
 import { locales } from '@/config';
@@ -155,25 +157,11 @@ export default function Menu() {
                   </Link>
                 </li>,
               )}
-              {/* {user ? (
-                <li>
-                  <a className="m-menu__link m-menu__link-user" href="/profile">
-                    <div
-                      className="m-menu__link-avatar"
-                      style={{
-                        backgroundImage: `url(/${user.avatar.thumbnail}?${user.avatar.thumbnail})`,
-                      }}
-                    />
-                    {user.username}
-                  </a>
-                </li>
-              ) : (
-                <li>
-                  <a className="m-menu__link" href="/profile/login">
-                    {t('items.login')}
-                  </a>
-                </li>
-              )} */}
+
+              <li>
+                <UserLogin />
+              </li>
+
               <li>
                 <div className="m-menu__sub-menu m-menu__languages">
                   <a href="#" className="m-menu__link">
