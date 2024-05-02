@@ -3,6 +3,7 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import Timetable from './Timetable';
 
 import headerImage from '@/assets/headers/schedule.jpg';
+import lineImage from '@/assets/lines-2.png';
 import { Header } from '@/components/Header';
 import { exclude } from '@/helpers/exclude';
 import { PropsWithLocale } from '@/helpers/localization';
@@ -39,7 +40,10 @@ export default async function TimetablePage({ params: { locale } }: Props) {
       {exclude(
         'panel-form',
         <div className="o-section o-section--dark">
-          {/* <img src={hibiscusImage} className="o-section__accent-image o-section__accent-image--alt" /> */}
+          <img
+            src={lineImage}
+            className="o-section__accent-image o-section__accent-image--alt"
+          />
           <div className="o-section__content">
             <div className="u-text-center">
               <h3>{t('idea.title')}</h3>
