@@ -8,11 +8,10 @@ import { useCurrentUser } from '@/services/reg/user';
 export function UserLogin() {
   const t = useTranslations('Menu.items');
 
-  const { data: user, error, isLoading } = useCurrentUser();
+  const { data: user } = useCurrentUser();
 
-  if (isLoading) {
-    return '...';
-  } else if (user) {
+  // neglect error or loading states to avoid width changing too much
+  if (user) {
     return (
       <a
         className="m-menu__link m-menu__link-user"
