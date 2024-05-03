@@ -53,5 +53,6 @@ export function useCurrentUser() {
     onError(err) {
       console.error(err);
     },
+    shouldRetryOnError: false,
   });
 }
