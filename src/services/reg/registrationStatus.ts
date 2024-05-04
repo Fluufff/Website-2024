@@ -77,5 +77,9 @@ export const getRegistrationStatus = cache(
 
 // client-side fetcher
 export function useRegistrationStatus() {
-  return useSWR('registration/state', () => getRegistrationStatus());
+  return useSWR('registration/state', () => getRegistrationStatus(), {
+    onError(err) {
+      console.error(err);
+    },
+  });
 }
