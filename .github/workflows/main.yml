@@ -3,6 +3,11 @@ name: ci
 on:
   push:
 
+permissions:
+  id-token: write
+  contents: read
+  attestations: write
+
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
