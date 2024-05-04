@@ -1,3 +1,4 @@
+import { MDXProps } from 'mdx/types';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import { Header } from '@/components/Header';
@@ -12,14 +13,20 @@ export async function generateMetadata({ params: { locale } }: Props) {
   };
 }
 
+async function getTerms(locale: string): Promise<React.FC<MDXProps>> {
+  const mod: typeof import('*.mdx') = await import(
+    `@/messages/terms.${locale}.mdx`
+  );
+
+  return mod.default;
+}
+
 export default async function Terms({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
 
   const t = await getTranslations('Terms');
 
-  const TermsContents = (
-    (await import(`@/messages/terms.${locale}.mdx`)) as typeof import('*.mdx')
-  ).default;
+  const TermsContents = await getTerms(locale).catch(() => getTerms('en'));
 
   return (
     <>
