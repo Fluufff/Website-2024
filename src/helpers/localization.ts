@@ -1,3 +1,4 @@
+import dateLocaleDe from 'date-fns/locale/de';
 import dateLocaleEnGB from 'date-fns/locale/en-GB';
 import dateLocaleFr from 'date-fns/locale/fr';
 import dateLocaleNlBE from 'date-fns/locale/nl-BE';
@@ -15,4 +16,5 @@ export const getDateLocale = (locale: string) =>
     nl: dateLocaleNlBE,
     fr: dateLocaleFr,
     en: dateLocaleEnGB,
+    de: dateLocaleDe,
   })[locale] ?? dateLocaleEnGB;

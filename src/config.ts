@@ -13,9 +13,12 @@ export const locales: Record<string, { name: string }> = {
   fr: {
     name: 'Français',
   },
+  de: {
+    name: 'Deutsch',
+  },
 };
 
-export const localeKeys = ['en', 'nl', 'fr'] as const;
+export const localeKeys = ['en', 'nl', 'fr', 'de'] as const;
 export type SupportedLocale = (typeof localeKeys)[number];
 
 export const defaultLocale = 'en' as const;

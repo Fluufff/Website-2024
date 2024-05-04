@@ -19,7 +19,7 @@ const process = require('process');
 const Papa = require('papaparse');
 const R = require('remeda');
 
-const LANGS = ['en', 'fr', 'nl'];
+const LANGS = ['en', 'fr', 'nl', 'de'];
 
 const messagesPath = path.join(__dirname, '../src/messages');
 const csvPath = path.join(messagesPath, 'messages.csv');
