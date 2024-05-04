@@ -3,7 +3,7 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import React from 'react';
 
 import lineImage from '@/assets/lines-2.png';
-import headerImage from '@/assets/rooms/header.jpg';
+import headerImage from '@/assets/rooms/standard-room-3.jpg';
 import standardRoomImage from '@/assets/rooms/standard-room.jpg';
 import { Header } from '@/components/Header';
 import { PropsWithLocale } from '@/helpers/localization';
@@ -40,7 +40,6 @@ export default async function RoomsPage({ params: { locale } }: Props) {
         <div className="o-section__content">
           <div className="u-row">
             <div className="u-col-sm-6">
-              <Image src={standardRoomImage} alt="standard room image" />
               <h4>{t('standard_rooms.title')}</h4>
               <p>{t('standard_rooms.description')}</p>
               <ul>
@@ -61,11 +60,15 @@ export default async function RoomsPage({ params: { locale } }: Props) {
                 <li>{tGeneral('labels.triple')}</li>
                 <li>{tGeneral('labels.quadruple')}</li>
               </ul>
-              {
+
+              <p>
                 <Link href="/tickets#standard-pricing" className="a-button">
                   {tGeneral('buttons.tickets_and_pricing')}
                 </Link>
-              }
+              </p>
+            </div>
+            <div className="u-col-sm-6">
+              <Image src={standardRoomImage} alt="standard room image" />
             </div>
           </div>
         </div>
