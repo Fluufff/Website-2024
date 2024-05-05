@@ -1,11 +1,6 @@
 .m-about {
   display: flex;
 
-  &__logo {
-    width: 40%;
-    align-self: center;
-  }
-
   h3 {
     font-family: var(--font-family-creepster);
     font-size: 2rem;
@@ -13,24 +8,29 @@
     color: $grey-darker;
   }
 
-  &__content {
-    width: 60%;
-    text-align: left;
+  &__image {
+    margin: 0 80px;
+    min-width: 360px;
+    max-width: 400px;
+    width: 50%;
+  }
 
-    p {
-      max-width: 500px;
-      color: $grey-dark;
-    }
+  &__content {
+    max-width: 500px;
+    color: $grey-dark;
   }
 
   @media (max-width: 767px) {
     flex-direction: column;
 
-    &__logo {
-      width: 50%;
+    &__image {
+      margin: 0 auto;
+      width: 80%;
+      min-width: unset;
     }
 
     &__content {
+      max-width: unset;
       width: 100%;
     }
   }
