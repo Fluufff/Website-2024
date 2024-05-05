@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
-   sodipodi:docname="open-graph.svg"
+   sodipodi:docname="opengraph-image.svg"
    xml:space="preserve"
    inkscape:export-filename="../src/app/opengraph-image.png"
    inkscape:export-xdpi="96"
@@ -29,7 +29,7 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.74396738"
-     inkscape:cx="374.34437"
+     inkscape:cx="368.29572"
      inkscape:cy="182.13164"
      inkscape:window-width="2514"
      inkscape:window-height="1387"
@@ -84,12 +84,12 @@
            y="129.80115"
            id="tspan359">6th-10th November, 2024</tspan></text></g><text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:16.9333px;font-family:'Readex Pro';-inkscape-font-specification:'Readex Pro Semi-Bold';fill:#000000;stroke-width:0.264583"
-       x="13.438865"
-       y="73.625099"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.2378px;font-family:'Readex Pro';-inkscape-font-specification:'Readex Pro Semi-Bold';fill:#000000;stroke-width:0.331841"
+       x="13.442626"
+       y="76.833885"
        id="text286"><tspan
          sodipodi:role="line"
          id="tspan284"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:16.9333px;font-family:'Readex Pro';-inkscape-font-specification:'Readex Pro Semi-Bold';fill:#ffffff;stroke-width:0.264583"
-         x="13.438865"
-         y="73.625099">Toxic Critters</tspan></text></g></svg>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.2378px;font-family:Creepster;-inkscape-font-specification:'Creepster Bold';fill:#ffffff;stroke-width:0.331841"
+         x="13.442626"
+         y="76.833885">Toxic Critters</tspan></text></g></svg>
