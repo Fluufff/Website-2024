@@ -98,22 +98,6 @@ export default async function Footer({ locale }: { locale: string }) {
             </a>
           </div>
           <div className="m-credits m-credits--muted">
-            {t('3d_u_credits')}{' '}
-            <a
-              href="https://twitter.com/LADdian_Tiger"
-              target="_blank"
-              rel="noreferrer">
-              Laddian
-            </a>{' '}
-            &amp;{' '}
-            <a
-              href="https://twitter.com/FelikxVanSaet"
-              target="_blank"
-              rel="noreferrer">
-              Felikx
-            </a>
-          </div>
-          <div className="m-credits m-credits--muted">
             {t('picture_credits')}{' '}
             <a
               href="https://twitter.com/AxelTheStallion"
