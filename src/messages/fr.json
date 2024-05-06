@@ -19,9 +19,14 @@
   "Footer": {
     "follow_us": "Suivez nous sur",
     "picture_credits": "Photos réalisées par",
-    "site_credits": "Site web et Modèles 3D créés par",
+    "site_credits": "Site web créé par",
     "terms_and_conditions": "Termes et conditions",
-    "translation_credits": "Traductions par"
+    "translation_credits": "Traductions par",
+    "art_credits": "Art par",
+    "specifics": {
+      "3d_model": "Modèle 3D",
+      "social_media_preview": "vignette réseaux sociaux"
+    }
   },
   "Index": {
     "hero": {

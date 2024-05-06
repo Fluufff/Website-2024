@@ -19,9 +19,14 @@
   "Footer": {
     "follow_us": "Volg ons",
     "picture_credits": "Foto's door",
-    "site_credits": "Website & 3D Models gemaakt door",
+    "site_credits": "Website gemaakt door",
     "terms_and_conditions": "Algemene voorwaarden",
-    "translation_credits": "Nederlandse en Franse vertalingen door"
+    "translation_credits": "Nederlandse en Franse vertalingen door",
+    "art_credits": "Kunst door",
+    "specifics": {
+      "3d_model": "3D model",
+      "social_media_preview": "sociale media miniatuur"
+    }
   },
   "Index": {
     "hero": {

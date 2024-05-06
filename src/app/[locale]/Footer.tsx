@@ -94,6 +94,23 @@ export default async function Footer({ locale }: { locale: string }) {
               ]}
             />
           </div>
+          <div className="m-credits m-credits--muted">
+            {t('art_credits')}{' '}
+            <CreditsList
+              furries={[
+                {
+                  name: 'Felikx',
+                  url: 'https://twitter.com/FelikxVanSaet',
+                  specifics: t('specifics.3d_model'),
+                },
+                {
+                  name: 'Vincent',
+                  url: 'https://twitter.com/vincehooves',
+                  specifics: t('specifics.social_media_preview'),
+                },
+              ]}
+            />
+          </div>
         </div>
       </div>
       <div className="o-section o-section--x-small o-section--center">
