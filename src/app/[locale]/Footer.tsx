@@ -67,58 +67,32 @@ export default async function Footer({ locale }: { locale: string }) {
         <div className="o-section__content">
           <div className="m-credits u-margin-bottom">
             {t('site_credits')}{' '}
-            <a
-              href="https://twitter.com/FelikxVanSaet"
-              target="_blank"
-              rel="noreferrer">
-              Felikx
-            </a>
+            <CreditsList
+              furries={[
+                { name: 'Felikx', url: 'https://twitter.com/FelikxVanSaet' },
+                { name: 'Bleats', url: 'https://github.com/sugarbleat' },
+              ]}
+            />
           </div>
           <div className="m-credits m-credits--muted">
             {t('translation_credits')}{' '}
-            <a
-              href="https://twitter.com/Tachillobator"
-              target="_blank"
-              rel="noreferrer">
-              Tach
-            </a>
-            ,{' '}
-            <a
-              href="https://twitter.com/VrydiFur"
-              target="_blank"
-              rel="noreferrer">
-              Vrydi
-            </a>{' '}
-            &amp;{' '}
-            <a
-              href="https://twitter.com/Goomuin"
-              target="_blank"
-              rel="noreferrer">
-              Goomuin
-            </a>
+            <CreditsList
+              furries={[
+                { name: 'Tach', url: 'https://twitter.com/Tachillobator' },
+                // TODO: complete this
+              ]}
+            />
           </div>
           <div className="m-credits m-credits--muted">
             {t('picture_credits')}{' '}
-            <a
-              href="https://twitter.com/AxelTheStallion"
-              target="_blank"
-              rel="noreferrer">
-              Axel
-            </a>
-            ,{' '}
-            <a
-              href="https://twitter.com/cheetah_chip"
-              target="_blank"
-              rel="noreferrer">
-              Chip
-            </a>{' '}
-            &amp;{' '}
-            <a
-              href="https://twitter.com/Silou_Atien"
-              target="_blank"
-              rel="noreferrer">
-              Atien
-            </a>
+            <CreditsList
+              furries={[
+                { name: 'Axel', url: 'https://twitter.com/AxelTheStallion' },
+                { name: 'Chip', url: 'https://twitter.com/cheetah_chip' },
+                { name: 'Atien', url: 'https://twitter.com/Silou_Atien' },
+                // TODO: check credit for image in about page
+              ]}
+            />
           </div>
         </div>
       </div>
@@ -129,6 +103,39 @@ export default async function Footer({ locale }: { locale: string }) {
           </Link>
         </div>
       </div>
+    </>
+  );
+}
+
+type CreditsEntryProps = {
+  name: string;
+  url?: string;
+  specifics?: string;
+};
+
+function CreditsList({ furries }: { furries: CreditsEntryProps[] }) {
+  return furries.flatMap((props, idx) =>
+    Array<React.ReactNode>(<CreditsEntry key={idx} {...props} />).concat(
+      idx === furries.length - 1
+        ? []
+        : idx === furries.length - 2
+        ? ' & '
+        : ', ',
+    ),
+  );
+}
+
+function CreditsEntry({ name, url, specifics }: CreditsEntryProps) {
+  return (
+    <>
+      {url ? (
+        <a href={url} target="_blank" rel="noreferrer">
+          {name}
+        </a>
+      ) : (
+        name
+      )}
+      {!!specifics && ` (${specifics})`}
     </>
   );
 }
