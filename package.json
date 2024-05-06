@@ -4,8 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "build-standalone": "STANDALONE_OUTPUT=1 next build",
+    "build": "yarn build:production",
+    "build:production": "next build",
+    "build:staging": "dotenvx run -f .env.staging.local .env.staging -- next build",
+    "build-standalone": "yarn build-standalone:production",
+    "build-standalone:production": "STANDALONE_OUTPUT=1 next build",
+    "build-standalone:staging": "STANDALONE_OUTPUT=1 dotenvx run -f .env.staging.local .env.staging -- next build",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky"
@@ -49,6 +53,7 @@
     "zod": "^3.22.2"
   },
   "devDependencies": {
+    "@dotenvx/dotenvx": "^0.37.1",
     "@types/mdx": "^2.0.11",
     "@types/node": "20.4.4",
     "@types/react": "^18.2.67",

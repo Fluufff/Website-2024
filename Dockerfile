@@ -16,11 +16,13 @@ RUN --mount=type=cache,target=/root/.yarn YARN_CACHE_FOLDER=/root/.yarn yarn add
 
 # Rebuild the source code only when needed
 FROM base AS builder
+# staging or production
+ARG BUILD_ENV
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-RUN yarn build-standalone
+RUN yarn build-standalone:${BUILD_ENV}
 
 # Production image, copy all the files and run next
 FROM base AS runner
