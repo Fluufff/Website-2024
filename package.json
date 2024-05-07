@@ -19,7 +19,7 @@
       "prettier --write",
       "next lint . --fix"
     ],
-    "src/**/*.{md,mdx}": [
+    "src/**/*.{md,mdx,json}": [
       "prettier --write"
     ]
   },
