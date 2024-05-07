@@ -78,6 +78,7 @@ export default async function Footer({ locale }: { locale: string }) {
             {t('translation_credits')}{' '}
             <CreditsList
               furries={[
+                { name: 'Dacia', url: 'https://linktr.ee/Daciathedutchie' },
                 { name: 'Tach', url: 'https://twitter.com/Tachillobator' },
                 // TODO: complete this
               ]}
