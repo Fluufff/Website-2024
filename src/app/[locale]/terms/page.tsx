@@ -36,7 +36,7 @@ export default async function Terms({ params: { locale } }: Props) {
         subtitle={t('header.subtitle')}
       />
       <div className="o-section o-section--alt">
-        <div className="o-section__content u-pre-wrap-p">
+        <div className="o-section__content">
           <TermsContents />
         </div>
       </div>
