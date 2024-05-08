@@ -18,6 +18,9 @@
     "src/**/*.{ts,tsx,js,jsx}": [
       "prettier --write",
       "next lint . --fix"
+    ],
+    "src/**/*.{md,mdx,json}": [
+      "prettier --write"
     ]
   },
   "dependencies": {
