@@ -111,7 +111,7 @@
       "title": "Flüüfff ASBL"
     },
     "previous_editions": {
-      "title": "Where can i find the site of the previous editions?"
+      "title": "Where can I find the site of the previous editions?"
     },
     "rules": {
       "description": "You can find the convention rules here.",
@@ -124,7 +124,7 @@
       "subtitle": "Some info about our charity"
     },
     "content": {
-      "title": "Natagora",
+      "title": "Sea Life",
       "subtitle": "This year we are excited to announce our partnership with Natagora.",
       "description": "Natagora is active across the whole of Wallonia and Brussels. The main objective of the association is to halt the loss of biodiversity and to help restore a better balance between nature and humankind. For this, the Association has taken on a number of missions."
     },
@@ -182,7 +182,7 @@
       "title": "Residential ticket",
       "description": {
         "p0": "The best way to enjoy the convention to its full potential is with a residential ticket!",
-        "p1": "Please note that all prices listed here are for ONE spot in a shared bedroom and ONE convention spot. Reserving an entire room is possible, but at double price.",
+        "p1": "Please note that Double and Twin room prices listed here are for ONE spot in a shared bedroom and ONE convention fee. Reserving an entire room is possible, but for double the price.",
         "p2": "Due to limited availability, the Triple (3 person) and Quadruple (4 person) bedrooms are only available to be reserved as the FULL bedroom, including all convention fees."
       },
       "include": "Residential tickets include:",
@@ -193,14 +193,14 @@
       "cleaning": "Daily room cleaning",
       "info": {
         "check_in_out": "Check-in on your first day is at 16:00.\nCheck-out on the last day is at 12:00.",
-        "room_types": "Info about the different room types can be found on the rooms page. This year we have single and two person bedrooms",
+        "room_types": "Info about the different room types can be found on the rooms page. This year we offer Single, Double/Twin (2 persons), Triple (3 persons) and Quadruple (4 persons) bedrooms.",
         "extra_days": "You can add an extra day before and after the convention, called “early arrival” and “late departure” respectively."
       }
     },
     "day": {
       "title": "Day ticket",
       "description": "Do you want to experience our fluffy event but have no need for accommodation? We have just the thing for you! We offer convention tickets for any given day, the full event, or weekend tickets.",
-      "sales_open_later": "<b>Note:</b> Day tickets sales will open in the summer.",
+      "sales_open_later": "<b>Note:</b> Day ticket sales will open in Summer.",
       "include": "Day tickets include:",
       "con_access": "Con area access",
       "events_on_chosen_day": "Access to all events of the chosen day(s)",
@@ -249,7 +249,7 @@
       "title": "Low Budget",
       "description": "There are many nice food places nearby, if you’re out on a walk.",
       "food": {
-        "kebab": "There's two nice kebap places (one on each side of the road) within 5 minutes of walking out the hotel front door (go left!).",
+        "kebab": "There's two nice kebab places (one on each side of the road) within 5 minutes of walking out the hotel front door (go left!).",
         "pasta": "There’s a very recommended pastabar a little ahead. A good option is the spicy pasta with extra cheese!",
         "vietnamese": "If the spicy pasta isn’t exotic enough for you, there’s a vietnamese corner on the end of the street if you keep walking left.",
         "mcdonalds": "And if you’re a tasteless animal, you can go to a McDonald's. It’s only a 10 minute walk."
@@ -331,7 +331,7 @@
         "body": "Registration period is over."
       },
       "REGISTRATION_IS_DONE": {
-        "body": "You are registered, click here to access to your profile."
+        "body": "You are registered, click here to access your profile."
       },
       "REGISTRATION_IS_CLOSE": {
         "body": "Registration has been closed by the registration team."

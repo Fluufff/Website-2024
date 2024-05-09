@@ -13,11 +13,11 @@
       "rooms": "Chambres d'hôtel",
       "schedule": "Programme",
       "tickets": "Tickets",
-      "venue": "S'y rendre"
+      "venue": "Lieu"
     }
   },
   "Footer": {
-    "follow_us": "Suivez nous sur",
+    "follow_us": "Suivez-nous sur",
     "picture_credits": "Photos réalisées par",
     "site_credits": "Site web créé par",
     "terms_and_conditions": "Termes et conditions",
@@ -33,7 +33,7 @@
       "title": "Toxic Critters",
       "subtitle": "Faites une croix dans votre calendrier !",
       "description": {
-        "p0": "Pour la 6e édition de la convention furry Belge, notre équipe est heureuse de vous accueillir sur notre île de fête et de gaité, le Bedford Hotel & Congress Center à Bruxelles.",
+        "p0": "Pour la 6e édition de la convention furry belge, notre équipe est heureuse de vous accueillir sur notre île de fête et de gaieté, le Bedford Hotel & Congress Center à Bruxelles.",
         "p1": "Ce n'est pas parce que nous nous sommes échoués sur une plage que la fête va s'arrêter. Ramassez vos tongs, les bouteilles envoyées par les vagues et allons danser jusqu'à plus soif."
       },
       "date": "6-10 Novembre 2024"
@@ -47,15 +47,15 @@
       "panels": {
         "title": "Conférences",
         "description": {
-          "p0": "Flüüfff accueille diverses présentations chaque année, comme par exemple le Tea Panel ! Participez à cette présentation, doublée d'un atelier pratique, pour en savoir plus sur cette fascinante boisson que nous aimons tous. Nous vous attendons pour la prochaine présentation !",
-          "p1": "Vous pouvez aussi organiser votre propre présentation ou atelier à la Flüüfff, que ce soit à propos de quelque chose que vous aimez, ou quelque chose que vous connaissez bien. Vous pouvez suggérer votre présentation, atelier ou rencontre via le formulaire de suggestion de Présentation !"
+          "p0": "Flüüfff accueille chaque année des présentations variées parlant de sujets serieux, comme le Furry Femme panel, ou des ateliers plus amusants comme l'atelier café, pour partir à la découverte de cette fascinante boisson. Nous vous attendons pour la prochaine présentation !",
+          "p1": "Vous pouvez aussi organiser votre propre présentation ou atelier à la Flüüfff, que ce soit à propos de quelque chose que vous aimez, ou quelque chose que vous connaissez bien. Vous pouvez suggérer votre présentation, atelier ou rencontre via le formulaire de suggestion de présentation !"
         },
         "more_info": "En savoir plus",
         "submit_proposal": "Proposer un évènement"
       },
       "show_night": {
         "title": "Soirée Spectacle",
-        "description": "Pourrait-on imaginer une fête sur une île paradisiaque sans Soirée Spectacle ? Flüüfff organise cette soirée remplie de divertissements et de prestations, faits pour et par les visiteurs de la convention. Êtes-vous prêts à montrer vos talents de chanteur, danseur ou d'humoriste sur la grande scène de la Flüüfff ?",
+        "description": "Et si on se changeait les idées, loin de toute cette toxicité... avec une soirée Spectacle ? Flüüfff organise à nouveau une soirée remplie de divertissements et de prestations, faits pour et par les visiteurs de la convention. Intéressé de montrer vos talents de chanteur, danseur ou d'humoriste sur la grande scène de la Flüüfff, seul ou en groupe ? Faites-le nous savoir via le formulaire associé !",
         "view_more": "Voir plus"
       }
     },
@@ -63,14 +63,14 @@
       "title": "Bienvenue à Flüüfff",
       "description": {
         "p0": "C'est une convention furry, située à Bruxelles ! Une convention furry est un évènement dédié à l'anthropomorphisme et un endroit où les furries et leurs amis peuvent se rassembler.",
-        "p1": "La convention se déroule sur 5 jours, du 9 au 13 Novembre 2024. La Flüüff prend place à l'hôtel Bedford."
+        "p1": "La convention se déroule sur 5 jours, du 9 au 13 novembre 2024. La Flüüff prend place à l'hôtel Bedford."
       },
       "about_fluufff": "À propos de Flüüfff"
     }
   },
   "News": {
     "header": {
-      "title": "Les nouvelles les plus fraîches de la Flüüfff",
+      "title": "Les nouvelles les plus fraîches de la Flüüfff !",
       "subtitle": "Nouvelles"
     }
   },
@@ -81,8 +81,8 @@
     },
     "about": {
       "description": {
-        "p0_fluufff": "Flüüfff 2024 est la cinquième édition de la convention Flüüfff. Son but est de rassembler en un même endroit les furries et leurs amis pour partager un moment de camaraderie, d'amusement et de créativité (des valeurs dont notre communauté peut être fière). Mais vous n'avez pas besoin d'être un furry pour venir faire la fête avec nous!",
-        "p1_contents": "La convention se déroule sur 5 jours. Diverses activités ont lieu : une piste de dance, un coin lounge, des jeux vidéos, des conférences, et bien d'autres choses à faire. Peu de place est laissée à l'ennui."
+        "p0_fluufff": "Flüüfff 2024 est la sixième édition de la convention Flüüfff. Son but est de rassembler en un même endroit les furries et leurs amis pour partager un moment de camaraderie, d'amusement et de créativité (des valeurs dont notre communauté peut être fière). Mais vous n'avez pas besoin d'être un furry pour venir faire la fête avec nous !",
+        "p1_contents": "La convention se déroule sur 5 jours. Diverses activités y ont lieu : une piste de dance, un coin lounge, des jeux vidéos, des conférences, et bien d'autres choses à faire. Peu de place est laissée à l'ennui."
       },
       "title": "Flüüfff"
     },
@@ -91,20 +91,20 @@
       "description": {
         "p0_furries": "Le fandom furry est une communauté inspirée des animaux anthropomorphiques (aux traits humains). Les personnes membres de cette communauté sont appelées \"furries\".",
         "p1_fandom": "Vous pouvez la comparer à d'autres communautés comme celles des fans de Star Wars, de mangas et d'héroïc-fantasy. Le fandom furry se distingue par sa créativité mais est aussi connu pour avoir des membres très sociables !",
-        "p2_fursona": "La majorité des furries créent leur propre personnage (appellé fursona), basé sur un animal. N'importe quelle espèce ou créature fantastique peut être utilisée !",
-        "p3_fursuits": "Lors de sorties ou en convention, vous pouvez trouver des personnes en fursuit. Les fursuits sont des costumes basés sur le personnage créé par la personne.",
+        "p2_fursona": "La majorité des furries créent leur propre personnage (appellé fursona), basé sur un animal. N'importe quelle espèce ou créature fantastique peut être utilisée.",
+        "p3_fursuits": "Lors de sorties ou en convention, vous pouvez trouver des personnes en fursuit. Les fursuits sont des costumes basés sur le personnage créé par la personne. Ces personnes sont non seulement des distributeurs à câlins, mais veulent surtout faire sourire les enfants comme les adultes.",
         "p4_conventions": "Que ce soit dans la communauté ou en convention, les éléments les plus marquants du fandom sont l'art, l'écriture, les jeux de rôles, la socialisation mais aussi le fait de concevoir et de porter une fursuit. Une bonne partie des conventions et groupes furry organisent des évènements et des collectes de dons pour diverses œuvres de charité !"
       },
       "title": "Qu'est ce que le fandom furry ?"
     },
     "help": {
       "description": "Bien sûr ! Contactez-nous par email via le formulaire de contact et nous jetterons un œil à votre candidature. Sinon, sachez que le meilleur moyen de supporter la Flüüfff est d'y venir !",
-      "title": "Puis-je vous aider durant la Flüüfff 2024"
+      "title": "Puis-je vous aider durant la Flüüfff 2024 ?"
     },
     "npo": {
-      "address": "Flüüfff, ASBL Rue Félicien Rops, 35B, boîte 01 1070, Anderlecht Belgium",
+      "address": "Flüüfff, ASBL Rue Félicien Rops, 35B, boîte 01 1070, Anderlecht Belgique",
       "description": {
-        "p0_npo": "Flüüfff ASBL est une Association Sans But Lucratif Belge ; elle porte le numéro d'entreprise 0662.498.716 (0662.498.716 — vous pouvez en savoir plus sur la Banque Carrefour des Entreprises). ",
+        "p0_npo": "Flüüfff ASBL est une Association Sans But Lucratif belge ; elle porte le numéro d'entreprise 0662.498.716 (vous pouvez en savoir plus sur la Banque Carrefour des Entreprises).",
         "p1_admins": "Les administrateurs de l'ASBL sont Thierry Dognié, Jan Taverniers, Benoît Volckaert et Wybren van der Meer."
       },
       "revenue": "Tous les revenus de la convention seront utilisés pour les équipements ou les services en vue d'améliorer les prochaines éditions ou seront reversés à une œuvre de charité.",
@@ -120,11 +120,11 @@
   },
   "Charity": {
     "header": {
-      "title": "Charity",
-      "subtitle": "Some info about our charity"
+      "title": "Charité",
+      "subtitle": "Certaines informations concernant notre charité"
     },
     "content": {
-      "title": "Natagora",
+      "title": "Sea Life",
       "subtitle": "This year we are excited to announce our partnership with Natagora.",
       "description": "Natagora is active across the whole of Wallonia and Brussels. The main objective of the association is to halt the loss of biodiversity and to help restore a better balance between nature and humankind. For this, the Association has taken on a number of missions."
     },
@@ -149,11 +149,11 @@
   "Timetable": {
     "header": {
       "title": "Programme",
-      "subtitle": "Tous les évènements sur place"
+      "subtitle": "Tous les évènements sur place !"
     },
     "idea": {
-      "title": "Organiser votre propre évènement!",
-      "description": "Vous pouvez organiser votre présentation ou atelier à la Flüüfff, que ce soit sur un sujet qui vous passionne ou dont vous êtes expert. Vous pouvez suggérer une présentation ou une réunion via le formulaire de suggestion!"
+      "title": "Organiser votre propre évènement !",
+      "description": "Vous pouvez organiser votre présentation ou atelier à la Flüüfff, que ce soit sur un sujet qui vous passionne ou dont vous êtes expert. Vous pouvez suggérer une présentation ou une réunion via le formulaire de suggestion !"
     },
     "schedule": {
       "not_available": "Le programme n'est pas disponible pour le moment"
@@ -181,9 +181,9 @@
     "residential": {
       "title": "Ticket résidentiel",
       "description": {
-        "p0": "La meilleure façon de profiter à fond de la convention est de prendre un ticket résidentiel.",
-        "p1": "Attention : les prix indiqués ici sont pour une place dans une chambre partagée et un accès individuel à la convention. Réserver une chambre entière est possible, mais à double tarif.",
-        "p2": null
+        "p0": "La meilleure façon de profiter à fond de la convention est de prendre un ticket résidentiel !",
+        "p1": "Attention : les prix indiqués ici sont pour UNE place dans une chambre partagée et UN accès individuel à la convention. Réserver une chambre entière est possible, mais à double tarif.",
+        "p2": "Au vu de leur disponibilité limitée, les chambres triples (3 personnes) et quadruples (4 personnes) ne sont réservables que pour la chambre ENTIÈRE. Les frais d'accès à la convention sont également inclus."
       },
       "include": "Les tickets résidentiels comprennent :",
       "con_access": "Accès à l'espace de convention",
@@ -193,14 +193,14 @@
       "cleaning": "Nettoyage des chambres journalier",
       "info": {
         "check_in_out": "Le check-in, le premier jour, se fait à 16h.\nLe check-out, le dernier jour, se fait à 12h.",
-        "room_types": "Plus d'informations sur les différents types de chambres peuvent être trouvées sur la page \"Chambres d'hôtel\". Cette année nous proposons des chambres solo ou pour deux personnes.",
-        "extra_days": "Vous pouvez rajouter un jour en plus avant ou après la convention, ce sont les jours en \"arrivée anticipée\" et en \"départ tardif\"."
+        "room_types": "Plus d'informations sur les différents types de chambres peuvent être trouvées sur la page \"Chambres d'hôtel\". Cette année nous proposons des chambres solo, ainsi que des chambres pour deux, trois ou quatre personnes.",
+        "extra_days": "Vous pouvez ajouter un jour en plus avant et/ou après la convention, ce sont les jours en \"arrivée anticipée\" et en \"départ tardif\"."
       }
     },
     "day": {
       "title": "Tickets à la journée",
       "description": "Vous voulez profiter de notre chaleureux évènement, mais vous n'avez pas besoin de loger sur place ? Alors nous avons juste ce qu'il vous faut ! Nous proposons des tickets convention à la journée pour chaque jour, toute la convention, ou le week-end.",
-      "sales_open_later": null,
+      "sales_open_later": "<b>Note:</b> Les tickets à la journée seront vendus courant de l'été",
       "include": "Les Tickets à la journée comprennent",
       "con_access": "Accès à l'espace de convention",
       "events_on_chosen_day": "Accès à tous les évènements de la journée",
@@ -208,7 +208,7 @@
     },
     "extras": {
       "title": "Extras",
-      "description": "Vous aimez notre évènement et vous voulez supporter la Flüüfff ainsi que nous aider à l'améliorer ? Pourquoi ne pas devenir sponsor ?",
+      "description": "Vous aimez notre évènement et vous voulez supporter la Flüüfff ainsi que nous aider à l'améliorer ? Devenez un sponsor !",
       "includes": "Le pack sponsor comprend :",
       "t_shirt": "T-shirt de la convention",
       "custom_badge_art": "Badge customisé",
@@ -219,7 +219,7 @@
   },
   "Hotel": {
     "header": {
-      "title": "Le Lieu",
+      "title": "Le lieu",
       "subtitle": "Jetez un coup d'œil à ces chambres !"
     },
     "hotel": {
@@ -251,8 +251,8 @@
       "food": {
         "kebab": "Il y a deux bons kebabs (un de chaque côté de la route) à 5 minutes de marche en sortant de l'entrée de l'hôtel (partez vers la gauche !).",
         "pasta": "Nous vous conseillons le bar à pâtes un peu plus loin, vous ne vous tromperez pas en choissisant les pâtes épicées avec supplément fromage !",
-        "vietnamese": "Si les pâtes épicées ne sont pas suffisamment exotiques pour vous, vous trouverez du Vietnamien à la fin de la route si vous continuez à marcher vers la gauche.",
-        "mcdonalds": "Et si vraiment vous êtes une bête sans goût, vous pouvez aller au MacDonald's. Il se trouve à 10 minutes de marche."
+        "vietnamese": "Si les pâtes épicées ne sont pas suffisamment exotiques pour vous, vous trouverez du vietnamien à la fin de la route si vous continuez à marcher vers la gauche.",
+        "mcdonalds": "Et si vraiment vous êtes une bête sans goût, vous pouvez aller au McDonald's. Il se trouve à 10 minutes de marche."
       }
     }
   },
@@ -284,7 +284,7 @@
       "title": "Où se trouve l'hôtel ?"
     },
     "plane": {
-      "title": "En Avion",
+      "title": "En avion",
       "take_to_airport": "Prendre l'avion pour",
       "walk_to_station": "Marcher vers",
       "take_train": "Prendre le train de",
@@ -294,7 +294,7 @@
       "walk_to_hotel": "Marcher vers"
     },
     "train": {
-      "title": "En Train",
+      "title": "En train",
       "take_train": "Prenez le train à partir de",
       "actual_timetables": "Toutes les instructions de voyage et les horaires pour les voyages en train peuvent être trouvés sur le",
       "belgian_train_website": "Site de la SNCB"
@@ -304,7 +304,7 @@
       "lez": "L'hôtel est localisé dans le centre de Bruxelles, ce qui signifie que vous devez traverser la LEZ (Low Emission Zone). Les voitures âgées, les véhicules diesel et d'autres voitures très polluantes ne peuvent pas entrer en ville. Les véhicules immatriculées à l'étranger doivent être enregistrés (à l'exception des véhicules immatriculés aux Pays-Bas). Si vous ne le faites pas, vous vous exposez à une grosse amende (350 euros). Pour en savoir plus, rendez-vous sur",
       "parking": "Le parking de l'hôtel est géré par la ville. Normalement le prix est de 16€, mais les participants de la Flüüfff ont droit à un tarif de 13€ par jour. Demandez votre réduction à la réception de l'hôtel ! Les emplacements de parking sont relativement petits et limités en nombre !",
       "notice": {
-        "rules": "Bon voyage ! N'oubliez pas de vous mettre au courant du code de la route Belge, il présente quelques petites subtilités ! Bon courage !",
+        "rules": "Bon voyage ! N'oubliez pas de vous mettre au courant du code de la route belge, il présente quelques petites subtilités ! Bon courage !",
         "speed_limits": "La limite de vitesse en agglomération en Belgique est de 50 km/h.\nHors agglomération, la vitesse maximum en Flandre est de 70 km/h.\nHors agglomération, la vitesse maximum en Wallonie est de 90 km/h."
       }
     }
@@ -325,31 +325,31 @@
     },
     "registration": {
       "REGISTRATION_NOT_STARTED": {
-        "body": null
+        "body": "Les inscriptions commencent le {opening, date, registration}."
       },
       "REGISTRATION_IS_OVER": {
-        "body": null
+        "body": "Les inscriptions sont terminées."
       },
       "REGISTRATION_IS_DONE": {
-        "body": null
+        "body": "Tu es enregistré, clique ici pour avoir accès à ton profil."
       },
       "REGISTRATION_IS_CLOSE": {
-        "body": null
+        "body": "Les inscriptions ont été fermées par l'équipe Registration."
       },
       "PREREGISTRATION_IS_OPEN": {
-        "body": null
+        "body": "Créer un compte avant que les inscriptions ne commencent. La billeterie ouvrira du {opening, date, registrationShort} au {closing, date, registration}."
       },
       "REGISTRATION_IS_OPEN": {
-        "button": null,
-        "body": null
+        "button": "Acheter un ticket",
+        "body": "La vente des tickets se fera du {opening, date, registrationShort} au {closing, date, registration}."
       },
       "REGISTRATION_ACCOUNT_OPEN": {
-        "button": null,
-        "body": null
+        "button": "Acheter un ticket (compte déjà créé)",
+        "body": "La vente des tickets se fera du {opening, date, registrationShort} au {closing, date, registration}."
       },
       "REGISTRATION_ACCOUNT_CREATION_ONLY": {
-        "button": null,
-        "body": null
+        "button": "Créer un compte",
+        "body": "La vente des tickets est terminée. Crée un compte pour accéder à la page d'échange des tickets."
       }
     },
     "labels": {
@@ -377,7 +377,7 @@
       "t_shirt": "T-shirt",
       "wednesday_short": "Mercredi",
       "thursday_short": "Jeu",
-      "friday_short": "Venir",
+      "friday_short": "Ven",
       "saturday_short": "Sam",
       "sunday_short": "Dim"
     }
