@@ -5,7 +5,7 @@
       "about_fluufff": "Over Flüüfff",
       "charity": "Goed doel",
       "contact": "Contact",
-      "getting_there": "Hier geraken",
+      "getting_there": "Routebeschrijving",
       "home": "Home",
       "hotel": "Hotel",
       "login": "Login",
@@ -13,45 +13,45 @@
       "rooms": "Kamers",
       "schedule": "Planning",
       "tickets": "Tickets",
-      "venue": "Accomodatie"
+      "venue": "locatie"
     }
   },
   "Footer": {
     "3d_u_credits": "3D “Ü” gemaakt door",
     "follow_us": "Volg ons",
     "picture_credits": "Foto's door",
-    "site_credits": "Website & 3D Models gemaakt door",
+    "site_credits": "Website & 3D Modellen gemaakt door",
     "terms_and_conditions": "Algemene voorwaarden",
-    "translation_credits": "Nederlandse en Franse vertalingen door"
+    "translation_credits": "Vertalingen door"
   },
   "Index": {
     "hero": {
       "title": "Toxic Critters",
       "subtitle": "Hou de datum vrij!",
       "description": {
-        "p0": "Voor de 6e Editie van de Belgische furry conventie zou ons team het geweldig vinden om je uit te nodigen op ons vrolijke eiland vol verrassingen in het Bedford Hotel & Congress Center in Brussel.",
-        "p1": "Gestrand zijn op een eiland zal dit feestje niet stoppen. Laten we onze slippers en drankjes die aangespoeld zijn meenemen en dansen tot we er bij neervallen."
+        "p0": "Voor de 6e editie van de Belgische furry conventie zou ons team het geweldig vinden om je uit te nodigen op ons vrolijke eiland vol verrassingen in het Bedford Hotel & Congress Center in Brussel.",
+        "p1": "Gestrand zijn op een eiland gaat dit feestje niet stoppen. Laten we onze slippers en drankjes die aangespoeld zijn meenemen en dansen tot we er bij neervallen."
       },
-      "date": "van 6 tot en met 10 November, 2024"
+      "date": "van 6 t/m 10 November, 2024"
     },
     "activities": {
       "dances": {
         "title": "Dansfeest",
-        "description": "Feest hard op het dansfeest waar de DJ's een prachtige selectie van muziek zullen spelen. Of het nu House, Hardcore, Drum and Bass, Dubstep, Techno of iets anders is, onze DJ's hebben een beat voor iedereen!",
+        "description": "Feest hard op het dansvloer waar de DJ's een prachtige selectie van muziek zullen draaien. Of het nu House, Hardcore, Drum and Bass, Dubstep, Techno of iets anders is, onze DJ's hebben een beat voor iedereen!",
         "discover": "Ontdek"
       },
       "panels": {
         "title": "Panels",
         "description": {
-          "p0": "Flüüfff organiseert elk jaar een rijke variëteit aan panels. Zo is er bijvoorbeeld ons befaamd thee panel! Doe mee aan deze informatieve en praktische panels om meer te leren over die geweldige drank waar we allemaal van houden. Daarnaast zijn we tevens op zoek naar wat jij kan bijbrengen!",
-          "p1": "Je kan je eigen panel organiseren over iets wat je leuk vindt, iets waar je veel over weet, ... Je kan je voorstel voor een eigen panel indien via ons formulier!"
+          "p0": "Flüüfff organiseert elk jaar een rijke selectie aan panels. Zo is er bijvoorbeeld ons befaamd thee panel! Doe mee aan deze informatieve en praktische panels om meer te leren over die geweldige drank waar we allemaal van houden. ",
+          "p1": "Daarnaast zijn we tevens op zoek naar wat jij kan bijbrengen. Heb je een creatief onderwerp of activiteit waar je uren over kan praten? Of misschien iets waar je mensen graag bij wilt betrekken? Overweeg dan om bij ons zelf een panel te hosten! Je kan hiervoor een voorstel doen door het \"Panel Proposal\" formulier in te vullen. We kijken nu al uit naar wat jij neer kan zetten op onze conventie!"
         },
         "more_info": "Meer info",
         "submit_proposal": "Voorstel indienen"
       },
       "show_night": {
         "title": "Showavond",
-        "description": "Wat is een feestje op een droomeiland nu zonder een showavond? Flüüfff organiseert deze speciale avond gevuld met gezellige acts en optredens, door en voor aanwezigen. Ben je klaar om je talent als zanger, danser of moppentapper te laten zien op het grote podium van Flüüfff?",
+        "description": "Met al deze toxiciteit moeten we de sfeer een beetje opvrolijken... met een showavond! Flüüfff organiseert deze speciale avond gevuld met gezellige acts en optredens, door en voor aanwezigen. Ben je klaar om je talent als zanger, danser of moppentapper te laten zien op het grote podium van Flüüfff? Laat het ons weten door het \"Show Night\" formulier in te vullen!",
         "view_more": "Zie meer"
       }
     },
@@ -59,7 +59,7 @@
       "title": "Welkom op Flüüfff",
       "description": {
         "p0": "Dit is een Belgische furry conventie gelegen in Brussel! Een furry conventie is een evenement gewijd aan antropomorfische personages en een bijeenkomst voor alle furries en hun vrienden.",
-        "p1": "Flüüfff is verspreid over 5 dagen, van 9 November tot en met 13 November 2024. De conventie vindt plaats in het Bedford hotel."
+        "p1": "Flüüfff is verspreid over 5 dagen, van 6 November tot en met 10 November 2024. De conventie wordt gehouden in het Bedford hotel."
       },
       "about_fluufff": "Over Flüüfff"
     }
@@ -77,24 +77,24 @@
     },
     "about": {
       "description": {
-        "p0_fluufff": "Flüüfff 2024 is de 6e editie van de Flüüfff conventie. Het gaat allemaal over het samenbrengen van furries op een plek om vriendschap, plezier en creativiteit te delen (Alle waarden waar onze gemeenschap trots op kan zijn). Je hoeft geen furry te zijn om met ons mee te kunnen feesten!",
-        "p1_contents": "De conventie duurt 5 dagen en kan beleefd worden op verschillende manieren: Dansen als een feestbeest, hangen in de lounge, videogames spelen, panels bezoeken of doe mee aan één van onze aanraders."
+        "p0_fluufff": "Flüüfff 2024 is de 6e editie van de Flüüfff conventie. Het gaat om het samenbrengen van furries op één plek om vriendschap, plezier en creativiteit te delen (waarden waar onze gemeenschap trots op mag zijn). Je hoeft geen furry te zijn om met ons mee te kunnen feesten!",
+        "p1_contents": "De conventie duurt 5 dagen en kan beleefd worden op verschillende manieren. Je kunt dansen als een feestbeest, hangen in de lounge, videogames spelen, panels bezoeken en nog veel meer!"
       },
       "title": "Flüüfff"
     },
     "dream_team_title": "Het Dreamteam",
     "furry_fandom": {
       "description": {
-        "p0_furries": "De furry fandom is een gemeenschap geïnspireerd door anthropomorfische dieren (dieren met menselijke trekken). Mensen die deel hiervan zijn worden furries genoemd.",
+        "p0_furries": "De furry fandom is een gemeenschap geïnspireerd door anthropomorfische dieren (dieren met menselijke eigenschappen). Mensen die hier onderdeel van zijn worden 'furries' genoemd.",
         "p1_fandom": "Je kan het vergelijken met andere gemeenschappen met een fanbase zoals Star Wars, anime en de fantasie fandom. De furry fandom gaat grotendeels over creativiteit en is ook gekend als een zeer sociale gemeenschap.",
-        "p2_fursona": "De meeste furries maken hun eigen karakter (ook gekend als fursona), gebaseerd op een bepaald dier. Er zijn niet alleen normale dieren maar ook hybrides, mythische wezens en sommige maken zelfs hun eigen soorten.",
-        "p3_fursuits": "Als er een bijeenkomst of een conventie is zal je hoogstwaarschijnlijk mensen zien met fursuits. Deze fursuits zijn vooral kostuums gebaseerd op iemands fursona. Fursuiters zullen niet enkel een knuffel, maar ook een lach aan kinderen en volwassenen geven.",
-        "p4_conventions": "In deze community en vooral tijdens conventies draait het allemaal rond het maken van kunst, schrijven van verhalen, spelen van (rollen)spellen, socialisen en het maken en dragen van fursuits. De meeste furry conventies en meerdere furry groepen zamelen geld in en / of organiseren panels voor verschillende goede doelen!"
+        "p2_fursona": "De meeste furries maken hun eigen karakter (oftewel een 'fursona'), gebaseerd op een bepaald dier. Er zijn niet alleen normale dieren maar ook hybrides, mythische wezens en sommige maken zelfs hun eigen diersoorten.",
+        "p3_fursuits": "Als er een bijeenkomst of een conventie is zal je hoogstwaarschijnlijk mensen zien met fursuits. Deze fursuits zijn vooral kostuums gebaseerd op iemands fursona. Fursuiters zullen niet enkel een knuffel geven, maar zijn er ook om iedereen een leuke ervaring te brengen.",
+        "p4_conventions": "Binnen de community en tijdens de conventies draait het allemaal om het maken van kunst, schrijven van verhalen, spelen van (rollen)spellen, socialisen en het maken en dragen van fursuits. De meeste furry conventies en meerdere furry groepen zamelen geld in en / of organiseren panels voor verschillende goede doelen!"
       },
       "title": "Wat is de furry fandom?"
     },
     "help": {
-      "description": "Natuurlijk! Je kan ons altijd bereiken via mail of via het contact formulier en dan zullen we ons hierin verdiepen, Maar de beste manier om ons te steunen is door aanwezig te zijn!",
+      "description": "Natuurlijk! Je kan ons altijd bereiken door het contact formulier in te vullen zodat wij de mogelijkheden kunnen bekijken. Maar de beste manier om ons te steunen is door aanwezig te zijn!",
       "title": "Kan ik helpen tijdens Flüüfff 2024?"
     },
     "npo": {
@@ -103,44 +103,44 @@
         "p0_npo": "Flüüfff ASBL is een geregistreerde non profit organisatie met organisatie nummer 0662.498.716 (zie meer op de Belgische Kruispuntbank voor Ondernemingen)",
         "p1_admins": "De administratoren van de NPO zijn Thierry Dognié, Jan Taverniers, Benoît Volckaert en Wybren van der Meer."
       },
-      "revenue": "Alle winst gemaakt tijdens het evenement zal volledig gebruikt worden in materieel en diensten om de volgende edities te verbeteren of gedoneerd worden aan goede doelen.",
+      "revenue": "Alle winst gemaakt tijdens het evenement zal volledig gebruikt worden in materieel en diensten om de volgende edities te verbeteren of om gedoneerd te worden aan goede doelen.",
       "title": "Flüüfff ASBL"
     },
     "previous_editions": {
-      "title": "Waar vind ik de sites van vorige edities?"
+      "title": "Waar vind ik de websites van de vorige editie(s)?"
     },
     "rules": {
-      "description": "Je kan de conventie regels hier vinden.",
-      "title": "Zijn er bepaalde regels in de conventie?"
+      "description": "Je kan de conventieregels hier vinden.",
+      "title": "Gelden er bepaalde regels tijdens de conventie?"
     }
   },
   "Charity": {
     "header": {
-      "title": "Charity",
-      "subtitle": "Some info about our charity"
+      "title": "Goed doel",
+      "subtitle": "Informatie over ons goed doel"
     },
     "content": {
       "title": "Natagora",
-      "subtitle": "This year we are excited to announce our partnership with Natagora.",
-      "description": "Natagora is active across the whole of Wallonia and Brussels. The main objective of the association is to halt the loss of biodiversity and to help restore a better balance between nature and humankind. For this, the Association has taken on a number of missions."
+      "subtitle": "Dit jaar zijn we enthousiast om te melden dat we samenwerken met Natagora.",
+      "description": "Natagora is aktief in de regio van Wallonie en Brussel. het hoofddoel van de organisatie is een halt toeroepen rond het verlies van biodiversiteit en helpen bij het herstel van balans tussen natuur en mensheid. Om dit te bereiken heeft de organisatie een aantal doelen."
     },
     "study": {
-      "title": "Study",
-      "content": "One of the major activities of the Association is the identification of threats, the provision of support to those species that are the most endangered, together with the coordination of many monitoring programs."
+      "title": "Onderzoek",
+      "content": "Een van de hoofdactiviteiten van de organisatie is het identificeren van de bedreigde soorten en voorzien van ondersteuning, samen met de coördinatie van vele monitoringprogramma's."
     },
     "protect": {
-      "title": "Protect",
-      "content": "Natagora has more than 200 nature reserves, managed by many volunteers. The reserves cover a multitude of different types of habitat, many of which are under threat, and they are home to many rare species."
+      "title": "Bescherming",
+      "content": "Natagora heeft meer dan 200 natuurgebieden, onderhouden door vele vrijwilligers. Ze overzien verschillende soorten habitats, waarvan vele bedreigd worden, deze zijn thuis van vele zeldzame orgamismen / diersoorten."
     },
     "involvement": {
-      "title": "Involvement",
-      "content": "On a daily basis the many Association volunteers help to influence political decisions, to promote biodiversity, to foresee impending damage, and to react as necessary."
+      "title": "Deelname",
+      "content": "De geregistreerde vrijwilligers werken op een dagelijkse basis om de politiek te overtuigen, om de bio diversiteit te promoten, om schade te voorspellen en te reageren als het nodig is."
     },
     "education": {
-      "title": "Education",
-      "content": "Natagora is heavily involved in all aspects of environmental education. It runs training events, it supports Regional Centers of Introduction to the Environment, it has outreach events, and it helps the networking of individuals."
+      "title": "Educatief",
+      "content": "Natagora is sterk betrokken in alle aspecten van milieueducatie. Ze organiseren trainigsevenementen, ze ondersteunen regionale centras met inleidingen tot het milieu, ze organiseren outreach evenementen en ze helpen met het vrijwilligersnetwerk."
     },
-    "more_info": "More info about Natagora can be found"
+    "more_info": "meer informatie over Natagora vind u hier."
   },
   "Timetable": {
     "header": {
@@ -169,7 +169,7 @@
   "Tickets": {
     "header": {
       "title": "Tickets",
-      "subtitle": "Verkrijg hier je tickets!"
+      "subtitle": "Koop hier je tickets!"
     },
     "tickets": {
       "title": "Tickets nodig?"
@@ -179,7 +179,7 @@
       "description": {
         "p0": "De beste manier om volledig te genieten van onze conventie is met een residentiële ticket.",
         "p1": "Let op dat alle gegeven prijzen voor 1 plek in een gedeelde kamer en voor 1 conventie ticket zijn. Het reserveren van een volledige kamer is mogelijk voor dubbel de prijs.",
-        "p2": null
+        "p2": "Door beperkte beschikbaarheid kunnen Triple (3 personen) en Quadruple (4 personen) kamers enkel als VOLLEDIGE kamer geboekt worden. Dit bevat ook de confee voor alle spots in deze kamer."
       },
       "include": "Residentiële tickets bevatten:",
       "con_access": "Toegang to de conventieruimte",
@@ -196,7 +196,7 @@
     "day": {
       "title": "Dagticket",
       "description": "Wil je ook onze vachtige evenement bijwonen, maar heb je geen plek om te overnachten? Dan hebben we iets speciaal voor jou! We bieden conventietickets aan voor elke dag, voor het volledige event of voor de weekends.",
-      "sales_open_later": null,
+      "sales_open_later": "<b>Note:</b> Dagtickets worden deze zomer verkocht.",
       "include": "Dagtickets bevatten:",
       "con_access": "Toegang tot de conventieruimte",
       "events_on_chosen_day": "Toegang tot alle activiteiten voor de gekozen dag(en)",
@@ -205,7 +205,7 @@
     "extras": {
       "title": "Extras",
       "description": "Vind je ons evenement tof en wil je Flüüfff steunen zodat we volgende ervaringen beter kunnen maken? Overweeg dan om een sponser te worden!",
-      "includes": "Het sponserpacket bevat:",
+      "includes": "Het sponserpakket bevat:",
       "t_shirt": "Conventie t-shirt",
       "custom_badge_art": "Unieke badge",
       "custom_lanyard": "Unieke lanyard",
@@ -215,7 +215,7 @@
   },
   "Hotel": {
     "header": {
-      "title": "De accomodatie",
+      "title": "De accommodatie",
       "subtitle": "Kijk eens naar deze gezellige kamers!"
     },
     "hotel": {
@@ -246,9 +246,9 @@
       "description": "Er zijn veel interessante eetgelegenheden dichtbij als je even wil stappen.",
       "food": {
         "kebab": "Er zijn 2 goede locaties voor kebab (één aan iedere kant van de straat) binnen 5 minuten stappen van het hotel (naar links!).",
-        "pasta": "We raden de pastabar dichtbij aan, een goede keuze daar is de pikante pasta met extra kaas!",
-        "vietnamese": "Als de pikante pasta niet exotisch genoeg is voor je, is er een Vietnamees hoekje aan het einde van de straat als je links blijft lopen.",
-        "mcdonalds": "Als je geen smaakpapillen hebt, kan je ook naar McDonald's. Het is slechts 10 minuten wandelen."
+        "pasta": "We raden de pastabar dichtbij aan, een aanrader is de pikante pasta met extra kaas!",
+        "vietnamese": "Als de pikante pasta niet exotisch genoeg voor je is, is er een Vietnamees hoekje aan het einde van de straat als je links blijft lopen.",
+        "mcdonalds": "Als je geen smaakpapillen hebt, kan je ook naar McDonald's gaan. Het is slechts 10 minuten wandelen."
       }
     }
   },
@@ -261,7 +261,7 @@
       "title": "Standard kamers",
       "air_conditioning": "Air conditioning",
       "bathtub_with_shower": "Bad met douche",
-      "description": "Alle Standard kamers zijn stijlvol ingericht en hebben een reeks aan voorzieningen. Deze zijn beschikbaar als Single, Double of Twin kamers voor 1, 2, 3 of 4 personen.",
+      "description": "Alle Standard kamers zijn stijlvol ingericht en hebben een reeks aan voorzieningen. Deze zijn beschikbaar als enkel, Double of Twin kamers voor 1, 2, 3 of 4 personen.",
       "dry_cleaning": "Zelfde dag droogkuis en was (enkel weekdagen)",
       "fitness_centre": "Gratis toegang naar het fitnesscentrum",
       "free_luggage_storage": "Gratis bagageruimte",
@@ -308,7 +308,7 @@
   "Terms": {
     "header": {
       "title": "Algemene Voorwaarden",
-      "subtitle": "Legale Tekst"
+      "subtitle": "Juridische zaken"
     }
   },
   "general": {
@@ -321,44 +321,44 @@
     },
     "registration": {
       "REGISTRATION_NOT_STARTED": {
-        "body": null
+        "body": "Registratie opent {opening, date, registration}."
       },
       "REGISTRATION_IS_OVER": {
-        "body": null
+        "body": "De registratieperiode is voorbij."
       },
       "REGISTRATION_IS_DONE": {
-        "body": null
+        "body": "Je bent geregistreerd, klik hier om naar je profiel te gaan."
       },
       "REGISTRATION_IS_CLOSE": {
-        "body": null
+        "body": "De registratie werd gesloten door het registratieteam."
       },
       "PREREGISTRATION_IS_OPEN": {
-        "body": null
+        "body": "Maak een account aan voor de registratie opent. De ticketverkoop loopt van {opening, date, registrationShort} tot {closing, date, registration}."
       },
       "REGISTRATION_IS_OPEN": {
-        "button": null,
-        "body": null
+        "button": "Koop je ticket",
+        "body": "Ticketverkoop vanaf {opening, date, registrationShort} tot {closing, date, registration}."
       },
       "REGISTRATION_ACCOUNT_OPEN": {
-        "button": null,
-        "body": null
+        "button": "Koop je ticket (existing accounts only)",
+        "body": "Ticketverkoop vanaf {opening, date, registrationShort} tot {closing, date, registration}."
       },
       "REGISTRATION_ACCOUNT_CREATION_ONLY": {
-        "button": null,
-        "body": null
+        "button": "Maak een account aan",
+        "body": "De ticketverkoop is afgelopen. Maak een account aan om geruilde tickets toe te kennen."
       }
     },
     "labels": {
-      "double": "Dubbel",
+      "double": "Double",
       "here": "hier",
-      "quadruple": "Vierdubbel",
+      "quadruple": "Quadrupel",
       "single": "Enkel",
-      "triple": "Driedubbel",
+      "triple": "Tripel",
       "twin": "Twin",
       "1_day": "1 dag",
       "5_days": "5 dagen",
       "weekend": "Weekend",
-      "full_con": "Volledige event",
+      "full_con": "Volledige conventie",
       "to": "naar",
       "early_arrival": "Vroege aankomst",
       "item": "Item",
@@ -368,14 +368,14 @@
       "per_room": "/ kamer",
       "plus_1_day": "+1 dag",
       "price": "Prijs",
-      "sponsor_pack": "Sponsor pack",
+      "sponsor_pack": "Sponsor pakket",
       "standard_room": "Standaard kamer",
       "t_shirt": "T-shirt",
-      "wednesday_short": "Woe",
-      "thursday_short": "Don",
-      "friday_short": "Vrij",
-      "saturday_short": "Zat",
-      "sunday_short": "Zon"
+      "wednesday_short": "Wo",
+      "thursday_short": "Do",
+      "friday_short": "Vr",
+      "saturday_short": "Za",
+      "sunday_short": "Zo"
     }
   }
 }

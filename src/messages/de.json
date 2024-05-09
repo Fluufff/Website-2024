@@ -18,7 +18,7 @@
   },
   "Footer": {
     "3d_u_credits": "3D \"Ü\" erstellt von",
-    "follow_us": "Folg uns",
+    "follow_us": "Folgt uns",
     "picture_credits": "Fotos von",
     "site_credits": "Webseite & 3D Modelle erstellt von",
     "terms_and_conditions": "Allgemeine Geschäftsbedingungen",
@@ -27,24 +27,24 @@
   "Index": {
     "hero": {
       "title": "Toxic Critters",
-      "subtitle": "Merke dir das Datum!",
+      "subtitle": "Halte dir das Datum frei!",
       "description": {
         "p0": "Für die 6te Edition der belgischen Furry Convention lädt euch unser Team herzlich auf unsere Insel des Glücks und der Überraschungen im Bedford Hotel & Congress Center in Brüssel ein.",
-        "p1": "Auf einer Insel gestrandet zu sein wird die Party nicht beenden. Schnappt euch eure Flip-Flops und die Flaschen, die an Land gespühlt wurden, und lasst uns tanzen, als gäbe es kein Morgen."
+        "p1": "Auf einer Insel gestrandet zu sein, wird die Party nicht beenden. Schnappt euch eure Flip-Flops und die Flaschen, die an Land gespült wurden, und lasst uns tanzen, als gäbe es kein Morgen."
       },
       "date": "6. bis 10. November, 2024"
     },
     "activities": {
       "dances": {
         "title": "Partys",
-        "description": "Feiert kräftig auf der Party, wo die DJs eine schöne Auswahl an Musik spielen werden. Egal ob House, Hardcore, Drum und Bass, Dubstep, Techno oder irgendetwas anderes, unsere DJs haben für jeden die passende Musik parat!",
+        "description": "Feiert kräftig auf der Party, auf der die DJs eine schöne Auswahl an Musik spielen werden. Egal ob House, Hardcore, Drum und Bass, Dubstep, Techno oder irgendetwas anderes, unsere DJs haben für jeden die passende Musik parat!",
         "discover": "Erfahre mehr"
       },
       "panels": {
         "title": "Panels",
         "description": {
           "p0": "Jedes Jahr organisiert Flüüfff eine Vielzahl an Panels. Von ernsthafteren informativen Panels wie dem Furry Femme-Panel bis hin zu unterhaltsameren Panels wie dem Kaffee-Panel ist alles dabei!",
-          "p1": "Natürlich ist die Con nichts ohne ihre Teilnehmer, die Interesse daran gezeigt haben, ihre eigenen Panels anzubieten. Hast du ein paar kreative Ideen zu Panels/Aktivitäten im Sinn oder würdest gerne dein Enthusiasmus teilen über etwas, das du liebst oder viel drüber weisst? Dann sende uns deine Idee über das Panel-Vorschlagsformular (Wie viele vor dir bereits taten)!"
+          "p1": "Natürlich ist die Con nichts ohne ihre Teilnehmer, die Interesse daran gezeigt haben, ihre eigenen Panels anzubieten. Hast du ein paar kreative Ideen zu Panels/Aktivitäten im Sinn oder würdest gerne dein Enthusiasmus teilen über etwas, das du liebst oder viel drüber weißt? Dann sende uns deine Idee über das Panel-Vorschlagsformular (Wie viele vor dir bereits taten)!"
         },
         "more_info": "Mehr Infos",
         "submit_proposal": "Vorschlag senden"
@@ -59,7 +59,7 @@
       "title": "Willkommen bei Flüüfff",
       "description": {
         "p0": "Es ist eine belgische Furry Convention mit Sitz in Brüssel! Eine Furry Convention ist eine Veranstaltung, die anthropomorphen Charaktären gewidmet ist und ein Treffpunkt für alle Furries und ihre Freunde ist.",
-        "p1": "Flüüfff erstreckt sich über 5 Tage, vom 6. bis zum 10. November 2024. Die Convention findet im Bedford Hotel statt."
+        "p1": "Flüüfff geht 5 Tage lang, vom 6. bis zum 10. November 2024. Die Convention findet im Bedford Hotel statt."
       },
       "about_fluufff": "Über Flüüfff"
     }
@@ -77,7 +77,7 @@
     },
     "about": {
       "description": {
-        "p0_fluufff": "Flüüfff 2024 ist die 6te Edition der Flüüfff Convention. Es geht darum, Furries an einem Ort zusammen zu bringen, um Freundschaften, Spaß und Kreativität zu teilen (Werte, auf die unsere Community stolz sein kann). Du musst kein Furry sein, um mit uns zu feiern!",
+        "p0_fluufff": "Flüüfff 2024 ist die 6. Edition der Flüüfff Convention. Es geht darum, Furries an einem Ort zusammen zu bringen, um Freundschaften, Spaß und Kreativität zu teilen (Werte, auf die unsere Community stolz sein kann). Du musst kein Furry sein, um mit uns zu feiern!",
         "p1_contents": "Die Convention dauert 5 Tage und kann auf mehren Arten genossen werden: Tanze wie ein Partylöwe, entspanne dich, spiele Videospiele und Brettspiele oder nehme an einem Panel oder an einem der vorgeschlagenen Aktivitäten teil."
       },
       "title": "Flüüfff"
@@ -98,7 +98,7 @@
       "title": "Kann ich bei Flüüfff 2024 mithelfen?"
     },
     "npo": {
-      "address": "Flüüfff, ASBL Félicien Rops Straße, 35B, Fach 01 1070, Anderlecht Belgien",
+      "address": "Flüüfff, ASBL Rue Félicien Rops, 35B, Fach 01 1070, Anderlecht Belgien",
       "description": {
         "p0_npo": "Flüüfff ASBL ist eine registrierte belgische Non-Profit-Organisation mit der Organisationsnummer 0662.498.716 (weitere Informationen finden Sie in der belgischen Crossroads Bank für Enterprise Database).",
         "p1_admins": "Die Verwalter der NPO sind Thierry Dognié, Jan Taverniers, Benoît Volckaert und Wybren van der Meer."
@@ -178,8 +178,8 @@
       "title": "Residenzticket",
       "description": {
         "p0": "Die beste Möglichkeit, die Convention in vollen Zügen zu genießen, ist mit einem Residenzticket!",
-        "p1": "Bitte beachte, dass alle hier aufgeführten Preise für EINEN Platz in einem Gemeinschaftszimmer und EINEN Conventionplatz gelten. Die Reservierung eines ganzen Zimmers ist möglich, aber zum doppelten Preis.",
-        "p2": "Aufgrund der begrenzten Verfügbarkeit können die Dreibett- (3 Personen) und Vierbettzimmer (4 Personen) nur als VOLLES Zimmer reserviert werden, einschließlich aller Conventiongebühren."
+        "p1": "Bitte beachte, dass die hier aufgeführten Preise für Double- und Twinzimmer für EINEN Platz in einem Gemeinschaftszimmer und EINEN Conventionplatz gelten. Die Reservierung eines ganzen Zimmers ist möglich, aber zum doppelten Preis.",
+        "p2": "Aufgrund der begrenzten Verfügbarkeit können die Triple (3 Personen) und Quadruple (4 Personen) Zimmer nur als GANZES Zimmer reserviert werden, einschließlich aller Conventiongebühren."
       },
       "include": "Residenztickets beinhalten:",
       "con_access": "Zugang zum Convention Bereich",
@@ -189,7 +189,7 @@
       "cleaning": "Tägliche Zimmerreinigung",
       "info": {
         "check_in_out": "Check-in am ersten Tag ist um 16:00 Uhr.\nCheck-out am letzten Tag ist um 12:00 Uhr.",
-        "room_types": "Infos über die verschiedenen Zimmertypen befinden sich auf der Zimmer Seite. Dieses Jahr haben wir Einzel- und Zweibettzimmer.",
+        "room_types": "Infos über die verschiedenen Zimmertypen befinden sich auf der Zimmerseite. Dieses Jahr bieten wir Single, Double/Twin (2 Personen), Triple (3 Personen) und Quadruple (4 Personen) Zimmer an.",
         "extra_days": "Du kannst einen zusätzlichen Tag vor und nach der Convention hinzufügen, der als \"frühe Anreise\" bzw \"späte Abreise\" bezeichnet wird."
       }
     },
@@ -208,7 +208,7 @@
       "includes": "Das Sponsor Paket beinhaltet:",
       "t_shirt": "Convention T-Shirt",
       "custom_badge_art": "Individuelle Badge Art",
-      "custom_lanyard": "Individuelles Schlüsselband",
+      "custom_lanyard": "Individueller Lanyard",
       "bonus_goodies": "Ein paar extra Goodies",
       "eternal_gratitude": "Unsere ewige Dankbarkeit"
     }
@@ -258,14 +258,14 @@
       "subtitle": "Schau dir diese coolen Zimmer an!"
     },
     "standard_rooms": {
-      "title": "Standardzimmer",
+      "title": "Standard Zimmer",
       "air_conditioning": "Klimaanlage",
       "bathtub_with_shower": "Badewanne mit Dusche",
-      "description": "Alle Standardzimmer sind stilvol eingerichtet und bieten eine Reihe von Annehmlichkeiten. Sie sind als Einzel-, Doppel- oder Zweibettzimmer für 1, 2, 3, oder 4 Personen verfügbar.",
+      "description": "Alle Standard Zimmer sind stilvol eingerichtet und bieten eine Reihe von Annehmlichkeiten. Sie sind als Single, Double oder Twin für 1, 2, 3, oder 4 Personen verfügbar.",
       "dry_cleaning": "Trockenreinigung und Wäsche am selben Tag (Nur an Wochentagen)",
-      "fitness_centre": "Freier Zugang zum Fitnesscenter",
+      "fitness_centre": "Kostenloser Zugang zum Fitnesscenter",
       "free_luggage_storage": "Kostenlose Gepäckaufbewahrung",
-      "hairdryer": "Fön",
+      "hairdryer": "Föhn",
       "inroom_safe": "Zimmertresor",
       "soft_duvets": "Bequeme Betten mit weißen, weichen Bettdecken"
     },
@@ -308,7 +308,7 @@
   "Terms": {
     "header": {
       "title": "Allgemeine Geschäftsbedingungen",
-      "subtitle": "Rechtliche Dinge"
+      "subtitle": "Rechtliches"
     }
   },
   "general": {
@@ -349,10 +349,10 @@
       }
     },
     "labels": {
-      "double": "Doppel",
+      "double": "Double",
       "here": "hier",
       "quadruple": "Quadruple",
-      "single": "Einzel",
+      "single": "Single",
       "triple": "Triple",
       "twin": "Twin",
       "1_day": "1 Tag",
