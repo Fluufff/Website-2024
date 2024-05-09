@@ -24,7 +24,7 @@
     "translation_credits": "Traductions par",
     "art_credits": "Art par",
     "specifics": {
-      "3d_model": "Modèle 3D",
+      "3d_model": "modèle 3D",
       "social_media_preview": "vignette réseaux sociaux"
     }
   },
@@ -34,7 +34,7 @@
       "subtitle": "Faites une croix dans votre calendrier !",
       "description": {
         "p0": "Pour la 6e édition de la convention furry belge, notre équipe est heureuse de vous accueillir sur notre île de fête et de gaieté, le Bedford Hotel & Congress Center à Bruxelles.",
-        "p1": "Ce n'est pas parce que nous nous sommes échoués sur une plage que la fête va s'arrêter. Ramassez vos tongs, les bouteilles envoyées par les vagues et allons danser jusqu'à plus soif."
+        "p1": "Avec ces lumières néon, l'heure est à la fête et à la danse ! Cependant, les déchets autour ne sont pas tous inoffensifs, et les conséquences de la radioactivité ne sont pas que des légendes…"
       },
       "date": "6-10 Novembre 2024"
     },
@@ -144,7 +144,7 @@
       "title": "Education",
       "content": "Natagora is heavily involved in all aspects of environmental education. It runs training events, it supports Regional Centers of Introduction to the Environment, it has outreach events, and it helps the networking of individuals."
     },
-    "more_info": "More info about Natagora can be found"
+    "more_info": "Plus d'informations concernant Sea Life peuvent être trouvées"
   },
   "Timetable": {
     "header": {
