@@ -78,7 +78,10 @@ export default async function Footer({ locale }: { locale: string }) {
             {t('translation_credits')}{' '}
             <CreditsList
               furries={[
+                { name: 'Aelkan' },
                 { name: 'Dacia', url: 'https://linktr.ee/Daciathedutchie' },
+                { name: 'Jinx McKenzie' },
+                { name: "Milo'Clock" },
                 { name: 'Tach', url: 'https://twitter.com/Tachillobator' },
                 // TODO: complete this
               ]}
@@ -91,7 +94,10 @@ export default async function Footer({ locale }: { locale: string }) {
                 { name: 'Axel', url: 'https://twitter.com/AxelTheStallion' },
                 { name: 'Chip', url: 'https://twitter.com/cheetah_chip' },
                 { name: 'Atien', url: 'https://twitter.com/Silou_Atien' },
-                // TODO: check credit for image in about page
+                {
+                  name: 'Shiro',
+                  url: 'https://bsky.app/profile/shirodoggo.bsky.social',
+                },
               ]}
             />
           </div>
