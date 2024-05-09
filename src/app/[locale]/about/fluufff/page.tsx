@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
-import logoBigImage from '@/assets/3d-logo.png';
+import illustrationImage from '@/assets/amaroq-laddian.png';
 import headerImage from '@/assets/headers/about.jpg';
 import lineImage from '@/assets/lines-1.png';
 import { Header } from '@/components/Header';
@@ -33,24 +33,24 @@ export default async function About({ params: { locale } }: Props) {
       />
       <div className="o-section o-section--alt">
         <Image src={lineImage} alt="" className="o-section__accent-image" />
-        <div className="o-section__content">
-          <div className="m-about">
-            <Image src={logoBigImage} alt="" className="m-about__logo" />
-            <div className="m-about__content">
-              <h3>{t('about.title')}</h3>
-              <p>{t('about.description.p0_fluufff')}</p>
-              <p>{t('about.description.p1_contents')}</p>
-              {exclude(
-                'charity',
-                <div className="u-margin-top-lg">
-                  <div className="m-button-group">
-                    <Link href="/about/charity" className="a-button">
-                      {tGeneral('buttons.charity')}
-                    </Link>
-                  </div>
-                </div>,
-              )}
-            </div>
+        <div className="o-section__content m-about">
+          <div className="m-about__image">
+            <Image src={illustrationImage} alt="" />
+          </div>
+          <div className="m-about__content">
+            <h3>{t('about.title')}</h3>
+            <p>{t('about.description.p0_fluufff')}</p>
+            <p>{t('about.description.p1_contents')}</p>
+            {exclude(
+              'charity',
+              <div className="u-margin-top-lg">
+                <div className="m-button-group">
+                  <Link href="/about/charity" className="a-button">
+                    {tGeneral('buttons.charity')}
+                  </Link>
+                </div>
+              </div>,
+            )}
           </div>
         </div>
       </div>
