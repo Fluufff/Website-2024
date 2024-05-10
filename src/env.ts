@@ -15,8 +15,6 @@ export const env = createEnv({
   server: {
     APP_ENV: z.enum(['development', 'staging', 'production']),
 
-    ASSET_PREFIX: stringOrEmpty.pipe(z.string().url().optional()),
-
     /** beware: anything not empty is considered true */
     STANDALONE_OUTPUT: z.string().optional().pipe(z.coerce.boolean()),
 
@@ -29,12 +27,14 @@ export const env = createEnv({
   },
 
   client: {
+    NEXT_PUBLIC_ASSET_PREFIX: stringOrEmpty.pipe(z.string().url().optional()),
     NEXT_PUBLIC_REG_ROOT: z.string().url(),
     NEXT_PUBLIC_REG_API_ROOT: z.string().url(),
   },
 
   // value
   experimental__runtimeEnv: {
+    NEXT_PUBLIC_ASSET_PREFIX: process.env.NEXT_PUBLIC_ASSET_PREFIX,
     NEXT_PUBLIC_REG_API_ROOT: process.env.NEXT_PUBLIC_REG_API_ROOT,
     NEXT_PUBLIC_REG_ROOT: process.env.NEXT_PUBLIC_REG_ROOT,
   },

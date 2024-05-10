@@ -35,7 +35,7 @@ docker run --rm -it -p 3000:3000 fluufff-website
 
 ### Running the production image locally
 
-I recommend setting `.env.local` to set `ASSET_PREFIX=""` before building the
+I recommend setting `.env.local` to set `NEXT_PUBLIC_ASSET_PREFIX=""` before building the
 image, to avoid pointing to the production CDN for assets.
 
 ## Messages import/export
