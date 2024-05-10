@@ -79,6 +79,7 @@ export default async function Footer({ locale }: { locale: string }) {
             <CreditsList
               furries={[
                 { name: 'Aelkan' },
+                { name: 'Alex', url: 'https://twitter.com/Bijensteek' },
                 { name: 'Dacia', url: 'https://linktr.ee/Daciathedutchie' },
                 { name: 'Jinx McKenzie' },
                 { name: "Milo'Clock" },
