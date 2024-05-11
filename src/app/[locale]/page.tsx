@@ -57,11 +57,14 @@ export default async function IndexPage({
               </div>
               <h3>{t('activities.dances.title')}</h3>
               <p>{t('activities.dances.description')}</p>
-              <Link
-                href="/timetable"
-                className="a-button a-button--secondary u-margin-top">
-                {t('activities.dances.discover')}
-              </Link>
+              {exclude(
+                'schedule',
+                <Link
+                  href="/timetable"
+                  className="a-button a-button--secondary u-margin-top">
+                  {t('activities.dances.discover')}
+                </Link>,
+              )}
             </div>
             <div className="m-activities__item">
               <div className="m-activities__item__image">
@@ -70,11 +73,14 @@ export default async function IndexPage({
               <h3>{t('activities.panels.title')}</h3>
               <p>{t('activities.panels.description.p0')}</p>
               <p>{t('activities.panels.description.p1')}</p>
-              <Link
-                href="/timetable"
-                className="a-button a-button--secondary u-margin-top">
-                {t('activities.panels.more_info')}
-              </Link>
+              {exclude(
+                'schedule',
+                <Link
+                  href="/timetable"
+                  className="a-button a-button--secondary u-margin-top">
+                  {t('activities.panels.more_info')}
+                </Link>,
+              )}
               {exclude(
                 'panel-form',
                 <a
@@ -92,11 +98,14 @@ export default async function IndexPage({
               </div>
               <h3>{t('activities.show_night.title')}</h3>
               <p>{t('activities.show_night.description')}</p>
-              <Link
-                href="/timetable"
-                className="a-button a-button--secondary u-margin-top">
-                {t('activities.show_night.view_more')}
-              </Link>
+              {exclude(
+                'schedule',
+                <Link
+                  href="/timetable"
+                  className="a-button a-button--secondary u-margin-top">
+                  {t('activities.show_night.view_more')}
+                </Link>,
+              )}
             </div>
           </div>
         </div>
