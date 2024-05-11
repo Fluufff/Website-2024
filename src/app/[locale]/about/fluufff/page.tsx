@@ -87,6 +87,9 @@ export default async function About({ params: { locale } }: Props) {
                 <li>
                   <a href="https://2021.fluufff.org">Flüüfff 2021</a>
                 </li>
+                <li>
+                  <a href="https://2022.fluufff.org">Flüüfff 2022</a>
+                </li>
               </ul>
             </div>
           </div>
