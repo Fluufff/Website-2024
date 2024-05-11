@@ -117,7 +117,7 @@ const Done = mkSimple(() =>
 const Close = mkSimple(() =>
   useTranslations('general.registration.REGISTRATION_IS_CLOSE'),
 );
-const Prereg = mkSimple(() =>
+const Prereg = mkWithCta(CreateAccountCta, () =>
   useTranslations('general.registration.PREREGISTRATION_IS_OPEN'),
 );
 

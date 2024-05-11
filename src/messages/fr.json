@@ -337,6 +337,7 @@
         "body": "Les inscriptions ont été fermées par l'équipe Registration."
       },
       "PREREGISTRATION_IS_OPEN": {
+        "button": "Créer un compte",
         "body": "Créer un compte avant que les inscriptions ne commencent. La billeterie ouvrira du {opening, date, registrationShort} au {closing, date, registration}."
       },
       "REGISTRATION_IS_OPEN": {

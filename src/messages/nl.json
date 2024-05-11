@@ -337,6 +337,7 @@
         "body": "De registratie werd gesloten door het registratieteam."
       },
       "PREREGISTRATION_IS_OPEN": {
+        "button": "Maak een account aan",
         "body": "Maak een account aan voor de registratie opent. De ticketverkoop loopt van {opening, date, registrationShort} tot {closing, date, registration}."
       },
       "REGISTRATION_IS_OPEN": {

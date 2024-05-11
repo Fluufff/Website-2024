@@ -337,6 +337,7 @@
         "body": "Die Registration wurde vom Registrationsteam geschlossen."
       },
       "PREREGISTRATION_IS_OPEN": {
+        "button": "Erstelle ein Konto",
         "body": "Erstelle ein Konto, bevor die Registration beginnt. Der Ticketverkauf beginnt {opening, date, registrationShort} und endet {closing, date, registration}."
       },
       "REGISTRATION_IS_OPEN": {
