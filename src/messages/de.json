@@ -22,10 +22,10 @@
     "site_credits": "Webseite erstellt von",
     "terms_and_conditions": "Allgemeine Geschäftsbedingungen",
     "translation_credits": "Übersetzung von",
-    "art_credits": null,
+    "art_credits": "Art von",
     "specifics": {
       "3d_model": "3D-Modell",
-      "social_media_preview": null
+      "social_media_preview": "Social-Media-Vorschau"
     }
   },
   "Index": {
@@ -33,8 +33,8 @@
       "title": "Toxic Critters",
       "subtitle": "Halte dir das Datum frei!",
       "description": {
-        "p0": "Für die 6te Edition der belgischen Furry Convention lädt euch unser Team herzlich auf unsere Insel des Glücks und der Überraschungen im Bedford Hotel & Congress Center in Brüssel ein.",
-        "p1": "Auf einer Insel gestrandet zu sein, wird die Party nicht beenden. Schnappt euch eure Flip-Flops und die Flaschen, die an Land gespült wurden, und lasst uns tanzen, als gäbe es kein Morgen."
+        "p0": "Für die 6te Edition der belgischen Furry Convention würde euch unser Team herzlich in die faszinierende Toxic City im Bedford Hotel & Congress Center in Brüssel locken.",
+        "p1": "Lasst uns alle zusammen bringen und unter den Neonlichtern feiern! Aber Vorsicht vor dem Giftmüll: Mit Radioaktivität ist nicht zu spaßen, und man weiß nie, worauf man stoßen könnte..."
       },
       "date": "6. bis 10. November, 2024"
     },
@@ -285,8 +285,8 @@
     },
     "plane": {
       "title": "Mit dem Flugzeug",
-      "take_to_airport": "Nimm ein Flugzeug nach",
-      "walk_to_station": "Gehe zum",
+      "take_to_airport": "Nimm ein Flugzeug zum",
+      "walk_to_station": "Gehe zur",
       "take_train": "Nimm den Zug von",
       "train_every_15_minutes": "Es gibt alle 15 Minuten einen Zug."
     },
@@ -295,7 +295,7 @@
     },
     "train": {
       "title": "Mit dem Zug",
-      "take_train": "Nimm den Zug nach",
+      "take_train": "Nimm den Zug zur",
       "actual_timetables": "Alle Reisehinweise und aktuelle Fahrpläne für das Zugsystem (je nach Standort) findest du auf der",
       "belgian_train_website": "SNCB Webseite"
     },
@@ -364,7 +364,7 @@
       "5_days": "5 Tage",
       "weekend": "Wochenende",
       "full_con": "Vollständige Con",
-      "to": "zu",
+      "to": "zur",
       "early_arrival": "Frühe Ankunft",
       "item": "Item",
       "late_departure": "Späte Abreise",

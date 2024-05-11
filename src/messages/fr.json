@@ -33,8 +33,8 @@
       "title": "Toxic Critters",
       "subtitle": "Faites une croix dans votre calendrier !",
       "description": {
-        "p0": "Pour la 6e édition de la convention furry belge, notre équipe est heureuse de vous accueillir sur notre île de fête et de gaieté, le Bedford Hotel & Congress Center à Bruxelles.",
-        "p1": "Avec ces lumières néon, l'heure est à la fête et à la danse ! Cependant, les déchets autour ne sont pas tous inoffensifs, et les conséquences de la radioactivité ne sont pas que des légendes…"
+        "p0": "Pour la 6e édition de la convention furry belge, notre équipe serait heureuse de vous entraîner dans les abords de Toxic City, au Bedford Hotel & Congress Center à Bruxelles.",
+        "p1": "Les lumières néon montrent que l'heure est à la fête ! Par contre je doute de l'innocuité des déchets toxiques qui traînent autour, et la radioactivité c'est pas de la rigolade, et puis on ne sait jamais sur quoi l'on peut tomber…"
       },
       "date": "6-10 Novembre 2024"
     },
@@ -47,7 +47,7 @@
       "panels": {
         "title": "Conférences",
         "description": {
-          "p0": "Flüüfff accueille chaque année des présentations variées parlant de sujets serieux, comme le Furry Femme panel, ou des ateliers plus amusants comme l'atelier café, pour partir à la découverte de cette fascinante boisson. Nous vous attendons pour la prochaine présentation !",
+          "p0": "Flüüfff accueille chaque année des conférences variées portant sur des sujets serieux et informatifs, comme le Furry Femme panel, et des ateliers comme le fascinant et délicieux atelier café, pour partir à la découverte de cette fascinante boisson.",
           "p1": "Vous pouvez aussi organiser votre propre présentation ou atelier à la Flüüfff, que ce soit à propos de quelque chose que vous aimez, ou quelque chose que vous connaissez bien. Vous pouvez suggérer votre présentation, atelier ou rencontre via le formulaire de suggestion de présentation !"
         },
         "more_info": "En savoir plus",

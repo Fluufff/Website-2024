@@ -22,10 +22,10 @@
     "site_credits": "Website gemaakt door",
     "terms_and_conditions": "Algemene voorwaarden",
     "translation_credits": "Vertalingen door",
-    "art_credits": "Kunst door",
+    "art_credits": "Kunst gemaakt door",
     "specifics": {
       "3d_model": "3D model",
-      "social_media_preview": "sociale media miniatuur"
+      "social_media_preview": "voorproefje voor sociale media"
     }
   },
   "Index": {
@@ -33,10 +33,10 @@
       "title": "Toxic Critters",
       "subtitle": "Hou de datum vrij!",
       "description": {
-        "p0": "Voor de 6e editie van de Belgische furry conventie zou ons team het geweldig vinden om je uit te nodigen op ons vrolijke eiland vol verrassingen in het Bedford Hotel & Congress Center in Brussel.",
-        "p1": "Gestrand zijn op een eiland gaat dit feestje niet stoppen. Laten we onze slippers en drankjes die aangespoeld zijn meenemen en dansen tot we er bij neervallen."
+        "p0": "Voor de 6e editie van België's furry conventie, lokt ons team je graag mee naar de fascinerende Toxic City van het Brusselse Bedford Hotel & Congress Center.",
+        "p1": "Laten we iedereen meenemen en feesten onder de neonlichten! Pas echter op voor het giftige afval: radioactiviteit is geen grap, en je weet nooit waar je in de buurt kunt komen..."
       },
-      "date": "van 6 t/m 10 November, 2024"
+      "date": "6 t/m 10 November, 2024"
     },
     "activities": {
       "dances": {
@@ -47,7 +47,7 @@
       "panels": {
         "title": "Panels",
         "description": {
-          "p0": "Flüüfff organiseert elk jaar een rijke selectie aan panels. Zo is er bijvoorbeeld ons befaamd thee panel! Doe mee aan deze informatieve en praktische panels om meer te leren over die geweldige drank waar we allemaal van houden. ",
+          "p0": "Elk jaar organiseerd Flüüfff een reeks aan panels variërend van informatieve zoals het Furry Femme panel, tot meer luchtige activiteiten zoals de Koffie panel! ",
           "p1": "Daarnaast zijn we tevens op zoek naar wat jij kan bijbrengen. Heb je een creatief onderwerp of activiteit waar je uren over kan praten? Of misschien iets waar je mensen graag bij wilt betrekken? Overweeg dan om bij ons zelf een panel te hosten! Je kan hiervoor een voorstel doen door het \"Panel Proposal\" formulier in te vullen. We kijken nu al uit naar wat jij neer kan zetten op onze conventie!"
         },
         "more_info": "Meer info",
