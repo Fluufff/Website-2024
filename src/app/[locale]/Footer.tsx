@@ -83,6 +83,7 @@ export default async function Footer({ locale }: { locale: string }) {
                 { name: 'Dacia', url: 'https://linktr.ee/Daciathedutchie' },
                 { name: 'Jinx McKenzie' },
                 { name: "Milo'Clock" },
+                { name: 'Rune', url: 'https://t.me/Rune_the_dragon' },
                 { name: 'Tach', url: 'https://twitter.com/Tachillobator' },
                 // TODO: complete this
               ]}
