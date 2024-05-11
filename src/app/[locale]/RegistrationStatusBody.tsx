@@ -25,6 +25,8 @@ const formats = {
     registrationShort: {
       day: 'numeric',
       month: 'long',
+      hour: 'numeric',
+      minute: '2-digit',
     },
   } satisfies Record<string, DateTimeFormatOptions>,
 };
