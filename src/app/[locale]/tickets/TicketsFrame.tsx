@@ -9,6 +9,7 @@ import {
   RegistrationState,
   useRegistrationStatus,
 } from '@/services/reg/registrationStatus';
+import { useRegistrationLang } from '@/services/reg/useRegistrationLang';
 
 const isClosed: Partial<Record<RegistrationState, true>> = {
   [RegistrationState.REGISTRATION_NOT_STARTED]: true,
@@ -19,6 +20,7 @@ const isClosed: Partial<Record<RegistrationState, true>> = {
 
 export function TicketsFrame() {
   const { data, isLoading, error } = useRegistrationStatus();
+  const langParam = useRegistrationLang();
 
   if (isLoading || error || !data)
     return (
@@ -44,7 +46,9 @@ export function TicketsFrame() {
           height={500}
           title="Registration"
           width="100%"
-          src={env.NEXT_PUBLIC_REG_ROOT + '/register?iframe'}
+          src={`${env.NEXT_PUBLIC_REG_ROOT}/register?iframe${
+            langParam && '&' + langParam
+          }`}
         />
       </div>
     );
