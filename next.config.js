@@ -7,6 +7,13 @@ const jiti = require('jiti')(__filename);
 // important: we load this so that validation errors are raised at build time
 const { env } = jiti('./src/env.ts');
 
+// we also do a little check against a common issue
+if (env.APP_ENV !== 'development' && !env.METADATA_BASE) {
+  console.warn(
+    'Warning: Environment variable METADATA_BASE must be set for Open Graph image URLs to be correct.',
+  );
+}
+
 const isProd = process.env.NODE_ENV === 'production';
 
 /** Webpack rule alllowing to bundle a file as-is by importing it with suffix

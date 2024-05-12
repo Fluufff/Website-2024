@@ -18,6 +18,8 @@ type Props = PropsWithLocale<{
 }>;
 
 export const metadata: Metadata = {
+  metadataBase:
+    env.METADATA_BASE !== undefined ? new URL(env.METADATA_BASE) : undefined,
   title: {
     default: 'Flüüfff',
     template: 'Flüüfff – %s',

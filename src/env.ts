@@ -15,6 +15,9 @@ export const env = createEnv({
   server: {
     APP_ENV: z.enum(['development', 'staging', 'production']),
 
+    // Next.js metadataBase, used for opengraph
+    METADATA_BASE: stringOrEmpty.pipe(z.string().url().optional()),
+
     /** beware: anything not empty is considered true */
     STANDALONE_OUTPUT: z.string().optional().pipe(z.coerce.boolean()),
 
