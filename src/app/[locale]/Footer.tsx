@@ -113,6 +113,11 @@ export default async function Footer({ locale }: { locale: string }) {
                   specifics: t('specifics.3d_beach_model'),
                 },
                 {
+                  name: 'Goomuin',
+                  url: 'https://www.furaffinity.net/user/goomuin/',
+                  specifics: t('specifics.3d_u_model'),
+                },
+                {
                   name: 'Vincent',
                   url: 'https://twitter.com/vincehooves',
                   specifics: t('specifics.social_media_preview'),
