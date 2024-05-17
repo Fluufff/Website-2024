@@ -1,11 +1,16 @@
-/* eslint-disable import/order */
-const withMDX = require('@next/mdx')();
-const withNextIntl = require('next-intl/plugin')();
+import { fileURLToPath } from 'url';
 
-const jiti = require('jiti')(__filename);
+import nextMDX from '@next/mdx';
+import jiti from 'jiti';
+import nextIntl from 'next-intl/plugin';
+
+const withMDX = nextMDX();
+const withNextIntl = nextIntl();
+
+const jitiRequire = jiti(fileURLToPath(import.meta.url));
 
 // important: we load this so that validation errors are raised at build time
-const { env } = jiti('./src/env.ts');
+const { env } = jitiRequire('./src/env.ts');
 
 // we also do a little check against a common issue
 if (env.APP_ENV !== 'development' && !env.METADATA_BASE) {
@@ -43,4 +48,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withMDX(withNextIntl(nextConfig));
+export default withMDX(withNextIntl(nextConfig));
