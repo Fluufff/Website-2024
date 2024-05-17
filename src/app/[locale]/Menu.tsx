@@ -21,9 +21,16 @@ export default function Menu() {
   const t = useTranslations('Menu');
 
   useEffect(() => {
-    const onScroll = (e: Event) => {
-      setScrolled((e.target as Document)?.documentElement.scrollTop > 0);
+    const onScroll = () => {
+      setScrolled(document?.documentElement.scrollTop > 0);
     };
+
+    // Apply on first mount in case we have opened the page with an anchor or
+    // refreshed it while scrolled. It's not pretty while it animates, but at
+    // least it goes to a correct state.
+    //
+    // TODO: how do we make it pretty?
+    onScroll();
 
     window.addEventListener('scroll', onScroll);
 
