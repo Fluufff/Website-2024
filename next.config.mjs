@@ -3,8 +3,13 @@ import { fileURLToPath } from 'url';
 import nextMDX from '@next/mdx';
 import jiti from 'jiti';
 import nextIntl from 'next-intl/plugin';
+import remarkHeadingId from 'remark-heading-id';
 
-const withMDX = nextMDX();
+const withMDX = nextMDX({
+  options: {
+    remarkPlugins: [remarkHeadingId],
+  },
+});
 const withNextIntl = nextIntl();
 
 const jitiRequire = jiti(fileURLToPath(import.meta.url));
