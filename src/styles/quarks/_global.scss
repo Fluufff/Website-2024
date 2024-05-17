@@ -42,6 +42,9 @@ h6 {
   margin-top: $spacer-medium;
   margin-bottom: $spacer-small;
   line-height: 100%;
+
+  // make anchors line up right
+  scroll-margin-top: $menu-height;
 }
 
 * {
