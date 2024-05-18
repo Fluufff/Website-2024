@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with
+[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started (development)
 
@@ -8,47 +9,47 @@ Install dependencies:
 yarn
 ```
 
-Copy `.env` to `.env.development.local` and fill it in (see
-[`tools/mockoon-fake-api`](tools/mockoon-fake-api/) to set up a local mock API).
-
-Then run the development server:
+Then run the development server and open
+[http://localhost:3000](http://localhost:3000) in your browser to see the
+result.
 
 ```bash
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Environment variables are set in `.env` and `.env.development` (which overrides
+the former). If you need to make changes to environment variables, create
+`.env.development.local`, which will take priority.
 
-## Building for production
+Some APIs may not be working. You can
+[use Mockoon](tools/mockoon-fake-api/README.md) as a substitute for the CMS or
+registration endpoints. Do not forget to set up `.env.development.local` to
+point to those mock endpoints.
 
-Check the [`.env`
-file](https://nextjs.org/docs/app/building-your-application/configuring/environment-variables).
-If changes are needed, a `.env.local` file can be created to override individual
-environment variables.
+### Building for production or staging
 
-Then, build and run with Docker: (docker-compose coming soon)
+We use Docker and GitHub Actions to build for production and staging. The build
+is a standalone Next.js build.
 
-```sh
-docker build -t fluufff-website .
-docker run --rm -it -p 3000:3000 fluufff-website
-```
+Refer to the [`Dockerfile`](Dockerfile) and
+[GitHub action workflows](.github/workflows/) for more details.
 
-### Running the production image locally
-
-I recommend setting `.env.local` to set `NEXT_PUBLIC_ASSET_PREFIX=""` before building the
-image, to avoid pointing to the production CDN for assets.
+If you need to test a production build locally, you will first need to create
+the file `.env.local` to tweak the environment. You will need to set
+`NEXT_PUBLIC_ASSET_PREFIX=""` to avoid pointing to the production CDN to resolve
+local assets, which would not work.
 
 ## Messages import/export
 
 Once your dependencies are installed using `nvm` and `yarn`, run this to create
-a CSV file in the directory cotaining the JSON message files:
+a CSV file in the `src/messages/` directory:
 
 ```sh
-node tools/messages-csv.js export
+./tools/messages-csv.js export
 ```
 
-That same CSV can be imported to JSON as follows:
+That same CSV can be imported back to the JSON files as follows:
 
 ```sh
-node tools/messages-csv.js import
+./tools/messages-csv.js import
 ```

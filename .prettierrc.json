@@ -2,5 +2,12 @@
   "bracketSpacing": true,
   "bracketSameLine": true,
   "singleQuote": true,
-  "trailingComma": "all"
+  "trailingComma": "all",
+
+  "overrides": [
+    {
+      "files": "*.md",
+      "options": { "proseWrap": "always" }
+    }
+  ]
 }
