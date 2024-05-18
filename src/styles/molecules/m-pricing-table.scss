@@ -31,7 +31,8 @@
     &.m-pricing-table__price {
       font-weight: bold;
 
-      &--na, &[colspan] {
+      &--na,
+      &[colspan] {
         text-align: center;
       }
     }
