@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
-import illustrationImage from '@/assets/amaroq-laddian.png';
+import illustrationImage from '@/assets/fluufff-3d.png';
 import headerImage from '@/assets/headers/about.jpg';
 import lineImage from '@/assets/lines-1.png';
 import { Header } from '@/components/Header';
