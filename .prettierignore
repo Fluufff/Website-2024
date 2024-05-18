@@ -1,0 +1,11 @@
+# handled by tool
+tools/mockoon-fake-api/*.json
+
+# vendored
+public/draco/
+
+# raw
+*.gltf
+
+# no touchy
+.github/workflows
