@@ -331,7 +331,7 @@
         "body": "Les inscriptions sont terminées."
       },
       "REGISTRATION_IS_DONE": {
-        "body": "Tu es enregistré, clique ici pour avoir accès à ton profil."
+        "body": "Tu es enregistré, <profile>clique ici</profile> pour avoir accès à ton profil."
       },
       "REGISTRATION_IS_CLOSE": {
         "body": "Les inscriptions ont été fermées par l'équipe Registration."

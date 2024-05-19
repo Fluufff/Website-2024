@@ -331,7 +331,7 @@
         "body": "De registratieperiode is voorbij."
       },
       "REGISTRATION_IS_DONE": {
-        "body": "Je bent geregistreerd, klik hier om naar je profiel te gaan."
+        "body": "Je bent geregistreerd, <profile>klik hier</profile> om naar je profiel te gaan."
       },
       "REGISTRATION_IS_CLOSE": {
         "body": "De registratie werd gesloten door het registratieteam."

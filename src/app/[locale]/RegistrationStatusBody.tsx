@@ -1,6 +1,10 @@
 'use client';
 
-import { DateTimeFormatOptions, useTranslations } from 'next-intl';
+import {
+  DateTimeFormatOptions,
+  RichTranslationValues,
+  useTranslations,
+} from 'next-intl';
 
 import { env } from '@/env';
 import { Link } from '@/helpers/navigation';
@@ -31,10 +35,13 @@ const formats = {
   } satisfies Record<string, DateTimeFormatOptions>,
 };
 
-function interpolations(status: RegistrationStatus) {
+function interpolations(status: RegistrationStatus): RichTranslationValues {
   return {
     opening: status.opening,
     closing: status.closing,
+    profile: (children) => (
+      <Link href={env.NEXT_PUBLIC_REG_ROOT + '/profile'}>{children}</Link>
+    ),
   };
 }
 
@@ -63,7 +70,7 @@ function TicketsCta({ children }: React.PropsWithChildren) {
 function mkSimple(
   useTranslationFunction: () => (
     k: 'body',
-    i: ReturnType<typeof interpolations>,
+    i: RichTranslationValues,
     f: typeof formats,
   ) => React.ReactNode,
 ): React.FC<RegistrationStatusBodyProps> {
@@ -77,7 +84,7 @@ function mkWithCta(
   Cta: React.ComponentType<React.PropsWithChildren>,
   useTranslationFunction: () => (
     k: 'body' | 'button',
-    i: ReturnType<typeof interpolations>,
+    i: RichTranslationValues,
     f: typeof formats,
   ) => React.ReactNode,
 ): React.FC<RegistrationStatusBodyProps> {
@@ -96,29 +103,35 @@ function mkWithCta(
   };
 }
 
-const NotStarted = mkSimple(() =>
-  useTranslations('general.registration.REGISTRATION_NOT_STARTED'),
+const NotStarted = mkSimple(
+  () => useTranslations('general.registration.REGISTRATION_NOT_STARTED').rich,
 );
-const Open = mkWithCta(TicketsCta, () =>
-  useTranslations('general.registration.REGISTRATION_IS_OPEN'),
+const Open = mkWithCta(
+  TicketsCta,
+  () => useTranslations('general.registration.REGISTRATION_IS_OPEN').rich,
 );
-const AccountCreationOnly = mkWithCta(CreateAccountCta, () =>
-  useTranslations('general.registration.REGISTRATION_ACCOUNT_CREATION_ONLY'),
+const AccountCreationOnly = mkWithCta(
+  CreateAccountCta,
+  () =>
+    useTranslations('general.registration.REGISTRATION_ACCOUNT_CREATION_ONLY')
+      .rich,
 );
-const AccountOpen = mkWithCta(TicketsCta, () =>
-  useTranslations('general.registration.REGISTRATION_ACCOUNT_OPEN'),
+const AccountOpen = mkWithCta(
+  TicketsCta,
+  () => useTranslations('general.registration.REGISTRATION_ACCOUNT_OPEN').rich,
 );
-const Over = mkSimple(() =>
-  useTranslations('general.registration.REGISTRATION_IS_OVER'),
+const Over = mkSimple(
+  () => useTranslations('general.registration.REGISTRATION_IS_OVER').rich,
 );
-const Done = mkSimple(() =>
-  useTranslations('general.registration.REGISTRATION_IS_DONE'),
+const Done = mkSimple(
+  () => useTranslations('general.registration.REGISTRATION_IS_DONE').rich,
 );
-const Close = mkSimple(() =>
-  useTranslations('general.registration.REGISTRATION_IS_CLOSE'),
+const Close = mkSimple(
+  () => useTranslations('general.registration.REGISTRATION_IS_CLOSE').rich,
 );
-const Prereg = mkWithCta(CreateAccountCta, () =>
-  useTranslations('general.registration.PREREGISTRATION_IS_OPEN'),
+const Prereg = mkWithCta(
+  CreateAccountCta,
+  () => useTranslations('general.registration.PREREGISTRATION_IS_OPEN').rich,
 );
 
 const byKey: Record<

@@ -331,7 +331,7 @@
         "body": "Die Registrationsfrist ist abgelaufen."
       },
       "REGISTRATION_IS_DONE": {
-        "body": "Du bist registriert, klicke hier, um zu deinem Profil zu gelangen."
+        "body": "Du bist registriert, <profile>klicke hier</profile>, um zu deinem Profil zu gelangen."
       },
       "REGISTRATION_IS_CLOSE": {
         "body": "Die Registration wurde vom Registrationsteam geschlossen."
