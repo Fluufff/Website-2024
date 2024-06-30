@@ -6,7 +6,6 @@ import Timetable from './Timetable';
 import headerImage from '@/assets/headers/schedule.jpg';
 import lineImage from '@/assets/lines-2.png';
 import { Header } from '@/components/Header';
-import { exclude } from '@/helpers/exclude';
 import { PropsWithLocale } from '@/helpers/localization';
 import { getSchedule } from '@/services/cms/schedule';
 
@@ -38,29 +37,26 @@ export default async function TimetablePage({ params: { locale } }: Props) {
           <Timetable events={events} locations={Object.values(locationById)} />
         </div>
       </div>
-      {exclude(
-        'panel-form',
-        <div className="o-section o-section--dark">
-          <Image
-            src={lineImage}
-            alt=""
-            className="o-section__accent-image o-section__accent-image--alt"
-          />
-          <div className="o-section__content">
-            <div className="u-text-center">
-              <h3>{t('idea.title')}</h3>
-              <p>{t('idea.description')}</p>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfbhSAz-w9qpCFMfNFvnb9E5IjvEPtzlZHkl-TmVadYRIbMqQ/viewform"
-                target="_blank"
-                className="a-button a-button--tertiary a-button--big u-margin-top"
-                rel="noreferrer">
-                {t('submit_proposal')}
-              </a>
-            </div>
+      <div className="o-section o-section--dark">
+        <Image
+          src={lineImage}
+          alt=""
+          className="o-section__accent-image o-section__accent-image--alt"
+        />
+        <div className="o-section__content">
+          <div className="u-text-center">
+            <h3>{t('idea.title')}</h3>
+            <p>{t('idea.description')}</p>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScCMjm_v59my7QaELMsoTqarOeFFNlyQoSF6FowCT2Z4E120A/viewform"
+              target="_blank"
+              className="a-button a-button--tertiary a-button--big u-margin-top"
+              rel="noreferrer">
+              {t('submit_proposal')}
+            </a>
           </div>
-        </div>,
-      )}
+        </div>
+      </div>
     </>
   );
 }
