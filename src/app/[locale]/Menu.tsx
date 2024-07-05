@@ -68,11 +68,14 @@ export default function Menu() {
                 </Link>
               </li>
 
-              <li>
-                <Link className="m-menu__link" href="/news">
-                  {t('items.news')}
-                </Link>
-              </li>
+              {exclude(
+                'news',
+                <li>
+                  <Link className="m-menu__link" href="/news">
+                    {t('items.news')}
+                  </Link>
+                </li>,
+              )}
 
               <li>
                 <div className="m-menu__sub-menu">
