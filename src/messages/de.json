@@ -56,7 +56,8 @@
       "show_night": {
         "title": "Showabend",
         "description": "Bei all dieser Toxizität sollten wir die Stimmung etwas auflockern... Mit einem Showabend! Würdest du gerne dein Können unter Beweis stellen, etwas Magie auf die Bühne bringen und/oder eine (Comedy-)Show veranstalten? Falls du allein oder mit Freunden einen Auftritt veranstalten willst, teile uns das unbedingt mit, indem du unser Showabend-Formular ausfüllst!",
-        "view_more": "Mehr anzeigen"
+        "view_more": "Mehr anzeigen",
+        "submit_proposal": "Vorschlag senden"
       }
     },
     "welcome": {

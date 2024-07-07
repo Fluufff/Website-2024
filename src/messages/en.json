@@ -56,7 +56,8 @@
       "show_night": {
         "title": "Show night",
         "description": "With all this toxicity going on, we should lighten the mood... with a Show Night! Want to show off your skills, bring some magic to the stage and/or put up a (comedy) show? If you want to host an act or performance, alone or with some friends, make sure to let us know by filling out our Show Night form!",
-        "view_more": "View more"
+        "view_more": "View more",
+        "submit_proposal": "Submit proposal"
       }
     },
     "welcome": {

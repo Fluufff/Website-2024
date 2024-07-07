@@ -103,6 +103,13 @@ export default async function IndexPage({
                   {t('activities.show_night.view_more')}
                 </Link>,
               )}
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdCBNJukZuSNNbpei6y3JkS0DM6gQsau9HuMhL8ejm9HUnm4g/viewform"
+                target="_blank"
+                className="a-button a-button--primary u-margin-top u-margin-left-xs"
+                rel="noreferrer">
+                {t('activities.show_night.submit_proposal')}
+              </a>
             </div>
           </div>
         </div>
