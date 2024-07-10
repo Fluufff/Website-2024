@@ -17,7 +17,6 @@ export default async function Charity({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
 
   const t = await getTranslations('Charity');
-  const tGeneral = await getTranslations('general');
 
   const title = t('header.title');
   const subtitle = t('header.subtitle');
@@ -44,7 +43,7 @@ export default async function Charity({ params: { locale } }: Props) {
                   href="https://www.visitsealife.com/blankenberge/"
                   target="_blank"
                   rel="noreferrer">
-                  {tGeneral('more_info')}
+                  {t('more_info')}
                 </a>
               </p>
             </div>
