@@ -29,7 +29,6 @@ export default async function Charity({ params: { locale } }: Props) {
         <div className="o-section__content">
           <div className="u-row">
             <div className="u-col-sm-6">
-              <h4>{t('content.title')}</h4>
               <p>{t('content.subtitle')}</p>
               <p>{t('content.paragraph1')}</p>
 
@@ -41,12 +40,11 @@ export default async function Charity({ params: { locale } }: Props) {
               <p>{t('content.paragraph5')}</p>
               <p>{t('content.paragraph6')}</p>
               <p>
-                {t('more_info')}{' '}
                 <a
                   href="https://www.visitsealife.com/blankenberge/"
                   target="_blank"
                   rel="noreferrer">
-                  {tGeneral('labels.here')}
+                  {tGeneral('more_info')}
                 </a>
               </p>
             </div>
