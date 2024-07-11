@@ -17,7 +17,6 @@ export default async function Charity({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
 
   const t = await getTranslations('Charity');
-  const tGeneral = await getTranslations('general');
 
   const title = t('header.title');
   const subtitle = t('header.subtitle');
@@ -29,32 +28,22 @@ export default async function Charity({ params: { locale } }: Props) {
         <div className="o-section__content">
           <div className="u-row">
             <div className="u-col-sm-6">
-              <h4>{t('content.title')}</h4>
               <p>{t('content.subtitle')}</p>
-              <p>{t('content.description')}</p>
+              <p>{t('content.paragraph1')}</p>
 
-              <p>
-                <b>{t('study.title')}</b>: {t('study.content')}
-              </p>
-
-              <p>
-                <b>{t('protect.title')}</b>: {t('protect.content')}
-              </p>
+              <p>{t('content.paragraph2')}</p>
             </div>
             <div className="u-col-sm-6">
+              <p>{t('content.paragraph3')}</p>
+              <p>{t('content.paragraph4')}</p>
+              <p>{t('content.paragraph5')}</p>
+              <p>{t('content.paragraph6')}</p>
               <p>
-                <b>{t('involvement.title')}</b>: {t('involvement.content')}
-              </p>
-              <p>
-                <b>{t('education.title')}</b>: {t('education.content')}
-              </p>
-              <p>
-                {t('more_info')}{' '}
                 <a
-                  href="https://www.natagora.be/"
+                  href="https://www.visitsealife.com/blankenberge/"
                   target="_blank"
                   rel="noreferrer">
-                  {tGeneral('labels.here')}
+                  {t('more_info')}
                 </a>
               </p>
             </div>
