@@ -67,6 +67,7 @@ export default function Menu() {
                   {t('items.home')}
                 </Link>
               </li>
+
               {exclude(
                 'news',
                 <li>
@@ -75,38 +76,33 @@ export default function Menu() {
                   </Link>
                 </li>,
               )}
+
               <li>
-                {exclude(
-                  'charity',
-                  <div className="m-menu__sub-menu">
-                    <Link className="m-menu__link" href="/about/fluufff">
-                      {t('items.about')}
-                    </Link>
-                    <div className="m-menu__sub-menu__wrapper">
-                      <div className="m-menu__sub-menu__content">
-                        <ul>
-                          <li>
-                            <Link
-                              className="m-menu__sub-link"
-                              href="/about/fluufff">
-                              {t('items.about_fluufff')}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="m-menu__sub-link"
-                              href="/about/charity">
-                              {t('items.charity')}
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>,
+                <div className="m-menu__sub-menu">
                   <Link className="m-menu__link" href="/about/fluufff">
                     {t('items.about')}
-                  </Link>,
-                )}
+                  </Link>
+                  <div className="m-menu__sub-menu__wrapper">
+                    <div className="m-menu__sub-menu__content">
+                      <ul>
+                        <li>
+                          <Link
+                            className="m-menu__sub-link"
+                            href="/about/fluufff">
+                            {t('items.about_fluufff')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className="m-menu__sub-link"
+                            href="/about/charity">
+                            {t('items.charity')}
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </li>
 
               <li>

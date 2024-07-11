@@ -125,26 +125,15 @@
     },
     "content": {
       "title": "Sea Life",
-      "subtitle": "This year we are excited to announce our partnership with Natagora.",
-      "description": "Natagora is active across the whole of Wallonia and Brussels. The main objective of the association is to halt the loss of biodiversity and to help restore a better balance between nature and humankind. For this, the Association has taken on a number of missions."
+      "subtitle": "Nous sommes fiers de pouvoir vous annoncer notre partenariat avec le SEA LIFE de Blankenberge en tant qu'œuvre de charité pour cette année. Le SEA LIFE de Blankenberge se situe sur la même localité côtière qui a hébergé la toute première Flüüfff. Il se présente comme un zoo aquatique dédié à la conservation et l’éducation sur la vie marine. Nous pourrons travailler ensemble pour avoir un impact positif sur nos océans et leurs occupants.",
+      "paragraph1": "Le SEA LIFE de Blankenberge fait partie du groupe Merlin Entertainments, et est impliqué dans la conservation de la vie marine depuis sa fondation en 1995. Avec plus de 2500 créatures marines fascinantes hébergées au sein d’aquariums à thèmes, le Sea Life de Blankenberge offre une expérience immersive pour les visiteurs de tout âge. Des manchots de Humboldt aux loutres cendrées, la diversité de la vie marine ne cesse jamais de nous inspirer.",
+      "paragraph2": "Une des caractéristiques phares du SEA LIFE Blankenberge est son centre de sauvetage des phoques, créé en 1998. Au fil des années qui se sont écoulées, ce sont plus de 400 phoques qui ont été sauvés et réintroduits, grâce aux soins qui leur sont fournis avant qu’ils puissent être libérés dans la nature. Le dévouement de l’équipe de sauvetage SOS garantit que les bébés phoques malades et blessés puissent avoir une chance de survie.",
+      "paragraph3": "En plus de ses efforts de sauvetage, le SEA LIFE Blankenberge est engagé dans la protection de la vie marine à travers son association avec la SEA Life Trust. La fondation vise un monde où nos océans sont en bonne santé, protégés et grouillant d’une vie diversifiée. En supportant SEA LIFE Blankenberge, vous contribuez à cette vision et aidez à sauvegarder le futur de nos océans.",
+      "paragraph4": "Pour la première fois cette année, SEA LIFE et Flüüfff s’organisent pour vous informer et collecter vos dons pour le centre de sauvetage des phoques de Blankenberge! Notre but commun est de collecter suffisamment d’argent pour sauver au moins l’une des adorables créatures marines qui s’est échouée sur nos côtes belges.",
+      "paragraph5": "Venez à nos exposés, notre stand et nos fun games à la convention pour en apprendre plus sur comment vous pouvez contribuer et faire partie de cette initiative à fort impact.",
+      "paragraph6": "Ensemble, aidons à lutter contre vents et marées pour contribuer à la conservation marine!"
     },
-    "study": {
-      "title": "Study",
-      "content": "One of the major activities of the Association is the identification of threats, the provision of support to those species that are the most endangered, together with the coordination of many monitoring programs."
-    },
-    "protect": {
-      "title": "Protect",
-      "content": "Natagora has more than 200 nature reserves, managed by many volunteers. The reserves cover a multitude of different types of habitat, many of which are under threat, and they are home to many rare species."
-    },
-    "involvement": {
-      "title": "Involvement",
-      "content": "On a daily basis the many Association volunteers help to influence political decisions, to promote biodiversity, to foresee impending damage, and to react as necessary."
-    },
-    "education": {
-      "title": "Education",
-      "content": "Natagora is heavily involved in all aspects of environmental education. It runs training events, it supports Regional Centers of Introduction to the Environment, it has outreach events, and it helps the networking of individuals."
-    },
-    "more_info": "Plus d'informations concernant Sea Life peuvent être trouvées"
+    "more_info": "Plus d'informations concernant Sea Life peuvent être trouvées ici."
   },
   "Timetable": {
     "header": {
