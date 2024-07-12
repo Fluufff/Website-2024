@@ -54,9 +54,10 @@
         "submit_proposal": "Proposer un évènement"
       },
       "show_night": {
-        "title": "Soirée Spectacle",
-        "description": "Et si on se changeait les idées, loin de toute cette toxicité... avec une soirée Spectacle ? Flüüfff organise à nouveau une soirée remplie de divertissements et de prestations, faits pour et par les visiteurs de la convention. Intéressé de montrer vos talents de chanteur, danseur ou d'humoriste sur la grande scène de la Flüüfff, seul ou en groupe ? Faites-le nous savoir via le formulaire associé !",
-        "view_more": "Voir plus"
+        "title": "Flüüfff Finale",
+        "description": "Et si on se changeait les idées, loin de toute cette toxicité... avec notre célébration finale ! En combinant le Show Night et la Cérémonie de Fermeture, tout le monde pourra assister à l'apothéose de la convention dans notre spectacle de fin de convention. Intéressé de montrer vos talents de chanteur, danseur ou d'humoriste sur la grande scène de la Flüüfff, seul ou en groupe, lors de la célébration finale alors faites-le nous savoir via le formulaire associé !",
+        "view_more": "Voir plus",
+        "submit_proposal": "Contribuer à la célébration"
       }
     },
     "welcome": {

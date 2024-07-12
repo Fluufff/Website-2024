@@ -81,16 +81,13 @@ export default async function IndexPage({
                   {t('activities.panels.more_info')}
                 </Link>,
               )}
-              {exclude(
-                'panel-form',
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfbhSAz-w9qpCFMfNFvnb9E5IjvEPtzlZHkl-TmVadYRIbMqQ/viewform"
-                  target="_blank"
-                  className="a-button a-button--primary u-margin-top u-margin-left-xs"
-                  rel="noreferrer">
-                  {t('activities.panels.submit_proposal')}
-                </a>,
-              )}
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScCMjm_v59my7QaELMsoTqarOeFFNlyQoSF6FowCT2Z4E120A/viewform"
+                target="_blank"
+                className="a-button a-button--primary u-margin-top u-margin-left-xs"
+                rel="noreferrer">
+                {t('activities.panels.submit_proposal')}
+              </a>
             </div>
             <div className="m-activities__item">
               <div className="m-activities__item__image">
@@ -106,6 +103,13 @@ export default async function IndexPage({
                   {t('activities.show_night.view_more')}
                 </Link>,
               )}
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdCBNJukZuSNNbpei6y3JkS0DM6gQsau9HuMhL8ejm9HUnm4g/viewform"
+                target="_blank"
+                className="a-button a-button--primary u-margin-top u-margin-left-xs"
+                rel="noreferrer">
+                {t('activities.show_night.submit_proposal')}
+              </a>
             </div>
           </div>
         </div>
