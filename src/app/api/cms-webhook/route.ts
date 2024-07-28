@@ -1,4 +1,5 @@
 import { revalidateTag } from 'next/cache';
+import { NextRequest } from 'next/server';
 import { z } from 'zod';
 
 import { env } from '@/env';
@@ -20,13 +21,18 @@ const payloadSchema = z.object({
 });
 
 function error(status: number, msg: string, detail?: unknown): Response {
-  console.error('API error', msg);
+  console.error('webhook API error:', msg);
   const detailField = detail !== undefined ? { detail } : undefined;
   return Response.json({ error: msg, ...detailField }, { status });
 }
 
-// TODO: add secret token
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
+  const token = request.nextUrl.searchParams.get('token');
+  // no need to use secure comparison: security requirement is not high
+  if (token !== env.CMS_WEBHOOK_SECRET_TOKEN) {
+    return error(401, 'incorrect token');
+  }
+
   let payload: unknown;
   try {
     payload = await request.json();
