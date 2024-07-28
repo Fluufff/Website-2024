@@ -21,7 +21,7 @@ const payloadSchema = z.object({
 });
 
 function error(status: number, msg: string, detail?: unknown): Response {
-  console.error('webhook API error:', msg);
+  console.error('webhook API error:', msg, detail ?? '');
   const detailField = detail !== undefined ? { detail } : undefined;
   return Response.json({ error: msg, ...detailField }, { status });
 }
