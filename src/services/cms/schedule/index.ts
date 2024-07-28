@@ -6,7 +6,7 @@ import { parseSchedule, Schedule } from './data';
 
 import { env } from '@/env';
 
-const contentTypes = env.CMS_CONTENT_TYPE_EVENT!;
+const contentType = env.CMS_CONTENT_TYPE_EVENT!;
 
 export type { Schedule, ScheduleEvent, ScheduleLocation } from './data';
 
@@ -15,13 +15,13 @@ async function getScheduleForLanguage(language: string): Promise<Schedule> {
   const queryString = new URLSearchParams({
     lang: language,
     pagesize: '-1',
-    contentTypes,
+    contentTypes: contentType,
     populate: 'true',
   });
 
   // TODO: cache invalidation
   const res = await fetchCmsSiteData('content?' + queryString, {
-    next: { tags: ['cms', 'cms.schedule'] },
+    next: { tags: ['cms', 'cms.schedule', `cms.${contentType}`] },
   });
   return parseSchedule(await res.json());
 }
