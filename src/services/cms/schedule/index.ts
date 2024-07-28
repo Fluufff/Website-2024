@@ -19,7 +19,6 @@ async function getScheduleForLanguage(language: string): Promise<Schedule> {
     populate: 'true',
   });
 
-  // TODO: cache invalidation
   const res = await fetchCmsSiteData('content?' + queryString, {
     next: { tags: ['cms', 'cms.schedule', `cms.${contentType}`] },
   });
