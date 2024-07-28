@@ -1,7 +1,7 @@
 import React from 'react';
 
 // to reintroduce content, remove the reason here and follow the compiler errors
-type ExcludeReason = 'news' | 'schedule';
+type ExcludeReason = 'news';
 
 /** Utility to temporarily exclude content from the site without commenting it
  * out. */

@@ -139,14 +139,11 @@ export default function Menu() {
                   </div>
                 </div>
               </li>
-              {exclude(
-                'schedule',
-                <li>
-                  <Link className="m-menu__link" href="/timetable">
-                    {t('items.schedule')}
-                  </Link>
-                </li>,
-              )}
+              <li>
+                <Link className="m-menu__link" href="/timetable">
+                  {t('items.schedule')}
+                </Link>
+              </li>
 
               <li>
                 <Link className="m-menu__link" href="/contact-us">
