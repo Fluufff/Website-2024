@@ -10,6 +10,8 @@
     "build-standalone": "yarn build-standalone:production",
     "build-standalone:production": "STANDALONE_OUTPUT=1 next build",
     "build-standalone:staging": "STANDALONE_OUTPUT=1 dotenvx run -f .env.staging.local .env.staging -- next build",
+    "start-standalone:production": "node server.js",
+    "start-standalone:staging": "dotenvx run -f .env.staging.local .env.staging -- node server.js",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky"
