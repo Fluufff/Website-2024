@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import headerImage from '@/assets/headers/news.jpg';
-import lineImage from '@/assets/line-1.png';
+import lineImage from '@/assets/lines-1.png';
 import { Header } from '@/components/Header';
 import CmsRichText from '@/helpers/CmsRichText';
 import { getDateLocale, PropsWithLocale } from '@/helpers/localization';
