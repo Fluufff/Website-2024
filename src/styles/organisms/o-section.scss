@@ -1,12 +1,7 @@
 .o-section {
   padding: $spacer-2x-large 0;
-  overflow: hidden;
   position: relative;
   line-height: 1.75;
-
-  &--no-hidden {
-    overflow: unset;
-  }
 
   ul li,
   ol li {
@@ -43,42 +38,63 @@
     }
   }
 
+  // clipping container
   &__accent-image {
+    --accent-image-angle: 45deg;
+
     position: absolute;
-    bottom: -300px;
-    left: -300px;
-    width: auto;
-    height: 50px;
-    transform: rotate(45deg);
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
 
     @media (max-width: 767px) {
-      bottom: -350px;
-      left: -350px;
+      width: 120px;
+      height: 120px;
+    }
+
+    > img {
+      // rotate around top left corner
+      transform-origin: 0 0;
+      transform: rotate(var(--accent-image-angle));
+
+      height: 50px;
+      width: auto;
+    }
+
+    // top-right, different angles
+    &--alt, &--top {
+      bottom: unset;
+      left: unset;
+      top: 0;
+      right: 0;
+
+      > img {
+        // rotate around bottom left corner after moving that corner to the top left corner of its container
+        transform-origin: 0 100%;
+        transform: translateY(-100%) rotate(var(--accent-image-angle));
+      }
     }
 
     &--alt {
-      bottom: unset;
-      left: unset;
-      top: -300px;
-      right: -350px;
-      transform: rotate(45deg);
+      width: 200px;
+      height: 200px;
 
       @media (max-width: 767px) {
-        top: -350px;
-        right: -350px;
+        width: 150px;
+        height: 150px;
       }
     }
 
     &--top {
-      bottom: unset;
-      left: unset;
-      top: -80px;
-      right: -200px;
-      transform: rotate(20deg);
+      --accent-image-angle: 20deg;
+      width: 500px;
+      height: 500px;
 
       @media (max-width: 767px) {
-        top: -120px;
-        right: -250px;
+        width: 320px;
+        height: 320px;
       }
     }
   }

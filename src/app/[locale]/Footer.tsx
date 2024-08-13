@@ -12,11 +12,9 @@ export default async function Footer({ locale }: { locale: string }) {
   return (
     <>
       <div className="o-section o-section--small o-section--center">
-        <Image
-          src={lineImage}
-          alt=""
-          className="o-section__accent-image o-section__accent-image--alt"
-        />
+        <div className="o-section__accent-image o-section__accent-image--alt">
+          <Image src={lineImage} alt="" />
+        </div>
         <h3>{t('follow_us')}</h3>
         <div className="o-section__content">
           <div className="m-socials">

@@ -104,7 +104,9 @@ function RowSection({
   return (
     <div className={classNames('o-section', { 'o-section--alt': alt })}>
       {withAccent && (
-        <Image src={lineImage} alt="" className="o-section__accent-image" />
+        <div className="o-section__accent-image">
+          <Image src={lineImage} alt="" />
+        </div>
       )}
       <div className="o-section__content">
         <div className="u-row">{children}</div>

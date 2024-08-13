@@ -32,17 +32,15 @@ export default async function TimetablePage({ params: { locale } }: Props) {
         title={t('header.title')}
         subtitle={t('header.subtitle')}
       />
-      <div className="o-section o-section--alt o-section--no-hidden">
+      <div className="o-section o-section--alt">
         <div className="o-section__content">
           <Timetable events={events} locations={Object.values(locationById)} />
         </div>
       </div>
       <div className="o-section o-section--dark">
-        <Image
-          src={lineImage}
-          alt=""
-          className="o-section__accent-image o-section__accent-image--alt"
-        />
+        <div className="o-section__accent-image o-section__accent-image--alt">
+          <Image src={lineImage} alt="" />
+        </div>
         <div className="o-section__content">
           <div className="u-text-center">
             <h3>{t('idea.title')}</h3>

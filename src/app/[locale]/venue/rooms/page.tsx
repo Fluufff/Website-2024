@@ -32,11 +32,9 @@ export default async function RoomsPage({ params: { locale } }: Props) {
         subtitle={t('header.subtitle')}
       />
       <div className="o-section o-section--alt">
-        <Image
-          src={lineImage}
-          alt=""
-          className="o-section__accent-image o-section__accent-image--top"
-        />
+        <div className="o-section__accent-image o-section__accent-image--top">
+          <Image src={lineImage} alt="" />
+        </div>
         <div className="o-section__content">
           <div className="u-row">
             <div className="u-col-sm-6">

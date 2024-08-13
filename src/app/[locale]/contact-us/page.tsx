@@ -30,7 +30,9 @@ export default async function Contact({ params: { locale } }: Props) {
         subtitle={t('header.subtitle')}
       />
       <div className="o-section o-section--alt">
-        <Image src={lineImage} alt="" className="o-section__accent-image" />
+        <div className="o-section__accent-image">
+          <Image src={lineImage} alt="" />
+        </div>
         <div className="o-section__content">
           <h3>{t('question.title')}</h3>
           <p>{t('question.description')}</p>
