@@ -11,6 +11,7 @@ import Menu from './Menu';
 import { localeKeys } from '@/config';
 import { env } from '@/env';
 import { PropsWithLocale } from '@/helpers/localization';
+import { getNews } from '@/services/cms/news';
 import { creepster, readexPro } from '@/styles/fonts';
 
 type Props = PropsWithLocale<{
@@ -33,6 +34,11 @@ export function generateStaticParams() {
   return localeKeys.map((locale) => ({ locale }));
 }
 
+async function getHasNews(locale: string): Promise<boolean> {
+  const news = await getNews(locale);
+  return !!news.length;
+}
+
 const trackingDomain = {
   development: null,
   staging: 'test.fluufff.org',
@@ -46,12 +52,13 @@ export default async function RootLayout({
   unstable_setRequestLocale(locale);
 
   const messages = await getMessages();
+  const hasNews = await getHasNews(locale);
 
   return (
     <html lang="en">
       <body className={[readexPro.variable, creepster.variable].join(' ')}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Menu />
+          <Menu hasNews={hasNews} />
           {children}
           <Footer locale={locale} />
         </NextIntlClientProvider>
