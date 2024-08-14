@@ -7,6 +7,7 @@ import { AccentImage } from '@/components/AccentImage';
 import { Header } from '@/components/Header';
 import CmsRichText from '@/helpers/CmsRichText';
 import { getDateLocale, PropsWithLocale } from '@/helpers/localization';
+import { Link } from '@/helpers/navigation';
 import { getNews } from '@/services/cms/news';
 
 type Props = PropsWithLocale;
@@ -40,7 +41,9 @@ export default async function News({ params: { locale } }: Props) {
           <div className="m-news">
             {newsItems.map((newsItem) => (
               <div key={newsItem.slug} className="m-news__item">
-                <h2 className="m-news__title">{newsItem.title}</h2>
+                <h2 id={newsItem.slug} className="m-news__title">
+                  <Link href={`#${newsItem.slug}`}>{newsItem.title}</Link>
+                </h2>
                 <small className="m-news__date">
                   {format(newsItem.creationDate, 'PPP', { locale: dateLocale })}
                 </small>
