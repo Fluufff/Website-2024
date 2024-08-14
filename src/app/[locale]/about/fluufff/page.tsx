@@ -4,6 +4,7 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import illustrationImage from '@/assets/amaroq-laddian.png';
 import headerImage from '@/assets/headers/about.jpg';
 import lineImage from '@/assets/lines-1.png';
+import { AccentImage } from '@/components/AccentImage';
 import { Header } from '@/components/Header';
 import { PropsWithLocale } from '@/helpers/localization';
 import { Link } from '@/helpers/navigation';
@@ -31,9 +32,7 @@ export default async function About({ params: { locale } }: Props) {
         subtitle={t('header.subtitle')}
       />
       <div className="o-section o-section--alt">
-        <div className="o-section__accent-image">
-          <Image src={lineImage} alt="" />
-        </div>
+        <AccentImage src={lineImage} />
         <div className="o-section__content m-about">
           <div className="m-about__image">
             <Image src={illustrationImage} alt="" />

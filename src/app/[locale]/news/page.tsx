@@ -1,9 +1,9 @@
 import format from 'date-fns/format';
-import Image from 'next/image';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import headerImage from '@/assets/headers/news.jpg';
 import lineImage from '@/assets/lines-1.png';
+import { AccentImage } from '@/components/AccentImage';
 import { Header } from '@/components/Header';
 import CmsRichText from '@/helpers/CmsRichText';
 import { getDateLocale, PropsWithLocale } from '@/helpers/localization';
@@ -35,9 +35,7 @@ export default async function News({ params: { locale } }: Props) {
         subtitle={t('header.subtitle')}
       />
       <div className="o-section o-section--alt">
-        <div className="o-section__accent-image">
-          <Image src={lineImage} alt="" />
-        </div>
+        <AccentImage src={lineImage} />
         <div className="o-section__content">
           <div className="m-news">
             {newsItems.map((newsItem) => (

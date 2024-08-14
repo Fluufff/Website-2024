@@ -1,10 +1,10 @@
-import Image from 'next/image';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import Timetable from './Timetable';
 
 import headerImage from '@/assets/headers/schedule.jpg';
 import lineImage from '@/assets/lines-2.png';
+import { AccentImage } from '@/components/AccentImage';
 import { Header } from '@/components/Header';
 import { PropsWithLocale } from '@/helpers/localization';
 import { getSchedule } from '@/services/cms/schedule';
@@ -38,9 +38,7 @@ export default async function TimetablePage({ params: { locale } }: Props) {
         </div>
       </div>
       <div className="o-section o-section--dark">
-        <div className="o-section__accent-image o-section__accent-image--alt">
-          <Image src={lineImage} alt="" />
-        </div>
+        <AccentImage variant="alt" src={lineImage} />
         <div className="o-section__content">
           <div className="u-text-center">
             <h3>{t('idea.title')}</h3>
