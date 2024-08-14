@@ -47,6 +47,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",
+    "react-scroll": "^1.8.9",
     "remark-heading-id": "^1.0.1",
     "remeda": "^1.56.0",
     "sanitize-html": "^2.11.0",
