@@ -9,7 +9,6 @@ import hotelImage from '@/assets/hotel-exterior.jpg';
 import restaurantImage from '@/assets/hotel-restaurant.jpg';
 import lineImage from '@/assets/lines-3.png';
 import { Header } from '@/components/Header';
-import ScrollLink from '@/helpers/ScrollLink';
 import { PropsWithLocale } from '@/helpers/localization';
 import { Link } from '@/helpers/navigation';
 
@@ -48,12 +47,9 @@ export default async function HotelPage({ params: { locale } }: Props) {
             <Link href="/venue/getting-there" className="a-button">
               {t('hotel.buttons.getting_there')}
             </Link>
-            <ScrollLink
-              to="restaurant"
-              className="a-button a-button--secondary"
-              smooth={true}>
+            <Link href="#restaurant" className="a-button a-button--secondary">
               {t('hotel.buttons.the_restaurant')}
-            </ScrollLink>
+            </Link>
             <Link href="/venue/rooms" className="a-button a-button--secondary">
               {t('hotel.buttons.hotel_rooms')}
             </Link>
