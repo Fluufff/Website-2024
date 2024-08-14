@@ -35,7 +35,7 @@ export default async function News({ params: { locale } }: Props) {
         subtitle={t('header.subtitle')}
       />
       <div className="o-section o-section--alt">
-        <AccentImage src={lineImage} />
+        <AccentImage variant="top" src={lineImage} />
         <div className="o-section__content">
           <div className="m-news">
             {newsItems.map((newsItem) => (
