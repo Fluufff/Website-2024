@@ -64,3 +64,8 @@ export const getSchedule = optionalCms(
     return getScheduleWithFallbackLanguages([language, 'en']);
   },
 );
+
+export async function getHasSchedule(locale: string): Promise<boolean> {
+  const schedule = await getSchedule(locale);
+  return !!schedule.events.length;
+}

@@ -24,7 +24,8 @@
     "translation_credits": "Traductions par",
     "art_credits": "Art par",
     "specifics": {
-      "3d_model": "modèle 3D",
+      "3d_beach_model": "modèle 3D plage",
+      "3d_u_model": "modèle 3D \"Ü\"",
       "social_media_preview": "vignette réseaux sociaux"
     }
   },

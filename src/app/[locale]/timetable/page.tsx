@@ -7,6 +7,7 @@ import lineImage from '@/assets/lines-2.png';
 import { AccentImage } from '@/components/AccentImage';
 import { Header } from '@/components/Header';
 import { PropsWithLocale } from '@/helpers/localization';
+import { redirect } from '@/helpers/navigation';
 import { getSchedule } from '@/services/cms/schedule';
 
 type Props = PropsWithLocale;
@@ -24,6 +25,11 @@ export default async function TimetablePage({ params: { locale } }: Props) {
   const t = await getTranslations('Timetable');
 
   const { events, locationById } = await getSchedule(locale);
+
+  if (!events.length) {
+    // link is hidden because we have no data, so redirection is ok
+    redirect('/');
+  }
 
   return (
     <>

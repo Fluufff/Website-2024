@@ -106,7 +106,12 @@ export default async function Footer({ locale }: { locale: string }) {
                 {
                   name: 'Felikx',
                   url: 'https://twitter.com/FelikxVanSaet',
-                  specifics: t('specifics.3d_model'),
+                  specifics: t('specifics.3d_beach_model'),
+                },
+                {
+                  name: 'Goomuin',
+                  url: 'https://www.furaffinity.net/user/goomuin/',
+                  specifics: t('specifics.3d_u_model'),
                 },
                 {
                   name: 'Vincent',
