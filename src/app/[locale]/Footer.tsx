@@ -1,7 +1,7 @@
-import Image from 'next/image';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import lineImage from '@/assets/lines-1.png';
+import { AccentImage } from '@/components/AccentImage';
 import { Link } from '@/helpers/navigation';
 
 export default async function Footer({ locale }: { locale: string }) {
@@ -12,11 +12,7 @@ export default async function Footer({ locale }: { locale: string }) {
   return (
     <>
       <div className="o-section o-section--small o-section--center">
-        <Image
-          src={lineImage}
-          alt=""
-          className="o-section__accent-image o-section__accent-image--alt"
-        />
+        <AccentImage variant="alt" src={lineImage} />
         <h3>{t('follow_us')}</h3>
         <div className="o-section__content">
           <div className="m-socials">

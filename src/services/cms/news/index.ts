@@ -41,3 +41,8 @@ export const getNews = optionalCms(
     );
   },
 );
+
+export async function getHasNews(locale: string): Promise<boolean> {
+  const news = await getNews(locale);
+  return !!news.length;
+}

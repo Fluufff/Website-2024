@@ -10,15 +10,16 @@ import { UserLogin } from './UserLogin';
 import logoDarkImage from '@/assets/full-logo-dark.png';
 import logoImage from '@/assets/full-logo.png';
 import { locales } from '@/config';
-import { exclude } from '@/helpers/exclude';
 import { Link, usePathname } from '@/helpers/navigation';
 
 type Props = {
   /** hides the schedule navigation option if false */
   hasSchedule: boolean;
+  /** hides the news navigation option if false */
+  hasNews: boolean;
 };
 
-export default function Menu({ hasSchedule }: Props) {
+export default function Menu({ hasSchedule, hasNews }: Props) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const location = usePathname();
@@ -73,13 +74,12 @@ export default function Menu({ hasSchedule }: Props) {
                 </Link>
               </li>
 
-              {exclude(
-                'news',
+              {hasNews && (
                 <li>
                   <Link className="m-menu__link" href="/news">
                     {t('items.news')}
                   </Link>
-                </li>,
+                </li>
               )}
 
               <li>

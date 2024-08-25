@@ -8,7 +8,6 @@ import danceImage from '@/assets/dance.jpg';
 import logoImage from '@/assets/full-logo.png';
 import panelsImage from '@/assets/panels.jpg';
 import showNightImage from '@/assets/shownight.jpg';
-import ScrollLink from '@/helpers/ScrollLink';
 import { Link } from '@/helpers/navigation';
 import { getHasSchedule } from '@/services/cms/schedule';
 
@@ -42,11 +41,11 @@ export default async function IndexPage({
               <RegistrationStatus />
             </div>
           </div>
-          <ScrollLink to="main" smooth={true} style={{ pointerEvents: 'all' }}>
+          <Link href="#main" style={{ pointerEvents: 'all' }}>
             <div className="o-canvas__scroll">
               <span className="uil uil-angle-down"></span>
             </div>
-          </ScrollLink>
+          </Link>
         </div>
       </div>
 

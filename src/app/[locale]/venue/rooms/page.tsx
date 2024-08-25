@@ -5,6 +5,7 @@ import React from 'react';
 import lineImage from '@/assets/lines-2.png';
 import headerImage from '@/assets/rooms/standard-room-3.jpg';
 import standardRoomImage from '@/assets/rooms/standard-room.jpg';
+import { AccentImage } from '@/components/AccentImage';
 import { Header } from '@/components/Header';
 import { PropsWithLocale } from '@/helpers/localization';
 import { Link } from '@/helpers/navigation';
@@ -32,11 +33,7 @@ export default async function RoomsPage({ params: { locale } }: Props) {
         subtitle={t('header.subtitle')}
       />
       <div className="o-section o-section--alt">
-        <Image
-          src={lineImage}
-          alt=""
-          className="o-section__accent-image o-section__accent-image--top"
-        />
+        <AccentImage variant="top" src={lineImage} />
         <div className="o-section__content">
           <div className="u-row">
             <div className="u-col-sm-6">

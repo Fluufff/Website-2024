@@ -1,13 +1,13 @@
-import Image from 'next/image';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import { TicketsFrame } from './TicketsFrame';
 
 import headerImage from '@/assets/headers/tickets.png';
 import lineImage from '@/assets/lines-1.png';
+import { AccentImage } from '@/components/AccentImage';
 import { Header } from '@/components/Header';
-import ScrollLink from '@/helpers/ScrollLink';
 import { PropsWithLocale } from '@/helpers/localization';
+import { Link } from '@/helpers/navigation';
 
 type Props = PropsWithLocale;
 
@@ -33,27 +33,21 @@ export default async function Tickets({ params: { locale } }: Props) {
         subtitle={t('header.subtitle')}
       />
       <div className="o-section o-section--alt">
-        <Image src={lineImage} alt="" className="o-section__accent-image" />
+        <AccentImage src={lineImage} />
         <div className="o-section__content">
           <h3 className="u-text-center u-margin-bottom">
             {t('tickets.title')}
           </h3>
           <div className="m-button-group m-button-group--center u-margin-bottom">
-            <ScrollLink
-              to="residential-tickets"
-              smooth={true}
-              className="a-button">
+            <Link href="#residential-tickets" className="a-button">
               {tButtons('residential_tickets')}
-            </ScrollLink>
-            <ScrollLink to="day-tickets" smooth={true} className="a-button">
+            </Link>
+            <Link href="#day-tickets" className="a-button">
               {tButtons('day_tickets')}
-            </ScrollLink>
-            <ScrollLink
-              to="goodies"
-              smooth={true}
-              className="a-button a-button--secondary">
+            </Link>
+            <Link href="#goodies" className="a-button a-button--secondary">
               {tButtons('goodies_and_extras')}
-            </ScrollLink>
+            </Link>
           </div>
         </div>
       </div>
