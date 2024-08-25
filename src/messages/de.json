@@ -24,7 +24,8 @@
     "translation_credits": "Übersetzung von",
     "art_credits": "Art von",
     "specifics": {
-      "3d_model": "3D-Modell",
+      "3d_beach_model": "3D-Modell",
+      "3d_u_model": "3D-Modell",
       "social_media_preview": "Social-Media-Vorschau"
     }
   },
