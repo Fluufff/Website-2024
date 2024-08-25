@@ -11,7 +11,7 @@ import Menu from './Menu';
 import { localeKeys } from '@/config';
 import { env } from '@/env';
 import { PropsWithLocale } from '@/helpers/localization';
-import { getNews } from '@/services/cms/news';
+import { getHasNews } from '@/services/cms/news';
 import { creepster, readexPro } from '@/styles/fonts';
 
 type Props = PropsWithLocale<{
@@ -32,11 +32,6 @@ export const metadata: Metadata = {
 
 export function generateStaticParams() {
   return localeKeys.map((locale) => ({ locale }));
-}
-
-async function getHasNews(locale: string): Promise<boolean> {
-  const news = await getNews(locale);
-  return !!news.length;
 }
 
 const trackingDomain = {
