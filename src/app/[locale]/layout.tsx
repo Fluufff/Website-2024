@@ -11,6 +11,7 @@ import Menu from './Menu';
 import { localeKeys } from '@/config';
 import { env } from '@/env';
 import { PropsWithLocale } from '@/helpers/localization';
+import { getHasSchedule } from '@/services/cms/schedule';
 import { creepster, readexPro } from '@/styles/fonts';
 
 type Props = PropsWithLocale<{
@@ -46,12 +47,13 @@ export default async function RootLayout({
   unstable_setRequestLocale(locale);
 
   const messages = await getMessages();
+  const hasSchedule = await getHasSchedule(locale);
 
   return (
     <html lang="en">
       <body className={[readexPro.variable, creepster.variable].join(' ')}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Menu />
+          <Menu hasSchedule={hasSchedule} />
           {children}
           <Footer locale={locale} />
         </NextIntlClientProvider>
