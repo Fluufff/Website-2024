@@ -13,7 +13,12 @@ import { locales } from '@/config';
 import { exclude } from '@/helpers/exclude';
 import { Link, usePathname } from '@/helpers/navigation';
 
-export default function Menu() {
+type Props = {
+  /** hides the schedule navigation option if false */
+  hasSchedule: boolean;
+};
+
+export default function Menu({ hasSchedule }: Props) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const location = usePathname();
@@ -139,13 +144,13 @@ export default function Menu() {
                   </div>
                 </div>
               </li>
-              {exclude(
-                'schedule',
+
+              {hasSchedule && (
                 <li>
                   <Link className="m-menu__link" href="/timetable">
                     {t('items.schedule')}
                   </Link>
-                </li>,
+                </li>
               )}
 
               <li>

@@ -9,8 +9,8 @@ import logoImage from '@/assets/full-logo.png';
 import panelsImage from '@/assets/panels.jpg';
 import showNightImage from '@/assets/shownight.jpg';
 import ScrollLink from '@/helpers/ScrollLink';
-import { exclude } from '@/helpers/exclude';
 import { Link } from '@/helpers/navigation';
+import { getHasSchedule } from '@/services/cms/schedule';
 
 export default async function IndexPage({
   params: { locale },
@@ -20,6 +20,8 @@ export default async function IndexPage({
   unstable_setRequestLocale(locale);
 
   const t = await getTranslations('Index');
+
+  const hasSchedule = await getHasSchedule(locale);
 
   return (
     <main>
@@ -57,13 +59,12 @@ export default async function IndexPage({
               </div>
               <h3>{t('activities.dances.title')}</h3>
               <p>{t('activities.dances.description')}</p>
-              {exclude(
-                'schedule',
+              {hasSchedule && (
                 <Link
                   href="/timetable"
                   className="a-button a-button--secondary u-margin-top">
                   {t('activities.dances.discover')}
-                </Link>,
+                </Link>
               )}
             </div>
             <div className="m-activities__item">
@@ -73,13 +74,12 @@ export default async function IndexPage({
               <h3>{t('activities.panels.title')}</h3>
               <p>{t('activities.panels.description.p0')}</p>
               <p>{t('activities.panels.description.p1')}</p>
-              {exclude(
-                'schedule',
+              {hasSchedule && (
                 <Link
                   href="/timetable"
                   className="a-button a-button--secondary u-margin-top">
                   {t('activities.panels.more_info')}
-                </Link>,
+                </Link>
               )}
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLScCMjm_v59my7QaELMsoTqarOeFFNlyQoSF6FowCT2Z4E120A/viewform"
@@ -95,13 +95,12 @@ export default async function IndexPage({
               </div>
               <h3>{t('activities.show_night.title')}</h3>
               <p>{t('activities.show_night.description')}</p>
-              {exclude(
-                'schedule',
+              {hasSchedule && (
                 <Link
                   href="/timetable"
                   className="a-button a-button--secondary u-margin-top">
                   {t('activities.show_night.view_more')}
-                </Link>,
+                </Link>
               )}
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdCBNJukZuSNNbpei6y3JkS0DM6gQsau9HuMhL8ejm9HUnm4g/viewform"
