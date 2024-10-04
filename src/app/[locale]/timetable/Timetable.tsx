@@ -1,5 +1,6 @@
 'use client';
 
+import classNames from 'classnames';
 import {
   addDays,
   differenceInHours,
@@ -18,6 +19,7 @@ import Scroll from 'react-scroll';
 
 import { ScheduleView } from './_components/ScheduleView';
 import { TimelineView } from './_components/TimelineView';
+import { knownLabels } from './knownLabels';
 
 import CmsRichText from '@/helpers/CmsRichText';
 import { getDateLocale } from '@/helpers/localization';
@@ -311,10 +313,32 @@ export default function Timetable({
 }
 
 function EventModalBody({ event }: { event: ScheduleEvent | undefined }) {
+  if (!event) return;
+
+  // TODO: translate the label
+  const labelBadges = event.labels.map((label, i) => {
+    const knownLabel = knownLabels[label];
+
+    return (
+      <span
+        key={i}
+        className={classNames(
+          'a-badge',
+          knownLabel && `a-badge--color-${knownLabel.color}`,
+        )}>
+        {label}
+      </span>
+    );
+  });
+
   return (
     <>
-      <h3>{event?.name}</h3>
-      <CmsRichText dirtyHtml={event?.htmlDescription ?? ''} />
+      <h3>
+        {event.name}
+        {labelBadges.length > 0 && ' '}
+        {labelBadges}
+      </h3>
+      <CmsRichText dirtyHtml={event.htmlDescription ?? ''} />
     </>
   );
 }

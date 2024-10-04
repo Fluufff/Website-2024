@@ -1,0 +1,14 @@
+.a-badge {
+  // stolen from bootstrap
+  border-radius: 10rem;
+  padding: 0 .6em;
+  background: lightgray;
+
+  // font reset: we use this in heading tags
+  font-size: 1rem;
+  font-family: var(--font-family-readex-pro);
+
+  &--color-1 { background: $bg-1; }
+  &--color-2 { background: $bg-2; }
+  &--color-3 { background: $bg-3; }
+}
