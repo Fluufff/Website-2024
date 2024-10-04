@@ -26,12 +26,12 @@ export const contentPage = <T extends z.ZodTypeAny>(contentItem: T) =>
     }),
   });
 
-export const contentWithFields = <T extends z.ZodRawShape>(fields: T) =>
+export const contentWithFields = <T extends z.ZodTypeAny>(fields: T) =>
   z.object({
     id: z.string(),
     slug: z.string(),
     name: z.string(),
-    fields: z.object(fields),
+    fields,
   });
 
 export function fetchCmsSiteData(path: string, requestInit?: RequestInit) {

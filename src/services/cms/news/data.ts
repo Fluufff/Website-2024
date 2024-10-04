@@ -2,12 +2,14 @@ import * as z from 'zod';
 
 import { contentPage, contentWithFields } from '../util';
 
-const newsItemDtoSchema = contentWithFields({
-  title: z.string(),
-  text: z.string(),
-  /** prefer over the content item metadata, which is not controlled by the CMS user */
-  'creation-date': z.coerce.date(),
-});
+const newsItemDtoSchema = contentWithFields(
+  z.object({
+    title: z.string(),
+    text: z.string(),
+    /** prefer over the content item metadata, which is not controlled by the CMS user */
+    'creation-date': z.coerce.date(),
+  }),
+);
 
 type NewsItemDto = z.infer<typeof newsItemDtoSchema>;
 
