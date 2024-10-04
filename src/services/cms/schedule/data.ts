@@ -1,21 +1,29 @@
 import * as z from 'zod';
 
+import { extractLabelsField } from '../labels';
 import { contentPage, contentWithFields } from '../util';
 
-const eventDtoSchema = contentWithFields(
-  z.object({
-    description: z.string(),
-    name: z.string(),
-    location: z.object({
-      contentId: z.string(),
-      fields: z.object({
-        name: z.string(),
-      }),
+const fieldsSchema = z.object({
+  description: z.string(),
+  name: z.string(),
+  location: z.object({
+    contentId: z.string(),
+    fields: z.object({
+      name: z.string(),
     }),
-    'start-time': z.coerce.date(),
-    'end-time': z.coerce.date(),
   }),
-);
+  'start-time': z.coerce.date(),
+  'end-time': z.coerce.date(),
+  labels: z.array(z.string()),
+});
+
+const transformedFieldsSchema = z
+  .object({})
+  .passthrough()
+  .transform(extractLabelsField)
+  .pipe(fieldsSchema);
+
+const eventDtoSchema = contentWithFields(transformedFieldsSchema);
 
 type EventDto = z.infer<typeof eventDtoSchema>;
 
@@ -27,6 +35,7 @@ export interface ScheduleEvent {
   startTime: Date;
   endTime: Date;
   locationId: string;
+  labels: string[];
 }
 
 export interface ScheduleLocation {
@@ -52,6 +61,7 @@ function mapSchedule(scheduleDto: EventDto[]): Schedule {
         startTime: fields['start-time'],
         endTime: fields['end-time'],
         locationId: fields.location.contentId,
+        labels: fields.labels,
       });
 
       schedule.locationById[locationDto.contentId] ??= {
