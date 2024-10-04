@@ -304,9 +304,17 @@ export default function Timetable({
         <div
           onClick={() => setModalIsOpen(false)}
           className="ReactModal__Close uil uil-times"></div>
-        <h3>{activeEvent?.name}</h3>
-        <CmsRichText dirtyHtml={activeEvent?.htmlDescription ?? ''} />
+        <EventModalBody event={activeEvent} />
       </Modal>
+    </>
+  );
+}
+
+function EventModalBody({ event }: { event: ScheduleEvent | undefined }) {
+  return (
+    <>
+      <h3>{event?.name}</h3>
+      <CmsRichText dirtyHtml={event?.htmlDescription ?? ''} />
     </>
   );
 }
