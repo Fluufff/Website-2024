@@ -1,6 +1,6 @@
 {
   "uuid": "960abe00-a9c9-47ec-ad1c-0063f6acd948",
-  "lastMigration": 28,
+  "lastMigration": 32,
   "name": "Fluufff CMS",
   "endpointPrefix": "api/v1",
   "latency": 0,
@@ -39,7 +39,8 @@
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": false,
-          "crudKey": "id"
+          "crudKey": "id",
+          "callbacks": []
         },
         {
           "uuid": "c1493df1-afa7-4d99-8fb6-1ef5f940bd39",
@@ -56,11 +57,11 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true,
-          "crudKey": "id"
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
         }
       ],
-      "enabled": true,
       "responseMode": null
     }
   ],
@@ -70,7 +71,7 @@
       "uuid": "83fcf062-c9df-41d1-993d-695deab9970c"
     }
   ],
-  "proxyMode": true,
+  "proxyMode": false,
   "proxyHost": "https://dcm.felikx.be",
   "proxyRemovePrefix": false,
   "tlsOptions": {
@@ -101,5 +102,6 @@
       "value": ""
     }
   ],
-  "data": []
+  "data": [],
+  "callbacks": []
 }
