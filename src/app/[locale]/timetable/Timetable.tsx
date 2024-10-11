@@ -305,6 +305,9 @@ export default function Timetable({
           onClick={() => setModalIsOpen(false)}
           className="ReactModal__Close uil uil-times"></div>
         <h3>{activeEvent?.name}</h3>
+        {activeEvent?.hostName && (
+          <span className="u-text-light">{activeEvent.hostName}</span>
+        )}
         <CmsRichText dirtyHtml={activeEvent?.htmlDescription ?? ''} />
       </Modal>
     </>

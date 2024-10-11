@@ -13,6 +13,7 @@ const eventDtoSchema = contentWithFields({
   }),
   'start-time': z.coerce.date(),
   'end-time': z.coerce.date(),
+  'host-name': z.string().optional(),
 });
 
 type EventDto = z.infer<typeof eventDtoSchema>;
@@ -25,6 +26,7 @@ export interface ScheduleEvent {
   startTime: Date;
   endTime: Date;
   locationId: string;
+  hostName: string | undefined;
 }
 
 export interface ScheduleLocation {
@@ -50,6 +52,7 @@ function mapSchedule(scheduleDto: EventDto[]): Schedule {
         startTime: fields['start-time'],
         endTime: fields['end-time'],
         locationId: fields.location.contentId,
+        hostName: fields['host-name'] || undefined,
       });
 
       schedule.locationById[locationDto.contentId] ??= {
