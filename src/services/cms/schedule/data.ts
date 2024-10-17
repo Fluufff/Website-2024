@@ -3,7 +3,9 @@ import * as z from 'zod';
 import { contentPage, contentWithFields } from '../util';
 
 const eventDtoSchema = contentWithFields({
-  description: z.string(),
+  // DCM quirk: when not interacted with, description is null rather than blank
+  // HTML tags
+  description: z.string().nullable(),
   name: z.string(),
   location: z.object({
     contentId: z.string(),
@@ -48,7 +50,7 @@ function mapSchedule(scheduleDto: EventDto[]): Schedule {
       schedule.events.push({
         slug,
         name: fields.name,
-        htmlDescription: fields.description,
+        htmlDescription: fields.description ?? '',
         startTime: fields['start-time'],
         endTime: fields['end-time'],
         locationId: fields.location.contentId,
