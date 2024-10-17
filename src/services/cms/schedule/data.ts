@@ -74,4 +74,4 @@ function mapSchedule(scheduleDto: EventDto[]): Schedule {
 export const parseSchedule = (data: unknown) =>
   contentPage(eventDtoSchema)
     .transform((page) => mapSchedule(page._embedded.content))
-    .parse(data);
+    .safeParse(data);

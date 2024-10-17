@@ -1,5 +1,6 @@
 import * as R from 'remeda';
 
+import { ParsingError } from '../../ParsingError';
 import { fetchCmsSiteData, optionalCms } from '../util';
 
 import { parseSchedule, Schedule } from './data';
@@ -23,7 +24,13 @@ async function getScheduleForLanguage(language: string): Promise<Schedule> {
   const res = await fetchCmsSiteData('content?' + queryString, {
     next: { tags: ['cms', 'cms.schedule'] },
   });
-  return parseSchedule(await res.json());
+  const scheduleOrError = parseSchedule(await res.json());
+
+  if (scheduleOrError.success) {
+    return scheduleOrError.data;
+  } else {
+    throw new ParsingError(scheduleOrError.error);
+  }
 }
 
 /** Fetches and parses the schedule data with language fallback.
