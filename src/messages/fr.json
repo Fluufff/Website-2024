@@ -149,6 +149,37 @@
     "schedule": {
       "not_available": "Le programme n'est pas disponible pour le moment"
     },
+    "label_help": "What do the labels mean?",
+    "labels": {
+      "nsfw": {
+        "name": "NSFW",
+        "description": "The event depicts elements or themes which are connected to fetishes or related topics, however these events are still strictly non-sexual and no nudity is shown."
+      },
+      "workshop": {
+        "name": "Workshop",
+        "description": "The event asks for active participation (in contrast to passively listening to a presentation)."
+      },
+      "educational": {
+        "name": "Educational",
+        "description": "The event is either given by a (semi-)professional, or are the result of profound research and are aimed at informing/teaching about a subject."
+      },
+      "fursuit-friendly": {
+        "name": "Fursuit-friendly",
+        "description": "The event either features special amenities for fursuiters (e.g., fans and/or a water station) or has measures in place to make some more accesible for fursuiters (e.g., slower paced than usual or with modified equipment to allow fursuiters to handle it)."
+      },
+      "sporty": {
+        "name": "Sporty",
+        "description": "The event asks for a certain level of movement, appropriate clothing, a water bottle and a towel are advised."
+      },
+      "flashing-lights": {
+        "name": "Flashing Lights",
+        "description": "The event features flashing lights."
+      },
+      "charity": {
+        "name": "Charity",
+        "description": "The event is planned and/or executed in cooporation with our chosen Charity organisation."
+      }
+    },
     "submit_proposal": "Proposer un évènement"
   },
   "Contact": {
