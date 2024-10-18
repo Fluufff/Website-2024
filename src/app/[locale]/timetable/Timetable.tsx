@@ -12,14 +12,14 @@ import {
   startOfHour,
   sub,
 } from 'date-fns';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Modal from 'react-modal';
 import Scroll from 'react-scroll';
 
 import { ScheduleView } from './_components/ScheduleView';
 import { TimelineView } from './_components/TimelineView';
-import { knownLabels } from './knownLabels';
+import { isKnownLabel, knownLabels } from './knownLabels';
 
 import CmsRichText from '@/helpers/CmsRichText';
 import { getDateLocale } from '@/helpers/localization';
@@ -315,21 +315,9 @@ export default function Timetable({
 function EventModalBody({ event }: { event: ScheduleEvent | undefined }) {
   if (!event) return;
 
-  // TODO: translate the label
-  const labelBadges = event.labels.map((label, i) => {
-    const knownLabel = knownLabels[label];
-
-    return (
-      <span
-        key={i}
-        className={classNames(
-          'a-badge',
-          knownLabel && `a-badge--color-${knownLabel.color}`,
-        )}>
-        {label}
-      </span>
-    );
-  });
+  const labelBadges = event.labels.map((label, i) => (
+    <EventLabel label={label} key={i} />
+  ));
 
   return (
     <>
@@ -341,5 +329,29 @@ function EventModalBody({ event }: { event: ScheduleEvent | undefined }) {
       {event.hostName && <span className="u-text-light">{event.hostName}</span>}
       <CmsRichText dirtyHtml={event.htmlDescription ?? ''} />
     </>
+  );
+}
+
+function EventLabel({ label }: { label: string }) {
+  const t = useTranslations('Timetable.labels');
+
+  const texts = isKnownLabel(label)
+    ? {
+        name: t(`${label}.name`),
+        description: t(`${label}.description`),
+      }
+    : undefined;
+
+  const knownLabel = knownLabels[label];
+
+  return (
+    <span
+      className={classNames(
+        'a-badge',
+        knownLabel && `a-badge--color-${knownLabel.color}`,
+      )}
+      title={texts?.description}>
+      {texts?.name ?? label}
+    </span>
   );
 }
