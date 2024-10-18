@@ -1280,8 +1280,13 @@
             "translationId": null
           },
           "host-name": "Recgninepo McHostName",
+          "label-nsfw": true,
+          "label-workshop": true,
+          "label-educational": true,
           "label-fursuit-friendly": true,
-          "label-nsfw": false
+          "label-sporty": true,
+          "label-flashing-lights": true,
+          "label-charity": true
         },
         "language": "en",
         "translations": [
