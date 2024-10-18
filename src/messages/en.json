@@ -149,6 +149,7 @@
     "schedule": {
       "not_available": "The schedule is not available at the moment"
     },
+    "label_help": "What do the labels mean?",
     "labels": {
       "nsfw": {
         "name": "NSFW",

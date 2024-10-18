@@ -326,8 +326,11 @@ function EventModalBody({ event }: { event: ScheduleEvent | undefined }) {
         {labelBadges.length > 0 && ' '}
         {labelBadges}
       </h3>
+
       {event.hostName && <span className="u-text-light">{event.hostName}</span>}
       <CmsRichText dirtyHtml={event.htmlDescription ?? ''} />
+
+      <EventLabelHelp labels={event.labels} />
     </>
   );
 }
@@ -353,5 +356,35 @@ function EventLabel({ label }: { label: string }) {
       title={texts?.description}>
       {texts?.name ?? label}
     </span>
+  );
+}
+
+function EventLabelHelp({ labels }: { labels: string[] }) {
+  const t = useTranslations('Timetable');
+
+  const knownSubset = labels.filter(isKnownLabel);
+
+  return (
+    knownSubset.length > 0 && (
+      <details>
+        <summary>{t('label_help')}</summary>
+        <ul>
+          {knownSubset.map((label, i) => {
+            const name = t(`labels.${label}.name`);
+            const description = t(`labels.${label}.description`);
+            const knownLabel = knownLabels[label];
+
+            return (
+              <li key={i}>
+                <span className={`a-badge a-badge--color-${knownLabel.color}`}>
+                  {name}
+                </span>{' '}
+                {description}
+              </li>
+            );
+          })}
+        </ul>
+      </details>
+    )
   );
 }
