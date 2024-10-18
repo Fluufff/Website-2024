@@ -14,6 +14,7 @@ const fieldsSchema = z.object({
   }),
   'start-time': z.coerce.date(),
   'end-time': z.coerce.date(),
+  'host-name': z.string().optional(),
   labels: z.array(z.string()),
 });
 
@@ -35,6 +36,7 @@ export interface ScheduleEvent {
   startTime: Date;
   endTime: Date;
   locationId: string;
+  hostName: string | undefined;
   labels: string[];
 }
 
@@ -61,6 +63,7 @@ function mapSchedule(scheduleDto: EventDto[]): Schedule {
         startTime: fields['start-time'],
         endTime: fields['end-time'],
         locationId: fields.location.contentId,
+        hostName: fields['host-name'] || undefined,
         labels: fields.labels,
       });
 

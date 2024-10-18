@@ -338,6 +338,7 @@ function EventModalBody({ event }: { event: ScheduleEvent | undefined }) {
         {labelBadges.length > 0 && ' '}
         {labelBadges}
       </h3>
+      {event.hostName && <span className="u-text-light">{event.hostName}</span>}
       <CmsRichText dirtyHtml={event.htmlDescription ?? ''} />
     </>
   );
