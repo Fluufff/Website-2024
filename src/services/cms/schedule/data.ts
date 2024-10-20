@@ -11,6 +11,18 @@ const eventDtoSchema = contentWithFields({
     contentId: z.string(),
     fields: z.object({
       name: z.string(),
+      position: z.preprocess(
+        /** (Taiga #29) DCM outputs its number fields as strings in the API.
+         * This is a pre-emptive fix for that, until actually fixed in DCM
+         * itself.
+         */
+        function preprocessQuirkyNumberField(val) {
+          if (typeof val !== 'string') return val;
+          else if (val === '') return null;
+          else return Number(val);
+        },
+        z.number().nullable(),
+      ),
     }),
   }),
   'start-time': z.coerce.date(),
@@ -34,6 +46,8 @@ export interface ScheduleEvent {
 export interface ScheduleLocation {
   locationId: string;
   name: string;
+  /** determines the ordering of the schedule columns */
+  position: number;
 }
 
 export interface Schedule {
@@ -60,6 +74,7 @@ function mapSchedule(scheduleDto: EventDto[]): Schedule {
       schedule.locationById[locationDto.contentId] ??= {
         locationId: locationDto.contentId,
         name: locationDto.fields.name,
+        position: locationDto.fields.position ?? 99999,
       };
 
       return schedule;

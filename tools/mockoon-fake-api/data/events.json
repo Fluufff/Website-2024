@@ -34,7 +34,8 @@
           "location": {
             "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
             "fields": {
-              "name": "Main Stage"
+              "name": "Main Stage",
+              "position": 1
             },
             "translationId": null
           },
@@ -62,7 +63,8 @@
           "location": {
             "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
             "fields": {
-              "name": "Main Stage"
+              "name": "Main Stage",
+              "position": 1
             },
             "translationId": null
           },
@@ -89,7 +91,8 @@
           "location": {
             "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
             "fields": {
-              "name": "Main Stage"
+              "name": "Main Stage",
+              "position": 1
             },
             "translationId": null
           },
@@ -118,7 +121,8 @@
           "location": {
             "contentId": "70294389-6c27-4bdd-ab15-154013848443",
             "fields": {
-              "name": "Small panel room"
+              "name": "Small panel room",
+              "position": 2
             },
             "translationId": null
           },
@@ -148,7 +152,8 @@
           "location": {
             "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
             "fields": {
-              "name": "Main Stage"
+              "name": "Main Stage",
+              "position": 1
             },
             "translationId": null
           },
@@ -176,7 +181,8 @@
           "location": {
             "contentId": "596a46d6-420d-4752-9c90-59e2f022f01e",
             "fields": {
-              "name": "The outside"
+              "name": "The outside",
+              "position": 3
             },
             "translationId": null
           },
@@ -209,7 +215,8 @@
           "location": {
             "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
             "fields": {
-              "name": "Main Stage"
+              "name": "Main Stage",
+              "position": 1
             },
             "translationId": null
           },
@@ -237,7 +244,8 @@
           "location": {
             "contentId": "70294389-6c27-4bdd-ab15-154013848443",
             "fields": {
-              "name": "Small panel room"
+              "name": "Small panel room",
+              "position": 2
             },
             "translationId": null
           },
@@ -265,7 +273,8 @@
           "location": {
             "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
             "fields": {
-              "name": "Main Stage"
+              "name": "Main Stage",
+              "position": 1
             },
             "translationId": null
           },
@@ -292,7 +301,8 @@
           "location": {
             "contentId": "d209cce6-d459-4a7e-8555-762008776c6d",
             "fields": {
-              "name": "Mezzanine"
+              "name": "Mezzanine",
+              "position": 4
             },
             "translationId": null
           },
@@ -325,7 +335,8 @@
           "location": {
             "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
             "fields": {
-              "name": "Main Stage"
+              "name": "Main Stage",
+              "position": 1
             },
             "translationId": null
           },
@@ -352,7 +363,8 @@
           "location": {
             "contentId": "70294389-6c27-4bdd-ab15-154013848443",
             "fields": {
-              "name": "Small panel room"
+              "name": "Small panel room",
+              "position": 2
             },
             "translationId": null
           },
@@ -379,7 +391,8 @@
           "location": {
             "contentId": "70294389-6c27-4bdd-ab15-154013848443",
             "fields": {
-              "name": "Small panel room"
+              "name": "Small panel room",
+              "position": 2
             },
             "translationId": null
           },
@@ -411,7 +424,8 @@
           "location": {
             "contentId": "70294389-6c27-4bdd-ab15-154013848443",
             "fields": {
-              "name": "Small panel room"
+              "name": "Small panel room",
+              "position": 2
             },
             "translationId": null
           },
@@ -441,7 +455,8 @@
           "location": {
             "contentId": "70294389-6c27-4bdd-ab15-154013848443",
             "fields": {
-              "name": "Small panel room"
+              "name": "Small panel room",
+              "position": 2
             },
             "translationId": null
           },
@@ -470,7 +485,8 @@
           "location": {
             "contentId": "99ea0268-cb07-4dbf-a6dd-a152fba239bc",
             "fields": {
-              "name": "Galileo"
+              "name": "Galileo",
+              "position": 5
             },
             "translationId": null
           },
@@ -499,7 +515,8 @@
           "location": {
             "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
             "fields": {
-              "name": "Main Stage"
+              "name": "Main Stage",
+              "position": 1
             },
             "translationId": null
           },
@@ -524,7 +541,8 @@
           "location": {
             "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
             "fields": {
-              "name": "Big panel room"
+              "name": "Big panel room",
+              "position": 6
             },
             "translationId": null
           },
@@ -553,7 +571,8 @@
           "location": {
             "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
             "fields": {
-              "name": "Big panel room"
+              "name": "Big panel room",
+              "position": 6
             },
             "translationId": null
           },
@@ -586,7 +605,8 @@
           "location": {
             "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
             "fields": {
-              "name": "Big panel room"
+              "name": "Big panel room",
+              "position": 6
             },
             "translationId": null
           },
@@ -614,7 +634,8 @@
           "location": {
             "contentId": "70294389-6c27-4bdd-ab15-154013848443",
             "fields": {
-              "name": "Small panel room"
+              "name": "Small panel room",
+              "position": 2
             },
             "translationId": null
           },
@@ -640,7 +661,8 @@
           "location": {
             "contentId": "99ea0268-cb07-4dbf-a6dd-a152fba239bc",
             "fields": {
-              "name": "Galileo"
+              "name": "Galileo",
+              "position": 5
             },
             "translationId": null
           },
@@ -672,7 +694,8 @@
           "location": {
             "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
             "fields": {
-              "name": "Main Stage"
+              "name": "Main Stage",
+              "position": 1
             },
             "translationId": null
           },
@@ -699,7 +722,8 @@
           "location": {
             "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
             "fields": {
-              "name": "Big panel room"
+              "name": "Big panel room",
+              "position": 6
             },
             "translationId": null
           },
@@ -730,7 +754,8 @@
           "location": {
             "contentId": "70294389-6c27-4bdd-ab15-154013848443",
             "fields": {
-              "name": "Small panel room"
+              "name": "Small panel room",
+              "position": 2
             },
             "translationId": null
           },
@@ -760,7 +785,8 @@
           "location": {
             "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
             "fields": {
-              "name": "Big panel room"
+              "name": "Big panel room",
+              "position": 6
             },
             "translationId": null
           },
@@ -786,7 +812,8 @@
           "location": {
             "contentId": "70294389-6c27-4bdd-ab15-154013848443",
             "fields": {
-              "name": "Small panel room"
+              "name": "Small panel room",
+              "position": 2
             },
             "translationId": null
           },
@@ -815,7 +842,8 @@
           "location": {
             "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
             "fields": {
-              "name": "Big panel room"
+              "name": "Big panel room",
+              "position": 6
             },
             "translationId": null
           },
@@ -845,7 +873,8 @@
           "location": {
             "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
             "fields": {
-              "name": "Main Stage"
+              "name": "Main Stage",
+              "position": 1
             },
             "translationId": null
           },
@@ -874,7 +903,8 @@
           "location": {
             "contentId": "d209cce6-d459-4a7e-8555-762008776c6d",
             "fields": {
-              "name": "Mezzanine"
+              "name": "Mezzanine",
+              "position": 4
             },
             "translationId": null
           },
@@ -901,7 +931,8 @@
           "location": {
             "contentId": "d209cce6-d459-4a7e-8555-762008776c6d",
             "fields": {
-              "name": "Mezzanine"
+              "name": "Mezzanine",
+              "position": 4
             },
             "translationId": null
           },
@@ -932,7 +963,8 @@
           "location": {
             "contentId": "d209cce6-d459-4a7e-8555-762008776c6d",
             "fields": {
-              "name": "Mezzanine"
+              "name": "Mezzanine",
+              "position": 4
             },
             "translationId": null
           },
@@ -959,7 +991,8 @@
           "location": {
             "contentId": "d209cce6-d459-4a7e-8555-762008776c6d",
             "fields": {
-              "name": "Mezzanine"
+              "name": "Mezzanine",
+              "position": 4
             },
             "translationId": null
           },
@@ -991,7 +1024,8 @@
           "location": {
             "contentId": "99ea0268-cb07-4dbf-a6dd-a152fba239bc",
             "fields": {
-              "name": "Galileo"
+              "name": "Galileo",
+              "position": 5
             },
             "translationId": null
           },
@@ -1021,7 +1055,8 @@
           "location": {
             "contentId": "99ea0268-cb07-4dbf-a6dd-a152fba239bc",
             "fields": {
-              "name": "Galileo"
+              "name": "Galileo",
+              "position": 5
             },
             "translationId": null
           },
@@ -1047,7 +1082,8 @@
           "location": {
             "contentId": "d209cce6-d459-4a7e-8555-762008776c6d",
             "fields": {
-              "name": "Mezzanine"
+              "name": "Mezzanine",
+              "position": 4
             },
             "translationId": null
           },
@@ -1075,7 +1111,8 @@
           "location": {
             "contentId": "d209cce6-d459-4a7e-8555-762008776c6d",
             "fields": {
-              "name": "Mezzanine"
+              "name": "Mezzanine",
+              "position": 4
             },
             "translationId": null
           },
@@ -1104,7 +1141,8 @@
           "location": {
             "contentId": "99ea0268-cb07-4dbf-a6dd-a152fba239bc",
             "fields": {
-              "name": "Galileo"
+              "name": "Galileo",
+              "position": 5
             },
             "translationId": null
           },
@@ -1135,7 +1173,8 @@
           "location": {
             "contentId": "99ea0268-cb07-4dbf-a6dd-a152fba239bc",
             "fields": {
-              "name": "Galileo"
+              "name": "Galileo",
+              "position": 5
             },
             "translationId": null
           },
@@ -1166,7 +1205,8 @@
           "location": {
             "contentId": "99ea0268-cb07-4dbf-a6dd-a152fba239bc",
             "fields": {
-              "name": "Galileo"
+              "name": "Galileo",
+              "position": 5
             },
             "translationId": null
           },
@@ -1195,7 +1235,8 @@
           "location": {
             "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
             "fields": {
-              "name": "Main Stage"
+              "name": "Main Stage",
+              "position": 1
             },
             "translationId": null
           },
@@ -1224,7 +1265,8 @@
           "location": {
             "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
             "fields": {
-              "name": "Big panel room"
+              "name": "Big panel room",
+              "position": 6
             },
             "translationId": null
           },
@@ -1250,7 +1292,8 @@
           "location": {
             "contentId": "99ea0268-cb07-4dbf-a6dd-a152fba239bc",
             "fields": {
-              "name": "Galileo"
+              "name": "Galileo",
+              "position": 5
             },
             "translationId": null
           },
@@ -1278,7 +1321,8 @@
           "location": {
             "contentId": "70294389-6c27-4bdd-ab15-154013848443",
             "fields": {
-              "name": "Small panel room"
+              "name": "Small panel room",
+              "position": 2
             },
             "translationId": null
           },
@@ -1309,7 +1353,8 @@
           "location": {
             "contentId": "d209cce6-d459-4a7e-8555-762008776c6d",
             "fields": {
-              "name": "Mezzanine"
+              "name": "Mezzanine",
+              "position": 4
             },
             "translationId": null
           },
@@ -1337,7 +1382,8 @@
           "location": {
             "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
             "fields": {
-              "name": "Main Stage"
+              "name": "Main Stage",
+              "position": 1
             },
             "translationId": null
           },
@@ -1369,7 +1415,8 @@
           "location": {
             "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
             "fields": {
-              "name": "Main Stage"
+              "name": "Main Stage",
+              "position": 1
             },
             "translationId": null
           },
@@ -1396,7 +1443,8 @@
           "location": {
             "contentId": "241f759a-f184-4542-9add-52904b8f32ed",
             "fields": {
-              "name": "Big panel room"
+              "name": "Big panel room",
+              "position": 6
             },
             "translationId": null
           },
@@ -1425,7 +1473,8 @@
           "location": {
             "contentId": "ad608c2c-6dc1-4d2f-9ee9-cf9455c652a0",
             "fields": {
-              "name": "Main Stage"
+              "name": "Main Stage",
+              "position": 1
             },
             "translationId": null
           },
