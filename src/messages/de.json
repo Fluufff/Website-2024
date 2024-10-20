@@ -149,11 +149,12 @@
     "schedule": {
       "not_available": "Das Programm ist zur Zeit nicht verfügbar!"
     },
+    "submit_proposal": "Voschlag einreichen",
     "label_help": "What do the labels mean?",
     "labels": {
       "nsfw": {
         "name": "NSFW",
-        "description": "The event depicts elements or themes which are connected to fetishes or related topics, however these events are still strictly non-sexual and no nudity is shown."
+        "description": "The event depicts elements or themes which are connected to fetishes or related topics, however this event is still strictly non-sexual and no nudity is shown."
       },
       "workshop": {
         "name": "Workshop",
@@ -161,7 +162,7 @@
       },
       "educational": {
         "name": "Educational",
-        "description": "The event is either given by a (semi-)professional, or are the result of profound research and are aimed at informing/teaching about a subject."
+        "description": "The event is either given by a (semi-)professional, or is the result of profound research and is aimed at informing/teaching about a subject."
       },
       "fursuit-friendly": {
         "name": "Fursuit-friendly",
@@ -169,7 +170,7 @@
       },
       "sporty": {
         "name": "Sporty",
-        "description": "The event asks for a certain level of movement, appropriate clothing, a water bottle and a towel are advised."
+        "description": "The event asks for a certain level of movement. Appropriate clothing, a water bottle and a towel are advised."
       },
       "flashing-lights": {
         "name": "Flashing Lights",
@@ -177,10 +178,9 @@
       },
       "charity": {
         "name": "Charity",
-        "description": "The event is planned and/or executed in cooporation with our chosen Charity organisation."
+        "description": "The event is planned and/or executed in cooperation with our chosen Charity organisation."
       }
-    },
-    "submit_proposal": "Voschlag einreichen"
+    }
   },
   "Contact": {
     "header": {
