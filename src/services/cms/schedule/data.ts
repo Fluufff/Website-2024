@@ -9,7 +9,18 @@ const eventDtoSchema = contentWithFields({
     contentId: z.string(),
     fields: z.object({
       name: z.string(),
-      position: z.number().nullable(),
+      position: z.preprocess(
+        /** (Taiga #29) DCM outputs its number fields as strings in the API.
+         * This is a pre-emptive fix for that, until actually fixed in DCM
+         * itself.
+         */
+        function preprocessQuirkyNumberField(val) {
+          if (typeof val !== 'string') return val;
+          else if (val === '') return null;
+          else return Number(val);
+        },
+        z.number().nullable(),
+      ),
     }),
   }),
   'start-time': z.coerce.date(),
