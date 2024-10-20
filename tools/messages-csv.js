@@ -182,10 +182,10 @@ function main() {
   const args = process.argv.slice(2);
 
   switch (true) {
-    case isDeepEqual(args, ['export']):
-      return writeCsv(csvPath, toCsvRows(readJsons(jsonPaths)));
-    case isDeepEqual(args, ['import']):
-      return writeJsons(jsonPaths, fromCsvRows(readCsv(csvPath)));
+    case args[0] === 'export':
+      return writeCsv(args[1] ?? csvPath, toCsvRows(readJsons(jsonPaths)));
+    case args[0] === 'import':
+      return writeJsons(jsonPaths, fromCsvRows(readCsv(args[1] ?? csvPath)));
   }
 
   console.error('This utility takes only one argument: "export" or "import"');
