@@ -9,6 +9,7 @@ const eventDtoSchema = contentWithFields({
     contentId: z.string(),
     fields: z.object({
       name: z.string(),
+      position: z.number().nullable(),
     }),
   }),
   'start-time': z.coerce.date(),
@@ -32,6 +33,8 @@ export interface ScheduleEvent {
 export interface ScheduleLocation {
   locationId: string;
   name: string;
+  /** determines the ordering of the schedule columns */
+  position: number;
 }
 
 export interface Schedule {
@@ -58,6 +61,7 @@ function mapSchedule(scheduleDto: EventDto[]): Schedule {
       schedule.locationById[locationDto.contentId] ??= {
         locationId: locationDto.contentId,
         name: locationDto.fields.name,
+        position: locationDto.fields.position ?? 99999,
       };
 
       return schedule;
