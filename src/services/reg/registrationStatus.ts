@@ -3,6 +3,7 @@ import useSWR from 'swr';
 import * as z from 'zod';
 
 import { ApiError } from '../ApiError';
+import { ParsingError } from '../ParsingError';
 
 import { env } from '@/env';
 
@@ -71,7 +72,15 @@ export const getRegistrationStatus = cache(
 
     if (!response.ok) throw new ApiError(response);
 
-    return schema.transform(map).parse(await response.json());
+    const statusOrError = schema
+      .transform(map)
+      .safeParse(await response.json());
+
+    if (statusOrError.success) {
+      return statusOrError.data;
+    } else {
+      throw new ParsingError(statusOrError.error);
+    }
   },
 );
 

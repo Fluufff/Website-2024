@@ -3,16 +3,31 @@ import * as z from 'zod';
 import { contentPage, contentWithFields } from '../util';
 
 const eventDtoSchema = contentWithFields({
-  description: z.string(),
+  // DCM quirk: when not interacted with, description is null rather than blank
+  // HTML tags
+  description: z.string().nullable(),
   name: z.string(),
   location: z.object({
     contentId: z.string(),
     fields: z.object({
       name: z.string(),
+      position: z.preprocess(
+        /** (Taiga #29) DCM outputs its number fields as strings in the API.
+         * This is a pre-emptive fix for that, until actually fixed in DCM
+         * itself.
+         */
+        function preprocessQuirkyNumberField(val) {
+          if (typeof val !== 'string') return val;
+          else if (val === '') return null;
+          else return Number(val);
+        },
+        z.number().nullable(),
+      ),
     }),
   }),
   'start-time': z.coerce.date(),
   'end-time': z.coerce.date(),
+  'host-name': z.string().optional(),
 });
 
 type EventDto = z.infer<typeof eventDtoSchema>;
@@ -25,11 +40,14 @@ export interface ScheduleEvent {
   startTime: Date;
   endTime: Date;
   locationId: string;
+  hostName: string | undefined;
 }
 
 export interface ScheduleLocation {
   locationId: string;
   name: string;
+  /** determines the ordering of the schedule columns */
+  position: number;
 }
 
 export interface Schedule {
@@ -46,15 +64,17 @@ function mapSchedule(scheduleDto: EventDto[]): Schedule {
       schedule.events.push({
         slug,
         name: fields.name,
-        htmlDescription: fields.description,
+        htmlDescription: fields.description ?? '',
         startTime: fields['start-time'],
         endTime: fields['end-time'],
         locationId: fields.location.contentId,
+        hostName: fields['host-name'] || undefined,
       });
 
       schedule.locationById[locationDto.contentId] ??= {
         locationId: locationDto.contentId,
         name: locationDto.fields.name,
+        position: locationDto.fields.position ?? 99999,
       };
 
       return schedule;
@@ -69,4 +89,4 @@ function mapSchedule(scheduleDto: EventDto[]): Schedule {
 export const parseSchedule = (data: unknown) =>
   contentPage(eventDtoSchema)
     .transform((page) => mapSchedule(page._embedded.content))
-    .parse(data);
+    .safeParse(data);

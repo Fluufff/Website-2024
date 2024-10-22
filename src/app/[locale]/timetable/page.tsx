@@ -1,4 +1,5 @@
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import * as R from 'remeda';
 
 import Timetable from './Timetable';
 
@@ -25,6 +26,11 @@ export default async function TimetablePage({ params: { locale } }: Props) {
   const t = await getTranslations('Timetable');
 
   const { events, locationById } = await getSchedule(locale);
+  const orderedLocations = R.pipe(
+    locationById,
+    R.values,
+    R.sortBy(R.prop('position')),
+  );
 
   if (!events.length) {
     // link is hidden because we have no data, so redirection is ok
@@ -40,7 +46,7 @@ export default async function TimetablePage({ params: { locale } }: Props) {
       />
       <div className="o-section o-section--alt">
         <div className="o-section__content">
-          <Timetable events={events} locations={Object.values(locationById)} />
+          <Timetable events={events} locations={orderedLocations} />
         </div>
       </div>
       <div className="o-section o-section--dark">
