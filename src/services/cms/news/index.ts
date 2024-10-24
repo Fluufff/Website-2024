@@ -18,7 +18,7 @@ async function getNewsForLanguage(language: string): Promise<NewsItem[]> {
   });
 
   const res = await fetchCmsSiteData('content?' + queryString, {
-    next: { tags: ['cms', 'cms.news'] },
+    next: { tags: ['cms', 'cms.news', `cms.${contentType}`] },
   });
   const newsItemOrError = parseNewsItems(await res.json());
 
