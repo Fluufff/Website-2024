@@ -323,8 +323,10 @@ function EventModalBody({ event }: { event: ScheduleEvent | undefined }) {
     <>
       <h3>
         {event.name}
-        {labelBadges.length > 0 && ' '}
-        {labelBadges}
+        {
+          // important space to allow breaking the line, do not remove
+          labelBadges.map((badge) => [' ', badge])
+        }
       </h3>
 
       {event.hostName && <span className="u-text-light">{event.hostName}</span>}

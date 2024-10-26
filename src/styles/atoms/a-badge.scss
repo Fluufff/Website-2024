@@ -8,6 +8,8 @@
   font-size: 1rem;
   font-family: var(--font-family-readex-pro);
 
+  white-space: nowrap;
+
   &--color-1 { background: $bg-1; }
   &--color-2 { background: $bg-2; }
   &--color-3 { background: $bg-3; }
