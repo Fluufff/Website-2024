@@ -150,35 +150,35 @@
       "not_available": "Le programme n'est pas disponible pour le moment"
     },
     "submit_proposal": "Proposer un évènement",
-    "label_help": "What do the labels mean?",
+    "label_help": "Que signifient les labels?",
     "labels": {
       "nsfw": {
         "name": "NSFW",
-        "description": "The event depicts elements or themes which are connected to fetishes or related topics, however this event is still strictly non-sexual and no nudity is shown."
+        "description": "L'évènement aborde des sujets ou thèmes qui sont connectés au fétichisme ou à des sujets apparentés, néanmoins cet évènement est strictement non-sexuel et ne montre pas de nudité."
       },
       "workshop": {
-        "name": "Workshop",
-        "description": "The event asks for active participation (in contrast to passively listening to a presentation)."
+        "name": "Atelier",
+        "description": "L'évènement nécessite une participation active (contrairement à une écoute passive de la présentation)."
       },
       "educational": {
-        "name": "Educational",
-        "description": "The event is either given by a (semi-)professional, or is the result of profound research and is aimed at informing/teaching about a subject."
+        "name": "Éducatif",
+        "description": "L'évènement est soit présenté par un (semi-)professionel du sujet, ou est le résultat d'une recherche approfondie du sujet et est destinée à la formation/enseignement de celui-ci."
       },
       "fursuit-friendly": {
-        "name": "Fursuit-friendly",
-        "description": "The event either features special amenities for fursuiters (e.g., fans and/or a water station) or has measures in place to make some more accesible for fursuiters (e.g., slower paced than usual or with modified equipment to allow fursuiters to handle it)."
+        "name": "Adapté aux fursuits",
+        "description": "L'évènement est soit équipé pour les fursuiters (par ex., ventilateurs et/ou distributeurs d'eau) ou met en place des mesures pour être accessible aux fursuiters (par ex., rythme d'activité plus lent ou avec un matériel adapté pour permettre aux fursuiters d'y participer)."
       },
       "sporty": {
-        "name": "Sporty",
-        "description": "The event asks for a certain level of movement. Appropriate clothing, a water bottle and a towel are advised."
+        "name": "Sportif",
+        "description": "L'évènement demande un certain niveau de mobilité. Des vêtements adaptés, une gourde d'eau et une serviette sont conseillés."
       },
       "flashing-lights": {
-        "name": "Flashing Lights",
-        "description": "The event features flashing lights."
+        "name": "Lumières flash",
+        "description": "L'évènement comporte des lumières clignotantes et de forte intensité."
       },
       "charity": {
-        "name": "Charity",
-        "description": "The event is planned and/or executed in cooperation with our chosen Charity organisation."
+        "name": "Charité",
+        "description": "L'évènement est organisé et/ou présenté en coopération avec l'organisme de charité choisi cette édition."
       }
     }
   },

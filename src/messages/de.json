@@ -150,35 +150,35 @@
       "not_available": "Das Programm ist zur Zeit nicht verfügbar!"
     },
     "submit_proposal": "Voschlag einreichen",
-    "label_help": "What do the labels mean?",
+    "label_help": "Was bedeuten die Kennzeichnungen?",
     "labels": {
       "nsfw": {
         "name": "NSFW",
-        "description": "The event depicts elements or themes which are connected to fetishes or related topics, however this event is still strictly non-sexual and no nudity is shown."
+        "description": "Die Veranstaltung zeigt Elemente oder Themen, die mit Fetischen oder verwandten Themen in Verbindung stehen.  Diese Veranstaltung ist jedoch strikt nicht-sexuell und es wird keine Nacktheit gezeigt."
       },
       "workshop": {
         "name": "Workshop",
-        "description": "The event asks for active participation (in contrast to passively listening to a presentation)."
+        "description": "Die Veranstaltung erfordert eine aktive Teilnahme (im Gegensatz zum passiven Zuhören einer Präsentation)."
       },
       "educational": {
-        "name": "Educational",
-        "description": "The event is either given by a (semi-)professional, or is the result of profound research and is aimed at informing/teaching about a subject."
+        "name": "Lehrreich",
+        "description": "Die Veranstaltung wird entweder von einem (Halb-)Fachmann gehalten oder ist das Ergebnis einer gründlichen Recherche und dient der Information/Lehre über ein Thema."
       },
       "fursuit-friendly": {
-        "name": "Fursuit-friendly",
-        "description": "The event either features special amenities for fursuiters (e.g., fans and/or a water station) or has measures in place to make some more accesible for fursuiters (e.g., slower paced than usual or with modified equipment to allow fursuiters to handle it)."
+        "name": "Fursuit-freundlich",
+        "description": "Die Veranstaltung bietet entweder besondere Annehmlichkeiten für Fursuiter (z.B. Ventilatoren und/oder eine Wasserstation) oder hat Maßnahmen ergriffen, um den Zugang für Fursuiter zu erleichtern (z.B. ein langsameres Tempo als üblich oder eine modifizierte Ausrüstung, damit Fursuiter damit umgehen können)."
       },
       "sporty": {
-        "name": "Sporty",
-        "description": "The event asks for a certain level of movement. Appropriate clothing, a water bottle and a towel are advised."
+        "name": "Sportlich",
+        "description": "Die Veranstaltung erfordert ein gewisses Maß an Bewegung. Geeignete Kleidung, eine Wasserflasche und ein Handtuch werden empfohlen."
       },
       "flashing-lights": {
-        "name": "Flashing Lights",
-        "description": "The event features flashing lights."
+        "name": "Blinkende Lichter",
+        "description": "Die Veranstaltung ist mit Blinklichtern ausgestattet."
       },
       "charity": {
-        "name": "Charity",
-        "description": "The event is planned and/or executed in cooperation with our chosen Charity organisation."
+        "name": "Hilfsorganisation",
+        "description": "Die Veranstaltung wird in Zusammenarbeit mit der von uns gewählten Hilfsorganisation geplant und/oder durchgeführt."
       }
     }
   },

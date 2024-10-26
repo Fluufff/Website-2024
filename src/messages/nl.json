@@ -150,35 +150,35 @@
       "not_available": "De planning is op dit moment niet beschikbaar"
     },
     "submit_proposal": "Voorstel indienen",
-    "label_help": "What do the labels mean?",
+    "label_help": "Wat betekenen de labels?",
     "labels": {
       "nsfw": {
         "name": "NSFW",
-        "description": "The event depicts elements or themes which are connected to fetishes or related topics, however this event is still strictly non-sexual and no nudity is shown."
+        "description": "Dit evenement zal onderwerpen of themas rondom fetishjes en gerelateerde onderwerpen benaderen. Dit evenement is strikt non-seksueel en er zullen geen beelden van naaktheid getoond. "
       },
       "workshop": {
         "name": "Workshop",
-        "description": "The event asks for active participation (in contrast to passively listening to a presentation)."
+        "description": "Dit evenement vraagt om actieve participatie (in tegenstelling tot, bijvoorbeeld, luisteren naar een presentatie)."
       },
       "educational": {
-        "name": "Educational",
-        "description": "The event is either given by a (semi-)professional, or is the result of profound research and is aimed at informing/teaching about a subject."
+        "name": "Educatief",
+        "description": "Dit evenement zal worden gehost door een (semi-) professioneel deskundige, of is het resultaat van diep vooronderzoek. Het is er op gericht om te informeren over een specifiek onderwerp."
       },
       "fursuit-friendly": {
-        "name": "Fursuit-friendly",
-        "description": "The event either features special amenities for fursuiters (e.g., fans and/or a water station) or has measures in place to make some more accesible for fursuiters (e.g., slower paced than usual or with modified equipment to allow fursuiters to handle it)."
+        "name": "Fursuit-vriendelijk",
+        "description": "Dit evenement heeft speciale voorzieningen voor fursuiters (zoals ventilators en/of waterstations) of heeft maatregelen genomen om het meer toegankelijk te maken voor suiters (bijv. meer ruimte, langzamere tijdverstrek of aangepaste materialen)."
       },
       "sporty": {
-        "name": "Sporty",
-        "description": "The event asks for a certain level of movement. Appropriate clothing, a water bottle and a towel are advised."
+        "name": "Sportief",
+        "description": "Dit evenement vereist een bepaald niveau van beweging. We raden aan om passende kleding, water, en een handoek mee te nemen."
       },
       "flashing-lights": {
-        "name": "Flashing Lights",
-        "description": "The event features flashing lights."
+        "name": "Knipperende Lichten",
+        "description": "Dit evenement zal felle, knipperenede lichten hebben. "
       },
       "charity": {
-        "name": "Charity",
-        "description": "The event is planned and/or executed in cooperation with our chosen Charity organisation."
+        "name": "Goed Doel",
+        "description": "Dit evenement is (deels) opgezet en/of uitgevoerd in samenwerking met ons gekozen Goede Doel organizatie."
       }
     }
   },
