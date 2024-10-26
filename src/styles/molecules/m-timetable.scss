@@ -223,9 +223,11 @@ body {
     .ReactModal__Content {
       inset: unset !important;
       width: 80%;
-      overflow: unset !important;
       border: unset !important;
       border-radius: $border-radius !important;
+
+      overflow-y: scroll !important;
+      max-height: 90%;
 
       p {
         line-height: 1.5;
