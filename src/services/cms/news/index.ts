@@ -1,5 +1,6 @@
 import * as R from 'remeda';
 
+import { ParsingError } from '../../ParsingError';
 import { fetchCmsSiteData, optionalCms } from '../util';
 
 import { NewsItem, parseNewsItems } from './data';
@@ -17,9 +18,15 @@ async function getNewsForLanguage(language: string): Promise<NewsItem[]> {
   });
 
   const res = await fetchCmsSiteData('content?' + queryString, {
-    next: { tags: ['cms', 'cms.news'] },
+    next: { tags: ['cms', 'cms.news', `cms.${contentType}`] },
   });
-  return parseNewsItems(await res.json());
+  const newsItemOrError = parseNewsItems(await res.json());
+
+  if (newsItemOrError.success) {
+    return newsItemOrError.data;
+  } else {
+    throw new ParsingError(newsItemOrError.error);
+  }
 }
 
 /** Fetches and parses the schedule data, using English as fallback.

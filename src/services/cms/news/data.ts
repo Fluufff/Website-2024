@@ -33,5 +33,5 @@ function mapNewsItems(itemsDto: NewsItemDto[]): NewsItem[] {
 export function parseNewsItems(data: unknown) {
   return contentPage(newsItemDtoSchema)
     .transform((page) => mapNewsItems(page._embedded.content))
-    .parse(data);
+    .safeParse(data);
 }

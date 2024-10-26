@@ -27,6 +27,8 @@ export const env = createEnv({
 
     CMS_CONTENT_TYPE_NEWS_ITEM: z.string().nonempty(),
     CMS_CONTENT_TYPE_EVENT: z.string().nonempty(),
+
+    CMS_WEBHOOK_SECRET_TOKEN: z.string().nonempty(),
   },
 
   client: {
