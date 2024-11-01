@@ -179,6 +179,10 @@
       "charity": {
         "name": "Goed Doel",
         "description": "Dit evenement is (deels) opgezet en/of uitgevoerd in samenwerking met ons gekozen Goede Doel."
+      },
+      "open-door": {
+        "name": "Inloop/Uitloop Evenement",
+        "description": "Dit evenement kan vrij worden bijgewoond of verlaten tijdens de hele duur van het evenement."
       }
     }
   },

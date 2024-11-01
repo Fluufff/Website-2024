@@ -179,6 +179,10 @@
       "charity": {
         "name": "Charity",
         "description": "The event is planned and/or executed in cooperation with our chosen Charity organisation."
+      },
+      "open-door": {
+        "name": "Open Door Event",
+        "description": "The event can be entered and left at any given time during its duration."
       }
     }
   },

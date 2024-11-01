@@ -1327,7 +1327,8 @@
           "label-fursuit-friendly": true,
           "label-sporty": true,
           "label-flashing-lights": true,
-          "label-charity": true
+          "label-charity": true,
+          "label-open-door": true
         },
         "language": "en",
         "translations": [

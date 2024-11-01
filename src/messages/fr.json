@@ -179,6 +179,10 @@
       "charity": {
         "name": "Charité",
         "description": "L'évènement est organisé et/ou présenté en coopération avec l'organisme de charité choisi cette édition."
+      },
+      "open-door": {
+        "name": "Open Door Event",
+        "description": "The event can be entered and left at any given time during its duration."
       }
     }
   },

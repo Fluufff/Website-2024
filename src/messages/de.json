@@ -179,6 +179,10 @@
       "charity": {
         "name": "Hilfsorganisation",
         "description": "Die Veranstaltung wird in Zusammenarbeit mit der von uns gewählten Hilfsorganisation geplant und/oder durchgeführt."
+      },
+      "open-door": {
+        "name": "Frei zugängliche Veranstaltung",
+        "description": "Die Veranstaltung kann während ihrer Dauer jederzeit betreten und verlassen werden."
       }
     }
   },

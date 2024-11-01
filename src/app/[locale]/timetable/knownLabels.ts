@@ -6,6 +6,7 @@ const knownLabelStrings = [
   'sporty',
   'flashing-lights',
   'charity',
+  'open-door',
 ] as const;
 
 export type KnownLabel = (typeof knownLabelStrings)[number];
@@ -14,8 +15,10 @@ export function isKnownLabel(s: string): s is KnownLabel {
   return (knownLabelStrings as readonly string[]).includes(s);
 }
 
-// .a-badge--color-X
-export type KnownLabelItem = { color: 1 | 2 | 3 | 4 | 5 | 6 | 7 };
+export type KnownLabelItem = {
+  /** color code for .a-badge--color-X classes */
+  color: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+};
 
 // weird type i just came up with, but it works
 export type KnownLabelDict = Record<KnownLabel, KnownLabelItem> &
@@ -42,5 +45,8 @@ export const knownLabels: KnownLabelDict = {
   },
   charity: {
     color: 7,
+  },
+  'open-door': {
+    color: 8,
   },
 };
