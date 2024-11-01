@@ -16,10 +16,11 @@ import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Modal from 'react-modal';
 import Scroll from 'react-scroll';
+import * as R from 'remeda';
 
 import { ScheduleView } from './_components/ScheduleView';
 import { TimelineView } from './_components/TimelineView';
-import { isKnownLabel, knownLabels } from './knownLabels';
+import { isKnownLabel, knownLabels, knownLabelSortKey } from './knownLabels';
 
 import CmsRichText from '@/helpers/CmsRichText';
 import { getDateLocale } from '@/helpers/localization';
@@ -311,11 +312,12 @@ export default function Timetable({
     </>
   );
 }
-
 function EventModalBody({ event }: { event: ScheduleEvent | undefined }) {
   if (!event) return;
 
-  const labelBadges = event.labels.map((label, i) => (
+  const orderedLabels = R.sortBy(event.labels, knownLabelSortKey);
+
+  const labelBadges = orderedLabels.map((label, i) => (
     <EventLabel label={label} key={i} />
   ));
 
@@ -332,7 +334,7 @@ function EventModalBody({ event }: { event: ScheduleEvent | undefined }) {
       {event.hostName && <span className="u-text-light">{event.hostName}</span>}
       <CmsRichText dirtyHtml={event.htmlDescription ?? ''} />
 
-      <EventLabelHelp labels={event.labels} />
+      <EventLabelHelp labels={orderedLabels} />
     </>
   );
 }

@@ -1,3 +1,4 @@
+/** ordered as displayed on the website */
 const knownLabelStrings = [
   'nsfw',
   'workshop',
@@ -13,6 +14,10 @@ export type KnownLabel = (typeof knownLabelStrings)[number];
 
 export function isKnownLabel(s: string): s is KnownLabel {
   return (knownLabelStrings as readonly string[]).includes(s);
+}
+
+export function knownLabelSortKey(s: string): number {
+  return isKnownLabel(s) ? knownLabelStrings.indexOf(s) : +Infinity;
 }
 
 export type KnownLabelItem = {
