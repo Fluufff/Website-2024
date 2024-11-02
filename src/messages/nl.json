@@ -149,7 +149,42 @@
     "schedule": {
       "not_available": "De planning is op dit moment niet beschikbaar"
     },
-    "submit_proposal": "Voorstel indienen"
+    "submit_proposal": "Voorstel indienen",
+    "label_help": "Wat betekenen de labels?",
+    "labels": {
+      "nsfw": {
+        "name": "NSFW",
+        "description": "Dit evenement zal onderwerpen of themas rondom fetishjes en gerelateerde onderwerpen benaderen. Dit evenement is strikt non-seksueel en er zullen geen beelden van naaktheid getoond. "
+      },
+      "workshop": {
+        "name": "Workshop",
+        "description": "Dit evenement vraagt om actieve participatie (in tegenstelling tot, bijvoorbeeld, luisteren naar een presentatie)."
+      },
+      "educational": {
+        "name": "Educatief",
+        "description": "Dit evenement zal worden gehost door een (semi-) professioneel deskundige, of is het resultaat van diep vooronderzoek. Het is er op gericht om te informeren over een specifiek onderwerp."
+      },
+      "fursuit-friendly": {
+        "name": "Fursuit-vriendelijk",
+        "description": "Dit evenement heeft speciale voorzieningen voor fursuiters (zoals ventilators en/of waterstations) of heeft maatregelen genomen om het meer toegankelijk te maken voor suiters (bijv. meer ruimte, langzamere tijdverstrek of aangepaste materialen)."
+      },
+      "sporty": {
+        "name": "Sportief",
+        "description": "Dit evenement vereist een bepaald niveau van beweging. We raden aan om passende kleding, water, en een handoek mee te nemen."
+      },
+      "flashing-lights": {
+        "name": "Knipperende Lichten",
+        "description": "Dit evenement zal felle, knipperenede lichten hebben. "
+      },
+      "charity": {
+        "name": "Goed Doel",
+        "description": "Dit evenement is (deels) opgezet en/of uitgevoerd in samenwerking met ons gekozen Goede Doel."
+      },
+      "open-door": {
+        "name": "Inloop/Uitloop Evenement",
+        "description": "Dit evenement kan vrij worden bijgewoond of verlaten tijdens de hele duur van het evenement."
+      }
+    }
   },
   "Contact": {
     "header": {

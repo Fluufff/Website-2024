@@ -1,5 +1,6 @@
 'use client';
 
+import classNames from 'classnames';
 import {
   addDays,
   differenceInHours,
@@ -11,13 +12,15 @@ import {
   startOfHour,
   sub,
 } from 'date-fns';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Modal from 'react-modal';
 import Scroll from 'react-scroll';
+import * as R from 'remeda';
 
 import { ScheduleView } from './_components/ScheduleView';
 import { TimelineView } from './_components/TimelineView';
+import { isKnownLabel, knownLabels, knownLabelSortKey } from './knownLabels';
 
 import CmsRichText from '@/helpers/CmsRichText';
 import { getDateLocale } from '@/helpers/localization';
@@ -304,12 +307,88 @@ export default function Timetable({
         <div
           onClick={() => setModalIsOpen(false)}
           className="ReactModal__Close uil uil-times"></div>
-        <h3>{activeEvent?.name}</h3>
-        {activeEvent?.hostName && (
-          <span className="u-text-light">{activeEvent.hostName}</span>
-        )}
-        <CmsRichText dirtyHtml={activeEvent?.htmlDescription ?? ''} />
+        <EventModalBody event={activeEvent} />
       </Modal>
     </>
+  );
+}
+function EventModalBody({ event }: { event: ScheduleEvent | undefined }) {
+  if (!event) return;
+
+  const orderedLabels = R.sortBy(event.labels, knownLabelSortKey);
+
+  const labelBadges = orderedLabels.map((label, i) => (
+    <EventLabel label={label} key={i} />
+  ));
+
+  return (
+    <>
+      <h3>
+        {event.name}
+        {
+          // important space to allow breaking the line, do not remove
+          labelBadges.map((badge) => [' ', badge])
+        }
+      </h3>
+
+      {event.hostName && <span className="u-text-light">{event.hostName}</span>}
+      <CmsRichText dirtyHtml={event.htmlDescription ?? ''} />
+
+      <EventLabelHelp labels={orderedLabels} />
+    </>
+  );
+}
+
+function EventLabel({ label }: { label: string }) {
+  const t = useTranslations('Timetable.labels');
+
+  const texts = isKnownLabel(label)
+    ? {
+        name: t(`${label}.name`),
+        description: t(`${label}.description`),
+      }
+    : undefined;
+
+  const knownLabel = knownLabels[label];
+
+  return (
+    <span
+      className={classNames(
+        'a-badge',
+        knownLabel && `a-badge--color-${knownLabel.color}`,
+      )}
+      title={texts?.description}>
+      {texts?.name ?? label}
+    </span>
+  );
+}
+
+function EventLabelHelp({ labels }: { labels: string[] }) {
+  const t = useTranslations('Timetable');
+
+  const knownSubset = labels.filter(isKnownLabel);
+
+  return (
+    knownSubset.length > 0 && (
+      <details>
+        <summary>{t('label_help')}</summary>
+        <ul>
+          {knownSubset.map((label, i) => {
+            const name = t(`labels.${label}.name`);
+            const description = t(`labels.${label}.description`);
+            const knownLabel = knownLabels[label];
+
+            return (
+              <li key={i}>
+                <span className={`a-badge a-badge--color-${knownLabel.color}`}>
+                  {name}
+                </span>{' '}
+                {description}
+              </li>
+            );
+          })}
+        </ul>
+      </details>
+    )
   );
 }

@@ -1,8 +1,9 @@
 import * as z from 'zod';
 
+import { extractLabelsField } from '../labels';
 import { contentPage, contentWithFields } from '../util';
 
-const eventDtoSchema = contentWithFields({
+const fieldsSchema = z.object({
   // DCM quirk: when not interacted with, description is null rather than blank
   // HTML tags
   description: z.string().nullable(),
@@ -28,7 +29,16 @@ const eventDtoSchema = contentWithFields({
   'start-time': z.coerce.date(),
   'end-time': z.coerce.date(),
   'host-name': z.string().optional(),
+  labels: z.array(z.string()),
 });
+
+const transformedFieldsSchema = z
+  .object({})
+  .passthrough()
+  .transform(extractLabelsField)
+  .pipe(fieldsSchema);
+
+const eventDtoSchema = contentWithFields(transformedFieldsSchema);
 
 type EventDto = z.infer<typeof eventDtoSchema>;
 
@@ -41,6 +51,7 @@ export interface ScheduleEvent {
   endTime: Date;
   locationId: string;
   hostName: string | undefined;
+  labels: string[];
 }
 
 export interface ScheduleLocation {
@@ -69,6 +80,7 @@ function mapSchedule(scheduleDto: EventDto[]): Schedule {
         endTime: fields['end-time'],
         locationId: fields.location.contentId,
         hostName: fields['host-name'] || undefined,
+        labels: fields.labels,
       });
 
       schedule.locationById[locationDto.contentId] ??= {

@@ -40,7 +40,9 @@
             "translationId": null
           },
           "end-time": "2022-11-11T18:00:00Z",
-          "host-name": "Magtiusruf McHostName"
+          "host-name": "Magtiusruf McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -70,7 +72,9 @@
           },
           "description": "<p dir=\"ltr\"><span>A dance on the first evening? But I barely know anyone! Well, now you still have the energy, and probably have just met new people during the My First Furcon panel, why not set that energy free and show your true colours? Dance to your hearts desire on Mayk and DJ Code-Y!</span></p>",
           "name": "Tropical Initiation Dance",
-          "host-name": "Nilaciport McHostName"
+          "host-name": "Nilaciport McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -100,7 +104,9 @@
           "name": "Tropical Dance",
           "end-time": "2022-11-12T00:30:00Z",
           "description": "<p dir=\"ltr\"><span>Hope you're warmed up after all the events because we have a second dance lined up for you! This time, DJ Afwasbaq, DJ Code-Y and the Green Bro's will provide you with the most tropical beats you'll hear anywhere this side of awesome!</span></p>",
-          "host-name": "Adlaciport McHostName"
+          "host-name": "Adlaciport McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -130,7 +136,9 @@
           "end-time": "2022-11-10T17:00:00Z",
           "description": "<p dir=\"ltr\"><span>Do you feel like an awkward potato in front of the camera? Or is the only pose you know is a T-pose? Then this panel has you covered! We'll walk you through how to pose for a fursuit photoshoot, with plenty of examples, tips and tricks. We'll show you how to bring your characters' personality to the front and make every picture come alive!\r\n\r\nTo cap it off, we'll also teach you how to edit photographs and show you the best way to upload high-quality snaps to social media platforms.</span></p>",
           "start-time": "2022-11-10T15:30:00Z",
-          "host-name": "Sopaekirts McHostName"
+          "host-name": "Sopaekirts McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -160,7 +168,9 @@
           "name": "Snack Exchange",
           "description": "<p dir=\"ltr\"><span>What would an international con be without its very own snack exchange? Fluffies from all over the world bring their local delicacies for you to taste! Make sure to have a chat with the people bringing snacks and learn about the origins of these delights.</span></p>",
           "start-time": "2022-11-11T12:00:00Z",
-          "host-name": "Ahcxekcans McHostName"
+          "host-name": "Ahcxekcans McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -190,7 +200,9 @@
           "description": "<p dir=\"ltr\"><span>Wanna kickflip, grind, be the next Tony Hawk? Slow down there tiger. We’ll first set a good base.\r\nOur goal is to start you off with some solid basics, and even get you to do some radical tricks. Don’t worry about your skill level, we’ll be going from the bottom to the top! Hope to see you there and rock on! \r\nBringing your own gear is encouraged, but there will be some boards and protective gear provided.</span></p>",
           "name": "Skateboarding Basics Panel",
           "end-time": "2022-11-11T15:30:00Z",
-          "host-name": "Draobetaks McHostName"
+          "host-name": "Draobetaks McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -220,7 +232,9 @@
             },
             "translationId": null
           },
-          "host-name": "Athginwohs McHostName"
+          "host-name": "Athginwohs McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -250,7 +264,9 @@
             "translationId": null
           },
           "start-time": "2022-11-13T13:30:00Z",
-          "host-name": "Niyalpelor McHostName"
+          "host-name": "Niyalpelor McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -280,7 +296,9 @@
           },
           "name": " Puppy Panel",
           "description": "<p dir=\"ltr\"><span>Legend tell of a canine tribe that roams these lands after dark, the moon light glistening on their sleek hides. Mystery surrounds them: who are they, whence did they come from? Which are their secret rituals and what masters do they heel to? And why are they obsessed with squeaky toys? Much will be told in this panel. Join us to learn about pup play and enjoy some squeaky time if already One of the Tribe.</span></p>",
-          "host-name": "Lenapyppup McHostName"
+          "host-name": "Lenapyppup McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": true
         },
         "language": "en",
         "translations": [
@@ -310,7 +328,9 @@
           "end-time": "2022-11-10T13:00:00Z",
           "start-time": "2022-11-10T10:00:00Z",
           "description": "<p dir=\"ltr\"><span>Want to get pictures taken of you and friends in a tropical setting? Make sure to  book a slot at the con for the photo shoot! Non-suiters are welcome but we'd like to try and give priority to fursuiters.</span></p>",
-          "host-name": "Toohsotohp McHostName"
+          "host-name": "Toohsotohp McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -340,7 +360,9 @@
             },
             "translationId": null
           },
-          "host-name": "Ruftsrifym McHostName"
+          "host-name": "Ruftsrifym McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -370,7 +392,9 @@
           },
           "name": "Karaoke",
           "end-time": "2022-11-10T22:00:00Z",
-          "host-name": "Ekoarak McHostName"
+          "host-name": "Ekoarak McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -400,7 +424,9 @@
           "description": "<p dir=\"ltr\"><span>So you want to host your very own panel at Flüüfff but aren't quite sure how to go about it? Or you want to bounce a few ideas around for a future panel? Why sure! Come on over, take a seat, and we'll have a chat. We’ll first present some techniques and tricks. After that, the floor is yours! (Literally. Go on, take it as a souvenir. Bring a crow bar.)</span></p>",
           "end-time": "2022-11-10T12:00:00Z",
           "name": "How to Panel by Floere T. Pillowcase",
-          "host-name": "Lenapotwoh McHostName"
+          "host-name": "Lenapotwoh McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -430,7 +456,9 @@
             "translationId": null
           },
           "name": "How to Master the (Sound)waves by Choob",
-          "host-name": "Etsamotwoh McHostName"
+          "host-name": "Etsamotwoh McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -460,7 +488,9 @@
             },
             "translationId": null
           },
-          "host-name": "Btaebotwoh McHostName"
+          "host-name": "Btaebotwoh McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -490,7 +520,9 @@
             },
             "translationId": null
           },
-          "host-name": "Csedetnuah McHostName"
+          "host-name": "Csedetnuah McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -520,7 +552,9 @@
             },
             "translationId": null
           },
-          "host-name": "Otohppuorg McHostName"
+          "host-name": "Otohppuorg McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -550,7 +584,9 @@
           "end-time": "2022-11-10T13:00:00Z",
           "name": "Fursuit Repair Basics by Hell Charm",
           "start-time": "2022-11-10T12:00:00Z",
-          "host-name": "Pertiusruf McHostName"
+          "host-name": "Pertiusruf McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -580,7 +616,9 @@
           "name": "Fursuit making: Show and tell by Sibs",
           "description": "<p dir=\"ltr\"><span>Do you have a fursuit feature or technique (or an adjacent project) that you are proud of? \r\nSwing by here, show it off, and learn from other makers both new and seasoned! \r\n\r\nBring your fursuit (part), or project, and get your time in the spotlight to show-off what you're proud off, then mingle and chat with other makers to learn from each other.</span></p>",
           "end-time": "2022-11-11T12:00:00Z",
-          "host-name": "Kamtiusruf McHostName"
+          "host-name": "Kamtiusruf McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -610,7 +648,9 @@
             },
             "translationId": null
           },
-          "host-name": "Ffatsffflf McHostName"
+          "host-name": "Ffatsffflf McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -640,7 +680,9 @@
             "translationId": null
           },
           "description": "<p dir=\"ltr\"><span>Want to help us improve Flüüfff for next edition? Here's your chance! Get together with the Feedback department and tell them about your experience: what would you love to keep and what can we improve?</span></p>",
-          "host-name": "Apkcabdeef McHostName"
+          "host-name": "Apkcabdeef McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -670,7 +712,9 @@
           "name": "Dealer's Den",
           "start-time": "2022-11-11T09:00:00Z",
           "end-time": "2022-11-11T12:00:00Z",
-          "host-name": "Nedsrelaed McHostName"
+          "host-name": "Nedsrelaed McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": true
         },
         "language": "en",
         "translations": [
@@ -700,7 +744,9 @@
             "translationId": null
           },
           "end-time": "2022-11-12T20:00:00Z",
-          "host-name": "Epmocecnad McHostName"
+          "host-name": "Epmocecnad McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -730,7 +776,9 @@
           "name": "Coffee Panel - Coffee Break by Laddian",
           "description": "<p dir=\"ltr\"><span>Coffee coffee coffee! Nothing is like the dark gold! Whether you drink it black or clouded with milk (we won't judge too harshly) you're welcome to join the coffee tasting. Laddian will provide three types of different home-roasted tastes, explain some history, and present an additional, secret, coffee-related topic!\r\nThere will be an additional speaker here too, who might it be? Mystery abounds :D</span></p>",
           "start-time": "2022-11-11T19:00:00Z",
-          "host-name": "Enapeeffoc McHostName"
+          "host-name": "Enapeeffoc McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -760,7 +808,9 @@
             "translationId": null
           },
           "name": "Christian Furs Meet by Nimalen",
-          "host-name": "Fnaitsirhc McHostName"
+          "host-name": "Fnaitsirhc McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": true
         },
         "language": "en",
         "translations": [
@@ -790,7 +840,9 @@
             },
             "translationId": null
           },
-          "host-name": "Cuaytirahc McHostName"
+          "host-name": "Cuaytirahc McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -820,7 +872,9 @@
           "name": "Blood on the Clocktower",
           "start-time": "2022-11-13T19:00:00Z",
           "description": "<p dir=\"ltr\"><span>During a hellish thunderstorm, on the stroke of midnight, there echoes a bone-chilling scream.\r\nThe townsfolk rush to investigate and find their storyteller murdered, the body impaled on the hands of the clocktower, blood dripping onto the cobblestones below.\r\n\r\nA Demon must be on the loose! Murdering by night and disguised in human form by day. Some of you have scraps of information. Others have abilities that fight evil or protect the innocent. But the Demon, and its evil minions, are spreading lies to confuse and breed suspicion.\r\n\r\nIn the quiet village of Ravenswood Fluff, ‌a demon walks among you... Will the good townsfolk put the puzzle together in time to execute the demon and save themselves? Or will evil overrun this once peaceful village?</span></p>",
-          "host-name": "Ehtnodoolb McHostName"
+          "host-name": "Ehtnodoolb McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -850,7 +904,9 @@
           "end-time": "2022-11-12T15:30:00Z",
           "description": "<p dir=\"ltr\"><span>You descend into the ancient lava tunnels, your mission clear: to sing the Song of Awoo to the Elder Dogs. Arrived at the inner sanctum, before the altar, you take a deep breath and… Oh no! It sounds like you swallowed a pillow. Worse, the Elder Dogs are displeased and render their verdict: “muble fumble Shiba rumble Floof” Or that’s what it sounds like to you. What to do now? If only there was a way to sing and hear clearly while in suit! If only there was some idiot doing research in that sort of thing!</span></p>",
           "name": "Advanced Animatronics Adventures by Floere T. Pillowcase",
-          "host-name": "Nadecnavda McHostName"
+          "host-name": "Nadecnavda McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -880,7 +936,9 @@
           },
           "name": "A Fluffy Concert",
           "end-time": "2022-11-10T20:00:00Z",
-          "host-name": "Nocyffulfa McHostName"
+          "host-name": "Nocyffulfa McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -910,7 +968,9 @@
           },
           "name": "Photoshoot",
           "description": "<p dir=\"ltr\"><span>Want to get pictures taken of you and friends in a tropical setting? Make sure to  book a slot at the con for the photo shoot! Non-suiters are welcome but we'd like to try and give priority to fursuiters.</span></p>",
-          "host-name": "Toohsotohp McHostName"
+          "host-name": "Toohsotohp McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -940,7 +1000,9 @@
           "name": "Photoshoot",
           "start-time": "2022-11-12T15:00:00Z",
           "end-time": "2022-11-12T18:30:00Z",
-          "host-name": "Toohsotohp McHostName"
+          "host-name": "Toohsotohp McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -970,7 +1032,9 @@
           },
           "start-time": "2022-11-11T14:30:00Z",
           "name": "Photoshoot",
-          "host-name": "Toohsotohp McHostName"
+          "host-name": "Toohsotohp McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -1000,7 +1064,9 @@
           "end-time": "2022-11-11T20:00:00Z",
           "description": "<p dir=\"ltr\"><span>Want to get pictures taken of you and friends in a tropical setting? Make sure to  book a slot at the con for the photo shoot! Non-suiters are welcome but we'd like to try and give priority to fursuiters.</span></p>",
           "start-time": "2022-11-11T18:30:00Z",
-          "host-name": "Toohsotohp McHostName"
+          "host-name": "Toohsotohp McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -1030,7 +1096,9 @@
             "translationId": null
           },
           "start-time": "2022-11-11T13:00:00Z",
-          "host-name": "Nedsrelaed McHostName"
+          "host-name": "Nedsrelaed McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": true
         },
         "language": "en",
         "translations": [
@@ -1060,7 +1128,9 @@
             },
             "translationId": null
           },
-          "host-name": "Csedetnuah McHostName"
+          "host-name": "Csedetnuah McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -1090,7 +1160,9 @@
           "name": "Photoshoot",
           "start-time": "2022-11-11T18:30:00Z",
           "end-time": "2022-11-11T20:00:00Z",
-          "host-name": "Toohsotohp McHostName"
+          "host-name": "Toohsotohp McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -1120,7 +1192,9 @@
           "description": "<p dir=\"ltr\"><span>Want to get pictures taken of you and friends in a tropical setting? Make sure to  book a slot at the con for the photo shoot! Non-suiters are welcome but we'd like to try and give priority to fursuiters.</span></p>",
           "start-time": "2022-11-12T15:00:00Z",
           "end-time": "2022-11-12T18:00:00Z",
-          "host-name": "Toohsotohp McHostName"
+          "host-name": "Toohsotohp McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -1150,7 +1224,9 @@
           "name": "Haunted Escape",
           "description": "<p dir=\"ltr\"><span>Join Dr. Nigel Cornobble for a new, fantastical adventure to the tropical island of Imboca! The indiginous creatures have hidden away the majestic Emerald Dodecahedron - a glorious addition to the British Museum's collection! Thus, it is your job to enter the Aquifer of Certain Doom and steal the artifact from right under their noses. Don't worry about the rumours. Simple tall tales and superstition, surely!</span></p>",
           "start-time": "2022-11-10T20:00:00Z",
-          "host-name": "Csedetnuah McHostName"
+          "host-name": "Csedetnuah McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -1180,7 +1256,9 @@
           },
           "end-time": "2022-11-10T12:30:00Z",
           "name": "Haunted Escape",
-          "host-name": "Csedetnuah McHostName"
+          "host-name": "Csedetnuah McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -1210,7 +1288,9 @@
             },
             "translationId": null
           },
-          "host-name": "Nedsrelaed McHostName"
+          "host-name": "Nedsrelaed McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": true
         },
         "language": "en",
         "translations": [
@@ -1240,7 +1320,15 @@
             },
             "translationId": null
           },
-          "host-name": "Recgninepo McHostName"
+          "host-name": "Recgninepo McHostName",
+          "label-nsfw": true,
+          "label-workshop": true,
+          "label-educational": true,
+          "label-fursuit-friendly": true,
+          "label-sporty": true,
+          "label-flashing-lights": true,
+          "label-charity": true,
+          "label-open-door": true
         },
         "language": "en",
         "translations": [
@@ -1270,7 +1358,9 @@
             },
             "translationId": null
           },
-          "host-name": "Cuaytirahc McHostName"
+          "host-name": "Cuaytirahc McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -1300,7 +1390,9 @@
           "name": "Dealer's Den",
           "start-time": "2022-11-12T13:00:00Z",
           "description": "<p dir=\"ltr\"><span>Dealer's Den</span></p>",
-          "host-name": "Nedsrelaed McHostName"
+          "host-name": "Nedsrelaed McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": true
         },
         "language": "en",
         "translations": [
@@ -1330,7 +1422,9 @@
           "name": "Tropical Island Cultures by Nimalen and Floere",
           "end-time": "2022-11-12T11:00:00Z",
           "description": "<p dir=\"ltr\"><span>Not all inhabited island are tropical, nor are all island cultures Polynesian. In this panel, we’ll take a closer look at other cultures that blossom under a tropical sun, surrounded by the ocean.</span></p>",
-          "host-name": "Silaciport McHostName"
+          "host-name": "Silaciport McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": true
         },
         "language": "en",
         "translations": [
@@ -1360,7 +1454,9 @@
           },
           "description": "<p dir=\"ltr\"><span>Want to get pictures taken of you and friends in a tropical setting? Make sure to  book a slot at the con for the photo shoot! Non-suiters are welcome but we'd like to try and give priority to fursuiters.</span></p>",
           "start-time": "2022-11-10T16:00:00Z",
-          "host-name": "Toohsotohp McHostName"
+          "host-name": "Toohsotohp McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -1390,7 +1486,9 @@
           "description": "<p dir=\"ltr\"><span>If everything was as rosy as we'd like it to be, we wouldn't have to talk about harassment and abuse. In this panel, an external expert will explain what harassment and abuse entail. After that, some of our con-goers will share their own stories around experiencing, coping with, and preventing non-consensual contact. If you want to learn how to help victims, make sure to join this panel.</span></p>",
           "name": "Defense and Deterrence: Recognition and Prevention of Sexual Harrasment and Abuse",
           "end-time": "2022-11-10T15:30:00Z",
-          "host-name": "Dnaesnefed McHostName"
+          "host-name": "Dnaesnefed McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": true
         },
         "language": "en",
         "translations": [
@@ -1420,7 +1518,9 @@
             },
             "translationId": null
           },
-          "host-name": "Inlaciport McHostName"
+          "host-name": "Inlaciport McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [
@@ -1450,7 +1550,9 @@
           },
           "start-time": "2022-11-11T15:00:00Z",
           "end-time": "2022-11-11T17:00:00Z",
-          "host-name": "Enteemerov McHostName"
+          "host-name": "Enteemerov McHostName",
+          "label-fursuit-friendly": true,
+          "label-nsfw": true
         },
         "language": "en",
         "translations": [
@@ -1480,7 +1582,9 @@
           },
           "description": "<p dir=\"ltr\"><span>Fursuiters are known not to speak. So how well do they communicate? We are going to play charades with several teams of suiters who will vie for the title of Flüüfff Tropical Charades Champion. Watch a hilarious game of charades, guess the words, and help us pick the final competing teams for the Show night!</span></p>",
           "name": "Fursuit Charades",
-          "host-name": "Ahctiusruf McHostName"
+          "host-name": "Ahctiusruf McHostName",
+          "label-fursuit-friendly": false,
+          "label-nsfw": false
         },
         "language": "en",
         "translations": [

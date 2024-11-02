@@ -149,7 +149,42 @@
     "schedule": {
       "not_available": "Le programme n'est pas disponible pour le moment"
     },
-    "submit_proposal": "Proposer un évènement"
+    "submit_proposal": "Proposer un évènement",
+    "label_help": "Que signifient les labels?",
+    "labels": {
+      "nsfw": {
+        "name": "NSFW",
+        "description": "L'évènement aborde des sujets ou thèmes qui sont connectés au fétichisme ou à des sujets apparentés, néanmoins cet évènement est strictement non-sexuel et ne montre pas de nudité."
+      },
+      "workshop": {
+        "name": "Atelier",
+        "description": "L'évènement nécessite une participation active (contrairement à une écoute passive de la présentation)."
+      },
+      "educational": {
+        "name": "Éducatif",
+        "description": "L'évènement est soit présenté par un (semi-)professionel du sujet, ou est le résultat d'une recherche approfondie du sujet et est destinée à la formation/enseignement de celui-ci."
+      },
+      "fursuit-friendly": {
+        "name": "Adapté aux fursuits",
+        "description": "L'évènement est soit équipé pour les fursuiters (par ex., ventilateurs et/ou distributeurs d'eau) ou met en place des mesures pour être accessible aux fursuiters (par ex., rythme d'activité plus lent ou avec un matériel adapté pour permettre aux fursuiters d'y participer)."
+      },
+      "sporty": {
+        "name": "Sportif",
+        "description": "L'évènement demande un certain niveau de mobilité. Des vêtements adaptés, une gourde d'eau et une serviette sont conseillés."
+      },
+      "flashing-lights": {
+        "name": "Lumières flash",
+        "description": "L'évènement comporte des lumières clignotantes et de forte intensité."
+      },
+      "charity": {
+        "name": "Charité",
+        "description": "L'évènement est organisé et/ou présenté en coopération avec l'organisme de charité choisi cette édition."
+      },
+      "open-door": {
+        "name": "Porte ouverte",
+        "description": "L'évènement peut être rejoint ou quitté à tout moment."
+      }
+    }
   },
   "Contact": {
     "header": {
