@@ -5,8 +5,6 @@ import * as z from 'zod';
 import { ApiError } from '../ApiError';
 import { ParsingError } from '../ParsingError';
 
-import { env } from '@/env';
-
 /**
  * Partial schema of the user response, with just the bits that matter to us.
  *
@@ -37,10 +35,8 @@ function map(raw: z.infer<typeof schema>): User {
 
 export const getCurrentUser = cache(
   async function getCurrentUser(): Promise<User> {
-    const response = await fetch(env.NEXT_PUBLIC_REG_API_ROOT + '/user', {
-      cache: 'no-store',
-      credentials: 'include',
-    });
+    // static archive
+    const response = new Response('', { status: 404 });
 
     if (!response.ok) throw new ApiError(response);
 

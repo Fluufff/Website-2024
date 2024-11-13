@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 
-import { UserLogin } from './UserLogin';
 
 import logoDarkImage from '@/assets/full-logo-dark.png';
 import logoImage from '@/assets/full-logo.png';
@@ -168,10 +167,6 @@ export default function Menu({ hasSchedule, hasNews }: Props) {
                   </Link>
                 </li>
               }
-
-              <li>
-                <UserLogin />
-              </li>
 
               <li>
                 <div className="m-menu__sub-menu m-menu__languages">

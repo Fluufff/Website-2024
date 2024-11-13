@@ -1,10 +1,8 @@
 'use client';
 
-import IframeResizer from 'iframe-resizer-react';
 
 import { RegistrationStatusBody } from '../RegistrationStatusBody';
 
-import { env } from '@/env';
 import {
   RegistrationState,
   useRegistrationStatus,
@@ -40,16 +38,8 @@ export function TicketsFrame() {
     );
   else
     return (
-      <div className="m-registration-frame">
-        <IframeResizer
-          // initial height
-          height={500}
-          title="Registration"
-          width="100%"
-          src={`${env.NEXT_PUBLIC_REG_ROOT}/register?iframe${
-            langParam && '&' + langParam
-          }`}
-        />
+      <div className="m-registration-frame m-registration-frame__placeholder">
+        (registration is closed)
       </div>
     );
 }

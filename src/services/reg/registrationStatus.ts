@@ -2,10 +2,8 @@ import { cache } from 'react';
 import useSWR from 'swr';
 import * as z from 'zod';
 
-import { ApiError } from '../ApiError';
 import { ParsingError } from '../ParsingError';
 
-import { env } from '@/env';
 
 /**
  * @see https://github.com/Fluufff/Platyplus-endpoints-documentation?tab=readme-ov-file#registration-stats
@@ -60,21 +58,22 @@ function map(raw: z.infer<typeof schema>): RegistrationStatus {
 
 export const getRegistrationStatus = cache(
   async function getRegistrationStatus(): Promise<RegistrationStatus> {
-    const response = await fetch(env.NEXT_PUBLIC_REG_API_ROOT + '/register', {
-      // Next.js 14 only offers stale-while-revalidate caching so we disable
-      // that. Otherwise we would serve stale data to the first user after the
-      // response changes. Not OK at our small scale.
-      cache: 'no-store',
+    // static archive
+    const responseJson = {
+      _links: {
+        self: {
+          href: '/rest/register/',
+        },
+      },
+      _embedded: {
+        state: 'REGISTRATION_ACCOUNT_CREATION_ONLY',
+        preopening: '2024-05-17T21:00:00+02:00',
+        opening: '2024-07-06T12:00:00+02:00',
+        closing: '2024-11-06T00:00:00+01:00',
+      },
+    };
 
-      // Logged-in users get a more detailed status.
-      credentials: 'include',
-    });
-
-    if (!response.ok) throw new ApiError(response);
-
-    const statusOrError = schema
-      .transform(map)
-      .safeParse(await response.json());
+    const statusOrError = schema.transform(map).safeParse(await responseJson);
 
     if (statusOrError.success) {
       return statusOrError.data;
