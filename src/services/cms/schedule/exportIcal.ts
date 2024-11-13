@@ -40,6 +40,14 @@ function toEventData(
   };
 }
 
+/** rudimentary html-to-text conversion */
 function noHtml(htmlString: string): string {
-  return sanitize(htmlString, { allowedTags: [] });
+  return sanitize(htmlString, {
+    allowedTags: [],
+    textFilter(text, tagName) {
+      if (tagName.match(/br|p|h[1-7]/)) {
+        return text + '\n';
+      } else return text;
+    },
+  });
 }
