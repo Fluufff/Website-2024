@@ -28,6 +28,25 @@ point to those mock endpoints.
 
 ### Building
 
+#### Simulate CMS
+
+The static archive is made to be built offline, as I anticipate the CMS won't
+stay up for long.
+
+To run the simulated CMS, install [mitmproxy](https://mitmproxy.org/), and in a
+dedicated terminal, run
+
+```sh
+cd static-support
+./serve-replay.sh
+```
+
+This will launch a reverse proxy that will replay the responses of
+dcm.fluufff.org that are required at build-time. This proxy is already
+configured as the CMS server in `.env`.
+
+#### Build
+
 Install dependencies and build the project:
 
 ```sh
@@ -35,8 +54,18 @@ yarn
 yarn build
 ```
 
-Then, deploy the output of the `out` directory [as a static
-site](https://nextjs.org/docs/app/building-your-application/deploying/static-exports#deploying). Recommendations:
+To test the build locally, I use
+[simple-http-server](https://github.com/TheWaWaR/simple-http-server):
+
+```sh
+simple-http-server -p 3000 -i --cors out
+```
+
+#### Deploy
+
+Deploy the output of the `out` directory
+[as a static site](https://nextjs.org/docs/app/building-your-application/deploying/static-exports#deploying).
+Recommendations:
 
 - Set up a redirect from `/` to `/en/`, as there is no index page at the root.
 - Ensure the server serves `/foo/index.html` for any `/foo/` path.
