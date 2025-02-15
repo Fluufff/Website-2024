@@ -39,11 +39,8 @@ export function generateStaticParams() {
   return localeKeys.map((locale) => ({ locale }));
 }
 
-const trackingDomain = {
-  development: null,
-  staging: 'test.fluufff.org',
-  production: 'fluufff.org',
-}[env.APP_ENV];
+// static site, no tracking
+const trackingDomain = null;
 
 export default async function RootLayout({
   children,
