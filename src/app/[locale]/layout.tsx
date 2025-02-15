@@ -14,7 +14,6 @@ import { env } from '@/env';
 import { PropsWithLocale } from '@/helpers/localization';
 import { getHasNews } from '@/services/cms/news';
 import { getHasSchedule } from '@/services/cms/schedule';
-import { creepster, readexPro } from '@/styles/fonts';
 
 type Props = PropsWithLocale<{
   children: React.ReactNode;
@@ -54,7 +53,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className={[readexPro.variable, creepster.variable].join(' ')}>
+      <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Menu hasSchedule={hasSchedule} hasNews={hasNews} />
           {children}
