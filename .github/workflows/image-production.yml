@@ -2,9 +2,11 @@ name: production image
 
 on:
   push:
-    # Production releases on tagged versions
     tags:
-    - 'v[0-9]+.[0-9]+.[0-9]+'
+    branches:
+    # # Production releases on tagged versions
+    # tags:
+    # - 'v[0-9]+.[0-9]+.[0-9]+'
 
 permissions:
   id-token: write
