@@ -31,13 +31,13 @@
   },
   "Index": {
     "hero": {
-      "title": "Toxic Critters",
+      "title": "Forest Fantasy",
       "subtitle": "Faites une croix dans votre calendrier !",
       "description": {
-        "p0": "Pour la 6e édition de la convention furry belge, notre équipe serait heureuse de vous entraîner dans les abords de Toxic City, au Bedford Hotel & Congress Center à Bruxelles.",
+        "p0": "Pour la 7e édition de la convention furry belge, notre équipe serait heureuse de vous entraîner dans les abords de Toxic City, au Bedford Hotel & Congress Center à Bruxelles.",
         "p1": "Les lumières néon montrent que l'heure est à la fête ! Par contre je doute de l'innocuité des déchets toxiques qui traînent autour, et la radioactivité c'est pas de la rigolade, et puis on ne sait jamais sur quoi l'on peut tomber…"
       },
-      "date": "6-10 Novembre 2024"
+      "date": "5-9 Novembre 2025"
     },
     "activities": {
       "dances": {
@@ -65,7 +65,7 @@
       "title": "Bienvenue à Flüüfff",
       "description": {
         "p0": "C'est une convention furry, située à Bruxelles ! Une convention furry est un évènement dédié à l'anthropomorphisme et un endroit où les furries et leurs amis peuvent se rassembler.",
-        "p1": "La convention se déroule sur 5 jours, du 6 au 10 novembre 2024. La Flüüff prend place à l'hôtel Bedford."
+        "p1": "La convention se déroule sur 5 jours, du 5 au 9 novembre 2025. La Flüüff prend place à l'hôtel Bedford."
       },
       "about_fluufff": "À propos de Flüüfff"
     }
@@ -83,7 +83,7 @@
     },
     "about": {
       "description": {
-        "p0_fluufff": "Flüüfff 2024 est la sixième édition de la convention Flüüfff. Son but est de rassembler en un même endroit les furries et leurs amis pour partager un moment de camaraderie, d'amusement et de créativité (des valeurs dont notre communauté peut être fière). Mais vous n'avez pas besoin d'être un furry pour venir faire la fête avec nous !",
+        "p0_fluufff": "Flüüfff 2025 est la septième édition de la convention Flüüfff. Son but est de rassembler en un même endroit les furries et leurs amis pour partager un moment de camaraderie, d'amusement et de créativité (des valeurs dont notre communauté peut être fière). Mais vous n'avez pas besoin d'être un furry pour venir faire la fête avec nous !",
         "p1_contents": "La convention se déroule sur 5 jours. Diverses activités y ont lieu : une piste de dance, un coin lounge, des jeux vidéos, des conférences, et bien d'autres choses à faire. Peu de place est laissée à l'ennui."
       },
       "title": "Flüüfff"
@@ -101,7 +101,7 @@
     },
     "help": {
       "description": "Bien sûr ! Contactez-nous par email via le formulaire de contact et nous jetterons un œil à votre candidature. Sinon, sachez que le meilleur moyen de supporter la Flüüfff est d'y venir !",
-      "title": "Puis-je vous aider durant la Flüüfff 2024 ?"
+      "title": "Puis-je vous aider durant la Flüüfff 2025 ?"
     },
     "npo": {
       "address": "Flüüfff, ASBL, Gaversesteenweg 188, 9800 Deinze, Belgique",

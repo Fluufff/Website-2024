@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: 'Flüüfff – %s',
   },
   description:
-    'Belgian Furry Convention - Edition 6 - Toxic Critters - November 6-10 - Bedford Hotel, Brussels',
+    'Belgian Furry Convention - Edition 7 - Forest Fantasy - November 5-9 - Bedford Hotel, Brussels',
   // TODO: icon (high res favicons)
 };
 

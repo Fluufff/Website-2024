@@ -31,13 +31,13 @@
   },
   "Index": {
     "hero": {
-      "title": "Toxic Critters",
+      "title": "Forest Fantasy",
       "subtitle": "Halte dir das Datum frei!",
       "description": {
-        "p0": "Für die 6te Edition der belgischen Furry Convention würde euch unser Team herzlich in die faszinierende Toxic City im Bedford Hotel & Congress Center in Brüssel locken.",
+        "p0": "Für die 7te Edition der belgischen Furry Convention würde euch unser Team herzlich in die faszinierende Toxic City im Bedford Hotel & Congress Center in Brüssel locken.",
         "p1": "Lasst uns alle zusammen bringen und unter den Neonlichtern feiern! Aber Vorsicht vor dem Giftmüll: Mit Radioaktivität ist nicht zu spaßen, und man weiß nie, worauf man stoßen könnte..."
       },
-      "date": "6. bis 10. November, 2024"
+      "date": "5. bis 9. November, 2025"
     },
     "activities": {
       "dances": {
@@ -65,7 +65,7 @@
       "title": "Willkommen bei Flüüfff",
       "description": {
         "p0": "Es ist eine belgische Furry Convention mit Sitz in Brüssel! Eine Furry Convention ist eine Veranstaltung, die anthropomorphen Charaktären gewidmet ist und ein Treffpunkt für alle Furries und ihre Freunde ist.",
-        "p1": "Flüüfff geht 5 Tage lang, vom 6. bis zum 10. November 2024. Die Convention findet im Bedford Hotel statt."
+        "p1": "Flüüfff geht 5 Tage lang, vom 5. bis zum 9. November 2025. Die Convention findet im Bedford Hotel statt."
       },
       "about_fluufff": "Über Flüüfff"
     }
@@ -83,7 +83,7 @@
     },
     "about": {
       "description": {
-        "p0_fluufff": "Flüüfff 2024 ist die 6. Edition der Flüüfff Convention. Es geht darum, Furries an einem Ort zusammen zu bringen, um Freundschaften, Spaß und Kreativität zu teilen (Werte, auf die unsere Community stolz sein kann). Du musst kein Furry sein, um mit uns zu feiern!",
+        "p0_fluufff": "Flüüfff 2025 ist die 7. Edition der Flüüfff Convention. Es geht darum, Furries an einem Ort zusammen zu bringen, um Freundschaften, Spaß und Kreativität zu teilen (Werte, auf die unsere Community stolz sein kann). Du musst kein Furry sein, um mit uns zu feiern!",
         "p1_contents": "Die Convention dauert 5 Tage und kann auf mehren Arten genossen werden: Tanze wie ein Partylöwe, entspanne dich, spiele Videospiele und Brettspiele oder nehme an einem Panel oder an einem der vorgeschlagenen Aktivitäten teil."
       },
       "title": "Flüüfff"
@@ -101,7 +101,7 @@
     },
     "help": {
       "description": "Natürlich! Du kannst uns per Email über unser Kontaktformular kontaktieren und wir werden uns bei dir melden. Aber der beste Weg, Flüüfff zu unterstützen, ist einfach teilzunehmen!",
-      "title": "Kann ich bei Flüüfff 2024 mithelfen?"
+      "title": "Kann ich bei Flüüfff 2025 mithelfen?"
     },
     "npo": {
       "address": "Flüüfff, ASBL, Gaversesteenweg 188, 9800 Deinze, Belgien",
