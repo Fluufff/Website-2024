@@ -44,7 +44,7 @@ const rawAssetWebpackRule = {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: env.STANDALONE_OUTPUT ? 'standalone' : undefined,
-  assetPrefix: isProd ? env.NEXT_PUBLIC_ASSET_PREFIX || undefined : undefined,
+  // assetPrefix: isProd ? env.NEXT_PUBLIC_ASSET_PREFIX || undefined : undefined,
 
   webpack: (config) => {
     config.module.rules.push(rawAssetWebpackRule);
