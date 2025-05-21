@@ -16,8 +16,8 @@ jobs:
     steps:
       - name: Download archive content
         run: |
-          | wget https://github.com/Fluufff/Website-2024/releases/download/static-2024-v.1.2.2/2024.fluufff.org.zip
-          | unzip 2024.fluufff.org.zip
+          wget https://github.com/Fluufff/Website-2024/releases/download/static-2024-v.1.2.2/2024.fluufff.org.zip
+          unzip 2024.fluufff.org.zip
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
